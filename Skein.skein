@@ -3,14 +3,16 @@
   <generator>Windows Inform 10.1.2</generator>
   <item nodeId="node-0">
     <command xml:space="preserve">Hebe</command>
-    <result xml:space="preserve">mia fora kai enan kairo...&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 240802 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Secret Garden&#x000A;You are in the Secret Garden. You can see red, purple, yellow and white flowers planted in some flowerbeds. In your right you can see some golden amphorae. In the middle of the garden you see an enormous tree with a cavity in the middle&#x000A;&#x000A; You see a lake. On its shore you see some seashells. &#x000A;&#x000A;A heavy looking gate that seems to lead to the next room is on the eastern side of the garden, its view mostly obstructed by vines and flowers.&#x000A;&#x000A;In the garden you see a statue of a beautiful man.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">mia fora kai enan kairo...&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 240802 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Secret Garden&#x000A;You find yourself in the Secret Garden, a vibrant haven where nature's palette is on full display. Four flowerbeds burst with color: red, purple, yellow, and white, each a riot of blossoms. To your right, a row of golden amphorae, exuding a sweet, intoxicating perfume, gleams in the sunlight. At the garden's heart stands an enormous willow tree, its ancient trunk hollowed by time, providing a natural cavity within its embrace. Beneath its sprawling branches lies a serene lake, its shore full with delicate sea shells. On the eastern edge of the garden, a heavy gate that seems to lead to the next room, though its form is almost hidden by a tangle of vines and blooms. Nearby, a statue of a strikingly beautiful man stands as if guarding the garden's secrets.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-484"/>
+      <child nodeId="node-1023"/>
       <child nodeId="node-201"/>
       <child nodeId="node-659"/>
       <child nodeId="node-549"/>
+      <child nodeId="node-1046"/>
       <child nodeId="node-105"/>
       <child nodeId="node-106"/>
       <child nodeId="node-52"/>
@@ -19,6 +21,7 @@
       <child nodeId="node-102"/>
       <child nodeId="node-99"/>
       <child nodeId="node-94"/>
+      <child nodeId="node-958"/>
       <child nodeId="node-655"/>
       <child nodeId="node-90"/>
       <child nodeId="node-398"/>
@@ -48,12 +51,16 @@
       <child nodeId="node-802"/>
       <child nodeId="node-804"/>
       <child nodeId="node-146"/>
+      <child nodeId="node-1022"/>
       <child nodeId="node-173"/>
       <child nodeId="node-773"/>
       <child nodeId="node-172"/>
       <child nodeId="node-597"/>
+      <child nodeId="node-1037"/>
+      <child nodeId="node-1032"/>
       <child nodeId="node-19"/>
       <child nodeId="node-62"/>
+      <child nodeId="node-1013"/>
       <child nodeId="node-596"/>
       <child nodeId="node-487"/>
       <child nodeId="node-133"/>
@@ -63,10 +70,13 @@
       <child nodeId="node-728"/>
       <child nodeId="node-583"/>
       <child nodeId="node-736"/>
+      <child nodeId="node-1030"/>
       <child nodeId="node-576"/>
       <child nodeId="node-776"/>
       <child nodeId="node-376"/>
+      <child nodeId="node-1044"/>
       <child nodeId="node-794"/>
+      <child nodeId="node-1029"/>
     </children>
   </item>
   <item nodeId="node-484">
@@ -81,12 +91,451 @@
   </item>
   <item nodeId="node-507">
     <command xml:space="preserve">l</command>
-    <result xml:space="preserve">Secret Garden&#x000A;You are in the Secret Garden&#x000A;&#x000A;You find yourself before a beautiful flowerbed with vibrant red flowers.&#x000A;&#x000A;You find yourself before a beautiful flowerbed with vibrant purple flowers.&#x000A;&#x000A;You find yourself before a beautiful flowerbed with vibrant yellow flowers.&#x000A;&#x000A;You find yourself before a beautiful flowerbed with vibrant white flowers.&#x000A;&#x000A;You can also see a puzzle gate, a statue, a container B (empty), a container C (empty) and a container D (empty) here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Secret Garden&#x000A;You find yourself in the Secret Garden, a vibrant haven where nature's palette is on full display. Four flowerbeds burst with color: red, purple, yellow, and white, each a riot of blossoms. To your right, a row of golden amphorae, exuding a sweet, intoxicating perfume, gleams in the sunlight. At the garden's heart stands an enormous willow tree, its ancient trunk hollowed by time, providing a natural cavity within its embrace. Beneath its sprawling branches lies a serene lake, its shore full with delicate sea shells. On the eastern edge of the garden, a heavy gate that seems to lead to the next room, though its form is almost hidden by a tangle of vines and blooms. Nearby, a statue of a strikingly beautiful man stands as if guarding the garden's secrets.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
+      <child nodeId="node-1047"/>
       <child nodeId="node-508"/>
     </children>
+  </item>
+  <item nodeId="node-1047">
+    <command xml:space="preserve">take flowerbeds</command>
+    <result xml:space="preserve">Which do you mean, the red flowerbed, the purple flowerbed, the yellow flowerbed or the white flowerbed?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1048"/>
+    </children>
+  </item>
+  <item nodeId="node-1048">
+    <command xml:space="preserve">take red flowerbed</command>
+    <result xml:space="preserve">That's fixed in place.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1049"/>
+    </children>
+  </item>
+  <item nodeId="node-1049">
+    <command xml:space="preserve">take blooms</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1050"/>
+    </children>
+  </item>
+  <item nodeId="node-1050">
+    <command xml:space="preserve">take vines</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1051"/>
+    </children>
+  </item>
+  <item nodeId="node-1051">
+    <command xml:space="preserve">take vine</command>
+    <result xml:space="preserve">That's fixed in place.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1052"/>
+    </children>
+  </item>
+  <item nodeId="node-1052">
+    <command xml:space="preserve">eat vine</command>
+    <result xml:space="preserve">That's plainly inedible.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1053"/>
+    </children>
+  </item>
+  <item nodeId="node-1053">
+    <command xml:space="preserve">x flowerbed</command>
+    <result xml:space="preserve">Which do you mean, the red flowerbed, the purple flowerbed, the yellow flowerbed or the white flowerbed?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1054"/>
+    </children>
+  </item>
+  <item nodeId="node-1054">
+    <command xml:space="preserve">take red flower</command>
+    <result xml:space="preserve">You picked up a red flower.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1055"/>
+    </children>
+  </item>
+  <item nodeId="node-1055">
+    <command xml:space="preserve">take purple flower</command>
+    <result xml:space="preserve">You picked up a purple flower.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1056"/>
+    </children>
+  </item>
+  <item nodeId="node-1056">
+    <command xml:space="preserve">take white flower</command>
+    <result xml:space="preserve">You picked up a white flower.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1057"/>
+    </children>
+  </item>
+  <item nodeId="node-1057">
+    <command xml:space="preserve">take yellow flower</command>
+    <result xml:space="preserve">You picked up a yellow flower.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1058"/>
+    </children>
+  </item>
+  <item nodeId="node-1058">
+    <command xml:space="preserve">eat</command>
+    <result xml:space="preserve">What do you want to eat?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1059"/>
+    </children>
+  </item>
+  <item nodeId="node-1059">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a yellow flower&#x000A;  a white flower&#x000A;  a purple flower&#x000A;  a red flower&#x000A;  an aria&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1060"/>
+    </children>
+  </item>
+  <item nodeId="node-1060">
+    <command xml:space="preserve">eat yellow flower</command>
+    <result xml:space="preserve">That's plainly inedible.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1061"/>
+    </children>
+  </item>
+  <item nodeId="node-1061">
+    <command xml:space="preserve">eat aria</command>
+    <result xml:space="preserve">That's plainly inedible.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1062"/>
+    </children>
+  </item>
+  <item nodeId="node-1062">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Secret Garden&#x000A;You find yourself in the Secret Garden, a vibrant haven where nature's palette is on full display. Four flowerbeds burst with color: red, purple, yellow, and white, each a riot of blossoms. To your right, a row of golden amphorae, exuding a sweet, intoxicating perfume, gleams in the sunlight. At the garden's heart stands an enormous willow tree, its ancient trunk hollowed by time, providing a natural cavity within its embrace. Beneath its sprawling branches lies a serene lake, its shore full with delicate sea shells. On the eastern edge of the garden, a heavy gate that seems to lead to the next room, though its form is almost hidden by a tangle of vines and blooms. Nearby, a statue of a strikingly beautiful man stands as if guarding the garden's secrets.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1063"/>
+    </children>
+  </item>
+  <item nodeId="node-1063">
+    <command xml:space="preserve">x sign</command>
+    <result xml:space="preserve">The inscription on it reads: For now, the solution is clear: A &gt; red, B &gt; purple, &#x0393;&gt; yellow, &#x0394;&gt;white.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1064"/>
+    </children>
+  </item>
+  <item nodeId="node-1064">
+    <command xml:space="preserve">eat sign</command>
+    <result xml:space="preserve">That's plainly inedible.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1065"/>
+    </children>
+  </item>
+  <item nodeId="node-1065">
+    <command xml:space="preserve">x statue</command>
+    <result xml:space="preserve">You can see a marble sign on the statue's base. His right hand looks like it could be holding something but there's nothing there.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1066"/>
+    </children>
+  </item>
+  <item nodeId="node-1066">
+    <command xml:space="preserve">eat hand</command>
+    <result xml:space="preserve">That's plainly inedible.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1067"/>
+    </children>
+  </item>
+  <item nodeId="node-1067">
+    <command xml:space="preserve">put red flower in hand</command>
+    <result xml:space="preserve">You place the red flower in the statue's right hand.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1068"/>
+    </children>
+  </item>
+  <item nodeId="node-1068">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a yellow flower&#x000A;  a white flower&#x000A;  a purple flower&#x000A;  an aria&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1069"/>
+    </children>
+  </item>
+  <item nodeId="node-1069">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Secret Garden&#x000A;You find yourself in the Secret Garden, a vibrant haven where nature's palette is on full display. Four flowerbeds burst with color: red, purple, yellow, and white, each a riot of blossoms. To your right, a row of golden amphorae, exuding a sweet, intoxicating perfume, gleams in the sunlight. At the garden's heart stands an enormous willow tree, its ancient trunk hollowed by time, providing a natural cavity within its embrace. Beneath its sprawling branches lies a serene lake, its shore full with delicate sea shells. On the eastern edge of the garden, a heavy gate that seems to lead to the next room, though its form is almost hidden by a tangle of vines and blooms. Nearby, a statue of a strikingly beautiful man stands as if guarding the garden's secrets.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1070"/>
+    </children>
+  </item>
+  <item nodeId="node-1070">
+    <command xml:space="preserve">x amphorae</command>
+    <result xml:space="preserve">There are 4 amphorae placed in a line, making inspecting them easier. They are ceramic and on them are depicted scenes painted with thin strokes of golden paint, showcasing excelent craftstmanship. The scenes portray the proccess of perfume making.&#x000A; You notice that all of them are a bit dusty, but one - the one on the right.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1071"/>
+    </children>
+  </item>
+  <item nodeId="node-1071">
+    <command xml:space="preserve">tkae amphorae on the right</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1072"/>
+    </children>
+  </item>
+  <item nodeId="node-1072">
+    <command xml:space="preserve">take amphora on the right</command>
+    <result xml:space="preserve">It's too heavy for you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1073"/>
+    </children>
+  </item>
+  <item nodeId="node-1073">
+    <command xml:space="preserve">take shiny amphora</command>
+    <result xml:space="preserve">It's too heavy for you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1074"/>
+    </children>
+  </item>
+  <item nodeId="node-1074">
+    <command xml:space="preserve">x shiny amphora</command>
+    <result xml:space="preserve">Looking more closely, this amphora depicts a scene of women picking roses. Looking from a bit further, the roses seem to shape a &#x0393;.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1075"/>
+    </children>
+  </item>
+  <item nodeId="node-1075">
+    <command xml:space="preserve">x sign</command>
+    <result xml:space="preserve">The inscription on it reads: For now, the solution is clear: A &gt; red, B &gt; purple, &#x0393;&gt; yellow, &#x0394;&gt;white.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1076"/>
+    </children>
+  </item>
+  <item nodeId="node-1076">
+    <command xml:space="preserve">put yellow flower in amphora</command>
+    <result xml:space="preserve">You put the yellow flower into the shiny amphora.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1077"/>
+    </children>
+  </item>
+  <item nodeId="node-1077">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a white flower&#x000A;  a purple flower&#x000A;  an aria&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1078"/>
+    </children>
+  </item>
+  <item nodeId="node-1078">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Secret Garden&#x000A;You find yourself in the Secret Garden, a vibrant haven where nature's palette is on full display. Four flowerbeds burst with color: red, purple, yellow, and white, each a riot of blossoms. To your right, a row of golden amphorae, exuding a sweet, intoxicating perfume, gleams in the sunlight. At the garden's heart stands an enormous willow tree, its ancient trunk hollowed by time, providing a natural cavity within its embrace. Beneath its sprawling branches lies a serene lake, its shore full with delicate sea shells. On the eastern edge of the garden, a heavy gate that seems to lead to the next room, though its form is almost hidden by a tangle of vines and blooms. Nearby, a statue of a strikingly beautiful man stands as if guarding the garden's secrets.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1079"/>
+    </children>
+  </item>
+  <item nodeId="node-1079">
+    <command xml:space="preserve">x lake</command>
+    <result xml:space="preserve">It's a beautiful lake full of colourfull water lilies.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1080"/>
+    </children>
+  </item>
+  <item nodeId="node-1080">
+    <command xml:space="preserve">take water lilly</command>
+    <result xml:space="preserve">I only understood you as far as wanting to take the water lily.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1081"/>
+    </children>
+  </item>
+  <item nodeId="node-1081">
+    <command xml:space="preserve">take water lily</command>
+    <result xml:space="preserve">You picked up a water lily.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1082"/>
+    </children>
+  </item>
+  <item nodeId="node-1082">
+    <command xml:space="preserve">eat water lily</command>
+    <result xml:space="preserve">That's plainly inedible.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1083"/>
+    </children>
+  </item>
+  <item nodeId="node-1083">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a water lily&#x000A;  a white flower&#x000A;  a purple flower&#x000A;  an aria&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1084"/>
+    </children>
+  </item>
+  <item nodeId="node-1084">
+    <command xml:space="preserve">x water lily</command>
+    <result xml:space="preserve">It's a cute pink flower.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1085"/>
+    </children>
+  </item>
+  <item nodeId="node-1085">
+    <command xml:space="preserve">take water lily</command>
+    <result xml:space="preserve">It would be a shame to remove more of those beautiful flowers. Frogs sleep in them!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1086"/>
+    </children>
+  </item>
+  <item nodeId="node-1086">
+    <command xml:space="preserve">take frog</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1087"/>
+    </children>
+  </item>
+  <item nodeId="node-1087">
+    <command xml:space="preserve">x lake</command>
+    <result xml:space="preserve">It's a beautiful lake full of colourfull water lilies.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1088"/>
+    </children>
+  </item>
+  <item nodeId="node-1088">
+    <command xml:space="preserve">go in lake</command>
+    <result xml:space="preserve">You can't. All you can see is dirty water.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1089"/>
+    </children>
+  </item>
+  <item nodeId="node-1089">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You can't go down from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1090"/>
+    </children>
+  </item>
+  <item nodeId="node-1090">
+    <command xml:space="preserve">swim in lake</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1091"/>
+    </children>
+  </item>
+  <item nodeId="node-1091">
+    <command xml:space="preserve">take dirty water</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1092"/>
+    </children>
+  </item>
+  <item nodeId="node-1092">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Secret Garden&#x000A;You find yourself in the Secret Garden, a vibrant haven where nature's palette is on full display. Four flowerbeds burst with color: red, purple, yellow, and white, each a riot of blossoms. To your right, a row of golden amphorae, exuding a sweet, intoxicating perfume, gleams in the sunlight. At the garden's heart stands an enormous willow tree, its ancient trunk hollowed by time, providing a natural cavity within its embrace. Beneath its sprawling branches lies a serene lake, its shore full with delicate sea shells. On the eastern edge of the garden, a heavy gate that seems to lead to the next room, though its form is almost hidden by a tangle of vines and blooms. Nearby, a statue of a strikingly beautiful man stands as if guarding the garden's secrets.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1093"/>
+    </children>
+  </item>
+  <item nodeId="node-1093">
+    <command xml:space="preserve">x lake</command>
+    <result xml:space="preserve">It's a beautiful lake full of colourfull water lilies.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1094"/>
+    </children>
+  </item>
+  <item nodeId="node-1094">
+    <command xml:space="preserve">x sea shell</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1095"/>
+    </children>
+  </item>
+  <item nodeId="node-1095">
+    <command xml:space="preserve">x sea shells</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-508">
     <command xml:space="preserve">x puzzle gate</command>
@@ -466,6 +915,30 @@
   <item nodeId="node-486">
     <command xml:space="preserve">test me</command>
     <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] look&#x000A;Secret Garden&#x000A;You are in the Secret Garden&#x000A;&#x000A;You find yourself before a beautiful flowerbed with vibrant red flowers.&#x000A;&#x000A;You find yourself before a beautiful flowerbed with vibrant purple flowers.&#x000A;&#x000A;You find yourself before a beautiful flowerbed with vibrant yellow flowers.&#x000A;&#x000A;You find yourself before a beautiful flowerbed with vibrant white flowers.&#x000A;&#x000A;You can also see a puzzle gate, a statue, a container B (empty), a container C (empty) and a container D (empty) here.&#x000A;&#x000A;&gt;[2] put red flower in hands&#x000A;(first taking the red flower)&#x000A;You picked up a red flower.&#x000A;&#x000A;You put the red flower into the hands.&#x000A;&#x000A;&gt;[3] put purple flower in b&#x000A;(first taking the purple flower)&#x000A;You picked up a purple flower.&#x000A;&#x000A;You put the purple flower into the container B.&#x000A;&#x000A;&gt;[4] put yellow flower in c&#x000A;(first taking the yellow flower)&#x000A;You picked up a yellow flower.&#x000A;&#x000A;You put the yellow flower into the container C.&#x000A;&#x000A;&gt;[5] put white flower in d&#x000A;(the container D)&#x000A;(first taking the white flower)&#x000A;You picked up a white flower.&#x000A;&#x000A;You put the white flower into the container D.&#x000A;&#x000A;&gt;[6] look&#x000A;Secret Garden&#x000A;You are in the Secret Garden&#x000A;&#x000A;You find yourself before a beautiful flowerbed with vibrant red flowers.&#x000A;&#x000A;You find yourself before a beautiful flowerbed with vibrant purple flowers.&#x000A;&#x000A;You find yourself before a beautiful flowerbed with vibrant yellow flowers.&#x000A;&#x000A;You find yourself before a beautiful flowerbed with vibrant white flowers.&#x000A;&#x000A;You can also see a puzzle gate, a statue, a container B (in which is a purple flower), a container C (in which is a yellow flower) and a container D (in which is a white flower) here.&#x000A;&#x000A;&gt;[7] east&#x000A;&#x000A;Divine Cell 4&#x000A;You see the gods sleeping&#x000A;&#x000A;You can see a puzzle gate, Aphrodite and Hephaestus here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1023">
+    <command xml:space="preserve">actions</command>
+    <result xml:space="preserve">Actions listing on.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1024"/>
+    </children>
+  </item>
+  <item nodeId="node-1024">
+    <command xml:space="preserve">show actions</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1025"/>
+    </children>
+  </item>
+  <item nodeId="node-1025">
+    <command xml:space="preserve">pick up red flower</command>
+    <result xml:space="preserve">[taking the red flower]&#x000A;You picked up a red flower.&#x000A;[taking the red flower - succeeded]&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -1337,12 +1810,28 @@
   </item>
   <item nodeId="node-954">
     <command xml:space="preserve">x lake</command>
-    <result xml:space="preserve">Poseidon's Power flows through your vains. You can clearly see an underwather path. You wonder if it actuallly leads you where you should be.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Poseidon's Power flows through your vains. You can clearly see an underwather path. You wonder if it actually leads you where you should be.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
+      <child nodeId="node-967"/>
       <child nodeId="node-955"/>
     </children>
+  </item>
+  <item nodeId="node-967">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You look at the lake. Maybe you can go down through there.&#x000A;&#x000A;You swim through the waters.&#x000A;&#x000A;You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-968"/>
+    </children>
+  </item>
+  <item nodeId="node-968">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Secret Garden&#x000A;You are in the Secret Garden. You can see red, purple, yellow and white flowers planted in some flowerbeds. In your right you can see some golden amphorae. In the middle of the garden you see an enormous tree with a cavity in the middle. You see lake with shells in the shore. A heavy looking gate that seems to lead to the next room is on the eastern side of the garden, its view mostly obstructed by vines and flowers. In the garden you see a statue of a beautiful man.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-955">
     <command xml:space="preserve">enter lake</command>
@@ -1398,6 +1887,12 @@
   <item nodeId="node-552">
     <command xml:space="preserve">go in gate</command>
     <result xml:space="preserve">Divine Cell 4&#x000A;You see the gods sleeping&#x000A;&#x000A;You can see a puzzle gate, Aphrodite and Hephaestus here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1046">
+    <command xml:space="preserve">eat red flower</command>
+    <result xml:space="preserve">Yuck. Why would you make me eat that Ema?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -1781,6 +2276,39 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-958">
+    <command xml:space="preserve">get in amphora</command>
+    <result xml:space="preserve">You don't think you will fit there.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-959"/>
+    </children>
+  </item>
+  <item nodeId="node-959">
+    <command xml:space="preserve">take amphora</command>
+    <result xml:space="preserve">It's too heavy for you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-960"/>
+    </children>
+  </item>
+  <item nodeId="node-960">
+    <command xml:space="preserve">smell amphorae</command>
+    <result xml:space="preserve">They smell of flower extracts and herbs.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-961"/>
+    </children>
+  </item>
+  <item nodeId="node-961">
+    <command xml:space="preserve">smell amphora</command>
+    <result xml:space="preserve">It smells of flower extracts and herbs.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-655">
     <command xml:space="preserve">go in lake</command>
     <result xml:space="preserve">You can't. All you can see is dirty water.&#x000A;&#x000A;&gt;</result>
@@ -1802,7 +2330,167 @@
   </item>
   <item nodeId="node-747">
     <command xml:space="preserve">go in lake</command>
-    <result xml:space="preserve">You swim through the waters.&#x000A;&#x000A;Divine Cell 4&#x000A;You see the gods sleeping&#x000A;&#x000A;You see a lake.&#x000A;&#x000A;A heavy looking gate that seems to lead to the next room is on the eastern side of the garden, its view obstructed by vines and flowers.&#x000A;&#x000A;You can also see Aphrodite and Hephaestus here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You swim through the waters.&#x000A;&#x000A;You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-962"/>
+      <child nodeId="node-969"/>
+    </children>
+  </item>
+  <item nodeId="node-962">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You look at the lake. Maybe you can go down through there.&#x000A;&#x000A;You swim through the waters.&#x000A;&#x000A;You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-963"/>
+    </children>
+  </item>
+  <item nodeId="node-963">
+    <command xml:space="preserve">x lake</command>
+    <result xml:space="preserve">Poseidon's Power flows through your vains. You can clearly see an underwather path. You wonder if it actually leads you where you should be.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-964"/>
+    </children>
+  </item>
+  <item nodeId="node-964">
+    <command xml:space="preserve">go lake</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-965"/>
+    </children>
+  </item>
+  <item nodeId="node-965">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You look at the lake. Maybe you can go down through there.&#x000A;&#x000A;You swim through the waters.&#x000A;&#x000A;You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-966"/>
+    </children>
+  </item>
+  <item nodeId="node-966">
+    <command xml:space="preserve">open lake</command>
+    <result xml:space="preserve">You swim through the waters.&#x000A;&#x000A;You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-969">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Secret Garden&#x000A;You are in the Secret Garden. You can see red, purple, yellow and white flowers planted in some flowerbeds. In your right you can see some golden amphorae. In the middle of the garden you see an enormous tree with a cavity in the middle. You see lake with shells in the shore. A heavy looking gate that seems to lead to the next room is on the eastern side of the garden, its view mostly obstructed by vines and flowers. In the garden you see a statue of a beautiful man.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-970"/>
+    </children>
+  </item>
+  <item nodeId="node-970">
+    <command xml:space="preserve">x lake</command>
+    <result xml:space="preserve">Poseidon's Power flows through your vains. You can clearly see an underwather path. You wonder if it actually leads you where you should be.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-971"/>
+    </children>
+  </item>
+  <item nodeId="node-971">
+    <command xml:space="preserve">look lake</command>
+    <result xml:space="preserve">Poseidon's Power flows through your vains. You can clearly see an underwather path. You wonder if it actually leads you where you should be.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-972"/>
+    </children>
+  </item>
+  <item nodeId="node-972">
+    <command xml:space="preserve">is lake open?</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-973"/>
+    </children>
+  </item>
+  <item nodeId="node-973">
+    <command xml:space="preserve">check lake open</command>
+    <result xml:space="preserve">I only understood you as far as wanting to check the lake.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-974"/>
+    </children>
+  </item>
+  <item nodeId="node-974">
+    <command xml:space="preserve">check lake</command>
+    <result xml:space="preserve">Poseidon's Power flows through your vains. You can clearly see an underwather path. You wonder if it actually leads you where you should be.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-975"/>
+    </children>
+  </item>
+  <item nodeId="node-975">
+    <command xml:space="preserve">show me lake</command>
+    <result xml:space="preserve">(first taking the lake)&#x000A;That's fixed in place.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-976"/>
+    </children>
+  </item>
+  <item nodeId="node-976">
+    <command xml:space="preserve">showme lake</command>
+    <result xml:space="preserve">lake - open door&#x000A;location: in the Secret Garden&#x000A;unlit, inedible, fixed in place, handled; open, unopenable, unlocked; singular-named, improper-named&#x000A;description: none&#x000A;initial appearance: none&#x000A;leading-through destination: &lt;routine 215723&gt;&#x000A;printed name: "lake"&#x000A;printed plural name: "doors"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-977"/>
+    </children>
+  </item>
+  <item nodeId="node-977">
+    <command xml:space="preserve">go in lake</command>
+    <result xml:space="preserve">You swim through the waters.&#x000A;&#x000A;You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-978"/>
+    </children>
+  </item>
+  <item nodeId="node-978">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-979"/>
+    </children>
+  </item>
+  <item nodeId="node-979">
+    <command xml:space="preserve">down</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-980"/>
+    </children>
+  </item>
+  <item nodeId="node-980">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a red flower&#x000A;  an aria&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-981"/>
+    </children>
+  </item>
+  <item nodeId="node-981">
+    <command xml:space="preserve">showme lake</command>
+    <result xml:space="preserve">lake - open door&#x000A;location: in the Secret Garden&#x000A;unlit, inedible, fixed in place, handled; open, unopenable, unlocked; singular-named, improper-named&#x000A;description: none&#x000A;initial appearance: none&#x000A;leading-through destination: &lt;routine 215723&gt;&#x000A;printed name: "lake"&#x000A;printed plural name: "doors"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -5832,7 +6520,34 @@
   </item>
   <item nodeId="node-791">
     <command xml:space="preserve">put aria in red flowerbed</command>
-    <result xml:space="preserve">You plant the aria into the red flowerbed&#x000A;&gt;</result>
+    <result xml:space="preserve">You can't burry that here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1026"/>
+    </children>
+  </item>
+  <item nodeId="node-1026">
+    <command xml:space="preserve">take red flower</command>
+    <result xml:space="preserve">You picked up a red flower.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1027"/>
+    </children>
+  </item>
+  <item nodeId="node-1027">
+    <command xml:space="preserve">put flower in red flowerbed</command>
+    <result xml:space="preserve">Which do you mean, a red flower, a purple flower, a yellow flower or a white flower?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1028"/>
+    </children>
+  </item>
+  <item nodeId="node-1028">
+    <command xml:space="preserve">put red flower in red flowerbed</command>
+    <result xml:space="preserve">You plant the red flower into the red flowerbed&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -6085,13 +6800,20 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-1022">
+    <command xml:space="preserve">take 3 red flowers</command>
+    <result xml:space="preserve">red flower: You picked up a red flower.&#x000A;red flower: You picked up a red flower.&#x000A;red flower: You picked up a red flower.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-173">
     <command xml:space="preserve">take flower</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Which do you mean, a red flower, a purple flower, a yellow flower or a white flower?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-174"/>
+      <child nodeId="node-982"/>
     </children>
   </item>
   <item nodeId="node-174">
@@ -6106,6 +6828,156 @@
   <item nodeId="node-175">
     <command xml:space="preserve">take flowerkind</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-982">
+    <command xml:space="preserve">x lake</command>
+    <result xml:space="preserve">It's a beautiful lake full of colourfull waterlilies.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-983"/>
+    </children>
+  </item>
+  <item nodeId="node-983">
+    <command xml:space="preserve">take red flower</command>
+    <result xml:space="preserve">You picked up a red flower.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-984"/>
+    </children>
+  </item>
+  <item nodeId="node-984">
+    <command xml:space="preserve">x lake</command>
+    <result xml:space="preserve">Poseidon's Power flows through your vains. You can clearly see an underwather path. You wonder if it actually leads you where you should be.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-985"/>
+    </children>
+  </item>
+  <item nodeId="node-985">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-986"/>
+    </children>
+  </item>
+  <item nodeId="node-986">
+    <command xml:space="preserve">go in lake</command>
+    <result xml:space="preserve">You swim through the waters.&#x000A;&#x000A;You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-987"/>
+    </children>
+  </item>
+  <item nodeId="node-987">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">Throne Room&#x000A;Home to the King of Paphos, Cinyras.&#x000A;&#x000A;You can see Cinyras here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-988"/>
+    </children>
+  </item>
+  <item nodeId="node-988">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Agora of Paphos&#x000A;The main square of Paphos.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-989"/>
+    </children>
+  </item>
+  <item nodeId="node-989">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Throne Room&#x000A;Home to the King of Paphos, Cinyras.&#x000A;&#x000A;You can see Cinyras here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-990"/>
+    </children>
+  </item>
+  <item nodeId="node-990">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-991"/>
+    </children>
+  </item>
+  <item nodeId="node-991">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">Secret Garden&#x000A;You are in the Secret Garden. You can see red, purple, yellow and white flowers planted in some flowerbeds. In your right you can see some golden amphorae. In the middle of the garden you see an enormous tree with a cavity in the middle. You see lake with shells in the shore. A heavy looking gate that seems to lead to the next room is on the eastern side of the garden, its view mostly obstructed by vines and flowers. In the garden you see a statue of a beautiful man.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-992"/>
+    </children>
+  </item>
+  <item nodeId="node-992">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-993"/>
+    </children>
+  </item>
+  <item nodeId="node-993">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-994"/>
+    </children>
+  </item>
+  <item nodeId="node-994">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-995"/>
+    </children>
+  </item>
+  <item nodeId="node-995">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-996"/>
+    </children>
+  </item>
+  <item nodeId="node-996">
+    <command xml:space="preserve">showme gate</command>
+    <result xml:space="preserve">puzzle gate - closed door&#x000A;location: in the Secret Garden&#x000A;unlit, inedible, fixed in place; closed, unopenable, unlocked; singular-named, improper-named&#x000A;description: none&#x000A;initial appearance: none&#x000A;leading-through destination: &lt;routine 215633&gt;&#x000A;printed name: "puzzle gate"&#x000A;printed plural name: "doors"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-997"/>
+    </children>
+  </item>
+  <item nodeId="node-997">
+    <command xml:space="preserve">open gate</command>
+    <result xml:space="preserve">It isn't something you can open.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-998"/>
+    </children>
+  </item>
+  <item nodeId="node-998">
+    <command xml:space="preserve">unlock gate</command>
+    <result xml:space="preserve">What do you want to unlock the puzzle gate with?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -6140,6 +7012,7 @@
     <changed>NO</changed>
     <children>
       <child nodeId="node-617"/>
+      <child nodeId="node-999"/>
       <child nodeId="node-614"/>
       <child nodeId="node-950"/>
     </children>
@@ -6147,6 +7020,129 @@
   <item nodeId="node-617">
     <command xml:space="preserve">put red flower in red flowerbed</command>
     <result xml:space="preserve">You plant the red flower into the red flowerbed&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-999">
+    <command xml:space="preserve">showme</command>
+    <result xml:space="preserve">Secret Garden - room&#x000A;    lake - closed door&#x000A;    puzzle gate - closed door&#x000A;    yourself - woman&#x000A;        red flower - red flower&#x000A;        aria&#x000A;    vines&#x000A;    blooms&#x000A;    red flowerbed - open container&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;    purple flowerbed - open container&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;    yellow flowerbed - open container&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;    white flowerbed - open container&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;    statue&#x000A;        sign (part of statue)&#x000A;        hand (part of statue) - transparent open container&#x000A;    pile of shells&#x000A;    conch shell - open container&#x000A;    golden amphorae&#x000A;    shiny amphora - open container&#x000A;    hollow tree&#x000A;        tree cavity (part of hollow tree) - open container&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1000"/>
+    </children>
+  </item>
+  <item nodeId="node-1000">
+    <command xml:space="preserve">x lake</command>
+    <result xml:space="preserve">Poseidon's Power flows through your vains. You can clearly see an underwather path. You wonder if it actually leads you where you should be.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1001"/>
+    </children>
+  </item>
+  <item nodeId="node-1001">
+    <command xml:space="preserve">showme lake</command>
+    <result xml:space="preserve">lake - open door&#x000A;location: in the Secret Garden&#x000A;unlit, inedible, fixed in place; open, unopenable, unlocked; singular-named, improper-named&#x000A;description: none&#x000A;initial appearance: none&#x000A;leading-through destination: &lt;routine 215796&gt;&#x000A;printed name: "lake"&#x000A;printed plural name: "doors"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1002"/>
+    </children>
+  </item>
+  <item nodeId="node-1002">
+    <command xml:space="preserve">enter lake</command>
+    <result xml:space="preserve">You swim through the waters.&#x000A;&#x000A;You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1003"/>
+    </children>
+  </item>
+  <item nodeId="node-1003">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a red flower&#x000A;  an aria&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1004"/>
+    </children>
+  </item>
+  <item nodeId="node-1004">
+    <command xml:space="preserve">showme</command>
+    <result xml:space="preserve">Secret Garden - room&#x000A;    lake - open door&#x000A;    puzzle gate - closed door&#x000A;    yourself - woman&#x000A;        red flower - red flower&#x000A;        aria&#x000A;    vines&#x000A;    blooms&#x000A;    red flowerbed - open container&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;        red flower - red flower&#x000A;    purple flowerbed - open container&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;        purple flower - purple flower&#x000A;    yellow flowerbed - open container&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;        yellow flower - yellow flower&#x000A;    white flowerbed - open container&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;        white flower - white flower&#x000A;    statue&#x000A;        sign (part of statue)&#x000A;        hand (part of statue) - transparent open container&#x000A;    pile of shells&#x000A;    conch shell - open container&#x000A;    golden amphorae&#x000A;    shiny amphora - open container&#x000A;    hollow tree&#x000A;        tree cavity (part of hollow tree) - open container&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1005"/>
+    </children>
+  </item>
+  <item nodeId="node-1005">
+    <command xml:space="preserve">showme lake</command>
+    <result xml:space="preserve">lake - open door&#x000A;location: in the Secret Garden&#x000A;unlit, inedible, fixed in place; open, unopenable, unlocked; singular-named, improper-named&#x000A;description: none&#x000A;initial appearance: none&#x000A;leading-through destination: &lt;routine 215796&gt;&#x000A;printed name: "lake"&#x000A;printed plural name: "doors"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1006"/>
+    </children>
+  </item>
+  <item nodeId="node-1006">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You look at the lake. Maybe you can go down through there.&#x000A;&#x000A;You swim through the waters.&#x000A;&#x000A;You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1007"/>
+    </children>
+  </item>
+  <item nodeId="node-1007">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Secret Garden&#x000A;You are in the Secret Garden. You can see red, purple, yellow and white flowers planted in some flowerbeds. In your right you can see some golden amphorae. In the middle of the garden you see an enormous tree with a cavity in the middle. You see lake with shells in the shore. A heavy looking gate that seems to lead to the next room is on the eastern side of the garden, its view mostly obstructed by vines and flowers. In the garden you see a statue of a beautiful man.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1008"/>
+    </children>
+  </item>
+  <item nodeId="node-1008">
+    <command xml:space="preserve">test 1</command>
+    <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] put red flower in hand&#x000A;You place the red flower in the statue's right hand.&#x000A;&#x000A;&gt;[2] put purple flower in conch shell&#x000A;(first taking the purple flower)&#x000A;You picked up a purple flower.&#x000A;&#x000A;You put the purple flower into the conch shell.&#x000A;&#x000A;&gt;[3] put yellow flower in shiny amphora&#x000A;(first taking the yellow flower)&#x000A;You picked up a yellow flower.&#x000A;&#x000A;You put the yellow flower into the shiny amphora.&#x000A;&#x000A;&gt;[4] put white flower in tree cavity&#x000A;(first taking the white flower)&#x000A;You picked up a white flower.&#x000A;&#x000A;You put the white flower into the tree cavity.&#x000A;&#x000A;You hear the sound of the gate opening&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1009"/>
+    </children>
+  </item>
+  <item nodeId="node-1009">
+    <command xml:space="preserve">x gate</command>
+    <result xml:space="preserve">The puzzle gate is now open.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1010"/>
+    </children>
+  </item>
+  <item nodeId="node-1010">
+    <command xml:space="preserve">go in gate</command>
+    <result xml:space="preserve">Divine Cell 4&#x000A;devine cell 4 description TODO&#x000A;&#x000A;You can see Aphrodite and Hephaestus here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1011"/>
+    </children>
+  </item>
+  <item nodeId="node-1011">
+    <command xml:space="preserve">showme gate</command>
+    <result xml:space="preserve">puzzle gate - open door&#x000A;location: in Divine Cell 4&#x000A;unlit, inedible, fixed in place, scenery; open, unopenable, unlocked; singular-named, improper-named&#x000A;description: none&#x000A;initial appearance: none&#x000A;leading-through destination: &lt;routine 215706&gt;&#x000A;printed name: "puzzle gate"&#x000A;printed plural name: "doors"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1012"/>
+    </children>
+  </item>
+  <item nodeId="node-1012">
+    <command xml:space="preserve">go e</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -6255,6 +7251,108 @@
   <item nodeId="node-603">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:&#x000A;  ten red flowers&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1037">
+    <command xml:space="preserve">take water lilies</command>
+    <result xml:space="preserve">You picked up a water lily.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1038"/>
+    </children>
+  </item>
+  <item nodeId="node-1038">
+    <command xml:space="preserve">take more</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1039"/>
+    </children>
+  </item>
+  <item nodeId="node-1039">
+    <command xml:space="preserve">take water lilies</command>
+    <result xml:space="preserve">It would be a shame to remove more of those beautiful flowers. Frogs sleep in them!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1040"/>
+    </children>
+  </item>
+  <item nodeId="node-1040">
+    <command xml:space="preserve">x</command>
+    <result xml:space="preserve">What do you want to examine?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1041"/>
+    </children>
+  </item>
+  <item nodeId="node-1041">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1042"/>
+    </children>
+  </item>
+  <item nodeId="node-1042">
+    <command xml:space="preserve">x lily</command>
+    <result xml:space="preserve">It smells good.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1043"/>
+    </children>
+  </item>
+  <item nodeId="node-1043">
+    <command xml:space="preserve">x statue</command>
+    <result xml:space="preserve">You can see a marble sign on the statue's base. His right hand looks like it could be holding something but there's nothing there.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1032">
+    <command xml:space="preserve">take water lily</command>
+    <result xml:space="preserve">You picked up a water lily.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1033"/>
+    </children>
+  </item>
+  <item nodeId="node-1033">
+    <command xml:space="preserve">take water lily</command>
+    <result xml:space="preserve">It would be a shame to remove more of those beautiful flowers. Frogs sleep in them!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1034"/>
+    </children>
+  </item>
+  <item nodeId="node-1034">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a water lily&#x000A;  an aria&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1035"/>
+    </children>
+  </item>
+  <item nodeId="node-1035">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Secret Garden&#x000A;You are in the Secret Garden. You can see red, purple, yellow and white flowers planted in some flowerbeds. In your right you can see some golden amphorae placed in a line. In the middle of the garden you see an enormous tree with a cavity in the middle. You see lake with shells in the shore. A heavy looking gate that seems to lead to the next room is on the eastern side of the garden, its view mostly obstructed by vines and blooms. In the garden you see a statue of a beautiful man.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1036"/>
+    </children>
+  </item>
+  <item nodeId="node-1036">
+    <command xml:space="preserve">take water lilies</command>
+    <result xml:space="preserve">It would be a shame to remove more of those beautiful flowers. Frogs sleep in them!&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -6591,6 +7689,84 @@
   <item nodeId="node-89">
     <command xml:space="preserve">ask Heracles about how is his day</command>
     <result xml:space="preserve">There is no reply.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1013">
+    <command xml:space="preserve">test 1</command>
+    <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] put red flower in hand&#x000A;You place the red flower in the statue's right hand.&#x000A;&#x000A;&gt;[2] put purple flower in conch shell&#x000A;(first taking the purple flower)&#x000A;You picked up a purple flower.&#x000A;&#x000A;You put the purple flower into the conch shell.&#x000A;&#x000A;&gt;[3] put yellow flower in shiny amphora&#x000A;(first taking the yellow flower)&#x000A;You picked up a yellow flower.&#x000A;&#x000A;You put the yellow flower into the shiny amphora.&#x000A;&#x000A;&gt;[4] put white flower in tree cavity&#x000A;(first taking the white flower)&#x000A;You picked up a white flower.&#x000A;&#x000A;You put the white flower into the tree cavity.&#x000A;&#x000A;You hear the sound of the gate opening&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1014"/>
+    </children>
+  </item>
+  <item nodeId="node-1014">
+    <command xml:space="preserve">showme gate</command>
+    <result xml:space="preserve">puzzle gate - open door&#x000A;location: in the Secret Garden&#x000A;unlit, inedible, fixed in place, scenery; open, unopenable, unlocked; singular-named, improper-named&#x000A;description: none&#x000A;initial appearance: none&#x000A;leading-through destination: &lt;routine 215706&gt;&#x000A;printed name: "puzzle gate"&#x000A;printed plural name: "doors"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1015"/>
+    </children>
+  </item>
+  <item nodeId="node-1015">
+    <command xml:space="preserve">go e</command>
+    <result xml:space="preserve">Divine Cell 4&#x000A;devine cell 4 description TODO&#x000A;&#x000A;You can see Aphrodite and Hephaestus here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1016"/>
+    </children>
+  </item>
+  <item nodeId="node-1016">
+    <command xml:space="preserve">go w</command>
+    <result xml:space="preserve">Secret Garden&#x000A;You are in the Secret Garden. You can see red, purple, yellow and white flowers planted in some flowerbeds. In your right you can see some golden amphorae. In the middle of the garden you see an enormous tree with a cavity in the middle. You see lake with shells in the shore. A heavy looking gate that seems to lead to the next room is on the eastern side of the garden, its view mostly obstructed by vines and flowers. In the garden you see a statue of a beautiful man.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1017"/>
+    </children>
+  </item>
+  <item nodeId="node-1017">
+    <command xml:space="preserve">x lake</command>
+    <result xml:space="preserve">It's a beautiful lake full of colourfull water lilies.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1018"/>
+    </children>
+  </item>
+  <item nodeId="node-1018">
+    <command xml:space="preserve">go in lake</command>
+    <result xml:space="preserve">You can't. All you can see is dirty water.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1019"/>
+    </children>
+  </item>
+  <item nodeId="node-1019">
+    <command xml:space="preserve">go d</command>
+    <result xml:space="preserve">You can't go down from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1020"/>
+    </children>
+  </item>
+  <item nodeId="node-1020">
+    <command xml:space="preserve">take red flower</command>
+    <result xml:space="preserve">You picked up a red flower.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1021"/>
+    </children>
+  </item>
+  <item nodeId="node-1021">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You look at the lake. Maybe you can go down through there.&#x000A;&#x000A;You swim through the waters.&#x000A;&#x000A;Divine Cell 4&#x000A;devine cell 4 description TODO&#x000A;&#x000A;You can see Aphrodite and Hephaestus here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -7925,7 +9101,7 @@
   </item>
   <item nodeId="node-768">
     <command xml:space="preserve">x lake</command>
-    <result xml:space="preserve">Poseidon's Power flows through your vains. You can clearly see an underwather path. You wonder if it actuallly leads you where you should be.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Poseidon's Power flows through your vains. You can clearly see an underwather path. You wonder if it actually leads you where you should be.&#x000A;&#x000A;You see nothing special about the lake.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -7962,6 +9138,21 @@
   <item nodeId="node-772">
     <command xml:space="preserve">d</command>
     <result xml:space="preserve">You can't go down from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1030">
+    <command xml:space="preserve">x lily</command>
+    <result xml:space="preserve">They smell good&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1031"/>
+    </children>
+  </item>
+  <item nodeId="node-1031">
+    <command xml:space="preserve">pick up lily</command>
+    <result xml:space="preserve">That's fixed in place.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -8162,6 +9353,21 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-1044">
+    <command xml:space="preserve">x tree</command>
+    <result xml:space="preserve">(the weeping willow)&#x000A;It's a majestic weeping willow tree. You notice it has a cavity in the middle.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1045"/>
+    </children>
+  </item>
+  <item nodeId="node-1045">
+    <command xml:space="preserve">x tree</command>
+    <result xml:space="preserve">(the hollow tree)&#x000A;It's a majestic weeping willow tree. You notice it has a cavity in the middle.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-794">
     <command xml:space="preserve">x vines</command>
     <result xml:space="preserve">They're just some vines&#x000A;&gt;</result>
@@ -8174,6 +9380,12 @@
   <item nodeId="node-795">
     <command xml:space="preserve">x gate</command>
     <result xml:space="preserve">The puzzle gate is tightly closed.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1029">
+    <command xml:space="preserve">x water lily</command>
+    <result xml:space="preserve">They smell smells&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
