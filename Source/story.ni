@@ -192,11 +192,9 @@ A yellow flowerbed is in the Secret Garden. The yellow flowerbed is fixed in pla
 A white flowerbed is in the Secret Garden. The white flowerbed is fixed in place. It is undescribed.
 
 [Adonis Flowers]
-A red flower is a kind of plant. [The colour of red flower is red.] The description of red flower is "This is an Adonis Flower.[if HasDemeterBoon is true]It is said to signify painful memories.". The smell of the red flower is good. It is edible.
+A red flower is a kind of plant. [The colour of red flower is red.] The description of red flower is "This is an Adonis Flower.[if HasDemeterBoon is true]It is said to signify painful memories.". The smell of the red flower is good. 
 Understand "adonis flower" as red flower.
 
-Instead of eating a red flower:
-	say "Yuck. Why would you make me eat that Ema?".
 
 [Amaranthos Flowers]
 A purple flower is a kind of plant. [The colour of red flower is red.] The description of purple flower is "This is an Amaranthos Flower.[if HasDemeterBoon is true]It is said to signify unfading love." The smell of the purple flower is good.
