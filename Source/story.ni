@@ -91,7 +91,7 @@ The Secret Garden is down of the Throne Room and west of the puzzle gate.
 The Divine Cell 4 is east of the puzzle gate. [TODO: change the name of the divine cell]
 
 
-
+[comment TBD]
 
 [doors/gates]
 
