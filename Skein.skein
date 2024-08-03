@@ -3,7 +3,7 @@
   <generator>Windows Inform 10.1.2</generator>
   <item nodeId="node-0">
     <command xml:space="preserve">Hebe</command>
-    <result xml:space="preserve">mia fora kai enan kairo...&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 240802 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Secret Garden&#x000A;You find yourself in the Secret Garden, a vibrant haven where nature's palette is on full display. Four flowerbeds burst with color: red, purple, yellow, and white, each a riot of blossoms. To your right, a row of golden amphorae, exuding a sweet, intoxicating perfume, gleams in the sunlight. At the garden's heart stands an enormous willow tree, its ancient trunk hollowed by time, providing a natural cavity within its embrace. Beneath its sprawling branches lies a serene lake, its shore full with delicate sea shells. On the eastern edge of the garden, a heavy gate that seems to lead to the next room, though its form is almost hidden by a tangle of vines and blooms. Nearby, a statue of a strikingly beautiful man stands as if guarding the garden's secrets.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">mia fora kai enan kairo...&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 240803 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Secret Garden&#x000A;You find yourself in the Secret Garden, a vibrant haven where nature's palette is on full display. Four flowerbeds burst with color: red, purple, yellow, and white, each a riot of blossoms. To your right, a row of golden amphorae, exuding a sweet, intoxicating perfume, gleams in the sunlight. At the garden's heart stands an enormous willow tree, its ancient trunk hollowed by time, providing a natural cavity within its embrace. Beneath its sprawling branches lies a serene lake, its shore full with delicate sea shells. On the eastern edge of the garden, a heavy gate that seems to lead to the next room, though its form is almost hidden by a tangle of vines and blooms. Nearby, a statue of a strikingly beautiful man stands as if guarding the garden's secrets.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -7740,11 +7740,45 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
+      <child nodeId="node-1177"/>
       <child nodeId="node-617"/>
       <child nodeId="node-999"/>
       <child nodeId="node-614"/>
       <child nodeId="node-950"/>
     </children>
+  </item>
+  <item nodeId="node-1177">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a red flower&#x000A;  an aria&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1178"/>
+    </children>
+  </item>
+  <item nodeId="node-1178">
+    <command xml:space="preserve">go in lake</command>
+    <result xml:space="preserve">You can't. All you can see is dirty water.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1179"/>
+    </children>
+  </item>
+  <item nodeId="node-1179">
+    <command xml:space="preserve">x lake</command>
+    <result xml:space="preserve">Poseidon's Power flows through your vains. You can clearly see an underwather path. You wonder if it actually leads you where you should be.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1180"/>
+    </children>
+  </item>
+  <item nodeId="node-1180">
+    <command xml:space="preserve">go in lake</command>
+    <result xml:space="preserve">You swim through the waters.&#x000A;&#x000A;Divine Cell 4&#x000A;devine cell 4 description TODO&#x000A;&#x000A;You can see Aphrodite and Hephaestus here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-617">
     <command xml:space="preserve">put red flower in red flowerbed</command>

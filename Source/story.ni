@@ -1,5 +1,14 @@
 "Hebe" by Marina Diagourta
 
+Chapter 0.00 - TODOs|TBDs
+
+[Everything TBD should be commented or deleted]
+
+
+[TODO: fix descriptions of Secret Garden]
+
+
+
 Chapter 0.0 - Regions
 
 [Regions]
@@ -24,11 +33,11 @@ A smell is a kind of value. The smells are amazing, good, neutral and bad. The s
 Chapter 0.21 - Variables
 
 [Chapter 2 - Demeter & Poseidon]
-HasDemeterBoon is a truth state that varies. HasDemeterBoon is true. [If the player has Demeter's boon, HasDemeterBoon is true]
+HasDemeterBoon is a truth state that varies. HasDemeterBoon is false. [If the player has Demeter's boon, HasDemeterBoon is true]
 HasPoseidonBoon is a truth state that varies. HasPoseidonBoon is false. [If the player has Poseidon's boon, HasPoseidonBoon is true]
 
 [Chapter 4 - Aphrodite & Hephaestus]
-FlowerPuzzleSolved is a truth state that varies. FlowerPuzzleSolved is false. [if flower puzzle is solved or not]
+FlowerPuzzleSolved is a truth state that varies. FlowerPuzzleSolved is false. [if flower puzzle in SG is solved or not]
 
 Chapter 0.22 -  Kinds
 
@@ -93,16 +102,16 @@ Divine Cell 4 is a room in Palace of Paphos. "devine cell 4 description TODO".
 
 The Port of Paphos is east of the Agora of Paphos.
 The Agora of Paphos is east of the Throne Room.
-The Secret Garden is down of the Throne Room and west of the puzzle gate.
-The Divine Cell 4 is east of the puzzle gate. [TODO: change the name of the divine cell]
+The Secret Garden is down of the Throne Room and west of the gate.
+The Divine Cell 4 is east of the gate. [TODO: change the name of the divine cell]
 
 
 [doors/gates]
 
-[Secret Garden to Divine Cell 4]
-The puzzle gate is east of the Secret Garden and west of the Divine Cell 4. The puzzle gate is a closed unopenable door. The puzzle gate is a scenery. 
+[Secret Garden to Divine Cell 4 by door]
+The gate is east of the Secret Garden and west of the Divine Cell 4. The gate is a closed unopenable door. The  gate is a scenery. 
 
-[lake]
+[Secret Garden to Divine Cell 4 by lake]
 
 The lake is down of the Secret garden and up of the Divine Cell 4. The lake is a closed unopenable door. The lake is a scenery. 
 
@@ -115,7 +124,7 @@ Instead of examining the lake: [TODO: fix description]
 		say "It's a beautiful lake full of colourfull water lilies.". 
 		
 
-Understand "go in [lake]" or "enter [lake]" as opening. [TODO:only be able togo down if you have examined the lake]
+Understand "go in [lake]" or "enter [lake]" as opening. 
 
 
 Instead of going down when the player is in the secret garden:
@@ -139,18 +148,19 @@ Instead of opening the lake :
 		stop the action;
 		
 	
-[TBD]
+[Test for lake TBD]
+[
 Every turn:
 	if a red flower is carried by the player:
 		now HasPoseidonBoon is true;
 	otherwise:
 		now HasPoseidonBoon is false.
-		
+		]
 	
 
 [Items]
-[test item]
-An aria is a thing carried by the player.
+[test item TBD]
+[An aria is a thing carried by the player.]
 
 [items described]
 A vine is a thing in the Secret Garden. It is undescribed. It is fixed in place. The plural of vine is vines.
@@ -318,23 +328,23 @@ Instead of smelling the golden amphorae:
 	stop the action.
 	
 
-Understand "amphora" or "clean amphora" or "shining amphora" or "golden amphora" or "amphora on the right" or "right amphora" as shiny amphora.
+Understand "amphora" or "clean amphora" or "shining amphora" or "golden amphora" or "right amphora" as amphora on the right.
 
-A shiny amphora is a container in the Secret Garden. It is fixed in place. The carrying capacity of shiny amphora  is 1. It is undescribed. 
+An amphora on the right is a container in the Secret Garden. It is fixed in place. The carrying capacity of amphora on the right  is 1. It is undescribed. 
 
-Instead of examining the shiny amphora:
+Instead of examining the amphora on the right:
 	say "Looking more closely, this amphora depicts a scene of women picking roses. Looking from a bit further, the roses seem to shape a Γ.";
 	stop the action.
 	
-Instead of entering the shiny amphora:
+Instead of entering the amphora on the right:
 	say "You don't think you will fit there.";
 	stop the action.
 	
-Instead of taking the shiny amphora:
+Instead of taking the amphora on the right:
 	say "It's too heavy for you.";
 	stop the action.
 	
-Instead of smelling the shiny amphora:
+Instead of smelling the amphora on the right:
 	say "It smells of flower extracts and herbs.";
 	stop the action.
 
@@ -362,38 +372,38 @@ Instead of examining the tree cavity:
 Every turn:
 	if a red flower is in the hand and
 	   a purple flower is in conch shell and
-	   a yellow flower is in shiny amphora and
+	   a yellow flower is in amphora on the right and
 	   a white flower is in tree cavity :
 		now FlowerPuzzleSolved is true;
 	otherwise:
 		now FlowerPuzzleSolved is false.
 
 
-Instead of examining the puzzle gate:
+Instead of examining the gate:
 	if FlowerPuzzleSolved is true:
-		say "The puzzle gate is now open.";
+		say "The gate is now open.";
 	otherwise:
-		say "The puzzle gate is tightly closed."	
+		say "The gate is tightly closed."	
 		
-Instead of going in the puzzle gate:
+Instead of going in the gate:
 	if FlowerPuzzleSolved is true:
-		say "The puzzle gate is now open.";
+		say "The gate is now open.";
 		try entering gate;
 	otherwise:
-		say "The puzzle gate is tightly closed."
+		say "The gate is tightly closed."
 
 Every turn:
 	If FlowerPuzzleSolved is true for the first turn:
 		say "You hear the sound of the gate opening";
-		now the puzzle gate is open;
+		now the gate is open;
 	otherwise if FlowerPuzzleSolved is false for the first turn:
 		say "You hear the sound of the gate closing.";
-		now the puzzle gate is closed;
+		now the gate is closed;
 		
-[		
-Test 1 with "put red flower in hand/ put purple flower in conch shell / put yellow flower in shiny amphora  / put white flower in tree cavity ".
-test 2 with "put red flower in hand /x hand/take red flower from hand/x hand".
-]
+		
+Test solutionSG with "put red flower in hand/ put purple flower in conch shell / put yellow flower in amphora on the right  / put white flower in tree cavity ".
+test SG2 with "put red flower in hand /x hand/take red flower from hand/x hand".
+
 
 [Characters]
 Cinyras is a man in the Throne Room.
