@@ -109,7 +109,7 @@ The lake is down of the Secret garden and up of the Divine Cell 4. The lake is a
 Instead of examining the lake: [TODO: fix description]
 	if HasPoseidonBoon is true:
 		now the lake is open;
-		[now the lake is handled;] 
+		now the lake is handled;
 		say "Poseidon's Power flows through your vains. You can clearly see an underwather path. You wonder if it actually leads you where you should be.";
 	otherwise:
 		say "It's a beautiful lake full of colourfull water lilies.". 
@@ -128,7 +128,7 @@ Instead of going down when the player is in the secret garden:
 		stop the action.
 
 Instead of opening the lake :
-	if HasPoseidonBoon is true:
+	if HasPoseidonBoon is true and the lake is handled:
 		now the lake is open;
 		say "You swim through the waters.";
 		try entering the lake;

@@ -7,7 +7,7 @@ Using Inform kit 'EnglishLanguageKit' (priority 1).
 Using Inform kit 'WorldModelKit' (priority 2).
 Using Inform kit 'CommandParserKit' (priority 3).
 756 Preform nonterminals read from C:\Users\User\OneDrive\Desktop\Thesis\Inform\Internal\Languages\English\Syntax.preform
-I've now read your source text, which is 2373 words long.
+I've now read your source text, which is 2364 words long.
 Included: core, naming, instance counting, interactive fiction, spatial model, backdrops, bibliographic data, chronology, devices, mapping, persons, player, regions, scenes, scoring, timed rules, times of day, actions, going, command, showme, multimedia, figures, sounds, glulx external files
 Excluded: 
 I've also read Basic Inform by Graham Nelson, which is 7691 words long.
@@ -95,7 +95,7 @@ Phase X ... Phrases and rules
 Phase XI ... Generating inter (1)
 -----------------------------------------------------
 
-.... RTKindConstructors__compile() took 6cs
+.... RTKindConstructors__compile() took 7cs
 
 
 -----------------------------------------------------
@@ -116,7 +116,7 @@ Phase XII ... Generating inter (2)
 Phase XIII ... Generating inter (3)
 -----------------------------------------------------
 
-.... Sequence__undertake_queued_tasks() took 128cs
+.... Sequence__undertake_queued_tasks() took 126cs
 .... Sequence__undertake_queued_tasks() took 1cs
 .... RTPhrasebook__compile_entries() took 2cs
 
@@ -199,12 +199,12 @@ Compile CPU time: 172 centiseconds
 
 ==== Phase XVII.11 ... step 11/15: eliminate-redundant-labels ====
 
-1952 redundant label(s) removed
+1950 redundant label(s) removed
 
 
 ==== Phase XVII.12 ... step 12/15: eliminate-redundant-operations ====
 
-696 redundant operation(s) removed
+694 redundant operation(s) removed
 
 
 ==== Phase XVII.13 ... step 13/15: optionally-generate text ->  ====
@@ -272,7 +272,7 @@ HTML tag stack:
     2. html (opened at line 236 of 'D:/Programs/Adv/Inform7/Distribution/inweb/foundation-module/Chapter 5/HTML.w')
 
 
-Back end elapsed time: 101cs
+Back end elapsed time: 103cs
 Total of 97 files written as streams.
 Vacant escapes: %: ..CDE.GH..K.M.O.QR.TU...YZab..e..h.jklm.o.qr......yz0123456789
 Vacant escapes: $: .....F...J..........UVW.....................s.u..x.........789
