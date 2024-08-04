@@ -4,6 +4,8 @@ Chapter 0.00 - TODOs|TBDs
 
 [Everything TBD should be commented or deleted]
 
+[All rooms start and end with Start Off [room name] and End Of [room name]]
+
 
 [TODO: fix descriptions of Secret Garden]
 
@@ -12,8 +14,14 @@ Chapter 0.00 - TODOs|TBDs
 Chapter 0.0 - Regions
 
 [Regions]
+
 [Greece]
-Mountain Olympus is a region. 
+Greece is a region.
+Mountain Olympus is a region in Greece. 
+Athens is a region in Greece.
+Sounio is a region in Greece.
+Thebes is a region in Greece.
+
 [Cyprus]
 Cyprus is a region.
 Palace of Paphos is a region in Cyprus.
@@ -28,11 +36,14 @@ Chapter 0.20 - Values
 
 [ colour]
 A colour is a kind of value. The colours are white, red, purple and yellow.
-A smell is a kind of value. The smells are amazing, good, neutral and bad. The smell is usually neutral.
+A smell is a kind of value. The smells are amazing, good, neutral and bad. The smell is usually neutral. [TODO: Give a smell to everything]
+
 
 Chapter 0.21 - Variables
 
+
 [Chapter 2 - Demeter & Poseidon]
+AmphitriteIsCalm is a truth state that varies. AmphitriteIsCalm is true. [Is the player calmed down Amphitrite]
 HasDemeterBoon is a truth state that varies. HasDemeterBoon is false. [If the player has Demeter's boon, HasDemeterBoon is true]
 HasPoseidonBoon is a truth state that varies. HasPoseidonBoon is false. [If the player has Poseidon's boon, HasPoseidonBoon is true]
 
@@ -46,18 +57,26 @@ Chapter 0.22 -  Kinds
 A plant is a kind of thing. A plant has a colour. A plant has a smell. 
 
 
+
 Chapter 0.3 - Either/Or
 
 [either/or]
 
 [empty/full]
-[A container can be empty or full. A container is usually empty.
-If something is in the container
-	now the container is full.
-	Otherwise
-	now the container is empty.]
+Definition: A container is empty if nothing is in it. 
+Definition: A container is full if [carrying capacity of container] things are in it.
 
-Chapter 1 - Tutorial 1 
+
+
+
+Chapter 0.4 - Rules
+
+[persons have name rule]
+A person has some text called a name. 
+
+
+
+Chapter 0 - Tutorial 1 
 
 When play begins: say "mia fora kai enan kairo...".
 [
@@ -85,10 +104,68 @@ Instead of telling someone about something, try asking the noun about it. Instea
 Instead of asking Heracles about "how he's doing", say "'Feeling amazing my dear!'".
 ]
 
+Chapter 2 - Demeter & Poseidon
+
+[region: Sounio]
+
+[rooms]
+The Sounio Beach is a room in Sounio. "Description of Sounio beach. You see some nereides fighting.".
+The Temple of Poseidon is a room in Sounio. "Description of temple of poseidon."
+
+
+[doors]
+The sea is south of the sounio beach and up of the temple of poseidon. It is an unopenable closed door. It is a scenery. 
+The sounio beach is north of the sea. The temple of poseidon is down of the sea.
+[characters]
+Some nereides are in the sounio beach. Nereides are women. [It is undescribed.]
+
+Aktaia, Erato and Ploto are women in the Sounio beach. [They are undescribed.]
+
+The angry nereida is a woman in the sounio beach.  The name of angry nereida is "Amphitrite". The angry nereida can be calm or furious. The angry nereida is calm. [She is undescribed.][TODO: make it so you know her name after she is introduced]
+
+Instead of examining angry nereida:
+	[say "her name is [the name of the noun].";]
+	stop the action.
+
+[TODO: Battle with  Amphitrite]
+
+[TODO: true only after battle with amphitrite]
+The player is carrying an aria.
+
+Every turn:
+	If the angry nereida is calm:
+		now AmphitriteIsCalm is true;
+	otherwise:
+		now AmphitriteIsCalm is false.
+
+Understand "to temple" as south when the player is in the sounio beach.
+
+Instead of going south in the Sounio Beach:
+	if AmphitriteIsCalm is true:
+		now the sea is open;
+		try entering the sea;
+	otherwise:
+		say "The temple looks like it's too deep. You can't go there with no help.";
+		stop the action.
+	
+Instead of entering the sea:
+	if AmphitriteIsCalm is true:
+		now the sea is open;
+		say "The nereides agree to take you to the sunken Temple .";
+		continue the action;
+	otherwise if AmphitriteIsCalm is false:
+		say "The temple looks like it's too deep. You can't go there with no help.";
+		stop the action.
+
+
+
+
 Chapter 4 - Aphrodite & Hephaestus
 
-The player is inside the Secret Garden.
+[region: Cyprus]
 
+[When i want to test Cyprus]
+[The player is inside the Secret Garden.]
 
 [Rooms]
 Port of Paphos is a room in Cyprus. "The main port of the city of Paphos. From here you can travel abroad.".
@@ -107,6 +184,8 @@ The Divine Cell 4 is east of the gate. [TODO: change the name of the divine cell
 
 
 [doors/gates]
+
+[Start Of Secret Garden]
 
 [Secret Garden to Divine Cell 4 by door]
 The gate is east of the Secret Garden and west of the Divine Cell 4. The gate is a closed unopenable door. The  gate is a scenery. 
@@ -190,7 +269,7 @@ Instead of taking a water lily:
 [Flowerbeds]
 
 [red]
-A red flowerbed is in the Secret Garden. The red flowerbed is fixed in place. It is undescribed.
+A red flowerbed is in the Secret Garden. The red flowerbed is fixed in place. It is undescribed. [TODO: instead of examining flowerbeds]
 
 [purple]
 A purple flowerbed is in the Secret Garden. The purple flowerbed is fixed in place. It is undescribed.
@@ -279,10 +358,10 @@ A sign is a thing. The sign is fixed in place. The sign is part of the statue. T
 
 
 
-[container A | Hand]
+[container A | Hand] [BUG: containers refers to hands]
 Understand "right hand" or "hands" as hand.
 
-The hand is a transparent container. The hand is part of the statue. The hand is fixed in place. The carrying capacity of the hand is 1. The hand is unopenable.
+The hand is a transparent container. The hand is part of the statue. The hand is fixed in place. The carrying capacity of the hand is 1. The hand is unopenable. The plural of hand is hands.
 
 Instead of inserting a thing into the hand:
 	say "You place the [noun] in the statue's right hand."; 
@@ -365,7 +444,7 @@ A tree cavity is a container. It is part of the weeping willow. It is fixed in p
 Understand "cavity" as the tree cavity.
 
 Instead of examining the tree cavity:
-	say "The cavity itself is shaped like a Δ.";
+	say "The cavity itself is shaped like a Δ."; [TODO: make better description]
 	stop the action.
 
 [puzzle solution]
@@ -404,6 +483,9 @@ Every turn:
 Test solutionSG with "put red flower in hand/ put purple flower in conch shell / put yellow flower in amphora on the right  / put white flower in tree cavity ".
 test SG2 with "put red flower in hand /x hand/take red flower from hand/x hand".
 
+[End Of Secret Garden]
+
+[Divine Cell 4]
 
 [Characters]
 Cinyras is a man in the Throne Room.
