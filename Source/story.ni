@@ -30,13 +30,29 @@ Chapter 0.1 - Player Initialize
 
 The player is a woman called Hebe. The carrying capacity of the player is 10.
 
-Chapter 0.20 - Values
+Chapter 0.20 - Kinds & Values
 
 [values]
 
-[ colour]
+[colour]
 A colour is a kind of value. The colours are white, red, purple and yellow.
+
+[smell]
 A smell is a kind of value. The smells are amazing, good, neutral and bad. The smell is usually neutral. [TODO: Give a smell to everything]
+
+[ring face]
+A ring face is a kind of value. The ring faces are blank, spring, summer, fall and winter. A ring face is usually blank.
+
+[kinds]
+
+[definition of plant]
+A plant is a kind of thing. The plural of plant is plants. A plant has a colour. A plant has a smell. 
+
+[definition of ring]
+A ring is a kind of  thing. The plural of ring is rings. A ring has a ring face.
+
+[definition of dragon teeth][seed]
+A seed is a kind of thing. The plural of seed is seeds.
 
 
 Chapter 0.21 - Variables
@@ -51,12 +67,6 @@ HasPoseidonBoon is a truth state that varies. HasPoseidonBoon is false. [If the 
 
 [Chapter 4 - Aphrodite & Hephaestus]
 FlowerPuzzleSolved is a truth state that varies. FlowerPuzzleSolved is false. [if flower puzzle in SG is solved or not]
-
-Chapter 0.22 -  Kinds
-
-[definition of plant]
-
-A plant is a kind of thing. A plant has a colour. A plant has a smell. 
 
 
 
@@ -76,6 +86,15 @@ Chapter 0.4 - Rules
 [persons have name rule]
 A person has some text called a name. 
 
+
+
+Chapter 0.5 - Actions
+
+[rotating]
+
+Rotating is an action applying to one thing. Understand "rotate [any thing] clockwise" or "rotate the [any thing] clockwise" or "rotate clockwise the [any thing]" or "rotate the [any thing] to the left" or "rotate [any thing] to the left" as rotating.
+
+Antirotating is an action applying to one thing. Understand "rotate [any thing] anticlockwise" or "rotate the [any thing] anticlockwise" or "rotate anticlockwise the [any thing]" or "rotate [any thing] counterclockwise" or "rotate the [any thing] counterclockwise" or "rotate counterclockwise the [any thing]"or "rotate the [any thing] to the right" or "rotate [any thing] to the right" as antirotating. [TODO: put help for the player about which way to rotate]
 
 
 Chapter 0 - Tutorial 1 
@@ -106,17 +125,71 @@ Instead of telling someone about something, try asking the noun about it. Instea
 Instead of asking Heracles about "how he's doing", say "'Feeling amazing my dear!'".
 ]
 
+Chapter 1- Athena & Ares
+
+[region: Thebes]
+
+[rooms]
+
+Cadmea is a room in Thebes. "on the walls you can see the story of cadmus, who slayed the Dragon of Ismenus and burried his teeth for the Spartoi to sprink from the ground. In front of you is a stone dragon statue, and a big chess board with some chess pieces already on top."
+Divine Cell 1 is a room in Thebes. 
+
+The player is in Cadmea.
+
+[doors]
+
+The dvgate is down of cadmea and up of divine cell 1. The dvgate is a closed unopenable door. [TODO: It is a scenery.] The dvgate is down from the cadmea and up from divine cell 1.
+
+[items]
+
+Understand "statue" as dragon statue when the player is in Cadmea.
+
+A rock is a thing in the Cadmea. [TODO: it is undescribed.]
+
+Α dragon statue is a thing in the Cadmea. It is fixed in place. [TODO: It is undescribed.] 
+
+The dragon head is part of the dragon statue. The dragon head is a supporter. [It is undescribed.] [TODO: if rock on dragon head, dragon mouth is open]
+
+A dragon mouth is part of the dragon statue. The  dragon mouth is an openable closed container. "dragon mouth.".
+
+A dragon tooth is a kind of seed. The plural of dragon tooth is dragon teeth. There are 5 dragon teeth inside the dragon mouth. 
+
+Every turn:
+	If the rock is on the dragon head:
+		now the dragon mouth is open;
+	otherwise:
+		now the dragon mouth is closed.
+
+Every turn:
+	If the dragon mouth is open for the first turn:
+		say "The statue's mouth opened.";
+		now the dragon mouth is open;
+	otherwise if the dragon mouth is closed for the first turn:
+		say "The statue's mouth closed";
+		now the dragon mouth  is closed;
+
+Instead of examining the dragon statue:
+	say "[If the dragon mouth is open] You see [number of seeds inside the dragon mouth] tooth inside the statue's mouth.[otherwise]The statue's mouth is closed.";
+	stop the action.
+
+
+
+
+
+
 Chapter 2 - Demeter & Poseidon
 
 [region: Sounio]
 
 [rooms]
-The Sounio Beach is a room in Sounio. "Description of Sounio beach. You see some nereides fighting.".
+The Sounio Beach is a room in Sounio. "Description of Sounio beach. You see some nereides fighting. Poseidon's temple is in the sea.". [TODO: understand temple of poseidon as poseidons temple]
 The Poseidon's Temple is a room in Sounio. It is up of the temple door."You see a coloumn with 4 rotatable discs. The discs have 5 faces, 4 of them with a picture and one empty. The pictures are the same on each disc and they are in order: Budding olives and fresh green leaves, Green olives growing in size, with fuller leaves, Ripe, darkening olives ready for harvest, some fallen to the ground and Bare branches with a few remaining leaves, the tree in a state of dormancy. The faces towards the altar are all empty."
 The Divine Cell 2 is a room in Sounio. The Divine Cell 2 is down of the temple door. "You see the gods.". [TODO: change name of divine cell]
 
 
 [sounio beach]
+
+[The player is in Sounio beach.]
 
 [doors]
 The sea is south of the sounio beach and up of the Poseidon's Temple. It is an unopenable closed door. It is a scenery. 
@@ -126,13 +199,14 @@ Some nereides are in the sounio beach. Nereides are women. [It is undescribed.]
 
 Aktaia, Erato and Ploto are women in the Sounio beach. [They are undescribed.]
 
-The angry nereida is a woman in the sounio beach.  The name of angry nereida is "Amphitrite". The angry nereida can be calm or furious. The angry nereida is calm. [She is undescribed.][TODO: make it so you know her name after she is introduced]
+The angry nereida is a woman in the sounio beach.  The name of angry nereida is "Amphitrite". The angry nereida can be calm or fighting. The angry nereida is calm. [She is undescribed.][TODO: make it so you know her name after she is introduced]
 
 Instead of examining angry nereida:
 	[say "her name is [the name of the noun].";]
 	stop the action.
 
 [TODO: Battle with  Amphitrite]
+
 
 [TODO: angry nereida is calm after battle with amphitrite]
 
@@ -165,23 +239,16 @@ Instead of entering the sea:
 
 [poseidons temple]
 
-The player is in Poseidon's Temple.
+[The player is in Poseidon's Temple.]
 
 [doors]
 
 The temple door is a door down of the poseidon's temple and up of the divine cell 2. It is a closed unopenable door.
 
-A ring is a kind of  thing. 
-A ring face is a kind of value. The ring faces are blank, spring, summer, fall and winter. [A ring face is usually blank.]
-A ring has a ring face.
-
 Instead of examining a ring:
 	say "Its face shows [ring face of noun].";
 	stop the action;
 	
-
-Rotating is an action applying to one thing. Understand "rotate [any thing] clockwise" or "rotate clockwise the [any thing]" or "rotate the [any thing] to the left" as rotating.
-Antirotating is an action applying to one thing. Understand "rotate [any thing] anticlockwise" or "rotate anticlockwise the [any thing]" or "rotate [any thing] counterclockwise" or "rotate counterclockwise the [any thing]"or "rotate the [any thing] to the right" as antirotating. [TODO: put help for the player about which way to rotate]
 	
 [clockwise rotation]
 After rotating a ring :
@@ -229,15 +296,11 @@ After antirotating a ring :
 		say "Now its face shows [ring face of noun].";
 		continue the action.
 
-An altar is in poseidon's temple. "Altar."
+An altar is in poseidon's temple. "Altar." It is fixed in place.
 
 A column is a supporter in poseidon's temple. "Column that faces the altar."
 
-top ring, second ring, third ring and bottom ring are rings on the column.
-
-
-
-
+top ring, second ring, third ring and bottom ring are rings on the column. Top ring, second ring, third ring and bottom ring are fixed in place.
 
 
 [puzzle of poseidon temple]
@@ -273,6 +336,8 @@ Every turn:
 		now the temple door  is closed;
 		
 test POS with "rotate the top ring anticlockwise/rotate the second ring anticlockwise/rotate the second ring anticlockwise/rotate the third ring anticlockwise/rotate the third ring anticlockwise/rotate the third ring anticlockwise/rotate the bottom ring anticlockwise/rotate the bottom ring anticlockwise/rotate the bottom ring anticlockwise/rotate the bottom ring anticlockwise".
+[end of poseidon's temple]
+
 [divine cell 2]
 
 [characters]
@@ -470,19 +535,21 @@ Instead of smelling a plant:
 	say "It smells [smell of the noun].".
 
 [Statue of Adonis]
-The statue is a thing in the Secret Garden. The statue is fixed in place. It is undescribed.
+The man statue is a thing in the Secret Garden. The man statue is fixed in place. It is undescribed.
 
-Instead of examining the statue, say "You can see a marble sign on the statue's base. [if something is inside the hand]You can see he's holding [a list of things inside the hand] in his right hand.[otherwise]His right hand looks like it could be holding something but there's nothing there.". 
+Understand "statue" as man statue when the player is in the secret garden.
+
+Instead of examining the man statue, say "You can see a marble sign on the statue's base. [if something is inside the hand]You can see he's holding [a list of things inside the hand] in his right hand.[otherwise]His right hand looks like it could be holding something but there's nothing there.". 
 
 [The Sign]
-A sign is a thing. The sign is fixed in place. The sign is part of the statue. The description of the sign is "The inscription on it reads: For now, the solution is clear: A > red, B > purple, Γ> yellow, Δ>white.". [TODO: fix sign according to poem]
+A sign is a thing. The sign is fixed in place. The sign is part of the man statue. The description of the sign is "The inscription on it reads: For now, the solution is clear: A > red, B > purple, Γ> yellow, Δ>white.". [TODO: fix sign according to poem]
 
 
 
 [container A | Hand] [BUG: containers refers to hands]
 Understand "right hand" or "hands" as hand.
 
-The hand is a transparent container. The hand is part of the statue. The hand is fixed in place. The carrying capacity of the hand is 1. The hand is unopenable. The plural of hand is hands.
+The hand is a transparent container. The hand is part of the man statue. The hand is fixed in place. The carrying capacity of the hand is 1. The hand is unopenable. The plural of hand is hands.
 
 Instead of inserting a thing into the hand:
 	say "You place the [noun] in the statue's right hand."; 
@@ -607,6 +674,8 @@ test SG2 with "put red flower in hand /x hand/take red flower from hand/x hand".
 [End Of Secret Garden]
 
 [Divine Cell 4]
+
+[TODO: Battle with  Talos]
 
 [Characters]
 Cinyras is a man in the Throne Room.

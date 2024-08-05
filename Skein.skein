@@ -3,7 +3,7 @@
   <generator>Windows Inform 10.1.2</generator>
   <item nodeId="node-0">
     <command xml:space="preserve">Hebe</command>
-    <result xml:space="preserve">mia fora kai enan kairo...&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 240805 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Poseidon's Temple&#x000A;You see a coloumn with 4 rotatable discs. The discs have 5 faces, 4 of them with a picture and one empty. The pictures are the same on each disc and they are in order: Budding olives and fresh green leaves, Green olives growing in size, with fuller leaves, Ripe, darkening olives ready for harvest, some fallen to the ground and Bare branches with a few remaining leaves, the tree in a state of dormancy. The faces towards the altar are all empty.&#x000A;&#x000A;Altar.&#x000A;&#x000A;Column that faces the altar.&#x000A;&#x000A;On the column are top ring, second ring, third ring and bottom ring.&#x000A;&#x000A;You can also see a temple door here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">mia fora kai enan kairo...&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 240805 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Cadmea&#x000A;on the walls you can see the story of cadmus, who slayed the Dragon of Ismenus and burried his teeth for the Spartoi to sprink from the ground. In front of you is a stone dragon statue, and a big chess board with some chess pieces already on top.&#x000A;&#x000A;You can see a dvgate, a rock and dragon statue here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -58,6 +58,8 @@
       <child nodeId="node-1194"/>
       <child nodeId="node-1181"/>
       <child nodeId="node-1214"/>
+      <child nodeId="node-1378"/>
+      <child nodeId="node-1301"/>
       <child nodeId="node-807"/>
       <child nodeId="node-802"/>
       <child nodeId="node-804"/>
@@ -3554,17 +3556,88 @@
   </item>
   <item nodeId="node-398">
     <command xml:space="preserve">l</command>
-    <result xml:space="preserve">Secret Garden&#x000A;You are in the Secret Garden. You can see red, purple, yellow and white flowers planted in some flowerbeds. In your right you can see some golden amphorae. In the middle of the garden you see an enormous tree with a cavity in the middle&#x000A;&#x000A;You see a lake. On its shore you see some seashells.&#x000A;&#x000A;A heavy looking gate that seems to lead to the next room is on the eastern side of the garden, its view mostly obstructed by vines and flowers.&#x000A;&#x000A;In the garden you see a statue of a beautiful man.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Sounio Beach&#x000A;Description of Sounio beach. You see some nereides fighting. Poseidon's temple is in the sea.&#x000A;&#x000A;You can see some nereides, Aktaia, Erato, Ploto and an angry nereida here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
+      <child nodeId="node-1305"/>
       <child nodeId="node-399"/>
       <child nodeId="node-660"/>
       <child nodeId="node-808"/>
+      <child nodeId="node-1313"/>
       <child nodeId="node-820"/>
       <child nodeId="node-748"/>
       <child nodeId="node-621"/>
     </children>
+  </item>
+  <item nodeId="node-1305">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1306"/>
+    </children>
+  </item>
+  <item nodeId="node-1306">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1307"/>
+    </children>
+  </item>
+  <item nodeId="node-1307">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1308"/>
+    </children>
+  </item>
+  <item nodeId="node-1308">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1309"/>
+    </children>
+  </item>
+  <item nodeId="node-1309">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">The nereides agree to take you to the sunken Temple.&#x000A;&#x000A;Poseidon's Temple&#x000A;You see a coloumn with 4 rotatable discs. The discs have 5 faces, 4 of them with a picture and one empty. The pictures are the same on each disc and they are in order: Budding olives and fresh green leaves, Green olives growing in size, with fuller leaves, Ripe, darkening olives ready for harvest, some fallen to the ground and Bare branches with a few remaining leaves, the tree in a state of dormancy. The faces towards the altar are all empty.&#x000A;&#x000A;Altar.&#x000A;&#x000A;Column that faces the altar.&#x000A;&#x000A;On the column are top ring, second ring, third ring and bottom ring.&#x000A;&#x000A;You can also see a temple door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1310"/>
+    </children>
+  </item>
+  <item nodeId="node-1310">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">(first opening the temple door)&#x000A;It isn't something you can open.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1311"/>
+    </children>
+  </item>
+  <item nodeId="node-1311">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1312"/>
+    </children>
+  </item>
+  <item nodeId="node-1312">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">Sounio Beach&#x000A;Description of Sounio beach. You see some nereides fighting. Poseidon's temple is in the sea.&#x000A;&#x000A;You can see some nereides, Aktaia, Erato, Ploto and an angry nereida here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-399">
     <command xml:space="preserve">examine red flowerbed</command>
@@ -5021,6 +5094,588 @@
   <item nodeId="node-819">
     <command xml:space="preserve">take flowers</command>
     <result xml:space="preserve">red flower: You picked up a red flower.&#x000A;red flower: You picked up a red flower.&#x000A;red flower: You picked up a red flower.&#x000A;red flower: You picked up a red flower.&#x000A;red flower: You picked up a red flower.&#x000A;red flower: You picked up a red flower.&#x000A;red flower: You picked up a red flower.&#x000A;red flower: You picked up a red flower.&#x000A;red flower: You're carrying too many things already.&#x000A;red flower: You're carrying too many things already.&#x000A;purple flower: You're carrying too many things already.&#x000A;purple flower: You're carrying too many things already.&#x000A;purple flower: You're carrying too many things already.&#x000A;purple flower: You're carrying too many things already.&#x000A;purple flower: You're carrying too many things already.&#x000A;purple flower: You're carrying too many things already.&#x000A;purple flower: You're carrying too many things already.&#x000A;purple flower: You're carrying too many things already.&#x000A;purple flower: You're carrying too many things already.&#x000A;purple flower: You're carrying too many things already.&#x000A;yellow flower: You're carrying too many things already.&#x000A;yellow flower: You're carrying too many things already.&#x000A;yellow flower: You're carrying too many things already.&#x000A;yellow flower: You're carrying too many things already.&#x000A;yellow flower: You're carrying too many things already.&#x000A;yellow flower: You're carrying too many things already.&#x000A;yellow flower: You're carrying too many things already.&#x000A;yellow flower: You're carrying too many things already.&#x000A;yellow flower: You're carrying too many things already.&#x000A;yellow flower: You're carrying too many things already.&#x000A;white flower: You're carrying too many things already.&#x000A;white flower: You're carrying too many things already.&#x000A;white flower: You're carrying too many things already.&#x000A;white flower: You're carrying too many things already.&#x000A;white flower: You're carrying too many things already.&#x000A;white flower: You're carrying too many things already.&#x000A;white flower: You're carrying too many things already.&#x000A;white flower: You're carrying too many things already.&#x000A;white flower: You're carrying too many things already.&#x000A;white flower: You're carrying too many things already.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1313">
+    <command xml:space="preserve">x angry</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1314"/>
+    </children>
+  </item>
+  <item nodeId="node-1314">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1315"/>
+    </children>
+  </item>
+  <item nodeId="node-1315">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1316"/>
+    </children>
+  </item>
+  <item nodeId="node-1316">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">The nereides agree to take you to the sunken Temple.&#x000A;&#x000A;Poseidon's Temple&#x000A;You see a coloumn with 4 rotatable discs. The discs have 5 faces, 4 of them with a picture and one empty. The pictures are the same on each disc and they are in order: Budding olives and fresh green leaves, Green olives growing in size, with fuller leaves, Ripe, darkening olives ready for harvest, some fallen to the ground and Bare branches with a few remaining leaves, the tree in a state of dormancy. The faces towards the altar are all empty.&#x000A;&#x000A;Altar.&#x000A;&#x000A;Column that faces the altar.&#x000A;&#x000A;On the column are top ring, second ring, third ring and bottom ring.&#x000A;&#x000A;You can also see a temple door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1317"/>
+    </children>
+  </item>
+  <item nodeId="node-1317">
+    <command xml:space="preserve">open temple door</command>
+    <result xml:space="preserve">It isn't something you can open.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1318"/>
+    </children>
+  </item>
+  <item nodeId="node-1318">
+    <command xml:space="preserve">go in temple door</command>
+    <result xml:space="preserve">(first opening the temple door)&#x000A;It isn't something you can open.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1319"/>
+    </children>
+  </item>
+  <item nodeId="node-1319">
+    <command xml:space="preserve">take altar</command>
+    <result xml:space="preserve">That's fixed in place.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1320"/>
+    </children>
+  </item>
+  <item nodeId="node-1320">
+    <command xml:space="preserve">put down altar</command>
+    <result xml:space="preserve">The altar is already here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1321"/>
+    </children>
+  </item>
+  <item nodeId="node-1321">
+    <command xml:space="preserve">go in altar</command>
+    <result xml:space="preserve">That's not something you can enter.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1322"/>
+    </children>
+  </item>
+  <item nodeId="node-1322">
+    <command xml:space="preserve">ti</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1323"/>
+    </children>
+  </item>
+  <item nodeId="node-1323">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying nothing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1324"/>
+    </children>
+  </item>
+  <item nodeId="node-1324">
+    <command xml:space="preserve">take altar</command>
+    <result xml:space="preserve">That's fixed in place.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1325"/>
+    </children>
+  </item>
+  <item nodeId="node-1325">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Poseidon's Temple&#x000A;You see a coloumn with 4 rotatable discs. The discs have 5 faces, 4 of them with a picture and one empty. The pictures are the same on each disc and they are in order: Budding olives and fresh green leaves, Green olives growing in size, with fuller leaves, Ripe, darkening olives ready for harvest, some fallen to the ground and Bare branches with a few remaining leaves, the tree in a state of dormancy. The faces towards the altar are all empty.&#x000A;&#x000A;Altar.&#x000A;&#x000A;Column that faces the altar.&#x000A;&#x000A;On the column are top ring, second ring, third ring and bottom ring.&#x000A;&#x000A;You can also see a temple door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1326"/>
+    </children>
+  </item>
+  <item nodeId="node-1326">
+    <command xml:space="preserve">take columns</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1327"/>
+    </children>
+  </item>
+  <item nodeId="node-1327">
+    <command xml:space="preserve">take column</command>
+    <result xml:space="preserve">That's fixed in place.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1328"/>
+    </children>
+  </item>
+  <item nodeId="node-1328">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1329"/>
+    </children>
+  </item>
+  <item nodeId="node-1329">
+    <command xml:space="preserve">take top ring</command>
+    <result xml:space="preserve">That's fixed in place.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1330"/>
+    </children>
+  </item>
+  <item nodeId="node-1330">
+    <command xml:space="preserve">take rings</command>
+    <result xml:space="preserve">What do you want to take those things from?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1331"/>
+    </children>
+  </item>
+  <item nodeId="node-1331">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1332"/>
+    </children>
+  </item>
+  <item nodeId="node-1332">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Poseidon's Temple&#x000A;You see a coloumn with 4 rotatable discs. The discs have 5 faces, 4 of them with a picture and one empty. The pictures are the same on each disc and they are in order: Budding olives and fresh green leaves, Green olives growing in size, with fuller leaves, Ripe, darkening olives ready for harvest, some fallen to the ground and Bare branches with a few remaining leaves, the tree in a state of dormancy. The faces towards the altar are all empty.&#x000A;&#x000A;Altar.&#x000A;&#x000A;Column that faces the altar.&#x000A;&#x000A;On the column are top ring, second ring, third ring and bottom ring.&#x000A;&#x000A;You can also see a temple door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1333"/>
+    </children>
+  </item>
+  <item nodeId="node-1333">
+    <command xml:space="preserve">x temple door</command>
+    <result xml:space="preserve">The gate is tightly closed.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1334"/>
+    </children>
+  </item>
+  <item nodeId="node-1334">
+    <command xml:space="preserve">x altar</command>
+    <result xml:space="preserve">You see nothing special about the altar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1335"/>
+    </children>
+  </item>
+  <item nodeId="node-1335">
+    <command xml:space="preserve">take altar</command>
+    <result xml:space="preserve">That's fixed in place.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1336"/>
+    </children>
+  </item>
+  <item nodeId="node-1336">
+    <command xml:space="preserve">x top ring</command>
+    <result xml:space="preserve">Its face shows blank.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1337"/>
+    </children>
+  </item>
+  <item nodeId="node-1337">
+    <command xml:space="preserve">x second rin g</command>
+    <result xml:space="preserve">I only understood you as far as wanting to examine second ring.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1338"/>
+    </children>
+  </item>
+  <item nodeId="node-1338">
+    <command xml:space="preserve">x second ring</command>
+    <result xml:space="preserve">Its face shows blank.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1339"/>
+    </children>
+  </item>
+  <item nodeId="node-1339">
+    <command xml:space="preserve">x third ring</command>
+    <result xml:space="preserve">Its face shows blank.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1340"/>
+    </children>
+  </item>
+  <item nodeId="node-1340">
+    <command xml:space="preserve">x bottom ring</command>
+    <result xml:space="preserve">Its face shows blank.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1341"/>
+    </children>
+  </item>
+  <item nodeId="node-1341">
+    <command xml:space="preserve">rotate top ring</command>
+    <result xml:space="preserve">It is fixed in place.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1342"/>
+    </children>
+  </item>
+  <item nodeId="node-1342">
+    <command xml:space="preserve">rotate top ring clockwise</command>
+    <result xml:space="preserve">Now its face shows winter.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1343"/>
+    </children>
+  </item>
+  <item nodeId="node-1343">
+    <command xml:space="preserve">rotate top ring clockwise</command>
+    <result xml:space="preserve">Now its face shows fall.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1344"/>
+    </children>
+  </item>
+  <item nodeId="node-1344">
+    <command xml:space="preserve">rotate top ring clockwise</command>
+    <result xml:space="preserve">Now its face shows summer.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1345"/>
+    </children>
+  </item>
+  <item nodeId="node-1345">
+    <command xml:space="preserve">rotate top ring clockwise</command>
+    <result xml:space="preserve">Now its face shows spring.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1346"/>
+    </children>
+  </item>
+  <item nodeId="node-1346">
+    <command xml:space="preserve">rotate top ring clockwise</command>
+    <result xml:space="preserve">Now its face shows blank.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1347"/>
+    </children>
+  </item>
+  <item nodeId="node-1347">
+    <command xml:space="preserve">rotate second ring clockwise</command>
+    <result xml:space="preserve">Now its face shows winter.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1348"/>
+    </children>
+  </item>
+  <item nodeId="node-1348">
+    <command xml:space="preserve">rotate second ring clockwise</command>
+    <result xml:space="preserve">Now its face shows fall.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1349"/>
+    </children>
+  </item>
+  <item nodeId="node-1349">
+    <command xml:space="preserve">rotate second ring clockwise</command>
+    <result xml:space="preserve">Now its face shows summer.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1350"/>
+    </children>
+  </item>
+  <item nodeId="node-1350">
+    <command xml:space="preserve">rotate second ring clockwise</command>
+    <result xml:space="preserve">Now its face shows spring.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1351"/>
+    </children>
+  </item>
+  <item nodeId="node-1351">
+    <command xml:space="preserve">rotate second ring clockwise</command>
+    <result xml:space="preserve">Now its face shows blank.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1352"/>
+    </children>
+  </item>
+  <item nodeId="node-1352">
+    <command xml:space="preserve">rotate second ring clockwise</command>
+    <result xml:space="preserve">Now its face shows winter.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1353"/>
+    </children>
+  </item>
+  <item nodeId="node-1353">
+    <command xml:space="preserve">rotate second ring clockwise</command>
+    <result xml:space="preserve">Now its face shows fall.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1354"/>
+    </children>
+  </item>
+  <item nodeId="node-1354">
+    <command xml:space="preserve">rotate second ring clockwise</command>
+    <result xml:space="preserve">Now its face shows summer.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1355"/>
+    </children>
+  </item>
+  <item nodeId="node-1355">
+    <command xml:space="preserve">rotate second ring clockwise</command>
+    <result xml:space="preserve">Now its face shows spring.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1356"/>
+    </children>
+  </item>
+  <item nodeId="node-1356">
+    <command xml:space="preserve">rotate second ring clockwise</command>
+    <result xml:space="preserve">Now its face shows blank.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1357"/>
+    </children>
+  </item>
+  <item nodeId="node-1357">
+    <command xml:space="preserve">rotate first ring clockwise</command>
+    <result xml:space="preserve">That noun did not make sense in this context.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1358"/>
+    </children>
+  </item>
+  <item nodeId="node-1358">
+    <command xml:space="preserve">rotate first ring clockwise</command>
+    <result xml:space="preserve">That noun did not make sense in this context.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1359"/>
+    </children>
+  </item>
+  <item nodeId="node-1359">
+    <command xml:space="preserve">rotate top ring clockwise</command>
+    <result xml:space="preserve">Now its face shows winter.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1360"/>
+    </children>
+  </item>
+  <item nodeId="node-1360">
+    <command xml:space="preserve">rotate top ring clockwise</command>
+    <result xml:space="preserve">Now its face shows fall.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1361"/>
+    </children>
+  </item>
+  <item nodeId="node-1361">
+    <command xml:space="preserve">rotate top ring clockwise</command>
+    <result xml:space="preserve">Now its face shows summer.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1362"/>
+    </children>
+  </item>
+  <item nodeId="node-1362">
+    <command xml:space="preserve">rotate top ring clockwise</command>
+    <result xml:space="preserve">Now its face shows spring.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1363"/>
+    </children>
+  </item>
+  <item nodeId="node-1363">
+    <command xml:space="preserve">rotate second ring clockwise</command>
+    <result xml:space="preserve">Now its face shows winter.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1364"/>
+    </children>
+  </item>
+  <item nodeId="node-1364">
+    <command xml:space="preserve">rotate second ring clockwise</command>
+    <result xml:space="preserve">Now its face shows fall.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1365"/>
+    </children>
+  </item>
+  <item nodeId="node-1365">
+    <command xml:space="preserve">rotate second ring clockwise</command>
+    <result xml:space="preserve">Now its face shows summer.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1366"/>
+    </children>
+  </item>
+  <item nodeId="node-1366">
+    <command xml:space="preserve">rotate third ring clockwise</command>
+    <result xml:space="preserve">Now its face shows winter.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1367"/>
+    </children>
+  </item>
+  <item nodeId="node-1367">
+    <command xml:space="preserve">rotate third ring clockwise</command>
+    <result xml:space="preserve">Now its face shows fall.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1368"/>
+    </children>
+  </item>
+  <item nodeId="node-1368">
+    <command xml:space="preserve">rotate bottom ring clockwise</command>
+    <result xml:space="preserve">Now its face shows winter.&#x000A;&#x000A;You hear the sound of the door opening&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1369"/>
+    </children>
+  </item>
+  <item nodeId="node-1369">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Poseidon's Temple&#x000A;You see a coloumn with 4 rotatable discs. The discs have 5 faces, 4 of them with a picture and one empty. The pictures are the same on each disc and they are in order: Budding olives and fresh green leaves, Green olives growing in size, with fuller leaves, Ripe, darkening olives ready for harvest, some fallen to the ground and Bare branches with a few remaining leaves, the tree in a state of dormancy. The faces towards the altar are all empty.&#x000A;&#x000A;Altar.&#x000A;&#x000A;Column that faces the altar.&#x000A;&#x000A;On the column are top ring, second ring, third ring and bottom ring.&#x000A;&#x000A;You can also see a temple door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1370"/>
+    </children>
+  </item>
+  <item nodeId="node-1370">
+    <command xml:space="preserve">go in temple door</command>
+    <result xml:space="preserve">Divine Cell 2&#x000A;You see the gods.&#x000A;&#x000A;You can see a temple door, Poseidon and Demeter here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1371"/>
+    </children>
+  </item>
+  <item nodeId="node-1371">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">Poseidon's Temple&#x000A;You see a coloumn with 4 rotatable discs. The discs have 5 faces, 4 of them with a picture and one empty. The pictures are the same on each disc and they are in order: Budding olives and fresh green leaves, Green olives growing in size, with fuller leaves, Ripe, darkening olives ready for harvest, some fallen to the ground and Bare branches with a few remaining leaves, the tree in a state of dormancy. The faces towards the altar are all empty.&#x000A;&#x000A;Altar.&#x000A;&#x000A;Column that faces the altar.&#x000A;&#x000A;On the column are top ring, second ring, third ring and bottom ring.&#x000A;&#x000A;You can also see a temple door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1372"/>
+    </children>
+  </item>
+  <item nodeId="node-1372">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Poseidon's Temple&#x000A;You see a coloumn with 4 rotatable discs. The discs have 5 faces, 4 of them with a picture and one empty. The pictures are the same on each disc and they are in order: Budding olives and fresh green leaves, Green olives growing in size, with fuller leaves, Ripe, darkening olives ready for harvest, some fallen to the ground and Bare branches with a few remaining leaves, the tree in a state of dormancy. The faces towards the altar are all empty.&#x000A;&#x000A;Altar.&#x000A;&#x000A;Column that faces the altar.&#x000A;&#x000A;On the column are top ring, second ring, third ring and bottom ring.&#x000A;&#x000A;You can also see a temple door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1373"/>
+    </children>
+  </item>
+  <item nodeId="node-1373">
+    <command xml:space="preserve">rotate bottom ring clockwise</command>
+    <result xml:space="preserve">Now its face shows fall.&#x000A;&#x000A;You hear the sound of the door closing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1374"/>
+    </children>
+  </item>
+  <item nodeId="node-1374">
+    <command xml:space="preserve">go in door</command>
+    <result xml:space="preserve">(first opening the temple door)&#x000A;It isn't something you can open.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1375"/>
+    </children>
+  </item>
+  <item nodeId="node-1375">
+    <command xml:space="preserve">rotate bottom ring counterclockwise</command>
+    <result xml:space="preserve">Now its face shows winter.&#x000A;&#x000A;You hear the sound of the door opening&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1376"/>
+    </children>
+  </item>
+  <item nodeId="node-1376">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Poseidon's Temple&#x000A;You see a coloumn with 4 rotatable discs. The discs have 5 faces, 4 of them with a picture and one empty. The pictures are the same on each disc and they are in order: Budding olives and fresh green leaves, Green olives growing in size, with fuller leaves, Ripe, darkening olives ready for harvest, some fallen to the ground and Bare branches with a few remaining leaves, the tree in a state of dormancy. The faces towards the altar are all empty.&#x000A;&#x000A;Altar.&#x000A;&#x000A;Column that faces the altar.&#x000A;&#x000A;On the column are top ring, second ring, third ring and bottom ring.&#x000A;&#x000A;You can also see a temple door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1377"/>
+    </children>
+  </item>
+  <item nodeId="node-1377">
+    <command xml:space="preserve">x altar</command>
+    <result xml:space="preserve">You see nothing special about the altar.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -7943,6 +8598,27 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-1378">
+    <command xml:space="preserve">showme niche</command>
+    <result xml:space="preserve">niche - transparent open container&#x000A;location: part of dragon statue in Cadmea&#x000A;unlit, inedible, portable; transparent, open, unopenable, unlocked; singular-named, improper-named&#x000A;description: none&#x000A;initial appearance: "niche."&#x000A;carrying capacity: 100&#x000A;printed name: "niche"&#x000A;printed plural name: "containers"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1379"/>
+    </children>
+  </item>
+  <item nodeId="node-1379">
+    <command xml:space="preserve">look statue</command>
+    <result xml:space="preserve">You see nothing special about dragon statue.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1301">
+    <command xml:space="preserve">showme rings</command>
+    <result xml:space="preserve">top ring - ring&#x000A;location: on the column in the Poseidon's Temple&#x000A;unlit, inedible, portable; singular-named, proper-named&#x000A;description: none&#x000A;initial appearance: none&#x000A;ring face: blank&#x000A;printed name: "top ring"&#x000A;printed plural name: "rings"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;second ring - ring&#x000A;location: on the column in the Poseidon's Temple&#x000A;unlit, inedible, portable; singular-named, proper-named&#x000A;description: none&#x000A;initial appearance: none&#x000A;ring face: blank&#x000A;printed name: "second ring"&#x000A;printed plural name: "rings"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;third ring - ring&#x000A;location: on the column in the Poseidon's Temple&#x000A;unlit, inedible, portable; singular-named, proper-named&#x000A;description: none&#x000A;initial appearance: none&#x000A;ring face: blank&#x000A;printed name: "third ring"&#x000A;printed plural name: "rings"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;bottom ring - ring&#x000A;location: on the column in the Poseidon's Temple&#x000A;unlit, inedible, portable; singular-named, proper-named&#x000A;description: none&#x000A;initial appearance: none&#x000A;ring face: blank&#x000A;printed name: "bottom ring"&#x000A;printed plural name: "rings"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-807">
     <command xml:space="preserve">smell aria</command>
     <result xml:space="preserve">You smell nothing unexpected.&#x000A;&#x000A;&gt;</result>
@@ -9452,16 +10128,41 @@
   </item>
   <item nodeId="node-1299">
     <command xml:space="preserve">test pos</command>
-    <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] rotate the top ring anticlockwise&#x000A;Now its face shows spring.&#x000A;&#x000A;&gt;[2] rotate the second ring anticlockwise&#x000A;Now its face shows spring.&#x000A;&#x000A;&gt;[3] rotate the second ring anticlockwise&#x000A;Now its face shows summer.&#x000A;&#x000A;&gt;[4] rotate the third ring anticlockwise 3 times&#x000A;I only understood you as far as wanting to rotate third ring.&#x000A;&#x000A;&gt;[5] rotate the third ring anticlockwise 3 times&#x000A;I only understood you as far as wanting to rotate third ring.&#x000A;&#x000A;&gt;[6] rotate the third ring anticlockwise 3 times&#x000A;I only understood you as far as wanting to rotate third ring.&#x000A;&#x000A;&gt;[7] rotate the bottom ring anticlockwise&#x000A;Now its face shows spring.&#x000A;&#x000A;&gt;[8] rotate the bottom ring anticlockwise&#x000A;Now its face shows summer.&#x000A;&#x000A;&gt;[9] rotate the bottom ring anticlockwise&#x000A;Now its face shows fall.&#x000A;&#x000A;&gt;[10] rotate the bottom ring anticlockwise&#x000A;Now its face shows winter.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] rotate the top ring anticlockwise&#x000A;Now its face shows spring.&#x000A;&#x000A;&gt;[2] rotate the second ring anticlockwise&#x000A;Now its face shows spring.&#x000A;&#x000A;&gt;[3] rotate the second ring anticlockwise&#x000A;Now its face shows summer.&#x000A;&#x000A;&gt;[4] rotate the third ring anticlockwise&#x000A;Now its face shows spring.&#x000A;&#x000A;&gt;[5] rotate the third ring anticlockwise&#x000A;Now its face shows summer.&#x000A;&#x000A;&gt;[6] rotate the third ring anticlockwise&#x000A;Now its face shows fall.&#x000A;&#x000A;&gt;[7] rotate the bottom ring anticlockwise&#x000A;Now its face shows spring.&#x000A;&#x000A;&gt;[8] rotate the bottom ring anticlockwise&#x000A;Now its face shows summer.&#x000A;&#x000A;&gt;[9] rotate the bottom ring anticlockwise&#x000A;Now its face shows fall.&#x000A;&#x000A;&gt;[10] rotate the bottom ring anticlockwise&#x000A;Now its face shows winter.&#x000A;&#x000A;You hear the sound of the door opening&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
+      <child nodeId="node-1302"/>
       <child nodeId="node-1300"/>
     </children>
   </item>
+  <item nodeId="node-1302">
+    <command xml:space="preserve">go in door</command>
+    <result xml:space="preserve">Divine Cell 2&#x000A;You see the gods.&#x000A;&#x000A;You can see a temple door, Poseidon and Demeter here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1303"/>
+    </children>
+  </item>
+  <item nodeId="node-1303">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">Poseidon's Temple&#x000A;You see a coloumn with 4 rotatable discs. The discs have 5 faces, 4 of them with a picture and one empty. The pictures are the same on each disc and they are in order: Budding olives and fresh green leaves, Green olives growing in size, with fuller leaves, Ripe, darkening olives ready for harvest, some fallen to the ground and Bare branches with a few remaining leaves, the tree in a state of dormancy. The faces towards the altar are all empty.&#x000A;&#x000A;Altar.&#x000A;&#x000A;Column that faces the altar.&#x000A;&#x000A;On the column are top ring, second ring, third ring and bottom ring.&#x000A;&#x000A;You can also see a temple door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1304"/>
+    </children>
+  </item>
+  <item nodeId="node-1304">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">Divine Cell 2&#x000A;You see the gods.&#x000A;&#x000A;You can see a temple door, Poseidon and Demeter here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-1300">
     <command xml:space="preserve">x door</command>
-    <result xml:space="preserve">The gate is tightly closed.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">The gate is now open.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -10941,11 +11642,14 @@
   </item>
   <item nodeId="node-376">
     <command xml:space="preserve">x statue</command>
-    <result xml:space="preserve">You find a marble sign on the statue's base. His right hand looks like it could be holding something but there's nothing there.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">The statue's mouth is closed.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-792"/>
+      <child nodeId="node-1385"/>
+      <child nodeId="node-1381"/>
+      <child nodeId="node-1380"/>
       <child nodeId="node-378"/>
       <child nodeId="node-649"/>
       <child nodeId="node-580"/>
@@ -10964,6 +11668,51 @@
   <item nodeId="node-793">
     <command xml:space="preserve">x statue</command>
     <result xml:space="preserve">You find a marble sign on the statue's base. You can see he's holding an aria in his right hand&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1385">
+    <command xml:space="preserve">put rock on dragon head</command>
+    <result xml:space="preserve">(first taking the rock)&#x000A;You picked up a rock.&#x000A;&#x000A;You put the rock on the dragon head.&#x000A;&#x000A;the dragon mouth opens.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1381">
+    <command xml:space="preserve">showme dragon mouth</command>
+    <result xml:space="preserve">dragon mouth - open container&#x000A;    dragon tooth - dragon tooth&#x000A;    dragon tooth - dragon tooth&#x000A;    dragon tooth - dragon tooth&#x000A;    dragon tooth - dragon tooth&#x000A;    dragon tooth - dragon tooth&#x000A;location: part of dragon statue in Cadmea&#x000A;unlit, inedible, portable; opaque, open, openable, unlocked; singular-named, improper-named&#x000A;description: none&#x000A;initial appearance: "dragon mouth."&#x000A;carrying capacity: 100&#x000A;printed name: "dragon mouth"&#x000A;printed plural name: "containers"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1382"/>
+    </children>
+  </item>
+  <item nodeId="node-1382">
+    <command xml:space="preserve">take 1 dragon tooth</command>
+    <result xml:space="preserve">You picked up a dragon tooth.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1383"/>
+    </children>
+  </item>
+  <item nodeId="node-1383">
+    <command xml:space="preserve">x dragon mouth</command>
+    <result xml:space="preserve">In the dragon mouth are four dragon teeth.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1384"/>
+    </children>
+  </item>
+  <item nodeId="node-1384">
+    <command xml:space="preserve">take 3 dragon teeth</command>
+    <result xml:space="preserve">dragon tooth: You picked up a dragon tooth.&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1380">
+    <command xml:space="preserve">showme statue</command>
+    <result xml:space="preserve">(dragon statue)&#x000A;dragon statue - thing&#x000A;    dragon head (part of dragon statue) - supporter&#x000A;    dragon mouth (part of dragon statue) - open container&#x000A;        5 dragon teeth&#x000A;location: in Cadmea&#x000A;unlit, inedible, fixed in place; singular-named, proper-named&#x000A;description: none&#x000A;initial appearance: none&#x000A;printed name: "dragon statue"&#x000A;printed plural name: none&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
