@@ -147,7 +147,7 @@ The player is in Cadmea.
 
 [doors]
 
-The dvgate is down of cadmea and up of divine cell 1. The dvgate is a closed unopenable door. [TODO: It is a scenery.] The dvgate is down from the cadmea and up from divine cell 1.
+The dvgate is down of cadmea and up of divine cell 1. The dvgate is a closed unopenable door. [TODO: It is a scenery.] The dvgate is down from the cadmea and up from divine cell 1. [TODO: change name of dvgate]
 
 [items]
 
@@ -208,22 +208,50 @@ Every turn:
 
 A scale is a thing in the Cadmea. It is fixed in place. [TODO: It is undescribed.]
 
-A left pan is part of the scale. It is a container. [TODO: It is undescribed.]
-A right pan is part of the scale. It is a container.[TODO: It is undescribed.]
-
-[
-
-A leftweight is a weight. It is in the cadmea. The mass of leftweight is 0dr.
-A leftweight is a weight. It is in the cadmea. The mass of leftweight is 0dr.]
-
-[Instead of putting a weight in the left pan:
-	now the mass of left weight is 
-	say "";
-	continue the action.
-
-	]
+A left pan is part of the scale. It is a supporter. [TODO: It is undescribed.] [TODO: both on and in to work]
+A right pan is part of the scale. It is a supporter.[TODO: It is undescribed.]
 
 
+Scale-state is a kind of value. The scale-states are left-leaning, right-leaning, and centered.
+
+To decide what scale-state is --/a/the scale-state of (S - the scale):
+	if the total mass of weights on the left pan is greater than the total mass of weights in the right part of S, decide on left-leaning;
+	if the total mass of weights on the right pan is greater than the total mass of weights in the left part of S, decide on right-leaning;
+	decide on centered.
+	
+The description of the scale is "The scale is currently [scale-state of the scale].".
+[solution]
+
+Every turn:
+	If the Scale-state  is centered and
+	there is a weight on the left pan:
+		now ThebesTemplePuzzleSolved is true;
+	otherwise:
+		now ThebesTemplePuzzleSolved is false.
+		
+[door open]
+
+Instead of examining the dvgate :
+	if ThebesTemplePuzzleSolved is true:
+		say "The gate is now open.";
+	otherwise:
+		say "The gate is tightly closed."	
+		
+Instead of going in the dvgate :
+	if ThebesTemplePuzzleSolved is true:
+		say "The gate is now open.";
+		try entering the dvgate ;
+	otherwise:
+		say "The gate is tightly closed."
+
+Every turn:
+	If ThebesTemplePuzzleSolved is true for the first turn:
+		say "You hear the sound of the gate opening";
+		now the dvgate  is open;
+	otherwise if ThebesTemplePuzzleSolved is false for the first turn:
+		say "You hear the sound of the gate closing.";
+		now the dvgate is closed;
+		
 test cad with "x dragon statue/ put rock on dragon head/ x dragon statue/ take 6 dragon teeth/ put 6 dragon teeth in the plate ".
 
 Chapter 2 - Demeter & Poseidon
