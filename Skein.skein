@@ -3,7 +3,7 @@
   <generator>Windows Inform 10.1.2</generator>
   <item nodeId="node-0">
     <command xml:space="preserve">Hebe</command>
-    <result xml:space="preserve">mia fora kai enan kairo...&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 240805 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Cadmea&#x000A;on the walls you can see the story of cadmus, who slayed the Dragon of Ismenus and burried his teeth for the Spartoi to sprink from the ground. In front of you is a stone dragon statue, and a big chess board with some chess pieces already on top.&#x000A;&#x000A;You can see a dvgate, a rock and dragon statue here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">mia fora kai enan kairo...&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 240805 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Cadmea&#x000A;on the walls you can see the story of cadmus, who slayed the Dragon of Ismenus and burried his teeth for the Spartoi to sprink from the ground. In front of you is a stone dragon statue, and a big chess board with some chess pieces already on top.&#x000A;&#x000A;You can see a dvgate, a rock, a walls, dragon statue, a cadmea altar and a scale here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -68,6 +68,7 @@
       <child nodeId="node-1022"/>
       <child nodeId="node-173"/>
       <child nodeId="node-773"/>
+      <child nodeId="node-1390"/>
       <child nodeId="node-172"/>
       <child nodeId="node-597"/>
       <child nodeId="node-1037"/>
@@ -76,6 +77,8 @@
       <child nodeId="node-62"/>
       <child nodeId="node-1013"/>
       <child nodeId="node-596"/>
+      <child nodeId="node-1393"/>
+      <child nodeId="node-1392"/>
       <child nodeId="node-487"/>
       <child nodeId="node-1299"/>
       <child nodeId="node-1281"/>
@@ -3556,7 +3559,7 @@
   </item>
   <item nodeId="node-398">
     <command xml:space="preserve">l</command>
-    <result xml:space="preserve">Sounio Beach&#x000A;Description of Sounio beach. You see some nereides fighting. Poseidon's temple is in the sea.&#x000A;&#x000A;You can see some nereides, Aktaia, Erato, Ploto and an angry nereida here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Cadmea&#x000A;on the walls you can see the story of cadmus, who slayed the Dragon of Ismenus and burried his teeth for the Spartoi to sprink from the ground. In front of you is a stone dragon statue, and a big chess board with some chess pieces already on top.&#x000A;&#x000A;You can see a dvgate, a rock, a walls, dragon statue, a cadmea altar and a scale here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -3564,6 +3567,7 @@
       <child nodeId="node-399"/>
       <child nodeId="node-660"/>
       <child nodeId="node-808"/>
+      <child nodeId="node-1406"/>
       <child nodeId="node-1313"/>
       <child nodeId="node-820"/>
       <child nodeId="node-748"/>
@@ -5094,6 +5098,435 @@
   <item nodeId="node-819">
     <command xml:space="preserve">take flowers</command>
     <result xml:space="preserve">red flower: You picked up a red flower.&#x000A;red flower: You picked up a red flower.&#x000A;red flower: You picked up a red flower.&#x000A;red flower: You picked up a red flower.&#x000A;red flower: You picked up a red flower.&#x000A;red flower: You picked up a red flower.&#x000A;red flower: You picked up a red flower.&#x000A;red flower: You picked up a red flower.&#x000A;red flower: You're carrying too many things already.&#x000A;red flower: You're carrying too many things already.&#x000A;purple flower: You're carrying too many things already.&#x000A;purple flower: You're carrying too many things already.&#x000A;purple flower: You're carrying too many things already.&#x000A;purple flower: You're carrying too many things already.&#x000A;purple flower: You're carrying too many things already.&#x000A;purple flower: You're carrying too many things already.&#x000A;purple flower: You're carrying too many things already.&#x000A;purple flower: You're carrying too many things already.&#x000A;purple flower: You're carrying too many things already.&#x000A;purple flower: You're carrying too many things already.&#x000A;yellow flower: You're carrying too many things already.&#x000A;yellow flower: You're carrying too many things already.&#x000A;yellow flower: You're carrying too many things already.&#x000A;yellow flower: You're carrying too many things already.&#x000A;yellow flower: You're carrying too many things already.&#x000A;yellow flower: You're carrying too many things already.&#x000A;yellow flower: You're carrying too many things already.&#x000A;yellow flower: You're carrying too many things already.&#x000A;yellow flower: You're carrying too many things already.&#x000A;yellow flower: You're carrying too many things already.&#x000A;white flower: You're carrying too many things already.&#x000A;white flower: You're carrying too many things already.&#x000A;white flower: You're carrying too many things already.&#x000A;white flower: You're carrying too many things already.&#x000A;white flower: You're carrying too many things already.&#x000A;white flower: You're carrying too many things already.&#x000A;white flower: You're carrying too many things already.&#x000A;white flower: You're carrying too many things already.&#x000A;white flower: You're carrying too many things already.&#x000A;white flower: You're carrying too many things already.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1406">
+    <command xml:space="preserve">x</command>
+    <result xml:space="preserve">What do you want to examine?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1407"/>
+    </children>
+  </item>
+  <item nodeId="node-1407">
+    <command xml:space="preserve">x dvgate</command>
+    <result xml:space="preserve">You see nothing special about the dvgate.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1408"/>
+    </children>
+  </item>
+  <item nodeId="node-1408">
+    <command xml:space="preserve">x rock</command>
+    <result xml:space="preserve">You see nothing special about the rock.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1409"/>
+    </children>
+  </item>
+  <item nodeId="node-1409">
+    <command xml:space="preserve">x walls</command>
+    <result xml:space="preserve">On the temple walls, the legendary tale of Cadmus is immortalized: he bravely confronts the fearsome Dragon of Ismenus, guardian of Ares" sacred spring, slaying the beast with a rock on the head. After sacrificing to Athena, guided by her wisdom, he buries the dragon's teeth into the earth, from which arise the Spartoi-warriors born from the dragon's teeth, who soon battle amongst themselves.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1410"/>
+    </children>
+  </item>
+  <item nodeId="node-1410">
+    <command xml:space="preserve">x dragon</command>
+    <result xml:space="preserve">(dragon statue)&#x000A;The statue's mouth is closed.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1411"/>
+    </children>
+  </item>
+  <item nodeId="node-1411">
+    <command xml:space="preserve">open mouth</command>
+    <result xml:space="preserve">It isn't something you can open.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1412"/>
+    </children>
+  </item>
+  <item nodeId="node-1412">
+    <command xml:space="preserve">take teeth</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1413"/>
+    </children>
+  </item>
+  <item nodeId="node-1413">
+    <command xml:space="preserve">x</command>
+    <result xml:space="preserve">What do you want to examine?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1414"/>
+    </children>
+  </item>
+  <item nodeId="node-1414">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Cadmea&#x000A;on the walls you can see the story of cadmus, who slayed the Dragon of Ismenus and burried his teeth for the Spartoi to sprink from the ground. In front of you is a stone dragon statue, and a big chess board with some chess pieces already on top.&#x000A;&#x000A;You can see a dvgate, a rock, a walls, dragon statue, a cadmea altar and a scale here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1415"/>
+    </children>
+  </item>
+  <item nodeId="node-1415">
+    <command xml:space="preserve">x dragon statue</command>
+    <result xml:space="preserve">The statue's mouth is closed.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1416"/>
+    </children>
+  </item>
+  <item nodeId="node-1416">
+    <command xml:space="preserve">open mouthj</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1417"/>
+    </children>
+  </item>
+  <item nodeId="node-1417">
+    <command xml:space="preserve">open mouth</command>
+    <result xml:space="preserve">It isn't something you can open.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1418"/>
+    </children>
+  </item>
+  <item nodeId="node-1418">
+    <command xml:space="preserve">take mouth</command>
+    <result xml:space="preserve">That seems to be a part of dragon statue.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1419"/>
+    </children>
+  </item>
+  <item nodeId="node-1419">
+    <command xml:space="preserve">take dragon statue</command>
+    <result xml:space="preserve">That's fixed in place.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1420"/>
+    </children>
+  </item>
+  <item nodeId="node-1420">
+    <command xml:space="preserve">take walls</command>
+    <result xml:space="preserve">That's fixed in place.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1421"/>
+    </children>
+  </item>
+  <item nodeId="node-1421">
+    <command xml:space="preserve">take rock</command>
+    <result xml:space="preserve">You picked up a rock.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1422"/>
+    </children>
+  </item>
+  <item nodeId="node-1422">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a rock&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1423"/>
+    </children>
+  </item>
+  <item nodeId="node-1423">
+    <command xml:space="preserve">x rock</command>
+    <result xml:space="preserve">You see nothing special about the rock.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1424"/>
+    </children>
+  </item>
+  <item nodeId="node-1424">
+    <command xml:space="preserve">take dvgate</command>
+    <result xml:space="preserve">That's fixed in place.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1425"/>
+    </children>
+  </item>
+  <item nodeId="node-1425">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Cadmea&#x000A;on the walls you can see the story of cadmus, who slayed the Dragon of Ismenus and burried his teeth for the Spartoi to sprink from the ground. In front of you is a stone dragon statue, and a big chess board with some chess pieces already on top.&#x000A;&#x000A;You can see a dvgate, a walls, dragon statue, a cadmea altar and a scale here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1426"/>
+    </children>
+  </item>
+  <item nodeId="node-1426">
+    <command xml:space="preserve">x cadmea</command>
+    <result xml:space="preserve">You see nothing special about the cadmea altar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1427"/>
+    </children>
+  </item>
+  <item nodeId="node-1427">
+    <command xml:space="preserve">take cadme</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1428"/>
+    </children>
+  </item>
+  <item nodeId="node-1428">
+    <command xml:space="preserve">take cadmea</command>
+    <result xml:space="preserve">That's fixed in place.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1429"/>
+    </children>
+  </item>
+  <item nodeId="node-1429">
+    <command xml:space="preserve">x cadmea </command>
+    <result xml:space="preserve">You see nothing special about the cadmea altar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1430"/>
+    </children>
+  </item>
+  <item nodeId="node-1430">
+    <command xml:space="preserve">x altar</command>
+    <result xml:space="preserve">You see nothing special about the cadmea altar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1431"/>
+    </children>
+  </item>
+  <item nodeId="node-1431">
+    <command xml:space="preserve">x scale</command>
+    <result xml:space="preserve">You see nothing special about the scale.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1432"/>
+    </children>
+  </item>
+  <item nodeId="node-1432">
+    <command xml:space="preserve">take scale</command>
+    <result xml:space="preserve">That's fixed in place.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1433"/>
+    </children>
+  </item>
+  <item nodeId="node-1433">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a rock&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1434"/>
+    </children>
+  </item>
+  <item nodeId="node-1434">
+    <command xml:space="preserve">put rock on dragon statue</command>
+    <result xml:space="preserve">Putting things on dragon statue would achieve nothing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1435"/>
+    </children>
+  </item>
+  <item nodeId="node-1435">
+    <command xml:space="preserve">x dragon head</command>
+    <result xml:space="preserve">You see nothing special about the dragon head.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1436"/>
+    </children>
+  </item>
+  <item nodeId="node-1436">
+    <command xml:space="preserve">put rock on dragon haed</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1437"/>
+    </children>
+  </item>
+  <item nodeId="node-1437">
+    <command xml:space="preserve">put rock on dragon head</command>
+    <result xml:space="preserve">You put the rock on the dragon head.&#x000A;&#x000A;The statue's mouth opened.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1438"/>
+    </children>
+  </item>
+  <item nodeId="node-1438">
+    <command xml:space="preserve">x mouth</command>
+    <result xml:space="preserve">In the dragon mouth are six dragon teeth.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1439"/>
+    </children>
+  </item>
+  <item nodeId="node-1439">
+    <command xml:space="preserve">x dragon teeth</command>
+    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1440"/>
+    </children>
+  </item>
+  <item nodeId="node-1440">
+    <command xml:space="preserve">take teeth</command>
+    <result xml:space="preserve">dragon tooth: You picked up a dragon tooth.&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1441"/>
+    </children>
+  </item>
+  <item nodeId="node-1441">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Cadmea&#x000A;on the walls you can see the story of cadmus, who slayed the Dragon of Ismenus and burried his teeth for the Spartoi to sprink from the ground. In front of you is a stone dragon statue, and a big chess board with some chess pieces already on top.&#x000A;&#x000A;You can see a dvgate, a walls, dragon statue, a cadmea altar and a scale here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1442"/>
+    </children>
+  </item>
+  <item nodeId="node-1442">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  six dragon teeth&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1443"/>
+    </children>
+  </item>
+  <item nodeId="node-1443">
+    <command xml:space="preserve">x dragon tooth</command>
+    <result xml:space="preserve">You see nothing special about the dragon tooth.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1444"/>
+    </children>
+  </item>
+  <item nodeId="node-1444">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Cadmea&#x000A;on the walls you can see the story of cadmus, who slayed the Dragon of Ismenus and burried his teeth for the Spartoi to sprink from the ground. In front of you is a stone dragon statue, and a big chess board with some chess pieces already on top.&#x000A;&#x000A;You can see a dvgate, a walls, dragon statue, a cadmea altar and a scale here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1445"/>
+    </children>
+  </item>
+  <item nodeId="node-1445">
+    <command xml:space="preserve">x chessboard</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1446"/>
+    </children>
+  </item>
+  <item nodeId="node-1446">
+    <command xml:space="preserve">x chess </command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1447"/>
+    </children>
+  </item>
+  <item nodeId="node-1447">
+    <command xml:space="preserve">x chess board</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1448"/>
+    </children>
+  </item>
+  <item nodeId="node-1448">
+    <command xml:space="preserve">x scale</command>
+    <result xml:space="preserve">You see nothing special about the scale.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1449"/>
+    </children>
+  </item>
+  <item nodeId="node-1449">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Cadmea&#x000A;on the walls you can see the story of cadmus, who slayed the Dragon of Ismenus and burried his teeth for the Spartoi to sprink from the ground. In front of you is a stone dragon statue, and a big chess board with some chess pieces already on top.&#x000A;&#x000A;You can see a dvgate, a walls, dragon statue, a cadmea altar and a scale here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1450"/>
+    </children>
+  </item>
+  <item nodeId="node-1450">
+    <command xml:space="preserve">x wall</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1451"/>
+    </children>
+  </item>
+  <item nodeId="node-1451">
+    <command xml:space="preserve">x walls</command>
+    <result xml:space="preserve">On the temple walls, the legendary tale of Cadmus is immortalized: he bravely confronts the fearsome Dragon of Ismenus, guardian of Ares" sacred spring, slaying the beast with a rock on the head. After sacrificing to Athena, guided by her wisdom, he buries the dragon's teeth into the earth, from which arise the Spartoi-warriors born from the dragon's teeth, who soon battle amongst themselves.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1452"/>
+    </children>
+  </item>
+  <item nodeId="node-1452">
+    <command xml:space="preserve">put teeth on scale</command>
+    <result xml:space="preserve">dragon tooth: Putting things on the scale would achieve nothing.&#x000A;dragon tooth: Putting things on the scale would achieve nothing.&#x000A;dragon tooth: Putting things on the scale would achieve nothing.&#x000A;dragon tooth: Putting things on the scale would achieve nothing.&#x000A;dragon tooth: Putting things on the scale would achieve nothing.&#x000A;dragon tooth: Putting things on the scale would achieve nothing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1453"/>
+    </children>
+  </item>
+  <item nodeId="node-1453">
+    <command xml:space="preserve">x scale</command>
+    <result xml:space="preserve">You see nothing special about the scale.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -8259,7 +8692,7 @@
   </item>
   <item nodeId="node-1202">
     <command xml:space="preserve">s</command>
-    <result xml:space="preserve">The nereides agree to take you to the sunken Temple.&#x000A;&#x000A;Poseidon's Temple&#x000A;You see a coloumn with 4 rotatable discs. The discs have 5 faces, 4 of them with a picture and one empty. The pictures are the same on each disc and they are in order: Budding olives and fresh green leaves, Green olives growing in size, with fuller leaves, Ripe, darkening olives ready for harvest, some fallen to the ground and Bare branches with a few remaining leaves, the tree in a state of dormancy. The faces towards the altar are all empty.&#x000A;&#x000A;Altar.&#x000A;&#x000A;Column that faces the altar.&#x000A;&#x000A;On the column are Ring 1, Ring 2, Ring 3 and Ring 4.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;bazoonga&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -8270,6 +8703,7 @@
       <child nodeId="node-1252"/>
       <child nodeId="node-1244"/>
       <child nodeId="node-1228"/>
+      <child nodeId="node-1403"/>
       <child nodeId="node-1235"/>
       <child nodeId="node-1248"/>
     </children>
@@ -8385,6 +8819,30 @@
   <item nodeId="node-1229">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:&#x000A;  an aria&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1403">
+    <command xml:space="preserve">take weight1</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1404"/>
+    </children>
+  </item>
+  <item nodeId="node-1404">
+    <command xml:space="preserve">test cad</command>
+    <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] x dragon statue&#x000A;The statue's mouth is closed.&#x000A;&#x000A;bazoonga&#x000A;&gt;[2] put rock on dragon head&#x000A;(first taking the rock)&#x000A;You picked up a rock.&#x000A;&#x000A;You put the rock on the dragon head.&#x000A;&#x000A;The statue's mouth opened.&#x000A;&#x000A;bazoonga&#x000A;&gt;[3] x dragon statue&#x000A; You see 6 tooth inside the statue's mouth.&#x000A;&#x000A;bazoonga&#x000A;&gt;[4] take 6 dragon teeth&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;&#x000A;bazoonga&#x000A;&gt;[5] put 6 dragon teeth in the plate&#x000A;dragon tooth: Done.&#x000A;dragon tooth: Done.&#x000A;dragon tooth: Done.&#x000A;dragon tooth: Done.&#x000A;dragon tooth: Done.&#x000A;dragon tooth: Done.&#x000A;&#x000A;The dragon teeth are syphoned into the altar and a compartment door opens, exposing 6 weights.&#x000A;&#x000A;bazoonga&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1405"/>
+    </children>
+  </item>
+  <item nodeId="node-1405">
+    <command xml:space="preserve">take weight1</command>
+    <result xml:space="preserve">You picked up a weight1.&#x000A;&#x000A;bazoonga&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -8968,6 +9426,21 @@
   <item nodeId="node-775">
     <command xml:space="preserve">player</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1390">
+    <command xml:space="preserve">take left pan</command>
+    <result xml:space="preserve">That seems to be a part of the scale.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1391"/>
+    </children>
+  </item>
+  <item nodeId="node-1391">
+    <command xml:space="preserve">x scale</command>
+    <result xml:space="preserve">You see nothing special about the scale.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -9773,6 +10246,93 @@
   <item nodeId="node-596">
     <command xml:space="preserve">test 2</command>
     <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] put red flower in hand&#x000A;You place the red flower in the statue's right hand.&#x000A;&#x000A;&gt;[2] x hand&#x000A;You notice the number &#x0391; carved on its index finger.&#x000A;It's holding a red flower.&#x000A;&#x000A;&gt;[3] take red flower from hand&#x000A;You picked up a red flower.&#x000A;&#x000A;&gt;[4] x hand&#x000A;You notice the number &#x0391; carved on its index finger.&#x000A;It's not holding anything&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1393">
+    <command xml:space="preserve">test ca</command>
+    <result xml:space="preserve">&gt;--&gt; The following tests are available:&#x000A;'test cad'&#x000A;'test pos'&#x000A;'test solutionsg'&#x000A;'test sg2'&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1394"/>
+    </children>
+  </item>
+  <item nodeId="node-1394">
+    <command xml:space="preserve">test cad</command>
+    <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] x dragon statue&#x000A;The statue's mouth is closed.&#x000A;&#x000A;&gt;[2] put rock on dragon head&#x000A;(first taking the rock)&#x000A;You picked up a rock.&#x000A;&#x000A;You put the rock on the dragon head.&#x000A;&#x000A;The statue's mouth opened.&#x000A;&#x000A;&gt;[3] x dragon statue&#x000A; You see 6 tooth inside the statue's mouth.&#x000A;&#x000A;&gt;[4] take 3 dragon teeth&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;&#x000A;&gt;[5] x dragon statue&#x000A; You see 3 tooth inside the statue's mouth.&#x000A;&#x000A;&gt;[6] take 3 dragon teeth&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;&#x000A;&gt;[7] x dragon statue&#x000A; There are no more teeth left in the statue's mouth.&#x000A;&#x000A;&gt;[8] take 1 dragon tooth&#x000A;You already have that.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1395"/>
+    </children>
+  </item>
+  <item nodeId="node-1395">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  six dragon teeth&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1392">
+    <command xml:space="preserve">test cad</command>
+    <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] x dragon statue&#x000A;The statue's mouth is closed.&#x000A;&#x000A;&gt;[2] put rock on dragon head&#x000A;(first taking the rock)&#x000A;You picked up a rock.&#x000A;&#x000A;You put the rock on the dragon head.&#x000A;&#x000A;The statue's mouth opened.&#x000A;&#x000A;&gt;[3] x dragon statue&#x000A; You see 6 tooth inside the statue's mouth.&#x000A;&#x000A;&gt;[4] take 6 dragon teeth&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;&#x000A;&gt;[5] put 6 dragon teeth in the plate&#x000A;dragon tooth: Done.&#x000A;dragon tooth: Done.&#x000A;dragon tooth: Done.&#x000A;dragon tooth: Done.&#x000A;dragon tooth: Done.&#x000A;dragon tooth: Done.&#x000A;&#x000A;The dragon teeth are syphoned into the altar and a compartment door opens, exposing 6 weights.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1396"/>
+      <child nodeId="node-1398"/>
+      <child nodeId="node-1402"/>
+      <child nodeId="node-1401"/>
+    </children>
+  </item>
+  <item nodeId="node-1396">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  six dragon teeth&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1397"/>
+    </children>
+  </item>
+  <item nodeId="node-1397">
+    <command xml:space="preserve">put 6 dragon teeth in sacrificial plate</command>
+    <result xml:space="preserve">dragon tooth: Done.&#x000A;dragon tooth: Done.&#x000A;dragon tooth: Done.&#x000A;dragon tooth: Done.&#x000A;dragon tooth: Done.&#x000A;dragon tooth: Done.&#x000A;&#x000A;The dragon teeth are syphoned into the alter and a compartment door opens, exposing 6 dolls.&#x000A;&#x000A;*** Run-time problem P16: You can't remove nothing from play.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1398">
+    <command xml:space="preserve">put all dragon teeth in plate</command>
+    <result xml:space="preserve">dragon tooth: Done.&#x000A;dragon tooth: Done.&#x000A;dragon tooth: Done.&#x000A;dragon tooth: Done.&#x000A;dragon tooth: Done.&#x000A;dragon tooth: Done.&#x000A;&#x000A;The dragon teeth are syphoned into the alter and a compartment door opens, exposing 6 dolls.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1399"/>
+    </children>
+  </item>
+  <item nodeId="node-1399">
+    <command xml:space="preserve">x plate</command>
+    <result xml:space="preserve">In the sacrificial plate are six dragon teeth.&#x000A;&#x000A;The dragon teeth are syphoned into the alter and a compartment door opens, exposing 6 dolls.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1400"/>
+    </children>
+  </item>
+  <item nodeId="node-1400">
+    <command xml:space="preserve">x compartment</command>
+    <result xml:space="preserve">In the compartment are six dolls.&#x000A;&#x000A;The dragon teeth are syphoned into the alter and a compartment door opens, exposing 6 dolls.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1402">
+    <command xml:space="preserve">x compartment</command>
+    <result xml:space="preserve">In the compartment are a weight1, a weight2, a weight3 and a weight4.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1401">
+    <command xml:space="preserve">x plate</command>
+    <result xml:space="preserve">The sacrificial plate is empty.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -11673,7 +12233,43 @@
   </item>
   <item nodeId="node-1385">
     <command xml:space="preserve">put rock on dragon head</command>
-    <result xml:space="preserve">(first taking the rock)&#x000A;You picked up a rock.&#x000A;&#x000A;You put the rock on the dragon head.&#x000A;&#x000A;the dragon mouth opens.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">(first taking the rock)&#x000A;You picked up a rock.&#x000A;&#x000A;You put the rock on the dragon head.&#x000A;&#x000A;The statue's mouth opened.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1386"/>
+    </children>
+  </item>
+  <item nodeId="node-1386">
+    <command xml:space="preserve">x statue</command>
+    <result xml:space="preserve">You see 5 tooth inside the statue's mouth.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1387"/>
+    </children>
+  </item>
+  <item nodeId="node-1387">
+    <command xml:space="preserve">take 3 teeth</command>
+    <result xml:space="preserve">dragon tooth: You picked up a dragon tooth.&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1388"/>
+    </children>
+  </item>
+  <item nodeId="node-1388">
+    <command xml:space="preserve">take rock</command>
+    <result xml:space="preserve">You picked up a rock.&#x000A;&#x000A;The statue's mouth closed&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1389"/>
+    </children>
+  </item>
+  <item nodeId="node-1389">
+    <command xml:space="preserve">x statue</command>
+    <result xml:space="preserve">The statue's mouth is closed.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>

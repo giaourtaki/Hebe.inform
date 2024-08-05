@@ -43,6 +43,9 @@ A smell is a kind of value. The smells are amazing, good, neutral and bad. The s
 [ring face]
 A ring face is a kind of value. The ring faces are blank, spring, summer, fall and winter. A ring face is usually blank.
 
+[mass]
+A mass is a kind of value. 1dr specifies a mass. The plural of mass is masses.
+
 [kinds]
 
 [definition of plant]
@@ -54,8 +57,14 @@ A ring is a kind of  thing. The plural of ring is rings. A ring has a ring face.
 [definition of dragon teeth][seed]
 A seed is a kind of thing. The plural of seed is seeds.
 
+[definition of weight]
+A weight is a kind of thing. The plural of weight is weights. A weight has a mass. Definition: A weight is heavy if its mass is 1dr or more.
+
 
 Chapter 0.21 - Variables
+
+[Chapter 1 - Athena & Ares]
+ThebesTemplePuzzleSolved is a truth state that varies. ThebesTemplePuzzleSolved is false. [if player solved cadmea puzzle or not]
 
 
 [Chapter 2 - Demeter & Poseidon]
@@ -131,7 +140,7 @@ Chapter 1- Athena & Ares
 
 [rooms]
 
-Cadmea is a room in Thebes. "on the walls you can see the story of cadmus, who slayed the Dragon of Ismenus and burried his teeth for the Spartoi to sprink from the ground. In front of you is a stone dragon statue, and a big chess board with some chess pieces already on top."
+Cadmea is a room in Thebes. "on the walls you can see the story of cadmus, who slayed the Dragon of Ismenus and burried his teeth for the Spartoi to sprink from the ground. In front of you is a stone dragon statue, and a big chess board with some chess pieces already on top. You can see a sacrificial plate on top of the altar."
 Divine Cell 1 is a room in Thebes. 
 
 The player is in Cadmea.
@@ -146,13 +155,15 @@ Understand "statue" as dragon statue when the player is in Cadmea.
 
 A rock is a thing in the Cadmea. [TODO: it is undescribed.]
 
+The walls is a thing in cadmea. It is fixed in place.The description of the walls is "On the temple walls, the legendary tale of Cadmus is immortalized: he bravely confronts the fearsome Dragon of Ismenus, guardian of Ares' sacred spring, slaying the beast with a rock on the head. After sacrificing to Athena, guided by her wisdom, he buries the dragon’s teeth into the earth, from which arise the Spartoi—warriors born from the dragon’s teeth, who soon battle amongst themselves.".
+
 Α dragon statue is a thing in the Cadmea. It is fixed in place. [TODO: It is undescribed.] 
 
 The dragon head is part of the dragon statue. The dragon head is a supporter. [It is undescribed.] [TODO: if rock on dragon head, dragon mouth is open]
 
-A dragon mouth is part of the dragon statue. The  dragon mouth is an openable closed container. "dragon mouth.".
+A dragon mouth is part of the dragon statue. The  dragon mouth is an unopenable closed  container. [TODO: a lot of understand as]
 
-A dragon tooth is a kind of seed. The plural of dragon tooth is dragon teeth. There are 5 dragon teeth inside the dragon mouth. 
+A dragon tooth is a kind of seed. The plural of dragon tooth is dragon teeth. There are 6 dragon teeth inside the dragon mouth. [TODO: instead of for taking more teeth than they exist]
 
 Every turn:
 	If the rock is on the dragon head:
@@ -169,13 +180,51 @@ Every turn:
 		now the dragon mouth  is closed;
 
 Instead of examining the dragon statue:
-	say "[If the dragon mouth is open] You see [number of seeds inside the dragon mouth] tooth inside the statue's mouth.[otherwise]The statue's mouth is closed.";
-	stop the action.
+	if there are seeds inside the mouth:
+		say "[If the dragon mouth is open] You see [number of seeds inside the dragon mouth] tooth inside the statue's mouth.[otherwise]The statue's mouth is closed.";
+		stop the action;
+	otherwise:
+		say "[If the dragon mouth is open] There are no more teeth left in the statue's mouth.[otherwise]The statue's mouth is closed.";
+		stop the action.
+
+[the player must put the teeth in a sacrificial plate on top of the altar and then a compartment of the altar opens, supplying the player with weights]
+
+A cadmea altar is in the cadmea. It is fixed in place. [TODO: It is undescribed.]
+A sacrificial plate is part of the cadmea altar. It is an open transparent unopenable container.[TODO: It is undescribed.]
+A compartment is part of the cadmea altar. It is a closed unopenable container. [TODO: It is undescribed.]
+
+A weight1 is a weight. It is in the compartment. The mass of weight1 is 2dr.
+A weight2 is a weight. It is in the compartment. The mass of weight2 is 5dr.
+A weight3 is a weight. It is in the compartment. The mass of weight3 is 3dr.
+A weight4 is a weight. It is in the compartment. The mass of weight4 is 4dr.
+
+Every turn:
+	If there are 6 seeds in the sacrificial plate:
+		say "The dragon teeth are syphoned into the altar and a compartment door opens, exposing 6 weights.";
+		now everything enclosed by sacrificial plate is nowhere;
+		now the compartment is open.
+		
+	
+
+A scale is a thing in the Cadmea. It is fixed in place. [TODO: It is undescribed.]
+
+A left pan is part of the scale. It is a container. [TODO: It is undescribed.]
+A right pan is part of the scale. It is a container.[TODO: It is undescribed.]
+
+[
+
+A leftweight is a weight. It is in the cadmea. The mass of leftweight is 0dr.
+A leftweight is a weight. It is in the cadmea. The mass of leftweight is 0dr.]
+
+[Instead of putting a weight in the left pan:
+	now the mass of left weight is 
+	say "";
+	continue the action.
+
+	]
 
 
-
-
-
+test cad with "x dragon statue/ put rock on dragon head/ x dragon statue/ take 6 dragon teeth/ put 6 dragon teeth in the plate ".
 
 Chapter 2 - Demeter & Poseidon
 
@@ -296,7 +345,7 @@ After antirotating a ring :
 		say "Now its face shows [ring face of noun].";
 		continue the action.
 
-An altar is in poseidon's temple. "Altar." It is fixed in place.
+A pos altar is in poseidon's temple. "Altar." It is fixed in place.
 
 A column is a supporter in poseidon's temple. "Column that faces the altar."
 
