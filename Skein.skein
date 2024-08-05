@@ -3,7 +3,7 @@
   <generator>Windows Inform 10.1.2</generator>
   <item nodeId="node-0">
     <command xml:space="preserve">Hebe</command>
-    <result xml:space="preserve">mia fora kai enan kairo...&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 240804 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Sounio Beach&#x000A;Description of Sounio beach. You see some nereides fighting.&#x000A;&#x000A;You can see some nereides, Aktaia, Erato, Ploto and an angry nereida here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">mia fora kai enan kairo...&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 240805 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Poseidon's Temple&#x000A;You see a coloumn with 4 rotatable discs. The discs have 5 faces, 4 of them with a picture and one empty. The pictures are the same on each disc and they are in order: Budding olives and fresh green leaves, Green olives growing in size, with fuller leaves, Ripe, darkening olives ready for harvest, some fallen to the ground and Bare branches with a few remaining leaves, the tree in a state of dormancy. The faces towards the altar are all empty.&#x000A;&#x000A;Altar.&#x000A;&#x000A;Column that faces the altar.&#x000A;&#x000A;On the column are top ring, second ring, third ring and bottom ring.&#x000A;&#x000A;You can also see a temple door here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -53,6 +53,7 @@
       <child nodeId="node-784"/>
       <child nodeId="node-588"/>
       <child nodeId="node-651"/>
+      <child nodeId="node-1257"/>
       <child nodeId="node-1202"/>
       <child nodeId="node-1194"/>
       <child nodeId="node-1181"/>
@@ -61,6 +62,7 @@
       <child nodeId="node-802"/>
       <child nodeId="node-804"/>
       <child nodeId="node-146"/>
+      <child nodeId="node-1233"/>
       <child nodeId="node-1022"/>
       <child nodeId="node-173"/>
       <child nodeId="node-773"/>
@@ -73,6 +75,8 @@
       <child nodeId="node-1013"/>
       <child nodeId="node-596"/>
       <child nodeId="node-487"/>
+      <child nodeId="node-1299"/>
+      <child nodeId="node-1281"/>
       <child nodeId="node-133"/>
       <child nodeId="node-284"/>
       <child nodeId="node-1182"/>
@@ -86,8 +90,11 @@
       <child nodeId="node-1030"/>
       <child nodeId="node-1183"/>
       <child nodeId="node-576"/>
+      <child nodeId="node-1254"/>
+      <child nodeId="node-1240"/>
       <child nodeId="node-776"/>
       <child nodeId="node-376"/>
+      <child nodeId="node-1270"/>
       <child nodeId="node-1044"/>
       <child nodeId="node-794"/>
       <child nodeId="node-1029"/>
@@ -2641,12 +2648,19 @@
   </item>
   <item nodeId="node-1209">
     <command xml:space="preserve">enter sea</command>
-    <result xml:space="preserve">The temple looks like it's too deep. You can't go there alone.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">The nereides agree to take you to the sunken Temple .&#x000A;&#x000A;Temple of Poseidon&#x000A;Description of temple of poseidon.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
+      <child nodeId="node-1232"/>
       <child nodeId="node-1210"/>
     </children>
+  </item>
+  <item nodeId="node-1232">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">Divine Cell 2&#x000A;yrrgs&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-1210">
     <command xml:space="preserve">i</command>
@@ -7564,9 +7578,33 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-1257">
+    <command xml:space="preserve">rotate ring 1</command>
+    <result xml:space="preserve">Nothing obvious happens.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1258"/>
+    </children>
+  </item>
+  <item nodeId="node-1258">
+    <command xml:space="preserve">showme ring 1</command>
+    <result xml:space="preserve">Ring 1 - ring&#x000A;location: on the column in the Poseidon's Temple&#x000A;unlit, inedible, portable; singular-named, proper-named&#x000A;description: none&#x000A;initial appearance: none&#x000A;ring face: blank&#x000A;printed name: "Ring 1"&#x000A;printed plural name: "rings"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1259"/>
+    </children>
+  </item>
+  <item nodeId="node-1259">
+    <command xml:space="preserve">x ring 1</command>
+    <result xml:space="preserve">Its face shows blank.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-1202">
     <command xml:space="preserve">s</command>
-    <result xml:space="preserve">The temple looks like it's too deep. You can't go there with no help.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">The nereides agree to take you to the sunken Temple.&#x000A;&#x000A;Poseidon's Temple&#x000A;You see a coloumn with 4 rotatable discs. The discs have 5 faces, 4 of them with a picture and one empty. The pictures are the same on each disc and they are in order: Budding olives and fresh green leaves, Green olives growing in size, with fuller leaves, Ripe, darkening olives ready for harvest, some fallen to the ground and Bare branches with a few remaining leaves, the tree in a state of dormancy. The faces towards the altar are all empty.&#x000A;&#x000A;Altar.&#x000A;&#x000A;Column that faces the altar.&#x000A;&#x000A;On the column are Ring 1, Ring 2, Ring 3 and Ring 4.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -7574,7 +7612,11 @@
       <child nodeId="node-1227"/>
       <child nodeId="node-1206"/>
       <child nodeId="node-1203"/>
+      <child nodeId="node-1252"/>
+      <child nodeId="node-1244"/>
       <child nodeId="node-1228"/>
+      <child nodeId="node-1235"/>
+      <child nodeId="node-1248"/>
     </children>
   </item>
   <item nodeId="node-1207">
@@ -7628,6 +7670,54 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-1252">
+    <command xml:space="preserve">rotate ring 1</command>
+    <result xml:space="preserve">Nothing obvious happens.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1253"/>
+    </children>
+  </item>
+  <item nodeId="node-1253">
+    <command xml:space="preserve">x ring 1</command>
+    <result xml:space="preserve">Its face showsblank.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1244">
+    <command xml:space="preserve">rotate ring1</command>
+    <result xml:space="preserve">Nothing obvious happens.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1245"/>
+    </children>
+  </item>
+  <item nodeId="node-1245">
+    <command xml:space="preserve">x ring1</command>
+    <result xml:space="preserve">On it you can see none.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1246"/>
+    </children>
+  </item>
+  <item nodeId="node-1246">
+    <command xml:space="preserve">showme ring 1</command>
+    <result xml:space="preserve">There seems to be no such object anywhere in the model world.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1247"/>
+    </children>
+  </item>
+  <item nodeId="node-1247">
+    <command xml:space="preserve">showme ring1</command>
+    <result xml:space="preserve">Ring1 - ring&#x000A;location: on the column in the Poseidon's Temple&#x000A;unlit, inedible, portable; singular-named, proper-named&#x000A;description: none&#x000A;initial appearance: none&#x000A;ring face: none&#x000A;printed name: "Ring1"&#x000A;printed plural name: "rings"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-1228">
     <command xml:space="preserve">showme</command>
     <result xml:space="preserve">Sounio Beach - room&#x000A;    sea - closed door&#x000A;    yourself - woman&#x000A;        aria&#x000A;    nereides - woman&#x000A;    Aktaia - woman&#x000A;    Erato - woman&#x000A;    Ploto - woman&#x000A;    angry nereida - woman&#x000A;&#x000A;&gt;</result>
@@ -7640,6 +7730,81 @@
   <item nodeId="node-1229">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:&#x000A;  an aria&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1235">
+    <command xml:space="preserve">x ring 1</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1236"/>
+    </children>
+  </item>
+  <item nodeId="node-1236">
+    <command xml:space="preserve">x Ring 1</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1237"/>
+    </children>
+  </item>
+  <item nodeId="node-1237">
+    <command xml:space="preserve">x ring1</command>
+    <result xml:space="preserve">You see nothing special about Ring1.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1238"/>
+    </children>
+  </item>
+  <item nodeId="node-1238">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1239"/>
+    </children>
+  </item>
+  <item nodeId="node-1239">
+    <command xml:space="preserve">showme ring1</command>
+    <result xml:space="preserve">Ring1 - ring&#x000A;location: on the column in the Poseidon's Temple&#x000A;unlit, inedible, portable; singular-named, proper-named&#x000A;description: none&#x000A;initial appearance: none&#x000A;ring face: none&#x000A;printed name: "Ring1"&#x000A;printed plural name: "rings"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1248">
+    <command xml:space="preserve">x ring1</command>
+    <result xml:space="preserve">On it you can see none.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1249"/>
+    </children>
+  </item>
+  <item nodeId="node-1249">
+    <command xml:space="preserve">rotate ring</command>
+    <result xml:space="preserve">Which do you mean, Ring 2 or Ring 4?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1250"/>
+    </children>
+  </item>
+  <item nodeId="node-1250">
+    <command xml:space="preserve">rotate ring1</command>
+    <result xml:space="preserve">Nothing obvious happens.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1251"/>
+    </children>
+  </item>
+  <item nodeId="node-1251">
+    <command xml:space="preserve">x ring1</command>
+    <result xml:space="preserve">On it you can see none.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -7907,6 +8072,21 @@
   <item nodeId="node-155">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Secret Garden&#x000A;You see many flowers&#x000A;&#x000A;You can see a statue and a sign here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1233">
+    <command xml:space="preserve">swim in sea</command>
+    <result xml:space="preserve">The nereides agree to take you to the sunken Temple.&#x000A;&#x000A;Poseidon's Temple&#x000A;Description of temple of poseidon.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1234"/>
+    </children>
+  </item>
+  <item nodeId="node-1234">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">Divine Cell 2&#x000A;You see the gods.&#x000A;&#x000A;You can see Poseidon and Demeter here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -9270,6 +9450,180 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-1299">
+    <command xml:space="preserve">test pos</command>
+    <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] rotate the top ring anticlockwise&#x000A;Now its face shows spring.&#x000A;&#x000A;&gt;[2] rotate the second ring anticlockwise&#x000A;Now its face shows spring.&#x000A;&#x000A;&gt;[3] rotate the second ring anticlockwise&#x000A;Now its face shows summer.&#x000A;&#x000A;&gt;[4] rotate the third ring anticlockwise 3 times&#x000A;I only understood you as far as wanting to rotate third ring.&#x000A;&#x000A;&gt;[5] rotate the third ring anticlockwise 3 times&#x000A;I only understood you as far as wanting to rotate third ring.&#x000A;&#x000A;&gt;[6] rotate the third ring anticlockwise 3 times&#x000A;I only understood you as far as wanting to rotate third ring.&#x000A;&#x000A;&gt;[7] rotate the bottom ring anticlockwise&#x000A;Now its face shows spring.&#x000A;&#x000A;&gt;[8] rotate the bottom ring anticlockwise&#x000A;Now its face shows summer.&#x000A;&#x000A;&gt;[9] rotate the bottom ring anticlockwise&#x000A;Now its face shows fall.&#x000A;&#x000A;&gt;[10] rotate the bottom ring anticlockwise&#x000A;Now its face shows winter.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1300"/>
+    </children>
+  </item>
+  <item nodeId="node-1300">
+    <command xml:space="preserve">x door</command>
+    <result xml:space="preserve">The gate is tightly closed.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1281">
+    <command xml:space="preserve">testme</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1282"/>
+    </children>
+  </item>
+  <item nodeId="node-1282">
+    <command xml:space="preserve">test</command>
+    <result xml:space="preserve">&gt;--&gt; The following tests are available:&#x000A;'test pos'&#x000A;'test solutionsg'&#x000A;'test sg2'&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1283"/>
+    </children>
+  </item>
+  <item nodeId="node-1283">
+    <command xml:space="preserve">test pos</command>
+    <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] rotate the top ring clockwise&#x000A;Now its face shows winter.&#x000A;&#x000A;&gt;[2] rotate the second ring clockwise 2 times&#x000A;I only understood you as far as wanting to rotate second ring.&#x000A;&#x000A;&gt;[3] rotate the third ring clockwise 3 times&#x000A;I only understood you as far as wanting to rotate third ring.&#x000A;&#x000A;&gt;[4] rotate the bottom ring clockwise 4 times&#x000A;I only understood you as far as wanting to rotate bottom ring.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1284"/>
+    </children>
+  </item>
+  <item nodeId="node-1284">
+    <command xml:space="preserve">rotate the second ring</command>
+    <result xml:space="preserve">Nothing obvious happens.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1285"/>
+    </children>
+  </item>
+  <item nodeId="node-1285">
+    <command xml:space="preserve">rotate the second ring clockwise </command>
+    <result xml:space="preserve">Now its face shows winter.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1286"/>
+    </children>
+  </item>
+  <item nodeId="node-1286">
+    <command xml:space="preserve">rotate the second ring clockwise </command>
+    <result xml:space="preserve">Now its face shows fall.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1287"/>
+    </children>
+  </item>
+  <item nodeId="node-1287">
+    <command xml:space="preserve">rotate the second ring clockwise </command>
+    <result xml:space="preserve">Now its face shows summer.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1288"/>
+    </children>
+  </item>
+  <item nodeId="node-1288">
+    <command xml:space="preserve">rotate the third ring clockwise</command>
+    <result xml:space="preserve">Now its face shows winter.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1289"/>
+    </children>
+  </item>
+  <item nodeId="node-1289">
+    <command xml:space="preserve">rotate the third ring anticlockwise</command>
+    <result xml:space="preserve">Now its face shows blank.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1290"/>
+    </children>
+  </item>
+  <item nodeId="node-1290">
+    <command xml:space="preserve">rotate the third ring clockwise</command>
+    <result xml:space="preserve">Now its face shows winter.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1291"/>
+    </children>
+  </item>
+  <item nodeId="node-1291">
+    <command xml:space="preserve">rotate the third ring clockwise</command>
+    <result xml:space="preserve">Now its face shows fall.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1292"/>
+    </children>
+  </item>
+  <item nodeId="node-1292">
+    <command xml:space="preserve"> rotate the bottom ring clockwise</command>
+    <result xml:space="preserve">Now its face shows winter.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1293"/>
+    </children>
+  </item>
+  <item nodeId="node-1293">
+    <command xml:space="preserve">showme</command>
+    <result xml:space="preserve">Poseidon's Temple - room&#x000A;    sea - closed door&#x000A;    temple door - closed door&#x000A;    yourself - woman&#x000A;    altar&#x000A;    column - supporter&#x000A;        top ring - ring&#x000A;        second ring - ring&#x000A;        third ring - ring&#x000A;        bottom ring - ring&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1294"/>
+    </children>
+  </item>
+  <item nodeId="node-1294">
+    <command xml:space="preserve">showme top ring</command>
+    <result xml:space="preserve">top ring - ring&#x000A;location: on the column in the Poseidon's Temple&#x000A;unlit, inedible, portable; singular-named, proper-named&#x000A;description: none&#x000A;initial appearance: none&#x000A;ring face: winter&#x000A;printed name: "top ring"&#x000A;printed plural name: "rings"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1295"/>
+    </children>
+  </item>
+  <item nodeId="node-1295">
+    <command xml:space="preserve">rotate the top ring clockwise</command>
+    <result xml:space="preserve">Now its face shows fall.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1296"/>
+    </children>
+  </item>
+  <item nodeId="node-1296">
+    <command xml:space="preserve">rotate the top ring clockwise</command>
+    <result xml:space="preserve">Now its face shows summer.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1297"/>
+    </children>
+  </item>
+  <item nodeId="node-1297">
+    <command xml:space="preserve">rotate the top ring clockwise</command>
+    <result xml:space="preserve">Now its face shows spring.&#x000A;&#x000A;You hear the sound of the door opening&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1298"/>
+    </children>
+  </item>
+  <item nodeId="node-1298">
+    <command xml:space="preserve">go in door</command>
+    <result xml:space="preserve">Divine Cell 2&#x000A;You see the gods.&#x000A;&#x000A;You can see a temple door, Poseidon and Demeter here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-133">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">Agora of Paphos&#x000A;The main square of Paphos.&#x000A;&#x000A;&gt;</result>
@@ -10400,6 +10754,149 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-1254">
+    <command xml:space="preserve">x ring 1</command>
+    <result xml:space="preserve">Its face shows blank.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1255"/>
+    </children>
+  </item>
+  <item nodeId="node-1255">
+    <command xml:space="preserve">rotate ring 1</command>
+    <result xml:space="preserve">Nothing obvious happens.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1256"/>
+    </children>
+  </item>
+  <item nodeId="node-1256">
+    <command xml:space="preserve">x ring 1</command>
+    <result xml:space="preserve">Its face shows blank.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1240">
+    <command xml:space="preserve">x ring1</command>
+    <result xml:space="preserve">Its face shows winter.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1260"/>
+      <child nodeId="node-1242"/>
+      <child nodeId="node-1241"/>
+    </children>
+  </item>
+  <item nodeId="node-1260">
+    <command xml:space="preserve">rotate ring1</command>
+    <result xml:space="preserve">Now its face shows blank.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1261"/>
+    </children>
+  </item>
+  <item nodeId="node-1261">
+    <command xml:space="preserve">x ring1</command>
+    <result xml:space="preserve">Its face shows blank.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1262"/>
+    </children>
+  </item>
+  <item nodeId="node-1262">
+    <command xml:space="preserve">showme ring1</command>
+    <result xml:space="preserve">ring1 - ring&#x000A;location: in the Poseidon's Temple&#x000A;unlit, inedible, portable; singular-named, improper-named&#x000A;description: none&#x000A;initial appearance: none&#x000A;ring face: blank&#x000A;printed name: "ring1"&#x000A;printed plural name: "rings"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1263"/>
+    </children>
+  </item>
+  <item nodeId="node-1263">
+    <command xml:space="preserve">rotate ring1</command>
+    <result xml:space="preserve">Now its face shows spring.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1264"/>
+    </children>
+  </item>
+  <item nodeId="node-1264">
+    <command xml:space="preserve">move ring 1</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1265"/>
+    </children>
+  </item>
+  <item nodeId="node-1265">
+    <command xml:space="preserve">move ring1</command>
+    <result xml:space="preserve">Nothing obvious happens.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1266"/>
+    </children>
+  </item>
+  <item nodeId="node-1266">
+    <command xml:space="preserve">take ring1</command>
+    <result xml:space="preserve">You picked up a ring1.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1267"/>
+    </children>
+  </item>
+  <item nodeId="node-1267">
+    <command xml:space="preserve">rotate ring1</command>
+    <result xml:space="preserve">Now its face shows summer.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1268"/>
+    </children>
+  </item>
+  <item nodeId="node-1268">
+    <command xml:space="preserve">rotate ring1</command>
+    <result xml:space="preserve">Now its face shows fall.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1269"/>
+    </children>
+  </item>
+  <item nodeId="node-1269">
+    <command xml:space="preserve">x ring1</command>
+    <result xml:space="preserve">Its face shows fall.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1242">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">The nereides agree to take you to the sunken Temple.&#x000A;&#x000A;Poseidon's Temple&#x000A;You see a coloumn with 4 rotatable discs. The discs have 5 faces, 4 of them with a picture and one empty. The pictures are the same on each disc and they are in order: Budding olives and fresh green leaves, Green olives growing in size, with fuller leaves, Ripe, darkening olives ready for harvest, some fallen to the ground and Bare branches with a few remaining leaves, the tree in a state of dormancy. The faces towards the altar are all empty.&#x000A;&#x000A;Altar.&#x000A;&#x000A;Column that faces the altar.&#x000A;&#x000A;On the column are Ring1, Ring 2, Ring3 and Ring 4.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1243"/>
+    </children>
+  </item>
+  <item nodeId="node-1243">
+    <command xml:space="preserve">x ring1</command>
+    <result xml:space="preserve">On it you can see none.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1241">
+    <command xml:space="preserve">x ring face of ring1</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-776">
     <command xml:space="preserve">x shells</command>
     <result xml:space="preserve">You find a big conch shell.&#x000A;&#x000A;&gt;</result>
@@ -10536,6 +11033,102 @@
   <item nodeId="node-377">
     <command xml:space="preserve">x sign</command>
     <result xml:space="preserve">The sign is made of marble. The inscription on it reads: Painful memories of our love surround this place. (A &gt; red, B &gt; purple, C&gt; yellow, D&gt;white&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1270">
+    <command xml:space="preserve">x third ring</command>
+    <result xml:space="preserve">Its face shows blank.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1271"/>
+    </children>
+  </item>
+  <item nodeId="node-1271">
+    <command xml:space="preserve">rotate third ring</command>
+    <result xml:space="preserve">Nothing obvious happens.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1272"/>
+    </children>
+  </item>
+  <item nodeId="node-1272">
+    <command xml:space="preserve">rotate third ring clockwise</command>
+    <result xml:space="preserve">Now its face shows winter.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1273"/>
+    </children>
+  </item>
+  <item nodeId="node-1273">
+    <command xml:space="preserve">rotate third ring anticlockwise</command>
+    <result xml:space="preserve">Now its face shows blank.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1274"/>
+    </children>
+  </item>
+  <item nodeId="node-1274">
+    <command xml:space="preserve">rotate third ring anticlockwise</command>
+    <result xml:space="preserve">Now its face shows spring.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1275"/>
+    </children>
+  </item>
+  <item nodeId="node-1275">
+    <command xml:space="preserve">rotate third ring anticlockwise</command>
+    <result xml:space="preserve">Now its face shows summer.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1276"/>
+    </children>
+  </item>
+  <item nodeId="node-1276">
+    <command xml:space="preserve">rotate third ring clockwise</command>
+    <result xml:space="preserve">Now its face shows spring.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1277"/>
+    </children>
+  </item>
+  <item nodeId="node-1277">
+    <command xml:space="preserve">rotate top ring to the left</command>
+    <result xml:space="preserve">I only understood you as far as wanting to rotate top ring.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1278"/>
+    </children>
+  </item>
+  <item nodeId="node-1278">
+    <command xml:space="preserve">rotate clockwise the top ring</command>
+    <result xml:space="preserve">Now its face shows winter.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1279"/>
+    </children>
+  </item>
+  <item nodeId="node-1279">
+    <command xml:space="preserve">rotate the top ring counterclockwise</command>
+    <result xml:space="preserve">Now its face shows blank.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1280"/>
+    </children>
+  </item>
+  <item nodeId="node-1280">
+    <command xml:space="preserve">go in door</command>
+    <result xml:space="preserve">(first opening the temple door)&#x000A;It isn't something you can open.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>

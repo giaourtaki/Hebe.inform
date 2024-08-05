@@ -44,8 +44,10 @@ Chapter 0.21 - Variables
 
 [Chapter 2 - Demeter & Poseidon]
 AmphitriteIsCalm is a truth state that varies. AmphitriteIsCalm is true. [Is the player calmed down Amphitrite]
+SeaTemplePuzzleSolved is a truth state that varies. SeaTemplePuzzleSolved is false. [if sea temple puzzle in Poseidons Temple is solved or not]
 HasDemeterBoon is a truth state that varies. HasDemeterBoon is false. [If the player has Demeter's boon, HasDemeterBoon is true]
 HasPoseidonBoon is a truth state that varies. HasPoseidonBoon is false. [If the player has Poseidon's boon, HasPoseidonBoon is true]
+
 
 [Chapter 4 - Aphrodite & Hephaestus]
 FlowerPuzzleSolved is a truth state that varies. FlowerPuzzleSolved is false. [if flower puzzle in SG is solved or not]
@@ -110,12 +112,15 @@ Chapter 2 - Demeter & Poseidon
 
 [rooms]
 The Sounio Beach is a room in Sounio. "Description of Sounio beach. You see some nereides fighting.".
-The Temple of Poseidon is a room in Sounio. "Description of temple of poseidon."
+The Poseidon's Temple is a room in Sounio. It is up of the temple door."You see a coloumn with 4 rotatable discs. The discs have 5 faces, 4 of them with a picture and one empty. The pictures are the same on each disc and they are in order: Budding olives and fresh green leaves, Green olives growing in size, with fuller leaves, Ripe, darkening olives ready for harvest, some fallen to the ground and Bare branches with a few remaining leaves, the tree in a state of dormancy. The faces towards the altar are all empty."
+The Divine Cell 2 is a room in Sounio. The Divine Cell 2 is down of the temple door. "You see the gods.". [TODO: change name of divine cell]
 
+
+[sounio beach]
 
 [doors]
-The sea is south of the sounio beach and up of the temple of poseidon. It is an unopenable closed door. It is a scenery. 
-The sounio beach is north of the sea. The temple of poseidon is down of the sea.
+The sea is south of the sounio beach and up of the Poseidon's Temple. It is an unopenable closed door. It is a scenery. 
+The sounio beach is north of the sea. The Poseidon's Temple is down of the sea.
 [characters]
 Some nereides are in the sounio beach. Nereides are women. [It is undescribed.]
 
@@ -129,8 +134,8 @@ Instead of examining angry nereida:
 
 [TODO: Battle with  Amphitrite]
 
-[TODO: true only after battle with amphitrite]
-The player is carrying an aria.
+[TODO: angry nereida is calm after battle with amphitrite]
+
 
 Every turn:
 	If the angry nereida is calm:
@@ -138,7 +143,7 @@ Every turn:
 	otherwise:
 		now AmphitriteIsCalm is false.
 
-Understand "to temple" as south when the player is in the sounio beach.
+Understand "to temple" or "swim in sea" as south when the player is in the sounio beach.
 
 Instead of going south in the Sounio Beach:
 	if AmphitriteIsCalm is true:
@@ -151,13 +156,129 @@ Instead of going south in the Sounio Beach:
 Instead of entering the sea:
 	if AmphitriteIsCalm is true:
 		now the sea is open;
-		say "The nereides agree to take you to the sunken Temple .";
+		say "The nereides agree to take you to the sunken Temple."; [TODO: description of nereides helping you only if you dont possess poseidon boom]
 		continue the action;
 	otherwise if AmphitriteIsCalm is false:
 		say "The temple looks like it's too deep. You can't go there with no help.";
 		stop the action.
 
 
+[poseidons temple]
+
+The player is in Poseidon's Temple.
+
+[doors]
+
+The temple door is a door down of the poseidon's temple and up of the divine cell 2. It is a closed unopenable door.
+
+A ring is a kind of  thing. 
+A ring face is a kind of value. The ring faces are blank, spring, summer, fall and winter. [A ring face is usually blank.]
+A ring has a ring face.
+
+Instead of examining a ring:
+	say "Its face shows [ring face of noun].";
+	stop the action;
+	
+
+Rotating is an action applying to one thing. Understand "rotate [any thing] clockwise" or "rotate clockwise the [any thing]" or "rotate the [any thing] to the left" as rotating.
+Antirotating is an action applying to one thing. Understand "rotate [any thing] anticlockwise" or "rotate anticlockwise the [any thing]" or "rotate [any thing] counterclockwise" or "rotate counterclockwise the [any thing]"or "rotate the [any thing] to the right" as antirotating. [TODO: put help for the player about which way to rotate]
+	
+[clockwise rotation]
+After rotating a ring :
+	if the ring face of the noun is blank:
+		now the ring face of the noun is winter;
+		say "Now its face shows [ring face of noun].";
+		continue the action;
+	else if the ring face of the noun is spring:
+		now the ring face of the noun is blank;
+		say "Now its face shows [ring face of noun].";
+		continue the action;
+	else if the ring face of the noun is summer:
+		now the ring face of the noun is spring;
+		say "Now its face shows [ring face of noun].";
+		continue the action;
+	else if the ring face of the noun is fall:
+		now the ring face of the noun is summer;
+		say "Now its face shows [ring face of noun].";
+		continue the action;
+	else if the ring face of the noun is winter:
+		now the ring face of the noun is fall;
+		say "Now its face shows [ring face of noun].";
+		continue the action.
+
+[anticlockwise rotation]		
+After antirotating a ring :
+	if the ring face of the noun is blank:
+		now the ring face of the noun is spring;
+		say "Now its face shows [ring face of noun].";
+		continue the action;
+	else if the ring face of the noun is spring:
+		now the ring face of the noun is summer;
+		say "Now its face shows [ring face of noun].";
+		continue the action;
+	else if the ring face of the noun is summer:
+		now the ring face of the noun is fall;
+		say "Now its face shows [ring face of noun].";
+		continue the action;
+	else if the ring face of the noun is fall:
+		now the ring face of the noun is winter;
+		say "Now its face shows [ring face of noun].";
+		continue the action;
+	else if the ring face of the noun is winter:
+		now the ring face of the noun is blank;
+		say "Now its face shows [ring face of noun].";
+		continue the action.
+
+An altar is in poseidon's temple. "Altar."
+
+A column is a supporter in poseidon's temple. "Column that faces the altar."
+
+top ring, second ring, third ring and bottom ring are rings on the column.
+
+
+
+
+
+
+[puzzle of poseidon temple]
+[puzzle solution]
+Every turn:
+	if the ring face of top ring is spring and
+	   the ring face of second ring is summer and
+	   the ring face of third ring is fall and
+	   the ring face of bottom ring is winter :
+		now SeaTemplePuzzleSolved is true;
+	otherwise:
+		now SeaTemplePuzzleSolved is false.
+
+Instead of examining the temple door :
+	if SeaTemplePuzzleSolved is true:
+		say "The gate is now open.";
+	otherwise:
+		say "The gate is tightly closed."	
+		
+Instead of going in the temple door :
+	if SeaTemplePuzzleSolved is true:
+		say "The gate is now open.";
+		try entering the temple door ;
+	otherwise:
+		say "The gate is tightly closed."
+
+Every turn:
+	If SeaTemplePuzzleSolved is true for the first turn:
+		say "You hear the sound of the door opening";
+		now the temple door  is open;
+	otherwise if SeaTemplePuzzleSolved is false for the first turn:
+		say "You hear the sound of the door closing.";
+		now the temple door  is closed;
+		
+test POS with "rotate the top ring anticlockwise/rotate the second ring anticlockwise/rotate the second ring anticlockwise/rotate the third ring anticlockwise/rotate the third ring anticlockwise/rotate the third ring anticlockwise/rotate the bottom ring anticlockwise/rotate the bottom ring anticlockwise/rotate the bottom ring anticlockwise/rotate the bottom ring anticlockwise".
+[divine cell 2]
+
+[characters]
+
+Poseidon is a man in the Divine Cell 2. 
+Demeter is a woman in the Divine Cell 2.
 
 
 Chapter 4 - Aphrodite & Hephaestus
