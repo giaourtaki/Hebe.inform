@@ -7,7 +7,8 @@ Chapter 0.00 - TODOs|TBDs
 [All rooms start and end with Start Off [room name] and End Of [room name]]
 
 
-[TODO: fix descriptions of Secret Garden]
+[TODO: fix/add descriptions]
+[TODO:general mapping of the game]
 
 
 
@@ -21,6 +22,7 @@ Mountain Olympus is a region in Greece.
 Athens is a region in Greece.
 Sounio is a region in Greece.
 Thebes is a region in Greece.
+Delphi is a region in Greece.
 
 [Cyprus]
 Cyprus is a region.
@@ -83,9 +85,6 @@ Chapter 0.3 - Either/Or
 
 [either/or]
 
-[empty/full]
-Definition: A container is empty if nothing is in it. 
-Definition: A container is full if [carrying capacity of container] things are in it.
 
 
 
@@ -95,6 +94,8 @@ Chapter 0.4 - Rules
 [persons have name rule]
 A person has some text called a name. 
 
+[empty container]
+Definition: A container is empty if nothing is in it. 
 
 
 Chapter 0.5 - Actions
@@ -134,24 +135,38 @@ Instead of telling someone about something, try asking the noun about it. Instea
 Instead of asking Heracles about "how he's doing", say "'Feeling amazing my dear!'".
 ]
 
+
+Chapter 0.9 - Other Rooms
+
+
+The Garden of Hesperides is a room in Greece. 
+
+The Oracle of Delphi is a room in Delphi.
+
 Chapter 1- Athena & Ares
 
 [region: Thebes]
 
+[Start Of: Cadmea]
 [rooms]
 
-Cadmea is a room in Thebes. "on the walls you can see the story of cadmus, who slayed the Dragon of Ismenus and burried his teeth for the Spartoi to sprink from the ground. In front of you is a stone dragon statue, and a big chess board with some chess pieces already on top. You can see a sacrificial plate on top of the altar."
+Cadmea is a room in Thebes. "on the walls you can see the story of cadmus, who slayed the Dragon of Ismenus and burried his teeth for the Spartoi to sprink from the ground. In front of you is a stone dragon statue, and a big chess board with some chess pieces already on top. You can see a sacrificial plate on top of the altar. The dvgate has a sign on it." [TODO: fix the mapping/name of room]
 Divine Cell 1 is a room in Thebes. 
 
 The player is in Cadmea.
 
 [doors]
 
-The dvgate is down of cadmea and up of divine cell 1. The dvgate is a closed unopenable door. [TODO: It is a scenery.] The dvgate is down from the cadmea and up from divine cell 1. [TODO: change name of dvgate]
+The dvgate is down of cadmea and up of divine cell 1. The dvgate is a locked openable door. [TODO: It is a scenery.] The dvgate is down from the cadmea and up from divine cell 1. [TODO: change name of dvgate]
+
+
+A dvsign is part of the dvgate. The description of the dvsign is "It says: The key to passage lies from the lightest touch to the heaviest step.".
 
 [items]
 
 Understand "statue" as dragon statue when the player is in Cadmea.
+Understand "sign" as dvsign when the player is in Cadmea.
+Understand "gate" as dvgate when the player is in Cadmea.
 
 A rock is a thing in the Cadmea. [TODO: it is undescribed.]
 
@@ -193,10 +208,20 @@ A cadmea altar is in the cadmea. It is fixed in place. [TODO: It is undescribed.
 A sacrificial plate is part of the cadmea altar. It is an open transparent unopenable container.[TODO: It is undescribed.]
 A compartment is part of the cadmea altar. It is a closed unopenable container. [TODO: It is undescribed.]
 
-A weight1 is a weight. It is in the compartment. The mass of weight1 is 2dr.
-A weight2 is a weight. It is in the compartment. The mass of weight2 is 5dr.
+A weight1 is a weight. It is in the compartment. The mass of weight1 is 1dr. The description of weight1 is "An owl". [TODO: make the descriptions, 3 of ares 3 of athena]
+A weight2 is a weight. It is in the compartment. The mass of weight2 is 2dr.
 A weight3 is a weight. It is in the compartment. The mass of weight3 is 3dr.
 A weight4 is a weight. It is in the compartment. The mass of weight4 is 4dr.
+A weight5 is a weight. It is in the compartment. The mass of weight5 is 5dr.
+A weight6 is a weight. It is in the compartment. The mass of weight6 is 6dr.
+
+
+A pan1 is in Cadmea. It is fixed in place. It is a supporter. [It is undescribed.] [locking mechanism]
+A pan2 is in Cadmea. It is fixed in place. It is a supporter. [It is undescribed.]
+A pan3 is in Cadmea. It is fixed in place.It is a supporter.  [It is undescribed.]
+A pan4 is in Cadmea.It is fixed in place. It is a supporter. [It is undescribed.]
+A pan5 is in Cadmea.It is fixed in place. It is a supporter. [It is undescribed.]
+A pan6 is in Cadmea. It is fixed in place. It is a supporter. [It is undescribed.]
 
 Every turn:
 	If there are 6 seeds in the sacrificial plate:
@@ -204,9 +229,7 @@ Every turn:
 		now everything enclosed by sacrificial plate is nowhere;
 		now the compartment is open.
 		
-	
-
-A scale is a thing in the Cadmea. It is fixed in place. [TODO: It is undescribed.]
+A scale is a thing in the Cadmea. It is fixed in place. A scale has a scale-state.[TODO: It is undescribed.]
 
 A left pan is part of the scale. It is a supporter. [TODO: It is undescribed.] [TODO: both on and in to work]
 A right pan is part of the scale. It is a supporter.[TODO: It is undescribed.]
@@ -215,44 +238,61 @@ A right pan is part of the scale. It is a supporter.[TODO: It is undescribed.]
 Scale-state is a kind of value. The scale-states are left-leaning, right-leaning, and centered.
 
 To decide what scale-state is --/a/the scale-state of (S - the scale):
-	if the total mass of weights on the left pan is greater than the total mass of weights in the right part of S, decide on left-leaning;
-	if the total mass of weights on the right pan is greater than the total mass of weights in the left part of S, decide on right-leaning;
+	if the total mass of weights on the left pan is greater than the total mass of weights on the right pan, decide on left-leaning;
+	if the total mass of weights on the right pan is greater than the total mass of weights on the left pan, decide on right-leaning;
 	decide on centered.
 	
 The description of the scale is "The scale is currently [scale-state of the scale].".
 [solution]
 
 Every turn:
-	If the Scale-state  is centered and
-	there is a weight on the left pan:
+	If a weight1 is on pan1 and
+	a weight2 is on pan2 and
+	a weight3 is on pan3 and
+	a weight4 is on pan4 and
+	a weight5 is on pan5 and
+	a weight6 is on pan6:
 		now ThebesTemplePuzzleSolved is true;
 	otherwise:
 		now ThebesTemplePuzzleSolved is false.
 		
-[door open]
+[gate open]
 
-Instead of examining the dvgate :
-	if ThebesTemplePuzzleSolved is true:
-		say "The gate is now open.";
+Instead of examining the dvgate:
+	if ThebesTemplePuzzleSolved is true and the dvgate is closed:
+		say "The gate is now unlocked.";
+		try opening the dvgate;
+	otherwise if ThebesTemplePuzzleSolved is false and the dvgate is closed:
+		say "The gate is locked.";
 	otherwise:
-		say "The gate is tightly closed."	
+		say "The gate is open.".
+		
 		
 Instead of going in the dvgate :
-	if ThebesTemplePuzzleSolved is true:
-		say "The gate is now open.";
+	if ThebesTemplePuzzleSolved is true and the dvgate is closed:
+		say "The gate is now unlocked.";
 		try entering the dvgate ;
+	otherwise if ThebesTemplePuzzleSolved is false and the dvgate is closed:
+		say "The gate is locked.";
 	otherwise:
-		say "The gate is tightly closed."
+		try silently entering gate.
 
 Every turn:
-	If ThebesTemplePuzzleSolved is true for the first turn:
-		say "You hear the sound of the gate opening";
-		now the dvgate  is open;
-	otherwise if ThebesTemplePuzzleSolved is false for the first turn:
-		say "You hear the sound of the gate closing.";
-		now the dvgate is closed;
+	If ThebesTemplePuzzleSolved is true for the first turn and the dvgate is closed:
+		say "You hear the sound of the gate mechanism unlocking";
+		now the dvgate  is unlocked;
+	otherwise if ThebesTemplePuzzleSolved is false for the first turn and the dvgate is closed:
+		say "You hear the sound of the gate mechanism locking.";
+		now the dvgate is locked;
+	otherwise if ThebesTemplePuzzleSolved is true for the first turn and the dvgate is open:
+		say "You hear the sound of the gate mechanism unlocking, but the door is already open";
+	otherwise if ThebesTemplePuzzleSolved is false for the first turn and the dvgate is open:
+		say "You hear the sound of the gate mechanism locking, but the door is already open.";
 		
 test cad with "x dragon statue/ put rock on dragon head/ x dragon statue/ take 6 dragon teeth/ put 6 dragon teeth in the plate ".
+test gate with "take weights/put weight1 on pan1/put weight2 on pan2/put weight3 on pan3/put weight4 on pan4/put weight5 on pan5/put weight6 on pan6".
+
+[End Of: Cadmea]
 
 Chapter 2 - Demeter & Poseidon
 

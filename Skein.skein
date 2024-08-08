@@ -3,7 +3,7 @@
   <generator>Windows Inform 10.1.2</generator>
   <item nodeId="node-0">
     <command xml:space="preserve">Hebe</command>
-    <result xml:space="preserve">mia fora kai enan kairo...&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 240806 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Cadmea&#x000A;on the walls you can see the story of cadmus, who slayed the Dragon of Ismenus and burried his teeth for the Spartoi to sprink from the ground. In front of you is a stone dragon statue, and a big chess board with some chess pieces already on top. You can see a sacrificial plate on top of the altar.&#x000A;&#x000A;You can see a dvgate, a rock, a walls, dragon statue, a cadmea altar and a scale here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">mia fora kai enan kairo...&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 240808 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Cadmea&#x000A;on the walls you can see the story of cadmus, who slayed the Dragon of Ismenus and burried his teeth for the Spartoi to sprink from the ground. In front of you is a stone dragon statue, and a big chess board with some chess pieces already on top. You can see a sacrificial plate on top of the altar. The dvgate has a sign on it.&#x000A;&#x000A;You can see a dvgate, a rock, a walls, dragon statue, a cadmea altar, a pan1, a pan2, a pan3, a pan4, a pan5, a pan6 and a scale here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -10453,7 +10453,10 @@
       <child nodeId="node-1473"/>
       <child nodeId="node-1396"/>
       <child nodeId="node-1398"/>
+      <child nodeId="node-1489"/>
+      <child nodeId="node-1532"/>
       <child nodeId="node-1402"/>
+      <child nodeId="node-1483"/>
       <child nodeId="node-1401"/>
     </children>
   </item>
@@ -10583,9 +10586,656 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-1489">
+    <command xml:space="preserve">take weights</command>
+    <result xml:space="preserve">weight1: You picked up a weight1.&#x000A;weight2: You picked up a weight2.&#x000A;weight3: You picked up a weight3.&#x000A;weight4: You picked up a weight4.&#x000A;weight5: You picked up a weight5.&#x000A;weight6: You picked up a weight6.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1490"/>
+      <child nodeId="node-1525"/>
+    </children>
+  </item>
+  <item nodeId="node-1490">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a weight6&#x000A;  a weight5&#x000A;  a weight4&#x000A;  a weight3&#x000A;  a weight2&#x000A;  a weight1&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1491"/>
+    </children>
+  </item>
+  <item nodeId="node-1491">
+    <command xml:space="preserve">put weight1 on left pan</command>
+    <result xml:space="preserve">You put the weight1 on the left pan.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1492"/>
+    </children>
+  </item>
+  <item nodeId="node-1492">
+    <command xml:space="preserve">x scale</command>
+    <result xml:space="preserve">The scale is currently left-leaning.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1493"/>
+    </children>
+  </item>
+  <item nodeId="node-1493">
+    <command xml:space="preserve">put weight2 on left pan</command>
+    <result xml:space="preserve">You put the weight2 on the left pan.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1494"/>
+    </children>
+  </item>
+  <item nodeId="node-1494">
+    <command xml:space="preserve">put weigh4 on left pan</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1495"/>
+    </children>
+  </item>
+  <item nodeId="node-1495">
+    <command xml:space="preserve">put weight4 on left pan</command>
+    <result xml:space="preserve">You put the weight4 on the left pan.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1496"/>
+    </children>
+  </item>
+  <item nodeId="node-1496">
+    <command xml:space="preserve">x scale</command>
+    <result xml:space="preserve">The scale is currently left-leaning.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1497"/>
+    </children>
+  </item>
+  <item nodeId="node-1497">
+    <command xml:space="preserve">take weight4</command>
+    <result xml:space="preserve">You picked up a weight4.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1498"/>
+    </children>
+  </item>
+  <item nodeId="node-1498">
+    <command xml:space="preserve">put weight 4 on right pan</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1499"/>
+    </children>
+  </item>
+  <item nodeId="node-1499">
+    <command xml:space="preserve">put weight4 on right pan</command>
+    <result xml:space="preserve">You put the weight4 on the right pan.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1500"/>
+    </children>
+  </item>
+  <item nodeId="node-1500">
+    <command xml:space="preserve">put weight5 on right pan</command>
+    <result xml:space="preserve">You put the weight5 on the right pan.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1501"/>
+    </children>
+  </item>
+  <item nodeId="node-1501">
+    <command xml:space="preserve">put weight6 on right pan</command>
+    <result xml:space="preserve">You put the weight6 on the right pan.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1502"/>
+    </children>
+  </item>
+  <item nodeId="node-1502">
+    <command xml:space="preserve">x scale</command>
+    <result xml:space="preserve">The scale is currently right-leaning.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1503"/>
+    </children>
+  </item>
+  <item nodeId="node-1503">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a weight3&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1504"/>
+    </children>
+  </item>
+  <item nodeId="node-1504">
+    <command xml:space="preserve">x left pan</command>
+    <result xml:space="preserve">On the left pan are a weight2 and a weight1.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1505"/>
+    </children>
+  </item>
+  <item nodeId="node-1505">
+    <command xml:space="preserve">x right pan</command>
+    <result xml:space="preserve">On the right pan are a weight6, a weight5 and a weight4.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1506"/>
+    </children>
+  </item>
+  <item nodeId="node-1506">
+    <command xml:space="preserve">put weight3 on right pan</command>
+    <result xml:space="preserve">You put the weight3 on the right pan.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1507"/>
+    </children>
+  </item>
+  <item nodeId="node-1507">
+    <command xml:space="preserve">x scale</command>
+    <result xml:space="preserve">The scale is currently right-leaning.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1508"/>
+    </children>
+  </item>
+  <item nodeId="node-1508">
+    <command xml:space="preserve">x left pan</command>
+    <result xml:space="preserve">On the left pan are a weight2 and a weight1.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1509"/>
+    </children>
+  </item>
+  <item nodeId="node-1509">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying nothing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1510"/>
+    </children>
+  </item>
+  <item nodeId="node-1510">
+    <command xml:space="preserve">x right pan</command>
+    <result xml:space="preserve">On the right pan are a weight3, a weight6, a weight5 and a weight4.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1511"/>
+    </children>
+  </item>
+  <item nodeId="node-1511">
+    <command xml:space="preserve">take weight3</command>
+    <result xml:space="preserve">You picked up a weight3.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1512"/>
+    </children>
+  </item>
+  <item nodeId="node-1512">
+    <command xml:space="preserve">take weight2</command>
+    <result xml:space="preserve">You picked up a weight2.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1513"/>
+    </children>
+  </item>
+  <item nodeId="node-1513">
+    <command xml:space="preserve">x scale</command>
+    <result xml:space="preserve">The scale is currently right-leaning.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1514"/>
+    </children>
+  </item>
+  <item nodeId="node-1514">
+    <command xml:space="preserve">x left pan</command>
+    <result xml:space="preserve">On the left pan is a weight1.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1515"/>
+    </children>
+  </item>
+  <item nodeId="node-1515">
+    <command xml:space="preserve">x right pan</command>
+    <result xml:space="preserve">On the right pan are a weight6, a weight5 and a weight4.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1516"/>
+    </children>
+  </item>
+  <item nodeId="node-1516">
+    <command xml:space="preserve">take all weights</command>
+    <result xml:space="preserve">weight1: You picked up a weight1.&#x000A;weight6: You picked up a weight6.&#x000A;weight5: You picked up a weight5.&#x000A;weight4: You picked up a weight4.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1517"/>
+    </children>
+  </item>
+  <item nodeId="node-1517">
+    <command xml:space="preserve">x scale</command>
+    <result xml:space="preserve">The scale is currently centered.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1518"/>
+    </children>
+  </item>
+  <item nodeId="node-1518">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a weight4&#x000A;  a weight5&#x000A;  a weight6&#x000A;  a weight1&#x000A;  a weight2&#x000A;  a weight3&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1519"/>
+    </children>
+  </item>
+  <item nodeId="node-1519">
+    <command xml:space="preserve">put weight1 on right pan</command>
+    <result xml:space="preserve">You put the weight1 on the right pan.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1520"/>
+    </children>
+  </item>
+  <item nodeId="node-1520">
+    <command xml:space="preserve">x scale</command>
+    <result xml:space="preserve">The scale is currently right-leaning.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1521"/>
+    </children>
+  </item>
+  <item nodeId="node-1521">
+    <command xml:space="preserve">put weight4 on left pan</command>
+    <result xml:space="preserve">You put the weight4 on the left pan.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1522"/>
+    </children>
+  </item>
+  <item nodeId="node-1522">
+    <command xml:space="preserve">x scale</command>
+    <result xml:space="preserve">The scale is currently right-leaning.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1523"/>
+    </children>
+  </item>
+  <item nodeId="node-1523">
+    <command xml:space="preserve">x weight1</command>
+    <result xml:space="preserve">An owl&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1524"/>
+    </children>
+  </item>
+  <item nodeId="node-1524">
+    <command xml:space="preserve">x weight2</command>
+    <result xml:space="preserve">You see nothing special about the weight2.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1525">
+    <command xml:space="preserve">put weight1 on pan1</command>
+    <result xml:space="preserve">You put the weight1 on the pan1.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1526"/>
+    </children>
+  </item>
+  <item nodeId="node-1526">
+    <command xml:space="preserve">put weight2 on pan2</command>
+    <result xml:space="preserve">You put the weight2 on the pan2.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1527"/>
+    </children>
+  </item>
+  <item nodeId="node-1527">
+    <command xml:space="preserve">put weight3 on pan3</command>
+    <result xml:space="preserve">You put the weight3 on the pan3.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1528"/>
+    </children>
+  </item>
+  <item nodeId="node-1528">
+    <command xml:space="preserve">put weight4 on pan4</command>
+    <result xml:space="preserve">You put the weight4 on the pan4.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1529"/>
+    </children>
+  </item>
+  <item nodeId="node-1529">
+    <command xml:space="preserve">put weight5 on pan5</command>
+    <result xml:space="preserve">You put the weight5 on the pan5.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1530"/>
+    </children>
+  </item>
+  <item nodeId="node-1530">
+    <command xml:space="preserve">put weight6 on pan6</command>
+    <result xml:space="preserve">You put the weight6 on the pan6.&#x000A;&#x000A;You hear the sound of the gate opening&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1532">
+    <command xml:space="preserve">test gate</command>
+    <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] take weights&#x000A;weight1: You picked up a weight1.&#x000A;weight2: You picked up a weight2.&#x000A;weight3: You picked up a weight3.&#x000A;weight4: You picked up a weight4.&#x000A;weight5: You picked up a weight5.&#x000A;weight6: You picked up a weight6.&#x000A;&#x000A;&gt;[2] put weight1 on pan1&#x000A;You put the weight1 on the pan1.&#x000A;&#x000A;&gt;[3] put weight2 on pan2&#x000A;You put the weight2 on the pan2.&#x000A;&#x000A;&gt;[4] put weight3 on pan3&#x000A;You put the weight3 on the pan3.&#x000A;&#x000A;&gt;[5] put weight4 on pan4&#x000A;You put the weight4 on the pan4.&#x000A;&#x000A;&gt;[6] put weight5 on pan5&#x000A;You put the weight5 on the pan5.&#x000A;&#x000A;&gt;[7] put weight6 on pan6&#x000A;You put the weight6 on the pan6.&#x000A;&#x000A;You hear the sound of the gate mechanism unlocking&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1549"/>
+      <child nodeId="node-1545"/>
+      <child nodeId="node-1533"/>
+      <child nodeId="node-1534"/>
+    </children>
+  </item>
+  <item nodeId="node-1549">
+    <command xml:space="preserve">open door</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1550"/>
+    </children>
+  </item>
+  <item nodeId="node-1550">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1551"/>
+    </children>
+  </item>
+  <item nodeId="node-1551">
+    <command xml:space="preserve">open gate</command>
+    <result xml:space="preserve">You open the dvgate.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1552"/>
+    </children>
+  </item>
+  <item nodeId="node-1552">
+    <command xml:space="preserve">take weight1</command>
+    <result xml:space="preserve">You picked up a weight1.&#x000A;&#x000A;You hear the sound of the gate mechanism locking, but the door is already open.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1553"/>
+    </children>
+  </item>
+  <item nodeId="node-1553">
+    <command xml:space="preserve">go in gate</command>
+    <result xml:space="preserve">Divine Cell 1&#x000A;You can see a dvgate here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1554"/>
+    </children>
+  </item>
+  <item nodeId="node-1554">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">Cadmea&#x000A;on the walls you can see the story of cadmus, who slayed the Dragon of Ismenus and burried his teeth for the Spartoi to sprink from the ground. In front of you is a stone dragon statue, and a big chess board with some chess pieces already on top. You can see a sacrificial plate on top of the altar. The dvgate has a sign on it.&#x000A;&#x000A;You can see a dvgate, a walls, dragon statue, a cadmea altar, a pan1, a pan2 (on which is a weight2), a pan3 (on which is a weight3), a pan4 (on which is a weight4), a pan5 (on which is a weight5), a pan6 (on which is a weight6) and a scale here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1555"/>
+    </children>
+  </item>
+  <item nodeId="node-1555">
+    <command xml:space="preserve">close gate</command>
+    <result xml:space="preserve">You close the dvgate.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1556"/>
+    </children>
+  </item>
+  <item nodeId="node-1556">
+    <command xml:space="preserve">showme gate</command>
+    <result xml:space="preserve">(the dvgate)&#x000A;dvgate - closed door&#x000A;    dvsign (part of dvgate)&#x000A;location: in Cadmea&#x000A;unlit, inedible, fixed in place; closed, openable, lockable, unlocked; singular-named, improper-named&#x000A;description: none&#x000A;initial appearance: none&#x000A;leading-through destination: &lt;routine 218549&gt;&#x000A;printed name: "dvgate"&#x000A;printed plural name: "doors"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1557"/>
+    </children>
+  </item>
+  <item nodeId="node-1557">
+    <command xml:space="preserve">open gate</command>
+    <result xml:space="preserve">You open the dvgate.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1558"/>
+    </children>
+  </item>
+  <item nodeId="node-1558">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Cadmea&#x000A;on the walls you can see the story of cadmus, who slayed the Dragon of Ismenus and burried his teeth for the Spartoi to sprink from the ground. In front of you is a stone dragon statue, and a big chess board with some chess pieces already on top. You can see a sacrificial plate on top of the altar. The dvgate has a sign on it.&#x000A;&#x000A;You can see a dvgate, a walls, dragon statue, a cadmea altar, a pan1, a pan2 (on which is a weight2), a pan3 (on which is a weight3), a pan4 (on which is a weight4), a pan5 (on which is a weight5), a pan6 (on which is a weight6) and a scale here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1559"/>
+    </children>
+  </item>
+  <item nodeId="node-1559">
+    <command xml:space="preserve">close gate</command>
+    <result xml:space="preserve">You close the dvgate.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1560"/>
+    </children>
+  </item>
+  <item nodeId="node-1560">
+    <command xml:space="preserve">put weight1 on pan1</command>
+    <result xml:space="preserve">You put the weight1 on the pan1.&#x000A;&#x000A;You hear the sound of the gate mechanism unlocking&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1561"/>
+    </children>
+  </item>
+  <item nodeId="node-1561">
+    <command xml:space="preserve">take weight1</command>
+    <result xml:space="preserve">You picked up a weight1.&#x000A;&#x000A;You hear the sound of the gate mechanism locking.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1562"/>
+    </children>
+  </item>
+  <item nodeId="node-1562">
+    <command xml:space="preserve">open gate</command>
+    <result xml:space="preserve">It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1545">
+    <command xml:space="preserve">open gate</command>
+    <result xml:space="preserve">You open the dvgate.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1546"/>
+    </children>
+  </item>
+  <item nodeId="node-1546">
+    <command xml:space="preserve">take weight1</command>
+    <result xml:space="preserve">You picked up a weight1.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1547"/>
+    </children>
+  </item>
+  <item nodeId="node-1547">
+    <command xml:space="preserve">x gate</command>
+    <result xml:space="preserve">The gate is locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1548"/>
+    </children>
+  </item>
+  <item nodeId="node-1548">
+    <command xml:space="preserve">showme gate</command>
+    <result xml:space="preserve">(the dvgate)&#x000A;dvgate - open door&#x000A;    dvsign (part of dvgate)&#x000A;location: in Cadmea&#x000A;unlit, inedible, fixed in place; open, openable, lockable, unlocked; singular-named, improper-named&#x000A;description: none&#x000A;initial appearance: none&#x000A;leading-through destination: &lt;routine 218463&gt;&#x000A;printed name: "dvgate"&#x000A;printed plural name: "doors"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1533">
+    <command xml:space="preserve">showme door</command>
+    <result xml:space="preserve">temple door - closed door&#x000A;location: in the Poseidon's Temple&#x000A;unlit, inedible, fixed in place; closed, unopenable, unlocked; singular-named, improper-named&#x000A;description: none&#x000A;initial appearance: none&#x000A;leading-through destination: &lt;routine 218702&gt;&#x000A;printed name: "temple door"&#x000A;printed plural name: "doors"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1534">
+    <command xml:space="preserve">x gate</command>
+    <result xml:space="preserve">You can see there is a sign on the gate.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1535"/>
+      <child nodeId="node-1539"/>
+    </children>
+  </item>
+  <item nodeId="node-1535">
+    <command xml:space="preserve">showme gate</command>
+    <result xml:space="preserve">(the dvgate)&#x000A;dvgate - closed door&#x000A;    dvsign (part of dvgate)&#x000A;location: in Cadmea&#x000A;unlit, inedible, fixed in place; closed, openable, lockable, unlocked; singular-named, improper-named&#x000A;description: none&#x000A;initial appearance: none&#x000A;leading-through destination: &lt;routine 218536&gt;&#x000A;printed name: "dvgate"&#x000A;printed plural name: "doors"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1536"/>
+    </children>
+  </item>
+  <item nodeId="node-1536">
+    <command xml:space="preserve">go in gate</command>
+    <result xml:space="preserve">(first opening the dvgate)&#x000A;&#x000A;Divine Cell 1&#x000A;You can see a dvgate here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1537"/>
+    </children>
+  </item>
+  <item nodeId="node-1537">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">Cadmea&#x000A;on the walls you can see the story of cadmus, who slayed the Dragon of Ismenus and burried his teeth for the Spartoi to sprink from the ground. In front of you is a stone dragon statue, and a big chess board with some chess pieces already on top. You can see a sacrificial plate on top of the altar.&#x000A;&#x000A;You can see a dvgate, a walls, dragon statue, a cadmea altar, a pan1 (on which is a weight1), a pan2 (on which is a weight2), a pan3 (on which is a weight3), a pan4 (on which is a weight4), a pan5 (on which is a weight5), a pan6 (on which is a weight6) and a scale here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1538"/>
+    </children>
+  </item>
+  <item nodeId="node-1538">
+    <command xml:space="preserve">enter gate</command>
+    <result xml:space="preserve">Divine Cell 1&#x000A;You can see a dvgate here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1539">
+    <command xml:space="preserve">x gate</command>
+    <result xml:space="preserve">You can see there is a sign on the gate.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-1402">
     <command xml:space="preserve">x compartment</command>
     <result xml:space="preserve">In the compartment are a weight1, a weight2, a weight3 and a weight4.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1483">
+    <command xml:space="preserve">x dvgate</command>
+    <result xml:space="preserve">The gate is tightly closed.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1484"/>
+    </children>
+  </item>
+  <item nodeId="node-1484">
+    <command xml:space="preserve">x scale</command>
+    <result xml:space="preserve">The scale is currently centered.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1485"/>
+    </children>
+  </item>
+  <item nodeId="node-1485">
+    <command xml:space="preserve">put weigh1 and weight3 on left pan</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1486"/>
+    </children>
+  </item>
+  <item nodeId="node-1486">
+    <command xml:space="preserve">put weight1 and weight3 on left pan</command>
+    <result xml:space="preserve">weight1: (first taking the weight1)&#x000A;You picked up a weight1.&#x000A;&#x000A;Done.&#x000A;weight3: (first taking the weight3)&#x000A;You picked up a weight3.&#x000A;&#x000A;Done.&#x000A;&#x000A;You hear the sound of the gate opening&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1487"/>
+    </children>
+  </item>
+  <item nodeId="node-1487">
+    <command xml:space="preserve">showme scale</command>
+    <result xml:space="preserve">scale - thing&#x000A;    left pan (part of scale) - supporter&#x000A;        weight3 - weight&#x000A;        weight1 - weight&#x000A;    right pan (part of scale) - supporter&#x000A;location: in Cadmea&#x000A;unlit, inedible, fixed in place; singular-named, improper-named&#x000A;description: "The scale is currently left-leaning."&#x000A;initial appearance: none&#x000A;printed name: "scale"&#x000A;printed plural name: none&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1488"/>
+    </children>
+  </item>
+  <item nodeId="node-1488">
+    <command xml:space="preserve">showme dvgate</command>
+    <result xml:space="preserve">dvgate - open door&#x000A;location: in Cadmea&#x000A;unlit, inedible, fixed in place; open, unopenable, unlocked; singular-named, improper-named&#x000A;description: none&#x000A;initial appearance: none&#x000A;leading-through destination: &lt;routine 218390&gt;&#x000A;printed name: "dvgate"&#x000A;printed plural name: "doors"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -11905,11 +12555,13 @@
   </item>
   <item nodeId="node-553">
     <command xml:space="preserve">x gate</command>
-    <result xml:space="preserve">The puzzle gate is tightly closed.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">The gate is locked.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-554"/>
+      <child nodeId="node-1540"/>
+      <child nodeId="node-1531"/>
     </children>
   </item>
   <item nodeId="node-554">
@@ -11969,6 +12621,54 @@
   <item nodeId="node-560">
     <command xml:space="preserve">go e</command>
     <result xml:space="preserve">Divine Cell 4&#x000A;You see the gods sleeping&#x000A;&#x000A;You can see a puzzle gate, Aphrodite and Hephaestus here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1540">
+    <command xml:space="preserve">test cad and then test gate</command>
+    <result xml:space="preserve">I only understood you as far as wanting to test that.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1541"/>
+    </children>
+  </item>
+  <item nodeId="node-1541">
+    <command xml:space="preserve">test cad</command>
+    <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] x dragon statue&#x000A;The statue's mouth is closed.&#x000A;&#x000A;&gt;[2] put rock on dragon head&#x000A;(first taking the rock)&#x000A;You picked up a rock.&#x000A;&#x000A;You put the rock on the dragon head.&#x000A;&#x000A;The statue's mouth opened.&#x000A;&#x000A;&gt;[3] x dragon statue&#x000A; You see 6 tooth inside the statue's mouth.&#x000A;&#x000A;&gt;[4] take 6 dragon teeth&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;&#x000A;&gt;[5] put 6 dragon teeth in the plate&#x000A;dragon tooth: Done.&#x000A;dragon tooth: Done.&#x000A;dragon tooth: Done.&#x000A;dragon tooth: Done.&#x000A;dragon tooth: Done.&#x000A;dragon tooth: Done.&#x000A;&#x000A;The dragon teeth are syphoned into the altar and a compartment door opens, exposing 6 weights.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1542"/>
+    </children>
+  </item>
+  <item nodeId="node-1542">
+    <command xml:space="preserve">test gate</command>
+    <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] take weights&#x000A;weight1: You picked up a weight1.&#x000A;weight2: You picked up a weight2.&#x000A;weight3: You picked up a weight3.&#x000A;weight4: You picked up a weight4.&#x000A;weight5: You picked up a weight5.&#x000A;weight6: You picked up a weight6.&#x000A;&#x000A;&gt;[2] put weight1 on pan1&#x000A;You put the weight1 on the pan1.&#x000A;&#x000A;&gt;[3] put weight2 on pan2&#x000A;You put the weight2 on the pan2.&#x000A;&#x000A;&gt;[4] put weight3 on pan3&#x000A;You put the weight3 on the pan3.&#x000A;&#x000A;&gt;[5] put weight4 on pan4&#x000A;You put the weight4 on the pan4.&#x000A;&#x000A;&gt;[6] put weight5 on pan5&#x000A;You put the weight5 on the pan5.&#x000A;&#x000A;&gt;[7] put weight6 on pan6&#x000A;You put the weight6 on the pan6.&#x000A;&#x000A;You hear the sound of the gate mechanism unlocking&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1543"/>
+    </children>
+  </item>
+  <item nodeId="node-1543">
+    <command xml:space="preserve">x gate</command>
+    <result xml:space="preserve">The gate is now unlocked.&#x000A;&#x000A;You open the dvgate.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1544"/>
+    </children>
+  </item>
+  <item nodeId="node-1544">
+    <command xml:space="preserve">enter gate</command>
+    <result xml:space="preserve">Divine Cell 1&#x000A;You can see a dvgate here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1531">
+    <command xml:space="preserve">x sign</command>
+    <result xml:space="preserve">It says: The key to passage lies from the lightest touch to the heaviest step.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
