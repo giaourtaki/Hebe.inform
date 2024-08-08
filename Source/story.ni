@@ -66,7 +66,7 @@ A weight is a kind of thing. The plural of weight is weights. A weight has a mas
 Chapter 0.21 - Variables
 
 [Chapter 1 - Athena & Ares]
-ThebesTemplePuzzleSolved is a truth state that varies. ThebesTemplePuzzleSolved is false. [if player solved cadmea puzzle or not]
+ThebesTemplePuzzleSolved is a truth state that varies. ThebesTemplePuzzleSolved is false. [if player solved Kadmea puzzle or not]
 
 
 [Chapter 2 - Demeter & Poseidon]
@@ -138,41 +138,57 @@ Instead of asking Heracles about "how he's doing", say "'Feeling amazing my dear
 
 Chapter 0.9 - Other Rooms
 
+[Start Of: Garden on hesperides]
 
 The Garden of Hesperides is a room in Greece. 
 
+Aigle is a woman in Garden of Hesperides. 
+Arethousa is a woman in Garden of Hesperides. 
+Erytheia is a woman in Garden of Hesperides. 
+Hesperie is a woman in Garden of Hesperides. 
+
+
+
+[End Of: Garden of Hesperides]
+
+[Start Of: Oracle of Delphi]
+
 The Oracle of Delphi is a room in Delphi.
+
+Pytheia is a woman in the Oracle of Delphi. 
+
+[End Of: Oracle of Delphi]
 
 Chapter 1- Athena & Ares
 
 [region: Thebes]
 
-[Start Of: Cadmea]
+[Start Of: Kadmea]
 [rooms]
 
-Cadmea is a room in Thebes. "on the walls you can see the story of cadmus, who slayed the Dragon of Ismenus and burried his teeth for the Spartoi to sprink from the ground. In front of you is a stone dragon statue, and a big chess board with some chess pieces already on top. You can see a sacrificial plate on top of the altar. The dvgate has a sign on it." [TODO: fix the mapping/name of room]
+Kadmea is a room in Thebes. "on the walls you can see the story of Kadmos, who slayed the Dragon of Ismenus and burried his teeth for the Spartoi to sprink from the ground. In front of you is a stone dragon statue, and a big chess board with some chess pieces already on top. You can see a sacrificial plate on top of the altar. The dvgate has a sign on it." [TODO: fix the mapping/name of room]
 Divine Cell 1 is a room in Thebes. 
 
-The player is in Cadmea.
+[The player is in Kadmea.]
 
 [doors]
 
-The dvgate is down of cadmea and up of divine cell 1. The dvgate is a locked openable door. [TODO: It is a scenery.] The dvgate is down from the cadmea and up from divine cell 1. [TODO: change name of dvgate]
+The dvgate is down of Kadmea and up of divine cell 1. The dvgate is a locked openable door. [TODO: It is a scenery.] The dvgate is down from the Kadmea and up from divine cell 1. [TODO: change name of dvgate]
 
 
 A dvsign is part of the dvgate. The description of the dvsign is "It says: The key to passage lies from the lightest touch to the heaviest step.".
 
 [items]
 
-Understand "statue" as dragon statue when the player is in Cadmea.
-Understand "sign" as dvsign when the player is in Cadmea.
-Understand "gate" as dvgate when the player is in Cadmea.
+Understand "statue" as dragon statue when the player is in Kadmea.
+Understand "sign" as dvsign when the player is in Kadmea.
+Understand "gate" as dvgate when the player is in Kadmea.
 
-A rock is a thing in the Cadmea. [TODO: it is undescribed.]
+A rock is a thing in the Kadmea. [TODO: it is undescribed.]
 
-The walls is a thing in cadmea. It is fixed in place.The description of the walls is "On the temple walls, the legendary tale of Cadmus is immortalized: he bravely confronts the fearsome Dragon of Ismenus, guardian of Ares' sacred spring, slaying the beast with a rock on the head. After sacrificing to Athena, guided by her wisdom, he buries the dragon’s teeth into the earth, from which arise the Spartoi—warriors born from the dragon’s teeth, who soon battle amongst themselves.".
+The walls is a thing in Kadmea. It is fixed in place.The description of the walls is "On the temple walls, the legendary tale of Cadmus is immortalized: he bravely confronts the fearsome Dragon of Ismenus, guardian of Ares' sacred spring, slaying the beast with a rock on the head. After sacrificing to Athena, guided by her wisdom, he buries the dragon’s teeth into the earth, from which arise the Spartoi—warriors born from the dragon’s teeth, who soon battle amongst themselves.".
 
-Α dragon statue is a thing in the Cadmea. It is fixed in place. [TODO: It is undescribed.] 
+Α dragon statue is a thing in the Kadmea. It is fixed in place. [TODO: It is undescribed.] 
 
 The dragon head is part of the dragon statue. The dragon head is a supporter. [It is undescribed.] [TODO: if rock on dragon head, dragon mouth is open]
 
@@ -204,9 +220,9 @@ Instead of examining the dragon statue:
 
 [the player must put the teeth in a sacrificial plate on top of the altar and then a compartment of the altar opens, supplying the player with weights]
 
-A cadmea altar is in the cadmea. It is fixed in place. [TODO: It is undescribed.]
-A sacrificial plate is part of the cadmea altar. It is an open transparent unopenable container.[TODO: It is undescribed.]
-A compartment is part of the cadmea altar. It is a closed unopenable container. [TODO: It is undescribed.]
+A Kadmea altar is in the Kadmea. It is fixed in place. [TODO: It is undescribed.]
+A sacrificial plate is part of the Kadmea altar. It is an open transparent unopenable container.[TODO: It is undescribed.]
+A compartment is part of the Kadmea altar. It is a closed unopenable container. [TODO: It is undescribed.]
 
 A weight1 is a weight. It is in the compartment. The mass of weight1 is 1dr. The description of weight1 is "An owl". [TODO: make the descriptions, 3 of ares 3 of athena]
 A weight2 is a weight. It is in the compartment. The mass of weight2 is 2dr.
@@ -216,12 +232,12 @@ A weight5 is a weight. It is in the compartment. The mass of weight5 is 5dr.
 A weight6 is a weight. It is in the compartment. The mass of weight6 is 6dr.
 
 
-A pan1 is in Cadmea. It is fixed in place. It is a supporter. [It is undescribed.] [locking mechanism]
-A pan2 is in Cadmea. It is fixed in place. It is a supporter. [It is undescribed.]
-A pan3 is in Cadmea. It is fixed in place.It is a supporter.  [It is undescribed.]
-A pan4 is in Cadmea.It is fixed in place. It is a supporter. [It is undescribed.]
-A pan5 is in Cadmea.It is fixed in place. It is a supporter. [It is undescribed.]
-A pan6 is in Cadmea. It is fixed in place. It is a supporter. [It is undescribed.]
+A pan1 is in Kadmea. It is fixed in place. It is a supporter. [It is undescribed.] [locking mechanism]
+A pan2 is in Kadmea. It is fixed in place. It is a supporter. [It is undescribed.]
+A pan3 is in Kadmea. It is fixed in place.It is a supporter.  [It is undescribed.]
+A pan4 is in Kadmea.It is fixed in place. It is a supporter. [It is undescribed.]
+A pan5 is in Kadmea.It is fixed in place. It is a supporter. [It is undescribed.]
+A pan6 is in Kadmea. It is fixed in place. It is a supporter. [It is undescribed.]
 
 Every turn:
 	If there are 6 seeds in the sacrificial plate:
@@ -229,7 +245,7 @@ Every turn:
 		now everything enclosed by sacrificial plate is nowhere;
 		now the compartment is open.
 		
-A scale is a thing in the Cadmea. It is fixed in place. A scale has a scale-state.[TODO: It is undescribed.]
+A scale is a thing in the Kadmea. It is fixed in place. A scale has a scale-state.[TODO: It is undescribed.]
 
 A left pan is part of the scale. It is a supporter. [TODO: It is undescribed.] [TODO: both on and in to work]
 A right pan is part of the scale. It is a supporter.[TODO: It is undescribed.]
@@ -292,9 +308,13 @@ Every turn:
 test cad with "x dragon statue/ put rock on dragon head/ x dragon statue/ take 6 dragon teeth/ put 6 dragon teeth in the plate ".
 test gate with "take weights/put weight1 on pan1/put weight2 on pan2/put weight3 on pan3/put weight4 on pan4/put weight5 on pan5/put weight6 on pan6".
 
-[End Of: Cadmea]
+[End Of: Kadmea]
 
-Chapter 2 - Demeter & Poseidon
+Chapter 2 - Demeter & Poseidon 
+
+[TODO: add some athena/ares powers]
+[TODO: add something more to the puzzle]
+
 
 [region: Sounio]
 
@@ -461,6 +481,32 @@ test POS with "rotate the top ring anticlockwise/rotate the second ring anticloc
 
 Poseidon is a man in the Divine Cell 2. 
 Demeter is a woman in the Divine Cell 2.
+
+Chapter 3 - Artemis & Apollo
+
+[Region: Theba]
+
+[Start Of: Temple of the Aulidean Artemis]
+
+The player is in the Temple of the Aulidean Artemis.
+
+[rooms]
+The Temple of the Aulidean Artemis is a room in Thebes.
+The Divine Cell of Artemis & Apollo is a room in Thebes.
+
+[doors]
+The dvdoor is  south of the Temple of the Aulidean Artemis and north of the Divine Cell of Artemis & Apollo. The dvdoor is a locked closed door. [TODO: check kateuthunsh portas]
+
+[things]
+The sundial is a thing in Temple of the Aulidean Artemis. It is fixed in place.
+The moondial is a thing in Temple of the Aulidean Artemis. It is fixed in place.
+
+ The Goddess Artemis is in the Divine Cell of Artemis & Apollo. Artemis is a woman.
+The God Apollo is in the Divine Cell of Artemis & Apollo. Apollo is a man.
+
+[End Of: Temple of the Aulidean Artemis]
+
+
 
 
 Chapter 4 - Aphrodite & Hephaestus

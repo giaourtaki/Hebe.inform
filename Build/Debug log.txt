@@ -7,7 +7,7 @@ Using Inform kit 'EnglishLanguageKit' (priority 1).
 Using Inform kit 'WorldModelKit' (priority 2).
 Using Inform kit 'CommandParserKit' (priority 3).
 756 Preform nonterminals read from C:\Users\User\OneDrive\Desktop\Thesis\Inform\Internal\Languages\English\Syntax.preform
-I've now read your source text, which is 4892 words long.
+I've now read your source text, which is 5059 words long.
 Included: core, naming, instance counting, interactive fiction, spatial model, backdrops, bibliographic data, chronology, devices, mapping, persons, player, regions, scenes, scoring, timed rules, times of day, actions, going, command, showme, multimedia, figures, sounds, glulx external files
 Excluded: 
 I've also read Basic Inform by Graham Nelson, which is 7691 words long.
@@ -42,21 +42,21 @@ Loading kinds definitions from C:\Users\User\OneDrive\Desktop\Thesis\Inform\Inte
 Phase III ... Pre-pass through major nodes
 -----------------------------------------------------
 
-.... MajorNodes__pre_pass() took 11cs
+.... MajorNodes__pre_pass() took 12cs
 
 
 -----------------------------------------------------
 Phase IV ... First pass through major nodes
 -----------------------------------------------------
 
-.... MajorNodes__pass_1() took 7cs
+.... MajorNodes__pass_1() took 9cs
 
 
 -----------------------------------------------------
 Phase V ... Second pass through major nodes
 -----------------------------------------------------
 
-.... MajorNodes__pass_2() took 2cs
+.... MajorNodes__pass_2() took 3cs
 
 
 -----------------------------------------------------
@@ -95,14 +95,15 @@ Phase X ... Phrases and rules
 Phase XI ... Generating inter (1)
 -----------------------------------------------------
 
-.... RTKindConstructors__compile() took 6cs
+.... RTUseOptions__compile() took 1cs
+.... RTKindConstructors__compile() took 5cs
 
 
 -----------------------------------------------------
 Phase XII ... Generating inter (2)
 -----------------------------------------------------
 
-.... RTKindConstructors__compile_permissions() took 1cs
+.... CompletionModule__compile() took 1cs
 
 
 ==== Phase XII.1 ... Slashing command grammar ====
@@ -117,9 +118,9 @@ Phase XII ... Generating inter (2)
 Phase XIII ... Generating inter (3)
 -----------------------------------------------------
 
-.... Sequence__undertake_queued_tasks() took 140cs
+.... Sequence__undertake_queued_tasks() took 138cs
 .... Sequence__undertake_queued_tasks() took 1cs
-.... RTPhrasebook__compile_entries() took 3cs
+.... RTPhrasebook__compile_entries() took 2cs
 
 
 -----------------------------------------------------
@@ -155,7 +156,7 @@ Phase XVI ... Bibliographic work
 Phase XVII ... Complete
 -----------------------------------------------------
 
-Compile CPU time: 192 centiseconds
+Compile CPU time: 193 centiseconds
 
 
 ==== Phase XVII.1 ... step 1/15: read <- *memory ====
