@@ -75,6 +75,8 @@ SeaTemplePuzzleSolved is a truth state that varies. SeaTemplePuzzleSolved is fal
 HasDemeterBoon is a truth state that varies. HasDemeterBoon is false. [If the player has Demeter's boon, HasDemeterBoon is true]
 HasPoseidonBoon is a truth state that varies. HasPoseidonBoon is false. [If the player has Poseidon's boon, HasPoseidonBoon is true]
 
+[Chapter 3 - Artemis & Apollo]
+ArtemisTemplePuzzleSolved is a truth state that varies. ArtemisTemplePuzzleSolved is false. [if sun and moon temple puzzle in Artemis Temple is solved or not]
 
 [Chapter 4 - Aphrodite & Hephaestus]
 FlowerPuzzleSolved is a truth state that varies. FlowerPuzzleSolved is false. [if flower puzzle in SG is solved or not]
@@ -495,16 +497,117 @@ The Temple of the Aulidean Artemis is a room in Thebes.
 The Divine Cell of Artemis & Apollo is a room in Thebes.
 
 [doors]
-The dvdoor is  south of the Temple of the Aulidean Artemis and north of the Divine Cell of Artemis & Apollo. The dvdoor is a locked closed door. [TODO: check kateuthunsh portas]
+The dvdoor is  south of the Temple of the Aulidean Artemis and north of the Divine Cell of Artemis & Apollo. The dvdoor is a locked closed door. "You can see one sun lock and one moon lock on the door." [TODO: check kateuthunsh portas]
 
 [things]
 The sundial is a thing in Temple of the Aulidean Artemis. It is fixed in place.
-The moondial is a thing in Temple of the Aulidean Artemis. It is fixed in place.
+Understand "moondial" as sundial.
 
- The Goddess Artemis is in the Divine Cell of Artemis & Apollo. Artemis is a woman.
+Instead of examining the sundial:
+	[say "Judging by the shadow and the markings, the time is [the time of day to the nearest 10 minutes in words].";]
+	say "Judging by the shadow and the markings, the time is [the time of day in words].";
+	stop the action.
+	
+A sun pocket is an closed unopenable container. It is part of the sundial. It is fixed in place. [TODO: It is undescribed.]
+A moon pocket is an closed unopenable container. It is part of the sundial. It is fixed in place. [TODO: It is undescribed.]
+
+The Goddess Artemis is in the Divine Cell of Artemis & Apollo. Artemis is a woman.
 The God Apollo is in the Divine Cell of Artemis & Apollo. Apollo is a man.
 
+The sun lock is part of the dvdoor. It is an open unopenable container. It is fixed in place.
+The moon lock is part of the dvdoor. It is an open unopenable container. It is fixed in place.
+
+The sun key is inside the sun pocket.
+The moon key is inside the moon pocket.
+
+
+Every turn when the time of day is after 9:04 am and the time of day is before 9:10 am:
+	now the sun pocket is open;
+	say "You notice that the sun pocket is open.". [TODO: better description]
+	
+Every turn when the time of day is after 9:10 aM:
+	now the sun pocket is closed.
+	
+
+[
+Every turn when the time of day is after 11:59 am and the time of day is before 12:11 pm:
+	now the sun pocket is open;
+	say "You notice that the sun pocket open.". [TODO: better description]
+	
+Every turn when the time of day is after 11:59 pm and the time of day is before 12:11 am:
+	now the moon pocket is open;
+	say "You notice that the moon pocket open.". [TODO: better description]
+]
+Every turn:
+	If the sun pocket is open for the first turn:
+		say "You hear the sound of the sun pocket opening.";
+	otherwise if the sun pocket is closed for the first turn:
+		say "You hear the sound of the sun pocket closing.";
+		
+Every turn:
+	If the moon pocket is open for the first turn:
+		say "You hear the sound of the moon pocket opening.";
+	otherwise if the moon pocket is closed for the first turn:
+		say "You hear the sound of the moon pocket closing.";
+		
+
+[unlocking action] 
+
+Unlocking is an action applying to one thing and requiring light. Understand “unlock [something]” as unlocking.
+
+Instead of unlocking the dvdoor with anything:
+	try silently unlocking the dvdoor.
+
+Instead of unlocking the dvdoor:
+	if the moon key is carried by the player and the sun key is carried by the player:
+		try silently inserting the sun key into the sun lock;
+		try silently inserting the moon key into the moon lock;
+		say "You inserted both keys into their respective lock.";
+	otherwise:
+		say "It seems like you need 2 keys for this door to unlock.";
+		stop the action.
+
+	
+Every turn:
+	If the sun key is inside the sun lock and
+	the moon key is inside the moon lock:
+		now ArtemisTemplePuzzleSolved is true;
+	otherwise:
+		now ArtemisTemplePuzzleSolved is false.
+		
+Instead of examining the dvdoor:
+	if ArtemisTemplePuzzleSolved is true and the dvdoor is closed:
+		say "The gate is now unlocked.";
+		try opening the dvdoor;
+	otherwise if ArtemisTemplePuzzleSolved is false and the dvdoor is closed:
+		say "The gate is locked.";
+	otherwise:
+		say "The gate is open.".
+		
+		
+Instead of going in the dvdoor :
+	if ArtemisTemplePuzzleSolved is true and the dvdoor is closed:
+		say "The gate is now unlocked.";
+		try entering the dvdoor ;
+	otherwise if ArtemisTemplePuzzleSolved is false and the dvdoor is closed:
+		say "The gate is locked.";
+	otherwise:
+		try silently entering dvdoor.
+
+Every turn:
+	If ArtemisTemplePuzzleSolved is true for the first turn and the dvdoor is closed:
+		say "You hear the sound of the gate mechanism unlocking";
+		now the dvdoor  is unlocked;
+	otherwise if ArtemisTemplePuzzleSolved is false for the first turn and the dvdoor is closed:
+		say "You hear the sound of the gate mechanism locking.";
+		now the dvdoor is locked;
+	otherwise if ArtemisTemplePuzzleSolved is true for the first turn and the dvdoor is open:
+		say "You hear the sound of the gate mechanism unlocking, but the door is already open";
+	otherwise if ArtemisTemplePuzzleSolved is false for the first turn and the dvdoor is open:
+		say "You hear the sound of the gate mechanism locking, but the door is already open.";
+
 [End Of: Temple of the Aulidean Artemis]
+
 
 
 
