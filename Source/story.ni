@@ -488,77 +488,191 @@ Chapter 3 - Artemis & Apollo
 
 [Region: Theba]
 
-[Start Of: Temple of the Aulidean Artemis]
+[Start Of: Temple of the Aulidean Artemis] [TODO: change the descri[tion of the room when i look] [TODO: fix the pockets situation/description]
 
 The player is in the Temple of the Aulidean Artemis.
 
 [rooms]
-The Temple of the Aulidean Artemis is a room in Thebes.
+The Temple of the Aulidean Artemis is a room in Thebes. The description is "
+You step into the sacred Temple of Aulidean Artemis, where the scent of incense and ancient prayers is still fresh, despite the absence of the priestesses. As you pass through the pronaos, your eyes are drawn to the [if the time of day is before 08:00 pm]sunlight[otherwise]moonlight[end if] cascading down from the open ceiling, illuminating an imposing sundial that stands ar the center of the chamber. The [if the time of day is before 08:00 pm]sun's[otherwise]moon's[end if] rays trace their path across the dial, a silent testament to the passing hours in this eternal sanctuary.
+
+Entering the naos, the very heart of the temple, you find yourself in the presence of the magnificent golden statue of Artemis. My sister stands tall and proud, her form aglow with a divine radiance that speaks of her unyielding strength and purity. In her left hand, she holds the antlers of a noble deer, symbolizing her dominion over the wild, while her right hand grips her bow, ever ready to protect those who dwell under her watchful eye. A quiver, filled with finely crafted arrows, rests upon her back, the tools of the huntress who lets no prey escape.
+
+At her feet, the altar of Artemis beckons, a place where mortals have laid their offerings, hoping to earn her favor. ".
+
+[
+
+"You walk inside the Temple of Aulidean Artemis. First you observe the pronaos. [if the time of day is before 08:00 pm]Sunlight[otherwise]Moonlight[end if] shines from the open ceiling on the big sundial standing in the middle of the room. Entering the naos, you can see a big golden Artemis' statue. She's holding a deer by the horns in her left hand and a bow in her other, both symbols of the virgin goddess. She is also carrying a quiver full of arrows. In front of her statue, you can see the altar of Artemis.".]
+
 The Divine Cell of Artemis & Apollo is a room in Thebes.
 
 [doors]
-The dvdoor is  south of the Temple of the Aulidean Artemis and north of the Divine Cell of Artemis & Apollo. The dvdoor is a locked closed door. "You can see one sun lock and one moon lock on the door." [TODO: check kateuthunsh portas]
+The statue of artemis is down of the Temple of the Aulidean Artemis and up of the Divine Cell of Artemis & Apollo. The statue of artemis is a locked closed door.   It is scenery.
+
+Understand "statue" or "golden statue of artemis" or "magneficent golden statue of artemis" as the statue of artemis when the player is in the Temple of the Aulidean Artemis.
 
 [things]
-The sundial is a thing in Temple of the Aulidean Artemis. It is fixed in place.
-Understand "moondial" as sundial.
+The sundial is in the temple of the Aulidean Artemis. It is fixed in place. The description is "[If the sundial is not handled]You notice it has both sundial and moondial marks, so you can tell the time both with the help of the sun and the moon. [end if][if the sundial is not handled]You also see some words carved on its gnomon: At midday, let Apollo’s light cast no shadow, and at midnight, let Artemis’ glow guide the way. Only then shall the twins unveil the hidden path.[otherwise]The words carved on the gnomon read: At midday, let Apollo’s light cast no shadow, and at midnight, let Artemis’ glow guide the way. Only then shall the twins unveil the hidden path.". It is a scenery.
 
-Instead of examining the sundial:
-	[say "Judging by the shadow and the markings, the time is [the time of day to the nearest 10 minutes in words].";]
-	say "Judging by the shadow and the markings, the time is [the time of day in words].";
-	stop the action.
+A deer is in the temple of the Aulidean Artemis. It is a scenery. The description is "A deer, one of Artemis[apostrophe] symbols. It is part of Artemis[apostrophe] statue.". [TODO:fix descriptions]
+The bow is in the temple of the Aulidean Artemis. It is a scenery.The description is "Artemis[apostrophe] bow. It is part of Artemis[apostrophe] statue.".
+The arrows is in the temple of the Aulidean Artemis. It is a scenery.The description is "Artemis[apostrophe] arrows. It is part of Artemis[apostrophe] statue.".
+The quiver is in the temple of the Aulidean Artemis. It is a scenery.The description is "Artemis[apostrophe] quiver. It is full of arrows. It is part of Artemis[apostrophe] statue.".
+
+A locking mechanism is in the temple of the Aulidean Artemis. It is a scenery.The description is "You can't see the mechanism, but you can hear it inside the statue. [If the statue of artemis is open]Your best guess is that it kept the statue from revealing the stairs that lead under the temple."
+
+[altar of artemis]
+An artemis altar is in the temple of the Aulidean Artemis. It is a scenery. The description of the artemis altar is "The altar of Artemis.". 
+
+Understand "altar" or "altar of artemis" as artemis altar when the player is in the temple of the Aulidean Artemis.
+
+
+Understand "moondial" or "imposing sundial" as sundial.
+
+After examining the sundial:
+	say "Judging by the gnomon's shadow and the [if the time of day is before 08:00 pm]sun[otherwise]moon[end if] markings, the time is [the time of day to the nearest 10 minutes in words].";
+	now the sundial is handled.
 	
+	
+[sun pockets]	
 A sun pocket is an closed unopenable container. It is part of the sundial. It is fixed in place. [TODO: It is undescribed.]
 A moon pocket is an closed unopenable container. It is part of the sundial. It is fixed in place. [TODO: It is undescribed.]
 
 The Goddess Artemis is in the Divine Cell of Artemis & Apollo. Artemis is a woman.
 The God Apollo is in the Divine Cell of Artemis & Apollo. Apollo is a man.
 
-The sun lock is part of the dvdoor. It is an open unopenable container. It is fixed in place.
-The moon lock is part of the dvdoor. It is an open unopenable container. It is fixed in place.
+[locks]
+The sun lock is part of the statue of artemis. It is an open unopenable container. It is fixed in place.
+The moon lock is part of the statue of artemis. It is an open unopenable container. It is fixed in place.
 
-The sun key is inside the sun pocket.
-The moon key is inside the moon pocket.
+Understand "sun-shapped lock" as sun lock.
+Understand "moon-shapped lock" as moon lock.
+
+[keys]
+The sun key is inside the sun pocket. The description is "The head of the key is shapped like a sun with curvy rays. Its colour is a bright gold."
+The moon key is inside the moon pocket. The description is "The head of the key is shapped like a cresent moon. Its colour is a warm ivory."
+
+[examining locks]
+Instead of examining the sun lock:
+	If the sun key is inside the sun lock:
+		say "The sun key is in the sun-shapped lock";
+		stop the action;
+	otherwise if the moon key is inside the sun lock:
+		say "The moon key is in the sun-shapped lock";
+		stop the action;
+	otherwise:
+		say "The sun lock is empty.";
+		stop the action.
+		
+Instead of examining the moon lock:
+	If the sun key is inside the moon lock:
+		say "The sun key is in the moon-shapped lock";
+		stop the action;
+	otherwise if the moon key is inside the moon lock:
+		say "The moon key is in the moon-shapped lock";
+		stop the action;
+	otherwise:
+		say "The moon lock is empty.";
+		stop the action.
 
 
-Every turn when the time of day is after 9:04 am and the time of day is before 9:10 am:
-	now the sun pocket is open;
-	say "You notice that the sun pocket is open.". [TODO: better description]
+[putting keys]
+Instead of inserting anything into the sun lock:
+	if the noun is the sun key:
+		say "You put the sun key in the sun-shapped lock.";
+		continue the action;
+	otherwise if the noun is the moon key:
+		say "You put the moon key in the sun-shapped lock.";
+		continue the action;
+	otherwise:
+		say "Hmmm you don't think this would go there.";
+		stop the action.
+		
+Instead of inserting anything into the moon lock:
+	if the noun is the sun key:
+		say "You put the sun key in the moon-shapped lock.";
+		continue the action;
+	otherwise if the noun is the moon key:
+		say "You put the moon key in the moon-shapped lock.";
+		continue the action;
+	otherwise:
+		say "Hmmm you don't think this would go there.";
+		stop the action.
+
+[wait until time action]
+Hanging around until is an action applying to one time.
+
+Check hanging around until:
+	if the time of day is the time understood, say "It is [time understood in words] now." instead;
+	if the time of day is after the time understood, say "[time understood in words] passed already. Maybe try again tomorrow." instead.
+
+Carry out hanging around until:
+	while the time of day is before the time understood:
+		follow the turn sequence rules.
+
+Report hanging around until:
+	say "It is [time understood in words] now."
+
+Understand "wait until [time]" as hanging around until.
+
+After waiting:
+	say "Time passes.";
+	say "Would you maybe prefer waiting until a certain time?".
+
 	
-Every turn when the time of day is after 9:10 aM:
-	now the sun pocket is closed.
-	
 
-[
+[sun pocket]
 Every turn when the time of day is after 11:59 am and the time of day is before 12:11 pm:
 	now the sun pocket is open;
-	say "You notice that the sun pocket open.". [TODO: better description]
 	
+Every turn when the time of day is after 12:09 pm:
+	now the sun pocket is closed.
+	
+Instead of examining the sun pocket:
+	If the sun pocket is open:
+		say "The sun pocket is open.";
+		stop the action;
+	otherwise:
+		say "The sun pocket is closed.";
+		stop the action.
+
+[moon pocket]	
 Every turn when the time of day is after 11:59 pm and the time of day is before 12:11 am:
-	now the moon pocket is open;
-	say "You notice that the moon pocket open.". [TODO: better description]
-]
+	now the moon pocket is open;	
+
+Every turn when the time of day is after 12:09 am:
+	now the moon pocket is closed.
+
+Instead of examining the moon pocket:
+	If the moon pocket is open:
+		say "The moon pocket is open.";
+		stop the action;
+	otherwise:
+		say "The moon pocket is closed.";
+		stop the action.
+		
+
 Every turn:
 	If the sun pocket is open for the first turn:
-		say "You hear the sound of the sun pocket opening.";
+		say "At [the time of day in words] you hear the sound of the sun pocket opening.";
 	otherwise if the sun pocket is closed for the first turn:
-		say "You hear the sound of the sun pocket closing.";
+		say "At [the time of day in words] you hear the sound of the sun pocket closing.";
 		
 Every turn:
 	If the moon pocket is open for the first turn:
-		say "You hear the sound of the moon pocket opening.";
+		say "At [the time of day in words] you hear the sound of the moon pocket opening.";
 	otherwise if the moon pocket is closed for the first turn:
-		say "You hear the sound of the moon pocket closing.";
+		say "At [the time of day in words] you hear the sound of the moon pocket closing.";
 		
 
 [unlocking action] 
 
 Unlocking is an action applying to one thing and requiring light. Understand “unlock [something]” as unlocking.
 
-Instead of unlocking the dvdoor with anything:
-	try silently unlocking the dvdoor.
+Instead of unlocking the statue of artemis with anything:
+	try silently unlocking the statue of artemis.
 
-Instead of unlocking the dvdoor:
+Instead of unlocking the statue of artemis:
 	if the moon key is carried by the player and the sun key is carried by the player:
 		try silently inserting the sun key into the sun lock;
 		try silently inserting the moon key into the moon lock;
@@ -575,36 +689,59 @@ Every turn:
 	otherwise:
 		now ArtemisTemplePuzzleSolved is false.
 		
-Instead of examining the dvdoor:
-	if ArtemisTemplePuzzleSolved is true and the dvdoor is closed:
-		say "The gate is now unlocked.";
-		try opening the dvdoor;
-	otherwise if ArtemisTemplePuzzleSolved is false and the dvdoor is closed:
-		say "The gate is locked.";
+Instead of examining the statue of artemis:
+	if ArtemisTemplePuzzleSolved is true and the statue of artemis is closed:
+		say "The statue feels wobbly. Maybe you could try pushing it...";
+	otherwise if ArtemisTemplePuzzleSolved is false and the statue of artemis is closed:
+		say "On the base of the statue you can see two locks: one sun-shapped and one moon-shapped.";
 	otherwise:
-		say "The gate is open.".
+		say "You can see some stairs leading downstairs.".
 		
-		
-Instead of going in the dvdoor :
-	if ArtemisTemplePuzzleSolved is true and the dvdoor is closed:
-		say "The gate is now unlocked.";
-		try entering the dvdoor ;
-	otherwise if ArtemisTemplePuzzleSolved is false and the dvdoor is closed:
-		say "The gate is locked.";
-	otherwise:
-		try silently entering dvdoor.
+Understand "door" as the statue of artemis when the player is in the temple of the Aulidean Artemis.
 
+Instead of pushing the statue of artemis for the first time:
+	now the statue of artemis is handled;
+	try opening the statue of artemis;
+	stop the action.
+
+		
+Instead of pushing the statue of artemis:
+	if the statue of artemis is handled:
+		say "The statue feels stuck. You can't push it back.";
+		stop the action.
+
+
+Instead of opening the statue of artemis:
+	if ArtemisTemplePuzzleSolved is true and the statue of artemis is closed:
+		say "You push the statue away and you reveal some stairs leading under the temple.";
+		now the statue of artemis is open;
+	otherwise if ArtemisTemplePuzzleSolved is false and the statue of artemis is closed:
+		say "It seems like you might be missing two keys.";
+	otherwise:
+		say "You can see some stairs leading downstairs."
+
+After opening the statue of artemis:
+	try silently entering the statue of artemis;
+	stop the action.
+
+Instead of entering the statue of artemis:
+	try silently opening the statue of artemis;
+	Stop the action.
+	
 Every turn:
-	If ArtemisTemplePuzzleSolved is true for the first turn and the dvdoor is closed:
-		say "You hear the sound of the gate mechanism unlocking";
-		now the dvdoor  is unlocked;
-	otherwise if ArtemisTemplePuzzleSolved is false for the first turn and the dvdoor is closed:
+	If ArtemisTemplePuzzleSolved is true for the first turn and the statue of artemis is closed:
+		say "You hear the sound of a locking mechanism unlocking.";
+		now the statue of artemis  is unlocked;
+	otherwise if ArtemisTemplePuzzleSolved is false for the first turn and the statue of artemis is closed:
 		say "You hear the sound of the gate mechanism locking.";
-		now the dvdoor is locked;
-	otherwise if ArtemisTemplePuzzleSolved is true for the first turn and the dvdoor is open:
+		now the statue of artemis is locked;
+	otherwise if ArtemisTemplePuzzleSolved is true for the first turn and the statue of artemis is open:
 		say "You hear the sound of the gate mechanism unlocking, but the door is already open";
-	otherwise if ArtemisTemplePuzzleSolved is false for the first turn and the dvdoor is open:
+	otherwise if ArtemisTemplePuzzleSolved is false for the first turn and the statue of artemis is open:
 		say "You hear the sound of the gate mechanism locking, but the door is already open.";
+		
+		
+test art with "wait until 12 pm/take sun key/wait until 12 am/ take moon key/ put sun key in sun lock/ put moon key in moon lock".
 
 [End Of: Temple of the Aulidean Artemis]
 

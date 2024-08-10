@@ -7,7 +7,7 @@ Using Inform kit 'EnglishLanguageKit' (priority 1).
 Using Inform kit 'WorldModelKit' (priority 2).
 Using Inform kit 'CommandParserKit' (priority 3).
 756 Preform nonterminals read from C:\Users\User\OneDrive\Desktop\Thesis\Inform\Internal\Languages\English\Syntax.preform
-I've now read your source text, which is 5660 words long.
+I've now read your source text, which is 6958 words long.
 Included: core, naming, instance counting, interactive fiction, spatial model, backdrops, bibliographic data, chronology, devices, mapping, persons, player, regions, scenes, scoring, timed rules, times of day, actions, going, command, showme, multimedia, figures, sounds, glulx external files
 Excluded: 
 I've also read Basic Inform by Graham Nelson, which is 7691 words long.
@@ -42,7 +42,7 @@ Loading kinds definitions from C:\Users\User\OneDrive\Desktop\Thesis\Inform\Inte
 Phase III ... Pre-pass through major nodes
 -----------------------------------------------------
 
-.... MajorNodes__pre_pass() took 11cs
+.... MajorNodes__pre_pass() took 12cs
 
 
 -----------------------------------------------------
@@ -88,20 +88,22 @@ Phase IX ... Augment model world
 Phase X ... Phrases and rules
 -----------------------------------------------------
 
-.... ImperativeDefinitions__assess_all() took 4cs
+.... ImperativeDefinitions__assess_all() took 5cs
 
 
 -----------------------------------------------------
 Phase XI ... Generating inter (1)
 -----------------------------------------------------
 
-.... RTKindConstructors__compile() took 6cs
+.... RTKindConstructors__compile() took 5cs
 
 
 -----------------------------------------------------
 Phase XII ... Generating inter (2)
 -----------------------------------------------------
 
+.... RTKindConstructors__compile_permissions() took 1cs
+.... ImperativeDefinitions__compile_first_block() took 1cs
 
 
 ==== Phase XII.1 ... Slashing command grammar ====
@@ -110,13 +112,15 @@ Phase XII ... Generating inter (2)
 
 ==== Phase XII.2 ... Determining command grammar ====
 
+.... CommandGrammars__prepare() took 1cs
 
 
 -----------------------------------------------------
 Phase XIII ... Generating inter (3)
 -----------------------------------------------------
 
-.... Sequence__undertake_queued_tasks() took 136cs
+.... Sequence__undertake_queued_tasks() took 149cs
+.... Sequence__undertake_queued_tasks() took 1cs
 .... RTPhrasebook__compile_entries() took 2cs
 
 
@@ -153,7 +157,7 @@ Phase XVI ... Bibliographic work
 Phase XVII ... Complete
 -----------------------------------------------------
 
-Compile CPU time: 190 centiseconds
+Compile CPU time: 206 centiseconds
 
 
 ==== Phase XVII.1 ... step 1/15: read <- *memory ====
@@ -198,12 +202,12 @@ Compile CPU time: 190 centiseconds
 
 ==== Phase XVII.11 ... step 11/15: eliminate-redundant-labels ====
 
-2053 redundant label(s) removed
+2113 redundant label(s) removed
 
 
 ==== Phase XVII.12 ... step 12/15: eliminate-redundant-operations ====
 
-783 redundant operation(s) removed
+806 redundant operation(s) removed
 
 
 ==== Phase XVII.13 ... step 13/15: optionally-generate text ->  ====
@@ -283,8 +287,8 @@ HTML tag stack:
     2. html (opened at line 236 of 'D:/Programs/Adv/Inform7/Distribution/inweb/foundation-module/Chapter 5/HTML.w')
 
 
-Back end elapsed time: 107cs
-Total of 100 files written as streams.
+Back end elapsed time: 115cs
+Total of 101 files written as streams.
 Vacant escapes: %: ..CDE.GH..K.M.O.QR.TU...YZab..e..h.jklm.o.qr......yz0123456789
 Vacant escapes: $: .....F...J..........UVW.....................s.u..x.........789
 
