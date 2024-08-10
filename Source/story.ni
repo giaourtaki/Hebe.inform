@@ -493,12 +493,13 @@ Chapter 3 - Artemis & Apollo
 The player is in the Temple of the Aulidean Artemis.
 
 [rooms]
-The Temple of the Aulidean Artemis is a room in Thebes. The description is "
-You step into the sacred Temple of Aulidean Artemis, where the scent of incense and ancient prayers is still fresh, despite the absence of the priestesses. As you pass through the pronaos, your eyes are drawn to the [if the time of day is before 08:00 pm]sunlight[otherwise]moonlight[end if] cascading down from the open ceiling, illuminating an imposing sundial that stands ar the center of the chamber. The [if the time of day is before 08:00 pm]sun's[otherwise]moon's[end if] rays trace their path across the dial, a silent testament to the passing hours in this eternal sanctuary.
+The Temple of the Aulidean Artemis is a room in Thebes. The description is "You step into the sacred temple of Aulidean Artemis. The temple is empty and abandoned by the priestesses, following Kronos' seizure of power, as expected, unfortunately. 
 
-Entering the naos, the very heart of the temple, you find yourself in the presence of the magnificent golden statue of Artemis. Your sister stands tall and proud, her form aglow with a divine radiance that speaks of her unyielding strength and purity. In her left hand, she holds the antlers of a noble deer, symbolizing her dominion over the wild, while her right hand grips her bow, ever ready to protect those who dwell under her watchful eye. A quiver, filled with finely crafted arrows, rests upon her back, the tools of the huntress who lets no prey escape.
+As you pass through the pronaos, your eyes are drawn to the [if the time of day is before 08:00 pm]sunlight[otherwise]moonlight[end if] cascading down from the open ceiling, illuminating an imposing sundial made of pearly white marble that stands at the center of the chamber. The [if the time of day is before 08:00 pm]sun's[otherwise]moon's[end if] rays cross paths with the dial's gnomon, casting a shadow that marks the hour.
 
-In front of her feet is the altar of Artemis, a place where mortals would laid their offerings not long ago, hoping to earn her favor. ".
+Entering the naos, the most divine part of the temple, you find yourself in the presence of the graceful golden statue of Artemis. Your sister stands tall and proud, her form aglow with a divine radiance that speaks of her unyielding strength and purity. In her left hand, she holds the antlers of a noble deer, symbolizing her dominion over the wild, while her right hand grips her bow, ever ready to protect those who dwell under her watchful eye. A quiver, filled with finely crafted arrows, rests upon her back, the tools of the huntress who lets no prey escape.
+
+Directly in front of her statue is the altar of Artemis, a place where mortals would lay their offerings not long ago, hoping to earn her favor. ".
 
 Instead of looking for the 2nd time:
 	 If the player is in the Temple of the Aulidean Artemis:
@@ -507,11 +508,9 @@ Instead of looking for the 2nd time:
 	otherwise:
 		continue the action.
 
-[
+["You walk inside the Temple of Aulidean Artemis. First you observe the pronaos. [if the time of day is before 08:00 pm]Sunlight[otherwise]Moonlight[end if] shines from the open ceiling on the big sundial standing in the middle of the room. Entering the naos, you can see a big golden Artemis' statue. She's holding a deer by the horns in her left hand and a bow in her other, both symbols of the virgin goddess. She is also carrying a quiver full of arrows. In front of her statue, you can see the altar of Artemis.".]
 
-"You walk inside the Temple of Aulidean Artemis. First you observe the pronaos. [if the time of day is before 08:00 pm]Sunlight[otherwise]Moonlight[end if] shines from the open ceiling on the big sundial standing in the middle of the room. Entering the naos, you can see a big golden Artemis' statue. She's holding a deer by the horns in her left hand and a bow in her other, both symbols of the virgin goddess. She is also carrying a quiver full of arrows. In front of her statue, you can see the altar of Artemis.".]
 
-The Divine Cell of Artemis & Apollo is a room in Thebes.
 
 [doors]
 The statue of artemis is down of the Temple of the Aulidean Artemis and up of the Divine Cell of Artemis & Apollo. The statue of artemis is a locked closed door.   It is scenery.
@@ -519,7 +518,11 @@ The statue of artemis is down of the Temple of the Aulidean Artemis and up of th
 Understand "statue" or "golden statue of artemis" or "magneficent golden statue of artemis" as the statue of artemis when the player is in the Temple of the Aulidean Artemis.
 
 [things]
-The sundial is in the temple of the Aulidean Artemis. It is fixed in place. The description is "[If the sundial is not handled]You notice it has both sundial and moondial marks, so you can tell the time both with the help of the sun and the moon. [end if][if the sundial is not handled]You also see some words carved on its gnomon: At midday, let Apollo’s light cast no shadow, and at midnight, let Artemis’ glow guide the way. Only then shall the twins unveil the hidden path.[otherwise]The words carved on the gnomon read: At midday, let Apollo’s light cast no shadow, and at midnight, let Artemis’ glow guide the way. Only then shall the twins unveil the hidden path.". It is a scenery.
+The sundial is in the temple of the Aulidean Artemis. It is fixed in place. The description is "[If the sundial is not handled]The dial is designed with two separate rings encircling its plate, one for sun and one for lunar engravings, allowing you to read the time day and night. [end if][if the sundial is not handled]You also see on the gnomon an inscription engraved and gilded in gold that says: At midday, let Apollo’s light cast no shadow, and at midnight, let Artemis’ glow guide the way. Only then shall the twins unveil the hidden path.[otherwise]The inscription engraved on the gnomon read: At midday, let Apollo’s light cast no shadow, and at midnight, let Artemis’ glow guide the way. Only then shall the twins unveil the hidden path.". It is a scenery.
+
+A gnomon is part of the sundial. It is a scenery. The description is "On the gnomon, an inscription engraved and gilded in gold says: At midday, let Apollo’s light cast no shadow, and at midnight, let Artemis’ glow guide the way. Only then shall the twins unveil the hidden path.".
+
+Understand "gnomon of the sundial" as gnomon.
 
 A deer is in the temple of the Aulidean Artemis. It is a scenery. The description is "A deer, one of Artemis[apostrophe] symbols. It is part of Artemis[apostrophe] statue.". [TODO:fix descriptions]
 The bow is in the temple of the Aulidean Artemis. It is a scenery.The description is "Artemis[apostrophe] bow. It is part of Artemis[apostrophe] statue.".
@@ -537,7 +540,7 @@ Understand "altar" or "altar of artemis" or "sacrificial altar" as goddess altar
 Understand "moondial" or "imposing sundial" as sundial.
 
 After examining the sundial:
-	say "Judging by the gnomon's shadow and the [if the time of day is before 08:00 pm]sun[otherwise]moon[end if] markings, the time is [the time of day to the nearest 10 minutes in words].";
+	say "Judging by the gnomon's shadow and the [if the time of day is before 08:00 pm]sun[otherwise]moon[end if] markings, the time is [the time of day to the nearest 5 minutes in words].";
 	now the sundial is handled.
 	
 	
@@ -545,7 +548,8 @@ After examining the sundial:
 A sun pocket is an closed unopenable opaque container. It is part of the sundial. It is fixed in place. [TODO: It is undescribed.] The carrying capacity of the sun pocket is 1.
 A moon pocket is an closed unopenable opaque container. It is part of the sundial. It is fixed in place. [TODO: It is undescribed.] The carrying capacity of the moon pocket is 1.
 
-
+Understand "hatch" as the sun pocket. 
+Understand "flap" as moon pocket.
 
 [locks]
 The sun lock is part of the statue of artemis. It is an open unopenable container. It is fixed in place. The carrying capacity of the sun lock is 1.
@@ -645,7 +649,6 @@ Instead of examining the sun pocket:
 		say "The sun hatch is closed.";
 		stop the action.
 
-Understand "hatch" as the sun pocket. 
 
 [examine moon pocket]	
 Every turn when the time of day is after 11:59 pm and the time of day is before 12:11 am:
@@ -656,26 +659,26 @@ Every turn when the time of day is after 12:09 am:
 
 Instead of examining the moon pocket:
 	If the moon pocket is open:
-		say "The moon flap is open. Inside you can see [a list of things inside the moon pocket].";
+		say "The moon hatch is open. Inside you can see [a list of things inside the moon pocket].";
 		stop the action;
 	otherwise:
-		say "The moon flap is closed.";
+		say "The moon hatch is closed.";
 		stop the action.
 		
-Understand "flap" as moon pocket.
-		
+
+		[the shadow casted by the dial's gnomon meets a sun marking]
 
 Every turn:
 	If the sun pocket is open for the first turn:
-		say "At [the time of day in words] you hear the sound of a hatch opening on the dial."; [TODO: change hatch and flap + max capacity 1]
+		say "At [the time of day in words]  you hear the click of a latch releasing and a hatch opening coming from the dial."; [TODO: sundial + hatch description]
 	otherwise if the sun pocket is closed for the first turn:
-		say "At [the time of day in words] you hear the sound of the sun hatch closing.";
+		say "At [the time of day in words] you hear the sound of the hatch closing and the click of a latch locking coming from the dial.";
 		
 Every turn:
 	If the moon pocket is open for the first turn:
-		say "At [the time of day in words] you hear the sound of a flap opening on the dial.";
+		say "At [the time of day in words] you hear the click of a latch releasing and a hatch opening coming from the dial."; [TODO: sundial description]
 	otherwise if the moon pocket is closed for the first turn:
-		say "At [the time of day in words] you hear the sound of the moon flap closing.";
+		say "At [the time of day in words] you hear the sound of the hatch closing and the click of a latch locking coming from the dial.";
 		
 
 [unlocking action] 
@@ -723,7 +726,6 @@ After unlocking the statue of artemis:
 		continue the action;
 	otherwise:
 		continue the action.
-
 
 Instead of unlocking the sun lock:
 	if the sun key is carried by the player:
@@ -810,7 +812,7 @@ test art with "wait until 12 pm/take sun key/wait until 12 am/ take moon key/ pu
 
 [End Of: Temple of the Aulidean Artemis]
 
-
+The Divine Cell of Artemis & Apollo is a room in Thebes.
 The Goddess Artemis is in the Divine Cell of Artemis & Apollo. Artemis is a woman.
 The God Apollo is in the Divine Cell of Artemis & Apollo. Apollo is a man.
 

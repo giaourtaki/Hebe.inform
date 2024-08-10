@@ -3,7 +3,7 @@
   <generator>Windows Inform 10.1.2</generator>
   <item nodeId="node-1">
     <command xml:space="preserve">Hebe</command>
-    <result xml:space="preserve">mia fora kai enan kairo...&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 240810 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Temple of the Aulidean Artemis&#x000A; You step into the sacred Temple of Aulidean Artemis, where the scent of incense and ancient prayers is still fresh, despite the absence of the priestesses. As you pass through the pronaos, your eyes are drawn to the sunlight cascading down from the open ceiling, illuminating an imposing sundial that stands ar the center of the chamber. The sun's rays trace their path across the dial, a silent testament to the passing hours in this eternal sanctuary.&#x000A;&#x000A;Entering the naos, the very heart of the temple, you find yourself in the presence of the magnificent golden statue of Artemis. Your sister stands tall and proud, her form aglow with a divine radiance that speaks of her unyielding strength and purity. In her left hand, she holds the antlers of a noble deer, symbolizing her dominion over the wild, while her right hand grips her bow, ever ready to protect those who dwell under her watchful eye. A quiver, filled with finely crafted arrows, rests upon her back, the tools of the huntress who lets no prey escape.&#x000A;&#x000A;In front of her feet is the altar of Artemis, a place where mortals would laid their offerings not long ago, hoping to earn her favor. &#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">mia fora kai enan kairo...&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 240810 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Temple of the Aulidean Artemis&#x000A;You step into the sacred temple of Aulidean Artemis. The temple is empty and abandoned by the priestesses, following Kronos" seizure of power, as expected, unfortunately. As you pass through the pronaos, your eyes are drawn to the sunlight cascading down from the open ceiling, illuminating an imposing sundial that stands ar the center of the chamber. The sun's rays cross paths with the dial's gnomon, casting a shadow that marks the hour.&#x000A;&#x000A;Entering the naos, the most divine part of the temple, you find yourself in the presence of the graceful golden statue of Artemis. Your sister stands tall and proud, her form aglow with a divine radiance that speaks of her unyielding strength and purity. In her left hand, she holds the antlers of a noble deer, symbolizing her dominion over the wild, while her right hand grips her bow, ever ready to protect those who dwell under her watchful eye. A quiver, filled with finely crafted arrows, rests upon her back, the tools of the huntress who lets no prey escape.&#x000A;&#x000A;Directly in front of her statue is the altar of Artemis, a place where mortals would lay their offerings not long ago, hoping to earn her favor. &#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -111,6 +111,7 @@
       <child nodeId="node-1425"/>
       <child nodeId="node-1667"/>
       <child nodeId="node-1426"/>
+      <child nodeId="node-1878"/>
       <child nodeId="node-1440"/>
       <child nodeId="node-1442"/>
       <child nodeId="node-1447"/>
@@ -6063,7 +6064,7 @@
   </item>
   <item nodeId="node-1876">
     <command xml:space="preserve">unlock statue</command>
-    <result xml:space="preserve">It seems like you need 2 keys for the locks to unlock.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You put the sun key in the sun-shapped lock.&#x000A;&#x000A;It seems like you need one more key.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -6072,7 +6073,7 @@
   </item>
   <item nodeId="node-1877">
     <command xml:space="preserve">x sun lock</command>
-    <result xml:space="preserve">The sun lock is empty.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">The sun key is in the sun-shapped lock&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -15091,6 +15092,12 @@
   <item nodeId="node-1439">
     <command xml:space="preserve">x sign</command>
     <result xml:space="preserve">It says: The key to passage lies from the lightest touch to the heaviest step.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1878">
+    <command xml:space="preserve">x gnomon of the sundial</command>
+    <result xml:space="preserve">I only understood you as far as wanting to examine the gnomon.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
