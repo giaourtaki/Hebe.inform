@@ -3,7 +3,7 @@
   <generator>Windows Inform 10.1.2</generator>
   <item nodeId="node-1">
     <command xml:space="preserve">Hebe</command>
-    <result xml:space="preserve">mia fora kai enan kairo...&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 240810 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Temple of the Aulidean Artemis&#x000A;You step into the sacred temple of Aulidean Artemis. The temple is empty and abandoned by the priestesses, following Kronos" seizure of power, as expected, unfortunately. As you pass through the pronaos, your eyes are drawn to the sunlight cascading down from the open ceiling, illuminating an imposing sundial that stands ar the center of the chamber. The sun's rays cross paths with the dial's gnomon, casting a shadow that marks the hour.&#x000A;&#x000A;Entering the naos, the most divine part of the temple, you find yourself in the presence of the graceful golden statue of Artemis. Your sister stands tall and proud, her form aglow with a divine radiance that speaks of her unyielding strength and purity. In her left hand, she holds the antlers of a noble deer, symbolizing her dominion over the wild, while her right hand grips her bow, ever ready to protect those who dwell under her watchful eye. A quiver, filled with finely crafted arrows, rests upon her back, the tools of the huntress who lets no prey escape.&#x000A;&#x000A;Directly in front of her statue is the altar of Artemis, a place where mortals would lay their offerings not long ago, hoping to earn her favor. &#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">mia fora kai enan kairo...&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 240811 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Temple of the Aulidean Artemis&#x000A;You step into the sacred temple of Aulidean Artemis. The temple is empty and abandoned by the priestesses, following Kronos' seizure of power, as expected, unfortunately.&#x000A;&#x000A;As you pass through the pronaos, your eyes are drawn to the sunlight cascading down from the open ceiling, illuminating an imposing sundial made of pearly white marble that stands at the center of the chamber. The sun's rays cross paths with the dial's gnomon, casting a shadow that marks the hour.&#x000A;&#x000A;Entering the naos, the most divine part of the temple, you find yourself in the presence of the graceful golden statue of Artemis. Your sister stands tall and proud, her form aglow with a divine radiance that speaks of her unyielding strength and purity. In her left hand, she holds the antlers of a noble deer, symbolizing her dominion over the wild, while her right hand grips her bow, ever ready to protect those who dwell under her watchful eye. A quiver, filled with finely crafted arrows, rests upon her back, the tools of the huntress who lets no prey escape.&#x000A;&#x000A;Directly in front of her statue is the altar of Artemis, a place where mortals would lay their offerings not long ago, hoping to earn her favor. &#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -4488,6 +4488,7 @@
       <child nodeId="node-828"/>
       <child nodeId="node-847"/>
       <child nodeId="node-1805"/>
+      <child nodeId="node-1879"/>
     </children>
   </item>
   <item nodeId="node-397">
@@ -8909,6 +8910,309 @@
   <item nodeId="node-1822">
     <command xml:space="preserve">d</command>
     <result xml:space="preserve">You take the stairs that lead under the temple.&#x000A;&#x000A;Divine Cell of Artemis &amp; Apollo&#x000A;You can see a Goddess Artemis and a God Apollo here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1879">
+    <command xml:space="preserve">x temple</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1880"/>
+    </children>
+  </item>
+  <item nodeId="node-1880">
+    <command xml:space="preserve">x sundial</command>
+    <result xml:space="preserve">The dial is designed with two separate rings encircling its plate, one for sun and one for lunar engravings, allowing you to read the time day and night. You also see on the gnomon an inscription engraved and gilded in gold that says: At midday, let Apollo's light cast no shadow, and at midnight, let Artemis" glow guide the way. Only then shall the twins unveil the hidden path.&#x000A;&#x000A;Judging by the gnomon's shadow and the sun markings, the time is nine o'clock.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1881"/>
+    </children>
+  </item>
+  <item nodeId="node-1881">
+    <command xml:space="preserve">t</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1882"/>
+    </children>
+  </item>
+  <item nodeId="node-1882">
+    <command xml:space="preserve">timer</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1883"/>
+    </children>
+  </item>
+  <item nodeId="node-1883">
+    <command xml:space="preserve">time</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1884"/>
+    </children>
+  </item>
+  <item nodeId="node-1884">
+    <command xml:space="preserve">what time is it</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1885"/>
+    </children>
+  </item>
+  <item nodeId="node-1885">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying nothing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1886"/>
+    </children>
+  </item>
+  <item nodeId="node-1886">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Temple of the Aulidean Artemis&#x000A;You step into the sacred temple of Aulidean Artemis. The temple is empty and abandoned by the priestesses, following Kronos' seizure of power, as expected, unfortunately.&#x000A;&#x000A;As you pass through the pronaos, your eyes are drawn to the sunlight cascading down from the open ceiling, illuminating an imposing sundial made of pearly white marble that stands at the center of the chamber. The sun's rays cross paths with the dial's gnomon, casting a shadow that marks the hour.&#x000A;&#x000A;Entering the naos, the most divine part of the temple, you find yourself in the presence of the graceful golden statue of Artemis. Your sister stands tall and proud, her form aglow with a divine radiance that speaks of her unyielding strength and purity. In her left hand, she holds the antlers of a noble deer, symbolizing her dominion over the wild, while her right hand grips her bow, ever ready to protect those who dwell under her watchful eye. A quiver, filled with finely crafted arrows, rests upon her back, the tools of the huntress who lets no prey escape.&#x000A;&#x000A;Directly in front of her statue is the altar of Artemis, a place where mortals would lay their offerings not long ago, hoping to earn her favor. &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1887"/>
+    </children>
+  </item>
+  <item nodeId="node-1887">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Temple of the Aulidean Artemis&#x000A;You step into the sacred temple of Aulidean Artemis. The temple is empty and abandoned by the priestesses, following Kronos' seizure of power, as expected, unfortunately.&#x000A;&#x000A;As you pass through the pronaos, your eyes are drawn to the sunlight cascading down from the open ceiling, illuminating an imposing sundial made of pearly white marble that stands at the center of the chamber. The sun's rays cross paths with the dial's gnomon, casting a shadow that marks the hour.&#x000A;&#x000A;Entering the naos, the most divine part of the temple, you find yourself in the presence of the graceful golden statue of Artemis. Your sister stands tall and proud, her form aglow with a divine radiance that speaks of her unyielding strength and purity. In her left hand, she holds the antlers of a noble deer, symbolizing her dominion over the wild, while her right hand grips her bow, ever ready to protect those who dwell under her watchful eye. A quiver, filled with finely crafted arrows, rests upon her back, the tools of the huntress who lets no prey escape.&#x000A;&#x000A;Directly in front of her statue is the altar of Artemis, a place where mortals would lay their offerings not long ago, hoping to earn her favor. &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1888"/>
+    </children>
+  </item>
+  <item nodeId="node-1888">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Temple of the Aulidean Artemis&#x000A;You step into the sacred temple of Aulidean Artemis. The temple is empty and abandoned by the priestesses, following Kronos' seizure of power, as expected, unfortunately.&#x000A;&#x000A;As you pass through the pronaos, your eyes are drawn to the sunlight cascading down from the open ceiling, illuminating an imposing sundial made of pearly white marble that stands at the center of the chamber. The sun's rays cross paths with the dial's gnomon, casting a shadow that marks the hour.&#x000A;&#x000A;Entering the naos, the most divine part of the temple, you find yourself in the presence of the graceful golden statue of Artemis. Your sister stands tall and proud, her form aglow with a divine radiance that speaks of her unyielding strength and purity. In her left hand, she holds the antlers of a noble deer, symbolizing her dominion over the wild, while her right hand grips her bow, ever ready to protect those who dwell under her watchful eye. A quiver, filled with finely crafted arrows, rests upon her back, the tools of the huntress who lets no prey escape.&#x000A;&#x000A;Directly in front of her statue is the altar of Artemis, a place where mortals would lay their offerings not long ago, hoping to earn her favor. &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1889"/>
+    </children>
+  </item>
+  <item nodeId="node-1889">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Temple of the Aulidean Artemis&#x000A;You step into the sacred temple of Aulidean Artemis. The temple is empty and abandoned by the priestesses, following Kronos' seizure of power, as expected, unfortunately.&#x000A;&#x000A;As you pass through the pronaos, your eyes are drawn to the sunlight cascading down from the open ceiling, illuminating an imposing sundial made of pearly white marble that stands at the center of the chamber. The sun's rays cross paths with the dial's gnomon, casting a shadow that marks the hour.&#x000A;&#x000A;Entering the naos, the most divine part of the temple, you find yourself in the presence of the graceful golden statue of Artemis. Your sister stands tall and proud, her form aglow with a divine radiance that speaks of her unyielding strength and purity. In her left hand, she holds the antlers of a noble deer, symbolizing her dominion over the wild, while her right hand grips her bow, ever ready to protect those who dwell under her watchful eye. A quiver, filled with finely crafted arrows, rests upon her back, the tools of the huntress who lets no prey escape.&#x000A;&#x000A;Directly in front of her statue is the altar of Artemis, a place where mortals would lay their offerings not long ago, hoping to earn her favor. &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1890"/>
+    </children>
+  </item>
+  <item nodeId="node-1890">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Temple of the Aulidean Artemis&#x000A;You step into the sacred temple of Aulidean Artemis. The temple is empty and abandoned by the priestesses, following Kronos' seizure of power, as expected, unfortunately.&#x000A;&#x000A;As you pass through the pronaos, your eyes are drawn to the sunlight cascading down from the open ceiling, illuminating an imposing sundial made of pearly white marble that stands at the center of the chamber. The sun's rays cross paths with the dial's gnomon, casting a shadow that marks the hour.&#x000A;&#x000A;Entering the naos, the most divine part of the temple, you find yourself in the presence of the graceful golden statue of Artemis. Your sister stands tall and proud, her form aglow with a divine radiance that speaks of her unyielding strength and purity. In her left hand, she holds the antlers of a noble deer, symbolizing her dominion over the wild, while her right hand grips her bow, ever ready to protect those who dwell under her watchful eye. A quiver, filled with finely crafted arrows, rests upon her back, the tools of the huntress who lets no prey escape.&#x000A;&#x000A;Directly in front of her statue is the altar of Artemis, a place where mortals would lay their offerings not long ago, hoping to earn her favor. &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1891"/>
+    </children>
+  </item>
+  <item nodeId="node-1891">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Temple of the Aulidean Artemis&#x000A;You step into the sacred temple of Aulidean Artemis. The temple is empty and abandoned by the priestesses, following Kronos' seizure of power, as expected, unfortunately.&#x000A;&#x000A;As you pass through the pronaos, your eyes are drawn to the sunlight cascading down from the open ceiling, illuminating an imposing sundial made of pearly white marble that stands at the center of the chamber. The sun's rays cross paths with the dial's gnomon, casting a shadow that marks the hour.&#x000A;&#x000A;Entering the naos, the most divine part of the temple, you find yourself in the presence of the graceful golden statue of Artemis. Your sister stands tall and proud, her form aglow with a divine radiance that speaks of her unyielding strength and purity. In her left hand, she holds the antlers of a noble deer, symbolizing her dominion over the wild, while her right hand grips her bow, ever ready to protect those who dwell under her watchful eye. A quiver, filled with finely crafted arrows, rests upon her back, the tools of the huntress who lets no prey escape.&#x000A;&#x000A;Directly in front of her statue is the altar of Artemis, a place where mortals would lay their offerings not long ago, hoping to earn her favor. &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1892"/>
+    </children>
+  </item>
+  <item nodeId="node-1892">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Temple of the Aulidean Artemis&#x000A;You step into the sacred temple of Aulidean Artemis. The temple is empty and abandoned by the priestesses, following Kronos' seizure of power, as expected, unfortunately.&#x000A;&#x000A;As you pass through the pronaos, your eyes are drawn to the sunlight cascading down from the open ceiling, illuminating an imposing sundial made of pearly white marble that stands at the center of the chamber. The sun's rays cross paths with the dial's gnomon, casting a shadow that marks the hour.&#x000A;&#x000A;Entering the naos, the most divine part of the temple, you find yourself in the presence of the graceful golden statue of Artemis. Your sister stands tall and proud, her form aglow with a divine radiance that speaks of her unyielding strength and purity. In her left hand, she holds the antlers of a noble deer, symbolizing her dominion over the wild, while her right hand grips her bow, ever ready to protect those who dwell under her watchful eye. A quiver, filled with finely crafted arrows, rests upon her back, the tools of the huntress who lets no prey escape.&#x000A;&#x000A;Directly in front of her statue is the altar of Artemis, a place where mortals would lay their offerings not long ago, hoping to earn her favor. &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1893"/>
+    </children>
+  </item>
+  <item nodeId="node-1893">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Temple of the Aulidean Artemis&#x000A;You step into the sacred temple of Aulidean Artemis. The temple is empty and abandoned by the priestesses, following Kronos' seizure of power, as expected, unfortunately.&#x000A;&#x000A;As you pass through the pronaos, your eyes are drawn to the sunlight cascading down from the open ceiling, illuminating an imposing sundial made of pearly white marble that stands at the center of the chamber. The sun's rays cross paths with the dial's gnomon, casting a shadow that marks the hour.&#x000A;&#x000A;Entering the naos, the most divine part of the temple, you find yourself in the presence of the graceful golden statue of Artemis. Your sister stands tall and proud, her form aglow with a divine radiance that speaks of her unyielding strength and purity. In her left hand, she holds the antlers of a noble deer, symbolizing her dominion over the wild, while her right hand grips her bow, ever ready to protect those who dwell under her watchful eye. A quiver, filled with finely crafted arrows, rests upon her back, the tools of the huntress who lets no prey escape.&#x000A;&#x000A;Directly in front of her statue is the altar of Artemis, a place where mortals would lay their offerings not long ago, hoping to earn her favor. &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1894"/>
+    </children>
+  </item>
+  <item nodeId="node-1894">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Temple of the Aulidean Artemis&#x000A;You step into the sacred temple of Aulidean Artemis. The temple is empty and abandoned by the priestesses, following Kronos' seizure of power, as expected, unfortunately.&#x000A;&#x000A;As you pass through the pronaos, your eyes are drawn to the sunlight cascading down from the open ceiling, illuminating an imposing sundial made of pearly white marble that stands at the center of the chamber. The sun's rays cross paths with the dial's gnomon, casting a shadow that marks the hour.&#x000A;&#x000A;Entering the naos, the most divine part of the temple, you find yourself in the presence of the graceful golden statue of Artemis. Your sister stands tall and proud, her form aglow with a divine radiance that speaks of her unyielding strength and purity. In her left hand, she holds the antlers of a noble deer, symbolizing her dominion over the wild, while her right hand grips her bow, ever ready to protect those who dwell under her watchful eye. A quiver, filled with finely crafted arrows, rests upon her back, the tools of the huntress who lets no prey escape.&#x000A;&#x000A;Directly in front of her statue is the altar of Artemis, a place where mortals would lay their offerings not long ago, hoping to earn her favor. &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1895"/>
+    </children>
+  </item>
+  <item nodeId="node-1895">
+    <command xml:space="preserve">x statue</command>
+    <result xml:space="preserve">On the base of the statue you can see two locks: one sun-shapped and one moon-shapped.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1896"/>
+    </children>
+  </item>
+  <item nodeId="node-1896">
+    <command xml:space="preserve">x gnomon</command>
+    <result xml:space="preserve">On the gnomon, an inscription engraved and gilded in gold says: At midday, let Apollo's light cast no shadow, and at midnight, let Artemis" glow guide the way. Only then shall the twins unveil the hidden path.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1897"/>
+    </children>
+  </item>
+  <item nodeId="node-1897">
+    <command xml:space="preserve">x sundial</command>
+    <result xml:space="preserve">The inscription engraved on the gnomon read: At midday, let Apollo's light cast no shadow, and at midnight, let Artemis" glow guide the way. Only then shall the twins unveil the hidden path.&#x000A;&#x000A;Judging by the gnomon's shadow and the sun markings, the time is quarter past nine.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1898"/>
+    </children>
+  </item>
+  <item nodeId="node-1898">
+    <command xml:space="preserve">x altar</command>
+    <result xml:space="preserve">The altar of Artemis.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1899"/>
+    </children>
+  </item>
+  <item nodeId="node-1899">
+    <command xml:space="preserve">take altar</command>
+    <result xml:space="preserve">That's hardly portable.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1900"/>
+    </children>
+  </item>
+  <item nodeId="node-1900">
+    <command xml:space="preserve">take sundial</command>
+    <result xml:space="preserve">That's hardly portable.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1901"/>
+    </children>
+  </item>
+  <item nodeId="node-1901">
+    <command xml:space="preserve">take gnomon</command>
+    <result xml:space="preserve">That seems to be a part of the sundial.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1902"/>
+    </children>
+  </item>
+  <item nodeId="node-1902">
+    <command xml:space="preserve">wait until 1</command>
+    <result xml:space="preserve">At twelve o'clock  you hear the click of a latch releasing and a sun hatch opening coming from the dial.&#x000A;&#x000A;At ten past twelve you hear the sound of the sun hatch closing and the click of a latch locking coming from the dial.&#x000A;&#x000A;At twelve o'clock you hear the click of a latch releasing and a moon hatch opening coming from the dial.&#x000A;&#x000A;At ten past twelve you hear the sound of the moon hatch closing and the click of a latch locking coming from the dial.&#x000A;&#x000A;It is one o'clock now.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1903"/>
+    </children>
+  </item>
+  <item nodeId="node-1903">
+    <command xml:space="preserve">wait until 12</command>
+    <result xml:space="preserve">twelve o'clock passed already. Maybe try again tomorrow.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1904"/>
+    </children>
+  </item>
+  <item nodeId="node-1904">
+    <command xml:space="preserve">wait until midnight</command>
+    <result xml:space="preserve">twelve o'clock passed already. Maybe try again tomorrow.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1905"/>
+    </children>
+  </item>
+  <item nodeId="node-1905">
+    <command xml:space="preserve">wait until 24</command>
+    <result xml:space="preserve">I only understood you as far as wanting to wait.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1906"/>
+    </children>
+  </item>
+  <item nodeId="node-1906">
+    <command xml:space="preserve">wait until 12</command>
+    <result xml:space="preserve">twelve o'clock passed already. Maybe try again tomorrow.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1907"/>
+    </children>
+  </item>
+  <item nodeId="node-1907">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;Would you maybe prefer waiting until a certain time?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1908"/>
+    </children>
+  </item>
+  <item nodeId="node-1908">
+    <command xml:space="preserve">wait until 11</command>
+    <result xml:space="preserve">eleven o'clock passed already. Maybe try again tomorrow.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1909"/>
+    </children>
+  </item>
+  <item nodeId="node-1909">
+    <command xml:space="preserve">wait until tomorrow</command>
+    <result xml:space="preserve">I only understood you as far as wanting to wait.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1910"/>
+    </children>
+  </item>
+  <item nodeId="node-1910">
+    <command xml:space="preserve">wait tomorrow</command>
+    <result xml:space="preserve">I only understood you as far as wanting to wait.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1911"/>
+    </children>
+  </item>
+  <item nodeId="node-1911">
+    <command xml:space="preserve">wait 1 day</command>
+    <result xml:space="preserve">I only understood you as far as wanting to wait.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1912"/>
+    </children>
+  </item>
+  <item nodeId="node-1912">
+    <command xml:space="preserve">wait 1 minute</command>
+    <result xml:space="preserve">I only understood you as far as wanting to wait.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -14156,7 +14460,7 @@
   </item>
   <item nodeId="node-1860">
     <command xml:space="preserve">wait until midday</command>
-    <result xml:space="preserve">It is twelve o'clock now.&#x000A;&#x000A;At twelve o'clock you hear the sound of a hatch opening on the dial.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">It is twelve o'clock now.&#x000A;&#x000A;At twelve o'clock you hear the click of a latch releasing and a hatch opening coming from the dial.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -15097,7 +15401,7 @@
   </item>
   <item nodeId="node-1878">
     <command xml:space="preserve">x gnomon of the sundial</command>
-    <result xml:space="preserve">I only understood you as far as wanting to examine the gnomon.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Some words carved on the gnomon read: At midday, let Apollo's light cast no shadow, and at midnight, let Artemis" glow guide the way. Only then shall the twins unveil the hidden path.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -15603,6 +15907,7 @@
       <child nodeId="node-1515"/>
       <child nodeId="node-1517"/>
       <child nodeId="node-1520"/>
+      <child nodeId="node-1913"/>
     </children>
   </item>
   <item nodeId="node-1682">
@@ -15791,6 +16096,345 @@
   <item nodeId="node-1520">
     <command xml:space="preserve">x sign</command>
     <result xml:space="preserve">The sign is made of marble. The inscription on it reads: Painful memories of our love surround this place. (A &gt; red, B &gt; purple, C&gt; yellow, D&gt;white&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1913">
+    <command xml:space="preserve">x sundial</command>
+    <result xml:space="preserve">The dial is designed with two separate rings encircling its plate, one with sun and one with lunar engravings, allowing you to read the time day and night. You also see on the gnomon an inscription engraved and gilded in gold that says: At midday, let Apollo's light cast no shadow, and at midnight, let Artemis" glow guide the way. Only then shall the twins unveil the hidden path.&#x000A;&#x000A;Judging by the gnomon's shadow and the sun markings, the time is nine o'clock.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1914"/>
+    </children>
+  </item>
+  <item nodeId="node-1914">
+    <command xml:space="preserve">x altar</command>
+    <result xml:space="preserve">The altar of Artemis.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1915"/>
+    </children>
+  </item>
+  <item nodeId="node-1915">
+    <command xml:space="preserve">wait until midday</command>
+    <result xml:space="preserve">It is twelve o'clock now.&#x000A;&#x000A;At twelve o'clock  you hear the click of a latch releasing and a sun hatch opening coming from the dial.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1916"/>
+    </children>
+  </item>
+  <item nodeId="node-1916">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1917"/>
+    </children>
+  </item>
+  <item nodeId="node-1917">
+    <command xml:space="preserve">x sun hatch</command>
+    <result xml:space="preserve">The sun hatch is open. Inside you can see a sun key.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1918"/>
+    </children>
+  </item>
+  <item nodeId="node-1918">
+    <command xml:space="preserve">take sun key</command>
+    <result xml:space="preserve">You picked up a sun key.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1919"/>
+    </children>
+  </item>
+  <item nodeId="node-1919">
+    <command xml:space="preserve">x sun key</command>
+    <result xml:space="preserve">The head of the key is shapped like a sun with curvy rays. Its colour is a bright gold.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1920"/>
+    </children>
+  </item>
+  <item nodeId="node-1920">
+    <command xml:space="preserve">wait until midnight</command>
+    <result xml:space="preserve">At ten past twelve you hear the sound of the sun hatch closing and the click of a latch locking coming from the dial.&#x000A;&#x000A;It is twelve o'clock now.&#x000A;&#x000A;At twelve o'clock you hear the click of a latch releasing and a moon hatch opening coming from the dial.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1921"/>
+    </children>
+  </item>
+  <item nodeId="node-1921">
+    <command xml:space="preserve">x moon</command>
+    <result xml:space="preserve">Which do you mean, the moon lock, the moon pocket or the moon key?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1922"/>
+    </children>
+  </item>
+  <item nodeId="node-1922">
+    <command xml:space="preserve">x moon hatch</command>
+    <result xml:space="preserve">The moon hatch is open. Inside you can see a moon key.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1923"/>
+    </children>
+  </item>
+  <item nodeId="node-1923">
+    <command xml:space="preserve">x moon key</command>
+    <result xml:space="preserve">The head of the key is shapped like a cresent moon. Its colour is a warm ivory.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1924"/>
+    </children>
+  </item>
+  <item nodeId="node-1924">
+    <command xml:space="preserve">take moon key</command>
+    <result xml:space="preserve">You picked up a moon key.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1925"/>
+    </children>
+  </item>
+  <item nodeId="node-1925">
+    <command xml:space="preserve">x statue</command>
+    <result xml:space="preserve">On the base of the statue you can see two locks: one sun-shapped and one moon-shapped.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1926"/>
+    </children>
+  </item>
+  <item nodeId="node-1926">
+    <command xml:space="preserve">put moon key in moon lock</command>
+    <result xml:space="preserve">You put the moon key in the moon-shapped lock.&#x000A;&#x000A;You put the moon key into the moon lock.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1927"/>
+    </children>
+  </item>
+  <item nodeId="node-1927">
+    <command xml:space="preserve">put sun key in sun lock</command>
+    <result xml:space="preserve">You put the sun key in the sun-shapped lock.&#x000A;&#x000A;You put the sun key into the sun lock.&#x000A;&#x000A;You hear the sound of a locking mechanism unlocking.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1928"/>
+    </children>
+  </item>
+  <item nodeId="node-1928">
+    <command xml:space="preserve">take keys</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1929"/>
+    </children>
+  </item>
+  <item nodeId="node-1929">
+    <command xml:space="preserve">take sun key</command>
+    <result xml:space="preserve">You picked up a sun key.&#x000A;&#x000A;You hear the sound of the locking mechanism locking.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1930"/>
+    </children>
+  </item>
+  <item nodeId="node-1930">
+    <command xml:space="preserve">unlock sun lock</command>
+    <result xml:space="preserve">You put the sun key in the sun-shapped lock.&#x000A;&#x000A;You hear the sound of a locking mechanism unlocking.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1931"/>
+    </children>
+  </item>
+  <item nodeId="node-1931">
+    <command xml:space="preserve">lock sun lock</command>
+    <result xml:space="preserve">What do you want to lock the sun lock with?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1932"/>
+    </children>
+  </item>
+  <item nodeId="node-1932">
+    <command xml:space="preserve">lock sun lock with sun key</command>
+    <result xml:space="preserve">(first taking the sun key)&#x000A;You picked up a sun key.&#x000A;&#x000A;That doesn't seem to be something you can lock.&#x000A;&#x000A;You hear the sound of the locking mechanism locking.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1933"/>
+    </children>
+  </item>
+  <item nodeId="node-1933">
+    <command xml:space="preserve">unlock sun lock with sun key</command>
+    <result xml:space="preserve">You put the sun key in the sun-shapped lock.&#x000A;&#x000A;At ten past twelve you hear the sound of the moon hatch closing and the click of a latch locking coming from the dial.&#x000A;&#x000A;You hear the sound of a locking mechanism unlocking.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1934"/>
+    </children>
+  </item>
+  <item nodeId="node-1934">
+    <command xml:space="preserve">open moon lock with moon key</command>
+    <result xml:space="preserve">(first taking the moon key)&#x000A;You picked up a moon key.&#x000A;&#x000A;You put the moon key in the moon-shapped lock.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1935"/>
+    </children>
+  </item>
+  <item nodeId="node-1935">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Inside the Temple of the Aulidean Artemis you can see a sundial, the statue of Artemis and her sacrificial altar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1936"/>
+    </children>
+  </item>
+  <item nodeId="node-1936">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Temple of the Aulidean Artemis&#x000A;You step into the sacred temple of Aulidean Artemis. The temple is empty and abandoned by the priestesses, following Kronos' seizure of power, as expected, unfortunately.&#x000A;&#x000A;As you pass through the pronaos, your eyes are drawn to the moonlight cascading down from the open ceiling, illuminating an imposing sundial made of pearly white marble that stands at the center of the chamber. The moon's rays cross paths with the dial's gnomon, casting a shadow that marks the hour.&#x000A;&#x000A;Entering the naos, the most divine part of the temple, you find yourself in the presence of the graceful golden statue of Artemis. Your sister stands tall and proud, her form aglow with a divine radiance that speaks of her unyielding strength and purity. In her left hand, she holds the antlers of a noble deer, symbolizing her dominion over the wild, while her right hand grips her bow, ever ready to protect those who dwell under her watchful eye. A quiver, filled with finely crafted arrows, rests upon her back, the tools of the huntress who lets no prey escape.&#x000A;&#x000A;Directly in front of her statue is the altar of Artemis, a place where mortals would lay their offerings not long ago, hoping to earn her favor. &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1937"/>
+    </children>
+  </item>
+  <item nodeId="node-1937">
+    <command xml:space="preserve">x statue</command>
+    <result xml:space="preserve">The statue feels wobbly. Maybe you could try pushing it...&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1938"/>
+    </children>
+  </item>
+  <item nodeId="node-1938">
+    <command xml:space="preserve">push statue</command>
+    <result xml:space="preserve">You push the statue away and you reveal some stairs leading under the temple.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1939"/>
+    </children>
+  </item>
+  <item nodeId="node-1939">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You take the stairs that lead under the temple.&#x000A;&#x000A;Divine Cell of Artemis &amp; Apollo&#x000A;You can see a Goddess Artemis and a God Apollo here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1940"/>
+    </children>
+  </item>
+  <item nodeId="node-1940">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">Temple of the Aulidean Artemis&#x000A;You step into the sacred temple of Aulidean Artemis. The temple is empty and abandoned by the priestesses, following Kronos' seizure of power, as expected, unfortunately.&#x000A;&#x000A;As you pass through the pronaos, your eyes are drawn to the moonlight cascading down from the open ceiling, illuminating an imposing sundial made of pearly white marble that stands at the center of the chamber. The moon's rays cross paths with the dial's gnomon, casting a shadow that marks the hour.&#x000A;&#x000A;Entering the naos, the most divine part of the temple, you find yourself in the presence of the graceful golden statue of Artemis. Your sister stands tall and proud, her form aglow with a divine radiance that speaks of her unyielding strength and purity. In her left hand, she holds the antlers of a noble deer, symbolizing her dominion over the wild, while her right hand grips her bow, ever ready to protect those who dwell under her watchful eye. A quiver, filled with finely crafted arrows, rests upon her back, the tools of the huntress who lets no prey escape.&#x000A;&#x000A;Directly in front of her statue is the altar of Artemis, a place where mortals would lay their offerings not long ago, hoping to earn her favor. &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1941"/>
+    </children>
+  </item>
+  <item nodeId="node-1941">
+    <command xml:space="preserve">x statue</command>
+    <result xml:space="preserve">You can see some stairs leading downstairs.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1942"/>
+    </children>
+  </item>
+  <item nodeId="node-1942">
+    <command xml:space="preserve">close statue</command>
+    <result xml:space="preserve">You close the statue of artemis.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1943"/>
+    </children>
+  </item>
+  <item nodeId="node-1943">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Temple of the Aulidean Artemis&#x000A;You step into the sacred temple of Aulidean Artemis. The temple is empty and abandoned by the priestesses, following Kronos' seizure of power, as expected, unfortunately.&#x000A;&#x000A;As you pass through the pronaos, your eyes are drawn to the moonlight cascading down from the open ceiling, illuminating an imposing sundial made of pearly white marble that stands at the center of the chamber. The moon's rays cross paths with the dial's gnomon, casting a shadow that marks the hour.&#x000A;&#x000A;Entering the naos, the most divine part of the temple, you find yourself in the presence of the graceful golden statue of Artemis. Your sister stands tall and proud, her form aglow with a divine radiance that speaks of her unyielding strength and purity. In her left hand, she holds the antlers of a noble deer, symbolizing her dominion over the wild, while her right hand grips her bow, ever ready to protect those who dwell under her watchful eye. A quiver, filled with finely crafted arrows, rests upon her back, the tools of the huntress who lets no prey escape.&#x000A;&#x000A;Directly in front of her statue is the altar of Artemis, a place where mortals would lay their offerings not long ago, hoping to earn her favor. &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1944"/>
+    </children>
+  </item>
+  <item nodeId="node-1944">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You take the stairs that lead under the temple.&#x000A;&#x000A;(first opening the statue of artemis)&#x000A;You push the statue away and you reveal some stairs leading under the temple.&#x000A;&#x000A;Divine Cell of Artemis &amp; Apollo&#x000A;You can see a Goddess Artemis and a God Apollo here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1945"/>
+    </children>
+  </item>
+  <item nodeId="node-1945">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Divine Cell of Artemis &amp; Apollo&#x000A;You can see a Goddess Artemis and a God Apollo here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1946"/>
+    </children>
+  </item>
+  <item nodeId="node-1946">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">Temple of the Aulidean Artemis&#x000A;You step into the sacred temple of Aulidean Artemis. The temple is empty and abandoned by the priestesses, following Kronos' seizure of power, as expected, unfortunately.&#x000A;&#x000A;As you pass through the pronaos, your eyes are drawn to the moonlight cascading down from the open ceiling, illuminating an imposing sundial made of pearly white marble that stands at the center of the chamber. The moon's rays cross paths with the dial's gnomon, casting a shadow that marks the hour.&#x000A;&#x000A;Entering the naos, the most divine part of the temple, you find yourself in the presence of the graceful golden statue of Artemis. Your sister stands tall and proud, her form aglow with a divine radiance that speaks of her unyielding strength and purity. In her left hand, she holds the antlers of a noble deer, symbolizing her dominion over the wild, while her right hand grips her bow, ever ready to protect those who dwell under her watchful eye. A quiver, filled with finely crafted arrows, rests upon her back, the tools of the huntress who lets no prey escape.&#x000A;&#x000A;Directly in front of her statue is the altar of Artemis, a place where mortals would lay their offerings not long ago, hoping to earn her favor. &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1947"/>
+    </children>
+  </item>
+  <item nodeId="node-1947">
+    <command xml:space="preserve">open statue </command>
+    <result xml:space="preserve">You can see some stairs leading downstairs.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1948"/>
+    </children>
+  </item>
+  <item nodeId="node-1948">
+    <command xml:space="preserve">take sun key</command>
+    <result xml:space="preserve">You picked up a sun key.&#x000A;&#x000A;You hear the sound of the locking mechanism locking, but the door is already open.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1949"/>
+    </children>
+  </item>
+  <item nodeId="node-1949">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1950"/>
+    </children>
+  </item>
+  <item nodeId="node-1950">
+    <command xml:space="preserve">open statue</command>
+    <result xml:space="preserve">You can see some stairs leading downstairs.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>

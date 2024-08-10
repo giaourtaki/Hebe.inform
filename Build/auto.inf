@@ -3092,7 +3092,6 @@ Constant line_ref_U233 = 561;
 Constant line_ref_U234 = 561;
 Constant line_ref_U235 = 561;
 Constant line_ref_U236 = 561;
-Constant line_ref_U237 = 561;
 Constant KIT_CONFIGURATION_BITMAP = 256;
 Constant KIT_CONFIGURATION_LOOKMODE = 2;
 Constant MAX_FRAME_SIZE_NEEDED = 6;
@@ -4122,7 +4121,7 @@ Constant Computed_Constant_Value_0_U4 = 1;
 Constant EMPTY_TEXT_PACKED = "";
 Constant I7_VERSION_NUMBER = "10.1.2";
 Constant I7_FULL_VERSION_NUMBER = "10.1.2";
-Serial "240810";
+Serial "240811";
 Constant alphabetised_text_0 = ">";
 Constant alphabetised_text_1 = "Agora of Paphos";
 Constant alphabetised_text_2 = "Aigle";
@@ -7988,8 +7987,8 @@ Array name_array87 --> [ 'arrows'; 'things//p'; ];
 Array name_array88 --> [ 'quiver'; 'things//p'; ];
 Array name_array89 --> [ 'locking'; 'mechanism'; 'things//p'; ];
 Array name_array90 --> [ 'goddess'; 'altar'; 'supporters//p'; ];
-Array name_array91 --> [ 'sun'; 'pocket'; 'containers//p'; 'hatch'; ];
-Array name_array92 --> [ 'moon'; 'pocket'; 'containers//p'; 'flap'; ];
+Array name_array91 --> [ 'sun'; 'pocket'; 'containers//p'; ];
+Array name_array92 --> [ 'moon'; 'pocket'; 'containers//p'; ];
 Array name_array93 --> [ 'sun'; 'lock'; 'containers//p'; ];
 Array name_array94 --> [ 'moon'; 'lock'; 'containers//p'; ];
 Array name_array95 --> [ 'sun'; 'key'; 'things//p'; ];
@@ -10169,7 +10168,7 @@ K5_container I_sun_pocket_U1    with short_name bc_U619
     with K5_container_Next I_moon_pocket_U1
     with action_bitmap 0 0 0 0 0 0
     with parse_name parse_name92
-    with name 'sun' 'pocket' 'containers//p' 'hatch'
+    with name 'sun' 'pocket' 'containers//p'
     with description bc_U620
     with initial bc_U621
     with plural bc_U622
@@ -10208,7 +10207,7 @@ K5_container I_moon_pocket_U1    with short_name bc_U625
     with K5_container_Next I_sun_lock_U1
     with action_bitmap 0 0 0 0 0 0
     with parse_name parse_name93
-    with name 'moon' 'pocket' 'containers//p' 'flap'
+    with name 'moon' 'pocket' 'containers//p'
     with description bc_U626
     with initial bc_U627
     with plural bc_U628
@@ -65662,13 +65661,17 @@ Global max_z_object;
 [ call_U1977;
     #ifdef DEBUG;
         if (suppress_text_substitution) {
-            print "~You step into the sacred temple of Aulidean Artemis. The temple is empty and abandoned by the priestesses, following Kronos' seizure of power, as expected, unfortunately.^^As you pass through the pronaos, your eyes are drawn to the [if the time of day is before 08:00 pm]sunlight[otherwise]moonlight[end if] cascading down from the open ceiling, illuminating an imposing sundial made of pearly white marble that stands at the center of the chamber. The [if the time of day is before 08:00 pm]sun's[otherwise]moon's[end if] rays cross paths with the dial's gnomon, casting a shadow that marks the hour.^^Entering the naos, the most divine part of the temple, you find yourself in the presence of the graceful golden statue of Artemis. Your sister stands tall and proud, her form aglow with a divine radiance that speaks of her unyielding strength and purity. In her left hand, she holds the antlers of a noble deer, symbolizing her dominion over the wild, while her right hand grips her bow, ever ready to protect those who dwell under her watchful eye. A quiver, filled with finely crafted arrows, rests upon her back, the tools of the huntress who lets no prey escape.^^Directly in front of her statue is the altar of Artemis, a place where mortals would lay their offerings not long ago, hoping to earn her favor. ~";
+            print "~You step into the sacred temple of Aulidean Artemis. The temple is empty and abandoned by the priestesses, following Kronos[apostrophe] seizure of power, as expected, unfortunately.^^As you pass through the pronaos, your eyes are drawn to the [if the time of day is before 08:00 pm]sunlight[otherwise]moonlight[end if] cascading down from the open ceiling, illuminating an imposing sundial made of pearly white marble that stands at the center of the chamber. The [if the time of day is before 08:00 pm]sun's[otherwise]moon's[end if] rays cross paths with the dial's gnomon, casting a shadow that marks the hour.^^Entering the naos, the most divine part of the temple, you find yourself in the presence of the graceful golden statue of Artemis. Your sister stands tall and proud, her form aglow with a divine radiance that speaks of her unyielding strength and purity. In her left hand, she holds the antlers of a noble deer, symbolizing her dominion over the wild, while her right hand grips her bow, ever ready to protect those who dwell under her watchful eye. A quiver, filled with finely crafted arrows, rests upon her back, the tools of the huntress who lets no prey escape.^^Directly in front of her statue is the altar of Artemis, a place where mortals would lay their offerings not long ago, hoping to earn her favor. ~";
             rtrue;
         }
     #endif;
     (say__p = 1);
     ParaContent();
-    print "You step into the sacred temple of Aulidean Artemis. The temple is empty and abandoned by the priestesses, following Kronos~ seizure of power, as expected, unfortunately.^^As you pass through the pronaos, your eyes are drawn to the ";
+    print "You step into the sacred temple of Aulidean Artemis. The temple is empty and abandoned by the priestesses, following Kronos";
+    ParaContent();
+    print "'";
+    ParaContent();
+    print " seizure of power, as expected, unfortunately.^^As you pass through the pronaos, your eyes are drawn to the ";
     if ((~~((((the_time + (20*ONE_HOUR))%TWENTY_FOUR_HOURS) < ((1200 + (20*ONE_HOUR))%TWENTY_FOUR_HOURS))))) {
         jump L_Say0;
     }
@@ -65718,7 +65721,7 @@ Global max_z_object;
 [ call_U1978;
     #ifdef DEBUG;
         if (suppress_text_substitution) {
-            print "~[If the sundial is not handled]The dial is designed with two separate rings encircling its plate, one for sun and one for lunar engravings, allowing you to read the time day and night. [end if][if the sundial is not handled]You also see on the gnomon an inscription engraved and gilded in gold that says: At midday, let Apollo's light cast no shadow, and at midnight, let Artemis' glow guide the way. Only then shall the twins unveil the hidden path.[otherwise]The inscription engraved on the gnomon read: At midday, let Apollo's light cast no shadow, and at midnight, let Artemis' glow guide the way. Only then shall the twins unveil the hidden path.~";
+            print "~[If the sundial is not handled]The dial is designed with two separate rings encircling its plate, one with sun and one with lunar engravings, allowing you to read the time day and night. [end if][if the sundial is not handled]You also see on the gnomon an inscription engraved and gilded in gold that says: At midday, let Apollo's light cast no shadow, and at midnight, let Artemis' glow guide the way. Only then shall the twins unveil the hidden path.[otherwise]The inscription engraved on the gnomon read: At midday, let Apollo's light cast no shadow, and at midnight, let Artemis[apostrophe] glow guide the way. Only then shall the twins unveil the hidden path.~";
             rtrue;
         }
     #endif;
@@ -65727,7 +65730,7 @@ Global max_z_object;
         jump L_Say0;
     }
     ParaContent();
-    print "The dial is designed with two separate rings encircling its plate, one for sun and one for lunar engravings, allowing you to read the time day and night. ";
+    print "The dial is designed with two separate rings encircling its plate, one with sun and one with lunar engravings, allowing you to read the time day and night. ";
     .L_Say0;
     if ((~~((~~(call_U276(I_sundial_U1)))))) {
         jump L_Say1;
@@ -65737,7 +65740,11 @@ Global max_z_object;
     jump L_SayX1;
     .L_Say1;
     ParaContent();
-    print "The inscription engraved on the gnomon read: At midday, let Apollo's light cast no shadow, and at midnight, let Artemis~ glow guide the way. Only then shall the twins unveil the hidden path.";
+    print "The inscription engraved on the gnomon read: At midday, let Apollo's light cast no shadow, and at midnight, let Artemis";
+    ParaContent();
+    print "'";
+    ParaContent();
+    print " glow guide the way. Only then shall the twins unveil the hidden path.";
     .L_SayX1;
     rtrue;
 ];
@@ -69682,7 +69689,7 @@ Global max_z_object;
         ParaContent();
         PrintTimeOfDayEnglish(the_time);
         ParaContent();
-        print " you hear the click of a latch releasing and a hatch opening coming from the dial.";
+        print "  you hear the click of a latch releasing and a sun hatch opening coming from the dial.";
         print "^";
     } else {
         if ((TestSinglePastState(0, ptc_id_U6, 0, 2) == 1)) {
@@ -69692,7 +69699,7 @@ Global max_z_object;
             ParaContent();
             PrintTimeOfDayEnglish(the_time);
             ParaContent();
-            print " you hear the sound of the hatch closing and the click of a latch locking coming from the dial.";
+            print " you hear the sound of the sun hatch closing and the click of a latch locking coming from the dial.";
             print "^";
         }
     }
@@ -69709,7 +69716,7 @@ Global max_z_object;
         ParaContent();
         PrintTimeOfDayEnglish(the_time);
         ParaContent();
-        print " you hear the click of a latch releasing and a hatch opening coming from the dial.";
+        print " you hear the click of a latch releasing and a moon hatch opening coming from the dial.";
         print "^";
     } else {
         if ((TestSinglePastState(0, ptc_id_U7, 0, 2) == 1)) {
@@ -69719,7 +69726,7 @@ Global max_z_object;
             ParaContent();
             PrintTimeOfDayEnglish(the_time);
             ParaContent();
-            print " you hear the sound of the hatch closing and the click of a latch locking coming from the dial.";
+            print " you hear the sound of the moon hatch closing and the click of a latch locking coming from the dial.";
             print "^";
         }
     }
@@ -70233,19 +70240,19 @@ Global max_z_object;
         if ((((TestSinglePastState(0, ptc_id_U8, 0, 2) == 1)) && (call_U309(I_statue_of_artemis_U1)))) {
             (say__p = 1);
             ParaContent();
-            print "You hear the sound of the gate mechanism locking.";
+            print "You hear the sound of the locking mechanism locking.";
             print "^";
             call_U322(I_statue_of_artemis_U1);
         } else {
             if ((((TestSinglePastState(0, ptc_id_U9, 0, 2) == 1)) && (call_U306(I_statue_of_artemis_U1)))) {
                 (say__p = 1);
                 ParaContent();
-                print "You hear the sound of the gate mechanism unlocking, but the door is already open";
+                print "You hear the sound of the locking mechanism unlocking, but the door is already open";
             } else {
                 if ((((TestSinglePastState(0, ptc_id_U10, 0, 2) == 1)) && (call_U306(I_statue_of_artemis_U1)))) {
                     (say__p = 1);
                     ParaContent();
-                    print "You hear the sound of the gate mechanism locking, but the door is already open.";
+                    print "You hear the sound of the locking mechanism locking, but the door is already open.";
                     print "^";
                 }
             }
@@ -74495,17 +74502,6 @@ Global max_z_object;
             continue;
             .Fail_3;
             (wn = try_from_wn);
-            if ((Cond_Token13() == GPR_FAIL)) {
-                jump Fail_4;
-            }
-            if ((NextWordStopped() ~= 'door')) {
-                jump Fail_4;
-            }
-            (try_from_wn = wn);
-            (f = 1);
-            continue;
-            .Fail_4;
-            (wn = try_from_wn);
             break;
         }
         while (WordInProperty(NextWordStopped(), self, A_name)) {
@@ -74753,7 +74749,7 @@ Global max_z_object;
                 (wn)--;
                 (try_from_wn = wn);
             }
-            if ((Cond_Token14() == GPR_FAIL)) {
+            if ((Cond_Token13() == GPR_FAIL)) {
                 jump Fail_1;
             }
             if ((NextWordStopped() ~= 'altar')) {
@@ -74770,7 +74766,7 @@ Global max_z_object;
             continue;
             .Fail_1;
             (wn = try_from_wn);
-            if ((Cond_Token15() == GPR_FAIL)) {
+            if ((Cond_Token14() == GPR_FAIL)) {
                 jump Fail_2;
             }
             if ((NextWordStopped() ~= 'sacrificial')) {
@@ -74784,7 +74780,7 @@ Global max_z_object;
             continue;
             .Fail_2;
             (wn = try_from_wn);
-            if ((Cond_Token16() == GPR_FAIL)) {
+            if ((Cond_Token15() == GPR_FAIL)) {
                 jump Fail_3;
             }
             if ((NextWordStopped() ~= 'altar')) {
@@ -74868,6 +74864,17 @@ Global max_z_object;
                 (wn)--;
                 (try_from_wn = wn);
             }
+            if ((NextWordStopped() ~= 'sun')) {
+                jump Fail_1;
+            }
+            if ((NextWordStopped() ~= 'hatch')) {
+                jump Fail_1;
+            }
+            (try_from_wn = wn);
+            (f = 1);
+            continue;
+            .Fail_1;
+            (wn = try_from_wn);
             break;
         }
         while (WordInProperty(NextWordStopped(), self, A_name)) {
@@ -74941,6 +74948,17 @@ Global max_z_object;
                 (wn)--;
                 (try_from_wn = wn);
             }
+            if ((NextWordStopped() ~= 'moon')) {
+                jump Fail_1;
+            }
+            if ((NextWordStopped() ~= 'hatch')) {
+                jump Fail_1;
+            }
+            (try_from_wn = wn);
+            (f = 1);
+            continue;
+            .Fail_1;
+            (wn = try_from_wn);
             break;
         }
         while (WordInProperty(NextWordStopped(), self, A_name)) {
@@ -75406,7 +75424,7 @@ Global max_z_object;
                 (wn)--;
                 (try_from_wn = wn);
             }
-            if ((Cond_Token17() == GPR_FAIL)) {
+            if ((Cond_Token16() == GPR_FAIL)) {
                 jump Fail_1;
             }
             if ((NextWordStopped() ~= 'statue')) {
@@ -76613,12 +76631,6 @@ Global max_z_object;
     return GPR_FAIL;
 ];
 [ Cond_Token16;
-    if ((I_temple_of_the_aulidean_art_U1 == ContainerOf(player))) {
-        return GPR_PREPOSITION;
-    }
-    return GPR_FAIL;
-];
-[ Cond_Token17;
     if ((I_secret_garden_U1 == ContainerOf(player))) {
         return GPR_PREPOSITION;
     }

@@ -493,7 +493,7 @@ Chapter 3 - Artemis & Apollo
 The player is in the Temple of the Aulidean Artemis.
 
 [rooms]
-The Temple of the Aulidean Artemis is a room in Thebes. The description is "You step into the sacred temple of Aulidean Artemis. The temple is empty and abandoned by the priestesses, following Kronos' seizure of power, as expected, unfortunately. 
+The Temple of the Aulidean Artemis is a room in Thebes. The description is "You step into the sacred temple of Aulidean Artemis. The temple is empty and abandoned by the priestesses, following Kronos[apostrophe] seizure of power, as expected, unfortunately. 
 
 As you pass through the pronaos, your eyes are drawn to the [if the time of day is before 08:00 pm]sunlight[otherwise]moonlight[end if] cascading down from the open ceiling, illuminating an imposing sundial made of pearly white marble that stands at the center of the chamber. The [if the time of day is before 08:00 pm]sun's[otherwise]moon's[end if] rays cross paths with the dial's gnomon, casting a shadow that marks the hour.
 
@@ -518,7 +518,7 @@ The statue of artemis is down of the Temple of the Aulidean Artemis and up of th
 Understand "statue" or "golden statue of artemis" or "magneficent golden statue of artemis" as the statue of artemis when the player is in the Temple of the Aulidean Artemis.
 
 [things]
-The sundial is in the temple of the Aulidean Artemis. It is fixed in place. The description is "[If the sundial is not handled]The dial is designed with two separate rings encircling its plate, one for sun and one for lunar engravings, allowing you to read the time day and night. [end if][if the sundial is not handled]You also see on the gnomon an inscription engraved and gilded in gold that says: At midday, let Apollo’s light cast no shadow, and at midnight, let Artemis’ glow guide the way. Only then shall the twins unveil the hidden path.[otherwise]The inscription engraved on the gnomon read: At midday, let Apollo’s light cast no shadow, and at midnight, let Artemis’ glow guide the way. Only then shall the twins unveil the hidden path.". It is a scenery.
+The sundial is in the temple of the Aulidean Artemis. It is fixed in place. The description is "[If the sundial is not handled]The dial is designed with two separate rings encircling its plate, one with sun and one with lunar engravings, allowing you to read the time day and night. [end if][if the sundial is not handled]You also see on the gnomon an inscription engraved and gilded in gold that says: At midday, let Apollo’s light cast no shadow, and at midnight, let Artemis’ glow guide the way. Only then shall the twins unveil the hidden path.[otherwise]The inscription engraved on the gnomon read: At midday, let Apollo’s light cast no shadow, and at midnight, let Artemis[apostrophe] glow guide the way. Only then shall the twins unveil the hidden path.". It is a scenery.
 
 A gnomon is part of the sundial. It is a scenery. The description is "On the gnomon, an inscription engraved and gilded in gold says: At midday, let Apollo’s light cast no shadow, and at midnight, let Artemis’ glow guide the way. Only then shall the twins unveil the hidden path.".
 
@@ -548,8 +548,8 @@ After examining the sundial:
 A sun pocket is an closed unopenable opaque container. It is part of the sundial. It is fixed in place. [TODO: It is undescribed.] The carrying capacity of the sun pocket is 1.
 A moon pocket is an closed unopenable opaque container. It is part of the sundial. It is fixed in place. [TODO: It is undescribed.] The carrying capacity of the moon pocket is 1.
 
-Understand "hatch" as the sun pocket. 
-Understand "flap" as moon pocket.
+Understand "sun hatch" as the sun pocket. 
+Understand "moon hatch" as moon pocket.
 
 [locks]
 The sun lock is part of the statue of artemis. It is an open unopenable container. It is fixed in place. The carrying capacity of the sun lock is 1.
@@ -670,15 +670,15 @@ Instead of examining the moon pocket:
 
 Every turn:
 	If the sun pocket is open for the first turn:
-		say "At [the time of day in words]  you hear the click of a latch releasing and a hatch opening coming from the dial."; [TODO: sundial + hatch description]
+		say "At [the time of day in words]  you hear the click of a latch releasing and a sun hatch opening coming from the dial."; [TODO: sundial + hatch description]
 	otherwise if the sun pocket is closed for the first turn:
-		say "At [the time of day in words] you hear the sound of the hatch closing and the click of a latch locking coming from the dial.";
+		say "At [the time of day in words] you hear the sound of the sun hatch closing and the click of a latch locking coming from the dial.";
 		
 Every turn:
 	If the moon pocket is open for the first turn:
-		say "At [the time of day in words] you hear the click of a latch releasing and a hatch opening coming from the dial."; [TODO: sundial description]
+		say "At [the time of day in words] you hear the click of a latch releasing and a moon hatch opening coming from the dial."; [TODO: sundial description]
 	otherwise if the moon pocket is closed for the first turn:
-		say "At [the time of day in words] you hear the sound of the hatch closing and the click of a latch locking coming from the dial.";
+		say "At [the time of day in words] you hear the sound of the moon hatch closing and the click of a latch locking coming from the dial.";
 		
 
 [unlocking action] 
@@ -754,9 +754,8 @@ Instead of examining the statue of artemis:
 	otherwise if ArtemisTemplePuzzleSolved is false and the statue of artemis is closed:
 		say "On the base of the statue you can see two locks: one sun-shapped and one moon-shapped.";
 	otherwise:
-		say "You can see some stairs leading downstairs.".
+		say "You can see some stairs leading downstairs.". [TODO: make item stairs]
 		
-Understand "door" as the statue of artemis when the player is in the temple of the Aulidean Artemis.
 
 Instead of pushing the statue of artemis for the first time:
 	now the statue of artemis is handled;
@@ -800,12 +799,12 @@ Every turn:
 		say "You hear the sound of a locking mechanism unlocking.";
 		now the statue of artemis  is unlocked;
 	otherwise if ArtemisTemplePuzzleSolved is false for the first turn and the statue of artemis is closed:
-		say "You hear the sound of the gate mechanism locking.";
+		say "You hear the sound of the locking mechanism locking.";
 		now the statue of artemis is locked;
 	otherwise if ArtemisTemplePuzzleSolved is true for the first turn and the statue of artemis is open:
-		say "You hear the sound of the gate mechanism unlocking, but the door is already open";
+		say "You hear the sound of the locking mechanism unlocking, but the door is already open";
 	otherwise if ArtemisTemplePuzzleSolved is false for the first turn and the statue of artemis is open:
-		say "You hear the sound of the gate mechanism locking, but the door is already open.";
+		say "You hear the sound of the locking mechanism locking, but the door is already open.";
 		
 		
 test art with "wait until 12 pm/take sun key/wait until 12 am/ take moon key/ put sun key in sun lock/ put moon key in moon lock".
