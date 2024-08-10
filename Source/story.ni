@@ -488,7 +488,7 @@ Chapter 3 - Artemis & Apollo
 
 [Region: Theba]
 
-[Start Of: Temple of the Aulidean Artemis] [TODO: change the descri[tion of the room when i look] [TODO: fix the pockets situation/description]
+[Start Of: Temple of the Aulidean Artemis] [TODO: change the description of the room when i look] [TODO: fix the pockets situation/description]
 
 The player is in the Temple of the Aulidean Artemis.
 
