@@ -7,7 +7,7 @@ Using Inform kit 'EnglishLanguageKit' (priority 1).
 Using Inform kit 'WorldModelKit' (priority 2).
 Using Inform kit 'CommandParserKit' (priority 3).
 756 Preform nonterminals read from C:\Users\User\OneDrive\Desktop\Thesis\Inform\Internal\Languages\English\Syntax.preform
-I've now read your source text, which is 7371 words long.
+I've now read your source text, which is 7489 words long.
 Included: core, naming, instance counting, interactive fiction, spatial model, backdrops, bibliographic data, chronology, devices, mapping, persons, player, regions, scenes, scoring, timed rules, times of day, actions, going, command, showme, multimedia, figures, sounds, glulx external files
 Excluded: 
 I've also read Basic Inform by Graham Nelson, which is 7691 words long.
@@ -102,6 +102,7 @@ Phase XI ... Generating inter (1)
 Phase XII ... Generating inter (2)
 -----------------------------------------------------
 
+.... RTKindConstructors__compile_permissions() took 1cs
 
 
 ==== Phase XII.1 ... Slashing command grammar ====
@@ -110,14 +111,13 @@ Phase XII ... Generating inter (2)
 
 ==== Phase XII.2 ... Determining command grammar ====
 
-.... CommandGrammars__prepare() took 1cs
 
 
 -----------------------------------------------------
 Phase XIII ... Generating inter (3)
 -----------------------------------------------------
 
-.... Sequence__undertake_queued_tasks() took 140cs
+.... Sequence__undertake_queued_tasks() took 143cs
 .... Sequence__undertake_queued_tasks() took 1cs
 .... RTPhrasebook__compile_entries() took 2cs
 
@@ -142,7 +142,7 @@ Phase XV ... Generating inter (5)
 
 .... Sequence__undertake_queued_tasks() took 1cs
 Providing for a total heap of 8192, given requirement of 8192
-.... Sequence__lint_inter() took 3cs
+.... Sequence__lint_inter() took 2cs
 
 
 -----------------------------------------------------
@@ -155,7 +155,7 @@ Phase XVI ... Bibliographic work
 Phase XVII ... Complete
 -----------------------------------------------------
 
-Compile CPU time: 194 centiseconds
+Compile CPU time: 196 centiseconds
 
 
 ==== Phase XVII.1 ... step 1/15: read <- *memory ====
@@ -200,12 +200,12 @@ Compile CPU time: 194 centiseconds
 
 ==== Phase XVII.11 ... step 11/15: eliminate-redundant-labels ====
 
-2127 redundant label(s) removed
+2131 redundant label(s) removed
 
 
 ==== Phase XVII.12 ... step 12/15: eliminate-redundant-operations ====
 
-821 redundant operation(s) removed
+823 redundant operation(s) removed
 
 
 ==== Phase XVII.13 ... step 13/15: optionally-generate text ->  ====
@@ -285,7 +285,7 @@ HTML tag stack:
     2. html (opened at line 236 of 'D:/Programs/Adv/Inform7/Distribution/inweb/foundation-module/Chapter 5/HTML.w')
 
 
-Back end elapsed time: 109cs
+Back end elapsed time: 148cs
 Total of 101 files written as streams.
 Vacant escapes: %: ..CDE.GH..K.M.O.QR.TU...YZab..e..h.jklm.o.qr......yz0123456789
 Vacant escapes: $: .....F...J..........UVW.....................s.u..x.........789

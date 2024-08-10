@@ -4480,6 +4480,7 @@
       <child nodeId="node-405"/>
       <child nodeId="node-488"/>
       <child nodeId="node-556"/>
+      <child nodeId="node-1871"/>
       <child nodeId="node-568"/>
       <child nodeId="node-635"/>
       <child nodeId="node-700"/>
@@ -6012,6 +6013,66 @@
   <item nodeId="node-567">
     <command xml:space="preserve">take flowers</command>
     <result xml:space="preserve">red flower: You picked up a red flower.&#x000A;red flower: You picked up a red flower.&#x000A;red flower: You picked up a red flower.&#x000A;red flower: You picked up a red flower.&#x000A;red flower: You picked up a red flower.&#x000A;red flower: You picked up a red flower.&#x000A;red flower: You picked up a red flower.&#x000A;red flower: You picked up a red flower.&#x000A;red flower: You're carrying too many things already.&#x000A;red flower: You're carrying too many things already.&#x000A;purple flower: You're carrying too many things already.&#x000A;purple flower: You're carrying too many things already.&#x000A;purple flower: You're carrying too many things already.&#x000A;purple flower: You're carrying too many things already.&#x000A;purple flower: You're carrying too many things already.&#x000A;purple flower: You're carrying too many things already.&#x000A;purple flower: You're carrying too many things already.&#x000A;purple flower: You're carrying too many things already.&#x000A;purple flower: You're carrying too many things already.&#x000A;purple flower: You're carrying too many things already.&#x000A;yellow flower: You're carrying too many things already.&#x000A;yellow flower: You're carrying too many things already.&#x000A;yellow flower: You're carrying too many things already.&#x000A;yellow flower: You're carrying too many things already.&#x000A;yellow flower: You're carrying too many things already.&#x000A;yellow flower: You're carrying too many things already.&#x000A;yellow flower: You're carrying too many things already.&#x000A;yellow flower: You're carrying too many things already.&#x000A;yellow flower: You're carrying too many things already.&#x000A;yellow flower: You're carrying too many things already.&#x000A;white flower: You're carrying too many things already.&#x000A;white flower: You're carrying too many things already.&#x000A;white flower: You're carrying too many things already.&#x000A;white flower: You're carrying too many things already.&#x000A;white flower: You're carrying too many things already.&#x000A;white flower: You're carrying too many things already.&#x000A;white flower: You're carrying too many things already.&#x000A;white flower: You're carrying too many things already.&#x000A;white flower: You're carrying too many things already.&#x000A;white flower: You're carrying too many things already.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1871">
+    <command xml:space="preserve">unlock sun lock</command>
+    <result xml:space="preserve">You need a matching sun key for this lock.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1872"/>
+    </children>
+  </item>
+  <item nodeId="node-1872">
+    <command xml:space="preserve">unlock statue</command>
+    <result xml:space="preserve">It seems like you need 2 keys for the locks to unlock.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1873"/>
+    </children>
+  </item>
+  <item nodeId="node-1873">
+    <command xml:space="preserve">wait untill midday</command>
+    <result xml:space="preserve">I only understood you as far as wanting to wait.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1874"/>
+    </children>
+  </item>
+  <item nodeId="node-1874">
+    <command xml:space="preserve">wait until midday</command>
+    <result xml:space="preserve">It is twelve o'clock now.&#x000A;&#x000A;At twelve o'clock you hear the sound of a hatch opening on the dial.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1875"/>
+    </children>
+  </item>
+  <item nodeId="node-1875">
+    <command xml:space="preserve">take sun key</command>
+    <result xml:space="preserve">You picked up a sun key.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1876"/>
+    </children>
+  </item>
+  <item nodeId="node-1876">
+    <command xml:space="preserve">unlock statue</command>
+    <result xml:space="preserve">It seems like you need 2 keys for the locks to unlock.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1877"/>
+    </children>
+  </item>
+  <item nodeId="node-1877">
+    <command xml:space="preserve">x sun lock</command>
+    <result xml:space="preserve">The sun lock is empty.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -13659,7 +13720,7 @@
   </item>
   <item nodeId="node-1870">
     <command xml:space="preserve">unlock moon lock</command>
-    <result xml:space="preserve">&gt;</result>
+    <result xml:space="preserve">You need a matching moon key for this lock.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>

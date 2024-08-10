@@ -689,7 +689,6 @@ Instead of unlocking the sun lock with anything:
 	try silently unlocking the sun lock;
 	stop the action.
 
-	
 Instead of unlocking the moon lock with anything:
 	try silently unlocking the moon lock;
 	stop the action.
@@ -699,6 +698,12 @@ Instead of unlocking the statue of artemis:
 		try silently inserting the sun key into the sun lock;
 		try silently inserting the moon key into the moon lock;
 		say "You inserted both keys into their respective lock.";
+	otherwise if the sun key is carried by the player:
+		try silently inserting the sun key into the sun lock;
+		continue the action;
+	otherwise if the moon key is carried by the player:
+		try silently inserting the moon key into the moon lock;
+		continue the action;
 	otherwise if the sun key is inside the sun lock and the moon key is carried by the player:
 		try silently inserting the moon key into the moon lock;
 		say "You also insert the moon key in the moon lock.";
@@ -708,6 +713,17 @@ Instead of unlocking the statue of artemis:
 	otherwise:
 		say "It seems like you need 2 keys for the locks to unlock.";
 		stop the action.
+
+After unlocking the statue of artemis:
+	if the sun key is in the sun lock and the moon key is not in the moon lock:
+		say "It seems like you need one more key.";
+		continue the action;
+	if the moon key is in the moon lock and the sun key is not in the sun lock:
+		say "It seems like you need one more key.";
+		continue the action;
+	otherwise:
+		continue the action.
+
 
 Instead of unlocking the sun lock:
 	if the sun key is carried by the player:
