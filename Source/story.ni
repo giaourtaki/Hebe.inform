@@ -688,6 +688,7 @@ Instead of unlocking the statue of artemis with anything:
 Instead of unlocking the sun lock with anything:
 	try silently unlocking the sun lock;
 	stop the action.
+
 	
 Instead of unlocking the moon lock with anything:
 	try silently unlocking the moon lock;

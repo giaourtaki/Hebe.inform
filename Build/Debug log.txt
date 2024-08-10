@@ -42,7 +42,7 @@ Loading kinds definitions from C:\Users\User\OneDrive\Desktop\Thesis\Inform\Inte
 Phase III ... Pre-pass through major nodes
 -----------------------------------------------------
 
-.... MajorNodes__pre_pass() took 12cs
+.... MajorNodes__pre_pass() took 11cs
 
 
 -----------------------------------------------------
@@ -110,6 +110,7 @@ Phase XII ... Generating inter (2)
 
 ==== Phase XII.2 ... Determining command grammar ====
 
+.... CommandGrammars__prepare() took 1cs
 
 
 -----------------------------------------------------
@@ -141,7 +142,7 @@ Phase XV ... Generating inter (5)
 
 .... Sequence__undertake_queued_tasks() took 1cs
 Providing for a total heap of 8192, given requirement of 8192
-.... Sequence__lint_inter() took 2cs
+.... Sequence__lint_inter() took 3cs
 
 
 -----------------------------------------------------
