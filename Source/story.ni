@@ -496,9 +496,16 @@ The player is in the Temple of the Aulidean Artemis.
 The Temple of the Aulidean Artemis is a room in Thebes. The description is "
 You step into the sacred Temple of Aulidean Artemis, where the scent of incense and ancient prayers is still fresh, despite the absence of the priestesses. As you pass through the pronaos, your eyes are drawn to the [if the time of day is before 08:00 pm]sunlight[otherwise]moonlight[end if] cascading down from the open ceiling, illuminating an imposing sundial that stands ar the center of the chamber. The [if the time of day is before 08:00 pm]sun's[otherwise]moon's[end if] rays trace their path across the dial, a silent testament to the passing hours in this eternal sanctuary.
 
-Entering the naos, the very heart of the temple, you find yourself in the presence of the magnificent golden statue of Artemis. My sister stands tall and proud, her form aglow with a divine radiance that speaks of her unyielding strength and purity. In her left hand, she holds the antlers of a noble deer, symbolizing her dominion over the wild, while her right hand grips her bow, ever ready to protect those who dwell under her watchful eye. A quiver, filled with finely crafted arrows, rests upon her back, the tools of the huntress who lets no prey escape.
+Entering the naos, the very heart of the temple, you find yourself in the presence of the magnificent golden statue of Artemis. Your sister stands tall and proud, her form aglow with a divine radiance that speaks of her unyielding strength and purity. In her left hand, she holds the antlers of a noble deer, symbolizing her dominion over the wild, while her right hand grips her bow, ever ready to protect those who dwell under her watchful eye. A quiver, filled with finely crafted arrows, rests upon her back, the tools of the huntress who lets no prey escape.
 
-At her feet, the altar of Artemis beckons, a place where mortals have laid their offerings, hoping to earn her favor. ".
+In front of her feet is the altar of Artemis, a place where mortals would laid their offerings not long ago, hoping to earn her favor. ".
+
+Instead of looking for the 2nd time:
+	 If the player is in the Temple of the Aulidean Artemis:
+		say "Inside the Temple of the Aulidean Artemis you can see a sundial, the statue of Artemis and her sacrificial altar.";
+		stop the action;
+	otherwise:
+		continue the action.
 
 [
 
@@ -522,9 +529,9 @@ The quiver is in the temple of the Aulidean Artemis. It is a scenery.The descrip
 A locking mechanism is in the temple of the Aulidean Artemis. It is a scenery.The description is "You can't see the mechanism, but you can hear it inside the statue. [If the statue of artemis is open]Your best guess is that it kept the statue from revealing the stairs that lead under the temple."
 
 [altar of artemis]
-An artemis altar is in the temple of the Aulidean Artemis. It is a scenery. The description of the artemis altar is "The altar of Artemis.". 
+An goddess altar is in the temple of the Aulidean Artemis. It is a scenery. The goddess altar is a supporter. The description of the goddess altar is "The altar of Artemis.". 
 
-Understand "altar" or "altar of artemis" as artemis altar when the player is in the temple of the Aulidean Artemis.
+Understand "altar" or "altar of artemis" or "sacrificial altar" as goddess altar when the player is in the temple of the Aulidean Artemis.
 
 
 Understand "moondial" or "imposing sundial" as sundial.
@@ -535,22 +542,24 @@ After examining the sundial:
 	
 	
 [sun pockets]	
-A sun pocket is an closed unopenable container. It is part of the sundial. It is fixed in place. [TODO: It is undescribed.]
-A moon pocket is an closed unopenable container. It is part of the sundial. It is fixed in place. [TODO: It is undescribed.]
+A sun pocket is an closed unopenable opaque container. It is part of the sundial. It is fixed in place. [TODO: It is undescribed.] The carrying capacity of the sun pocket is 1.
+A moon pocket is an closed unopenable opaque container. It is part of the sundial. It is fixed in place. [TODO: It is undescribed.] The carrying capacity of the moon pocket is 1.
 
-The Goddess Artemis is in the Divine Cell of Artemis & Apollo. Artemis is a woman.
-The God Apollo is in the Divine Cell of Artemis & Apollo. Apollo is a man.
+
 
 [locks]
-The sun lock is part of the statue of artemis. It is an open unopenable container. It is fixed in place.
-The moon lock is part of the statue of artemis. It is an open unopenable container. It is fixed in place.
+The sun lock is part of the statue of artemis. It is an open unopenable container. It is fixed in place. The carrying capacity of the sun lock is 1.
+The moon lock is part of the statue of artemis. It is an open unopenable container. It is fixed in place. The carrying capacity of the moon lock is 1.
 
-Understand "sun-shapped lock" as sun lock.
-Understand "moon-shapped lock" as moon lock.
+Understand "sun-shaped lock" and "sun shaped lock" as sun lock.
+Understand "moon-shaped lock" and "moon shaped lock" as moon lock.
 
 [keys]
 The sun key is inside the sun pocket. The description is "The head of the key is shapped like a sun with curvy rays. Its colour is a bright gold."
 The moon key is inside the moon pocket. The description is "The head of the key is shapped like a cresent moon. Its colour is a warm ivory."
+
+Understand "sun-shaped key" and "sun shaped key" as sun key.
+Understand "moon-shaped key" and "moon shaped key" as moon key.
 
 [examining locks]
 Instead of examining the sun lock:
@@ -630,13 +639,15 @@ Every turn when the time of day is after 12:09 pm:
 	
 Instead of examining the sun pocket:
 	If the sun pocket is open:
-		say "The sun pocket is open.";
+		say "The sun hatch is open. Inside you can see [a list of things inside the sun pocket].";
 		stop the action;
 	otherwise:
-		say "The sun pocket is closed.";
+		say "The sun hatch is closed.";
 		stop the action.
 
-[moon pocket]	
+Understand "hatch" as the sun pocket. 
+
+[examine moon pocket]	
 Every turn when the time of day is after 11:59 pm and the time of day is before 12:11 am:
 	now the moon pocket is open;	
 
@@ -645,24 +656,26 @@ Every turn when the time of day is after 12:09 am:
 
 Instead of examining the moon pocket:
 	If the moon pocket is open:
-		say "The moon pocket is open.";
+		say "The moon flap is open. Inside you can see [a list of things inside the moon pocket].";
 		stop the action;
 	otherwise:
-		say "The moon pocket is closed.";
+		say "The moon flap is closed.";
 		stop the action.
+		
+Understand "flap" as moon pocket.
 		
 
 Every turn:
 	If the sun pocket is open for the first turn:
-		say "At [the time of day in words] you hear the sound of the sun pocket opening.";
+		say "At [the time of day in words] you hear the sound of a hatch opening on the dial."; [TODO: change hatch and flap + max capacity 1]
 	otherwise if the sun pocket is closed for the first turn:
-		say "At [the time of day in words] you hear the sound of the sun pocket closing.";
+		say "At [the time of day in words] you hear the sound of the sun hatch closing.";
 		
 Every turn:
 	If the moon pocket is open for the first turn:
-		say "At [the time of day in words] you hear the sound of the moon pocket opening.";
+		say "At [the time of day in words] you hear the sound of a flap opening on the dial.";
 	otherwise if the moon pocket is closed for the first turn:
-		say "At [the time of day in words] you hear the sound of the moon pocket closing.";
+		say "At [the time of day in words] you hear the sound of the moon flap closing.";
 		
 
 [unlocking action] 
@@ -671,16 +684,43 @@ Unlocking is an action applying to one thing and requiring light. Understand “
 
 Instead of unlocking the statue of artemis with anything:
 	try silently unlocking the statue of artemis.
+	
+Instead of unlocking the sun lock with anything:
+	try silently unlocking the sun lock;
+	stop the action.
+	
+Instead of unlocking the moon lock with anything:
+	try silently unlocking the moon lock;
+	stop the action.
 
 Instead of unlocking the statue of artemis:
 	if the moon key is carried by the player and the sun key is carried by the player:
 		try silently inserting the sun key into the sun lock;
 		try silently inserting the moon key into the moon lock;
 		say "You inserted both keys into their respective lock.";
+	otherwise if the sun key is inside the sun lock and the moon key is carried by the player:
+		try silently inserting the moon key into the moon lock;
+		say "You also insert the moon key in the moon lock.";
+	otherwise if the moon key is inside the moon lock and the sun key is carried by the player:
+		try silently inserting the sun key into the sun lock;
+		say "You also insert the sun key in the sun lock.";
 	otherwise:
-		say "It seems like you need 2 keys for this door to unlock.";
+		say "It seems like you need 2 keys for the locks to unlock.";
 		stop the action.
 
+Instead of unlocking the sun lock:
+	if the sun key is carried by the player:
+		try silently inserting the sun key into the sun lock;
+	otherwise:
+		say "You need a matching sun key for this lock.";
+		stop the action.
+		
+Instead of unlocking the moon lock:
+	if the moon key is carried by the player:
+		try silently inserting the moon key into the moon lock;
+	otherwise:
+		say "You need a matching moon key for this lock.";
+		stop the action.
 	
 Every turn:
 	If the sun key is inside the sun lock and
@@ -710,6 +750,14 @@ Instead of pushing the statue of artemis:
 		say "The statue feels stuck. You can't push it back.";
 		stop the action.
 
+Instead of going down when the player is in the temple of the Aulidean Artemis:
+	if ArtemisTemplePuzzleSolved is false:
+		say "You can't go that way.";
+		stop the action;
+	otherwise:
+		say "You take the stairs that lead under the temple.";
+		continue the action.
+	
 
 Instead of opening the statue of artemis:
 	if ArtemisTemplePuzzleSolved is true and the statue of artemis is closed:
@@ -746,7 +794,8 @@ test art with "wait until 12 pm/take sun key/wait until 12 am/ take moon key/ pu
 [End Of: Temple of the Aulidean Artemis]
 
 
-
+The Goddess Artemis is in the Divine Cell of Artemis & Apollo. Artemis is a woman.
+The God Apollo is in the Divine Cell of Artemis & Apollo. Apollo is a man.
 
 
 Chapter 4 - Aphrodite & Hephaestus
