@@ -111,7 +111,7 @@ Antirotating is an action applying to one thing. Understand "rotate [any thing] 
 
 Chapter 0 - Tutorial 1 
 
-When play begins: say "mia fora kai enan kairo...".
+When play begins: say "[bold type]Instructions: [roman type][paragraph break]Welcome to my Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. Your goal is to find a way out of the room you are currently in. Some basic commands you can try to use to interact with your surroundings are [bold type]examine (x), look (l), put, take and inventory (i)[roman type], but there are more options! Have fun!".
 [
 [scene 1]
 Tutorial 1 is a scene. 
@@ -493,17 +493,17 @@ Chapter 3 - Artemis & Apollo
 The player is in the Temple of the Aulidean Artemis.
 
 [rooms]
-The Temple of the Aulidean Artemis is a room in Thebes. The description is "You step into the sacred temple of Aulidean Artemis. The temple is empty and abandoned by the priestesses, following Kronos[apostrophe] seizure of power, as expected, unfortunately. 
+The Temple of the Aulidean Artemis is a room in Thebes. The description is "Inside the Temple of the Aulidean Artemis you can see a sundial, the statue of Artemis and her sacrificial altar.".
+
+Instead of looking for the 1st time:
+	 If the player is in the Temple of the Aulidean Artemis:
+		say "You step into the sacred temple of Aulidean Artemis. The temple is empty and abandoned by the priestesses, following Kronos[apostrophe] seizure of power, as expected, unfortunately. 
 
 As you pass through the pronaos, your eyes are drawn to the [if the time of day is before 08:00 pm]sunlight[otherwise]moonlight[end if] cascading down from the open ceiling, illuminating an imposing sundial made of pearly white marble that stands at the center of the chamber. The [if the time of day is before 08:00 pm]sun's[otherwise]moon's[end if] rays cross paths with the dial's gnomon, casting a shadow that marks the hour.
 
 Entering the naos, the most divine part of the temple, you find yourself in the presence of the graceful golden statue of Artemis. Your sister stands tall and proud, her form aglow with a divine radiance that speaks of her unyielding strength and purity. In her left hand, she holds the antlers of a noble deer, symbolizing her dominion over the wild, while her right hand grips her bow, ever ready to protect those who dwell under her watchful eye. A quiver, filled with finely crafted arrows, rests upon her back, the tools of the huntress who lets no prey escape.
 
-Directly in front of her statue is the altar of Artemis, a place where mortals would lay their offerings not long ago, hoping to earn her favor. ".
-
-Instead of looking for the 2nd time:
-	 If the player is in the Temple of the Aulidean Artemis:
-		say "Inside the Temple of the Aulidean Artemis you can see a sundial, the statue of Artemis and her sacrificial altar.";
+Directly in front of her statue is the altar of Artemis, a place where mortals would lay their offerings not long ago, hoping to earn her favor. ";
 		stop the action;
 	otherwise:
 		continue the action.

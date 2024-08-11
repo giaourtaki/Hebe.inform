@@ -3,7 +3,7 @@
   <generator>Windows Inform 10.1.2</generator>
   <item nodeId="node-1">
     <command xml:space="preserve">Hebe</command>
-    <result xml:space="preserve">mia fora kai enan kairo...&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 240811 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Temple of the Aulidean Artemis&#x000A;You step into the sacred temple of Aulidean Artemis. The temple is empty and abandoned by the priestesses, following Kronos' seizure of power, as expected, unfortunately.&#x000A;&#x000A;As you pass through the pronaos, your eyes are drawn to the sunlight cascading down from the open ceiling, illuminating an imposing sundial made of pearly white marble that stands at the center of the chamber. The sun's rays cross paths with the dial's gnomon, casting a shadow that marks the hour.&#x000A;&#x000A;Entering the naos, the most divine part of the temple, you find yourself in the presence of the graceful golden statue of Artemis. Your sister stands tall and proud, her form aglow with a divine radiance that speaks of her unyielding strength and purity. In her left hand, she holds the antlers of a noble deer, symbolizing her dominion over the wild, while her right hand grips her bow, ever ready to protect those who dwell under her watchful eye. A quiver, filled with finely crafted arrows, rests upon her back, the tools of the huntress who lets no prey escape.&#x000A;&#x000A;Directly in front of her statue is the altar of Artemis, a place where mortals would lay their offerings not long ago, hoping to earn her favor. &#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Instructions: &#x000A;&#x000A;Welcome to my Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. Your goal is to find a way out of the room you are currently in. Some basic commands you can try to use to interact with your surroundings are examine, look and take, but there are more options! Have fun!&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 240811 / Inform 7 v10.1.2 / D&#x000A;&#x000A;You step into the sacred temple of Aulidean Artemis. The temple is empty and abandoned by the priestesses, following Kronos' seizure of power, as expected, unfortunately.&#x000A;&#x000A;As you pass through the pronaos, your eyes are drawn to the sunlight cascading down from the open ceiling, illuminating an imposing sundial made of pearly white marble that stands at the center of the chamber. The sun's rays cross paths with the dial's gnomon, casting a shadow that marks the hour.&#x000A;&#x000A;Entering the naos, the most divine part of the temple, you find yourself in the presence of the graceful golden statue of Artemis. Your sister stands tall and proud, her form aglow with a divine radiance that speaks of her unyielding strength and purity. In her left hand, she holds the antlers of a noble deer, symbolizing her dominion over the wild, while her right hand grips her bow, ever ready to protect those who dwell under her watchful eye. A quiver, filled with finely crafted arrows, rests upon her back, the tools of the huntress who lets no prey escape.&#x000A;&#x000A;Directly in front of her statue is the altar of Artemis, a place where mortals would lay their offerings not long ago, hoping to earn her favor. &#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -4473,12 +4473,13 @@
   </item>
   <item nodeId="node-396">
     <command xml:space="preserve">l</command>
-    <result xml:space="preserve">Inside the Temple of the Aulidean Artemis you can see a sundial, the statue of Artemis and her sacrificial altar.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Temple of the Aulidean Artemis&#x000A;Inside the Temple of the Aulidean Artemis you can see a sundial, the statue of Artemis and her sacrificial altar.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-397"/>
       <child nodeId="node-405"/>
+      <child nodeId="node-1951"/>
       <child nodeId="node-488"/>
       <child nodeId="node-556"/>
       <child nodeId="node-1871"/>
@@ -5301,6 +5302,48 @@
   <item nodeId="node-487">
     <command xml:space="preserve">take gate</command>
     <result xml:space="preserve">That's fixed in place.&#x000A;&#x000A;You hear the gate unlocking.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1951">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Temple of the Aulidean Artemis&#x000A;Inside the Temple of the Aulidean Artemis you can see a sundial, the statue of Artemis and her sacrificial altar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1952"/>
+    </children>
+  </item>
+  <item nodeId="node-1952">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Temple of the Aulidean Artemis&#x000A;Inside the Temple of the Aulidean Artemis you can see a sundial, the statue of Artemis and her sacrificial altar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1953"/>
+    </children>
+  </item>
+  <item nodeId="node-1953">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Temple of the Aulidean Artemis&#x000A;Inside the Temple of the Aulidean Artemis you can see a sundial, the statue of Artemis and her sacrificial altar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1954"/>
+    </children>
+  </item>
+  <item nodeId="node-1954">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Temple of the Aulidean Artemis&#x000A;Inside the Temple of the Aulidean Artemis you can see a sundial, the statue of Artemis and her sacrificial altar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1955"/>
+    </children>
+  </item>
+  <item nodeId="node-1955">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Temple of the Aulidean Artemis&#x000A;Inside the Temple of the Aulidean Artemis you can see a sundial, the statue of Artemis and her sacrificial altar.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
