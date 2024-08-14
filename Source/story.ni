@@ -20,13 +20,15 @@ Chapter 0.0 - Regions
 Greece is a region.
 Mountain Olympus is a region in Greece. 
 Athens is a region in Greece.
+Acropolis is a region in Athens.
 Sounio is a region in Greece.
 Thebes is a region in Greece.
 Delphi is a region in Greece.
 
 [Cyprus]
 Cyprus is a region.
-Palace of Paphos is a region in Cyprus.
+Paphos is a region in Cyprus.
+Palace of Paphos is a region in Paphos.
 
 Chapter 0.1 - Player Initialize
 
@@ -81,6 +83,9 @@ ArtemisTemplePuzzleSolved is a truth state that varies. ArtemisTemplePuzzleSolve
 [Chapter 4 - Aphrodite & Hephaestus]
 FlowerPuzzleSolved is a truth state that varies. FlowerPuzzleSolved is false. [if flower puzzle in SG is solved or not]
 
+[Chapter 5 - Hestia & Hermes]
+TorchPuzzleSolved is a truth state that varies. TorchPuzzleSolved is false. [if the torch puzzle is solved or not]
+
 
 
 Chapter 0.3 - Either/Or
@@ -111,7 +116,7 @@ Antirotating is an action applying to one thing. Understand "rotate [any thing] 
 
 Chapter 0 - Tutorial 1 
 
-When play begins: say "[bold type]Instructions: [roman type][paragraph break]Welcome to my Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. Your goal is to find a way out of the room you are currently in. Some basic commands you can try to use to interact with your surroundings are [bold type]examine (x), look (l), put, take and inventory (i)[roman type], but there are more options! Have fun!".
+When play begins: say "[bold type]Instructions: [roman type][paragraph break]Welcome to my Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. Your goal is to find a way out of the room you are currently in. Some basic commands you can try to use to interact with your surroundings are [bold type]look (l), examine (x) {thing}, , put {thing}, take {thing} and inventory (i)[roman type], but there are more options! Have fun!".
 [
 [scene 1]
 Tutorial 1 is a scene. 
@@ -488,9 +493,9 @@ Chapter 3 - Artemis & Apollo
 
 [Region: Theba]
 
-[Start Of: Temple of the Aulidean Artemis] [TODO: change the description of the room when i look] [TODO: fix the pockets situation/description]
+[Start Of: Temple of the Aulidean Artemis] [TODO: fix what happens when the day changes] [TODO: fix the pockets situation/description]
 
-The player is in the Temple of the Aulidean Artemis.
+[The player is in the Temple of the Aulidean Artemis.]
 
 [rooms]
 The Temple of the Aulidean Artemis is a room in Thebes. The description is "Inside the Temple of the Aulidean Artemis you can see a sundial, the statue of Artemis and her sacrificial altar.".
@@ -518,9 +523,11 @@ The statue of artemis is down of the Temple of the Aulidean Artemis and up of th
 Understand "statue" or "golden statue of artemis" or "magneficent golden statue of artemis" as the statue of artemis when the player is in the Temple of the Aulidean Artemis.
 
 [things]
-The sundial is in the temple of the Aulidean Artemis. It is fixed in place. The description is "[If the sundial is not handled]The dial is designed with two separate rings encircling its plate, one with sun and one with lunar engravings, allowing you to read the time day and night. [end if][if the sundial is not handled]You also see on the gnomon an inscription engraved and gilded in gold that says: At midday, let Apollo’s light cast no shadow, and at midnight, let Artemis’ glow guide the way. Only then shall the twins unveil the hidden path.[otherwise]The inscription engraved on the gnomon read: At midday, let Apollo’s light cast no shadow, and at midnight, let Artemis[apostrophe] glow guide the way. Only then shall the twins unveil the hidden path.". It is a scenery.
+The sundial is in the temple of the Aulidean Artemis. It is fixed in place. The description is "[If the sundial is not handled]The dial is designed with two separate rings encircling its plate, one with sun and one with lunar markings, allowing you to read the time day and night. [end if][if the sundial is not handled]You also see on the gnomon an inscription engraved and gilded in gold that says: At midday, let Apollo’s light cast a shadow, and at midnight, let Artemis[apostrophe] glow guide the way. Only then shall the twins unveil the hidden path.[otherwise]The inscription engraved on the gnomon read: At midday, let Apollo’s light cast no shadow, and at midnight, let Artemis[apostrophe] glow guide the way. Only then shall the twins unveil the hidden path.". It is a scenery.
 
-A gnomon is part of the sundial. It is a scenery. The description is "On the gnomon, an inscription engraved and gilded in gold says: At midday, let Apollo’s light cast no shadow, and at midnight, let Artemis’ glow guide the way. Only then shall the twins unveil the hidden path.".
+A gnomon is part of the sundial. It is a scenery. The description is "On the gnomon, an inscription engraved and gilded in gold says: At midday, let Apollo’s light cast no shadow, and at midnight, let Artemis[apostrophe] glow guide the way. Only then shall the twins unveil the hidden path.".
+
+The dial rings are part of the sundial. The description is "They showcase sun and lunar markings, allowing you to use the dial to read the time day and night.".
 
 Understand "gnomon of the sundial" as gnomon.
 
@@ -617,7 +624,7 @@ Hanging around until is an action applying to one time.
 
 Check hanging around until:
 	if the time of day is the time understood, say "It is [time understood in words] now." instead;
-	if the time of day is after the time understood, say "[time understood in words] passed already. Maybe try again tomorrow." instead.
+	if the time of day is after the time understood, say "[time understood in words] passed already. Maybe try again tomorrow." instead. [TODO: fix]
 
 Carry out hanging around until:
 	while the time of day is before the time understood:
@@ -883,19 +890,8 @@ Instead of opening the lake :
 		stop the action;
 		
 	
-[Test for lake TBD]
-[
-Every turn:
-	if a red flower is carried by the player:
-		now HasPoseidonBoon is true;
-	otherwise:
-		now HasPoseidonBoon is false.
-		]
-	
 
 [Items]
-[test item TBD]
-[An aria is a thing carried by the player.]
 
 [items described]
 A vine is a thing in the Secret Garden. It is undescribed. It is fixed in place. The plural of vine is vines.
@@ -1152,4 +1148,105 @@ Cinyras is a man in the Throne Room.
 Aphrodite is a woman in the Divine Cell 4.
 Hephaestus is a man in the Divine Cell 4.
 [Conversation]
+
+
+Chapter 5 - Hestia & Hermes
+
+[room]
+[Start Of: Prytaneion]
+
+The player is in Prytaneion.
+
+Prytaneion is a room in Acropolis. It is up of the porta. The description is "TODO simple description".
+
+[Instead of looking for the first time: [has_visited before variable, turns to false everytime the player goes out]
+	say "TODO first simple description";
+	stop the action;
+	]
+	
+[door]
+A porta is an open door.
+
+
+[things]
+A hearth is a thing inside the prytaneion. It is scenery. [The description is "It burns hot."] The hearth is lit.
+
+A portable torch is a thing inside the prytaneion. [The description is "A portable torch.".]
+
+[torches]
+A first torch is a device inside the prytaneion. It is switched off. [TODO: check names]
+A second torch is a device inside the prytaneion. It is switched off. 
+A third torch is a device inside the prytaneion. It is switched off. 
+A forth torch is a device inside the prytaneion. It is switched off. 
+A fifth torch is a device inside the prytaneion. It is switched off. 
+A sixth torch is a device inside the prytaneion. It is switched off. 
+A seventh torch is a device inside the prytaneion. It is switched off. 
+A eighth torch is a device inside the prytaneion. It is switched off. 
+
+A ninth torch is a device inside the prytaneion. It is switched off. 
+A tenth torch is a device inside the prytaneion. It is switched off. 
+A eleventh torch is a device inside the prytaneion. It is switched off. 
+A twelvth torch is a device inside the prytaneion. It is switched off. 
+A thirteenth torch is a device inside the prytaneion. It is switched off. 
+A fourteenth torch is a device inside the prytaneion. It is switched off. 
+A fifteenth torch is a device inside the prytaneion. It is switched off. 
+A sixteenth torch is a device inside the prytaneion. It is switched off. 
+
+
+[bring close to fire action]
+Bringing something close to the hearth is an action applying to one thing and requiring light. Understand "put [something] close to the hearth" or "bring [something] close to the hearth" as bringing something close to the hearth.
+
+Instead of bringing something close to the hearth:
+	if the noun is the empty scroll:
+		say "Ink starts to slowly appear on the papyrus, revealing a message."
+		now the description of the empty scroll is "The message says: ";
+		stop the action;
+	otherwise if the noun is the wax tablet:
+		say "The warmth of the hearth made the wax melt. It revealed some engraved writing under it.";
+		now the description of the wax tablet is "The ";
+		stop the action;
+	otherwise:
+		say "Hmm this won't achieve anything";
+		stop the action.
+
+[invisible ink scroll]
+An empty scroll is a thing inside the prytaneion. [The description is "An empty scroll.".]
+
+[wax tablet]
+A wax tablet is a thing inside the prytaneion. [The description is "A wax tablet.".]
+
+[text scroll]
+A text scroll is a thing inside the prytaneion. The description is "On the scroll you read: Ortsg gsv hrcgs, gsv hvevmgs zmw gsv vrtsgs glixsvh.". [atbash cipher]
+
+[leather parchment]
+A parchment is a thing inside the prytaneion. The description is "On the parchment you read: Nkijv vjg ugeqpf cpf vjktf vqtejgu.". [Caesar cipher with ROT2: Light the second and third torches]
+
+[solution]
+Every turn:
+	If      second torch is switched on and [and others switched off]
+		third torch  is switched on and
+		sixth torch is switched on and
+		seventh torch is switched on and
+		eighth torch is switched on and
+		tenth torch is switched on and
+		eleventh is switched on and
+		twelvth is switched on and
+		fourteenth is switched on and
+		fifteenth is switched on and
+		sixteenth is switched on:
+		now TorchPuzzleSolved is true;
+	otherwise:
+		now TorchPuzzleSolved is false.
+
+[End Of: Prytaneion]
+
+[Start Of: Divine Cell 5]
+
+Divine Cell 5 is a room in Acropolis. It is down of the porta. The description is "TODO mmm gods now".
+
+
+
+
+
+
 
