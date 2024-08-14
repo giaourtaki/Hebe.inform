@@ -64,6 +64,8 @@ A seed is a kind of thing. The plural of seed is seeds.
 [definition of weight]
 A weight is a kind of thing. The plural of weight is weights. A weight has a mass. Definition: A weight is heavy if its mass is 1dr or more.
 
+[definition of torch/flame]
+A flame is a kind of thing. The plural of flame is flames. A flame is usually unlit.
 
 Chapter 0.21 - Variables
 
@@ -1169,75 +1171,95 @@ A porta is an open door.
 
 
 [things]
-A hearth is a thing inside the prytaneion. It is scenery. [The description is "It burns hot."] The hearth is lit.
+A hearth is a lit thing inside the prytaneion. It is scenery. [The description is "It burns hot."] 
 
-A portable torch is a thing inside the prytaneion. [The description is "A portable torch.".]
+A portable torch is a kind of flame. There is a portable torch inside the prytaneion. [The description is "A portable torch.".]
+
 
 [torches]
-A first torch is a device inside the prytaneion. It is switched off. [TODO: check names]
-A second torch is a device inside the prytaneion. It is switched off. 
-A third torch is a device inside the prytaneion. It is switched off. 
-A forth torch is a device inside the prytaneion. It is switched off. 
-A fifth torch is a device inside the prytaneion. It is switched off. 
-A sixth torch is a device inside the prytaneion. It is switched off. 
-A seventh torch is a device inside the prytaneion. It is switched off. 
-A eighth torch is a device inside the prytaneion. It is switched off. 
+A first torch is a kind of flame. There is one first torch inside the prytaneion. [TODO: check names]
+A second torch is a kind of flame. There is one second torch inside the prytaneion.
+A third torch is a kind of flame. There is one third  torch inside the prytaneion.
+A fourth torch is a kind of flame. There is one fourth torch inside the prytaneion.
+A fifth torch is a kind of flame. There is one fifth torch inside the prytaneion.
+A sixth torch is a kind of flame. There is one sixth torch inside the prytaneion.
+A seventh torch is a kind of flame. There is one seventh torch inside the prytaneion.
+A eighth torch is a kind of flame. There is one eighth torch inside the prytaneion.
 
-A ninth torch is a device inside the prytaneion. It is switched off. 
-A tenth torch is a device inside the prytaneion. It is switched off. 
-A eleventh torch is a device inside the prytaneion. It is switched off. 
-A twelvth torch is a device inside the prytaneion. It is switched off. 
-A thirteenth torch is a device inside the prytaneion. It is switched off. 
-A fourteenth torch is a device inside the prytaneion. It is switched off. 
-A fifteenth torch is a device inside the prytaneion. It is switched off. 
-A sixteenth torch is a device inside the prytaneion. It is switched off. 
+A ninth torch is a kind of flame. There is one ninth torch inside the prytaneion.
+A tenth torch is a kind of flame. There is one tenth torch inside the prytaneion.
+A eleventh torch is a kind of flame. There is one eleventh torch inside the prytaneion.
+A twelfth torch is a kind of flame. There is one twelfth torch inside the prytaneion.
+A thirteenth torch is a kind of flame. There is one thirteenth torch inside the prytaneion.
+A fourteenth torch is a kind of flame. There is one fourteenth torch inside the prytaneion.
+A fifteenth torch is a kind of flame. There is one fifteenth torch inside the prytaneion.
+A sixteenth torch is a kind of flame. There is one sixteenth torch inside the prytaneion.
 
 
 [bring close to fire action]
-Bringing something close to the hearth is an action applying to one thing and requiring light. Understand "put [something] close to the hearth" or "bring [something] close to the hearth" as bringing something close to the hearth.
+Bringing something close to the hearth is an action applying to one thing and requiring light. Understand "put [something] close to the hearth" or "put [something] close to hearth"  or "put [something] close to the fire" or "put [something] close to fire" or "bring [something] close to the hearth" or "bring [something] close to hearth" or "bring [something] close to the fire" or "bring [something] close to fire" as bringing something close to the hearth.
 
 Instead of bringing something close to the hearth:
-	if the noun is the empty scroll:
-		say "Ink starts to slowly appear on the papyrus, revealing a message."
-		now the description of the empty scroll is "The message says: ";
+	if the player is not inside the prytaneion:
+		say "There is no hearth here.";
+		stop the action;
+	otherwise if the noun is the empty scroll:
+		say "Ink starts to slowly appear on the papyrus, revealing a message.";
+		now the description of the empty scroll is "The message says: Light the fourteenth, fifteenth and sixteen torches."; []
 		stop the action;
 	otherwise if the noun is the wax tablet:
 		say "The warmth of the hearth made the wax melt. It revealed some engraved writing under it.";
-		now the description of the wax tablet is "The ";
+		now the description of the wax tablet is "The writing reads: Light the tenth, eleventh and thirtheenth torches.";
 		stop the action;
 	otherwise:
 		say "Hmm this won't achieve anything";
 		stop the action.
+		
+
+[light torch/flame action]
+Instead of burning something:
+	if the noun is a flame:
+		say "You lighted [the noun].";
+		now the noun is lit;
+		stop the action;
+	otherwise:
+		continue the action.
 
 [invisible ink scroll]
-An empty scroll is a thing inside the prytaneion. [The description is "An empty scroll.".]
+An empty scroll is a thing inside the prytaneion. The description is "An empty scroll. Smells citrusy.". [invisible ink]
 
 [wax tablet]
-A wax tablet is a thing inside the prytaneion. [The description is "A wax tablet.".]
+A wax tablet is a thing inside the prytaneion. The description is "_  _ _ _ _  _ _ _ _ _ _  _ _ _ _  _ _ _ _ _  _ _.  _ _ _ _ _  _ _  _ _ _ _ _  _ _  _ _ _  _ _ _ _  _ _ _  _ _ _ _  _ _. [paragraph break][fixed letter spacing]S QWJC WOEBQCD BCTB  PONCD UC. FDSOA  UC GZEIC BE BQC  VSDC WON  DCWN SB.". [cryptogram:I have another text under me. Bring me close to the fire and read it.]
 
 [text scroll]
-A text scroll is a thing inside the prytaneion. The description is "On the scroll you read: Ortsg gsv hrcgs, gsv hvevmgs zmw gsv vrtsgs glixsvh.". [atbash cipher]
+A text scroll is a thing inside the prytaneion. The description is "On the scroll you read: Ortsg gsv hrcgs, gsv hvevmgs zmw gsv vrtsgs glixsvh.". [atbash cipher: Light the sixth, the seventh and the eighth torches ]
 
 [leather parchment]
 A parchment is a thing inside the prytaneion. The description is "On the parchment you read: Nkijv vjg ugeqpf cpf vjktf vqtejgu.". [Caesar cipher with ROT2: Light the second and third torches]
 
 [solution]
 Every turn:
-	If      second torch is switched on and [and others switched off]
-		third torch  is switched on and
-		sixth torch is switched on and
-		seventh torch is switched on and
-		eighth torch is switched on and
-		tenth torch is switched on and
-		eleventh is switched on and
-		twelvth is switched on and
-		fourteenth is switched on and
-		fifteenth is switched on and
-		sixteenth is switched on:
+	If      first torch is unlit and
+		second torch is lit and [and others switched off]
+		third torch  is lit and
+		fourth torch is unlit and
+		fifth torch is unlit and
+		sixth torch is lit and
+		seventh torch is lit and
+		eighth torch is lit  and
+		ninth torch is unlit and
+		tenth torch is lit and
+		eleventh is lit  and
+		twelfth torch is unlit and
+		thirteenth is lit  and
+		fourteenth is lit  and
+		fifteenth is lit  and
+		sixteenth is lit :
 		now TorchPuzzleSolved is true;
 	otherwise:
 		now TorchPuzzleSolved is false.
 
+test fire with "light second torch/light third torch/ light sixth torch/ light seventh torch/ light eighth torch/ light tenth torch/ light eleventh torch/ light thirteenth torch/ like fourteent torch/ light fifteenth torch/light sixteenth torch".
 [End Of: Prytaneion]
 
 [Start Of: Divine Cell 5]

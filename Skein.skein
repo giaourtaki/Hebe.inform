@@ -3,12 +3,13 @@
   <generator>Windows Inform 10.1.2</generator>
   <item nodeId="node-1">
     <command xml:space="preserve">Hebe</command>
-    <result xml:space="preserve">Instructions: &#x000A;&#x000A;Welcome to my Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. Your goal is to find a way out of the room you are currently in. Some basic commands you can try to use to interact with your surroundings are look (l), examine (x) {thing}, , put {thing}, take {thing} and inventory (i), but there are more options! Have fun!&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 240814 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Prytaneion&#x000A;TODO simple description&#x000A;&#x000A;You can see a porta, a portable torch, a first torch, a second torch, a third torch, a forth torch, a fifth torch, a sixth torch, a seventh torch, an eighth torch, a ninth torch, a tenth torch, an eleventh torch, a twelvth torch, a thirteenth torch, a fourteenth torch, a fifteenth torch, a sixteenth torch, an empty scroll, a wax tablet, a text scroll and a parchment here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Instructions: &#x000A;&#x000A;Welcome to my Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. Your goal is to find a way out of the room you are currently in. Some basic commands you can try to use to interact with your surroundings are look (l), examine (x) {thing}, , put {thing}, take {thing} and inventory (i), but there are more options! Have fun!&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 240815 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Prytaneion&#x000A;TODO simple description&#x000A;&#x000A;You can see a porta, a portable torch, a first torch, a second torch, a third torch, a forth torch, a fifth torch, a sixth torch, a seventh torch, an eighth torch, a ninth torch, a tenth torch, an eleventh torch, a twelvth torch, a thirteenth torch, a fourteenth torch, a fifteenth torch, a sixteenth torch, an empty scroll, a wax tablet, a text scroll and a parchment here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-2"/>
       <child nodeId="node-264"/>
+      <child nodeId="node-1971"/>
       <child nodeId="node-269"/>
       <child nodeId="node-272"/>
       <child nodeId="node-355"/>
@@ -34,6 +35,8 @@
       <child nodeId="node-492"/>
       <child nodeId="node-497"/>
       <child nodeId="node-1032"/>
+      <child nodeId="node-1976"/>
+      <child nodeId="node-1974"/>
       <child nodeId="node-1043"/>
       <child nodeId="node-1082"/>
       <child nodeId="node-1087"/>
@@ -131,6 +134,7 @@
       <child nodeId="node-1959"/>
       <child nodeId="node-1961"/>
       <child nodeId="node-1963"/>
+      <child nodeId="node-1970"/>
     </children>
   </item>
   <item nodeId="node-2">
@@ -2521,6 +2525,30 @@
   <item nodeId="node-268">
     <command xml:space="preserve">x altar</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1971">
+    <command xml:space="preserve">X WAX TABLET</command>
+    <result xml:space="preserve">_  _ _ _ _  _ _ _ _ _ _  _ _ _ _  _ _ _ _ _  _ _.  _ _ _ _ _  _ _  _ _ _ _ _  _ _  _ _ _  _ _ _ _  _ _ _  _ _ _ _  _ _. &#x000A;&#x000A;S QWJC WOEBQCD BCTB  PONCD UC. FDSOA  UC GZEIC BE BQC  VSDC WON  DCWN SB.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1972"/>
+    </children>
+  </item>
+  <item nodeId="node-1972">
+    <command xml:space="preserve">bring wax tablet close to fire</command>
+    <result xml:space="preserve">The warmth of the hearth made the wax melt. It revealed some engraved writing under it.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1973"/>
+    </children>
+  </item>
+  <item nodeId="node-1973">
+    <command xml:space="preserve">x wax tablet</command>
+    <result xml:space="preserve">The writing reads: Light the tenth, eleventh and thirtheenth torches.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -9365,6 +9393,45 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-1976">
+    <command xml:space="preserve">light first torch</command>
+    <result xml:space="preserve">You lighted the first torch.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1977"/>
+    </children>
+  </item>
+  <item nodeId="node-1977">
+    <command xml:space="preserve">x first torch</command>
+    <result xml:space="preserve">You see nothing special about the first torch.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1978"/>
+    </children>
+  </item>
+  <item nodeId="node-1978">
+    <command xml:space="preserve">showme first torch</command>
+    <result xml:space="preserve">first torch - first torch&#x000A;location: in Prytaneion&#x000A;lit, inedible, portable; singular-named, improper-named&#x000A;description: none&#x000A;initial appearance: none&#x000A;printed name: "first torch"&#x000A;printed plural name: "first torches"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1974">
+    <command xml:space="preserve">light the first torch</command>
+    <result xml:space="preserve">This dangerous act would achieve little.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1975"/>
+    </children>
+  </item>
+  <item nodeId="node-1975">
+    <command xml:space="preserve">switch on the first torch</command>
+    <result xml:space="preserve">You lighted first torch.&#x000A;&#x000A;You switch the first torch on.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-1043">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Temple of the Aulidean Artemis&#x000A;Inside the Temple of the Aulidean Artemis you can see a sundial, the statue of Artemis and her sacrificial altar.&#x000A;&#x000A;&gt;</result>
@@ -11340,7 +11407,7 @@
   </item>
   <item nodeId="node-1965">
     <command xml:space="preserve">bring first torch close to hearth</command>
-    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">I didn't understand that sentence.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -11349,7 +11416,7 @@
   </item>
   <item nodeId="node-1966">
     <command xml:space="preserve">bring first torch close to the hearth</command>
-    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Hmm this won't achieve anything&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -11358,7 +11425,7 @@
   </item>
   <item nodeId="node-1967">
     <command xml:space="preserve">bring wax tablet close to the hearth</command>
-    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">The warmth of the hearth made the wax melt. It revealed some engraved text under it.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -17260,6 +17327,12 @@
   <item nodeId="node-1963">
     <command xml:space="preserve">x water lily</command>
     <result xml:space="preserve">They smell smells&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1970">
+    <command xml:space="preserve">x wax tablet</command>
+    <result xml:space="preserve">_  _ _ _ _  _ _ _ _ _ _  _ _ _ _  _ _ _ _ _  _ _. _ _ _ _ _  _ _  _ _ _ _ _  _ _  _ _ _  _ _ _ _. &#x000A;&#x000A;G KSXO SYFJKOQ JOAH IYNOQ HO. MQGYT HO ERFUO JF JKO WGQO.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
