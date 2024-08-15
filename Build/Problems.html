@@ -770,3 +770,135 @@
         }
         li.indent9 span:first-child {
         	padding-left: 225px;
+        }
+
+        li.unleaded:before {
+        	content: "";
+        }
+
+        /* On Registry index pages (such as the Public Library), these are used for
+        download buttons and the like: */
+
+        span.registrybuttons {
+        	height: 20px;
+        	padding: 2px 8px 2px 8px;
+        	margin: 2px;
+        	border:1px solid;
+        	border-radius: 5px;
+        }
+
+        span.registryminibuttons {
+        	height: 14px;
+        	padding: 2px 5px 2px 5px;
+        	margin: 2px;
+        	border:1px solid;
+        	border-radius: 4px;
+        }
+
+        /* Used to hide or display sections in the Registry pages: */
+
+        div.registrysectionitemsopen {
+        	display: block;
+        }
+
+        div.registrysectionitemsclosed {
+        	display: none;
+        }
+
+        /* Hanging indentation for Registry item paragraphs: */
+
+        p.registryitem {
+        	padding-left: 80px;
+        	text-indent: -40px;
+        }
+
+        p.registryaddition {
+        	padding-left: 40px;
+        	text-indent: -40px;
+        }
+
+        -->
+    </style>
+    <script type="text/javascript">
+        function project() {
+            return window.Project;
+        }
+        function showExtra(id, imid) {
+        	if (document.getElementById(id).style.display == 'block') {
+        		document.getElementById(id).style.display = 'none';
+        		document.getElementById(imid).src = 'inform:/doc_images/extra.png';
+        	} else {
+        		document.getElementById(id).style.display = 'block';
+        		document.getElementById(imid).src = 'inform:/doc_images/extraclose.png';
+        	}
+        }
+        function showBasic(id) {
+        	if (document.getElementById(id).style.display == '') {
+        		document.getElementById(id).style.display = 'none';
+        	} else {
+        		document.getElementById(id).style.display = '';
+        	}
+        }
+        function showResp(id, imid) {
+        	if (document.getElementById(id)) {
+        		if (document.getElementById(id).style.display == 'block') {
+        			document.getElementById(id).style.display = 'none';
+        			document.getElementById(imid).src = 'inform:/doc_images/responses.png';
+        		} else {
+        			document.getElementById(id).style.display = 'block';
+        			document.getElementById(imid).src = 'inform:/doc_images/responsesclose.png';
+        		}
+        	}
+        }
+        function showAllResp(tot) {
+        	for (var i=0;i<tot;i++) {
+        		showResp('extra'+(1000000+i), 'plus'+(1000000+i));
+        	}
+        }
+        function pasteCode(code) {
+        	var myProject = project();
+        	myProject.selectView('source');
+        	myProject.pasteCode(code);
+        }
+
+    </script>
+</head>
+<body>
+    <!--CONTENT BEGINS-->
+    <!--BANNER BEGINS-->
+    <table cellspacing="3" border="0" width="100%">
+        <tr id="surround0">
+            <td style="width:100%">
+                <!--HEADING BEGINS-->
+                <div class="headingpanellayout headingpanelsucceeded">
+                    <div class="headingtext">
+                        <span class="headingpaneltext">Report on Translation: Succeeded</span></div>
+                    <div class="headingrubric">
+                        <span class="headingpanelrubric">Produced by Inform 10.1.2</span></div>
+                </div>
+                <!--HEADING ENDS-->
+
+            </td>
+        </tr>
+    </table>
+    <!--BANNER ENDS-->
+    <table border="0" cellspacing="4" cellpadding="0" width=100%>
+        <tr>
+            <td align="left" valign="top" width="110">
+                <img src=inform:/outcome_images/ni_succeeded@2x.png border=1 width=100 height=100>&nbsp;&nbsp;&nbsp;&nbsp;
+            </td>
+            <td align="left" valign="top">
+                <!--HEADNOTE-->
+                <p style="margin-top:0;">(Each time <b>Go</b> or <b>Replay</b> is clicked, Inform tries to translate the source text into a working story, and updates this report.)</p>
+                <!--PROBLEMS BEGIN-->
+                <p>  The 8519-word source text has successfully been translated into a world with 16 rooms and 235 things, and the index has been brought up to date.</p>
+                <!--PROBLEMS END-->
+
+            </td>
+        </tr>
+    </table>
+    <!--FOOTNOTE-->
+
+    <!--CONTENT ENDS-->
+</body>
+</html>

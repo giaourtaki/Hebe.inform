@@ -300,7 +300,7 @@ Instead of going in the dvgate :
 	otherwise if ThebesTemplePuzzleSolved is false and the dvgate is closed:
 		say "The gate is locked.";
 	otherwise:
-		try silently entering gate.
+		try silently entering dvgate.
 
 Every turn:
 	If ThebesTemplePuzzleSolved is true for the first turn and the dvgate is closed:
@@ -1136,8 +1136,8 @@ Every turn:
 		now the gate is closed;
 		
 		
-Test solutionSG with "put red flower in hand/ put purple flower in conch shell / put yellow flower in amphora on the right  / put white flower in tree cavity ".
-test SG2 with "put red flower in hand /x hand/take red flower from hand/x hand".
+[Test solutionSG with "put red flower in hand/ put purple flower in conch shell / put yellow flower in amphora on the right  / put white flower in tree cavity ".
+test SG2 with "put red flower in hand /x hand/take red flower from hand/x hand".]
 
 [End Of Secret Garden]
 
@@ -1177,23 +1177,23 @@ A portable torch is a kind of flame. There is a portable torch inside the prytan
 
 
 [torches]
-A first torch is a kind of flame. There is one first torch inside the prytaneion. [TODO: check names]
-A second torch is a kind of flame. There is one second torch inside the prytaneion.
-A third torch is a kind of flame. There is one third  torch inside the prytaneion.
-A fourth torch is a kind of flame. There is one fourth torch inside the prytaneion.
-A fifth torch is a kind of flame. There is one fifth torch inside the prytaneion.
-A sixth torch is a kind of flame. There is one sixth torch inside the prytaneion.
-A seventh torch is a kind of flame. There is one seventh torch inside the prytaneion.
-A eighth torch is a kind of flame. There is one eighth torch inside the prytaneion.
+A first torch is a kind of flame. There is a first torch inside the prytaneion. [TODO: check names]
+A second torch is a kind of flame. There is a second torch inside the prytaneion.
+A third torch is a kind of flame. There is a third  torch inside the prytaneion.
+A fourth torch is a kind of flame. There is a fourth torch inside the prytaneion.
+A fifth torch is a kind of flame. There is a fifth torch inside the prytaneion.
+A sixth torch is a kind of flame. There is a sixth torch inside the prytaneion.
+A seventh torch is a kind of flame. There is a seventh torch inside the prytaneion.
+A eighth torch is a kind of flame. There is a eighth torch inside the prytaneion.
 
-A ninth torch is a kind of flame. There is one ninth torch inside the prytaneion.
-A tenth torch is a kind of flame. There is one tenth torch inside the prytaneion.
-A eleventh torch is a kind of flame. There is one eleventh torch inside the prytaneion.
-A twelfth torch is a kind of flame. There is one twelfth torch inside the prytaneion.
-A thirteenth torch is a kind of flame. There is one thirteenth torch inside the prytaneion.
-A fourteenth torch is a kind of flame. There is one fourteenth torch inside the prytaneion.
-A fifteenth torch is a kind of flame. There is one fifteenth torch inside the prytaneion.
-A sixteenth torch is a kind of flame. There is one sixteenth torch inside the prytaneion.
+A ninth torch is a kind of flame. There is a ninth torch inside the prytaneion.
+A tenth torch is a kind of flame. There is a tenth torch inside the prytaneion.
+A eleventh torch is a kind of flame. There is a eleventh torch inside the prytaneion.
+A twelfth torch is a kind of flame. There is a twelfth torch inside the prytaneion.
+A thirteenth torch is a kind of flame. There is a thirteenth torch inside the prytaneion.
+A fourteenth torch is a kind of flame. There is a fourteenth torch inside the prytaneion.
+A fifteenth torch is a kind of flame. There is a fifteenth torch inside the prytaneion.
+A sixteenth torch is a kind of flame. There is a sixteenth torch inside the prytaneion.
 
 
 [bring close to fire action]
@@ -1225,6 +1225,13 @@ Instead of burning something:
 	otherwise:
 		continue the action.
 
+Understand "torches" as flames.
+
+Instead of examining the flames:
+	say "The first torch is [if lit]lit[else]unlit.";
+	stop the action.
+	
+
 [invisible ink scroll]
 An empty scroll is a thing inside the prytaneion. The description is "An empty scroll. Smells citrusy.". [invisible ink]
 
@@ -1237,10 +1244,11 @@ A text scroll is a thing inside the prytaneion. The description is "On the scrol
 [leather parchment]
 A parchment is a thing inside the prytaneion. The description is "On the parchment you read: Nkijv vjg ugeqpf cpf vjktf vqtejgu.". [Caesar cipher with ROT2: Light the second and third torches]
 
+
 [solution]
 Every turn:
 	If      first torch is unlit and
-		second torch is lit and [and others switched off]
+		second torch is lit and
 		third torch  is lit and
 		fourth torch is unlit and
 		fifth torch is unlit and
@@ -1249,17 +1257,17 @@ Every turn:
 		eighth torch is lit  and
 		ninth torch is unlit and
 		tenth torch is lit and
-		eleventh is lit  and
+		eleventh torch is lit  and
 		twelfth torch is unlit and
-		thirteenth is lit  and
-		fourteenth is lit  and
-		fifteenth is lit  and
-		sixteenth is lit :
+		thirteenth torch is lit  and
+		fourteenth torch is lit  and
+		fifteenth torch is lit  and
+		sixteenth torch is lit :
 		now TorchPuzzleSolved is true;
 	otherwise:
 		now TorchPuzzleSolved is false.
 
-test fire with "light second torch/light third torch/ light sixth torch/ light seventh torch/ light eighth torch/ light tenth torch/ light eleventh torch/ light thirteenth torch/ like fourteent torch/ light fifteenth torch/light sixteenth torch".
+test fire with "light second torch/light third torch/ light sixth torch/ light seventh torch/ light eighth torch/ light tenth torch/ light eleventh torch/ light thirteenth torch/ light fourteent torch/ light fifteenth torch/light sixteenth torch".
 [End Of: Prytaneion]
 
 [Start Of: Divine Cell 5]
