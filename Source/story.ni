@@ -1225,11 +1225,7 @@ Instead of burning something:
 	otherwise:
 		continue the action.
 
-Understand "torches" as flames.
-
-Instead of examining the flames:
-	say "The first torch is [if lit]lit[else]unlit.";
-	stop the action.
+[TODO: way for player to examine all torches together]
 	
 
 [invisible ink scroll]

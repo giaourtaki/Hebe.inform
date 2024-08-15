@@ -132,6 +132,7 @@
       <child nodeId="node-1911"/>
       <child nodeId="node-1961"/>
       <child nodeId="node-1972"/>
+      <child nodeId="node-1980"/>
       <child nodeId="node-1973"/>
       <child nodeId="node-1975"/>
       <child nodeId="node-1977"/>
@@ -13642,7 +13643,7 @@
   </item>
   <item nodeId="node-1979">
     <command xml:space="preserve">test fire</command>
-    <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] light second torch&#x000A;This dangerous act would achieve little.&#x000A;&#x000A;&gt;[2] light third torch&#x000A;This dangerous act would achieve little.&#x000A;&#x000A;&gt;[3] light sixth torch&#x000A;This dangerous act would achieve little.&#x000A;&#x000A;&gt;[4] light seventh torch&#x000A;This dangerous act would achieve little.&#x000A;&#x000A;&gt;[5] light eighth torch&#x000A;This dangerous act would achieve little.&#x000A;&#x000A;&gt;[6] light tenth torch&#x000A;This dangerous act would achieve little.&#x000A;&#x000A;&gt;[7] light eleventh torch&#x000A;This dangerous act would achieve little.&#x000A;&#x000A;&gt;[8] light thirteenth torch&#x000A;This dangerous act would achieve little.&#x000A;&#x000A;&gt;[9] like fourteent torch&#x000A;That's not a verb I recognise.&#x000A;&#x000A;&gt;[10] light fifteenth torch&#x000A;This dangerous act would achieve little.&#x000A;&#x000A;&gt;[11] light sixteenth torch&#x000A;This dangerous act would achieve little.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] light second torch&#x000A;You lighted the second torch.&#x000A;&#x000A;&gt;[2] light third torch&#x000A;You lighted the third torch.&#x000A;&#x000A;&gt;[3] light sixth torch&#x000A;You lighted the sixth torch.&#x000A;&#x000A;&gt;[4] light seventh torch&#x000A;You lighted the seventh torch.&#x000A;&#x000A;&gt;[5] light eighth torch&#x000A;You lighted the eighth torch.&#x000A;&#x000A;&gt;[6] light tenth torch&#x000A;You lighted the tenth torch.&#x000A;&#x000A;&gt;[7] light eleventh torch&#x000A;You lighted the eleventh torch.&#x000A;&#x000A;&gt;[8] light thirteenth torch&#x000A;You lighted the thirteenth torch.&#x000A;&#x000A;&gt;[9] light fourteent torch&#x000A;You lighted the fourteenth torch.&#x000A;&#x000A;&gt;[10] light fifteenth torch&#x000A;You lighted the fifteenth torch.&#x000A;&#x000A;&gt;[11] light sixteenth torch&#x000A;You lighted the sixteenth torch.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -17298,6 +17299,30 @@
   <item nodeId="node-1972">
     <command xml:space="preserve">x torch1</command>
     <result xml:space="preserve">The torch1 is currently switched off.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1980">
+    <command xml:space="preserve">x torches</command>
+    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1981"/>
+    </children>
+  </item>
+  <item nodeId="node-1981">
+    <command xml:space="preserve">x flames</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1982"/>
+    </children>
+  </item>
+  <item nodeId="node-1982">
+    <command xml:space="preserve">look torches</command>
+    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
