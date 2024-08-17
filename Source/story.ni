@@ -9,7 +9,7 @@ Chapter 0.00 - TODOs|TBDs
 
 [TODO: fix/add descriptions]
 [TODO:general mapping of the game]
-
+[TODO: add help command]
 
 
 Chapter 0.0 - Regions
@@ -18,12 +18,15 @@ Chapter 0.0 - Regions
 
 [Greece]
 Greece is a region.
-Mountain Olympus is a region in Greece. 
+Mount Olympus is a region in Greece. 
 Athens is a region in Greece.
 Acropolis is a region in Athens.
 Sounio is a region in Greece.
 Thebes is a region in Greece.
+Aulis is a region in Thebes.
 Delphi is a region in Greece.
+Ephyra is a region in Greece.
+Underworld is a region in Ephyra.
 
 [Cyprus]
 Cyprus is a region.
@@ -42,7 +45,7 @@ Chapter 0.20 - Kinds & Values
 A colour is a kind of value. The colours are white, red, purple and yellow.
 
 [smell]
-A smell is a kind of value. The smells are amazing, good, neutral and bad. The smell is usually neutral. [TODO: Give a smell to everything]
+A smell is a kind of value. The smells are neutral, amazing, good, citrusy  and bad. The smell is usually neutral. [TODO: Give a smell to everything]
 
 [ring face]
 A ring face is a kind of value. The ring faces are blank, spring, summer, fall and winter. A ring face is usually blank.
@@ -53,7 +56,7 @@ A mass is a kind of value. 1dr specifies a mass. The plural of mass is masses.
 [kinds]
 
 [definition of plant]
-A plant is a kind of thing. The plural of plant is plants. A plant has a colour. A plant has a smell. 
+A plant is a kind of thing. The plural of plant is plants. A plant has a colour. 
 
 [definition of ring]
 A ring is a kind of  thing. The plural of ring is rings. A ring has a ring face.
@@ -103,6 +106,8 @@ Chapter 0.4 - Rules
 [persons have name rule]
 A person has some text called a name. 
 
+A thing has a smell. 
+
 [empty container]
 Definition: A container is empty if nothing is in it. 
 
@@ -118,7 +123,9 @@ Antirotating is an action applying to one thing. Understand "rotate [any thing] 
 
 Chapter 0 - Tutorial 1 
 
-When play begins: say "[bold type]Instructions: [roman type][paragraph break]Welcome to my Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. Your goal is to find a way out of the room you are currently in. Some basic commands you can try to use to interact with your surroundings are [bold type]look (l), examine (x) {thing}, , put {thing}, take {thing} and inventory (i)[roman type], but there are more options! Have fun!".
+When play begins: say "[bold type]Instructions: [roman type][paragraph break]Welcome to my Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. Your goal is to find a way out of the room you are currently in. Some basic commands you can try to use to interact with your surroundings are [bold type]look (l), examine (x) {thing}, put {thing}, take {thing} and inventory (i)[roman type], but there are more options! Have fun!".
+
+
 [
 [scene 1]
 Tutorial 1 is a scene. 
@@ -230,7 +237,7 @@ Instead of examining the dragon statue:
 [the player must put the teeth in a sacrificial plate on top of the altar and then a compartment of the altar opens, supplying the player with weights]
 
 A Kadmea altar is in the Kadmea. It is fixed in place. [TODO: It is undescribed.]
-A sacrificial plate is part of the Kadmea altar. It is an open transparent unopenable container.[TODO: It is undescribed.]
+A sacrificial plate is on the Kadmea altar. It is an open transparent unopenable container. It is fixed in place.[TODO: It is undescribed.]
 A compartment is part of the Kadmea altar. It is a closed unopenable container. [TODO: It is undescribed.]
 
 A weight1 is a weight. It is in the compartment. The mass of weight1 is 1dr. The description of weight1 is "An owl". [TODO: make the descriptions, 3 of ares 3 of athena]
@@ -833,7 +840,6 @@ Chapter 4 - Aphrodite & Hephaestus
 [The player is inside the Secret Garden.]
 
 [Rooms]
-Port of Paphos is a room in Cyprus. "The main port of the city of Paphos. From here you can travel abroad.".
 Agora of Paphos is a room in Cyprus. "The main square of Paphos."
 Throne Room is a room in Palace of Paphos.  "Home to the King of Paphos, Cinyras."
 [secret garden]
@@ -841,9 +847,6 @@ Secret Garden is a room in Palace of Paphos. "You find yourself in the Secret Ga
 
 Divine Cell 4 is a room in Palace of Paphos. "devine cell 4 description TODO".
 
-
-The Port of Paphos is east of the Agora of Paphos.
-The Agora of Paphos is east of the Throne Room.
 The Secret Garden is down of the Throne Room and west of the gate.
 The Divine Cell 4 is east of the gate. [TODO: change the name of the divine cell]
 
@@ -997,9 +1000,9 @@ Instead of inserting something into the white flowerbed:
 	otherwise:
 		say "You can't burry that here."; 
 		
-[Smell Flowers]
+[Smelling action]
 
-Instead of smelling a plant:
+Instead of smelling something:
 	say "It smells [smell of the noun].".
 
 [Statue of Adonis]
@@ -1157,7 +1160,7 @@ Chapter 5 - Hestia & Hermes
 [room]
 [Start Of: Prytaneion]
 
-The player is in Prytaneion.
+[The player is in Prytaneion.]
 
 Prytaneion is a room in Acropolis. It is up of the porta. The description is "TODO simple description".
 
@@ -1177,23 +1180,23 @@ A portable torch is a kind of flame. There is a portable torch inside the prytan
 
 
 [torches]
-A first torch is a kind of flame. There is a first torch inside the prytaneion. [TODO: check names]
-A second torch is a kind of flame. There is a second torch inside the prytaneion.
-A third torch is a kind of flame. There is a third  torch inside the prytaneion.
-A fourth torch is a kind of flame. There is a fourth torch inside the prytaneion.
-A fifth torch is a kind of flame. There is a fifth torch inside the prytaneion.
-A sixth torch is a kind of flame. There is a sixth torch inside the prytaneion.
-A seventh torch is a kind of flame. There is a seventh torch inside the prytaneion.
-A eighth torch is a kind of flame. There is a eighth torch inside the prytaneion.
+A first torch is a kind of flame. There is a first torch inside the prytaneion. Understand "1st torch" as first torch.
+A second torch is a kind of flame. There is a second torch inside the prytaneion. Understand "2nd torch" as second torch.
+A third torch is a kind of flame. There is a third  torch inside the prytaneion. Understand "3rd torch" as third torch.
+A fourth torch is a kind of flame. There is a fourth torch inside the prytaneion. Understand "4th torch" as fourth torch.
+A fifth torch is a kind of flame. There is a fifth torch inside the prytaneion. Understand "5th torch" as fifth torch.
+A sixth torch is a kind of flame. There is a sixth torch inside the prytaneion. Understand "6th torch" as sixth torch.
+A seventh torch is a kind of flame. There is a seventh torch inside the prytaneion. Understand "7th torch" as seventh torch.
+A eighth torch is a kind of flame. There is a eighth torch inside the prytaneion. Understand "8th torch" as eighth torch.
 
-A ninth torch is a kind of flame. There is a ninth torch inside the prytaneion.
-A tenth torch is a kind of flame. There is a tenth torch inside the prytaneion.
-A eleventh torch is a kind of flame. There is a eleventh torch inside the prytaneion.
-A twelfth torch is a kind of flame. There is a twelfth torch inside the prytaneion.
-A thirteenth torch is a kind of flame. There is a thirteenth torch inside the prytaneion.
-A fourteenth torch is a kind of flame. There is a fourteenth torch inside the prytaneion.
-A fifteenth torch is a kind of flame. There is a fifteenth torch inside the prytaneion.
-A sixteenth torch is a kind of flame. There is a sixteenth torch inside the prytaneion.
+A ninth torch is a kind of flame. There is a ninth torch inside the prytaneion. Understand "9th torch" as ninth torch.
+A tenth torch is a kind of flame. There is a tenth torch inside the prytaneion. Understand "10th torch" as tenth torch.
+A eleventh torch is a kind of flame. There is a eleventh torch inside the prytaneion. Understand "11th torch" as eleventh torch.
+A twelfth torch is a kind of flame. There is a twelfth torch inside the prytaneion. Understand "12th torch" as twelfth torch.
+A thirteenth torch is a kind of flame. There is a thirteenth torch inside the prytaneion.Understand "13th torch" as thirteenth torch.
+A fourteenth torch is a kind of flame. There is a fourteenth torch inside the prytaneion.Understand "14th torch" as fourteenth torch.
+A fifteenth torch is a kind of flame. There is a fifteenth torch inside the prytaneion.Understand "15th torch" as fifteenth torch.
+A sixteenth torch is a kind of flame. There is a sixteenth torch inside the prytaneion.Understand "16th torch" as sixteenth torch.
 
 
 [bring close to fire action]
@@ -1205,14 +1208,14 @@ Instead of bringing something close to the hearth:
 		stop the action;
 	otherwise if the noun is the empty scroll:
 		say "Ink starts to slowly appear on the papyrus, revealing a message.";
-		now the description of the empty scroll is "The message says: Light the fourteenth, fifteenth and sixteen torches."; []
+		now the description of the empty scroll is "The message says: Light the fourteenth, fifteenth and sixteenth torches."; 
 		stop the action;
 	otherwise if the noun is the wax tablet:
 		say "The warmth of the hearth made the wax melt. It revealed some engraved writing under it.";
-		now the description of the wax tablet is "The writing reads: Light the tenth, eleventh and thirtheenth torches.";
+		now the description of the wax tablet is "The writing reads: Light the tenth, eleventh and thirteenth torches.";
 		stop the action;
 	otherwise:
-		say "Hmm this won't achieve anything";
+		say "Hmm this won't achieve anything.";
 		stop the action.
 		
 
@@ -1229,7 +1232,9 @@ Instead of burning something:
 	
 
 [invisible ink scroll]
-An empty scroll is a thing inside the prytaneion. The description is "An empty scroll. Smells citrusy.". [invisible ink]
+An empty scroll is a thing inside the prytaneion. The description is "An empty scroll. Smells citrusy.". The empty scroll has a smell. The smell of the empty scroll is citrusy. [invisible ink]
+
+
 
 [wax tablet]
 A wax tablet is a thing inside the prytaneion. The description is "_  _ _ _ _  _ _ _ _ _ _  _ _ _ _  _ _ _ _ _  _ _.  _ _ _ _ _  _ _  _ _ _ _ _  _ _  _ _ _  _ _ _ _  _ _ _  _ _ _ _  _ _. [paragraph break][fixed letter spacing]S QWJC WOEBQCD BCTB  PONCD UC. FDSOA  UC GZEIC BE BQC  VSDC WON  DCWN SB.". [cryptogram:I have another text under me. Bring me close to the fire and read it.]
@@ -1270,9 +1275,187 @@ test fire with "light second torch/light third torch/ light sixth torch/ light s
 
 Divine Cell 5 is a room in Acropolis. It is down of the porta. The description is "TODO mmm gods now".
 
+Chapter 6 - Hercules 
+
+[Start of Underworld]
+
+[Start of Acheron River]
+The Acheron River is a room in the Underworld.
+[End of Acheron River]
+
+The Elysian Fields is a room in the Underworld.
+The Asphodel Meadows is a room in the Underworld.
+
+Chapter 7 - Zeus & Hera 
+
+
+The Tartarus is a room in the Underworld.
+
+
+Chapter 8 - Mapping & Transportation
+
+[All transportation rooms]
+
+[Garden of Hesperides]
+
+The player is in Northen Gates of Athens.
+
+[Ports]
+Port of Piraeus is a room in Athens. "From here you can travel to: [line break]→ Paphos[line break]→ Garden of Hesperides".
+Port of Sounio is a room in Sounio. "From here you can travel to: [line break]→ Aulis[line break]→ Garden of Hesperides".
+Port of Paphos is a room in Paphos. "The main port of the city of Paphos. [paragraph break]From here you can travel to: [line break]→ Athens[line break]→ Garden of Hesperides".
+Port of Aulis is a room in Aulis. "From here you can travel to: [line break]→ Sounio[line break]→ Garden of Hesperides".
+
+[Stables-City Gates]
+Northen Gates of Athens is a room in Athens. "From here you can travel to: [line break]→ Thebes[line  break]→ Aulis[line  break]→ Delphi[line  break]→ Ephyra[line  break]→ Mount Olympus".
+
+Southern Gates of Athens is a room in Athens. "From here you can travel to: [line break]→ Sounio".
+
+Gates of Sounio is a room in Sounio. "From here you can travel to: [line break]→ Athens".
+
+Gates of Thebes is a room in Thebes. "From here you can travel to: [line break]→ Athens[line break]→ Aulis[line  break]→ Delphi[line  break]→ Ephyra[line  break]→ Mount Olympus".
+
+Gates of Aulis is a room in Aulis. "From here you can travel to: [line break]→ Thebes[line  break]→ Athens[line  break]→  Delphi[line  break]→ Ephyra[line  break]→ Mount Olympus".
+
+Gates of Delphi is a room in Delphi. "From here you can travel to: [line break]→ Thebes [line  break]→ Athens[line  break]→ Aulis[line  break]→ Ephyra[line  break]→ Mount Olympus".
+
+Gates of Ephyra is a room in Ephyra. "From here you can travel to: [line  break]→ Mount Olympus [line  break]→ Athens[line break]→ Thebes[line  break]→ Aulis[line  break]→ Delphi". [TODO: necromanteion]
 
 
 
 
+[Connection definition]
+
+A city is a kind of room.
+A marina is a kind of room.
+
+Sailability relates various marinas to various marinas. 
+
+Connectivity relates various cities to various cities. 
+
+The verb to connect to (it connects to, they connect to, it connected to, it is connected to , it is connecting to) implies the connectivity relation.
+
+The verb to sail to (it sails to, they sail to, it sailed to, it is sailed to , it is sailing to) implies the sailability relation.
+
+[connections of cities]
+
+[gates]
+Northen Gates of Athens connects to Thebes Gates. 
+Northen Gates of Athens connects to Aulis Gates.
+Northen Gates of Athens connects to Delphi Gates. 
+Northen Gates of Athens connects to Ephyra Gates.
+Northen Gates of Athens connects to Foothills of Mount Olympus.
+
+Southern Gates of Athens connects to Gates of Sounio.
+Gates of Sounio connects to Southern Gates of Athens.
+
+Thebes Gates connects to Northen Gates of Athens.
+Thebes Gates connects to Aulis Gates.
+Thebes Gates connects to Delphi Gates.
+Thebes Gates connects to Ephyra Gates.
+Thebes Gates connects to Foothills of Mount Olympus.
+
+Aulis Gates connects to Northen Gates of Athens.
+Aulis Gates connects to Thebes Gates.
+Aulis Gates connects to Delphi Gates.
+Aulis Gates connects to Ephyra Gates.
+Aulis Gates connects to Foothills of Mount Olympus.
+
+Ephyra Gates connects to Northen Gates of Athens.
+Ephyra Gates connects to Thebes Gates.
+Ephyra Gates connects to Delphi Gates.
+Ephyra Gates connects to Aulis Gates.
+Ephyra Gates connects to Foothills of Mount Olympus.
+
+Foothills of Mount Olympus connects to Northen Gates of Athens.
+Foothills of Mount Olympus connects to Thebes Gates.
+Foothills of Mount Olympus connects to Delphi Gates.
+Foothills of Mount Olympus connects to Aulis Gates.
+Foothills of Mount Olympus connects to Ephyra Gates.
+
+Delphi Gates connects to Northen Gates of Athens.
+Delphi Gates connects to Thebes Gates.
+Delphi Gates connects to Aulis Gates.
+Delphi Gates connects to Ephyra Gates.
+Delphi Gates connects to Foothills of Mount Olympus.
+
+[ports]
+Port of Piraeus sails to Port of Paphos.
+Port of Paphos sails to Port of Piraeus.
+Port of Sounio sails to Port of Aulis.
+Port of Aulis sails to Port of Sounio.
+
+Port of Piraeus sails to Garden of Hesperides.
+Port of Paphos sails to Garden of Hesperides.
+Port of Sounio sails to Garden of Hesperides.
+Port of Aulis sails to Garden of Hesperides.
+
+Garden of Hesperides sails to Port of Paphos.
+Garden of Hesperides sails to Port of Piraeus.
+Garden of Hesperides sails to Port of Aulis.
+Garden of Hesperides sails to Port of Sounio.
+
+[Traveling action]
+Traveling is an action applying to one visible thing.
+
+Understand "travel to [any city]" as traveling.
+
+Check traveling:
+	if the noun is not a city:
+		say "You can't travel there." instead.
+
+Carry out traveling:
+	if the location of the player connects to the noun:
+		say "You travel to the [noun].";
+		move the player to the noun;
+	otherwise:
+		say "You cannot travel directly to the [noun] from here.";
+
+[Sailing action]
+Sailing is an action applying to one visible thing.
+
+Understand "sail to [any marina]" as sailing.
+
+Check sailing:
+	if the noun is not a marina:
+		say "You can't sail there." instead.
+
+Carry out sailing:
+	if the location of the player sails to the noun:
+		say "You sail to the [noun].";
+		move the player to the noun;
+	otherwise:
+		say "You cannot sail directly to the [noun] from here.";	
+	
+
+
+[All rooms]
+
+[Athens]
+The Agora of Athens is a room in Athens. Agora of Athens is northeast of Port of Piraeus. [TODO:Agora of Athens is west of the Acropolis. ]Agora of Athens is northwest of the Southern Gates of Athens. Agora of Athens is south of the Northen Gates of Athens.
+
+[Sounio]
+Agora of Sounio is a room in Sounio. Agora of Sounio is south of the sounio gates. Agora of Sounio is north of the port of sounio. Agora of Sounio is west of the Sounio Beach.
+
+[Paphos]
+The Outside of the Palace of Paphos is a room in Paphos.
+The Port of Paphos is west of the Agora of Paphos. The Agora of Paphos is south of the Outside of the Palace of Paphos. The Outside of the Palace of Paphos is south of the Throne Room.
+
+[Thebes]
+The Agora of Thebes is a room north of the Thebes Gates. [TODO: containers.The Agora of Thebes is outdoor of Kadmea.]
+
+[Aulis]
+The Agora of Aulis is a room north of the Aulis Gates and west of the Port of Aulis.
+
+[Delphi]
+The Agora of Delphi is a room east of the Oracle of Delphi and west of the Delphi Gates.
+
+[Ephyra]
+The Agora of Ephyra is a room. [acheron is here (underworld entry)]
+The West of Ephyra is a room.
+The Gates of Ephyra is east of the Agora of ephyra and west of west of ephyra.
+
+[Mount Olympus]
+The Foothills of Mount Olympus is a room in Mount Olympus. The Foothills of Mount Olympus is down of the Hall of Mount Olympus. The description of Foothills of Mount Olympus is "From here you can travel to: [line  break]→ Ephyra [line  break]→ Athens[line break]→ Thebes[line  break]→ Aulis[line  break]→ Delphi".
 
 
