@@ -105,6 +105,7 @@
       <child nodeId="node-1602"/>
       <child nodeId="node-2239"/>
       <child nodeId="node-2254"/>
+      <child nodeId="node-2273"/>
       <child nodeId="node-2246"/>
       <child nodeId="node-2208"/>
       <child nodeId="node-1620"/>
@@ -16377,6 +16378,102 @@
   <item nodeId="node-2263">
     <command xml:space="preserve">travel to delphi</command>
     <result xml:space="preserve">You travel to the Gates of Delphi.&#x000A;&#x000A;Gates of Delphi&#x000A;From here you can travel to: &#x000A;&#x2192; Thebes&#x000A;&#x2192; Aulis&#x000A;&#x2192; Athens&#x000A;&#x2192; Ephyra&#x000A;&#x2192; Mount Olympus&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-2273">
+    <command xml:space="preserve">travel to mount olympus</command>
+    <result xml:space="preserve">You travel to the Foothills of Mount Olympus.&#x000A;&#x000A;Foothills of Mount Olympus&#x000A;From here you can travel to: &#x000A;&#x2192; Ephyra &#x000A;&#x2192; Athens&#x000A;&#x2192; Thebes&#x000A;&#x2192; Aulis&#x000A;&#x2192; Delphi&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2274"/>
+    </children>
+  </item>
+  <item nodeId="node-2274">
+    <command xml:space="preserve">travel to ephyra</command>
+    <result xml:space="preserve">You travel to the Gates of Ephyra.&#x000A;&#x000A;Gates of Ephyra&#x000A;From here you can travel to: &#x000A;&#x2192; Mount Olympus &#x000A;&#x2192; Athens&#x000A;&#x2192; Thebes&#x000A;&#x2192; Aulis&#x000A;&#x2192; Delphi&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2275"/>
+    </children>
+  </item>
+  <item nodeId="node-2275">
+    <command xml:space="preserve">travel to aulis</command>
+    <result xml:space="preserve">You travel to the Gates of Aulis.&#x000A;&#x000A;Gates of Aulis&#x000A;From here you can travel to: &#x000A;&#x2192; Thebes&#x000A;&#x2192; Athens&#x000A;&#x2192;  Delphi&#x000A;&#x2192; Ephyra&#x000A;&#x2192; Mount Olympus&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2276"/>
+    </children>
+  </item>
+  <item nodeId="node-2276">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2277"/>
+    </children>
+  </item>
+  <item nodeId="node-2277">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2278"/>
+    </children>
+  </item>
+  <item nodeId="node-2278">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2279"/>
+    </children>
+  </item>
+  <item nodeId="node-2279">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Agora of Aulis&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2280"/>
+    </children>
+  </item>
+  <item nodeId="node-2280">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Port of Aulis&#x000A;From here you can travel to: &#x000A;&#x2192; Sounio&#x000A;&#x2192; Garden of Hesperides&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2281"/>
+    </children>
+  </item>
+  <item nodeId="node-2281">
+    <command xml:space="preserve">travel to garden of hesperides</command>
+    <result xml:space="preserve">That noun did not make sense in this context.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2282"/>
+    </children>
+  </item>
+  <item nodeId="node-2282">
+    <command xml:space="preserve">travel to the garden of hesperides</command>
+    <result xml:space="preserve">That noun did not make sense in this context.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2283"/>
+    </children>
+  </item>
+  <item nodeId="node-2283">
+    <command xml:space="preserve">sail to garden of hesperides</command>
+    <result xml:space="preserve">You sail to the Garden of Hesperides.&#x000A;&#x000A;Garden of Hesperides&#x000A;You can see Aigle, Arethousa, Erytheia and Hesperie here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>

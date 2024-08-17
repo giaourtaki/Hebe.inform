@@ -1296,15 +1296,14 @@ Chapter 8 - Mapping & Transportation
 
 [All transportation rooms]
 
-[Garden of Hesperides]
 
 The player is in Northen Gates of Athens.
 
 [Ports]
-Port of Piraeus is a room in Athens. "From here you can travel to: [line break]→ Paphos[line break]→ Garden of Hesperides".
-Port of Sounio is a room in Sounio. "From here you can travel to: [line break]→ Aulis[line break]→ Garden of Hesperides".
-Port of Paphos is a room in Paphos. "The main port of the city of Paphos. [paragraph break]From here you can travel to: [line break]→ Athens[line break]→ Garden of Hesperides".
-Port of Aulis is a room in Aulis. "From here you can travel to: [line break]→ Sounio[line break]→ Garden of Hesperides".
+Port of Piraeus is a room in Athens. "From here you can sail to: [line break]→ Paphos[line break]→ Garden of Hesperides".
+Port of Sounio is a room in Sounio. "From here you can sail to: [line break]→ Aulis[line break]→ Garden of Hesperides".
+Port of Paphos is a room in Paphos. "The main port of the city of Paphos. [paragraph break]From here you can sail to: [line break]→ Athens[line break]→ Garden of Hesperides".
+Port of Aulis is a room in Aulis. "From here you can sail to: [line break]→ Sounio[line break]→ Garden of Hesperides".
 
 [Stables-City Gates]
 Northen Gates of Athens is a room in Athens. "From here you can travel to: [line break]→ Thebes[line  break]→ Aulis[line  break]→ Delphi[line  break]→ Ephyra[line  break]→ Mount Olympus".
@@ -1388,7 +1387,7 @@ Port of Aulis sails to Port of Sounio.
 Port of Piraeus sails to Garden of Hesperides.
 Port of Paphos sails to Garden of Hesperides.
 Port of Sounio sails to Garden of Hesperides.
-Port of Aulis sails to Garden of Hesperides.
+Port of Aulis sails to the Garden of Hesperides.
 
 Garden of Hesperides sails to Port of Paphos.
 Garden of Hesperides sails to Port of Piraeus.

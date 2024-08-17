@@ -70676,13 +70676,13 @@ Global max_z_object;
 [ call_U2118;
     #ifdef DEBUG;
         if (suppress_text_substitution) {
-            print "~From here you can travel to: [line break][unicode 8594] Paphos[line break][unicode 8594] Garden of Hesperides~";
+            print "~From here you can sail to: [line break][unicode 8594] Paphos[line break][unicode 8594] Garden of Hesperides~";
             rtrue;
         }
     #endif;
     (say__p = 1);
     ParaContent();
-    print "From here you can travel to: ";
+    print "From here you can sail to: ";
     ParaContent();
     print "^";
     ParaContent();
@@ -70702,13 +70702,13 @@ Global max_z_object;
 [ call_U2119;
     #ifdef DEBUG;
         if (suppress_text_substitution) {
-            print "~From here you can travel to: [line break][unicode 8594] Aulis[line break][unicode 8594] Garden of Hesperides~";
+            print "~From here you can sail to: [line break][unicode 8594] Aulis[line break][unicode 8594] Garden of Hesperides~";
             rtrue;
         }
     #endif;
     (say__p = 1);
     ParaContent();
-    print "From here you can travel to: ";
+    print "From here you can sail to: ";
     ParaContent();
     print "^";
     ParaContent();
@@ -70728,7 +70728,7 @@ Global max_z_object;
 [ call_U2120;
     #ifdef DEBUG;
         if (suppress_text_substitution) {
-            print "~The main port of the city of Paphos. [paragraph break]From here you can travel to: [line break][unicode 8594] Athens[line break][unicode 8594] Garden of Hesperides~";
+            print "~The main port of the city of Paphos. [paragraph break]From here you can sail to: [line break][unicode 8594] Athens[line break][unicode 8594] Garden of Hesperides~";
             rtrue;
         }
     #endif;
@@ -70739,7 +70739,7 @@ Global max_z_object;
     DivideParagraphPoint();
     print "^";
     ParaContent();
-    print "From here you can travel to: ";
+    print "From here you can sail to: ";
     ParaContent();
     print "^";
     ParaContent();
@@ -70759,13 +70759,13 @@ Global max_z_object;
 [ call_U2121;
     #ifdef DEBUG;
         if (suppress_text_substitution) {
-            print "~From here you can travel to: [line break][unicode 8594] Sounio[line break][unicode 8594] Garden of Hesperides~";
+            print "~From here you can sail to: [line break][unicode 8594] Sounio[line break][unicode 8594] Garden of Hesperides~";
             rtrue;
         }
     #endif;
     (say__p = 1);
     ParaContent();
-    print "From here you can travel to: ";
+    print "From here you can sail to: ";
     ParaContent();
     print "^";
     ParaContent();
