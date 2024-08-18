@@ -1,15 +1,25 @@
 "Hebe" by Marina Diagourta
 
-Chapter 0.00 - TODOs|TBDs
+Chapter 0.00 - TODOs | TBDs
 
 [Everything TBD should be commented or deleted]
 
 [All rooms start and end with Start Off [room name] and End Of [room name]]
 
 
-[TODO: fix/add descriptions]
-[TODO:general mapping of the game]
+[TODO: fix/add descriptions to everything<3]
 [TODO: add help command]
+[TODO: combat system - talos, amphitrite and kronos]
+[TODO: integrade divine boons]
+[TODO: talk-chat system]
+[TODO: ambrosia system]
+[TODO: integrade the club of hercules]
+[TODO: golden apples of hesperides collectables]
+[TODO: make necromanteion maybe]
+[TODO: add values, like smell, to every item]
+[TODO: fix change of day in chapter 1]
+[TODO: go to -> try travel/sail/go in]
+[TODO: put random buildings inside cities]
 
 
 Chapter 0.0 - Regions
@@ -20,7 +30,6 @@ Chapter 0.0 - Regions
 Greece is a region.
 Mount Olympus is a region in Greece. 
 Athens is a region in Greece.
-Acropolis is a region in Athens.
 Sounio is a region in Greece.
 Thebes is a region in Greece.
 Aulis is a region in Thebes.
@@ -126,30 +135,31 @@ Chapter 0 - Tutorial 1
 When play begins: say "[bold type]Instructions: [roman type][paragraph break]Welcome to my Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. Your goal is to find a way out of the room you are currently in. Some basic commands you can try to use to interact with your surroundings are [bold type]look (l), examine (x) {thing}, put {thing}, take {thing} and inventory (i)[roman type], but there are more options! Have fun!".
 
 
-[
-[scene 1]
-Tutorial 1 is a scene. 
-When Tutorial 1 begins 
 [Room Description]
-Mountain Olympus Hall is a room in Mountain Olympus. "Mountain Olympus Hall Description".
+Mountain Olympus Hall is a room. "Mountain Olympus Hall Description".
+
 The player is inside Mountain Olympus Hall.
 
 [Items in the room]
-A closed lockable locked openable fixed in place container called Magic Box is in Mountain Olympus Hall.  The matching key of Magic Box is the Magic Key. "[if open]You see a box. Inside it there's a club. [otherwise] You see a closed box.".
 
-The Heracles' Club is a thing inside the Magic Box. The description of the Hercule's Club is "You found Heracles'Club! It's heavy, but nothing you can't handle.".
-
-A table is here. "table is here".
-The Magic Key is on the table. The description of the Magic Key is "The key that unlocks the Magic Box".
+The Heracles' Club is a thing in Mountain Olympus Hall .
 
 [Characters in the room]
-Heracles is a man in Mountain Olympus Hall. "You see your husband, Heracles, here."
+The God Heracles is a man in Mountain Olympus Hall. The description is "Your husband, Heracles."
+The God Zeus is a man in Mountain Olympus Hall.
+The God Apollo is a man in Mountain Olympus Hall.
+The God Ares is a man in Mountain Olympus Hall.
+The God Hephaestus is a man in Mountain Olympus Hall.
+The God Hermes is a man in Mountain Olympus Hall.
+The God Poseidon is a man in Mountain Olympus Hall.
 
-[Conversation]
-Instead of telling someone about something, try asking the noun about it. Instead of answering the noun that something, try asking the noun about it.
+The Goddess Aphrodite is a woman in Mountain Olympus Hall.
+The Goddess Artemis is a woman in Mountain Olympus Hall.
+The Goddess Athena is a woman in Mountain Olympus Hall.
+The Goddess Demeter is a woman in Mountain Olympus Hall.
+The Goddess Hestia is a woman in Mountain Olympus Hall.
+The Goddess Hera is a woman in Mountain Olympus Hall.
 
-Instead of asking Heracles about "how he's doing", say "'Feeling amazing my dear!'".
-]
 
 
 Chapter 0.9 - Other Rooms
@@ -495,8 +505,8 @@ test POS with "rotate the top ring anticlockwise/rotate the second ring anticloc
 
 [characters]
 
-Poseidon is a man in the Divine Cell 2. 
-Demeter is a woman in the Divine Cell 2.
+[Poseidon is a man in the Divine Cell 2. 
+Demeter is a woman in the Divine Cell 2.]
 
 Chapter 3 - Artemis & Apollo
 
@@ -828,8 +838,8 @@ test art with "wait until 12 pm/take sun key/wait until 12 am/ take moon key/ pu
 [End Of: Temple of the Aulidean Artemis]
 
 The Divine Cell of Artemis & Apollo is a room in Thebes.
-The Goddess Artemis is in the Divine Cell of Artemis & Apollo. Artemis is a woman.
-The God Apollo is in the Divine Cell of Artemis & Apollo. Apollo is a man.
+[The Goddess Artemis is in the Divine Cell of Artemis & Apollo. Artemis is a woman.
+The God Apollo is in the Divine Cell of Artemis & Apollo. Apollo is a man.]
 
 
 Chapter 4 - Aphrodite & Hephaestus
@@ -1150,8 +1160,8 @@ test SG2 with "put red flower in hand /x hand/take red flower from hand/x hand".
 
 [Characters]
 Cinyras is a man in the Throne Room.
-Aphrodite is a woman in the Divine Cell 4.
-Hephaestus is a man in the Divine Cell 4.
+[Aphrodite is a woman in the Divine Cell 4.
+Hephaestus is a man in the Divine Cell 4.]
 [Conversation]
 
 
@@ -1162,7 +1172,7 @@ Chapter 5 - Hestia & Hermes
 
 [The player is in Prytaneion.]
 
-Prytaneion is a room in Acropolis. It is up of the porta. The description is "TODO simple description".
+Prytaneion is a room. It is up of the porta. The description is "TODO simple description".
 
 [Instead of looking for the first time: [has_visited before variable, turns to false everytime the player goes out]
 	say "TODO first simple description";
@@ -1273,7 +1283,7 @@ test fire with "light second torch/light third torch/ light sixth torch/ light s
 
 [Start Of: Divine Cell 5]
 
-Divine Cell 5 is a room in Acropolis. It is down of the porta. The description is "TODO mmm gods now".
+Divine Cell 5 is a room. It is down of the porta. The description is "TODO mmm gods now".
 
 Chapter 6 - Hercules 
 
@@ -1297,12 +1307,12 @@ Chapter 8 - Mapping & Transportation
 [All transportation rooms]
 
 
-The player is in Northen Gates of Athens.
+[The player is in Northen Gates of Athens.]
 
 [Ports]
 Port of Piraeus is a room in Athens. "From here you can sail to: [line break]→ Paphos[line break]→ Garden of Hesperides".
 Port of Sounio is a room in Sounio. "From here you can sail to: [line break]→ Aulis[line break]→ Garden of Hesperides".
-Port of Paphos is a room in Paphos. "The main port of the city of Paphos. [paragraph break]From here you can sail to: [line break]→ Athens[line break]→ Garden of Hesperides".
+Port of Paphos is a room in Paphos. "The main port of the city of Paphos. [paragraph break]From here you can sail to: [line break]→ Piraeus[line break]→ Garden of Hesperides".
 Port of Aulis is a room in Aulis. "From here you can sail to: [line break]→ Sounio[line break]→ Garden of Hesperides".
 
 [Stables-City Gates]
@@ -1426,12 +1436,34 @@ Carry out sailing:
 	otherwise:
 		say "You cannot sail directly to the [noun] from here.";	
 	
+[room in room definition]
+An outroom is a kind of room.
+
+An inroom is a kind of scenery enterable container. 
+Fronting relates one inroom to one outroom. The verb to front means the fronting relation. 
+
+Understand "[something related by fronting]" as an inroom.
+
+For printing the name of an inroom:
+		let S be a random outroom fronted by the item described;
+		say "[the printed name of S in lower case]".
+
+After entering a inroom:  
+	say "You went into the [noun]";
+	let L be a random room fronted by the noun;
+	move the player to L;
+	
+
+When play begins:  [so that "exit/go out" will work]
+	repeat with S running through outrooms:
+		let F be a random inroom fronting S;
+		now the location of F is mapped outside S.
 
 
 [All rooms]
 
 [Athens]
-The Agora of Athens is a room in Athens. Agora of Athens is northeast of Port of Piraeus. [TODO:Agora of Athens is west of the Acropolis. ]Agora of Athens is northwest of the Southern Gates of Athens. Agora of Athens is south of the Northen Gates of Athens.
+The Agora of Athens is a room in Athens. The Acropolis is a room in Athens. Agora of Athens is northeast of Port of Piraeus. Agora of Athens is west of the Acropolis. Agora of Athens is northwest of the Southern Gates of Athens. Agora of Athens is south of the Northen Gates of Athens.
 
 [Sounio]
 Agora of Sounio is a room in Sounio. Agora of Sounio is south of the sounio gates. Agora of Sounio is north of the port of sounio. Agora of Sounio is west of the Sounio Beach.
@@ -1441,7 +1473,7 @@ The Outside of the Palace of Paphos is a room in Paphos.
 The Port of Paphos is west of the Agora of Paphos. The Agora of Paphos is south of the Outside of the Palace of Paphos. The Outside of the Palace of Paphos is south of the Throne Room.
 
 [Thebes]
-The Agora of Thebes is a room north of the Thebes Gates. [TODO: containers.The Agora of Thebes is outdoor of Kadmea.]
+The Agora of Thebes is a room north of the Thebes Gates. 
 
 [Aulis]
 The Agora of Aulis is a room north of the Aulis Gates and west of the Port of Aulis.
@@ -1451,10 +1483,42 @@ The Agora of Delphi is a room east of the Oracle of Delphi and west of the Delph
 
 [Ephyra]
 The Agora of Ephyra is a room. [acheron is here (underworld entry)]
-The West of Ephyra is a room.
-The Gates of Ephyra is east of the Agora of ephyra and west of west of ephyra.
+The East of Ephyra is a room. [TODO: Acheron River should be here]
+The Gates of Ephyra is east of the Agora of ephyra and west of East of Ephyra.
 
 [Mount Olympus]
 The Foothills of Mount Olympus is a room in Mount Olympus. The Foothills of Mount Olympus is down of the Hall of Mount Olympus. The description of Foothills of Mount Olympus is "From here you can travel to: [line  break]→ Ephyra [line  break]→ Athens[line break]→ Thebes[line  break]→ Aulis[line  break]→ Delphi".
 
+[Underworld]
+Acheron River is up of Elysial Fields. Elysial Fields is up of Asphodel Meadows. Asphodel Meadows is up of Tartarus. 
 
+
+[Rooms inside rooms in game]
+The Acheron River is an outroom. "Acheron River." The Acheron River is inside from the East of Ephyra. 
+The acheron_river is an inroom in the East of Ephyra. The acheron_river fronts the Acheron River.
+
+The Prytaneion is an outroom. The Prytaneion is inside from the Acropolis.
+The prytaneion_front is an inroom in the Acropolis. The prytaneion_front fronts the Prytaneion.
+
+The Kadmea is an outroom. The Kadmea is inside from the Agora of Thebes. [TODO: change kadmea and kadmea palace (name of specific puzzle room, kadmea is the acropolis)]
+The kadmea_front is an inroom in the Agora of Thebes. The kadmea_front fronts the Kadmea.
+
+The Temple of the Aulidean Artemis is an outroom. The Temple of the Aulidean Artemis is inside from the Agora of Aulis.
+The aulidian_artemis_temple is an inroom in the Agora of Aulis. The aulidian_artemis_temple fronts the Temple of the Aulidean Artemis.
+
+
+Chapter 9 - Speech Tables
+
+[Heracles]
+Table of Heracles Responses
+Topic	Response	Second Response
+"his celebration"	"[one of]Yes i like it![or]huh its nice[or] oof.[cycling]"	"Im pretty sure I already told you about it."
+"his club"	"Ah its over there"	"Im pretty sure I already told you about it."
+"Zeus"	"Hes my dad alr."	"Im pretty sure I already told you about it."
+
+Instead of telling Heracles about a topic listed in the Table of Heracles Responses:
+	say "[Response entry][paragraph break]".
+	
+	
+Instead of asking Heracles about a topic listed in the Table of Heracles Responses:
+	try silently telling Heracles about the topic listed in the Table of Heracles Responses.
