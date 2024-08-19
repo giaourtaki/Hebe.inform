@@ -140,6 +140,11 @@ Antirotating is an action applying to one thing. Understand "rotate [any thing] 
 [giving]
 The block giving rule is not listed in any rulebook.
 
+[talking]
+
+[going to]
+Instead of going to an outroom: [TODO: You can't see any such thing. bug]
+	try silently entering the noun.
 
 Chapter 0 - Tutorial 1 
 
@@ -215,6 +220,17 @@ Instead of giving something to Heracles during Olympus Hall Celebration Scene:
 	otherwise:
 		say "Hercules says 'I am grateful my dearest, but I think you might need this more than I.".
 
+[every n  turn hercules asks for his club]
+Turn counter is a number that varies. Turn counter is 0.
+
+Every turn during Olympus Hall Celebration Scene:
+	increment the turn counter;
+	 if the remainder after dividing turn counter by 10 is 0:
+		say "Hercules asks for his club."
+
+	
+
+
 [examining during scene]
 Instead of examining Zeus during Olympus Hall Celebration Scene:
 	say "Zeus, with his majestic white hair and beard, wears a gold-trimmed white toga and a laurel crown. He feels immense pride in Heracles, his eyes bright with pride.".
@@ -279,10 +295,10 @@ Everywhere you looked, there was movement, life, and joy. The gods, unbound by t
 	otherwise:
 		continue the action.
 		
-[
+
 When Olympus Hall Celebration Scene ends:
-	say "Olympus Hall Celebration Scene ended";
-	]
+	now the turn counter is 0.
+	
 
 
 [Kronos Scene]
@@ -290,11 +306,11 @@ When Kronos Scene begins:
 	Wait for any key;
 	say "[paragraph break]Suddenly, an eerie silence fell over the festive night. The singing and dancing ceased, as if an unseen hand had stilled them. For a brief moment, you felt the coldness of the mountain air, a stark contrast to the pleasant breeze that had enveloped you moments before. A sense of foreboding fills you as you become aware that all eyes are turned behind you. You lock eyes with Heracles, both of you sharing a look of worry. With a growing sense of dread, you turned to see what had drawn everyone's attention.
 
-'Oh, please, do not allow me to ruin your little party. Please continue.'
+'Oh dear, please, do not let my presence taint your insignificant gathering. Carry on as you were.'
 
-The voice was unmistakable, deep and resonant, carrying an ancient power that sent shivers down your spine. It was Kronos. But how—?
+The voice was unmistakable, deep and resonant, carrying an ancient power that sent shivers down your spine. It was Kronos. So much time has passed since our triumph in the War of Titans— the Titanomachy. How did he manage to escape Tartarus?
 
- The sight of the Titan, towering and menacing, shrouded in shadows, struck fear into the hearts of all present. You start to feel the ambrosia in your divine veins turn cold, as if time itself had frozen. The gods, normally so mighty and formidable, stoand paralyzed in shock. Nothing moves. In an instant, you break free from the daze and come to your senses. Your next actions have never been more certain. It's now or never. 
+The sight of the Titan, towering and menacing, shrouded in shadows, struck fear into the hearts of all present. You start to feel the ambrosia in your divine veins turn cold, as if time itself had frozen. The gods, normally so mighty and formidable, stand paralyzed in shock. Nothing moves. In a heartbeat, you break free from the daze and come to your senses. Your next actions have never been more certain. It's now or never. 
 
 You grab Heracle's club out of his hands and leap towards Kronos. Then you feel yourself slipping into unconciousness.".[The last thing you remember before slipping into unconciousness]
 
@@ -316,14 +332,18 @@ When Kronos Scene ends:
 	now Hera is in Tartarus;
 	now Hestia is in Divine Cell 5;
 	wait for any key;
-	now the player is in the garden of Hesperides.
+	now the player is in the garden of Hesperides;
+	now the player is holding the Heracles' Club.
 	
 
 Chapter 0.9 - Other Rooms
 
 [Start Of: Garden on hesperides]
 
-The Garden of Hesperides is a room in Greece. 
+The Garden of Hesperides is a room in Greece. The description is "1-2 months timeskip. the nymphs tended to your wounds and restored you with nectar and ambrosia. They tell you what happened with the gods and send you towards the oracle of delphi.[paragraph break]From here you can sail to: [line break]→ Piraeus[line break]→ Sounio[line break]→ Aulis[line break]→ Paphos"
+
+The Garden of Hesperides Scene is a scene. Garden of Hesperides Scene begins when the player is in the Garden of Hesperides for the first time. 
+The Garden of Hesperides Scene ends when the time since Garden of Hesperides Scene began is 1 minutes.
 
 Aigle is a woman in Garden of Hesperides. 
 Arethousa is a woman in Garden of Hesperides. 
@@ -1170,7 +1190,10 @@ Instead of inserting something into the white flowerbed:
 [Smelling action]
 
 Instead of smelling something:
-	say "It smells [smell of the noun].".
+	If the noun is not a person:
+		say "It smells [smell of the noun].";
+	otherwise:
+		say "Activelly trying to smell a person can be considered rude.".
 
 [Statue of Adonis]
 The man statue is a thing in the Secret Garden. The man statue is fixed in place. It is undescribed.
@@ -1347,27 +1370,27 @@ A portable torch is a kind of flame. There is a portable torch inside the prytan
 
 
 [torches]
-A first torch is a kind of flame. There is a first torch inside the prytaneion. Understand "1st torch" as first torch.
-A second torch is a kind of flame. There is a second torch inside the prytaneion. Understand "2nd torch" as second torch.
-A third torch is a kind of flame. There is a third  torch inside the prytaneion. Understand "3rd torch" as third torch.
-A fourth torch is a kind of flame. There is a fourth torch inside the prytaneion. Understand "4th torch" as fourth torch.
-A fifth torch is a kind of flame. There is a fifth torch inside the prytaneion. Understand "5th torch" as fifth torch.
-A sixth torch is a kind of flame. There is a sixth torch inside the prytaneion. Understand "6th torch" as sixth torch.
-A seventh torch is a kind of flame. There is a seventh torch inside the prytaneion. Understand "7th torch" as seventh torch.
-A eighth torch is a kind of flame. There is a eighth torch inside the prytaneion. Understand "8th torch" as eighth torch.
+A first torch is a kind of flame. There is a first torch inside the prytaneion. Understand "1st torch" as first torch. It is fixed in place.
+A second torch is a kind of flame. There is a second torch inside the prytaneion. Understand "2nd torch" as second torch. It is fixed in place.
+A third torch is a kind of flame. There is a third  torch inside the prytaneion. Understand "3rd torch" as third torch. It is fixed in place.
+A fourth torch is a kind of flame. There is a fourth torch inside the prytaneion. Understand "4th torch" as fourth torch. It is fixed in place.
+A fifth torch is a kind of flame. There is a fifth torch inside the prytaneion. Understand "5th torch" as fifth torch. It is fixed in place.
+A sixth torch is a kind of flame. There is a sixth torch inside the prytaneion. Understand "6th torch" as sixth torch. It is fixed in place.
+A seventh torch is a kind of flame. There is a seventh torch inside the prytaneion. Understand "7th torch" as seventh torch. It is fixed in place.
+A eighth torch is a kind of flame. There is a eighth torch inside the prytaneion. Understand "8th torch" as eighth torch. It is fixed in place. 
 
-A ninth torch is a kind of flame. There is a ninth torch inside the prytaneion. Understand "9th torch" as ninth torch.
-A tenth torch is a kind of flame. There is a tenth torch inside the prytaneion. Understand "10th torch" as tenth torch.
-A eleventh torch is a kind of flame. There is a eleventh torch inside the prytaneion. Understand "11th torch" as eleventh torch.
-A twelfth torch is a kind of flame. There is a twelfth torch inside the prytaneion. Understand "12th torch" as twelfth torch.
-A thirteenth torch is a kind of flame. There is a thirteenth torch inside the prytaneion.Understand "13th torch" as thirteenth torch.
-A fourteenth torch is a kind of flame. There is a fourteenth torch inside the prytaneion.Understand "14th torch" as fourteenth torch.
-A fifteenth torch is a kind of flame. There is a fifteenth torch inside the prytaneion.Understand "15th torch" as fifteenth torch.
-A sixteenth torch is a kind of flame. There is a sixteenth torch inside the prytaneion.Understand "16th torch" as sixteenth torch.
+A ninth torch is a kind of flame. There is a ninth torch inside the prytaneion. Understand "9th torch" as ninth torch. It is fixed in place.
+A tenth torch is a kind of flame. There is a tenth torch inside the prytaneion. Understand "10th torch" as tenth torch. It is fixed in place.
+A eleventh torch is a kind of flame. There is a eleventh torch inside the prytaneion. Understand "11th torch" as eleventh torch. It is fixed in place.
+A twelfth torch is a kind of flame. There is a twelfth torch inside the prytaneion. Understand "12th torch" as twelfth torch. It is fixed in place. 
+A thirteenth torch is a kind of flame. There is a thirteenth torch inside the prytaneion.Understand "13th torch" as thirteenth torch. It is fixed in place. 
+A fourteenth torch is a kind of flame. There is a fourteenth torch inside the prytaneion.Understand "14th torch" as fourteenth torch. It is fixed in place.
+A fifteenth torch is a kind of flame. There is a fifteenth torch inside the prytaneion.Understand "15th torch" as fifteenth torch. It is fixed in place.
+A sixteenth torch is a kind of flame. There is a sixteenth torch inside the prytaneion.Understand "16th torch" as sixteenth torch. It is fixed in place. 
 
 
 [bring close to fire action]
-Bringing something close to the hearth is an action applying to one thing and requiring light. Understand "put [something] close to the hearth" or "put [something] close to hearth"  or "put [something] close to the fire" or "put [something] close to fire" or "bring [something] close to the hearth" or "bring [something] close to hearth" or "bring [something] close to the fire" or "bring [something] close to fire" as bringing something close to the hearth.
+Bringing something close to the hearth is an action applying to one touchable thing. Understand "put [something] close to the hearth" or "put [something] close to hearth"  or "put [something] close to the fire" or "put [something] close to fire" or "bring [something] close to the hearth" or "bring [something] close to hearth" or "bring [something] close to the fire" or "bring [something] close to fire" as bringing something close to the hearth.
 
 Instead of bringing something close to the hearth:
 	if the player is not inside the prytaneion:
@@ -1382,15 +1405,36 @@ Instead of bringing something close to the hearth:
 		now the description of the wax tablet is "The writing reads: Light the tenth, eleventh and thirteenth torches.";
 		stop the action;
 	otherwise:
-		say "Hmm this won't achieve anything.";
+		say "Are you trying to burn the [noun]?";
 		stop the action.
 		
 
 [light torch/flame action]
 Instead of burning something:
-	if the noun is a flame:
+	if the noun is an unlit flame:
 		say "You lighted [the noun].";
 		now the noun is lit;
+		stop the action;
+	otherwise if the noun is a lit flame:
+		say "The [noun] is already lit.";
+	otherwise if the noun is the hearth:
+		say "The hearth is already blazing brightly.";
+		stop the action;
+	otherwise:
+		continue the action.
+		
+Putting off something is an action applying to one touchable thing. Understand "Put off [something]" or "put [something] off" or "extinguish [something]" or "blow out [something]" or "blow [something] out"  as putting off something.
+
+Instead of putting off something:
+	if the noun is a lit flame:
+		say "You put off [the noun].";
+		now the noun is unlit;
+		stop the action;
+	otherwise if the noun is an unlit flame:
+		say "The [noun] is already unlit.";
+		stop the action;
+	otherwise if the noun is the hearth:
+		say "The hearth flames are too strong; you can't simply put them out!";
 		stop the action;
 	otherwise:
 		continue the action.
@@ -1404,7 +1448,7 @@ An empty scroll is a thing inside the prytaneion. The description is "An empty s
 
 
 [wax tablet]
-A wax tablet is a thing inside the prytaneion. The description is "_  _ _ _ _  _ _ _ _ _ _  _ _ _ _  _ _ _ _ _  _ _.  _ _ _ _ _  _ _  _ _ _ _ _  _ _  _ _ _  _ _ _ _  _ _ _  _ _ _ _  _ _. [paragraph break][fixed letter spacing]S QWJC WOEBQCD BCTB  PONCD UC. FDSOA  UC GZEIC BE BQC  VSDC WON  DCWN SB.". [cryptogram:I have another text under me. Bring me close to the fire and read it.]
+A wax tablet is a thing inside the prytaneion. The description is "_  _ _ _ _  _ _ _ _ _ _  _ _ _ _  _ _ _ _ _  _ _.  _ _ _ _ _  _ _  _ _ _ _ _  _ _  _ _ _  _ _ _ _  _ _ _  _ _ _ _  _ _. [paragraph break][fixed letter spacing]S QWJC WOEBQCD  BCTB  PONCD UC. FDSOA  UC GZEIC BE BQC  VSDC WON  DCWN SB.". [cryptogram:I have another text under me. Bring me close to the fire and read it.]
 
 [text scroll]
 A text scroll is a thing inside the prytaneion. The description is "On the scroll you read: Ortsg gsv hrcgs, gsv hvevmgs zmw gsv vrtsgs glixsvh.". [atbash cipher: Light the sixth, the seventh and the eighth torches ]
@@ -1633,10 +1677,10 @@ The Port of Paphos is west of the Agora of Paphos. The Agora of Paphos is south 
 The Agora of Thebes is a room north of the Thebes Gates. 
 
 [Aulis]
-The Agora of Aulis is a room north of the Aulis Gates and west of the Port of Aulis.
+The Agora of Aulis is a room. The Agora of Aulis is north of the Gates of Aulis. The Agora of Aulis is west of the Port of Aulis.
 
 [Delphi]
-The Agora of Delphi is a room east of the Oracle of Delphi and west of the Delphi Gates.
+The Agora of Delphi is a room. The Agora of Delphi is east of the Oracle of Delphi and west of the Delphi Gates.
 
 [Ephyra]
 The Agora of Ephyra is a room. [acheron is here (underworld entry)]
@@ -1668,10 +1712,10 @@ Chapter 9 - Speech Tables
 
 [Heracles]
 Table of Heracles Responses
-Topic	Response	Second Response
-"his celebration"	"[one of]Yes i like it![or]huh its nice[or] oof.[cycling]"	"Im pretty sure I already told you about it."
-"his club"	"Ah its over there"	"Im pretty sure I already told you about it."
-"Zeus"	"Hes my dad alr."	"Im pretty sure I already told you about it."
+Topic	Response	
+"his celebration"	"[one of]Yes i like it![or]huh its nice[or] oof.[cycling]"	
+"his club"	"Ah its over there"
+"Zeus"	"Hes my dad alr."	
 
 
 Instead of telling Heracles about a topic listed in the Table of Heracles Responses:
