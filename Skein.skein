@@ -3,7 +3,7 @@
   <generator>Windows Inform 10.1.2</generator>
   <item nodeId="node-1">
     <command xml:space="preserve">Hebe</command>
-    <result xml:space="preserve">Instructions: &#x000A;&#x000A;Welcome to my Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. Your goal is to find a way out of the room you are currently in. Some basic commands you can try to use to interact with your surroundings are look (l), examine (x) {thing}, put {thing}, take {thing} and inventory (i), but there are more options! Have fun!&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 240818 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Mountain Olympus Hall&#x000A;Mountain Olympus Hall Description&#x000A;&#x000A;You can see Magic Box (closed), a Heracles' Club and Heracles here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Instructions: &#x000A;&#x000A;Welcome to my Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. Your goal is to find a way out of the room you are currently in. Some basic commands you can try to use to interact with your surroundings are look (l), examine (x) {thing}, put {thing}, take {thing} and inventory (i), but there are more options! Have fun!&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 240819 / Inform 7 v10.1.2 / D&#x000A;&#x000A;The grand hall of Mount Olympus gleamed like a jewel in the Greek night sky. The lustrous surfaces of white marble and gold reflected the flickering torchlight. Columns of shimmering marble, capped with gilded Corinthian capitals, reached a vaulted ceiling adorned with intricate decorative paintings depicting scenes from the gods' legendary exploits. Among the hall's lavish embellishments were thrones of solid gold, masterfully crafted handwoven carpets and golden chandeliers, suspended from the ceiling. Today the gods were celebrating the ascension of Heracles to immortality, and also the anniversary of your marriage to him.&#x000A;&#x000A;The air was thick with the aroma of ambrosia and the rich scent of a feast laid out for the celebrating gods. Plates piled high with the finest delicacies filled every corner of the vast chamber, while goblets brimming with nectar passed from hand to hand, by the ever-dutiful Ganymedes.&#x000A;&#x000A;The hall was alive with the sounds of the festivities. Laughter and song echoed through the space as gods danced and sang in celebration. Nymphs twirled gracefully among them, their light steps barely disturbing the surface of the marble floor. In the center of the room, a troupe of performers reenacted the epic labors of Heracles, their movements grand and heroic, a fitting tribute to the hero whose deeds had won him a place among the gods.&#x000A;&#x000A;At the heart of the celebration sat the honoured guests of the occasion, Heracles himself, with you, his wife, to his right. On Heracles' left sat Zeus, king of the gods, who is glancing upon you both with delight and pride. On your right sat Hera, her demeanor calm and gratified, with a rare softness in her gaze. She puts aside any conflict during the event, given her affection for you.&#x000A;&#x000A;The Twelve Olympians were all in attendance, their mighty forms gracing the hall with an air of majesty. They conversed among themselves, their voices a harmonious blend of wisdom and power, as they partook in the feast. The nymphs flitted among them, their laughter mingling with the conversations, adding a lightness to the evening's festivities.&#x000A;&#x000A;Everywhere you looked, there was movement, life, and joy. The gods, unbound by the cares of the mortal world, indulged in the pleasures of the moment, their spirits lifted by the music, the food, and the company. The hall of Olympus had never shone brighter, a fitting tribute to the divine couple.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -47,9 +47,11 @@
       <child nodeId="node-1190"/>
       <child nodeId="node-1192"/>
       <child nodeId="node-1258"/>
+      <child nodeId="node-2374"/>
       <child nodeId="node-1263"/>
       <child nodeId="node-1267"/>
       <child nodeId="node-1293"/>
+      <child nodeId="node-2353"/>
       <child nodeId="node-1295"/>
       <child nodeId="node-1315"/>
       <child nodeId="node-1320"/>
@@ -85,6 +87,7 @@
       <child nodeId="node-1490"/>
       <child nodeId="node-1502"/>
       <child nodeId="node-1504"/>
+      <child nodeId="node-2375"/>
       <child nodeId="node-1505"/>
       <child nodeId="node-1511"/>
       <child nodeId="node-1531"/>
@@ -97,6 +100,8 @@
       <child nodeId="node-1603"/>
       <child nodeId="node-1608"/>
       <child nodeId="node-1618"/>
+      <child nodeId="node-2362"/>
+      <child nodeId="node-2371"/>
       <child nodeId="node-1646"/>
       <child nodeId="node-1655"/>
       <child nodeId="node-1656"/>
@@ -112,6 +117,7 @@
       <child nodeId="node-1857"/>
       <child nodeId="node-1880"/>
       <child nodeId="node-1888"/>
+      <child nodeId="node-2359"/>
       <child nodeId="node-1894"/>
       <child nodeId="node-1895"/>
       <child nodeId="node-1902"/>
@@ -3428,11 +3434,12 @@
   </item>
   <item nodeId="node-358">
     <command xml:space="preserve">d</command>
-    <result xml:space="preserve">Divine Cell 5&#x000A;TODO mmm gods now&#x000A;&#x000A;You can see a porta here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You wouldn't want to leave and miss any of the festivities!&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-359"/>
+      <child nodeId="node-2370"/>
       <child nodeId="node-365"/>
       <child nodeId="node-366"/>
     </children>
@@ -3485,6 +3492,12 @@
   <item nodeId="node-364">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:&#x000A;  a red flower&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-2370">
+    <command xml:space="preserve">take the club</command>
+    <result xml:space="preserve">You picked up a Heracles' Club.&#x000A;&#x000A;Olympus Hall Celebration Scene ended&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -5902,11 +5915,12 @@
   </item>
   <item nodeId="node-633">
     <command xml:space="preserve">i</command>
-    <result xml:space="preserve">You are carrying:&#x000A;  an aria&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You are carrying nothing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-634"/>
+      <child nodeId="node-2348"/>
     </children>
   </item>
   <item nodeId="node-634">
@@ -5942,9 +5956,51 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-2348">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;Would you maybe prefer waiting until a certain time?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2349"/>
+    </children>
+  </item>
+  <item nodeId="node-2349">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;Would you maybe prefer waiting until a certain time?&#x000A;&#x000A;Olympus Hall Celebration Scene ended&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2350"/>
+    </children>
+  </item>
+  <item nodeId="node-2350">
+    <command xml:space="preserve">sleep</command>
+    <result xml:space="preserve">You aren't feeling especially drowsy.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2351"/>
+    </children>
+  </item>
+  <item nodeId="node-2351">
+    <command xml:space="preserve">ask heracles about his club</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2352"/>
+    </children>
+  </item>
+  <item nodeId="node-2352">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Mount Olympus Hall&#x000A;Olympus Hall Destruction Description&#x000A;&#x000A;You can see a Heracles' Club here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-638">
     <command xml:space="preserve">l</command>
-    <result xml:space="preserve">Temple of the Aulidean Artemis&#x000A;Inside the Temple of the Aulidean Artemis you can see a sundial, the statue of Artemis and her sacrificial altar.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Mount Olympus Hall&#x000A;You can see Heracles, Zeus, Hera, Demeter, Hestia, Poseidon, Aphrodite, Apollo, Artemis, Athena, Ares, Dionysus, Hephaestus and Hermes. Ganymedes is running around, serving nectar on request.&#x000A;&#x000A;You can see a Heracles' Club here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -11518,6 +11574,12 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-2374">
+    <command xml:space="preserve">look hera</command>
+    <result xml:space="preserve">Hera, draped in a deep purple robe adorned with gold embroidery, her dark hair styled elegantly, feels a mix of contentment and acceptance, her usual sternness softened in celebration.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-1263">
     <command xml:space="preserve">look in box</command>
     <result xml:space="preserve">In Magic Box is a Hercule's Club.&#x000A;&#x000A;&gt;</result>
@@ -11790,6 +11852,57 @@
   <item nodeId="node-1294">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mountain Olympus Hall&#x000A;Mountain Olympus Hall Description&#x000A;&#x000A;You see your husband here.&#x000A;&#x000A;You see a box&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-2353">
+    <command xml:space="preserve">one</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2354"/>
+    </children>
+  </item>
+  <item nodeId="node-2354">
+    <command xml:space="preserve">tow</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2355"/>
+    </children>
+  </item>
+  <item nodeId="node-2355">
+    <command xml:space="preserve">three</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2356"/>
+    </children>
+  </item>
+  <item nodeId="node-2356">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2357"/>
+    </children>
+  </item>
+  <item nodeId="node-2357">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2358"/>
+    </children>
+  </item>
+  <item nodeId="node-2358">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;Olympus Hall Celebration Scene ended&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -13558,6 +13671,148 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-2375">
+    <command xml:space="preserve">take club</command>
+    <result xml:space="preserve">You picked up a Heracles' Club.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2377"/>
+      <child nodeId="node-2386"/>
+      <child nodeId="node-2376"/>
+    </children>
+  </item>
+  <item nodeId="node-2377">
+    <command xml:space="preserve">give club to heracles</command>
+    <result xml:space="preserve">He smiles to you. "Thank you my dearest."&#x000A;&#x000A;You give the Heracles' Club to the God Heracles.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2381"/>
+      <child nodeId="node-2378"/>
+      <child nodeId="node-2379"/>
+    </children>
+  </item>
+  <item nodeId="node-2381">
+    <command xml:space="preserve">-</command>
+    <result xml:space="preserve">Suddenly, an eerie silence fell over the festive night. The singing and dancing ceased, as if an unseen hand had stilled them. For a brief moment, you felt the coldness of the mountain air, a stark contrast to the pleasant breeze that had enveloped you moments before. A sense of foreboding fills you as you become aware that all eyes are turned behind you. You lock eyes with Heracles, both of you sharing a look of worry. With a growing sense of dread, you turned to see what had drawn everyone's attention.&#x000A;&#x000A;"Oh, please, do not allow me to ruin your little party. Please continue."&#x000A;&#x000A;The voice was unmistakable, deep and resonant, carrying an ancient power that sent shivers down your spine. It was Kronos. But how-?&#x000A;&#x000A;The sight of the Titan, towering and menacing, shrouded in shadows, struck fear into the hearts of all present. You start to feel the ambrosia in your divine veins turn cold, as if time itself had frozen. The gods, normally so mighty and formidable, stoand paralyzed in shock. Nothing moves. In an instant, you break free from the daze and come to your senses. Your next actions have never been more certain. It's now or never.&#x000A;&#x000A;You grab Heracle's club out of his hands and leap towards Kronos. Then you feel yourself slipping into unconciousness.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2382"/>
+    </children>
+  </item>
+  <item nodeId="node-2382">
+    <command xml:space="preserve">examine kronos</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2383"/>
+    </children>
+  </item>
+  <item nodeId="node-2383">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You can't go that way.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2384"/>
+    </children>
+  </item>
+  <item nodeId="node-2384">
+    <command xml:space="preserve">r</command>
+    <result xml:space="preserve">Garden of Hesperides&#x000A;You can see Aigle, Arethousa, Erytheia and Hesperie here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2385"/>
+    </children>
+  </item>
+  <item nodeId="node-2385">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-2378">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a Heracles' Club&#x000A;&#x000A;Kronos Scene ended&#x000A;Garden of Hesperides&#x000A;You can see Aigle, Arethousa, Erytheia and Hesperie here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-2379">
+    <command xml:space="preserve">o</command>
+    <result xml:space="preserve">Suddenly, an eerie silence fell over the festive night. The singing and dancing ceased, as if an unseen hand had stilled them. For a brief moment, you felt the coldness of the mountain air, a stark contrast to the pleasant breeze that had enveloped you moments before. A sense of foreboding fills you as you become aware that all eyes are turned behind you. You lock eyes with Heracles, both of you sharing a look of worry. With a growing sense of dread, you turned to see what had drawn everyone's attention.&#x000A;&#x000A;"Oh, please, do not allow me to ruin your little party. Please continue."&#x000A;&#x000A;The voice was unmistakable, deep and resonant, carrying an ancient power that sent shivers down your spine. It was Kronos. But how-? The sight of the Titan, towering and menacing, shrouded in shadows, struck fear into the hearts of all present. You start to feel the ambrosia in your divine veins turn cold, as if time itself had frozen. The gods, normally so mighty and formidable, stoand paralyzed in shock. Nothing moves. In an instant, you break free from the daze and come to your senses. Your next actions have never been more certain. It's now or never.&#x000A;&#x000A;You grab Heracle's club out of his hands and leap towards Kronos. Then you feel yourself slipping into unconciousness.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2380"/>
+    </children>
+  </item>
+  <item nodeId="node-2380">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying nothing.&#x000A;&#x000A;Kronos Scene ended&#x000A;Garden of Hesperides&#x000A;You can see Aigle, Arethousa, Erytheia and Hesperie here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-2386">
+    <command xml:space="preserve">give club to hercules</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2387"/>
+    </children>
+  </item>
+  <item nodeId="node-2387">
+    <command xml:space="preserve">scenes</command>
+    <result xml:space="preserve">Scene 'Entire Game' playing (for 1 mins now)&#x000A;Scene 'Olympus Hall Celebration Scene' playing (for 1 mins now)&#x000A;(Scene monitoring now switched on. Type "scenes off" to switch it off again.)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2388"/>
+    </children>
+  </item>
+  <item nodeId="node-2388">
+    <command xml:space="preserve">give club to heracles</command>
+    <result xml:space="preserve">He smiles to you. "Thank you my dearest."&#x000A;&#x000A;You give the Heracles' Club to the God Heracles.&#x000A;&#x000A;[Scene 'Olympus Hall Celebration Scene' ends]&#x000A;[Scene 'Kronos Scene' begins]</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2389"/>
+    </children>
+  </item>
+  <item nodeId="node-2389">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">Suddenly, an eerie silence fell over the festive night. The singing and dancing ceased, as if an unseen hand had stilled them. For a brief moment, you felt the coldness of the mountain air, a stark contrast to the pleasant breeze that had enveloped you moments before. A sense of foreboding fills you as you become aware that all eyes are turned behind you. You lock eyes with Heracles, both of you sharing a look of worry. With a growing sense of dread, you turned to see what had drawn everyone's attention.&#x000A;&#x000A;"Oh, please, do not allow me to ruin your little party. Please continue."&#x000A;&#x000A;The voice was unmistakable, deep and resonant, carrying an ancient power that sent shivers down your spine. It was Kronos. But how-?&#x000A;&#x000A;The sight of the Titan, towering and menacing, shrouded in shadows, struck fear into the hearts of all present. You start to feel the ambrosia in your divine veins turn cold, as if time itself had frozen. The gods, normally so mighty and formidable, stoand paralyzed in shock. Nothing moves. In an instant, you break free from the daze and come to your senses. Your next actions have never been more certain. It's now or never.&#x000A;&#x000A;You grab Heracle's club out of his hands and leap towards Kronos. Then you feel yourself slipping into unconciousness.&#x000A;&#x000A;[Scene 'Kronos Scene' ends]</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2390"/>
+    </children>
+  </item>
+  <item nodeId="node-2390">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">Garden of Hesperides&#x000A;You can see Aigle, Arethousa, Erytheia and Hesperie here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2391"/>
+    </children>
+  </item>
+  <item nodeId="node-2391">
+    <command xml:space="preserve">sail to piraeus</command>
+    <result xml:space="preserve">You sail to the Port of Piraeus.&#x000A;&#x000A;Port of Piraeus&#x000A;From here you can sail to: &#x000A;&#x2192; Paphos&#x000A;&#x2192; Garden of Hesperides&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-2376">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Mount Olympus Hall&#x000A;You can see Heracles, Zeus, Hera, Demeter, Hestia, Poseidon, Aphrodite, Apollo, Artemis, Athena, Ares, Dionysus, Hephaestus and Hermes. Ganymedes is running around, serving nectar on request.&#x000A;&#x000A;Kronos Scene ended&#x000A;Garden of Hesperides&#x000A;You can see Aigle, Arethousa, Erytheia and Hesperie here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-1505">
     <command xml:space="preserve">take first torch</command>
     <result xml:space="preserve">You picked up a first torch.&#x000A;&#x000A;&gt;</result>
@@ -14770,6 +15025,99 @@
   <item nodeId="node-1645">
     <command xml:space="preserve">ask Heracles about how is his day</command>
     <result xml:space="preserve">There is no reply.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-2362">
+    <command xml:space="preserve">talk to heracles about his club</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2363"/>
+    </children>
+  </item>
+  <item nodeId="node-2363">
+    <command xml:space="preserve">tell heracles about his club</command>
+    <result xml:space="preserve">Ah its over there&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2364"/>
+    </children>
+  </item>
+  <item nodeId="node-2364">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Mount Olympus Hall&#x000A;Olympus Hall Celebration Description&#x000A;&#x000A;You can see a Goddess Hestia, a Goddess Hera, a Goddess Demeter, a Goddess Athena, a Goddess Artemis, a Goddess Aphrodite, Ganymedes, a God Poseidon, a God Hermes, a God Ares, a God Hephaestus, a God Apollo, a God Zeus, a God Heracles and a Heracles' Club here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2365"/>
+    </children>
+  </item>
+  <item nodeId="node-2365">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Mount Olympus Hall&#x000A;Olympus Hall Celebration Description&#x000A;&#x000A;You can see a Goddess Hestia, a Goddess Hera, a Goddess Demeter, a Goddess Athena, a Goddess Artemis, a Goddess Aphrodite, Ganymedes, a God Poseidon, a God Hermes, a God Ares, a God Hephaestus, a God Apollo, a God Zeus, a God Heracles and a Heracles' Club here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2366"/>
+    </children>
+  </item>
+  <item nodeId="node-2366">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Mount Olympus Hall&#x000A;Olympus Hall Celebration Description&#x000A;&#x000A;You can see a Goddess Hestia, a Goddess Hera, a Goddess Demeter, a Goddess Athena, a Goddess Artemis, a Goddess Aphrodite, Ganymedes, a God Poseidon, a God Hermes, a God Ares, a God Hephaestus, a God Apollo, a God Zeus, a God Heracles and a Heracles' Club here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2367"/>
+    </children>
+  </item>
+  <item nodeId="node-2367">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Mount Olympus Hall&#x000A;Olympus Hall Celebration Description&#x000A;&#x000A;You can see a Goddess Hestia, a Goddess Hera, a Goddess Demeter, a Goddess Athena, a Goddess Artemis, a Goddess Aphrodite, Ganymedes, a God Poseidon, a God Hermes, a God Ares, a God Hephaestus, a God Apollo, a God Zeus, a God Heracles and a Heracles' Club here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2368"/>
+    </children>
+  </item>
+  <item nodeId="node-2368">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Mount Olympus Hall&#x000A;Olympus Hall Celebration Description&#x000A;&#x000A;You can see a Goddess Hestia, a Goddess Hera, a Goddess Demeter, a Goddess Athena, a Goddess Artemis, a Goddess Aphrodite, Ganymedes, a God Poseidon, a God Hermes, a God Ares, a God Hephaestus, a God Apollo, a God Zeus, a God Heracles and a Heracles' Club here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2369"/>
+    </children>
+  </item>
+  <item nodeId="node-2369">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">Foothills of Mount Olympus&#x000A;From here you can travel to: &#x000A;&#x2192; Ephyra &#x000A;&#x2192; Athens&#x000A;&#x2192; Thebes&#x000A;&#x2192; Aulis&#x000A;&#x2192; Delphi&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-2371">
+    <command xml:space="preserve">talk to hercules</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2372"/>
+    </children>
+  </item>
+  <item nodeId="node-2372">
+    <command xml:space="preserve">time</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2373"/>
+    </children>
+  </item>
+  <item nodeId="node-2373">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying nothing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -16968,6 +17316,30 @@
   <item nodeId="node-1893">
     <command xml:space="preserve">travel to delphi</command>
     <result xml:space="preserve">Gates of Delphi&#x000A;You travel to Gates of Delphi.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-2359">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;Olympus Hall Celebration Scene ended&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2360"/>
+    </children>
+  </item>
+  <item nodeId="node-2360">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-2361"/>
+    </children>
+  </item>
+  <item nodeId="node-2361">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;Olympus Hall Celebration Scene ended&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>

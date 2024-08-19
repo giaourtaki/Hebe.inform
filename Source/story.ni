@@ -8,10 +8,10 @@ Chapter 0.00 - TODOs | TBDs
 
 
 [TODO: fix/add descriptions to everything<3]
+[TODO: make things in descriptions interractable]
 [TODO: add help command]
 [TODO: combat system - talos, amphitrite and kronos]
 [TODO: integrade divine boons]
-[TODO: talk-chat system]
 [TODO: ambrosia system]
 [TODO: integrade the club of hercules]
 [TODO: golden apples of hesperides collectables]
@@ -20,6 +20,7 @@ Chapter 0.00 - TODOs | TBDs
 [TODO: fix change of day in chapter 1]
 [TODO: go to -> try travel/sail/go in]
 [TODO: put random buildings inside cities]
+[TODO: talk action -> to tell]
 
 
 Chapter 0.0 - Regions
@@ -42,9 +43,19 @@ Cyprus is a region.
 Paphos is a region in Cyprus.
 Palace of Paphos is a region in Paphos.
 
-Chapter 0.1 - Player Initialize
+Chapter 0.1 - Player & Game Initialize
 
 The player is a woman called Hebe. The carrying capacity of the player is 10.
+
+Use MAX_PROPS_PER_OBJECT of 32.
+Use MAX_TIMERS of 32.
+Use MAX_THREADS of 32.
+Use MAX_LOCAL_VARIABLES of 32.
+Use MAX_ARRAYS of 32.
+Use MAX_OBJECTS of 2048.
+
+[Include Real-Time Delays by Erik Temple.]
+Include Basic Screen Effects by Emily Short.
 
 Chapter 0.20 - Kinds & Values
 
@@ -107,9 +118,6 @@ Chapter 0.3 - Either/Or
 [either/or]
 
 
-
-
-
 Chapter 0.4 - Rules
 
 [persons have name rule]
@@ -129,38 +137,187 @@ Rotating is an action applying to one thing. Understand "rotate [any thing] cloc
 
 Antirotating is an action applying to one thing. Understand "rotate [any thing] anticlockwise" or "rotate the [any thing] anticlockwise" or "rotate anticlockwise the [any thing]" or "rotate [any thing] counterclockwise" or "rotate the [any thing] counterclockwise" or "rotate counterclockwise the [any thing]"or "rotate the [any thing] to the right" or "rotate [any thing] to the right" as antirotating. [TODO: put help for the player about which way to rotate]
 
+[giving]
+The block giving rule is not listed in any rulebook.
+
 
 Chapter 0 - Tutorial 1 
 
 When play begins: say "[bold type]Instructions: [roman type][paragraph break]Welcome to my Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. Your goal is to find a way out of the room you are currently in. Some basic commands you can try to use to interact with your surroundings are [bold type]look (l), examine (x) {thing}, put {thing}, take {thing} and inventory (i)[roman type], but there are more options! Have fun!".
 
+[scenes]
+Olympus Hall Celebration Scene is a scene. 
+Olympus Hall Celebration Scene begins when play begins.
+Olympus Hall Celebration Scene ends when giving the Heracles' Club to heracles. [TODO: end when taking ambrosia]
+
+Kronos Scene is a scene. Kronos Scene begins when Olympus Hall Celebration Scene ends.
+Kronos Scene ends when the time since Kronos Scene began is 1 minutes. [maybe 1]
+
 
 [Room Description]
-Mountain Olympus Hall is a room. "Mountain Olympus Hall Description".
+Mount Olympus Hall is a room. 
 
-The player is inside Mountain Olympus Hall.
+The player is inside Mount Olympus Hall.
 
 [Items in the room]
 
-The Heracles' Club is a thing in Mountain Olympus Hall .
+The Heracles' Club is a thing in Mount Olympus Hall. It is undescribed.
 
 [Characters in the room]
-The God Heracles is a man in Mountain Olympus Hall. The description is "Your husband, Heracles."
-The God Zeus is a man in Mountain Olympus Hall.
-The God Apollo is a man in Mountain Olympus Hall.
-The God Ares is a man in Mountain Olympus Hall.
-The God Hephaestus is a man in Mountain Olympus Hall.
-The God Hermes is a man in Mountain Olympus Hall.
-The God Poseidon is a man in Mountain Olympus Hall.
+The Titan Kronos is a man. He is undescribed.
+The God Heracles is a man. He is undescribed.
+The God Zeus is a man.He is undescribed.
+The God Apollo is a man.He is undescribed.
+The God Ares is a man .He is undescribed.
+The God Hephaestus is a man.He is undescribed.
+The God Hermes is a man .He is undescribed.
+The God Poseidon is a man .He is undescribed.
+The God Dionysus is a man. He is undescribed.
+Ganymedes is a man.He is undescribed.
 
-The Goddess Aphrodite is a woman in Mountain Olympus Hall.
-The Goddess Artemis is a woman in Mountain Olympus Hall.
-The Goddess Athena is a woman in Mountain Olympus Hall.
-The Goddess Demeter is a woman in Mountain Olympus Hall.
-The Goddess Hestia is a woman in Mountain Olympus Hall.
-The Goddess Hera is a woman in Mountain Olympus Hall.
+The Goddess Aphrodite is a woman.She is undescribed.
+The Goddess Artemis is a woman.She is undescribed.
+The Goddess Athena is a woman.She is undescribed.
+The Goddess Demeter is a woman .She is undescribed.
+The Goddess Hestia is a woman.She is undescribed.
+The Goddess Hera is a woman.She is undescribed.
 
 
+
+[Olympus Hall Celebration Scene]
+When Olympus Hall Celebration Scene begins:
+	now the description of Mount Olympus Hall is "You can see Heracles, Zeus, Hera, Demeter, Hestia, Poseidon, Aphrodite, Apollo, Artemis, Athena, Ares, Dionysus, Hephaestus and Hermes. Ganymedes is running around, serving nectar on request.";
+	now The God Heracles is in Mount Olympus Hall;
+	now Zeus is in Mount Olympus Hall;
+	now Apollo is in Mount Olympus Hall;
+	now Hephaestus is in Mount Olympus Hall;
+	now Ares is in Mount Olympus Hall;
+	now Hermes is in Mount Olympus Hall;
+	now Poseidon is in Mount Olympus Hall;
+	now Ganymedes is in Mount Olympus Hall;
+	now Aphrodite is in Mount Olympus Hall;
+	now Artemis is in Mount Olympus Hall;
+	now Athena is in Mount Olympus Hall;
+	now Demeter is in Mount Olympus Hall;
+	now Hera is in Mount Olympus Hall;
+	now Hestia is in Mount Olympus Hall.
+	
+
+Instead of going down during Olympus Hall Celebration Scene:
+	say "You wouldn't want to leave and miss any of the festivities!";
+	stop the action.
+	
+
+Instead of giving something to Heracles during Olympus Hall Celebration Scene:
+	If the noun is Heracles' Club:
+		say "He smiles to you. 'Thank you my dearest.'";
+		continue the action;
+	otherwise:
+		say "Hercules says 'I am grateful my dearest, but I think you might need this more than I.".
+
+[examining during scene]
+Instead of examining Zeus during Olympus Hall Celebration Scene:
+	say "Zeus, with his majestic white hair and beard, wears a gold-trimmed white toga and a laurel crown. He feels immense pride in Heracles, his eyes bright with pride.".
+	
+Instead of examining Heracles during Olympus Hall Celebration Scene:
+	say "Heracles, strong in a lion-skin cloak over a short tunic with a garland of olive leaves, feels deep gratitude and pride, his heart swelling as he is celebrated among the gods.".
+	
+Instead of examining Apollo during Olympus Hall Celebration Scene:
+	say "Apollo, radiant in a gold-trimmed white tunic with a laurel wreath in his golden hair, feels joy and admiration, his spirit lifted as he observes the celebration of his half-brother.".
+	
+Instead of examining Ares during Olympus Hall Celebration Scene:
+	say "".
+	
+Instead of examining Hephaestus during Olympus Hall Celebration Scene:
+	say "".
+	
+Instead of examining Hermes during Olympus Hall Celebration Scene:
+	say "".
+	
+Instead of examining Poseidon during Olympus Hall Celebration Scene:
+	say "".
+	
+Instead of examining Dionysus during Olympus Hall Celebration Scene:
+	say "".
+	
+Instead of examining Ganymedes during Olympus Hall Celebration Scene:
+	say "".
+	
+Instead of examining Aphrodite during Olympus Hall Celebration Scene:
+	say "".
+	
+Instead of examining Artemis during Olympus Hall Celebration Scene:
+	say "".
+	
+Instead of examining Athena during Olympus Hall Celebration Scene:
+	say "".
+	
+Instead of examining Demeter during Olympus Hall Celebration Scene:
+	say "".
+	
+Instead of examining Hestia during Olympus Hall Celebration Scene:
+	say "".
+	
+Instead of examining Hera during Olympus Hall Celebration Scene:
+	say "".
+
+
+Instead of looking for the 1st time during the Olympus Hall Celebration Scene:
+	 If the player is in the Mount Olympus Hall:
+		say "The grand hall of Mount Olympus gleamed like a jewel in the Greek night sky. The lustrous surfaces of white marble and gold reflected the flickering torchlight. Columns of shimmering marble, capped with gilded Corinthian capitals, reached a vaulted ceiling adorned with intricate decorative paintings depicting scenes from the gods[apostrophe] legendary exploits. Among the hall’s lavish embellishments were thrones of solid gold, masterfully crafted handwoven carpets and golden chandeliers, suspended from the ceiling. Today the gods were celebrating the ascension of Heracles to immortality, and also the anniversary of your marriage to him.
+
+The air was thick with the aroma of ambrosia and the rich scent of a feast laid out for the celebrating gods. Plates piled high with the finest delicacies filled every corner of the vast chamber, while goblets brimming with nectar passed from hand to hand, by the ever-dutiful Ganymedes.
+
+The hall was alive with the sounds of the festivities. Laughter and song echoed through the space as gods danced and sang in celebration. Nymphs twirled gracefully among them, their light steps barely disturbing the surface of the marble floor. In the center of the room, a troupe of performers reenacted the epic labors of Heracles, their movements grand and heroic, a fitting tribute to the hero whose deeds had won him a place among the gods.
+
+At the heart of the celebration sat the honoured guests of the occasion, Heracles himself, with you, his wife, to his right. On Heracles[apostrophe] left sat Zeus, king of the gods, who is glancing upon you both with delight and pride. On your right sat Hera, her demeanor calm and gratified, with a rare softness in her gaze. She puts aside any conflict during the event, given her affection for you.
+
+The Twelve Olympians were all in attendance, their mighty forms gracing the hall with an air of majesty. They conversed among themselves, their voices a harmonious blend of wisdom and power, as they partook in the feast. The nymphs flitted among them, their laughter mingling with the conversations, adding a lightness to the evening’s festivities.
+
+Everywhere you looked, there was movement, life, and joy. The gods, unbound by the cares of the mortal world, indulged in the pleasures of the moment, their spirits lifted by the music, the food, and the company. The hall of Olympus had never shone brighter, a fitting tribute to the divine couple.";
+		stop the action;
+	otherwise:
+		continue the action.
+		
+[
+When Olympus Hall Celebration Scene ends:
+	say "Olympus Hall Celebration Scene ended";
+	]
+
+
+[Kronos Scene]
+When Kronos Scene begins:
+	Wait for any key;
+	say "[paragraph break]Suddenly, an eerie silence fell over the festive night. The singing and dancing ceased, as if an unseen hand had stilled them. For a brief moment, you felt the coldness of the mountain air, a stark contrast to the pleasant breeze that had enveloped you moments before. A sense of foreboding fills you as you become aware that all eyes are turned behind you. You lock eyes with Heracles, both of you sharing a look of worry. With a growing sense of dread, you turned to see what had drawn everyone's attention.
+
+'Oh, please, do not allow me to ruin your little party. Please continue.'
+
+The voice was unmistakable, deep and resonant, carrying an ancient power that sent shivers down your spine. It was Kronos. But how—?
+
+ The sight of the Titan, towering and menacing, shrouded in shadows, struck fear into the hearts of all present. You start to feel the ambrosia in your divine veins turn cold, as if time itself had frozen. The gods, normally so mighty and formidable, stoand paralyzed in shock. Nothing moves. In an instant, you break free from the daze and come to your senses. Your next actions have never been more certain. It's now or never. 
+
+You grab Heracle's club out of his hands and leap towards Kronos. Then you feel yourself slipping into unconciousness.".[The last thing you remember before slipping into unconciousness]
+
+When Kronos Scene ends:
+	[say "Kronos Scene ended";]
+	now the description of Mount Olympus Hall is "Olympus Hall Destruction Description";
+	now the god Heracles is in Asphodel Meadows;
+	now Zeus is in Tartarus;
+	now Apollo is in Divine Cell of Artemis & Apollo;
+	now Hephaestus is in Divine Cell 4;
+	now Ares is in Divine Cell 1;
+	now Hermes is in Divine Cell 5;
+	now Poseidon is in Divine Cell 2;
+	now Ganymedes is nowhere;
+	now Aphrodite is in Divine Cell 4;
+	now Artemis is in Divine Cell of Artemis & Apollo;
+	now Athena is in Divine Cell 1;
+	now Demeter is in Divine Cell 2;
+	now Hera is in Tartarus;
+	now Hestia is in Divine Cell 5;
+	wait for any key;
+	now the player is in the garden of Hesperides.
+	
 
 Chapter 0.9 - Other Rooms
 
@@ -1487,7 +1644,7 @@ The East of Ephyra is a room. [TODO: Acheron River should be here]
 The Gates of Ephyra is east of the Agora of ephyra and west of East of Ephyra.
 
 [Mount Olympus]
-The Foothills of Mount Olympus is a room in Mount Olympus. The Foothills of Mount Olympus is down of the Hall of Mount Olympus. The description of Foothills of Mount Olympus is "From here you can travel to: [line  break]→ Ephyra [line  break]→ Athens[line break]→ Thebes[line  break]→ Aulis[line  break]→ Delphi".
+The Foothills of Mount Olympus is a room in Mount Olympus. The Foothills of Mount Olympus is down of the Mount Olympus Hall. The description of Foothills of Mount Olympus is "From here you can travel to: [line  break]→ Ephyra [line  break]→ Athens[line break]→ Thebes[line  break]→ Aulis[line  break]→ Delphi".
 
 [Underworld]
 Acheron River is up of Elysial Fields. Elysial Fields is up of Asphodel Meadows. Asphodel Meadows is up of Tartarus. 
@@ -1515,6 +1672,7 @@ Topic	Response	Second Response
 "his celebration"	"[one of]Yes i like it![or]huh its nice[or] oof.[cycling]"	"Im pretty sure I already told you about it."
 "his club"	"Ah its over there"	"Im pretty sure I already told you about it."
 "Zeus"	"Hes my dad alr."	"Im pretty sure I already told you about it."
+
 
 Instead of telling Heracles about a topic listed in the Table of Heracles Responses:
 	say "[Response entry][paragraph break]".
