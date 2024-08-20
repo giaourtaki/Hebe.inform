@@ -9,18 +9,18 @@ Chapter 0.00 - TODOs | TBDs
 
 [TODO: fix/add descriptions to everything<3]
 [TODO: make things in descriptions interractable]
-[TODO: add help command]
+[TODO: update help command]
 [TODO: combat system - talos, amphitrite and kronos]
 [TODO: integrade divine boons]
 [TODO: ambrosia system]
 [TODO: integrade the club of hercules]
 [TODO: golden apples of hesperides collectables]
-[TODO: make necromanteion maybe]
+[TODO: make necromanteion maybe for obols farming]
 [TODO: add values, like smell, to every item]
-[TODO: fix change of day in chapter 1]
+[TODO: fix change of day in chapter 3]
 [TODO: go to -> try travel/sail/go in]
 [TODO: put random buildings inside cities]
-[TODO: talk action -> to tell]
+[TODO: talk action]
 
 
 Chapter 0.0 - Regions
@@ -147,6 +147,37 @@ The block giving rule is not listed in any rulebook.
 Instead of going to an outroom: [TODO: You can't see any such thing. bug]
 	try silently entering the noun.
 
+[help action]
+Helping is an action applying to nothing. Understand "help" as helping.
+
+Carry out helping:
+	say "[line break][bold type]Basic Commands[roman type]";
+	say "[paragraph break][bold type]1. Movement Commands:[roman type][line break][line break]";
+	say "   - Go [ bracket]direction[close bracket]: Move to another room. Example: 'go north', 'enter', 'out'.[line break]";
+	say "   - Directions include: north, south, east, west, northeast, northwest, southeast, southwest, up, and down.[line break]";
+	say "   - You can also use shortcuts, like n, s, e, w, ne, nw, se, sw, u and d.[line break]";
+	say "[paragraph break][bold type]2. Interaction Commands:[roman type][line break][line break]";
+	say "   - Look: Examine your surroundings. Example: 'look', 'look around', 'l'.[line break]";
+	say "   - Examine [ bracket]object[close bracket]: Inspect an item in detail. Example: 'examine book', 'x book'.[line break]";
+	say "   - Take [ bracket]object[close bracket]: Pick up an item. Example: 'take key'[line break].";
+	say "   - Drop [ bracket]object[close bracket]: Put down an item. Example: 'drop book'.[line break]";
+	say "   - Open/Close [ bracket]object[close bracket]: Open or close something. Example: 'open door', 'close box'.[line break]";
+	say "   - Give [ bracket]object[close bracket] to [ bracket]person[close bracket]: Give an item to someone. Example: 'give book to librarian'.[line break]";
+	say "";
+	say "[paragraph break][bold type]3. Conversation Commands:[roman type][line break][line break]";
+	say "   - Talk to [ bracket]person[close bracket]: Initiate conversation. Example: 'talk to librarian'.[line break]";
+	say "   - Ask [ bracket]person[close bracket] about [ bracket]topic[close bracket]: Ask someone about something specific. Example: 'ask librarian about book'.[line break]";
+	say "   - Tell [ bracket]person[close bracket] about [ bracket]topic[close bracket]: Tell someone about a topic. Example: 'tell librarian about secret'.[line break]";
+	say "";
+	say "[paragraph break][bold type]4. Miscellaneous Commands:[roman type][line break][line break]";
+	say "   - Inventory: See what you're carrying. Example: 'inventory', 'i'.[line break]";
+	say "   - Wait: Pass time. Example: 'wait'.[line break]";
+	say "   - Save/Restore/Quit: Manage your game. Example: 'save', 'restore', 'quit'.[line break]";
+	say "";
+	say "[paragraph break][bold type]5. Game-Specific Commands:[roman type][line break][line break]";
+	say "   - ";
+	say "[paragraph break][italic type]You can also combine commands with objects and people, such as 'take book and give it to librarian'.[roman type]";
+	
 Chapter 0 - Tutorial 1 
 
 When play begins: say "[bold type]Instructions: [roman type][paragraph break]Welcome to my Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. Your goal is to find a way out of the room you are currently in. Some basic commands you can try to use to interact with your surroundings are [bold type]look (l), examine (x) {thing}, put {thing}, take {thing} and inventory (i)[roman type], but there are more options! Have fun!".
@@ -1492,7 +1523,7 @@ Divine Cell 5 is a room. It is down of the porta. The description is "TODO mmm g
 Chapter 6 - Hercules 
 
 [Start of Underworld]
-The player is in East of Ephyra.
+[The player is in East of Ephyra.]
 
 
 
@@ -1504,9 +1535,9 @@ The Charon's boat is a closed unopenable door.
 
 Obol is a thing. [TODO: make obol aquiring sidequest in ephyra]
 [TBD]
-The player is holding an obol.
+[The player is holding an obol.]
 
-Charon is a man in East of Ephyra.
+Charon is a man. He is in East of Ephyra.
 
 
 Charon Ride In Scene is a scene. Charon Ride In Scene begins when giving an obol to Charon. Charon Ride In Scene ends when the time since Charon Ride In Scene began is 0 minutes.
@@ -1562,7 +1593,7 @@ Heracles in Asphodel Scene ends when giving ambrosia to Heracles.
 
 [doors]
 
-The broken bridge is down of the Asphodel Meadows and up of Tartarus. The broken bridge is a closed unopenable door. 
+The broken bridge is down of the Asphodel Meadows and up of Tartarus. The broken bridge is a closed unopenable door. [the bridge is over a cliff]
 
 The plaque is in Asphodel Meadows. The description is "'Only the ones who give up all hope of returning shall pass.'". 
 
@@ -1571,7 +1602,7 @@ After examining the plaque:
 	say "Heracles becomes serious. 'This means to pass we need to give up our immortality and become mortal.' His face softens. 'My dearest Hebe... we will do this together. Are you ready?' [line break]";
 	If the player consents:
 		now the broken bridge is open;
-		say "Heracles holds your hands. 'Let's go my dearest. It'll be fine.' [paragraph break] You descend into the abyss.";
+		say "Heracles holds your hands. 'Let's go my dearest. It'll be fine.' [paragraph break] You jump and descend into the abyss.";
 		try entering the bridge;
 	otherwise:
 		continue the action.

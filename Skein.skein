@@ -3,7 +3,7 @@
   <generator>Windows Inform 10.1.2</generator>
   <item nodeId="node-2398">
     <command xml:space="preserve">Hebe</command>
-    <result xml:space="preserve">Instructions: &#x000A;&#x000A;Welcome to my Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. Your goal is to find a way out of the room you are currently in. Some basic commands you can try to use to interact with your surroundings are look (l), examine (x) {thing}, put {thing}, take {thing} and inventory (i), but there are more options! Have fun!&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 240820 / Inform 7 v10.1.2 / D&#x000A;&#x000A;East of Ephyra&#x000A;You can see a Charon's boat and Charon here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Instructions: &#x000A;&#x000A;Welcome to my Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. Your goal is to find a way out of the room you are currently in. Some basic commands you can try to use to interact with your surroundings are look (l), examine (x) {thing}, put {thing}, take {thing} and inventory (i), but there are more options! Have fun!&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 240820 / Inform 7 v10.1.2 / D&#x000A;&#x000A;The grand hall of Mount Olympus gleamed like a jewel in the Greek night sky. The lustrous surfaces of white marble and gold reflected the flickering torchlight. Columns of shimmering marble, capped with gilded Corinthian capitals, reached a vaulted ceiling adorned with intricate decorative paintings depicting scenes from the gods' legendary exploits. Among the hall's lavish embellishments were thrones of solid gold, masterfully crafted handwoven carpets and golden chandeliers, suspended from the ceiling. Today the gods were celebrating the ascension of Heracles to immortality, and also the anniversary of your marriage to him.&#x000A;&#x000A;The air was thick with the aroma of ambrosia and the rich scent of a feast laid out for the celebrating gods. Plates piled high with the finest delicacies filled every corner of the vast chamber, while goblets brimming with nectar passed from hand to hand, by the ever-dutiful Ganymedes.&#x000A;&#x000A;The hall was alive with the sounds of the festivities. Laughter and song echoed through the space as gods danced and sang in celebration. Nymphs twirled gracefully among them, their light steps barely disturbing the surface of the marble floor. In the center of the room, a troupe of performers reenacted the epic labors of Heracles, their movements grand and heroic, a fitting tribute to the hero whose deeds had won him a place among the gods.&#x000A;&#x000A;At the heart of the celebration sat the honoured guests of the occasion, Heracles himself, with you, his wife, to his right. On Heracles' left sat Zeus, king of the gods, who is glancing upon you both with delight and pride. On your right sat Hera, her demeanor calm and gratified, with a rare softness in her gaze. She puts aside any conflict during the event, given her affection for you.&#x000A;&#x000A;The Twelve Olympians were all in attendance, their mighty forms gracing the hall with an air of majesty. They conversed among themselves, their voices a harmonious blend of wisdom and power, as they partook in the feast. The nymphs flitted among them, their laughter mingling with the conversations, adding a lightness to the evening's festivities.&#x000A;&#x000A;Everywhere you looked, there was movement, life, and joy. The gods, unbound by the cares of the mortal world, indulged in the pleasures of the moment, their spirits lifted by the music, the food, and the company. The hall of Olympus had never shone brighter, a fitting tribute to the divine couple.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -47,6 +47,7 @@
       <child nodeId="node-3045"/>
       <child nodeId="node-3047"/>
       <child nodeId="node-3048"/>
+      <child nodeId="node-5168"/>
       <child nodeId="node-3063"/>
       <child nodeId="node-3073"/>
       <child nodeId="node-3608"/>
@@ -183,10 +184,197 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
+      <child nodeId="node-5147"/>
       <child nodeId="node-2400"/>
       <child nodeId="node-2659"/>
       <child nodeId="node-4794"/>
     </children>
+  </item>
+  <item nodeId="node-5147">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying nothing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5148"/>
+    </children>
+  </item>
+  <item nodeId="node-5148">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5149"/>
+    </children>
+  </item>
+  <item nodeId="node-5149">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You wouldn't want to leave and miss any of the festivities!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5150"/>
+    </children>
+  </item>
+  <item nodeId="node-5150">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5151"/>
+    </children>
+  </item>
+  <item nodeId="node-5151">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5152"/>
+    </children>
+  </item>
+  <item nodeId="node-5152">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Mount Olympus Hall&#x000A;You can see Heracles, Zeus, Hera, Demeter, Hestia, Poseidon, Aphrodite, Apollo, Artemis, Athena, Ares, Dionysus, Hephaestus and Hermes. Ganymedes is running around, serving nectar on request.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5153"/>
+    </children>
+  </item>
+  <item nodeId="node-5153">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying nothing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5154"/>
+    </children>
+  </item>
+  <item nodeId="node-5154">
+    <command xml:space="preserve">ask heracles about his club</command>
+    <result xml:space="preserve">Ah its over there&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5155"/>
+    </children>
+  </item>
+  <item nodeId="node-5155">
+    <command xml:space="preserve">give club to heracles</command>
+    <result xml:space="preserve">(first taking the Heracles' Club)&#x000A;You picked up a Heracles' Club.&#x000A;&#x000A;He smiles to you. "Thank you my dearest."&#x000A;&#x000A;You give the Heracles' Club to the God Heracles.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5156"/>
+    </children>
+  </item>
+  <item nodeId="node-5156">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">Suddenly, an eerie silence fell over the festive night. The singing and dancing ceased, as if an unseen hand had stilled them. For a brief moment, you felt the coldness of the mountain air, a stark contrast to the pleasant breeze that had enveloped you moments before. A sense of foreboding fills you as you become aware that all eyes are turned behind you. You lock eyes with Heracles, both of you sharing a look of worry. With a growing sense of dread, you turned to see what had drawn everyone's attention.&#x000A;&#x000A;"Oh dear, please, do not let my presence taint your insignificant gathering. Carry on as you were."&#x000A;&#x000A;The voice was unmistakable, deep and resonant, carrying an ancient power that sent shivers down your spine. It was Kronos. So much time has passed since our triumph in the War of Titans- the Titanomachy. How did he manage to escape Tartarus?&#x000A;&#x000A;The sight of the Titan, towering and menacing, shrouded in shadows, struck fear into the hearts of all present. You start to feel the ambrosia in your divine veins turn cold, as if time itself had frozen. The gods, normally so mighty and formidable, stand paralyzed in shock. Nothing moves. In a heartbeat, you break free from the daze and come to your senses. Your next actions have never been more certain. It's now or never.&#x000A;&#x000A;You grab Heracle's club out of his hands and leap towards Kronos. Then you feel yourself slipping into unconciousness.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5157"/>
+    </children>
+  </item>
+  <item nodeId="node-5157">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">Garden of Hesperides&#x000A;1-2 months timeskip. the nymphs tended to your wounds and restored you with nectar and ambrosia. They tell you what happened with the gods and send you towards the oracle of delphi.&#x000A;&#x000A;From here you can sail to: &#x000A;&#x2192; Piraeus&#x000A;&#x2192; Sounio&#x000A;&#x2192; Aulis&#x000A;&#x2192; Paphos&#x000A;&#x000A;You can see Ambrosia, Aigle, Arethousa, Erytheia and Hesperie here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5158"/>
+    </children>
+  </item>
+  <item nodeId="node-5158">
+    <command xml:space="preserve">sail to aulis</command>
+    <result xml:space="preserve">You sail to the Port of Aulis.&#x000A;&#x000A;Port of Aulis&#x000A;From here you can sail to: &#x000A;&#x2192; Sounio&#x000A;&#x2192; Garden of Hesperides&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5159"/>
+    </children>
+  </item>
+  <item nodeId="node-5159">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Agora of Aulis&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5160"/>
+    </children>
+  </item>
+  <item nodeId="node-5160">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5161"/>
+    </children>
+  </item>
+  <item nodeId="node-5161">
+    <command xml:space="preserve">ne</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5162"/>
+    </children>
+  </item>
+  <item nodeId="node-5162">
+    <command xml:space="preserve">nw</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5163"/>
+    </children>
+  </item>
+  <item nodeId="node-5163">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5164"/>
+    </children>
+  </item>
+  <item nodeId="node-5164">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Gates of Aulis&#x000A;From here you can travel to: &#x000A;&#x2192; Thebes&#x000A;&#x2192; Athens&#x000A;&#x2192;  Delphi&#x000A;&#x2192; Ephyra&#x000A;&#x2192; Mount Olympus&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5165"/>
+    </children>
+  </item>
+  <item nodeId="node-5165">
+    <command xml:space="preserve">travel to ephyra</command>
+    <result xml:space="preserve">You travel to the Gates of Ephyra.&#x000A;&#x000A;Gates of Ephyra&#x000A;From here you can travel to: &#x000A;&#x2192; Mount Olympus &#x000A;&#x2192; Athens&#x000A;&#x2192; Thebes&#x000A;&#x2192; Aulis&#x000A;&#x2192; Delphi&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5166"/>
+    </children>
+  </item>
+  <item nodeId="node-5166">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">East of Ephyra&#x000A;You can see a Charon's boat and Charon here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5167"/>
+    </children>
+  </item>
+  <item nodeId="node-5167">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a Heracles' Club&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-2400">
     <command xml:space="preserve">l</command>
@@ -6356,7 +6544,7 @@
   </item>
   <item nodeId="node-5139">
     <command xml:space="preserve">d</command>
-    <result xml:space="preserve">Asphodel Meadows&#x000A;You can see a broken bridge, an Aria and a plaque here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Asphodel Meadows&#x000A;You can see a broken bridge and a plaque here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -6374,7 +6562,7 @@
   </item>
   <item nodeId="node-5141">
     <command xml:space="preserve">yes</command>
-    <result xml:space="preserve">Heracles holds your hands. "Let's go my dearest. It'll be fine."&#x000A;&#x000A;&#x000A;The bridge is hollow and it doesn't seem to lead anywhere. &#x000A;Heracles points out the plaque on top of the bridge. "Take a look at this."&#x000A;&#x000A;"Only the ones who give up all hope of returning shall pass."&#x000A;&#x000A;Heracles becomes serious. "This means to pass we need to give up our immortality and become mortal." His face softens. "My dearest Hebe... we will do this together. Are you ready?"</result>
+    <result xml:space="preserve">Heracles holds your hands. "Let's go my dearest. It'll be fine." &#x000A;&#x000A; You descend into the abyss.&#x000A;&#x000A;Darkness&#x000A;It is pitch dark, and you can't see a thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -6383,7 +6571,7 @@
   </item>
   <item nodeId="node-5142">
     <command xml:space="preserve">yes</command>
-    <result xml:space="preserve">Heracles holds your hands. "Let's go my dearest. It'll be fine."&#x000A;&#x000A;&#x000A;The bridge is hollow and it doesn't seem to lead anywhere. &#x000A;Heracles points out the plaque on top of the bridge. "Take a look at this."&#x000A;&#x000A;"Only the ones who give up all hope of returning shall pass."&#x000A;&#x000A;Heracles becomes serious. "This means to pass we need to give up our immortality and become mortal." His face softens. "My dearest Hebe... we will do this together. Are you ready?"</result>
+    <result xml:space="preserve">That was a rhetorical question.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -6392,7 +6580,7 @@
   </item>
   <item nodeId="node-5143">
     <command xml:space="preserve">yes</command>
-    <result xml:space="preserve">Heracles holds your hands. "Let's go my dearest. It'll be fine."&#x000A;&#x000A;&#x000A;The bridge is hollow and it doesn't seem to lead anywhere. &#x000A;Heracles points out the plaque on top of the bridge. "Take a look at this."&#x000A;&#x000A;"Only the ones who give up all hope of returning shall pass."&#x000A;&#x000A;Heracles becomes serious. "This means to pass we need to give up our immortality and become mortal." His face softens. "My dearest Hebe... we will do this together. Are you ready?"</result>
+    <result xml:space="preserve">That was a rhetorical question.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -6401,7 +6589,25 @@
   </item>
   <item nodeId="node-5144">
     <command xml:space="preserve">yes</command>
-    <result xml:space="preserve">Heracles holds your hands. "Let's go my dearest. It'll be fine."&#x000A;&#x000A;&#x000A;The bridge is hollow and it doesn't seem to lead anywhere. &#x000A;Heracles points out the plaque on top of the bridge. "Take a look at this."&#x000A;&#x000A;"Only the ones who give up all hope of returning shall pass."&#x000A;&#x000A;Heracles becomes serious. "This means to pass we need to give up our immortality and become mortal." His face softens. "My dearest Hebe... we will do this together. Are you ready?"</result>
+    <result xml:space="preserve">That was a rhetorical question.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5145"/>
+    </children>
+  </item>
+  <item nodeId="node-5145">
+    <command xml:space="preserve">no</command>
+    <result xml:space="preserve">That was a rhetorical question.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5146"/>
+    </children>
+  </item>
+  <item nodeId="node-5146">
+    <command xml:space="preserve">uffa</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -7222,6 +7428,21 @@
   <item nodeId="node-3062">
     <command xml:space="preserve">go in kadmea</command>
     <result xml:space="preserve">You went into the kadmea&#x000A;Kadmea&#x000A;on the walls you can see the story of Kadmos, who slayed the Dragon of Ismenus and burried his teeth for the Spartoi to sprink from the ground. In front of you is a stone dragon statue, and a big chess board with some chess pieces already on top. You can see a sacrificial plate on top of the altar. The dvgate has a sign on it.&#x000A;&#x000A;You can see a dvgate, a rock, a walls, dragon statue, a Kadmea altar (on which is a sacrificial plate (empty)), a pan1, a pan2, a pan3, a pan4, a pan5, a pan6 and a scale here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-5168">
+    <command xml:space="preserve">help</command>
+    <result xml:space="preserve">Basic Commands&#x000A;&#x000A;1. Movement Commands:&#x000A;&#x000A;   - Go [direction]: Move to another room. Example: "go north", "enter", "out".&#x000A;   - Directions include: north, south, east, west, northeast, northwest, southeast, southwest, up, and down.&#x000A;   - You can also use shortcuts, like n, s, e, w, ne, nw, se, sw, u and d.&#x000A;&#x000A;&#x000A;2. Interaction Commands:&#x000A;&#x000A;   - Look: Examine your surroundings. Example: "look", "look around", "l".&#x000A;   - Examine [object]: Inspect an item in detail. Example: "examine book", "x book".&#x000A;   - Take [object]: Pick up an item. Example: "take key"&#x000A;.&#x000A;   - Drop [object]: Put down an item. Example: "drop book".&#x000A;   - Open/Close [object]: Open or close something. Example: "open door", "close box".&#x000A;   - Give [object] to [person]: Give an item to someone. Example: "give book to librarian".&#x000A;&#x000A;&#x000A;3. Conversation Commands:&#x000A;&#x000A;   - Talk to [person]: Initiate conversation. Example: "talk to librarian".&#x000A;   - Ask [person] about [topic]: Ask someone about something specific. Example: "ask librarian about book".&#x000A;   - Tell [person] about [topic]: Tell someone about a topic. Example: "tell librarian about secret".&#x000A;&#x000A;&#x000A;4. Miscellaneous Commands:&#x000A;&#x000A;   - Inventory: See what you're carrying. Example: "inventory", "i".&#x000A;   - Wait: Pass time. Example: "wait".&#x000A;   - Save/Restore/Quit: Manage your game. Example: "save", "restore", "quit".&#x000A;&#x000A;&#x000A;5. Game-Specific Commands:&#x000A;&#x000A;   - &#x000A;&#x000A;You can also combine commands with objects and people, such as "take book and give it to librarian".&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5169"/>
+    </children>
+  </item>
+  <item nodeId="node-5169">
+    <command xml:space="preserve">save</command>
+    <result xml:space="preserve">Save failed.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
