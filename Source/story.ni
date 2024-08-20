@@ -121,8 +121,9 @@ Chapter 0.3 - Either/Or
 
 Chapter 0.4 - Rules
 
-[persons have name rule]
-A person has some text called a name. 
+[person name, mortal, immortal, sleep and awake]
+A person has some text called a name. A person can be mortal or immortal. A person is usually immortal.
+A person can be asleep or awake. A person is usually awake.
 
 A thing has a smell. 
 
@@ -147,40 +148,55 @@ The block giving rule is not listed in any rulebook.
 Instead of going to an outroom: [TODO: You can't see any such thing. bug]
 	try silently entering the noun.
 
+[giving ambrosia to person]
+
+Instead of giving ambrosia to someone:
+	if the second noun is mortal:
+		say "You can't decide to make people immortal so easily. Think of the consequences!";
+		stop the action;
+	else if the second noun is awake:
+		say "[second noun] doesn't look like [they] needs more ambrosia right now.";
+		stop the action;
+	else if ambrosia is not carried by the player:
+		say "You don't have any ambrosia on you right now.";
+		stop the action;
+	else if the second noun is asleep:
+		say "You gave ambrosia to [second noun].";
+		now the second noun is awake.
+		
+
 [help action]
 Helping is an action applying to nothing. Understand "help" as helping.
 
 Carry out helping:
-	say "[line break][bold type]Basic Commands[roman type]";
-	say "[paragraph break][bold type]1. Movement Commands:[roman type][line break][line break]";
-	say "   - Go [ bracket]direction[close bracket]: Move to another room. Example: 'go north', 'enter', 'out'.[line break]";
-	say "   - Directions include: north, south, east, west, northeast, northwest, southeast, southwest, up, and down.[line break]";
-	say "   - You can also use shortcuts, like n, s, e, w, ne, nw, se, sw, u and d.[line break]";
-	say "[paragraph break][bold type]2. Interaction Commands:[roman type][line break][line break]";
-	say "   - Look: Examine your surroundings. Example: 'look', 'look around', 'l'.[line break]";
-	say "   - Examine [ bracket]object[close bracket]: Inspect an item in detail. Example: 'examine book', 'x book'.[line break]";
-	say "   - Take [ bracket]object[close bracket]: Pick up an item. Example: 'take key'[line break].";
-	say "   - Drop [ bracket]object[close bracket]: Put down an item. Example: 'drop book'.[line break]";
-	say "   - Open/Close [ bracket]object[close bracket]: Open or close something. Example: 'open door', 'close box'.[line break]";
-	say "   - Give [ bracket]object[close bracket] to [ bracket]person[close bracket]: Give an item to someone. Example: 'give book to librarian'.[line break]";
-	say "";
-	say "[paragraph break][bold type]3. Conversation Commands:[roman type][line break][line break]";
-	say "   - Talk to [ bracket]person[close bracket]: Initiate conversation. Example: 'talk to librarian'.[line break]";
-	say "   - Ask [ bracket]person[close bracket] about [ bracket]topic[close bracket]: Ask someone about something specific. Example: 'ask librarian about book'.[line break]";
-	say "   - Tell [ bracket]person[close bracket] about [ bracket]topic[close bracket]: Tell someone about a topic. Example: 'tell librarian about secret'.[line break]";
-	say "";
-	say "[paragraph break][bold type]4. Miscellaneous Commands:[roman type][line break][line break]";
-	say "   - Inventory: See what you're carrying. Example: 'inventory', 'i'.[line break]";
-	say "   - Wait: Pass time. Example: 'wait'.[line break]";
-	say "   - Save/Restore/Quit: Manage your game. Example: 'save', 'restore', 'quit'.[line break]";
-	say "";
-	say "[paragraph break][bold type]5. Game-Specific Commands:[roman type][line break][line break]";
-	say "   - ";
+	say "[line break][bold type]Basic Commands[roman type][line break]";
+	say "[line break][bold type]1. Movement Commands:[roman type][line break][line break]";
+	say "   • Go [ bracket]direction[close bracket]: Move to another room. Example: 'go north', 'go in' or 'enter', 'out'.[line break]";
+	say "   • Directions include: north, south, east, west, northeast, northwest, southeast, southwest, up, and down.[line break]";
+	say "   • You can also use the shortcuts n, s, e, w, ne, nw, se, sw, u and d.[line break]";
+	say "[line break][bold type]2. Interaction Commands:[roman type][line break][line break]";
+	say "   • Look: Examine your surroundings. Example: 'look', 'look around', 'l'.[line break]";
+	say "   • Examine [ bracket]object[close bracket]: Inspect an item in detail. Example: 'examine book', 'x book'.[line break]";
+	say "   • Take [ bracket]object[close bracket]: Pick up an item. Example: 'take key'.[line break]";
+	say "   • Drop [ bracket]object[close bracket]: Put down an item. Example: 'drop book'.[line break]";
+	say "   • Put [ bracket]object[close bracket] on/in [ bracket]object[close bracket]: Put an item on top or inside another item. Example: 'put flower in pot'.[line break]";
+	say "   • Open/Close [ bracket]object[close bracket]: Open or close something. Example: 'open door', 'close box'.[line break]";
+	say "   • Give [ bracket]object[close bracket] to [ bracket]person[close bracket]: Give an item to someone. Example: 'give book to librarian'.[line break]";
+	say "[line break][bold type]3. Conversation Commands:[roman type][line break][line break]";
+	say "   • Talk to [ bracket]person[close bracket]: Initiate conversation. Example: 'talk to librarian'.[line break]";
+	say "   • Ask [ bracket]person[close bracket] about [ bracket]topic[close bracket]: Ask someone about something specific. Example: 'ask librarian about book'.[line break]";
+	say "   • Tell [ bracket]person[close bracket] about [ bracket]topic[close bracket]: Tell someone about a topic. Example: 'tell librarian about secret'.[line break]";
+	say "[line break][bold type][bold type]4. Miscellaneous Commands:[roman type][line break][line break]";
+	say "   • Inventory: See what you're carrying. Example: 'inventory', 'i'.[line break]";
+	say "   • Wait: Pass time. Example: 'wait'.[line break]";
+	say "   • Save/Restore/Quit: Manage your game. Example: 'save', 'restore', 'quit'.[line break]";
+	say "[line break][bold type]5. Game-Specific Commands:[roman type][line break][line break]";
+	say "   • ";
 	say "[paragraph break][italic type]You can also combine commands with objects and people, such as 'take book and give it to librarian'.[roman type]";
 	
 Chapter 0 - Tutorial 1 
 
-When play begins: say "[bold type]Instructions: [roman type][paragraph break]Welcome to my Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. Your goal is to find a way out of the room you are currently in. Some basic commands you can try to use to interact with your surroundings are [bold type]look (l), examine (x) {thing}, put {thing}, take {thing} and inventory (i)[roman type], but there are more options! Have fun!".
+When play begins: say "[bold type]Instructions: [roman type][paragraph break]Welcome to Hebe, my Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. If at any point you need help, type help into the console. Have fun and thank you for playing!".
 
 [scenes]
 Olympus Hall Celebration Scene is a scene. 
@@ -198,7 +214,9 @@ Mount Olympus Hall is a room.
 
 [Items in the room]
 
-The Heracles' Club is a thing in Mount Olympus Hall. It is undescribed.
+The Heracles' Club is a thing in Mount Olympus Hall. It is undescribed. 
+
+Ambrosia is in mount olympus hall.  obol is in mount olympus hall.[TBD]
 
 [Characters in the room]
 The Titan Kronos is a man. He is undescribed.
@@ -350,19 +368,32 @@ When Kronos Scene ends:
 	[say "Kronos Scene ended";]
 	now the description of Mount Olympus Hall is "Olympus Hall Destruction Description";
 	now the god Heracles is in Asphodel Meadows;
+	now Heracles is asleep;
 	now Zeus is in Tartarus;
+	now Zeus is asleep;
 	now Apollo is in Divine Cell of Artemis & Apollo;
+	now Apollo is asleep;
 	now Hephaestus is in Divine Cell 4;
+	now Hephaestus is asleep;
 	now Ares is in Divine Cell 1;
+	now Ares is asleep;
 	now Hermes is in Divine Cell 5;
+	now Hermes is asleep;
 	now Poseidon is in Divine Cell 2;
+	now Poseidon is asleep;
 	now Ganymedes is nowhere;
 	now Aphrodite is in Divine Cell 4;
+	now Aphrodite is asleep;
 	now Artemis is in Divine Cell of Artemis & Apollo;
+	now Artemis is asleep;
 	now Athena is in Divine Cell 1;
+	now Athena is asleep;
 	now Demeter is in Divine Cell 2;
+	now Demeter is asleep;
 	now Hera is in Tartarus;
+	now Hera is asleep;
 	now Hestia is in Divine Cell 5;
+	now Hestia is asleep;
 	wait for any key;
 	now the player is in the garden of Hesperides;
 	now the player is holding the Heracles' Club.
@@ -372,12 +403,16 @@ Chapter 0.9 - Other Rooms
 
 [Start Of: Garden on hesperides]
 
-The Garden of Hesperides is a room in Greece. The description is "1-2 months timeskip. the nymphs tended to your wounds and restored you with nectar and ambrosia. They tell you what happened with the gods and send you towards the oracle of delphi.[paragraph break]From here you can sail to: [line break]→ Piraeus[line break]→ Sounio[line break]→ Aulis[line break]→ Paphos"
+The Garden of Hesperides is a room in Greece. The description is "[paragraph break]From here you can sail to: [line break]→ Piraeus[line break]→ Sounio[line break]→ Aulis[line break]→ Paphos"
 
 The Garden of Hesperides Scene is a scene. Garden of Hesperides Scene begins when the player is in the Garden of Hesperides for the first time. 
 The Garden of Hesperides Scene ends when the time since Garden of Hesperides Scene began is 1 minutes.
 
-Ambrosia is a thing in Garden of Hesperides.
+Instead of looking for the 1st time during the Garden of Hesperides Scene:
+	 If the player is in the Garden of Hesperides:
+		say "1-2 months timeskip. the nymphs tended to your wounds and restored you with nectar and ambrosia. They tell you what happened with the gods and send you towards the oracle of delphi.".
+
+[Ambrosia is a thing in Garden of Hesperides.]
 
 Aigle is a woman in Garden of Hesperides. 
 Arethousa is a woman in Garden of Hesperides. 
