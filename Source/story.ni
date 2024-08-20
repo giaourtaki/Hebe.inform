@@ -110,7 +110,8 @@ FlowerPuzzleSolved is a truth state that varies. FlowerPuzzleSolved is false. [i
 
 [Chapter 5 - Hestia & Hermes]
 TorchPuzzleSolved is a truth state that varies. TorchPuzzleSolved is false. [if the torch puzzle is solved or not]
-
+HasHestiaBoon is a truth state that varies. HasHestiaBoon is false. [if player chose hestia]
+HasHermesBoon is a truth state that varies. HasHermesBoon is false. [if player chose hermes]
 
 
 Chapter 0.3 - Either/Or
@@ -152,8 +153,8 @@ When play begins: say "[bold type]Instructions: [roman type][paragraph break]Wel
 
 [scenes]
 Olympus Hall Celebration Scene is a scene. 
-Olympus Hall Celebration Scene begins when play begins.
-Olympus Hall Celebration Scene ends when giving the Heracles' Club to heracles. [TODO: end when taking ambrosia]
+Olympus Hall Celebration Scene begins when the player is in Mount Olympus Hall for the first time.
+Olympus Hall Celebration Scene ends when giving the Heracles' Club to heracles. [TODO: end when taking ambrosia?]
 
 Kronos Scene is a scene. Kronos Scene begins when Olympus Hall Celebration Scene ends.
 Kronos Scene ends when the time since Kronos Scene began is 1 minutes. [maybe 1]
@@ -162,7 +163,7 @@ Kronos Scene ends when the time since Kronos Scene began is 1 minutes. [maybe 1]
 [Room Description]
 Mount Olympus Hall is a room. 
 
-The player is inside Mount Olympus Hall.
+[The player is inside Mount Olympus Hall.]
 
 [Items in the room]
 
@@ -344,6 +345,8 @@ The Garden of Hesperides is a room in Greece. The description is "1-2 months tim
 
 The Garden of Hesperides Scene is a scene. Garden of Hesperides Scene begins when the player is in the Garden of Hesperides for the first time. 
 The Garden of Hesperides Scene ends when the time since Garden of Hesperides Scene began is 1 minutes.
+
+Ambrosia is a thing in Garden of Hesperides.
 
 Aigle is a woman in Garden of Hesperides. 
 Arethousa is a woman in Garden of Hesperides. 
@@ -1489,18 +1492,106 @@ Divine Cell 5 is a room. It is down of the porta. The description is "TODO mmm g
 Chapter 6 - Hercules 
 
 [Start of Underworld]
+The player is in East of Ephyra.
 
-[Start of Acheron River]
-The Acheron River is a room in the Underworld.
-[End of Acheron River]
 
+
+
+[Start of East of Ephyra]
+[The Acheron River is a backdrop. The Acheron River is in the Underworld. [The Acheron River is in Asphodel Meadows.] "The Acheron river looks safe but is dangerous."]
+
+The Charon's boat is a closed unopenable door.
+
+Obol is a thing. [TODO: make obol aquiring sidequest in ephyra]
+[TBD]
+The player is holding an obol.
+
+Charon is a man in East of Ephyra.
+
+
+Charon Ride In Scene is a scene. Charon Ride In Scene begins when giving an obol to Charon. Charon Ride In Scene ends when the time since Charon Ride In Scene began is 0 minutes.
+
+When Charon Ride In Scene begins:
+	now Charon's boat is open;
+	say "The ferryman accepts the token and signals you to jump into the boat. With slow and certain movements, he leads the boat down the dangerous stream, into the opening of a natural cave. You arrive at the Underworld.";
+	wait for any key;
+	try entering the Charon's boat.
+	
+
+When Charon Ride In Scene ends:
+	now Charon is in Elysian Fields;
+	now Charon's boat is closed.
+	
+Before entering the Charon's boat when the Charon Ride In Scene is not happening:
+	If the player is in East of Ephyra:
+		say "You should pay the ferryman first. One obol is the standard price.";
+		stop the action.
+	
+[End of East of Ephyra]
+
+[Start of Elysian Fields]
 The Elysian Fields is a room in the Underworld.
+
+Charon Ride Out Scene is a scene. Charon Ride Out Scene begins when entering Charon's boat in the Elysian Fields. Charon Ride Out Scene ends when the player is in East of Ephyra.
+
+When Charon Ride Out Scene begins:
+	now Charon's boat is open;
+	say "The ferryman see you jump into the boat and understands. With slow and certain movements, he leads the boat up the dangerous stream, out of the opening of the natural cave. You are again in the world of the living. He gives you back the obol.";
+	wait for any key;
+	try entering the Charon's boat.
+	
+When Charon Ride Out Scene ends:
+	now Charon is in East of Ephyra;
+	now the player is holding the obol;
+	now Charon's boat is closed.
+	
+Instead of going in the boat:
+	If the player is in the Elysian Fields:
+		try silently entering the boat. [TODO: bug, fix rule printed for no reason]
+		
+
+[End of Elysian Fields]
+
+[Start of Asphodel Meadows]
 The Asphodel Meadows is a room in the Underworld.
+
+
+Heracles in Asphodel Scene is a scene. Heracles in Asphodel Scene begins when the player is in Asphodel Meadows for the first time. [During this scene Heracles has amnesia, he has drunk from the lethe river so his dialogue should reflect that]
+Heracles in Asphodel Scene ends when giving ambrosia to Heracles.
+
+
+[doors]
+
+The broken bridge is down of the Asphodel Meadows and up of Tartarus. The broken bridge is a closed unopenable door. 
+
+The plaque is in Asphodel Meadows. The description is "'Only the ones who give up all hope of returning shall pass.'". 
+
+After examining the plaque:
+	now the plaque is handled;
+	say "Heracles becomes serious. 'This means to pass we need to give up our immortality and become mortal.' His face softens. 'My dearest Hebe... we will do this together. Are you ready?' [line break]";
+	If the player consents:
+		now the broken bridge is open;
+		say "Heracles holds your hands. 'Let's go my dearest. It'll be fine.' [paragraph break] You descend into the abyss.";
+		try entering the bridge;
+	otherwise:
+		continue the action.
+
+Instead of entering the bridge:
+	If the plaque is not handled:
+		say "[line break]The bridge is hollow and it doesn't seem to lead anywhere. [line break]Heracles points out the plaque on top of the bridge. 'Take a look at this.'";
+		try examining the plaque;
+	otherwise:
+		continue the action.
+
+	
+
+[End of Asphodel Meadows]
+
 
 Chapter 7 - Zeus & Hera 
 
 
-The Tartarus is a room in the Underworld.
+The Tartarus is a dark room in the Underworld.
 
 
 Chapter 8 - Mapping & Transportation
@@ -1684,20 +1775,17 @@ The Agora of Delphi is a room. The Agora of Delphi is east of the Oracle of Delp
 
 [Ephyra]
 The Agora of Ephyra is a room. [acheron is here (underworld entry)]
-The East of Ephyra is a room. [TODO: Acheron River should be here]
+The East of Ephyra is a room in the Underworld. [TODO: Acheron River should be here]
 The Gates of Ephyra is east of the Agora of ephyra and west of East of Ephyra.
 
 [Mount Olympus]
 The Foothills of Mount Olympus is a room in Mount Olympus. The Foothills of Mount Olympus is down of the Mount Olympus Hall. The description of Foothills of Mount Olympus is "From here you can travel to: [line  break]→ Ephyra [line  break]→ Athens[line break]→ Thebes[line  break]→ Aulis[line  break]→ Delphi".
 
 [Underworld]
-Acheron River is up of Elysial Fields. Elysial Fields is up of Asphodel Meadows. Asphodel Meadows is up of Tartarus. 
+Elysian Fields is up of Asphodel Meadows. Charon's boat is down of East of Ephyra and up of Elysian Fields.
 
 
 [Rooms inside rooms in game]
-The Acheron River is an outroom. "Acheron River." The Acheron River is inside from the East of Ephyra. 
-The acheron_river is an inroom in the East of Ephyra. The acheron_river fronts the Acheron River.
-
 The Prytaneion is an outroom. The Prytaneion is inside from the Acropolis.
 The prytaneion_front is an inroom in the Acropolis. The prytaneion_front fronts the Prytaneion.
 
