@@ -163,10 +163,21 @@ The block giving rule is not listed in any rulebook.
 
 [going to]
 
+[sitting]
+
+Understand the command "sit" as something new.
+Sitting is an action applying to one touchable thing. Understand "sit on [something]" as sitting.
+
+check sitting:
+	 if the noun is not armchair:
+		say "You simply cannot sit there!" instead.
+		
+carry out sitting:
+	say "You sit on [the noun]. [one of]It's so soft! [or]It's so fluffy![at random][line break]That was a refreshing break. You get up again.".
 
 [giving nectar to person]
 
-Instead of giving nectar to someone:
+Instead of giving nectar to something:
 	if the second noun is mortal:
 		say "You can't decide to make people immortal so easily. Think of the consequences!";
 		stop the action;
@@ -175,6 +186,9 @@ Instead of giving nectar to someone:
 		stop the action;
 	else if the Eternal Chalice of Nectar is not carried by the player:
 		say "You don't have any nectar on you right now.";
+		stop the action;
+	else if the second noun is a thing:
+		say "You can't give nectar to inanimate objects.";
 		stop the action;
 	else if the second noun is asleep:
 		say "You gave nectar to [second noun].";
@@ -481,18 +495,23 @@ Chapter 1- Athena & Ares
 
 [region: Thebes]
 
-[Start Of: Palace of Kadmos]
+[Start Of: Heroon of Kadmos]
 [rooms]
-Kadmea is a room in Thebes. 
+Kadmea is a room in Thebes. "The famous acropolis of Thebes.[line break][line break]You can see the Palace of Kadmea and the Heroon of Kadmos here."
 
-Kadmea Puzzle Scene is a scene. Kadmea Puzzle Scene begins when the player is in Palace of Kadmos for the first time. Kadmea Puzzle Scene ends when Divine Cell 1 is visited.
+Palace of Kadmea is a room in Thebes. 
+Instead of entering Palace of Kadmea:
+	say "The palace is guarded heavily. You can't enter right now.";
+	stop the action.
 
-The Palace of Kadmos [apothikh]is a room in Thebes. "You can see a scale, a dragon statue, an altar, a sacrificial plate, some armchairs, a side table with a rock on top, some wall paintings, and a gate with a smaller scale on its right." [TODO: fix the mapping/name of room]
+[Kadmea Puzzle Scene is a scene. Kadmea Puzzle Scene begins when the player is in Heroon of Kadmos for the first time. Kadmea Puzzle Scene ends when Divine Cell 1 is visited.]
+
+The Heroon of Kadmos is a room in Thebes. "You can see a scale, a dragon statue[if the rock is on the dragon head] with a rock on its head[end if], an altar, a sacrificial plate, some armchairs, a side table[if the rock is on the side table] with a rock on top[end if], some wall paintings, and a gate with a smaller scale on its right." [TODO: fix the mapping/name of room]
 Divine Cell 1 is a room in Thebes. 
 
 Instead of looking for the first time:
-	If the player is in Palace of Kadmos:
-		say "You step into the sideroom of the Palace of Kadmea. Although the space is modest in size and somewhat confined, it radiates a sense of luxury. The walls are decorated with exquisite paintings that seem to tell stories of gods and heroes, and the room is furnished with plush, silky red armchairs that invite one to rest, and a finely crafted hardwood side table with a medium-sized shiny rock on top, all hinting at the luxury that befits a royal palace spare room.
+	If the player is in Heroon of Kadmos:
+		say "You step into the Heroon of Kadmos, the founder of Thebes. Although the space is modest in size and somewhat confined, it radiates a sense of luxury. The walls are decorated with exquisite paintings that narrate the stories of gods and heroes, and the room is furnished with plush, silky red armchairs that invite one to rest, and a finely crafted hardwood side table with a medium-sized shiny rock on top, all hinting at the luxury that befits a royal palace spare room.
 
 As you take in your surroundings, your attention is immediately drawn to the large scale that dominates the center of the circular room. Before this scale rests a small altar, upon which an empty sacrificial plate has been placed, as if waiting to receive an offering.
 
@@ -501,32 +520,32 @@ Directly across from where you entered, you notice a hardwood gate. To the right
 		
 
 
-The player is in Palace of Kadmos.
+The player is in Heroon of Kadmos.
 
 [doors]
 
-The dragon gate is down of the Palace of Kadmos and up of divine cell 1. The dragon gate is a locked openable door. It is a scenery. The dragon gate is down from the Palace of Kadmos and up from divine cell 1.
+The dragon gate is down of the Heroon of Kadmos and up of divine cell 1. The dragon gate is a locked openable door. It is a scenery. The dragon gate is down from the Heroon of Kadmos and up from divine cell 1.
 
-When Kadmea Puzzle Scene ends:
+[When Kadmea Puzzle Scene ends:
 	now the dragon gate is open;
-	now the dragon gate is not openable.
+	now the dragon gate is not openable.]
 
 
 A inscription is part of the dragon gate. The description of the inscription is "The inscription reads: The key to passage lies from the lightest touch to the heaviest step.".
 
 [items]
 
-Understand "statue" as dragon statue when the player is in Palace of Kadmos.
-Understand "sign" as inscription when the player is in Palace of Kadmos.
-Understand "gate" as dragon gate when the player is in Palace of Kadmos.
-Understand "walls" or "wall"  as paintings when the player is in Palace of Kadmos.
+Understand "statue" as dragon statue when the player is in Heroon of Kadmos.
+Understand "sign" as inscription when the player is in Heroon of Kadmos.
+Understand "gate" as dragon gate when the player is in Heroon of Kadmos.
+Understand "walls" or "wall"  as paintings when the player is in Heroon of Kadmos.
 
-A side table is in Palace of Kadmos. It is undescribed.
+A side table is in Heroon of Kadmos. It is undescribed.
 A rock is on the side table. It is undescribed.
-Armchairs is in Palace of Kadmos. It is undescribed.
+An armchair is in Heroon of Kadmos. It is an undescribed thing. Understand "armchairs" as armchair.
 
-Instead of examining the armchairs:
-	say "They're made of fine red silk. They look very soft.";
+Instead of examining the armchair:
+	say "The armchairs are made of fine red silk. They look very soft.";
 	stop the action.
 	
 Instead of examining the side table:
@@ -537,13 +556,13 @@ Instead of examining the rock:
 	say "A medium-sized polished rock. Looks like limestone. ";
 	stop the action.
 
-The paintings is a thing in Palace of Kadmos. It is undescribed. It is fixed in place.
+The paintings is a thing in Heroon of Kadmos. It is undescribed. It is fixed in place.
 
 Instead of examining the paintings:
 	say "On the walls you see the legendary tale of Kadmos immortalized in 4 paintings. In the first, he bravely confronts the fearsome Dragon of Ismenus, guardian of Ares[apostrophe] sacred spring, slaying the beast with a rock on the head. In the second, you can see him sacrificing the dragon's parts to Athena. In the third one, guided by Athena's wisdom, he buries the dragon’s teeth into the earth, from which arise the Spartoi—warriors born from the dragon’s teeth, who then, in the fourth painting, battle amongst themselves. The paintings seem to be parts of a set, titled 'The creation of Thebes'.";
 	stop the action.
 
-Α dragon statue is  in the Palace of Kadmos. It is fixed in place.  It is undescribed.
+Α dragon statue is  in the Heroon of Kadmos. It is fixed in place.  It is undescribed.
 
 The dragon head is part of the dragon statue. The dragon head is a supporter. Ιt is undescribed. 
 
@@ -576,9 +595,9 @@ Instead of examining the dragon statue:
 
 [the player must put the teeth in a sacrificial plate on top of the altar and then a compartment of the altar opens, supplying the player with weights]
 
-A Kadmea altar is in the Palace of Kadmos. It is fixed in place. It is undescribed.
+A Kadmea altar is in the Heroon of Kadmos. It is fixed in place. It is undescribed.
 A sacrificial plate is on the Kadmea altar. It is an open transparent unopenable container. It is fixed in place. It is undescribed.
-A compartment is part of the Kadmea altar. It is a closed unopenable container.  It is undescribed.
+A compartment is part of the Kadmea altar. It is a closed unopenable container.  It is undescribed. Understand "hidden compartment" as compartment when the player is in Heroon of Kadmos.
 
 An owl weight is a weight. It is in the compartment. The mass of owl weight is 1dr. The description is "A bronze weight with the shape of an owl.". 
 A shield weight is a weight. It is in the compartment. The mass of shield weight is 4dr.The description is "A bronze weight with the shape of a shield.". 
@@ -587,11 +606,12 @@ A snake weight is a weight. It is in the compartment. The mass of snake weight i
 A sword weight is a weight. It is in the compartment. The mass of sword weight is 3dr.The description  is "A bronze weight with the shape of a sword.". 
 A horse weight is a weight. It is in the compartment. The mass of horse weight is 6dr.The description is "A bronze weight with the shape of a horse.". 
 
-A small scale is in Palace of Kadmos. It is undescribed.
+A small scale is in Heroon of Kadmos. It is undescribed.
 
 Instead of examining the small scale:
 	say "The small scale has 6 pans. It is connected to a metal rod, which appears to serve as a locking mechanism for the gate. ";
 	stop the action.
+	
 A first pan is part of the small scale. It is fixed in place. It is a supporter. It is undescribed.
 A second pan is part of the small scale. It is fixed in place. It is a supporter. It is undescribed. It is part of the small scale.
 A third pan is part of the small scale. It is fixed in place.It is a supporter.  It is undescribed. It is part of the small scale.
@@ -599,36 +619,42 @@ A fourth pan is part of the small scale.It is fixed in place. It is a supporter.
 A fifth pan is part of the small scale.It is fixed in place. It is a supporter. It is undescribed. It is part of the small scale.
 A sixth pan is part of the small scale. It is fixed in place. It is a supporter. It is undescribed. It is part of the small scale.
 
-Understand "1st pan" as first pan when the player is in Palace of Kadmos.
-Understand "2nd pan" as second pan when the player is in Palace of Kadmos.
-Understand "3rd pan" as third pan when the player is in Palace of Kadmos.
-Understand "4th pan" as fourth pan when the player is in Palace of Kadmos.
-Understand "5th pan" as fifth pan when the player is in Palace of Kadmos.
-Understand "6th pan" as sixth pan when the player is in Palace of Kadmos.
+Understand "1st pan" as first pan when the player is in Heroon of Kadmos.
+Understand "2nd pan" as second pan when the player is in Heroon of Kadmos.
+Understand "3rd pan" as third pan when the player is in Heroon of Kadmos.
+Understand "4th pan" as fourth pan when the player is in Heroon of Kadmos.
+Understand "5th pan" as fifth pan when the player is in Heroon of Kadmos.
+Understand "6th pan" as sixth pan when the player is in Heroon of Kadmos.
 
 Every turn:
 	If there are 6 seeds in the sacrificial plate:
-		say "The dragon teeth are syphoned into the altar and a compartment door opens, exposing 6 weights.";
+		say "A hole opens at the base of the sacrificial plate, funneling the dragon teeth into the altar. As they settle, a hidden compartment at the bottom of the altar quietly slides open, revealing six variously shaped bronze weights";
 		now everything enclosed by sacrificial plate is nowhere;
 		now the compartment is open.
 		
-A scale is in the Palace of Kadmos. It is fixed in place. A scale has a scale-state. It is undescribed.
+
+A scale is a fixed in place undescribed thing. It is in the Heroon of Kadmos. A scale has a scale-state. Scale-state is a kind of value. The scale-states are left-leaning, right-leaning, and centered.
 
 A left pan is part of the scale. It is a supporter.  It is undescribed.
 A right pan is part of the scale. It is a supporter.It is undescribed.
 
 
-Scale-state is a kind of value. The scale-states are left-leaning, right-leaning, and centered.
-
-To decide what scale-state is --/a/the scale-state of (S - the scale):
-	if the total mass of weights on the left pan is greater than the total mass of weights on the right pan, decide on left-leaning;
-	if the total mass of weights on the right pan is greater than the total mass of weights on the left pan, decide on right-leaning;
-	decide on centered.
+To decide what scale-state is --/a/the scale-state of (S - the  scale):
+	if the total mass of weights on the left pan is greater than the total mass of weights on the right pan: 	
+		decide on left-leaning;
+	if the total mass of weights on the right pan is greater than the total mass of weights on the left pan: 		
+		decide on right-leaning;
+	otherwise:
+		decide on centered.
 	
-The description of the scale is " On the scale you can see two pans, the left pan and the right pan. The scale is currently [scale-state of the scale].".
+The description of the scale is " On the large scale you can see two pans, the left pan and the right pan. The scale is currently [scale-state of the scale].".
+	
+Understand "large scale" or "big scale" as scale.
+
 [solution]
 
-Every turn during Kadmea Puzzle Scene:
+
+Every turn [during Kadmea Puzzle Scene]:
 	If an owl weight is on first pan and
 	a snake weight is on second pan and
 	a sword weight is on third pan and
@@ -638,10 +664,10 @@ Every turn during Kadmea Puzzle Scene:
 		now ThebesTemplePuzzleSolved is true;
 	otherwise:
 		now ThebesTemplePuzzleSolved is false.
-		
+	
 [gate open]
 
-Instead of examining the dragon gate during Kadmea Puzzle Scene:
+Instead of examining the dragon gate [during Kadmea Puzzle Scene]:
 	if ThebesTemplePuzzleSolved is true and the dragon gate is closed:
 		say "The gate is now unlocked.";
 	otherwise if ThebesTemplePuzzleSolved is false and the dragon gate is closed:
@@ -650,7 +676,7 @@ Instead of examining the dragon gate during Kadmea Puzzle Scene:
 		say "The gate is open.".
 		
 		
-Instead of going in the dragon gate during Kadmea Puzzle Scene :
+Instead of going in the dragon gate [during Kadmea Puzzle Scene] :
 	 if ThebesTemplePuzzleSolved is false and the dragon gate is closed:
 		say "The gate is locked.";
 		stop the action;
@@ -658,7 +684,7 @@ Instead of going in the dragon gate during Kadmea Puzzle Scene :
 		continue the action.
 	
 
-Every turn during Kadmea Puzzle Scene:
+Every turn [during Kadmea Puzzle Scene]:
 	If ThebesTemplePuzzleSolved is true for the first turn and the dragon gate is closed:
 		say "You hear the sound of the gate mechanism unlocking";
 		now the dragon gate  is unlocked;
@@ -673,7 +699,7 @@ Every turn during Kadmea Puzzle Scene:
 test getweights with "x dragon statue/ put rock on dragon head/ x dragon statue/ take 6 dragon teeth/ put 6 dragon teeth in the plate ".
 test dragongate with "take weights/put owl weight on first pan/put snake weight on second pan/put sword weight on third pan/put shield weight on 4th pan/put spear weight on 5th pan/put horse on 6th pan".
 
-[End Of: Palace of Kadmos]
+[End Of: Heroon of Kadmos]
 
 Chapter 2 - Demeter & Poseidon 
 
@@ -1928,7 +1954,8 @@ The Outside of the Palace of Paphos is a room in Paphos.
 The Port of Paphos is west of the Agora of Paphos. The Agora of Paphos is south of the Outside of the Palace of Paphos. The Outside of the Palace of Paphos is south of the Throne Room.
 
 [Thebes]
-The Agora of Thebes is a room north of the Thebes Gates. Kadmea is up of Agora of Thebes.
+The Agora of Thebes is a room in Thebes. "You can see Kadmea, the acropolis of Thebes, perched up on the hill in the center of the Agora. [line break][line break]To the south are the city gates".
+The Gates of Thebes is south of the Agora of Thebes. Kadmea is up of Agora of Thebes.
 [Aulis]
 The Agora of Aulis is a room. The Agora of Aulis is north of the Gates of Aulis. The Agora of Aulis is west of the Port of Aulis.
 
@@ -1959,8 +1986,11 @@ The aulidian_artemis_temple is an inroom in the Agora of Aulis. The aulidian_art
 The Necromanteion is an outroom. The Necromanteion is inside from the North of Ephyra.
 The necromanteion_front is an inroom in the North of Ephyra. The necromanteion_front fronts the Necromanteion.
 
-The Palace of Kadmos is an outroom. The Palace of Kadmos is inside from the Kadmea.
-The palace_front is an inroom in the Kadmea. The palace_front fronts the Palace of Kadmos.
+The Palace of Kadmea is an outroom. The Palace of Kadmea is inside from the Kadmea.
+The palace_front is an inroom in the Kadmea. The palace_front fronts the Palace of Kadmea.
+
+The Heroon of Kadmos is an outroom. [The Heroon of Kadmos is inside from the Kadmea.]
+The heroon_front is an inroom in the Kadmea. The heroon_front fronts the Heroon of Kadmos.
 
 
 Chapter 9 - Speech Tables
