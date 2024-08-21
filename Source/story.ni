@@ -9,18 +9,16 @@ Chapter 0.00 - TODOs | TBDs
 
 [TODO: fix/add descriptions to everything<3]
 [TODO: make things in descriptions interractable]
+[TODO: fix first description of rooms]
 [TODO: update help command]
 [TODO: combat system - talos, amphitrite and kronos]
 [TODO: integrade divine boons]
 [TODO: integrade the club of hercules]
 [TODO: golden apples of hesperides collectables]
 [TODO: add values, like smell, to every item]
-[TODO: fix change of day in chapter 3]
 [TODO: go to -> try travel/sail/go in]
 [TODO: put random buildings inside cities]
 [TODO: talk action]
-[TODO: sitting action]
-[TODO: kadmea mapping hell]
 
 
 Chapter 0.0 - Regions
@@ -56,6 +54,15 @@ Use MAX_OBJECTS of 2048.
 
 [Include Real-Time Delays by Erik Temple.]
 Include Basic Screen Effects by Emily Short.
+
+When play begins:
+	the DayRollsOver at 12:00 am;
+	the SunPocketOpens at 12:00 pm;
+	the SunPocketCloses at 12:10 pm;
+	the MoonPocketOpens at 12:00 am;
+	the MoonPocketCloses at 12:10 am;
+	say "[bold type]Instructions: [roman type][paragraph break]Welcome to Hebe, my Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. If at any point you need help, type help into the console. Have fun and thank you for playing!";
+
 
 Chapter 0.20 - Kinds & Values
 
@@ -249,8 +256,6 @@ Carry out helping:
 	say "[paragraph break][italic type]You can also combine commands with objects and people, such as 'take book and give it to librarian'.[roman type]";
 	
 Chapter 0 - Tutorial 1 
-
-When play begins: say "[bold type]Instructions: [roman type][paragraph break]Welcome to Hebe, my Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. If at any point you need help, type help into the console. Have fun and thank you for playing!".
 
 [scenes]
 Olympus Hall Celebration Scene is a scene. 
@@ -486,7 +491,7 @@ Pytheia is a woman in the Oracle of Delphi.
 [Start Of: Necromanteion]
 The necromanteion altar is inside the Necromanteion.
 
-A flower is in necromanteion.
+A flower is in necromanteion.[TBD]
 
 [End Of: Necromanteion]
 
@@ -518,9 +523,6 @@ As you take in your surroundings, your attention is immediately drawn to the lar
 Directly across from where you entered, you notice a hardwood gate. To the right of the gate is a smaller scale, delicately constructed, with six small pans evenly spaced along its length. The small scale is intricately connected to a metal rod, which appears to serve as a locking mechanism for the gate. To the left of the gate stands a statue of a dragon, its serpentine form rising up to your waist, and its head flattened, as a shelf of some kind. Directly above the gate you find an inscription chiseled into the stone.";
 		stop the action.
 		
-
-
-The player is in Heroon of Kadmos.
 
 [doors]
 
@@ -710,14 +712,14 @@ Chapter 2 - Demeter & Poseidon
 [region: Sounio]
 
 [rooms]
-The Sounio Beach is a room in Sounio. "Description of Sounio beach. You see some nereides fighting. Poseidon's temple is in the sea.". [TODO: understand temple of poseidon as poseidons temple]
+The Sounio Beach is a room in Sounio. "Description of Sounio beach. You see some nereides fighting. Poseidon's temple is in the sea.[line break][line break]The city of Sounio is on the west.". [TODO: understand temple of poseidon as poseidons temple]
 The Poseidon's Temple is a room in Sounio. It is up of the temple door."You see a coloumn with 4 rotatable discs. The discs have 5 faces, 4 of them with a picture and one empty. The pictures are the same on each disc and they are in order: Budding olives and fresh green leaves, Green olives growing in size, with fuller leaves, Ripe, darkening olives ready for harvest, some fallen to the ground and Bare branches with a few remaining leaves, the tree in a state of dormancy. The faces towards the altar are all empty."
 The Divine Cell 2 is a room in Sounio. The Divine Cell 2 is down of the temple door. "You see the gods.". [TODO: change name of divine cell]
 
 
 [sounio beach]
 
-[The player is in Sounio beach.]
+
 
 [doors]
 The sea is south of the sounio beach and up of the Poseidon's Temple. It is an unopenable closed door. It is a scenery. 
@@ -928,7 +930,7 @@ An goddess altar is in the temple of the Aulidean Artemis. It is a scenery. The 
 Understand "altar" or "altar of artemis" or "sacrificial altar" as goddess altar when the player is in the temple of the Aulidean Artemis.
 
 
-Understand "moondial" or "imposing sundial" as sundial.
+Understand "moondial" or "imposing sundial" or "dial" as sundial.
 
 After examining the sundial:
 	say "Judging by the gnomon's shadow and the [if the time of day is before 08:00 pm]sun[otherwise]moon[end if] markings, the time is [the time of day to the nearest 5 minutes in words].";
@@ -1003,35 +1005,64 @@ Instead of inserting anything into the moon lock:
 		say "Hmmm you don't think this would go there.";
 		stop the action.
 
-[wait until time action]
-Hanging around until is an action applying to one time.
+the player is in temple of the Aulidean Artemis.
 
-Check hanging around until:
-	if the time of day is the time understood, say "It is [time understood in words] now." instead;
-	if the time of day is after the time understood, say "[time understood in words] passed already. Maybe try again tomorrow." instead. [TODO: fix]
 
-Carry out hanging around until:
-	while the time of day is before the time understood:
+[Chapter Time - Time Keeping]
+Waiting more is an action applying to one number.
+
+Understand “wait [a time period]” or “wait for [a time period]” or “wait for a/an [a time period]” or “wait a/an [a time period]” as waiting more.
+
+Carry out waiting more:
+	let the target time be the time of day plus the time understood;
+	[decrease the target time by one minute;]
+	while the time of day is not the target time:
 		follow the turn sequence rules.
 
-Report hanging around until:
-	say "It is [time understood in words] now."
+Check waiting more:
+if the time understood is greater than 12 hours, say “You really don’t feel like waiting around that long. Maybe you should sleep instead.” instead.
 
-Understand "wait until [time]" as hanging around until.
 
-After waiting:
-	say "Time passes.";
-	say "Would you maybe prefer waiting until a certain time?".
+Report waiting more:
+say “It is now around [the time of day to the nearest 30 minutes in words]”.
 
-	
+[sleep action]
 
-[sun pocket]
-Every turn when the time of day is after 11:59 am and the time of day is before 12:11 pm:
+Understand "sleep" as sleeping.
+
+Instead of sleeping:
+	now the time of day is 9:00 am;
+	Say "You slept until morning.";
+	stop the action.
+
+
+
+At the time when the DayRollsOver:
+	we need to enqueue the timed event in 30 minutes from now;
+	If the player is in temple of the Aulidean Artemis:
+		say "[line break]The day passes and a new day is dawing...";
+	At the time when we need to enqueue the timed event:
+		the DayRollsOver at 12:00 am.
+		
+[sun pocket opens]
+At the time when the SunPocketOpens:
+	we need to enqueue the timed open sun pocket event in 30 minutes from now;
+	If the player is in temple of the Aulidean Artemis:
+		say "[line break]At [the time of day in words]  you hear the click of a latch releasing and a sun hatch opening coming from the dial.";
 	now the sun pocket is open;
-	
-Every turn when the time of day is after 12:09 pm:
-	now the sun pocket is closed.
-	
+	At the time when we need to enqueue the timed open sun pocket event:
+		the SunPocketOpens at 12:00 pm.
+		
+[sun pocket closes]
+At the time when the SunPocketCloses:
+	we need to enqueue the timed close sun pocket event in 30 minutes from now;
+	If the player is in temple of the Aulidean Artemis:
+		say "[line break]At [the time of day in words] you hear the sound of the sun hatch closing and the click of a latch locking coming from the dial.";
+	now the sun pocket is closed;
+	At the time when we need to enqueue the timed close sun pocket event:
+		the SunPocketCloses at 12:10 pm.
+
+[examine sun pocket]
 Instead of examining the sun pocket:
 	If the sun pocket is open:
 		say "The sun hatch is open. Inside you can see [a list of things inside the sun pocket].";
@@ -1039,15 +1070,27 @@ Instead of examining the sun pocket:
 	otherwise:
 		say "The sun hatch is closed.";
 		stop the action.
+				
 
+[moon pocket opens]
+At the time when the MoonPocketOpens:
+	we need to enqueue the timed open moon pocket event in 30 minutes from now;
+	If the player is in temple of the Aulidean Artemis:
+		say "[line break]At [the time of day in words] you hear the click of a latch releasing and a moon hatch opening coming from the dial.";
+	now the moon pocket is open;
+	At the time when we need to enqueue the timed open moon pocket event:
+		the MoonPocketOpens at 12:00 am.
+		
+[moon pocket closes]
+At the time when the MoonPocketCloses:
+	we need to enqueue the timed close moon pocket event in 30 minutes from now;
+	If the player is in temple of the Aulidean Artemis:
+		say "[line break]At [the time of day in words] you hear the sound of the moon hatch closing and the click of a latch locking coming from the dial.";
+	now the moon pocket is closed;
+	At the time when we need to enqueue the timed close moon pocket event:
+		the MoonPocketCloses at 12:10 am.
 
-[examine moon pocket]	
-Every turn when the time of day is after 11:59 pm and the time of day is before 12:11 am:
-	now the moon pocket is open;	
-
-Every turn when the time of day is after 12:09 am:
-	now the moon pocket is closed.
-
+[examine moon pocket]		
 Instead of examining the moon pocket:
 	If the moon pocket is open:
 		say "The moon hatch is open. Inside you can see [a list of things inside the moon pocket].";
@@ -1055,22 +1098,7 @@ Instead of examining the moon pocket:
 	otherwise:
 		say "The moon hatch is closed.";
 		stop the action.
-		
-
-		[the shadow casted by the dial's gnomon meets a sun marking]
-
-Every turn:
-	If the sun pocket is open for the first turn:
-		say "At [the time of day in words]  you hear the click of a latch releasing and a sun hatch opening coming from the dial."; [TODO: sundial + hatch description]
-	otherwise if the sun pocket is closed for the first turn:
-		say "At [the time of day in words] you hear the sound of the sun hatch closing and the click of a latch locking coming from the dial.";
-		
-Every turn:
-	If the moon pocket is open for the first turn:
-		say "At [the time of day in words] you hear the click of a latch releasing and a moon hatch opening coming from the dial."; [TODO: sundial description]
-	otherwise if the moon pocket is closed for the first turn:
-		say "At [the time of day in words] you hear the sound of the moon hatch closing and the click of a latch locking coming from the dial.";
-		
+	
 
 [unlocking action] 
 
@@ -1799,7 +1827,7 @@ Port of Aulis is a room in Aulis. "To the west you can see the city of Aulis. [p
 [Stables-City Gates]
 Northen Gates of Athens is a room in Athens. "To the south you can see the city of Athens. [paragraph break]From here you can travel to: [line break]→ Thebes[line  break]→ Aulis[line  break]→ Delphi[line  break]→ Ephyra[line  break]→ Mount Olympus".
 
-Southern Gates of Athens is a room in Athens. "To the north you can see the city of Athens. [paragraph break]From here you can travel to: [line break]→ Sounio".
+Southern Gates of Athens is a room in Athens. "To the northwest you can see the city of Athens. [paragraph break]From here you can travel to: [line break]→ Sounio".
 
 Gates of Sounio is a room in Sounio. "To the south you can see the town of Sounio. [paragraph break]From here you can travel to: [line break]→ Athens".
 

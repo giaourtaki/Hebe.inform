@@ -3,7 +3,7 @@
   <generator>Windows Inform 10.1.2</generator>
   <item nodeId="node-1">
     <command xml:space="preserve">Hebe</command>
-    <result xml:space="preserve">Instructions: &#x000A;&#x000A;Welcome to Hebe, my Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. If at any point you need help, type help into the console. Have fun and thank you for playing!&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 240821 / Inform 7 v10.1.2 / D&#x000A;&#x000A;You step into the Heroon of Kadmos, the founder of Thebes. Although the space is modest in size and somewhat confined, it radiates a sense of luxury. The walls are decorated with exquisite paintings that narrate the stories of gods and heroes, and the room is furnished with plush, silky red armchairs that invite one to rest, and a finely crafted hardwood side table with a medium-sized shiny rock on top, all hinting at the luxury that befits a royal palace spare room.&#x000A;&#x000A;As you take in your surroundings, your attention is immediately drawn to the large scale that dominates the center of the circular room. Before this scale rests a small altar, upon which an empty sacrificial plate has been placed, as if waiting to receive an offering.&#x000A;&#x000A;Directly across from where you entered, you notice a hardwood gate. To the right of the gate is a smaller scale, delicately constructed, with six small pans evenly spaced along its length. The small scale is intricately connected to a metal rod, which appears to serve as a locking mechanism for the gate. To the left of the gate stands a statue of a dragon, its serpentine form rising up to your waist, and its head flattened, as a shelf of some kind. Directly above the gate you find an inscription chiseled into the stone.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Instructions: &#x000A;&#x000A;Welcome to Hebe, my Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. If at any point you need help, type help into the console. Have fun and thank you for playing!&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 240822 / Inform 7 v10.1.2 / D&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -140,6 +140,8 @@
       <child nodeId="node-2557"/>
       <child nodeId="node-2563"/>
       <child nodeId="node-2573"/>
+      <child nodeId="node-3218"/>
+      <child nodeId="node-3281"/>
       <child nodeId="node-2581"/>
       <child nodeId="node-2583"/>
       <child nodeId="node-2593"/>
@@ -579,13 +581,14 @@
   </item>
   <item nodeId="node-46">
     <command xml:space="preserve">l</command>
-    <result xml:space="preserve">Temple of the Aulidean Artemis&#x000A; You step into the sacred Temple of Aulidean Artemis, where the scent of incense and ancient prayers is still fresh, despite the absence of the priestesses. As you pass through the pronaos, your eyes are drawn to the sunlight cascading down from the open ceiling, illuminating an imposing sundial that stands ar the center of the chamber. The sun's rays trace their path across the dial, a silent testament to the passing hours in this eternal sanctuary.&#x000A;&#x000A;Entering the naos, the very heart of the temple, you find yourself in the presence of the magnificent golden statue of Artemis. Your sister stands tall and proud, her form aglow with a divine radiance that speaks of her unyielding strength and purity. In her left hand, she holds the antlers of a noble deer, symbolizing her dominion over the wild, while her right hand grips her bow, ever ready to protect those who dwell under her watchful eye. A quiver, filled with finely crafted arrows, rests upon her back, the tools of the huntress who lets no prey escape.&#x000A;&#x000A;At her feet, the altar of Artemis beckons, a place where mortals have laid their offerings, hoping to earn her favor. &#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Temple of the Aulidean Artemis&#x000A;Inside the Temple of the Aulidean Artemis you can see a sundial, the statue of Artemis and her sacrificial altar.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-47"/>
       <child nodeId="node-134"/>
       <child nodeId="node-264"/>
+      <child nodeId="node-3065"/>
     </children>
   </item>
   <item nodeId="node-47">
@@ -2898,6 +2901,48 @@
   <item nodeId="node-304">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">(first opening the puzzle gate)&#x000A;It isn't something you can open.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-3065">
+    <command xml:space="preserve">x sundial</command>
+    <result xml:space="preserve">The dial is designed with two separate rings encircling its plate, one with sun and one with lunar markings, allowing you to read the time day and night. You also see on the gnomon an inscription engraved and gilded in gold that says: At midday, let Apollo's light cast a shadow, and at midnight, let Artemis' glow guide the way. Only then shall the twins unveil the hidden path.&#x000A;&#x000A;Judging by the gnomon's shadow and the sun markings, the time is nine o'clock.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3066"/>
+    </children>
+  </item>
+  <item nodeId="node-3066">
+    <command xml:space="preserve">x sundial</command>
+    <result xml:space="preserve">The inscription engraved on the gnomon read: At midday, let Apollo's light cast no shadow, and at midnight, let Artemis' glow guide the way. Only then shall the twins unveil the hidden path.&#x000A;&#x000A;Judging by the gnomon's shadow and the sun markings, the time is nine o'clock.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3067"/>
+    </children>
+  </item>
+  <item nodeId="node-3067">
+    <command xml:space="preserve">wait until midday</command>
+    <result xml:space="preserve">It is twelve o'clock now.&#x000A;&#x000A;At twelve o'clock  you hear the click of a latch releasing and a sun hatch opening coming from the dial.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3068"/>
+    </children>
+  </item>
+  <item nodeId="node-3068">
+    <command xml:space="preserve">wait until midnight</command>
+    <result xml:space="preserve">At ten past twelve you hear the sound of the sun hatch closing and the click of a latch locking coming from the dial.&#x000A;&#x000A;It is twelve o'clock now.&#x000A;&#x000A;The day passes.&#x000A;&#x000A;At twelve o'clock you hear the click of a latch releasing and a moon hatch opening coming from the dial.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3069"/>
+    </children>
+  </item>
+  <item nodeId="node-3069">
+    <command xml:space="preserve">scenes</command>
+    <result xml:space="preserve">Scene 'Entire Game' playing (for -539 mins now)&#x000A;(Scene monitoring now switched on. Type "scenes off" to switch it off again.)&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -8259,7 +8304,7 @@
   </item>
   <item nodeId="node-920">
     <command xml:space="preserve">i</command>
-    <result xml:space="preserve">You are carrying nothing.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You are carrying nothing.&#x000A;&#x000A;The day passes.&#x000A;&#x000A;At twelve o'clock you hear the click of a latch releasing and a moon hatch opening coming from the dial.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -8268,6 +8313,7 @@
       <child nodeId="node-981"/>
       <child nodeId="node-982"/>
       <child nodeId="node-985"/>
+      <child nodeId="node-3043"/>
       <child nodeId="node-989"/>
     </children>
   </item>
@@ -8868,6 +8914,111 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-3043">
+    <command xml:space="preserve">scenes</command>
+    <result xml:space="preserve">Scene 'Entire Game' playing (for -539 mins now)&#x000A;Scene 'Day' playing (for -539 mins now)&#x000A;(Scene monitoring now switched on. Type "scenes off" to switch it off again.)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3044"/>
+    </children>
+  </item>
+  <item nodeId="node-3044">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Temple of the Aulidean Artemis&#x000A;Inside the Temple of the Aulidean Artemis you can see a sundial, the statue of Artemis and her sacrificial altar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3045"/>
+    </children>
+  </item>
+  <item nodeId="node-3045">
+    <command xml:space="preserve">x dial</command>
+    <result xml:space="preserve">(the sundial)&#x000A;The dial is designed with two separate rings encircling its plate, one with sun and one with lunar markings, allowing you to read the time day and night. You also see on the gnomon an inscription engraved and gilded in gold that says: At midday, let Apollo's light cast a shadow, and at midnight, let Artemis' glow guide the way. Only then shall the twins unveil the hidden path.&#x000A;&#x000A;Judging by the gnomon's shadow and the moon markings, the time is twelve o'clock.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3046"/>
+    </children>
+  </item>
+  <item nodeId="node-3046">
+    <command xml:space="preserve">scenes</command>
+    <result xml:space="preserve">Scene 'Entire Game' playing (for -537 mins now)&#x000A;Scene 'Day' playing (for -537 mins now)&#x000A;(Scene monitoring now switched on. Type "scenes off" to switch it off again.)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3047"/>
+    </children>
+  </item>
+  <item nodeId="node-3047">
+    <command xml:space="preserve">wait until 4 pm</command>
+    <result xml:space="preserve">It is four o'clock now.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3048"/>
+    </children>
+  </item>
+  <item nodeId="node-3048">
+    <command xml:space="preserve">wait until midnight</command>
+    <result xml:space="preserve">It is twelve o'clock now.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3049"/>
+    </children>
+  </item>
+  <item nodeId="node-3049">
+    <command xml:space="preserve">wait until 7 pm</command>
+    <result xml:space="preserve">It is seven o'clock now.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3050"/>
+    </children>
+  </item>
+  <item nodeId="node-3050">
+    <command xml:space="preserve">scenes</command>
+    <result xml:space="preserve">Scene 'Entire Game' playing (for -534 mins now)&#x000A;Scene 'Day' playing (for -534 mins now)&#x000A;(Scene monitoring now switched on. Type "scenes off" to switch it off again.)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3051"/>
+    </children>
+  </item>
+  <item nodeId="node-3051">
+    <command xml:space="preserve">wait until 3 am</command>
+    <result xml:space="preserve">At ten past twelve you hear the sound of the moon hatch closing and the click of a latch locking coming from the dial.&#x000A;&#x000A;It is three o'clock now.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3052"/>
+    </children>
+  </item>
+  <item nodeId="node-3052">
+    <command xml:space="preserve">x dial</command>
+    <result xml:space="preserve">(the sundial)&#x000A;The inscription engraved on the gnomon read: At midday, let Apollo's light cast no shadow, and at midnight, let Artemis' glow guide the way. Only then shall the twins unveil the hidden path.&#x000A;&#x000A;Judging by the gnomon's shadow and the moon markings, the time is three o'clock.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3053"/>
+    </children>
+  </item>
+  <item nodeId="node-3053">
+    <command xml:space="preserve">scenes</command>
+    <result xml:space="preserve">Scene 'Entire Game' playing (for -358 mins now)&#x000A;Scene 'Day' playing (for -358 mins now)&#x000A;(Scene monitoring now switched on. Type "scenes off" to switch it off again.)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3054"/>
+    </children>
+  </item>
+  <item nodeId="node-3054">
+    <command xml:space="preserve">scenes</command>
+    <result xml:space="preserve">Scene 'Entire Game' playing (for -358 mins now)&#x000A;Scene 'Day' playing (for -358 mins now)&#x000A;(Scene monitoring now switched on. Type "scenes off" to switch it off again.)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-989">
     <command xml:space="preserve">wait</command>
     <result xml:space="preserve">Time passes.&#x000A;Would you maybe prefer waiting until a certain time?&#x000A;&#x000A;&gt;</result>
@@ -8912,7 +9063,7 @@
   </item>
   <item nodeId="node-994">
     <command xml:space="preserve">l</command>
-    <result xml:space="preserve">Palace of Kadmos&#x000A;You can see a scale, a dragon statue, an altar, a sacrificial plate, some armchairs, a side table with a rock on top, some wall paintings, and a gate with a smaller scale on its right.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Temple of the Aulidean Artemis&#x000A;Inside the Temple of the Aulidean Artemis you can see a sundial, the statue of Artemis and her sacrificial altar.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -8923,11 +9074,14 @@
       <child nodeId="node-1159"/>
       <child nodeId="node-1171"/>
       <child nodeId="node-1180"/>
+      <child nodeId="node-3006"/>
+      <child nodeId="node-3216"/>
       <child nodeId="node-1187"/>
       <child nodeId="node-1254"/>
       <child nodeId="node-1319"/>
       <child nodeId="node-1447"/>
       <child nodeId="node-1466"/>
+      <child nodeId="node-3223"/>
       <child nodeId="node-1486"/>
       <child nodeId="node-1504"/>
     </children>
@@ -10636,6 +10790,297 @@
   <item nodeId="node-1186">
     <command xml:space="preserve">x sun lock</command>
     <result xml:space="preserve">The sun key is in the sun-shapped lock&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-3006">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Agora of Sounio&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3007"/>
+    </children>
+  </item>
+  <item nodeId="node-3007">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Gates of Sounio&#x000A;To the south you can see the town of Sounio. &#x000A;&#x000A;From here you can travel to: &#x000A;&#x2192; Athens&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3008"/>
+    </children>
+  </item>
+  <item nodeId="node-3008">
+    <command xml:space="preserve">nw</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3009"/>
+    </children>
+  </item>
+  <item nodeId="node-3009">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3010"/>
+    </children>
+  </item>
+  <item nodeId="node-3010">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3011"/>
+    </children>
+  </item>
+  <item nodeId="node-3011">
+    <command xml:space="preserve">nw</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3012"/>
+    </children>
+  </item>
+  <item nodeId="node-3012">
+    <command xml:space="preserve">travel to athens</command>
+    <result xml:space="preserve">Which do you mean, Northen Gates of Athens or Southern Gates of Athens?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3013"/>
+    </children>
+  </item>
+  <item nodeId="node-3013">
+    <command xml:space="preserve">northen gates of athens</command>
+    <result xml:space="preserve">You cannot travel directly to the Northen Gates of Athens from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3014"/>
+    </children>
+  </item>
+  <item nodeId="node-3014">
+    <command xml:space="preserve">travel to southern gates of athens</command>
+    <result xml:space="preserve">You travel to the Southern Gates of Athens.&#x000A;&#x000A;Southern Gates of Athens&#x000A;To the northwest you can see the city of Athens. &#x000A;&#x000A;From here you can travel to: &#x000A;&#x2192; Sounio&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3015"/>
+    </children>
+  </item>
+  <item nodeId="node-3015">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3016"/>
+    </children>
+  </item>
+  <item nodeId="node-3016">
+    <command xml:space="preserve">nw</command>
+    <result xml:space="preserve">Agora of Athens&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3017"/>
+    </children>
+  </item>
+  <item nodeId="node-3017">
+    <command xml:space="preserve">ne</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3018"/>
+    </children>
+  </item>
+  <item nodeId="node-3018">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Northen Gates of Athens&#x000A;To the south you can see the city of Athens. &#x000A;&#x000A;From here you can travel to: &#x000A;&#x2192; Thebes&#x000A;&#x2192; Aulis&#x000A;&#x2192; Delphi&#x000A;&#x2192; Ephyra&#x000A;&#x2192; Mount Olympus&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3019"/>
+    </children>
+  </item>
+  <item nodeId="node-3019">
+    <command xml:space="preserve">travel to aulis</command>
+    <result xml:space="preserve">You travel to the Gates of Aulis.&#x000A;&#x000A;Gates of Aulis&#x000A;To the north you can see the town of Aulis. &#x000A;&#x000A;From here you can travel to: &#x000A;&#x2192; Thebes&#x000A;&#x2192; Athens&#x000A;&#x2192;  Delphi&#x000A;&#x2192; Ephyra&#x000A;&#x2192; Mount Olympus&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3020"/>
+    </children>
+  </item>
+  <item nodeId="node-3020">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Agora of Aulis&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3021"/>
+    </children>
+  </item>
+  <item nodeId="node-3021">
+    <command xml:space="preserve">go in temple</command>
+    <result xml:space="preserve">You went into the temple of the aulidean artemis&#x000A;Temple of the Aulidean Artemis&#x000A;Inside the Temple of the Aulidean Artemis you can see a sundial, the statue of Artemis and her sacrificial altar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3022"/>
+    </children>
+  </item>
+  <item nodeId="node-3022">
+    <command xml:space="preserve">x dial</command>
+    <result xml:space="preserve">They showcase sun and lunar markings, allowing you to use the dial to read the time day and night.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3023"/>
+    </children>
+  </item>
+  <item nodeId="node-3023">
+    <command xml:space="preserve">wait until middnight</command>
+    <result xml:space="preserve">I only understood you as far as wanting to wait.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3024"/>
+    </children>
+  </item>
+  <item nodeId="node-3024">
+    <command xml:space="preserve">wait until midnight</command>
+    <result xml:space="preserve">At twelve o'clock  you hear the click of a latch releasing and a sun hatch opening coming from the dial.&#x000A;&#x000A;At ten past twelve you hear the sound of the sun hatch closing and the click of a latch locking coming from the dial.&#x000A;&#x000A;The day passes.&#x000A;&#x000A;It is twelve o'clock now.&#x000A;&#x000A;At twelve o'clock you hear the click of a latch releasing and a moon hatch opening coming from the dial.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3025"/>
+    </children>
+  </item>
+  <item nodeId="node-3025">
+    <command xml:space="preserve">x dial</command>
+    <result xml:space="preserve">They showcase sun and lunar markings, allowing you to use the dial to read the time day and night.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3026"/>
+    </children>
+  </item>
+  <item nodeId="node-3026">
+    <command xml:space="preserve">wait until 4 am</command>
+    <result xml:space="preserve">It is four o'clock now.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3027"/>
+    </children>
+  </item>
+  <item nodeId="node-3027">
+    <command xml:space="preserve">wait until 12 pm</command>
+    <result xml:space="preserve">It is twelve o'clock now.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3028"/>
+    </children>
+  </item>
+  <item nodeId="node-3028">
+    <command xml:space="preserve">wait until 11 pm</command>
+    <result xml:space="preserve">It is eleven o'clock now.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3029"/>
+    </children>
+  </item>
+  <item nodeId="node-3029">
+    <command xml:space="preserve">wait until 12 pm</command>
+    <result xml:space="preserve">It is twelve o'clock now.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3030"/>
+    </children>
+  </item>
+  <item nodeId="node-3030">
+    <command xml:space="preserve">wait until 1 pm</command>
+    <result xml:space="preserve">It is one o'clock now.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3031"/>
+    </children>
+  </item>
+  <item nodeId="node-3031">
+    <command xml:space="preserve">scene</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3032"/>
+    </children>
+  </item>
+  <item nodeId="node-3032">
+    <command xml:space="preserve">scenes</command>
+    <result xml:space="preserve">Scene 'Entire Game' playing (for -533 mins now)&#x000A;Scene 'Day' playing (for 7 mins now)&#x000A;Scene 'Night' ended&#x000A;(Scene monitoring now switched on. Type "scenes off" to switch it off again.)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3033"/>
+    </children>
+  </item>
+  <item nodeId="node-3033">
+    <command xml:space="preserve">wait until 4 pm</command>
+    <result xml:space="preserve">It is four o'clock now.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3034"/>
+    </children>
+  </item>
+  <item nodeId="node-3034">
+    <command xml:space="preserve">scenes</command>
+    <result xml:space="preserve">Scene 'Entire Game' playing (for -532 mins now)&#x000A;Scene 'Day' playing (for 8 mins now)&#x000A;Scene 'Night' ended&#x000A;(Scene monitoring now switched on. Type "scenes off" to switch it off again.)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3035"/>
+    </children>
+  </item>
+  <item nodeId="node-3035">
+    <command xml:space="preserve">wait until 2 am</command>
+    <result xml:space="preserve">At ten past twelve you hear the sound of the moon hatch closing and the click of a latch locking coming from the dial.&#x000A;&#x000A;It is two o'clock now.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3036"/>
+    </children>
+  </item>
+  <item nodeId="node-3036">
+    <command xml:space="preserve">scenes</command>
+    <result xml:space="preserve">Scene 'Entire Game' playing (for -419 mins now)&#x000A;Scene 'Day' playing (for 121 mins now)&#x000A;Scene 'Night' ended&#x000A;(Scene monitoring now switched on. Type "scenes off" to switch it off again.)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-3216">
+    <command xml:space="preserve">wait 12 hours</command>
+    <result xml:space="preserve">At twelve o'clock  you hear the click of a latch releasing and a sun hatch opening coming from the dial.&#x000A;&#x000A;At ten past twelve you hear the sound of the sun hatch closing and the click of a latch locking coming from the dial.&#x000A;&#x000A;It is now around nine o'clock&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3217"/>
+    </children>
+  </item>
+  <item nodeId="node-3217">
+    <command xml:space="preserve">x sundial</command>
+    <result xml:space="preserve">The dial is designed with two separate rings encircling its plate, one with sun and one with lunar markings, allowing you to read the time day and night. You also see on the gnomon an inscription engraved and gilded in gold that says: At midday, let Apollo's light cast a shadow, and at midnight, let Artemis' glow guide the way. Only then shall the twins unveil the hidden path.&#x000A;&#x000A;Judging by the gnomon's shadow and the moon markings, the time is nine o'clock.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -13315,14 +13760,594 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
-  <item nodeId="node-1486">
-    <command xml:space="preserve">x sundial</command>
-    <result xml:space="preserve">You notice it has both sundial and moondial marks, so you can tell the time both with the help of the sun and the moon. You also see some words carved on its gnomon: At midday, let Apollo's light cast no shadow, and at midnight, let Artemis" glow guide the way. Only then shall the twins unveil the hidden path.&#x000A;&#x000A;Judging by the gnomon's shadow and the sun markings, the time is nine o'clock.&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-3223">
+    <command xml:space="preserve">x room</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
+      <child nodeId="node-3224"/>
+    </children>
+  </item>
+  <item nodeId="node-3224">
+    <command xml:space="preserve">x scenery</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3225"/>
+    </children>
+  </item>
+  <item nodeId="node-3225">
+    <command xml:space="preserve">x</command>
+    <result xml:space="preserve">What do you want to examine?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3226"/>
+    </children>
+  </item>
+  <item nodeId="node-3226">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying nothing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3227"/>
+    </children>
+  </item>
+  <item nodeId="node-3227">
+    <command xml:space="preserve">x sundial</command>
+    <result xml:space="preserve">The dial is designed with two separate rings encircling its plate, one with sun and one with lunar markings, allowing you to read the time day and night. You also see on the gnomon an inscription engraved and gilded in gold that says: At midday, let Apollo's light cast a shadow, and at midnight, let Artemis' glow guide the way. Only then shall the twins unveil the hidden path.&#x000A;&#x000A;Judging by the gnomon's shadow and the sun markings, the time is nine o'clock.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3228"/>
+    </children>
+  </item>
+  <item nodeId="node-3228">
+    <command xml:space="preserve">x sun ring</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3229"/>
+    </children>
+  </item>
+  <item nodeId="node-3229">
+    <command xml:space="preserve">take sundial</command>
+    <result xml:space="preserve">That's hardly portable.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3230"/>
+    </children>
+  </item>
+  <item nodeId="node-3230">
+    <command xml:space="preserve">smell sundial</command>
+    <result xml:space="preserve">It smells neutral.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3231"/>
+    </children>
+  </item>
+  <item nodeId="node-3231">
+    <command xml:space="preserve">x</command>
+    <result xml:space="preserve">What do you want to examine?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3232"/>
+    </children>
+  </item>
+  <item nodeId="node-3232">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Temple of the Aulidean Artemis&#x000A;Inside the Temple of the Aulidean Artemis you can see a sundial, the statue of Artemis and her sacrificial altar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3233"/>
+    </children>
+  </item>
+  <item nodeId="node-3233">
+    <command xml:space="preserve">x statue</command>
+    <result xml:space="preserve">On the base of the statue you can see two locks: one sun-shapped and one moon-shapped.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3234"/>
+    </children>
+  </item>
+  <item nodeId="node-3234">
+    <command xml:space="preserve">x sun lock</command>
+    <result xml:space="preserve">The sun lock is empty.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3235"/>
+    </children>
+  </item>
+  <item nodeId="node-3235">
+    <command xml:space="preserve">open sun lock</command>
+    <result xml:space="preserve">It isn't something you can open.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3236"/>
+    </children>
+  </item>
+  <item nodeId="node-3236">
+    <command xml:space="preserve">take sun key</command>
+    <result xml:space="preserve">Which do you mean, the sun lock or the sun pocket?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3237"/>
+    </children>
+  </item>
+  <item nodeId="node-3237">
+    <command xml:space="preserve">take sun pocket</command>
+    <result xml:space="preserve">That seems to be a part of the sundial.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3238"/>
+    </children>
+  </item>
+  <item nodeId="node-3238">
+    <command xml:space="preserve">open sun pocket</command>
+    <result xml:space="preserve">It isn't something you can open.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3239"/>
+    </children>
+  </item>
+  <item nodeId="node-3239">
+    <command xml:space="preserve">go in sun pocket</command>
+    <result xml:space="preserve">That's not something you can enter.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3240"/>
+    </children>
+  </item>
+  <item nodeId="node-3240">
+    <command xml:space="preserve">turn sun lock</command>
+    <result xml:space="preserve">It is fixed in place.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3241"/>
+    </children>
+  </item>
+  <item nodeId="node-3241">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Temple of the Aulidean Artemis&#x000A;Inside the Temple of the Aulidean Artemis you can see a sundial, the statue of Artemis and her sacrificial altar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3242"/>
+    </children>
+  </item>
+  <item nodeId="node-3242">
+    <command xml:space="preserve">x statue</command>
+    <result xml:space="preserve">On the base of the statue you can see two locks: one sun-shapped and one moon-shapped.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3243"/>
+    </children>
+  </item>
+  <item nodeId="node-3243">
+    <command xml:space="preserve">smell statue</command>
+    <result xml:space="preserve">It smells neutral.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3244"/>
+    </children>
+  </item>
+  <item nodeId="node-3244">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Temple of the Aulidean Artemis&#x000A;Inside the Temple of the Aulidean Artemis you can see a sundial, the statue of Artemis and her sacrificial altar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3245"/>
+    </children>
+  </item>
+  <item nodeId="node-3245">
+    <command xml:space="preserve">x altar</command>
+    <result xml:space="preserve">The altar of Artemis.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3246"/>
+    </children>
+  </item>
+  <item nodeId="node-3246">
+    <command xml:space="preserve">smell altar</command>
+    <result xml:space="preserve">It smells neutral.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3247"/>
+    </children>
+  </item>
+  <item nodeId="node-3247">
+    <command xml:space="preserve">x</command>
+    <result xml:space="preserve">What do you want to examine?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3248"/>
+    </children>
+  </item>
+  <item nodeId="node-3248">
+    <command xml:space="preserve">wait until 12</command>
+    <result xml:space="preserve">I only understood you as far as wanting to wait.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3249"/>
+    </children>
+  </item>
+  <item nodeId="node-3249">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3250"/>
+    </children>
+  </item>
+  <item nodeId="node-3250">
+    <command xml:space="preserve">help</command>
+    <result xml:space="preserve">Basic Commands&#x000A;&#x000A;1. Movement Commands:&#x000A;&#x000A;   &#x2022; Go [direction]: Move to another room. Example: "go north", "go in" or "enter", "out".&#x000A;   &#x2022; Directions include: north, south, east, west, northeast, northwest, southeast, southwest, up, and down.&#x000A;   &#x2022; You can also use the shortcuts n, s, e, w, ne, nw, se, sw, u and d.&#x000A;&#x000A;2. Interaction Commands:&#x000A;&#x000A;   &#x2022; Look: Examine your surroundings. Example: "look", "look around", "l".&#x000A;   &#x2022; Examine [object]: Inspect an item in detail. Example: "examine book", "x book".&#x000A;   &#x2022; Take [object]: Pick up an item. Example: "take key".&#x000A;   &#x2022; Drop [object]: Put down an item. Example: "drop book".&#x000A;   &#x2022; Put [object] on/in [object]: Put an item on top or inside another item. Example: "put flower in pot".&#x000A;   &#x2022; Open/Close [object]: Open or close something. Example: "open door", "close box".&#x000A;   &#x2022; Give [object] to [person]: Give an item to someone. Example: "give book to librarian".&#x000A;&#x000A;3. Conversation Commands:&#x000A;&#x000A;   &#x2022; Talk to [person]: Initiate conversation. Example: "talk to librarian".&#x000A;   &#x2022; Ask [person] about [topic]: Ask someone about something specific. Example: "ask librarian about book".&#x000A;   &#x2022; Tell [person] about [topic]: Tell someone about a topic. Example: "tell librarian about secret".&#x000A;&#x000A;4. Miscellaneous Commands:&#x000A;&#x000A;   &#x2022; Inventory: See what you're carrying. Example: "inventory", "i".&#x000A;   &#x2022; Wait: Pass time. Example: "wait".&#x000A;   &#x2022; Save/Restore/Quit: Manage your game. Example: "save", "restore", "quit".&#x000A;&#x000A;5. Game-Specific Commands:&#x000A;&#x000A;   &#x2022; &#x000A;&#x000A;You can also combine commands with objects and people, such as "take book and give it to librarian".&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3251"/>
+    </children>
+  </item>
+  <item nodeId="node-3251">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Temple of the Aulidean Artemis&#x000A;Inside the Temple of the Aulidean Artemis you can see a sundial, the statue of Artemis and her sacrificial altar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3252"/>
+    </children>
+  </item>
+  <item nodeId="node-3252">
+    <command xml:space="preserve">time</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3253"/>
+    </children>
+  </item>
+  <item nodeId="node-3253">
+    <command xml:space="preserve">x gnomon</command>
+    <result xml:space="preserve">On the gnomon, an inscription engraved and gilded in gold says: At midday, let Apollo's light cast no shadow, and at midnight, let Artemis' glow guide the way. Only then shall the twins unveil the hidden path.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3254"/>
+    </children>
+  </item>
+  <item nodeId="node-3254">
+    <command xml:space="preserve">x sundial</command>
+    <result xml:space="preserve">The inscription engraved on the gnomon read: At midday, let Apollo's light cast no shadow, and at midnight, let Artemis' glow guide the way. Only then shall the twins unveil the hidden path.&#x000A;&#x000A;Judging by the gnomon's shadow and the sun markings, the time is twenty past nine.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3255"/>
+    </children>
+  </item>
+  <item nodeId="node-3255">
+    <command xml:space="preserve">wait for 2 hours and 40 minutes</command>
+    <result xml:space="preserve">I only understood you as far as wanting to wait for that.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3256"/>
+    </children>
+  </item>
+  <item nodeId="node-3256">
+    <command xml:space="preserve">wait for 40 minutes</command>
+    <result xml:space="preserve">It is now around ten o'clock&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3257"/>
+    </children>
+  </item>
+  <item nodeId="node-3257">
+    <command xml:space="preserve">wait for 2 hours</command>
+    <result xml:space="preserve">At twelve o'clock  you hear the click of a latch releasing and a sun hatch opening coming from the dial.&#x000A;&#x000A;It is now around twelve o'clock&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3258"/>
+    </children>
+  </item>
+  <item nodeId="node-3258">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3259"/>
+    </children>
+  </item>
+  <item nodeId="node-3259">
+    <command xml:space="preserve">x sun dial</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3260"/>
+    </children>
+  </item>
+  <item nodeId="node-3260">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Temple of the Aulidean Artemis&#x000A;Inside the Temple of the Aulidean Artemis you can see a sundial, the statue of Artemis and her sacrificial altar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3261"/>
+    </children>
+  </item>
+  <item nodeId="node-3261">
+    <command xml:space="preserve">x sundial</command>
+    <result xml:space="preserve">The inscription engraved on the gnomon read: At midday, let Apollo's light cast no shadow, and at midnight, let Artemis' glow guide the way. Only then shall the twins unveil the hidden path.&#x000A;&#x000A;Judging by the gnomon's shadow and the sun markings, the time is five past twelve.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3262"/>
+    </children>
+  </item>
+  <item nodeId="node-3262">
+    <command xml:space="preserve">x sun hatch</command>
+    <result xml:space="preserve">The sun hatch is open. Inside you can see a sun key.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3263"/>
+    </children>
+  </item>
+  <item nodeId="node-3263">
+    <command xml:space="preserve">take sun key</command>
+    <result xml:space="preserve">You picked up a sun key.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3264"/>
+    </children>
+  </item>
+  <item nodeId="node-3264">
+    <command xml:space="preserve">wait for 12 hours</command>
+    <result xml:space="preserve">At ten past twelve you hear the sound of the sun hatch closing and the click of a latch locking coming from the dial.&#x000A;&#x000A;&#x000A;The day passes and a new day is dawing...&#x000A;&#x000A;At twelve o'clock you hear the click of a latch releasing and a moon hatch opening coming from the dial.&#x000A;&#x000A;It is now around twelve o'clock&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3265"/>
+    </children>
+  </item>
+  <item nodeId="node-3265">
+    <command xml:space="preserve">x moon hatch</command>
+    <result xml:space="preserve">The moon hatch is open. Inside you can see a moon key.&#x000A;&#x000A;At ten past twelve you hear the sound of the moon hatch closing and the click of a latch locking coming from the dial.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3266"/>
+    </children>
+  </item>
+  <item nodeId="node-3266">
+    <command xml:space="preserve">wait for 24 hours</command>
+    <result xml:space="preserve">You really don't feel like waiting around that long. Maybe you should sleep instead.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3267"/>
+    </children>
+  </item>
+  <item nodeId="node-3267">
+    <command xml:space="preserve">sleep for 24 hours</command>
+    <result xml:space="preserve">I only understood you as far as wanting to sleep.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3268"/>
+    </children>
+  </item>
+  <item nodeId="node-3268">
+    <command xml:space="preserve">sleep</command>
+    <result xml:space="preserve">You slept until morning.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3269"/>
+    </children>
+  </item>
+  <item nodeId="node-3269">
+    <command xml:space="preserve">x sundial</command>
+    <result xml:space="preserve">The inscription engraved on the gnomon read: At midday, let Apollo's light cast no shadow, and at midnight, let Artemis' glow guide the way. Only then shall the twins unveil the hidden path.&#x000A;&#x000A;Judging by the gnomon's shadow and the sun markings, the time is nine o'clock.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3270"/>
+    </children>
+  </item>
+  <item nodeId="node-3270">
+    <command xml:space="preserve">wait for 15 hours</command>
+    <result xml:space="preserve">You really don't feel like waiting around that long. Maybe you should sleep instead.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3271"/>
+    </children>
+  </item>
+  <item nodeId="node-3271">
+    <command xml:space="preserve">wait for 12 hours</command>
+    <result xml:space="preserve">At twelve o'clock  you hear the click of a latch releasing and a sun hatch opening coming from the dial.&#x000A;&#x000A;At ten past twelve you hear the sound of the sun hatch closing and the click of a latch locking coming from the dial.&#x000A;&#x000A;It is now around nine o'clock&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3272"/>
+    </children>
+  </item>
+  <item nodeId="node-3272">
+    <command xml:space="preserve">wait for 3 hours</command>
+    <result xml:space="preserve">It is now around twelve o'clock&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3273"/>
+    </children>
+  </item>
+  <item nodeId="node-3273">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3274"/>
+    </children>
+  </item>
+  <item nodeId="node-3274">
+    <command xml:space="preserve">x sundial</command>
+    <result xml:space="preserve">The inscription engraved on the gnomon read: At midday, let Apollo's light cast no shadow, and at midnight, let Artemis' glow guide the way. Only then shall the twins unveil the hidden path.&#x000A;&#x000A;Judging by the gnomon's shadow and the moon markings, the time is five past twelve.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3275"/>
+    </children>
+  </item>
+  <item nodeId="node-3275">
+    <command xml:space="preserve">x sundial</command>
+    <result xml:space="preserve">The inscription engraved on the gnomon read: At midday, let Apollo's light cast no shadow, and at midnight, let Artemis' glow guide the way. Only then shall the twins unveil the hidden path.&#x000A;&#x000A;Judging by the gnomon's shadow and the moon markings, the time is five past twelve.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3276"/>
+    </children>
+  </item>
+  <item nodeId="node-3276">
+    <command xml:space="preserve">wait 4 minutes</command>
+    <result xml:space="preserve">It is now around twelve o'clock&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3277"/>
+    </children>
+  </item>
+  <item nodeId="node-3277">
+    <command xml:space="preserve">wait 10 minutes</command>
+    <result xml:space="preserve">It is now around half past twelve&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1486">
+    <command xml:space="preserve">x sundial</command>
+    <result xml:space="preserve">The dial is designed with two separate rings encircling its plate, one with sun and one with lunar markings, allowing you to read the time day and night. You also see on the gnomon an inscription engraved and gilded in gold that says: At midday, let Apollo's light cast a shadow, and at midnight, let Artemis' glow guide the way. Only then shall the twins unveil the hidden path.&#x000A;&#x000A;Judging by the gnomon's shadow and the moon markings, the time is twelve o'clock.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3055"/>
       <child nodeId="node-1487"/>
     </children>
+  </item>
+  <item nodeId="node-3055">
+    <command xml:space="preserve">wait until 7 pm</command>
+    <result xml:space="preserve">It is seven o'clock now.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3056"/>
+    </children>
+  </item>
+  <item nodeId="node-3056">
+    <command xml:space="preserve">wait until 11 pm</command>
+    <result xml:space="preserve">It is eleven o'clock now.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3057"/>
+    </children>
+  </item>
+  <item nodeId="node-3057">
+    <command xml:space="preserve">wait until 3 am</command>
+    <result xml:space="preserve">At ten past twelve you hear the sound of the moon hatch closing and the click of a latch locking coming from the dial.&#x000A;&#x000A;It is three o'clock now.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3058"/>
+    </children>
+  </item>
+  <item nodeId="node-3058">
+    <command xml:space="preserve">x moon latch</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3059"/>
+    </children>
+  </item>
+  <item nodeId="node-3059">
+    <command xml:space="preserve">x hatch</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3060"/>
+    </children>
+  </item>
+  <item nodeId="node-3060">
+    <command xml:space="preserve">x moon hatch</command>
+    <result xml:space="preserve">The moon hatch is closed.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3061"/>
+    </children>
+  </item>
+  <item nodeId="node-3061">
+    <command xml:space="preserve">wait until midday</command>
+    <result xml:space="preserve">It is twelve o'clock now.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3062"/>
+    </children>
+  </item>
+  <item nodeId="node-3062">
+    <command xml:space="preserve">scenes</command>
+    <result xml:space="preserve">Scene 'Entire Game' playing (for -357 mins now)&#x000A;Scene 'Day' playing (for -357 mins now)&#x000A;(Scene monitoring now switched on. Type "scenes off" to switch it off again.)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3063"/>
+    </children>
+  </item>
+  <item nodeId="node-3063">
+    <command xml:space="preserve">x sun latch</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3064"/>
+    </children>
+  </item>
+  <item nodeId="node-3064">
+    <command xml:space="preserve">x sun pocket</command>
+    <result xml:space="preserve">The sun hatch is closed.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-1487">
     <command xml:space="preserve">x statue</command>
@@ -16670,13 +17695,14 @@
   </item>
   <item nodeId="node-1833">
     <command xml:space="preserve">scenes</command>
-    <result xml:space="preserve">Scene 'Entire Game' playing (for 0 mins now)&#x000A;Scene 'Kadmea Puzzle Scene' playing (for 0 mins now)&#x000A;(Scene monitoring now switched on. Type "scenes off" to switch it off again.)&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Scene 'Entire Game' playing (for 0 mins now)&#x000A;Scene 'Day' playing (for 0 mins now)&#x000A;(Scene monitoring now switched on. Type "scenes off" to switch it off again.)&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-1834"/>
       <child nodeId="node-1837"/>
       <child nodeId="node-1847"/>
+      <child nodeId="node-3037"/>
     </children>
   </item>
   <item nodeId="node-1834">
@@ -16863,6 +17889,57 @@
   <item nodeId="node-1855">
     <command xml:space="preserve">l</command>
     <result xml:space="preserve">[looking]&#x000A;Palace of Kadmos&#x000A;You can see a scale, a dragon statue, an altar, a sacrificial plate, some armchairs, a side table with a rock on top, some wall paintings, and a gate with a smaller scale on its right.&#x000A;&#x000A;[looking - succeeded]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-3037">
+    <command xml:space="preserve">wait until 4</command>
+    <result xml:space="preserve">It is four o'clock now.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3038"/>
+    </children>
+  </item>
+  <item nodeId="node-3038">
+    <command xml:space="preserve">scenes</command>
+    <result xml:space="preserve">Scene 'Entire Game' playing (for 1 mins now)&#x000A;Scene 'Day' playing (for 1 mins now)&#x000A;(Scene monitoring now switched on. Type "scenes off" to switch it off again.)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3039"/>
+    </children>
+  </item>
+  <item nodeId="node-3039">
+    <command xml:space="preserve">wait until 10 pm</command>
+    <result xml:space="preserve">[Scene 'Day' ends]&#x000A;[Scene 'Night' begins]&#x000A;It is ten o'clock now.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3040"/>
+    </children>
+  </item>
+  <item nodeId="node-3040">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">sounio beach&#x000A;Description of Sounio beach. You see some nereides fighting. Poseidon's temple is in the sea.&#x000A;&#x000A;The city of Sounio is on the west.&#x000A;&#x000A;You can see some nereides, Aktaia, Erato, Ploto and an angry nereida here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3041"/>
+    </children>
+  </item>
+  <item nodeId="node-3041">
+    <command xml:space="preserve">wait until midnight</command>
+    <result xml:space="preserve">[Scene 'Night' ends]&#x000A;The day passes.&#x000A;[Scene 'Day' begins]&#x000A;&#x000A;It is twelve o'clock now.&#x000A;&#x000A;At twelve o'clock you hear the click of a latch releasing and a moon hatch opening coming from the dial.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3042"/>
+    </children>
+  </item>
+  <item nodeId="node-3042">
+    <command xml:space="preserve">scenes</command>
+    <result xml:space="preserve">Scene 'Entire Game' playing (for -539 mins now)&#x000A;Scene 'Day' playing (for 1 mins now)&#x000A;Scene 'Night' ended&#x000A;(Scene monitoring now switched on. Type "scenes off" to switch it off again.)&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -23133,6 +24210,97 @@
   <item nodeId="node-2580">
     <command xml:space="preserve">wait until 12</command>
     <result xml:space="preserve">It is 12:00 pm now.&#x000A;&#x000A;You notice that the sun pocket open.&#x000A;&#x000A;You hear the sound of the sun pocket opening.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-3218">
+    <command xml:space="preserve">wait 12 hours</command>
+    <result xml:space="preserve">At twelve o'clock  you hear the click of a latch releasing and a sun hatch opening coming from the dial.&#x000A;&#x000A;&#x000A;At ten past twelve you hear the sound of the sun hatch closing and the click of a latch locking coming from the dial.&#x000A;&#x000A;It is now around nine o'clock&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3219"/>
+    </children>
+  </item>
+  <item nodeId="node-3219">
+    <command xml:space="preserve">wait 12 hours</command>
+    <result xml:space="preserve">The day passes and a new day is dawing...&#x000A;&#x000A;&#x000A;At twelve o'clock you hear the click of a latch releasing and a moon hatch opening coming from the dial.&#x000A;&#x000A;&#x000A;At ten past twelve you hear the sound of the moon hatch closing and the click of a latch locking coming from the dial.&#x000A;&#x000A;It is now around nine o'clock&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3278"/>
+      <child nodeId="node-3220"/>
+    </children>
+  </item>
+  <item nodeId="node-3278">
+    <command xml:space="preserve">sleep</command>
+    <result xml:space="preserve">You slept until morning.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3279"/>
+    </children>
+  </item>
+  <item nodeId="node-3279">
+    <command xml:space="preserve">wait 12 hours</command>
+    <result xml:space="preserve">At twelve o'clock  you hear the click of a latch releasing and a sun hatch opening coming from the dial.&#x000A;&#x000A;&#x000A;At ten past twelve you hear the sound of the sun hatch closing and the click of a latch locking coming from the dial.&#x000A;&#x000A;It is now around nine o'clock&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3280"/>
+    </children>
+  </item>
+  <item nodeId="node-3280">
+    <command xml:space="preserve">wait 3 hours</command>
+    <result xml:space="preserve">The day passes and a new day is dawing...&#x000A;&#x000A;&#x000A;At twelve o'clock you hear the click of a latch releasing and a moon hatch opening coming from the dial.&#x000A;&#x000A;It is now around twelve o'clock&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-3220">
+    <command xml:space="preserve">wait 12 hours</command>
+    <result xml:space="preserve">At twelve o'clock  you hear the click of a latch releasing and a sun hatch opening coming from the dial.&#x000A;&#x000A;At ten past twelve you hear the sound of the sun hatch closing and the click of a latch locking coming from the dial.&#x000A;&#x000A;It is now around nine o'clock&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3221"/>
+    </children>
+  </item>
+  <item nodeId="node-3221">
+    <command xml:space="preserve">get out</command>
+    <result xml:space="preserve">Agora of Aulis&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3222"/>
+    </children>
+  </item>
+  <item nodeId="node-3222">
+    <command xml:space="preserve">wait 12 hours</command>
+    <result xml:space="preserve">At twelve o'clock you hear the click of a latch releasing and a moon hatch opening coming from the dial.&#x000A;&#x000A;At ten past twelve you hear the sound of the moon hatch closing and the click of a latch locking coming from the dial.&#x000A;&#x000A;It is now around nine o'clock&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-3281">
+    <command xml:space="preserve">wait 3 hours</command>
+    <result xml:space="preserve">It is now around early morning&#x000A;&#x000A;At twelve o'clock  you hear the click of a latch releasing and a sun hatch opening coming from the dial.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3282"/>
+    </children>
+  </item>
+  <item nodeId="node-3282">
+    <command xml:space="preserve">x dial</command>
+    <result xml:space="preserve">(the sundial)&#x000A;The dial is designed with two separate rings encircling its plate, one with sun and one with lunar markings, allowing you to read the time day and night. You also see on the gnomon an inscription engraved and gilded in gold that says: At midday, let Apollo's light cast a shadow, and at midnight, let Artemis' glow guide the way. Only then shall the twins unveil the hidden path.&#x000A;&#x000A;Judging by the gnomon's shadow and the sun markings, the time is twelve o'clock.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3283"/>
+    </children>
+  </item>
+  <item nodeId="node-3283">
+    <command xml:space="preserve">wait 5 hours</command>
+    <result xml:space="preserve">At ten past twelve you hear the sound of the sun hatch closing and the click of a latch locking coming from the dial.&#x000A;&#x000A;It is now around early morning&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
