@@ -19,6 +19,8 @@ Chapter 0.00 - TODOs | TBDs
 [TODO: go to -> try travel/sail/go in]
 [TODO: put random buildings inside cities]
 [TODO: talk action]
+[TODO: sitting action]
+[TODO: kadmea mapping hell]
 
 
 Chapter 0.0 - Regions
@@ -108,7 +110,7 @@ Instead of examining obols:
 Chapter 0.21 - Variables
 
 [Chapter 1 - Athena & Ares]
-ThebesTemplePuzzleSolved is a truth state that varies. ThebesTemplePuzzleSolved is false. [if player solved Kadmea puzzle or not]
+ThebesTemplePuzzleSolved is a truth state that varies. ThebesTemplePuzzleSolved is false. [if player solved Kadmos Palace puzzle or not]
 
 
 [Chapter 2 - Demeter & Poseidon]
@@ -160,8 +162,7 @@ The block giving rule is not listed in any rulebook.
 [talking]
 
 [going to]
-Instead of going to an outroom: [TODO: You can't see any such thing. bug]
-	try silently entering the noun.
+
 
 [giving nectar to person]
 
@@ -253,7 +254,7 @@ Mount Olympus Hall is a room.
 
 [Items in the room]
 
-The Heracles' Club is a thing in Mount Olympus Hall. It is undescribed. 
+The Heracles' Club is a thing in Mount Olympus Hall. It is undescribed. [The indefinite article is "the".] [TODO: check]
 
 
 [Characters in the room]
@@ -480,36 +481,73 @@ Chapter 1- Athena & Ares
 
 [region: Thebes]
 
-[Start Of: Kadmea]
+[Start Of: Palace of Kadmos]
 [rooms]
+Kadmea is a room in Thebes. 
 
-Kadmea is a room in Thebes. "on the walls you can see the story of Kadmos, who slayed the Dragon of Ismenus and burried his teeth for the Spartoi to sprink from the ground. In front of you is a stone dragon statue, and a big chess board with some chess pieces already on top. You can see a sacrificial plate on top of the altar. The dvgate has a sign on it." [TODO: fix the mapping/name of room]
+Kadmea Puzzle Scene is a scene. Kadmea Puzzle Scene begins when the player is in Palace of Kadmos for the first time. Kadmea Puzzle Scene ends when Divine Cell 1 is visited.
+
+The Palace of Kadmos [apothikh]is a room in Thebes. "You can see a scale, a dragon statue, an altar, a sacrificial plate, some armchairs, a side table with a rock on top, some wall paintings, and a gate with a smaller scale on its right." [TODO: fix the mapping/name of room]
 Divine Cell 1 is a room in Thebes. 
 
-[The player is in Kadmea.]
+Instead of looking for the first time:
+	If the player is in Palace of Kadmos:
+		say "You step into the sideroom of the Palace of Kadmea. Although the space is modest in size and somewhat confined, it radiates a sense of luxury. The walls are decorated with exquisite paintings that seem to tell stories of gods and heroes, and the room is furnished with plush, silky red armchairs that invite one to rest, and a finely crafted hardwood side table with a medium-sized shiny rock on top, all hinting at the luxury that befits a royal palace spare room.
+
+As you take in your surroundings, your attention is immediately drawn to the large scale that dominates the center of the circular room. Before this scale rests a small altar, upon which an empty sacrificial plate has been placed, as if waiting to receive an offering.
+
+Directly across from where you entered, you notice a hardwood gate. To the right of the gate is a smaller scale, delicately constructed, with six small pans evenly spaced along its length. The small scale is intricately connected to a metal rod, which appears to serve as a locking mechanism for the gate. To the left of the gate stands a statue of a dragon, its serpentine form rising up to your waist, and its head flattened, as a shelf of some kind. Directly above the gate you find an inscription chiseled into the stone.";
+		stop the action.
+		
+
+
+The player is in Palace of Kadmos.
 
 [doors]
 
-The dvgate is down of Kadmea and up of divine cell 1. The dvgate is a locked openable door. [TODO: It is a scenery.] The dvgate is down from the Kadmea and up from divine cell 1. [TODO: change name of dvgate]
+The dragon gate is down of the Palace of Kadmos and up of divine cell 1. The dragon gate is a locked openable door. It is a scenery. The dragon gate is down from the Palace of Kadmos and up from divine cell 1.
+
+When Kadmea Puzzle Scene ends:
+	now the dragon gate is open;
+	now the dragon gate is not openable.
 
 
-A dvsign is part of the dvgate. The description of the dvsign is "It says: The key to passage lies from the lightest touch to the heaviest step.".
+A inscription is part of the dragon gate. The description of the inscription is "The inscription reads: The key to passage lies from the lightest touch to the heaviest step.".
 
 [items]
 
-Understand "statue" as dragon statue when the player is in Kadmea.
-Understand "sign" as dvsign when the player is in Kadmea.
-Understand "gate" as dvgate when the player is in Kadmea.
+Understand "statue" as dragon statue when the player is in Palace of Kadmos.
+Understand "sign" as inscription when the player is in Palace of Kadmos.
+Understand "gate" as dragon gate when the player is in Palace of Kadmos.
+Understand "walls" or "wall"  as paintings when the player is in Palace of Kadmos.
 
-A rock is a thing in the Kadmea. [TODO: it is undescribed.]
+A side table is in Palace of Kadmos. It is undescribed.
+A rock is on the side table. It is undescribed.
+Armchairs is in Palace of Kadmos. It is undescribed.
 
-The walls is a thing in Kadmea. It is fixed in place.The description of the walls is "On the temple walls, the legendary tale of Cadmus is immortalized: he bravely confronts the fearsome Dragon of Ismenus, guardian of Ares' sacred spring, slaying the beast with a rock on the head. After sacrificing to Athena, guided by her wisdom, he buries the dragon’s teeth into the earth, from which arise the Spartoi—warriors born from the dragon’s teeth, who soon battle amongst themselves.".
+Instead of examining the armchairs:
+	say "They're made of fine red silk. They look very soft.";
+	stop the action.
+	
+Instead of examining the side table:
+	say "A hardwood side table.[If the rock is on the table][line break]There is a shiny rock on it.[end if]";
+	stop the action.
+	
+Instead of examining the rock:
+	say "A medium-sized polished rock. Looks like limestone. ";
+	stop the action.
 
-Α dragon statue is a thing in the Kadmea. It is fixed in place. [TODO: It is undescribed.] 
+The paintings is a thing in Palace of Kadmos. It is undescribed. It is fixed in place.
 
-The dragon head is part of the dragon statue. The dragon head is a supporter. [It is undescribed.] [TODO: if rock on dragon head, dragon mouth is open]
+Instead of examining the paintings:
+	say "On the walls you see the legendary tale of Kadmos immortalized in 4 paintings. In the first, he bravely confronts the fearsome Dragon of Ismenus, guardian of Ares[apostrophe] sacred spring, slaying the beast with a rock on the head. In the second, you can see him sacrificing the dragon's parts to Athena. In the third one, guided by Athena's wisdom, he buries the dragon’s teeth into the earth, from which arise the Spartoi—warriors born from the dragon’s teeth, who then, in the fourth painting, battle amongst themselves. The paintings seem to be parts of a set, titled 'The creation of Thebes'.";
+	stop the action.
 
-A dragon mouth is part of the dragon statue. The  dragon mouth is an unopenable closed  container. [TODO: a lot of understand as]
+Α dragon statue is  in the Palace of Kadmos. It is fixed in place.  It is undescribed.
+
+The dragon head is part of the dragon statue. The dragon head is a supporter. Ιt is undescribed. 
+
+A dragon mouth is part of the dragon statue. The  dragon mouth is an unopenable closed  container. 
 
 A dragon tooth is a kind of seed. The plural of dragon tooth is dragon teeth. There are 6 dragon teeth inside the dragon mouth. [TODO: instead of for taking more teeth than they exist]
 
@@ -521,40 +559,52 @@ Every turn:
 
 Every turn:
 	If the dragon mouth is open for the first turn:
-		say "The statue's mouth opened.";
+		say "You hear the sound of stone grinding against stone. The dragon statue's mouth opened.";
 		now the dragon mouth is open;
 	otherwise if the dragon mouth is closed for the first turn:
-		say "The statue's mouth closed";
-		now the dragon mouth  is closed;
+		say "You hear again the sound of stone grinding against stone. The dragon statue's mouth closed.";
+		now the dragon mouth is closed;
 
 Instead of examining the dragon statue:
+	say "A small statue depicting a dragon. It is masterfully sculpted, with meticulous attention evident in every detail. Each scale is rendered with such precision that they appear almost lifelike, giving the dragon a sense of realism. ";
 	if there are seeds inside the mouth:
-		say "[If the dragon mouth is open] You see [number of seeds inside the dragon mouth] tooth inside the statue's mouth.[otherwise]The statue's mouth is closed.";
+		say "[If the dragon mouth is open][line break][line break] You see [number of seeds inside the dragon mouth] tooth inside the statue's mouth.[otherwise][line break][line break]The statue's mouth is closed."; [TODO: fix tooth singular]
 		stop the action;
 	otherwise:
-		say "[If the dragon mouth is open] There are no more teeth left in the statue's mouth.[otherwise]The statue's mouth is closed.";
+		say "[If the dragon mouth is open][line break][line break]There are no more teeth left in the statue's mouth.[otherwise][line break][line break]The statue's mouth is closed.";
 		stop the action.
 
 [the player must put the teeth in a sacrificial plate on top of the altar and then a compartment of the altar opens, supplying the player with weights]
 
-A Kadmea altar is in the Kadmea. It is fixed in place. [TODO: It is undescribed.]
-A sacrificial plate is on the Kadmea altar. It is an open transparent unopenable container. It is fixed in place.[TODO: It is undescribed.]
-A compartment is part of the Kadmea altar. It is a closed unopenable container. [TODO: It is undescribed.]
+A Kadmea altar is in the Palace of Kadmos. It is fixed in place. It is undescribed.
+A sacrificial plate is on the Kadmea altar. It is an open transparent unopenable container. It is fixed in place. It is undescribed.
+A compartment is part of the Kadmea altar. It is a closed unopenable container.  It is undescribed.
 
-A weight1 is a weight. It is in the compartment. The mass of weight1 is 1dr. The description of weight1 is "An owl". [TODO: make the descriptions, 3 of ares 3 of athena]
-A weight2 is a weight. It is in the compartment. The mass of weight2 is 2dr.
-A weight3 is a weight. It is in the compartment. The mass of weight3 is 3dr.
-A weight4 is a weight. It is in the compartment. The mass of weight4 is 4dr.
-A weight5 is a weight. It is in the compartment. The mass of weight5 is 5dr.
-A weight6 is a weight. It is in the compartment. The mass of weight6 is 6dr.
+An owl weight is a weight. It is in the compartment. The mass of owl weight is 1dr. The description is "A bronze weight with the shape of an owl.". 
+A shield weight is a weight. It is in the compartment. The mass of shield weight is 4dr.The description is "A bronze weight with the shape of a shield.". 
+A spear weight is a weight. It is in the compartment. The mass of spear weight is 5dr.The description  is "A bronze weight with the shape of a spear.". 
+A snake weight is a weight. It is in the compartment. The mass of snake weight is 2dr.The description  is "A bronze weight with the shape of a snake.". 
+A sword weight is a weight. It is in the compartment. The mass of sword weight is 3dr.The description  is "A bronze weight with the shape of a sword.". 
+A horse weight is a weight. It is in the compartment. The mass of horse weight is 6dr.The description is "A bronze weight with the shape of a horse.". 
 
+A small scale is in Palace of Kadmos. It is undescribed.
 
-A pan1 is in Kadmea. It is fixed in place. It is a supporter. [It is undescribed.] [locking mechanism]
-A pan2 is in Kadmea. It is fixed in place. It is a supporter. [It is undescribed.]
-A pan3 is in Kadmea. It is fixed in place.It is a supporter.  [It is undescribed.]
-A pan4 is in Kadmea.It is fixed in place. It is a supporter. [It is undescribed.]
-A pan5 is in Kadmea.It is fixed in place. It is a supporter. [It is undescribed.]
-A pan6 is in Kadmea. It is fixed in place. It is a supporter. [It is undescribed.]
+Instead of examining the small scale:
+	say "The small scale has 6 pans. It is connected to a metal rod, which appears to serve as a locking mechanism for the gate. ";
+	stop the action.
+A first pan is part of the small scale. It is fixed in place. It is a supporter. It is undescribed.
+A second pan is part of the small scale. It is fixed in place. It is a supporter. It is undescribed. It is part of the small scale.
+A third pan is part of the small scale. It is fixed in place.It is a supporter.  It is undescribed. It is part of the small scale.
+A fourth pan is part of the small scale.It is fixed in place. It is a supporter. It is undescribed. It is part of the small scale.
+A fifth pan is part of the small scale.It is fixed in place. It is a supporter. It is undescribed. It is part of the small scale.
+A sixth pan is part of the small scale. It is fixed in place. It is a supporter. It is undescribed. It is part of the small scale.
+
+Understand "1st pan" as first pan when the player is in Palace of Kadmos.
+Understand "2nd pan" as second pan when the player is in Palace of Kadmos.
+Understand "3rd pan" as third pan when the player is in Palace of Kadmos.
+Understand "4th pan" as fourth pan when the player is in Palace of Kadmos.
+Understand "5th pan" as fifth pan when the player is in Palace of Kadmos.
+Understand "6th pan" as sixth pan when the player is in Palace of Kadmos.
 
 Every turn:
 	If there are 6 seeds in the sacrificial plate:
@@ -562,10 +612,10 @@ Every turn:
 		now everything enclosed by sacrificial plate is nowhere;
 		now the compartment is open.
 		
-A scale is a thing in the Kadmea. It is fixed in place. A scale has a scale-state.[TODO: It is undescribed.]
+A scale is in the Palace of Kadmos. It is fixed in place. A scale has a scale-state. It is undescribed.
 
-A left pan is part of the scale. It is a supporter. [TODO: It is undescribed.] [TODO: both on and in to work]
-A right pan is part of the scale. It is a supporter.[TODO: It is undescribed.]
+A left pan is part of the scale. It is a supporter.  It is undescribed.
+A right pan is part of the scale. It is a supporter.It is undescribed.
 
 
 Scale-state is a kind of value. The scale-states are left-leaning, right-leaning, and centered.
@@ -575,57 +625,55 @@ To decide what scale-state is --/a/the scale-state of (S - the scale):
 	if the total mass of weights on the right pan is greater than the total mass of weights on the left pan, decide on right-leaning;
 	decide on centered.
 	
-The description of the scale is "The scale is currently [scale-state of the scale].".
+The description of the scale is " On the scale you can see two pans, the left pan and the right pan. The scale is currently [scale-state of the scale].".
 [solution]
 
-Every turn:
-	If a weight1 is on pan1 and
-	a weight2 is on pan2 and
-	a weight3 is on pan3 and
-	a weight4 is on pan4 and
-	a weight5 is on pan5 and
-	a weight6 is on pan6:
+Every turn during Kadmea Puzzle Scene:
+	If an owl weight is on first pan and
+	a snake weight is on second pan and
+	a sword weight is on third pan and
+	a shield weight is on fourth pan and
+	a spear weight is on fifth pan and
+	a horse weight is on sixth pan:
 		now ThebesTemplePuzzleSolved is true;
 	otherwise:
 		now ThebesTemplePuzzleSolved is false.
 		
 [gate open]
 
-Instead of examining the dvgate:
-	if ThebesTemplePuzzleSolved is true and the dvgate is closed:
+Instead of examining the dragon gate during Kadmea Puzzle Scene:
+	if ThebesTemplePuzzleSolved is true and the dragon gate is closed:
 		say "The gate is now unlocked.";
-		try opening the dvgate;
-	otherwise if ThebesTemplePuzzleSolved is false and the dvgate is closed:
+	otherwise if ThebesTemplePuzzleSolved is false and the dragon gate is closed:
 		say "The gate is locked.";
 	otherwise:
 		say "The gate is open.".
 		
 		
-Instead of going in the dvgate :
-	if ThebesTemplePuzzleSolved is true and the dvgate is closed:
-		say "The gate is now unlocked.";
-		try entering the dvgate ;
-	otherwise if ThebesTemplePuzzleSolved is false and the dvgate is closed:
+Instead of going in the dragon gate during Kadmea Puzzle Scene :
+	 if ThebesTemplePuzzleSolved is false and the dragon gate is closed:
 		say "The gate is locked.";
+		stop the action;
 	otherwise:
-		try silently entering dvgate.
+		continue the action.
+	
 
-Every turn:
-	If ThebesTemplePuzzleSolved is true for the first turn and the dvgate is closed:
+Every turn during Kadmea Puzzle Scene:
+	If ThebesTemplePuzzleSolved is true for the first turn and the dragon gate is closed:
 		say "You hear the sound of the gate mechanism unlocking";
-		now the dvgate  is unlocked;
-	otherwise if ThebesTemplePuzzleSolved is false for the first turn and the dvgate is closed:
+		now the dragon gate  is unlocked;
+	otherwise if ThebesTemplePuzzleSolved is false for the first turn and the dragon gate is closed:
 		say "You hear the sound of the gate mechanism locking.";
-		now the dvgate is locked;
-	otherwise if ThebesTemplePuzzleSolved is true for the first turn and the dvgate is open:
+		now the dragon gate is locked;
+	otherwise if ThebesTemplePuzzleSolved is true for the first turn and the dragon gate is open:
 		say "You hear the sound of the gate mechanism unlocking, but the door is already open";
-	otherwise if ThebesTemplePuzzleSolved is false for the first turn and the dvgate is open:
+	otherwise if ThebesTemplePuzzleSolved is false for the first turn and the dragon gate is open:
 		say "You hear the sound of the gate mechanism locking, but the door is already open.";
 		
-test cad with "x dragon statue/ put rock on dragon head/ x dragon statue/ take 6 dragon teeth/ put 6 dragon teeth in the plate ".
-test gate with "take weights/put weight1 on pan1/put weight2 on pan2/put weight3 on pan3/put weight4 on pan4/put weight5 on pan5/put weight6 on pan6".
+test getweights with "x dragon statue/ put rock on dragon head/ x dragon statue/ take 6 dragon teeth/ put 6 dragon teeth in the plate ".
+test dragongate with "take weights/put owl weight on first pan/put snake weight on second pan/put sword weight on third pan/put shield weight on 4th pan/put spear weight on 5th pan/put horse on 6th pan".
 
-[End Of: Kadmea]
+[End Of: Palace of Kadmos]
 
 Chapter 2 - Demeter & Poseidon 
 
@@ -1148,8 +1196,8 @@ Secret Garden is a room in Palace of Paphos. "You find yourself in the Secret Ga
 
 Divine Cell 4 is a room in Palace of Paphos. "devine cell 4 description TODO".
 
-The Secret Garden is down of the Throne Room and west of the gate.
-The Divine Cell 4 is east of the gate. [TODO: change the name of the divine cell]
+The Secret Garden is down of the Throne Room and west of the flower gate.
+The Divine Cell 4 is east of the flower gate. [TODO: change the name of the divine cell]
 
 
 [doors/gates]
@@ -1157,7 +1205,7 @@ The Divine Cell 4 is east of the gate. [TODO: change the name of the divine cell
 [Start Of Secret Garden]
 
 [Secret Garden to Divine Cell 4 by door]
-The gate is east of the Secret Garden and west of the Divine Cell 4. The gate is a closed unopenable door. The  gate is a scenery. 
+The flower gate is east of the Secret Garden and west of the Divine Cell 4. The flower gate is a closed unopenable door. The  flower gate is a scenery. 
 
 [Secret Garden to Divine Cell 4 by lake]
 
@@ -1270,7 +1318,7 @@ The description of the white flowerbed is "[if there are white flowers in the wh
 [red]
 After taking something:
 	say "You picked up [a noun]." ;
-	continue the action.[TODO: change the pick up 3 print]
+	[TODO: change the pick up 3 print]
 
 		
 [Putting plans back down]
@@ -1422,26 +1470,26 @@ Every turn:
 		now FlowerPuzzleSolved is false.
 
 
-Instead of examining the gate:
+Instead of examining the flower gate:
 	if FlowerPuzzleSolved is true:
 		say "The gate is now open.";
 	otherwise:
 		say "The gate is tightly closed."	
 		
-Instead of going in the gate:
+Instead of going in the flower gate:
 	if FlowerPuzzleSolved is true:
 		say "The gate is now open.";
-		try entering gate;
+		try entering flower gate;
 	otherwise:
 		say "The gate is tightly closed."
 
 Every turn:
 	If FlowerPuzzleSolved is true for the first turn:
 		say "You hear the sound of the gate opening";
-		now the gate is open;
+		now the flower gate is open;
 	otherwise if FlowerPuzzleSolved is false for the first turn:
 		say "You hear the sound of the gate closing.";
-		now the gate is closed;
+		now the flower gate is closed;
 		
 		
 [Test solutionSG with "put red flower in hand/ put purple flower in conch shell / put yellow flower in amphora on the right  / put white flower in tree cavity ".
@@ -1717,25 +1765,25 @@ Chapter 8 - Mapping & Transportation
 [The player is in Northen Gates of Athens.]
 
 [Ports]
-Port of Piraeus is a room in Athens. "From here you can sail to: [line break]→ Paphos[line break]→ Garden of Hesperides".
-Port of Sounio is a room in Sounio. "From here you can sail to: [line break]→ Aulis[line break]→ Garden of Hesperides".
-Port of Paphos is a room in Paphos. "The main port of the city of Paphos. [paragraph break]From here you can sail to: [line break]→ Piraeus[line break]→ Garden of Hesperides".
-Port of Aulis is a room in Aulis. "From here you can sail to: [line break]→ Sounio[line break]→ Garden of Hesperides".
+Port of Piraeus is a room in Athens. "To the northeast you can see the city of Athens. [paragraph break]From here you can sail to: [line break]→ Paphos[line break]→ Garden of Hesperides".
+Port of Sounio is a room in Sounio. "To the north you can see the city of Sounio. [paragraph break]From here you can sail to: [line break]→ Aulis[line break]→ Garden of Hesperides".
+Port of Paphos is a room in Paphos. "To the east you can see the city of Paphos.[paragraph break] The main port of the city of Paphos. [paragraph break]From here you can sail to: [line break]→ Piraeus[line break]→ Garden of Hesperides".
+Port of Aulis is a room in Aulis. "To the west you can see the city of Aulis. [paragraph break]From here you can sail to: [line break]→ Sounio[line break]→ Garden of Hesperides".
 
 [Stables-City Gates]
-Northen Gates of Athens is a room in Athens. "From here you can travel to: [line break]→ Thebes[line  break]→ Aulis[line  break]→ Delphi[line  break]→ Ephyra[line  break]→ Mount Olympus".
+Northen Gates of Athens is a room in Athens. "To the south you can see the city of Athens. [paragraph break]From here you can travel to: [line break]→ Thebes[line  break]→ Aulis[line  break]→ Delphi[line  break]→ Ephyra[line  break]→ Mount Olympus".
 
-Southern Gates of Athens is a room in Athens. "From here you can travel to: [line break]→ Sounio".
+Southern Gates of Athens is a room in Athens. "To the north you can see the city of Athens. [paragraph break]From here you can travel to: [line break]→ Sounio".
 
-Gates of Sounio is a room in Sounio. "From here you can travel to: [line break]→ Athens".
+Gates of Sounio is a room in Sounio. "To the south you can see the town of Sounio. [paragraph break]From here you can travel to: [line break]→ Athens".
 
-Gates of Thebes is a room in Thebes. "From here you can travel to: [line break]→ Athens[line break]→ Aulis[line  break]→ Delphi[line  break]→ Ephyra[line  break]→ Mount Olympus".
+Gates of Thebes is a room in Thebes. "To the north you can see the city of Thebes. [paragraph break]From here you can travel to: [line break]→ Athens[line break]→ Aulis[line  break]→ Delphi[line  break]→ Ephyra[line  break]→ Mount Olympus".
 
-Gates of Aulis is a room in Aulis. "From here you can travel to: [line break]→ Thebes[line  break]→ Athens[line  break]→  Delphi[line  break]→ Ephyra[line  break]→ Mount Olympus".
+Gates of Aulis is a room in Aulis. "To the north you can see the town of Aulis. [paragraph break]From here you can travel to: [line break]→ Thebes[line  break]→ Athens[line  break]→  Delphi[line  break]→ Ephyra[line  break]→ Mount Olympus".
 
 Gates of Delphi is a room in Delphi. "From here you can travel to: [line break]→ Thebes [line  break]→ Athens[line  break]→ Aulis[line  break]→ Ephyra[line  break]→ Mount Olympus".
 
-Gates of Ephyra is a room in Ephyra. "From here you can travel to: [line  break]→ Mount Olympus [line  break]→ Athens[line break]→ Thebes[line  break]→ Aulis[line  break]→ Delphi". [TODO: necromanteion]
+Gates of Ephyra is a room in Ephyra. "To the west you can see the town of Ephyra. [paragraph break]From here you can travel to: [line  break]→ Mount Olympus [line  break]→ Athens[line break]→ Thebes[line  break]→ Aulis[line  break]→ Delphi".
 
 
 
@@ -1880,8 +1928,7 @@ The Outside of the Palace of Paphos is a room in Paphos.
 The Port of Paphos is west of the Agora of Paphos. The Agora of Paphos is south of the Outside of the Palace of Paphos. The Outside of the Palace of Paphos is south of the Throne Room.
 
 [Thebes]
-The Agora of Thebes is a room north of the Thebes Gates. 
-
+The Agora of Thebes is a room north of the Thebes Gates. Kadmea is up of Agora of Thebes.
 [Aulis]
 The Agora of Aulis is a room. The Agora of Aulis is north of the Gates of Aulis. The Agora of Aulis is west of the Port of Aulis.
 
@@ -1906,14 +1953,14 @@ Elysian Fields is up of Asphodel Meadows. Charon's boat is down of East of Ephyr
 The Prytaneion is an outroom. The Prytaneion is inside from the Acropolis.
 The prytaneion_front is an inroom in the Acropolis. The prytaneion_front fronts the Prytaneion.
 
-The Kadmea is an outroom. The Kadmea is inside from the Agora of Thebes. [TODO: change kadmea and kadmea palace (name of specific puzzle room, kadmea is the acropolis)]
-The kadmea_front is an inroom in the Agora of Thebes. The kadmea_front fronts the Kadmea.
-
 The Temple of the Aulidean Artemis is an outroom. The Temple of the Aulidean Artemis is inside from the Agora of Aulis.
 The aulidian_artemis_temple is an inroom in the Agora of Aulis. The aulidian_artemis_temple fronts the Temple of the Aulidean Artemis.
 
 The Necromanteion is an outroom. The Necromanteion is inside from the North of Ephyra.
 The necromanteion_front is an inroom in the North of Ephyra. The necromanteion_front fronts the Necromanteion.
+
+The Palace of Kadmos is an outroom. The Palace of Kadmos is inside from the Kadmea.
+The palace_front is an inroom in the Kadmea. The palace_front fronts the Palace of Kadmos.
 
 
 Chapter 9 - Speech Tables
