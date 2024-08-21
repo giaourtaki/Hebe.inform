@@ -12,10 +12,8 @@ Chapter 0.00 - TODOs | TBDs
 [TODO: update help command]
 [TODO: combat system - talos, amphitrite and kronos]
 [TODO: integrade divine boons]
-[TODO: ambrosia system]
 [TODO: integrade the club of hercules]
 [TODO: golden apples of hesperides collectables]
-[TODO: make necromanteion maybe for obols farming]
 [TODO: add values, like smell, to every item]
 [TODO: fix change of day in chapter 3]
 [TODO: go to -> try travel/sail/go in]
@@ -90,6 +88,23 @@ A weight is a kind of thing. The plural of weight is weights. A weight has a mas
 [definition of torch/flame]
 A flame is a kind of thing. The plural of flame is flames. A flame is usually unlit.
 
+[definition of cash/obol]
+Cash is a number that varies. Cash is 0.
+
+Obols is a thing. The printed name is “[if cash is 1]an[otherwise][cash][end if] obol[if cash is greater than 1]s[end if]”.
+
+Every turn when cash is greater than 0:
+	now the player holds obols.
+
+Every turn when cash <= 0:
+	remove obols from play.
+	
+Understand "obol" as obols when cash is 1.
+	
+Instead of examining obols:
+	say "The currency Charon accepts for the ride.";
+	stop the action.
+
 Chapter 0.21 - Variables
 
 [Chapter 1 - Athena & Ares]
@@ -148,22 +163,46 @@ The block giving rule is not listed in any rulebook.
 Instead of going to an outroom: [TODO: You can't see any such thing. bug]
 	try silently entering the noun.
 
-[giving ambrosia to person]
+[giving nectar to person]
 
-Instead of giving ambrosia to someone:
+Instead of giving nectar to someone:
 	if the second noun is mortal:
 		say "You can't decide to make people immortal so easily. Think of the consequences!";
 		stop the action;
 	else if the second noun is awake:
-		say "[second noun] doesn't look like [they] needs more ambrosia right now.";
+		say "[second noun] doesn't look like [they] needs more nectar right now.";
 		stop the action;
-	else if ambrosia is not carried by the player:
-		say "You don't have any ambrosia on you right now.";
+	else if the Eternal Chalice of Nectar is not carried by the player:
+		say "You don't have any nectar on you right now.";
 		stop the action;
 	else if the second noun is asleep:
-		say "You gave ambrosia to [second noun].";
+		say "You gave nectar to [second noun].";
 		now the second noun is awake.
 		
+[sacrificing]
+Sacrificing is an action applying to one carried thing. Understand "sacrifice [something]" as sacrificing.
+
+check sacrificing:
+	If an necromanteion altar is not in the location:
+		say "The only gods that can see your sacrifice right now are the Cthonians. You will need to go to the Necromanteion.";
+		stop the action;
+	If the noun is Heracles' Club:
+		say "You shouldn't sacrifice something that isn't yours to sacrifice.";
+		stop the action;
+	If the noun is Eternal Chalice of Nectar:
+		say "You will need this if you want to save your family. Better keep it";
+		stop the action;
+	If the noun is an obols:
+		say "An Obol for an Obol? Weird.";
+		stop the action.
+		
+carry out sacrificing:
+	say "You put the [noun] on the altar and, with the help of the Priestess, you light it on fire. [one of]Hades[or]Persephone[or]Nyx[or]Thanatos [as decreasingly likely outcomes] acknowledges you.";
+	now the noun is nowhere;
+	increase the cash by 1.
+	
+Report sacrificing:
+	say "You gained an obol from the sacrifice.".
 
 [help action]
 Helping is an action applying to nothing. Understand "help" as helping.
@@ -201,7 +240,7 @@ When play begins: say "[bold type]Instructions: [roman type][paragraph break]Wel
 [scenes]
 Olympus Hall Celebration Scene is a scene. 
 Olympus Hall Celebration Scene begins when the player is in Mount Olympus Hall for the first time.
-Olympus Hall Celebration Scene ends when giving the Heracles' Club to heracles. [TODO: end when taking ambrosia?]
+Olympus Hall Celebration Scene ends when giving the Heracles' Club to heracles. [TODO: end when taking nectar?]
 
 Kronos Scene is a scene. Kronos Scene begins when Olympus Hall Celebration Scene ends.
 Kronos Scene ends when the time since Kronos Scene began is 1 minutes. [maybe 1]
@@ -216,14 +255,13 @@ Mount Olympus Hall is a room.
 
 The Heracles' Club is a thing in Mount Olympus Hall. It is undescribed. 
 
-Ambrosia is in mount olympus hall.  obol is in mount olympus hall.[TBD]
 
 [Characters in the room]
 The Titan Kronos is a man. He is undescribed.
 The God Heracles is a man. He is undescribed.
 The God Zeus is a man.He is undescribed.
 The God Apollo is a man.He is undescribed.
-The God Ares is a man .He is undescribed.
+The God Ares is a man. He is undescribed.
 The God Hephaestus is a man.He is undescribed.
 The God Hermes is a man .He is undescribed.
 The God Poseidon is a man .He is undescribed.
@@ -279,7 +317,6 @@ Every turn during Olympus Hall Celebration Scene:
 		say "Hercules asks for his club."
 
 	
-
 
 [examining during scene]
 Instead of examining Zeus during Olympus Hall Celebration Scene:
@@ -360,7 +397,7 @@ When Kronos Scene begins:
 
 The voice was unmistakable, deep and resonant, carrying an ancient power that sent shivers down your spine. It was Kronos. So much time has passed since our triumph in the War of Titans— the Titanomachy. How did he manage to escape Tartarus?
 
-The sight of the Titan, towering and menacing, shrouded in shadows, struck fear into the hearts of all present. You start to feel the ambrosia in your divine veins turn cold, as if time itself had frozen. The gods, normally so mighty and formidable, stand paralyzed in shock. Nothing moves. In a heartbeat, you break free from the daze and come to your senses. Your next actions have never been more certain. It's now or never. 
+The sight of the Titan, towering and menacing, shrouded in shadows, struck fear into the hearts of all present. You start to feel the ichor in your divine veins turn cold, as if time itself had frozen. The gods, normally so mighty and formidable, stand paralyzed in shock. Nothing moves. In a heartbeat, you break free from the daze and come to your senses. Your next actions have never been more certain. It's now or never. 
 
 You grab Heracle's club out of his hands and leap towards Kronos. Then you feel yourself slipping into unconciousness.".[The last thing you remember before slipping into unconciousness]
 
@@ -412,7 +449,7 @@ Instead of looking for the 1st time during the Garden of Hesperides Scene:
 	 If the player is in the Garden of Hesperides:
 		say "1-2 months timeskip. the nymphs tended to your wounds and restored you with nectar and ambrosia. They tell you what happened with the gods and send you towards the oracle of delphi.".
 
-[Ambrosia is a thing in Garden of Hesperides.]
+Eternal Chalice of Nectar is a thing in Garden of Hesperides.
 
 Aigle is a woman in Garden of Hesperides. 
 Arethousa is a woman in Garden of Hesperides. 
@@ -430,6 +467,14 @@ The Oracle of Delphi is a room in Delphi.
 Pytheia is a woman in the Oracle of Delphi. 
 
 [End Of: Oracle of Delphi]
+
+[Start Of: Necromanteion]
+The necromanteion altar is inside the Necromanteion.
+
+A flower is in necromanteion.
+
+[End Of: Necromanteion]
+
 
 Chapter 1- Athena & Ares
 
@@ -1224,7 +1269,8 @@ The description of the white flowerbed is "[if there are white flowers in the wh
 [Picking Up Flowers]
 [red]
 After taking something:
-	say "You picked up a [noun]." .[TODO: change the pick up 3 print]
+	say "You picked up [a noun]." ;
+	continue the action.[TODO: change the pick up 3 print]
 
 		
 [Putting plans back down]
@@ -1568,14 +1614,18 @@ Chapter 6 - Hercules
 
 The Charon's boat is a closed unopenable door.
 
-Obol is a thing. [TODO: make obol aquiring sidequest in ephyra]
-[TBD]
-[The player is holding an obol.]
-
 Charon is a man. He is in East of Ephyra.
 
 
-Charon Ride In Scene is a scene. Charon Ride In Scene begins when giving an obol to Charon. Charon Ride In Scene ends when the time since Charon Ride In Scene began is 0 minutes.
+Charon Ride In Scene is a scene. Charon Ride In Scene begins when giving an obols to Charon. Charon Ride In Scene ends when the time since Charon Ride In Scene began is 0 minutes.
+
+carry out giving:
+	If the noun is obols:
+		decrease cash by 1.
+	
+After giving:
+	if the noun is obols:
+		say "You give 1 obol to [second noun].".
 
 When Charon Ride In Scene begins:
 	now Charon's boat is open;
@@ -1608,7 +1658,6 @@ When Charon Ride Out Scene begins:
 	
 When Charon Ride Out Scene ends:
 	now Charon is in East of Ephyra;
-	now the player is holding the obol;
 	now Charon's boat is closed.
 	
 Instead of going in the boat:
@@ -1623,7 +1672,7 @@ The Asphodel Meadows is a room in the Underworld.
 
 
 Heracles in Asphodel Scene is a scene. Heracles in Asphodel Scene begins when the player is in Asphodel Meadows for the first time. [During this scene Heracles has amnesia, he has drunk from the lethe river so his dialogue should reflect that]
-Heracles in Asphodel Scene ends when giving ambrosia to Heracles.
+Heracles in Asphodel Scene ends when giving nectar to Heracles.
 
 
 [doors]
@@ -1840,9 +1889,11 @@ The Agora of Aulis is a room. The Agora of Aulis is north of the Gates of Aulis.
 The Agora of Delphi is a room. The Agora of Delphi is east of the Oracle of Delphi and west of the Delphi Gates.
 
 [Ephyra]
-The Agora of Ephyra is a room. [acheron is here (underworld entry)]
+The Agora of Ephyra is a room. [acheron is here (backdrop)]
+The North of Ephyra is a room in the Underworld. It is north of Gates of Ephyra. [Necromanteion is inside here]
 The East of Ephyra is a room in the Underworld. [TODO: Acheron River should be here]
 The Gates of Ephyra is east of the Agora of ephyra and west of East of Ephyra.
+
 
 [Mount Olympus]
 The Foothills of Mount Olympus is a room in Mount Olympus. The Foothills of Mount Olympus is down of the Mount Olympus Hall. The description of Foothills of Mount Olympus is "From here you can travel to: [line  break]→ Ephyra [line  break]→ Athens[line break]→ Thebes[line  break]→ Aulis[line  break]→ Delphi".
@@ -1860,6 +1911,9 @@ The kadmea_front is an inroom in the Agora of Thebes. The kadmea_front fronts th
 
 The Temple of the Aulidean Artemis is an outroom. The Temple of the Aulidean Artemis is inside from the Agora of Aulis.
 The aulidian_artemis_temple is an inroom in the Agora of Aulis. The aulidian_artemis_temple fronts the Temple of the Aulidean Artemis.
+
+The Necromanteion is an outroom. The Necromanteion is inside from the North of Ephyra.
+The necromanteion_front is an inroom in the North of Ephyra. The necromanteion_front fronts the Necromanteion.
 
 
 Chapter 9 - Speech Tables

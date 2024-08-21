@@ -3,7 +3,7 @@
   <generator>Windows Inform 10.1.2</generator>
   <item nodeId="node-2398">
     <command xml:space="preserve">Hebe</command>
-    <result xml:space="preserve">Instructions: &#x000A;&#x000A;Welcome to Hebe, my Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. If at any point you need help, type help into the console. Have fun and thank you for playing!&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 240820 / Inform 7 v10.1.2 / D&#x000A;&#x000A;The grand hall of Mount Olympus gleamed like a jewel in the Greek night sky. The lustrous surfaces of white marble and gold reflected the flickering torchlight. Columns of shimmering marble, capped with gilded Corinthian capitals, reached a vaulted ceiling adorned with intricate decorative paintings depicting scenes from the gods' legendary exploits. Among the hall's lavish embellishments were thrones of solid gold, masterfully crafted handwoven carpets and golden chandeliers, suspended from the ceiling. Today the gods were celebrating the ascension of Heracles to immortality, and also the anniversary of your marriage to him.&#x000A;&#x000A;The air was thick with the aroma of ambrosia and the rich scent of a feast laid out for the celebrating gods. Plates piled high with the finest delicacies filled every corner of the vast chamber, while goblets brimming with nectar passed from hand to hand, by the ever-dutiful Ganymedes.&#x000A;&#x000A;The hall was alive with the sounds of the festivities. Laughter and song echoed through the space as gods danced and sang in celebration. Nymphs twirled gracefully among them, their light steps barely disturbing the surface of the marble floor. In the center of the room, a troupe of performers reenacted the epic labors of Heracles, their movements grand and heroic, a fitting tribute to the hero whose deeds had won him a place among the gods.&#x000A;&#x000A;At the heart of the celebration sat the honoured guests of the occasion, Heracles himself, with you, his wife, to his right. On Heracles' left sat Zeus, king of the gods, who is glancing upon you both with delight and pride. On your right sat Hera, her demeanor calm and gratified, with a rare softness in her gaze. She puts aside any conflict during the event, given her affection for you.&#x000A;&#x000A;The Twelve Olympians were all in attendance, their mighty forms gracing the hall with an air of majesty. They conversed among themselves, their voices a harmonious blend of wisdom and power, as they partook in the feast. The nymphs flitted among them, their laughter mingling with the conversations, adding a lightness to the evening's festivities.&#x000A;&#x000A;Everywhere you looked, there was movement, life, and joy. The gods, unbound by the cares of the mortal world, indulged in the pleasures of the moment, their spirits lifted by the music, the food, and the company. The hall of Olympus had never shone brighter, a fitting tribute to the divine couple.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Instructions: &#x000A;&#x000A;Welcome to Hebe, my Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. If at any point you need help, type help into the console. Have fun and thank you for playing!&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 240821 / Inform 7 v10.1.2 / D&#x000A;&#x000A;The grand hall of Mount Olympus gleamed like a jewel in the Greek night sky. The lustrous surfaces of white marble and gold reflected the flickering torchlight. Columns of shimmering marble, capped with gilded Corinthian capitals, reached a vaulted ceiling adorned with intricate decorative paintings depicting scenes from the gods' legendary exploits. Among the hall's lavish embellishments were thrones of solid gold, masterfully crafted handwoven carpets and golden chandeliers, suspended from the ceiling. Today the gods were celebrating the ascension of Heracles to immortality, and also the anniversary of your marriage to him.&#x000A;&#x000A;The air was thick with the aroma of ambrosia and the rich scent of a feast laid out for the celebrating gods. Plates piled high with the finest delicacies filled every corner of the vast chamber, while goblets brimming with nectar passed from hand to hand, by the ever-dutiful Ganymedes.&#x000A;&#x000A;The hall was alive with the sounds of the festivities. Laughter and song echoed through the space as gods danced and sang in celebration. Nymphs twirled gracefully among them, their light steps barely disturbing the surface of the marble floor. In the center of the room, a troupe of performers reenacted the epic labors of Heracles, their movements grand and heroic, a fitting tribute to the hero whose deeds had won him a place among the gods.&#x000A;&#x000A;At the heart of the celebration sat the honoured guests of the occasion, Heracles himself, with you, his wife, to his right. On Heracles' left sat Zeus, king of the gods, who is glancing upon you both with delight and pride. On your right sat Hera, her demeanor calm and gratified, with a rare softness in her gaze. She puts aside any conflict during the event, given her affection for you.&#x000A;&#x000A;The Twelve Olympians were all in attendance, their mighty forms gracing the hall with an air of majesty. They conversed among themselves, their voices a harmonious blend of wisdom and power, as they partook in the feast. The nymphs flitted among them, their laughter mingling with the conversations, adding a lightness to the evening's festivities.&#x000A;&#x000A;Everywhere you looked, there was movement, life, and joy. The gods, unbound by the cares of the mortal world, indulged in the pleasures of the moment, their spirits lifted by the music, the food, and the company. The hall of Olympus had never shone brighter, a fitting tribute to the divine couple.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -105,6 +105,7 @@
       <child nodeId="node-4009"/>
       <child nodeId="node-4012"/>
       <child nodeId="node-4014"/>
+      <child nodeId="node-5221"/>
       <child nodeId="node-4024"/>
       <child nodeId="node-4050"/>
       <child nodeId="node-4057"/>
@@ -189,6 +190,7 @@
       <child nodeId="node-5147"/>
       <child nodeId="node-2400"/>
       <child nodeId="node-5175"/>
+      <child nodeId="node-5202"/>
       <child nodeId="node-2659"/>
       <child nodeId="node-4794"/>
     </children>
@@ -2967,6 +2969,174 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-5202">
+    <command xml:space="preserve">take obol and take ambrosia</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5203"/>
+    </children>
+  </item>
+  <item nodeId="node-5203">
+    <command xml:space="preserve">take obol</command>
+    <result xml:space="preserve">You picked up a obol.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5204"/>
+    </children>
+  </item>
+  <item nodeId="node-5204">
+    <command xml:space="preserve">take ambrosia</command>
+    <result xml:space="preserve">You picked up a Ambrosia.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5205"/>
+    </children>
+  </item>
+  <item nodeId="node-5205">
+    <command xml:space="preserve">give club to heracles</command>
+    <result xml:space="preserve">(first taking the Heracles' Club)&#x000A;You picked up a Heracles' Club.&#x000A;&#x000A;He smiles to you. "Thank you my dearest."&#x000A;&#x000A;You give the Heracles' Club to the God Heracles.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5206"/>
+    </children>
+  </item>
+  <item nodeId="node-5206">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">Suddenly, an eerie silence fell over the festive night. The singing and dancing ceased, as if an unseen hand had stilled them. For a brief moment, you felt the coldness of the mountain air, a stark contrast to the pleasant breeze that had enveloped you moments before. A sense of foreboding fills you as you become aware that all eyes are turned behind you. You lock eyes with Heracles, both of you sharing a look of worry. With a growing sense of dread, you turned to see what had drawn everyone's attention.&#x000A;&#x000A;"Oh dear, please, do not let my presence taint your insignificant gathering. Carry on as you were."&#x000A;&#x000A;The voice was unmistakable, deep and resonant, carrying an ancient power that sent shivers down your spine. It was Kronos. So much time has passed since our triumph in the War of Titans- the Titanomachy. How did he manage to escape Tartarus?&#x000A;&#x000A;The sight of the Titan, towering and menacing, shrouded in shadows, struck fear into the hearts of all present. You start to feel the ambrosia in your divine veins turn cold, as if time itself had frozen. The gods, normally so mighty and formidable, stand paralyzed in shock. Nothing moves. In a heartbeat, you break free from the daze and come to your senses. Your next actions have never been more certain. It's now or never.&#x000A;&#x000A;You grab Heracle's club out of his hands and leap towards Kronos. Then you feel yourself slipping into unconciousness.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5207"/>
+    </children>
+  </item>
+  <item nodeId="node-5207">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">Garden of Hesperides&#x000A;&#x000A;&#x000A;From here you can sail to: &#x000A;&#x2192; Piraeus&#x000A;&#x2192; Sounio&#x000A;&#x2192; Aulis&#x000A;&#x2192; Paphos&#x000A;&#x000A;You can see Aigle, Arethousa, Erytheia and Hesperie here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5208"/>
+    </children>
+  </item>
+  <item nodeId="node-5208">
+    <command xml:space="preserve">sail to aulis</command>
+    <result xml:space="preserve">You sail to the Port of Aulis.&#x000A;&#x000A;Port of Aulis&#x000A;From here you can sail to: &#x000A;&#x2192; Sounio&#x000A;&#x2192; Garden of Hesperides&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5209"/>
+    </children>
+  </item>
+  <item nodeId="node-5209">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Agora of Aulis&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5210"/>
+    </children>
+  </item>
+  <item nodeId="node-5210">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Gates of Aulis&#x000A;From here you can travel to: &#x000A;&#x2192; Thebes&#x000A;&#x2192; Athens&#x000A;&#x2192;  Delphi&#x000A;&#x2192; Ephyra&#x000A;&#x2192; Mount Olympus&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5211"/>
+    </children>
+  </item>
+  <item nodeId="node-5211">
+    <command xml:space="preserve">travel to ephyra</command>
+    <result xml:space="preserve">You travel to the Gates of Ephyra.&#x000A;&#x000A;Gates of Ephyra&#x000A;From here you can travel to: &#x000A;&#x2192; Mount Olympus &#x000A;&#x2192; Athens&#x000A;&#x2192; Thebes&#x000A;&#x2192; Aulis&#x000A;&#x2192; Delphi&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5212"/>
+    </children>
+  </item>
+  <item nodeId="node-5212">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">East of Ephyra&#x000A;You can see a Charon's boat and Charon here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5213"/>
+    </children>
+  </item>
+  <item nodeId="node-5213">
+    <command xml:space="preserve">give obol to charon</command>
+    <result xml:space="preserve">You give obol to Charon.&#x000A;&#x000A;The ferryman accepts the token and signals you to jump into the boat. With slow and certain movements, he leads the boat down the dangerous stream, into the opening of a natural cave. You arrive at the Underworld.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5214"/>
+    </children>
+  </item>
+  <item nodeId="node-5214">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">Elysian Fields&#x000A;You can see a Charon's boat here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5215"/>
+    </children>
+  </item>
+  <item nodeId="node-5215">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">Asphodel Meadows&#x000A;You can see a broken bridge and a plaque here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5216"/>
+    </children>
+  </item>
+  <item nodeId="node-5216">
+    <command xml:space="preserve">showme</command>
+    <result xml:space="preserve">Asphodel Meadows - room&#x000A;    yourself - woman&#x000A;        Heracles' Club&#x000A;        Ambrosia&#x000A;    God Heracles - man&#x000A;    broken bridge - closed door&#x000A;    plaque&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5217"/>
+    </children>
+  </item>
+  <item nodeId="node-5217">
+    <command xml:space="preserve">give ambrosia to heracles</command>
+    <result xml:space="preserve">You gave ambrosia to God Heracles.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5218"/>
+    </children>
+  </item>
+  <item nodeId="node-5218">
+    <command xml:space="preserve">showme heracles</command>
+    <result xml:space="preserve">God Heracles - man&#x000A;location: in the Asphodel Meadows&#x000A;unlit, inedible, portable; transparent, male, immortal, awake; singular-named, improper-named&#x000A;description: none&#x000A;initial appearance: none&#x000A;smell: neutral&#x000A;carrying capacity: 100&#x000A;name: none&#x000A;printed name: "God Heracles"&#x000A;printed plural name: "men"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5219"/>
+    </children>
+  </item>
+  <item nodeId="node-5219">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a Heracles' Club&#x000A;  Ambrosia&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5220"/>
+    </children>
+  </item>
+  <item nodeId="node-5220">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">Elysian Fields&#x000A;You can see Charon and a Charon's boat here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-2659">
     <command xml:space="preserve">test</command>
     <result xml:space="preserve">&gt;--&gt; The following tests are available:&#x000A;'test me'&#x000A;&#x000A;&gt;</result>
@@ -3609,8 +3779,177 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
+      <child nodeId="node-5312"/>
       <child nodeId="node-2670"/>
     </children>
+  </item>
+  <item nodeId="node-5312">
+    <command xml:space="preserve">give club to heracle</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5313"/>
+    </children>
+  </item>
+  <item nodeId="node-5313">
+    <command xml:space="preserve">give club to heracles</command>
+    <result xml:space="preserve">[giving the Heracles' Club to the God Heracles]&#x000A;(first taking the Heracles' Club)&#x000A;[(1) taking the Heracles' Club - silently]&#x000A;You picked up a Heracles' Club.&#x000A;&#x000A;[(1) taking the Heracles' Club - silently - succeeded]&#x000A;&#x000A;He smiles to you. "Thank you my dearest."&#x000A;&#x000A;You give the Heracles' Club to the God Heracles.&#x000A;[giving the Heracles' Club to the God Heracles - succeeded]</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5314"/>
+    </children>
+  </item>
+  <item nodeId="node-5314">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">Suddenly, an eerie silence fell over the festive night. The singing and dancing ceased, as if an unseen hand had stilled them. For a brief moment, you felt the coldness of the mountain air, a stark contrast to the pleasant breeze that had enveloped you moments before. A sense of foreboding fills you as you become aware that all eyes are turned behind you. You lock eyes with Heracles, both of you sharing a look of worry. With a growing sense of dread, you turned to see what had drawn everyone's attention.&#x000A;&#x000A;"Oh dear, please, do not let my presence taint your insignificant gathering. Carry on as you were."&#x000A;&#x000A;The voice was unmistakable, deep and resonant, carrying an ancient power that sent shivers down your spine. It was Kronos. So much time has passed since our triumph in the War of Titans- the Titanomachy. How did he manage to escape Tartarus?&#x000A;&#x000A;The sight of the Titan, towering and menacing, shrouded in shadows, struck fear into the hearts of all present. You start to feel the ichor in your divine veins turn cold, as if time itself had frozen. The gods, normally so mighty and formidable, stand paralyzed in shock. Nothing moves. In a heartbeat, you break free from the daze and come to your senses. Your next actions have never been more certain. It's now or never.&#x000A;&#x000A;You grab Heracle's club out of his hands and leap towards Kronos. Then you feel yourself slipping into unconciousness.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5315"/>
+    </children>
+  </item>
+  <item nodeId="node-5315">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">[looking]&#x000A;Garden of Hesperides&#x000A;&#x000A;&#x000A;From here you can sail to: &#x000A;&#x2192; Piraeus&#x000A;&#x2192; Sounio&#x000A;&#x2192; Aulis&#x000A;&#x2192; Paphos&#x000A;&#x000A;You can see Eternal Chalice of Nectar, Aigle, Arethousa, Erytheia and Hesperie here.&#x000A;&#x000A;[looking - succeeded]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5316"/>
+    </children>
+  </item>
+  <item nodeId="node-5316">
+    <command xml:space="preserve">sail to aulis</command>
+    <result xml:space="preserve">[sailing Port of Aulis]&#x000A;You sail to the Port of Aulis.&#x000A;&#x000A;[(1) looking]&#x000A;Port of Aulis&#x000A;From here you can sail to: &#x000A;&#x2192; Sounio&#x000A;&#x2192; Garden of Hesperides&#x000A;&#x000A;[(1) looking - succeeded]&#x000A;&#x000A;[sailing Port of Aulis - succeeded]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5317"/>
+    </children>
+  </item>
+  <item nodeId="node-5317">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">[going west]&#x000A;&#x000A;Agora of Aulis&#x000A;[going west - succeeded]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5318"/>
+    </children>
+  </item>
+  <item nodeId="node-5318">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">[going south]&#x000A;&#x000A;Gates of Aulis&#x000A;From here you can travel to: &#x000A;&#x2192; Thebes&#x000A;&#x2192; Athens&#x000A;&#x2192;  Delphi&#x000A;&#x2192; Ephyra&#x000A;&#x2192; Mount Olympus&#x000A;&#x000A;[going south - succeeded]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5319"/>
+    </children>
+  </item>
+  <item nodeId="node-5319">
+    <command xml:space="preserve">travel to ephyra</command>
+    <result xml:space="preserve">[traveling Gates of Ephyra]&#x000A;You travel to the Gates of Ephyra.&#x000A;&#x000A;[(1) looking]&#x000A;Gates of Ephyra&#x000A;From here you can travel to: &#x000A;&#x2192; Mount Olympus &#x000A;&#x2192; Athens&#x000A;&#x2192; Thebes&#x000A;&#x2192; Aulis&#x000A;&#x2192; Delphi&#x000A;&#x000A;[(1) looking - succeeded]&#x000A;&#x000A;[traveling Gates of Ephyra - succeeded]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5320"/>
+    </children>
+  </item>
+  <item nodeId="node-5320">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">[going east]&#x000A;&#x000A;East of Ephyra&#x000A;You can see a Charon's boat and Charon here.&#x000A;&#x000A;[going east - succeeded]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5321"/>
+    </children>
+  </item>
+  <item nodeId="node-5321">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">[going west]&#x000A;&#x000A;Gates of Ephyra&#x000A;From here you can travel to: &#x000A;&#x2192; Mount Olympus &#x000A;&#x2192; Athens&#x000A;&#x2192; Thebes&#x000A;&#x2192; Aulis&#x000A;&#x2192; Delphi&#x000A;&#x000A;[going west - succeeded]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5322"/>
+    </children>
+  </item>
+  <item nodeId="node-5322">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">[going north]&#x000A;&#x000A;North of Ephyra&#x000A;[going north - succeeded]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5323"/>
+    </children>
+  </item>
+  <item nodeId="node-5323">
+    <command xml:space="preserve">enter necromanteion</command>
+    <result xml:space="preserve">[entering the necromanteion]&#x000A;You went into the necromanteion&#x000A;[(1) looking]&#x000A;Necromanteion&#x000A;You can see a necromanteion altar and a flower here.&#x000A;&#x000A;[(1) looking - succeeded]&#x000A;&#x000A;[entering the necromanteion - succeeded]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5324"/>
+    </children>
+  </item>
+  <item nodeId="node-5324">
+    <command xml:space="preserve">sacrifice flower</command>
+    <result xml:space="preserve">[sacrificing the flower]&#x000A;(first taking the flower)&#x000A;[(1) taking the flower - silently]&#x000A;You picked up a flower.&#x000A;&#x000A;[(1) taking the flower - silently - succeeded]&#x000A;&#x000A;You put the flower on the altar and, with the help of the Priestess, you light it on fire. Hades acknowledges you.&#x000A;&#x000A;You gained an obol from the sacrifice.&#x000A;[sacrificing the flower - succeeded]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5325"/>
+    </children>
+  </item>
+  <item nodeId="node-5325">
+    <command xml:space="preserve">o</command>
+    <result xml:space="preserve">Sorry, that can't be corrected.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5326"/>
+    </children>
+  </item>
+  <item nodeId="node-5326">
+    <command xml:space="preserve">out</command>
+    <result xml:space="preserve">[exiting]&#x000A;[(1) going outside]&#x000A;&#x000A;North of Ephyra&#x000A;[(1) going outside - succeeded]&#x000A;&#x000A;[exiting - succeeded]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5327"/>
+    </children>
+  </item>
+  <item nodeId="node-5327">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">[going west]&#x000A;You can't go that way.&#x000A;[going west - failed the can't go that way rule]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5328"/>
+    </children>
+  </item>
+  <item nodeId="node-5328">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">[going south]&#x000A;&#x000A;Gates of Ephyra&#x000A;From here you can travel to: &#x000A;&#x2192; Mount Olympus &#x000A;&#x2192; Athens&#x000A;&#x2192; Thebes&#x000A;&#x2192; Aulis&#x000A;&#x2192; Delphi&#x000A;&#x000A;[going south - succeeded]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5329"/>
+    </children>
+  </item>
+  <item nodeId="node-5329">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">[going east]&#x000A;&#x000A;East of Ephyra&#x000A;You can see a Charon's boat and Charon here.&#x000A;&#x000A;[going east - succeeded]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5330"/>
+    </children>
+  </item>
+  <item nodeId="node-5330">
+    <command xml:space="preserve">give 1 obol to charon</command>
+    <result xml:space="preserve">[giving an obol to Charon]&#x000A;&#x000A;You give 0 obol to Charon.&#x000A;[giving 0 obol to Charon - succeeded]&#x000A;&#x000A;The ferryman accepts the token and signals you to jump into the boat. With slow and certain movements, he leads the boat down the dangerous stream, into the opening of a natural cave. You arrive at the Underworld.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-2670">
     <command xml:space="preserve">show actions</command>
@@ -7715,11 +8054,12 @@
   </item>
   <item nodeId="node-3063">
     <command xml:space="preserve">i</command>
-    <result xml:space="preserve">You are carrying:&#x000A;  Obol&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You are carrying nothing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-5019"/>
+      <child nodeId="node-5296"/>
       <child nodeId="node-5076"/>
       <child nodeId="node-5016"/>
       <child nodeId="node-3064"/>
@@ -8116,6 +8456,147 @@
   <item nodeId="node-5062">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">[taking inventory]&#x000A;You are carrying:&#x000A;  a Heracles' Club&#x000A;&#x000A;[taking inventory - succeeded]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-5296">
+    <command xml:space="preserve">give club to heracles</command>
+    <result xml:space="preserve">(first taking the Heracles' Club)&#x000A;You picked up a Heracles' Club.&#x000A;&#x000A;He smiles to you. "Thank you my dearest."&#x000A;&#x000A;You give the Heracles' Club to the God Heracles.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5297"/>
+    </children>
+  </item>
+  <item nodeId="node-5297">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">Suddenly, an eerie silence fell over the festive night. The singing and dancing ceased, as if an unseen hand had stilled them. For a brief moment, you felt the coldness of the mountain air, a stark contrast to the pleasant breeze that had enveloped you moments before. A sense of foreboding fills you as you become aware that all eyes are turned behind you. You lock eyes with Heracles, both of you sharing a look of worry. With a growing sense of dread, you turned to see what had drawn everyone's attention.&#x000A;&#x000A;"Oh dear, please, do not let my presence taint your insignificant gathering. Carry on as you were."&#x000A;&#x000A;The voice was unmistakable, deep and resonant, carrying an ancient power that sent shivers down your spine. It was Kronos. So much time has passed since our triumph in the War of Titans- the Titanomachy. How did he manage to escape Tartarus?&#x000A;&#x000A;The sight of the Titan, towering and menacing, shrouded in shadows, struck fear into the hearts of all present. You start to feel the ichor in your divine veins turn cold, as if time itself had frozen. The gods, normally so mighty and formidable, stand paralyzed in shock. Nothing moves. In a heartbeat, you break free from the daze and come to your senses. Your next actions have never been more certain. It's now or never.&#x000A;&#x000A;You grab Heracle's club out of his hands and leap towards Kronos. Then you feel yourself slipping into unconciousness.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5298"/>
+    </children>
+  </item>
+  <item nodeId="node-5298">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">Garden of Hesperides&#x000A;&#x000A;&#x000A;From here you can sail to: &#x000A;&#x2192; Piraeus&#x000A;&#x2192; Sounio&#x000A;&#x2192; Aulis&#x000A;&#x2192; Paphos&#x000A;&#x000A;You can see Eternal Chalice of Nectar, Aigle, Arethousa, Erytheia and Hesperie here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5299"/>
+    </children>
+  </item>
+  <item nodeId="node-5299">
+    <command xml:space="preserve">sail to aulis</command>
+    <result xml:space="preserve">You sail to the Port of Aulis.&#x000A;&#x000A;Port of Aulis&#x000A;From here you can sail to: &#x000A;&#x2192; Sounio&#x000A;&#x2192; Garden of Hesperides&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5300"/>
+    </children>
+  </item>
+  <item nodeId="node-5300">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Agora of Aulis&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5301"/>
+    </children>
+  </item>
+  <item nodeId="node-5301">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Gates of Aulis&#x000A;From here you can travel to: &#x000A;&#x2192; Thebes&#x000A;&#x2192; Athens&#x000A;&#x2192;  Delphi&#x000A;&#x2192; Ephyra&#x000A;&#x2192; Mount Olympus&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5302"/>
+    </children>
+  </item>
+  <item nodeId="node-5302">
+    <command xml:space="preserve">travel to ephyra</command>
+    <result xml:space="preserve">You travel to the Gates of Ephyra.&#x000A;&#x000A;Gates of Ephyra&#x000A;From here you can travel to: &#x000A;&#x2192; Mount Olympus &#x000A;&#x2192; Athens&#x000A;&#x2192; Thebes&#x000A;&#x2192; Aulis&#x000A;&#x2192; Delphi&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5303"/>
+    </children>
+  </item>
+  <item nodeId="node-5303">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">North of Ephyra&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5304"/>
+    </children>
+  </item>
+  <item nodeId="node-5304">
+    <command xml:space="preserve">enter necromanteion</command>
+    <result xml:space="preserve">You went into the necromanteion&#x000A;Necromanteion&#x000A;You can see a necromanteion altar and a flower here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5305"/>
+    </children>
+  </item>
+  <item nodeId="node-5305">
+    <command xml:space="preserve">sacrifice flower</command>
+    <result xml:space="preserve">(first taking the flower)&#x000A;You picked up a flower.&#x000A;&#x000A;You put the flower on the altar and, with the help of the Priestess, you light it on fire. Persephone acknowledges you.&#x000A;&#x000A;You gained an obol from the sacrifice.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5306"/>
+    </children>
+  </item>
+  <item nodeId="node-5306">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  an obol&#x000A;  a Heracles' Club&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5307"/>
+    </children>
+  </item>
+  <item nodeId="node-5307">
+    <command xml:space="preserve">out</command>
+    <result xml:space="preserve">North of Ephyra&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5308"/>
+    </children>
+  </item>
+  <item nodeId="node-5308">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Gates of Ephyra&#x000A;From here you can travel to: &#x000A;&#x2192; Mount Olympus &#x000A;&#x2192; Athens&#x000A;&#x2192; Thebes&#x000A;&#x2192; Aulis&#x000A;&#x2192; Delphi&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5309"/>
+    </children>
+  </item>
+  <item nodeId="node-5309">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">East of Ephyra&#x000A;You can see a Charon's boat and Charon here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5310"/>
+    </children>
+  </item>
+  <item nodeId="node-5310">
+    <command xml:space="preserve">give an obol to charon</command>
+    <result xml:space="preserve">You give 0 obol to Charon.&#x000A;&#x000A;The ferryman accepts the token and signals you to jump into the boat. With slow and certain movements, he leads the boat down the dangerous stream, into the opening of a natural cave. You arrive at the Underworld.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5311"/>
+    </children>
+  </item>
+  <item nodeId="node-5311">
+    <command xml:space="preserve">a</command>
+    <result xml:space="preserve">Elysian Fields&#x000A;You can see a Charon's boat here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -17958,6 +18439,397 @@
   <item nodeId="node-4023">
     <command xml:space="preserve">unlock dvdoor with moon key</command>
     <result xml:space="preserve">That doesn't seem to fit the lock.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-5221">
+    <command xml:space="preserve">take obol</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5222"/>
+      <child nodeId="node-5239"/>
+    </children>
+  </item>
+  <item nodeId="node-5222">
+    <command xml:space="preserve">give club to heracles</command>
+    <result xml:space="preserve">(first taking the Heracles' Club)&#x000A;You picked up a Heracles' Club.&#x000A;&#x000A;He smiles to you. "Thank you my dearest."&#x000A;&#x000A;You give the Heracles' Club to the God Heracles.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5223"/>
+    </children>
+  </item>
+  <item nodeId="node-5223">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">Suddenly, an eerie silence fell over the festive night. The singing and dancing ceased, as if an unseen hand had stilled them. For a brief moment, you felt the coldness of the mountain air, a stark contrast to the pleasant breeze that had enveloped you moments before. A sense of foreboding fills you as you become aware that all eyes are turned behind you. You lock eyes with Heracles, both of you sharing a look of worry. With a growing sense of dread, you turned to see what had drawn everyone's attention.&#x000A;&#x000A;"Oh dear, please, do not let my presence taint your insignificant gathering. Carry on as you were."&#x000A;&#x000A;The voice was unmistakable, deep and resonant, carrying an ancient power that sent shivers down your spine. It was Kronos. So much time has passed since our triumph in the War of Titans- the Titanomachy. How did he manage to escape Tartarus?&#x000A;&#x000A;The sight of the Titan, towering and menacing, shrouded in shadows, struck fear into the hearts of all present. You start to feel the ichor in your divine veins turn cold, as if time itself had frozen. The gods, normally so mighty and formidable, stand paralyzed in shock. Nothing moves. In a heartbeat, you break free from the daze and come to your senses. Your next actions have never been more certain. It's now or never.&#x000A;&#x000A;You grab Heracle's club out of his hands and leap towards Kronos. Then you feel yourself slipping into unconciousness.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5224"/>
+    </children>
+  </item>
+  <item nodeId="node-5224">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">Garden of Hesperides&#x000A;&#x000A;&#x000A;From here you can sail to: &#x000A;&#x2192; Piraeus&#x000A;&#x2192; Sounio&#x000A;&#x2192; Aulis&#x000A;&#x2192; Paphos&#x000A;&#x000A;You can see Eternal Chalice of Nectar, Aigle, Arethousa, Erytheia and Hesperie here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5225"/>
+    </children>
+  </item>
+  <item nodeId="node-5225">
+    <command xml:space="preserve">sail to aulis</command>
+    <result xml:space="preserve">You sail to the Port of Aulis.&#x000A;&#x000A;Port of Aulis&#x000A;From here you can sail to: &#x000A;&#x2192; Sounio&#x000A;&#x2192; Garden of Hesperides&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5226"/>
+    </children>
+  </item>
+  <item nodeId="node-5226">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Agora of Aulis&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5227"/>
+    </children>
+  </item>
+  <item nodeId="node-5227">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Gates of Aulis&#x000A;From here you can travel to: &#x000A;&#x2192; Thebes&#x000A;&#x2192; Athens&#x000A;&#x2192;  Delphi&#x000A;&#x2192; Ephyra&#x000A;&#x2192; Mount Olympus&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5228"/>
+    </children>
+  </item>
+  <item nodeId="node-5228">
+    <command xml:space="preserve">travel to ephyra</command>
+    <result xml:space="preserve">You travel to the Gates of Ephyra.&#x000A;&#x000A;Gates of Ephyra&#x000A;From here you can travel to: &#x000A;&#x2192; Mount Olympus &#x000A;&#x2192; Athens&#x000A;&#x2192; Thebes&#x000A;&#x2192; Aulis&#x000A;&#x2192; Delphi&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5229"/>
+    </children>
+  </item>
+  <item nodeId="node-5229">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">North of Ephyra&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5230"/>
+    </children>
+  </item>
+  <item nodeId="node-5230">
+    <command xml:space="preserve">enter necromateion</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5231"/>
+    </children>
+  </item>
+  <item nodeId="node-5231">
+    <command xml:space="preserve">enter necromanteion</command>
+    <result xml:space="preserve">You went into the necromanteion&#x000A;Necromanteion&#x000A;You can see a necromanteion altar and a flower here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5232"/>
+    </children>
+  </item>
+  <item nodeId="node-5232">
+    <command xml:space="preserve">take flower</command>
+    <result xml:space="preserve">You picked up a flower.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5233"/>
+    </children>
+  </item>
+  <item nodeId="node-5233">
+    <command xml:space="preserve">sacrifice flower</command>
+    <result xml:space="preserve">You put the flower on the altar and you chant some words.&#x000A;&#x000A;You picked up a Obol.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5234"/>
+    </children>
+  </item>
+  <item nodeId="node-5234">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  an Obol&#x000A;  a Heracles' Club&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5235"/>
+    </children>
+  </item>
+  <item nodeId="node-5235">
+    <command xml:space="preserve">drop</command>
+    <result xml:space="preserve">What do you want to drop?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5236"/>
+    </children>
+  </item>
+  <item nodeId="node-5236">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Necromanteion&#x000A;You can see a necromanteion altar here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5237"/>
+    </children>
+  </item>
+  <item nodeId="node-5237">
+    <command xml:space="preserve">showme obo</command>
+    <result xml:space="preserve">There seems to be no such object anywhere in the model world.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5238"/>
+    </children>
+  </item>
+  <item nodeId="node-5238">
+    <command xml:space="preserve">showme obol</command>
+    <result xml:space="preserve">Obol - thing&#x000A;location: carried by yourself in the Necromanteion&#x000A;unlit, inedible, portable, handled; singular-named, improper-named&#x000A;description: none&#x000A;initial appearance: none&#x000A;smell: neutral&#x000A;printed name: "Obol"&#x000A;printed plural name: none&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-5239">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying nothing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5240"/>
+    </children>
+  </item>
+  <item nodeId="node-5240">
+    <command xml:space="preserve">take club</command>
+    <result xml:space="preserve">You picked up a Heracles' Club.&#x000A;&#x000A;Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5241"/>
+    </children>
+  </item>
+  <item nodeId="node-5241">
+    <command xml:space="preserve">give club to heracles</command>
+    <result xml:space="preserve">He smiles to you. "Thank you my dearest."&#x000A;&#x000A;You give the Heracles' Club to the God Heracles.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5242"/>
+    </children>
+  </item>
+  <item nodeId="node-5242">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">Suddenly, an eerie silence fell over the festive night. The singing and dancing ceased, as if an unseen hand had stilled them. For a brief moment, you felt the coldness of the mountain air, a stark contrast to the pleasant breeze that had enveloped you moments before. A sense of foreboding fills you as you become aware that all eyes are turned behind you. You lock eyes with Heracles, both of you sharing a look of worry. With a growing sense of dread, you turned to see what had drawn everyone's attention.&#x000A;&#x000A;"Oh dear, please, do not let my presence taint your insignificant gathering. Carry on as you were."&#x000A;&#x000A;The voice was unmistakable, deep and resonant, carrying an ancient power that sent shivers down your spine. It was Kronos. So much time has passed since our triumph in the War of Titans- the Titanomachy. How did he manage to escape Tartarus?&#x000A;&#x000A;The sight of the Titan, towering and menacing, shrouded in shadows, struck fear into the hearts of all present. You start to feel the ichor in your divine veins turn cold, as if time itself had frozen. The gods, normally so mighty and formidable, stand paralyzed in shock. Nothing moves. In a heartbeat, you break free from the daze and come to your senses. Your next actions have never been more certain. It's now or never.&#x000A;&#x000A;You grab Heracle's club out of his hands and leap towards Kronos. Then you feel yourself slipping into unconciousness.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5243"/>
+    </children>
+  </item>
+  <item nodeId="node-5243">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">Garden of Hesperides&#x000A;&#x000A;&#x000A;From here you can sail to: &#x000A;&#x2192; Piraeus&#x000A;&#x2192; Sounio&#x000A;&#x2192; Aulis&#x000A;&#x2192; Paphos&#x000A;&#x000A;You can see Eternal Chalice of Nectar, Aigle, Arethousa, Erytheia and Hesperie here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5244"/>
+    </children>
+  </item>
+  <item nodeId="node-5244">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a Heracles' Club&#x000A;  an obol&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5245"/>
+    </children>
+  </item>
+  <item nodeId="node-5245">
+    <command xml:space="preserve">sail to aulis</command>
+    <result xml:space="preserve">You sail to the Port of Aulis.&#x000A;&#x000A;Port of Aulis&#x000A;From here you can sail to: &#x000A;&#x2192; Sounio&#x000A;&#x2192; Garden of Hesperides&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5246"/>
+    </children>
+  </item>
+  <item nodeId="node-5246">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Agora of Aulis&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5247"/>
+    </children>
+  </item>
+  <item nodeId="node-5247">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Gates of Aulis&#x000A;From here you can travel to: &#x000A;&#x2192; Thebes&#x000A;&#x2192; Athens&#x000A;&#x2192;  Delphi&#x000A;&#x2192; Ephyra&#x000A;&#x2192; Mount Olympus&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5248"/>
+    </children>
+  </item>
+  <item nodeId="node-5248">
+    <command xml:space="preserve">travel to ephyra</command>
+    <result xml:space="preserve">You travel to the Gates of Ephyra.&#x000A;&#x000A;Gates of Ephyra&#x000A;From here you can travel to: &#x000A;&#x2192; Mount Olympus &#x000A;&#x2192; Athens&#x000A;&#x2192; Thebes&#x000A;&#x2192; Aulis&#x000A;&#x2192; Delphi&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5249"/>
+    </children>
+  </item>
+  <item nodeId="node-5249">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">North of Ephyra&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5250"/>
+    </children>
+  </item>
+  <item nodeId="node-5250">
+    <command xml:space="preserve">enter necromanteion</command>
+    <result xml:space="preserve">You went into the necromanteion&#x000A;Necromanteion&#x000A;You can see a necromanteion altar and a flower here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5251"/>
+    </children>
+  </item>
+  <item nodeId="node-5251">
+    <command xml:space="preserve">sacrifice flower</command>
+    <result xml:space="preserve">(first taking the flower)&#x000A;You picked up a flower.&#x000A;&#x000A;You put the flower on the altar and, with the help of the Priestess, you light it on fire. Persephone acknowledges you.&#x000A;&#x000A;You gained an obol from the sacrifice.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5252"/>
+    </children>
+  </item>
+  <item nodeId="node-5252">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  2 obols&#x000A;  a Heracles' Club&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5284"/>
+    </children>
+  </item>
+  <item nodeId="node-5284">
+    <command xml:space="preserve">sacrifice the Heracles club</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5285"/>
+    </children>
+  </item>
+  <item nodeId="node-5285">
+    <command xml:space="preserve">sacrifice the club</command>
+    <result xml:space="preserve">You shouldn't sacrifice something that isn't yours to sacrifice.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5286"/>
+    </children>
+  </item>
+  <item nodeId="node-5286">
+    <command xml:space="preserve">out</command>
+    <result xml:space="preserve">North of Ephyra&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5287"/>
+    </children>
+  </item>
+  <item nodeId="node-5287">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Gates of Ephyra&#x000A;From here you can travel to: &#x000A;&#x2192; Mount Olympus &#x000A;&#x2192; Athens&#x000A;&#x2192; Thebes&#x000A;&#x2192; Aulis&#x000A;&#x2192; Delphi&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5288"/>
+    </children>
+  </item>
+  <item nodeId="node-5288">
+    <command xml:space="preserve">travel to aulis</command>
+    <result xml:space="preserve">You travel to the Gates of Aulis.&#x000A;&#x000A;Gates of Aulis&#x000A;From here you can travel to: &#x000A;&#x2192; Thebes&#x000A;&#x2192; Athens&#x000A;&#x2192;  Delphi&#x000A;&#x2192; Ephyra&#x000A;&#x2192; Mount Olympus&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5289"/>
+    </children>
+  </item>
+  <item nodeId="node-5289">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5290"/>
+    </children>
+  </item>
+  <item nodeId="node-5290">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5291"/>
+    </children>
+  </item>
+  <item nodeId="node-5291">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Agora of Aulis&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5292"/>
+    </children>
+  </item>
+  <item nodeId="node-5292">
+    <command xml:space="preserve">enter temple</command>
+    <result xml:space="preserve">You went into the temple of the aulidean artemis&#x000A;Temple of the Aulidean Artemis&#x000A;Inside the Temple of the Aulidean Artemis you can see a sundial, the statue of Artemis and her sacrificial altar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5293"/>
+    </children>
+  </item>
+  <item nodeId="node-5293">
+    <command xml:space="preserve">wait until midday</command>
+    <result xml:space="preserve">It is twelve o'clock now.&#x000A;&#x000A;At twelve o'clock  you hear the click of a latch releasing and a sun hatch opening coming from the dial.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5294"/>
+    </children>
+  </item>
+  <item nodeId="node-5294">
+    <command xml:space="preserve">take key</command>
+    <result xml:space="preserve">You picked up a sun key.&#x000A;&#x000A;Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-5295"/>
+    </children>
+  </item>
+  <item nodeId="node-5295">
+    <command xml:space="preserve">sacrifice key</command>
+    <result xml:space="preserve">The only gods that can see your sacrifice right now are the Cthonians. You will need to go to the Necromanteion.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
