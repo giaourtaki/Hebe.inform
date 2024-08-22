@@ -50,6 +50,7 @@
       <child nodeId="node-903"/>
       <child nodeId="node-918"/>
       <child nodeId="node-920"/>
+      <child nodeId="node-3308"/>
       <child nodeId="node-994"/>
       <child nodeId="node-1538"/>
       <child nodeId="node-1549"/>
@@ -9058,6 +9059,12 @@
   <item nodeId="node-993">
     <command xml:space="preserve">l</command>
     <result xml:space="preserve">Mount Olympus Hall&#x000A;Olympus Hall Destruction Description&#x000A;&#x000A;You can see a Heracles' Club here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-3308">
+    <command xml:space="preserve">investigate</command>
+    <result xml:space="preserve">Inside the Temple of the Aulidean Artemis you can see a sundial, the statue of Artemis and her sacrificial altar.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>

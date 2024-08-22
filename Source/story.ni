@@ -6,20 +6,18 @@ Chapter 0.00 - TODOs | TBDs
 
 [All rooms start and end with Start Off [room name] and End Of [room name]]
 
-
-[TODO: fix/add descriptions to everything<3]
 [TODO: make things in descriptions interractable]
-[TODO: fix first description of rooms]
+[TODO: fix/add descriptions to everything<3]
+[TODO: talk action]
+[TODO: complete investigate action descriptions]
 [TODO: update help command]
 [TODO: combat system - talos, amphitrite and kronos]
 [TODO: integrade divine boons]
 [TODO: integrade the club of hercules]
+[TODO: go to -> try travel/sail/go in]
 [TODO: golden apples of hesperides collectables]
 [TODO: add values, like smell, to every item]
-[TODO: go to -> try travel/sail/go in]
 [TODO: put random buildings inside cities]
-[TODO: talk action]
-
 
 Chapter 0.0 - Regions
 
@@ -226,6 +224,17 @@ carry out sacrificing:
 Report sacrificing:
 	say "You gained an obol from the sacrifice.".
 
+[investigate action]
+Investigating is an action applying to nothing. Understand "investigate" or "inv" as investigating.
+
+Instead of investigating:
+	If the player is in the Heroon of Kadmos:
+		Say "You can see a scale, a dragon statue[if the rock is on the dragon head] with a rock on its head[end if], an altar, a sacrificial plate, some armchairs, a side table[if the rock is on the side table] with a rock on top[end if], some wall paintings, and a gate with a smaller scale on its right.";
+	else if the player is in the Temple of the Aulidean Artemis:
+		say "Inside the Temple of the Aulidean Artemis you can see a sundial, the statue of Artemis and her sacrificial altar.";
+	else:
+		say "There isn't much to investigate here.".
+
 [help action]
 Helping is an action applying to nothing. Understand "help" as helping.
 
@@ -252,7 +261,12 @@ Carry out helping:
 	say "   • Wait: Pass time. Example: 'wait'.[line break]";
 	say "   • Save/Restore/Quit: Manage your game. Example: 'save', 'restore', 'quit'.[line break]";
 	say "[line break][bold type]5. Game-Specific Commands:[roman type][line break][line break]";
-	say "   • ";
+	say "   • Sacrifice [bracket]something[close bracket].[line break]";
+	say "   • Investigate: Investigate a room to see the list of interactable things in it.[line break]";
+	say "   • Travel to [bracket]any port[close bracket]: Travel from the gates of a city to another's.[line break]";
+	say "   • Sail to [bracket]any gates/any city[close bracket]: Sail from the port of a city to another's.[line break]";
+	say "   • Rotate [ bracket]object[close bracket] clockwise/anticlockwise: Rotate a rotatable object.[line break]";
+	say "   • Give nectar to [ bracket]person[close bracket]: Make a person immortal or heal an immortal person.[line break]";
 	say "[paragraph break][italic type]You can also combine commands with objects and people, such as 'take book and give it to librarian'.[roman type]";
 	
 Chapter 0 - Tutorial 1 
@@ -511,17 +525,14 @@ Instead of entering Palace of Kadmea:
 
 [Kadmea Puzzle Scene is a scene. Kadmea Puzzle Scene begins when the player is in Heroon of Kadmos for the first time. Kadmea Puzzle Scene ends when Divine Cell 1 is visited.]
 
-The Heroon of Kadmos is a room in Thebes. "You can see a scale, a dragon statue[if the rock is on the dragon head] with a rock on its head[end if], an altar, a sacrificial plate, some armchairs, a side table[if the rock is on the side table] with a rock on top[end if], some wall paintings, and a gate with a smaller scale on its right." [TODO: fix the mapping/name of room]
-Divine Cell 1 is a room in Thebes. 
-
-Instead of looking for the first time:
-	If the player is in Heroon of Kadmos:
-		say "You step into the Heroon of Kadmos, the founder of Thebes. Although the space is modest in size and somewhat confined, it radiates a sense of luxury. The walls are decorated with exquisite paintings that narrate the stories of gods and heroes, and the room is furnished with plush, silky red armchairs that invite one to rest, and a finely crafted hardwood side table with a medium-sized shiny rock on top, all hinting at the luxury that befits a royal palace spare room.
+The Heroon of Kadmos is a room in Thebes. "You step into the Heroon of Kadmos, the founder of Thebes. Although the space is modest in size and somewhat confined, it radiates a sense of luxury. The walls are decorated with exquisite paintings that narrate the stories of gods and heroes, and the room is furnished with plush, silky red armchairs that invite one to rest, and a finely crafted hardwood side table with a medium-sized shiny rock on top, all hinting at the luxury that befits a royal palace spare room.
 
 As you take in your surroundings, your attention is immediately drawn to the large scale that dominates the center of the circular room. Before this scale rests a small altar, upon which an empty sacrificial plate has been placed, as if waiting to receive an offering.
 
-Directly across from where you entered, you notice a hardwood gate. To the right of the gate is a smaller scale, delicately constructed, with six small pans evenly spaced along its length. The small scale is intricately connected to a metal rod, which appears to serve as a locking mechanism for the gate. To the left of the gate stands a statue of a dragon, its serpentine form rising up to your waist, and its head flattened, as a shelf of some kind. Directly above the gate you find an inscription chiseled into the stone.";
-		stop the action.
+Directly across from where you entered, you notice a hardwood gate. To the right of the gate is a smaller scale, delicately constructed, with six small pans evenly spaced along its length. The small scale is intricately connected to a metal rod, which appears to serve as a locking mechanism for the gate. To the left of the gate stands a statue of a dragon, its serpentine form rising up to your waist, and its head flattened, as a shelf of some kind. Directly above the gate you find an inscription chiseled into the stone.".
+
+Divine Cell 1 is a room in Thebes. 
+
 		
 
 [doors]
@@ -884,23 +895,13 @@ Chapter 3 - Artemis & Apollo
 [The player is in the Temple of the Aulidean Artemis.]
 
 [rooms]
-The Temple of the Aulidean Artemis is a room in Thebes. The description is "Inside the Temple of the Aulidean Artemis you can see a sundial, the statue of Artemis and her sacrificial altar.".
-
-Instead of looking for the 1st time:
-	 If the player is in the Temple of the Aulidean Artemis:
-		say "You step into the sacred temple of Aulidean Artemis. The temple is empty and abandoned by the priestesses, following Kronos[apostrophe] seizure of power, as expected, unfortunately. 
+The Temple of the Aulidean Artemis is a room in Thebes. "You step into the sacred temple of Aulidean Artemis. The temple is empty and abandoned by the priestesses, following Kronos[apostrophe] seizure of power, as expected, unfortunately. 
 
 As you pass through the pronaos, your eyes are drawn to the [if the time of day is before 08:00 pm]sunlight[otherwise]moonlight[end if] cascading down from the open ceiling, illuminating an imposing sundial made of pearly white marble that stands at the center of the chamber. The [if the time of day is before 08:00 pm]sun's[otherwise]moon's[end if] rays cross paths with the dial's gnomon, casting a shadow that marks the hour.
 
 Entering the naos, the most divine part of the temple, you find yourself in the presence of the graceful golden statue of Artemis. Your sister stands tall and proud, her form aglow with a divine radiance that speaks of her unyielding strength and purity. In her left hand, she holds the antlers of a noble deer, symbolizing her dominion over the wild, while her right hand grips her bow, ever ready to protect those who dwell under her watchful eye. A quiver, filled with finely crafted arrows, rests upon her back, the tools of the huntress who lets no prey escape.
 
-Directly in front of her statue is the altar of Artemis, a place where mortals would lay their offerings not long ago, hoping to earn her favor. ";
-		stop the action;
-	otherwise:
-		continue the action.
-
-["You walk inside the Temple of Aulidean Artemis. First you observe the pronaos. [if the time of day is before 08:00 pm]Sunlight[otherwise]Moonlight[end if] shines from the open ceiling on the big sundial standing in the middle of the room. Entering the naos, you can see a big golden Artemis' statue. She's holding a deer by the horns in her left hand and a bow in her other, both symbols of the virgin goddess. She is also carrying a quiver full of arrows. In front of her statue, you can see the altar of Artemis.".]
-
+Directly in front of her statue is the altar of Artemis, a place where mortals would lay their offerings not long ago, hoping to earn her favor.".
 
 
 [doors]
@@ -1005,7 +1006,6 @@ Instead of inserting anything into the moon lock:
 		say "Hmmm you don't think this would go there.";
 		stop the action.
 
-the player is in temple of the Aulidean Artemis.
 
 
 [Chapter Time - Time Keeping]
