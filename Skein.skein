@@ -3,7 +3,7 @@
   <generator>Windows Inform 10.1.2</generator>
   <item nodeId="node-1">
     <command xml:space="preserve">Hebe</command>
-    <result xml:space="preserve">Instructions: &#x000A;&#x000A;Welcome to Hebe, my Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. If at any point you need help, type help into the console. Have fun and thank you for playing!&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 240822 / Inform 7 v10.1.2 / D&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Instructions: &#x000A;&#x000A;Welcome to Hebe, my Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. If at any point you need help, type help into the console. Have fun and thank you for playing!&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 240822 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Secret Garden&#x000A;You find yourself in the Secret Garden, a vibrant haven where nature's palette is on full display. Four flowerbeds burst with color: red, purple, yellow, and white, each a riot of blossoms. To your right, a row of golden amphorae, exuding a sweet, intoxicating perfume, gleams in the sunlight. At the garden's heart stands an enormous willow tree, its ancient trunk hollowed by time, providing a natural cavity within its embrace. Beneath its sprawling branches lies a serene lake, its shore full with delicate sea shells. On the eastern edge of the garden, a heavy gate that seems to lead to the next room, though its form is almost hidden by a tangle of vines and blooms. Nearby, a statue of a strikingly beautiful man stands as if guarding the garden's secrets.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -127,6 +127,7 @@
       <child nodeId="node-2401"/>
       <child nodeId="node-2405"/>
       <child nodeId="node-2456"/>
+      <child nodeId="node-3322"/>
       <child nodeId="node-2461"/>
       <child nodeId="node-2479"/>
       <child nodeId="node-2486"/>
@@ -159,6 +160,7 @@
       <child nodeId="node-2725"/>
       <child nodeId="node-2730"/>
       <child nodeId="node-2736"/>
+      <child nodeId="node-3317"/>
       <child nodeId="node-2739"/>
       <child nodeId="node-2740"/>
       <child nodeId="node-2741"/>
@@ -8290,7 +8292,7 @@
   </item>
   <item nodeId="node-918">
     <command xml:space="preserve">help</command>
-    <result xml:space="preserve">Basic Commands&#x000A;1. Movement Commands:&#x000A;&#x000A;   &#x2022; Go [direction]: Move to another room. Example: "go north", "enter", "out".&#x000A;   &#x2022; Directions include: north, south, east, west, northeast, northwest, southeast, southwest, up, and down.&#x000A;   &#x2022; You can also use shortcuts, like n, s, e, w, ne, nw, se, sw, u and d.&#x000A;&#x000A;2. Interaction Commands:&#x000A;&#x000A;   &#x2022; Look: Examine your surroundings. Example: "look", "look around", "l".&#x000A;   &#x2022; Examine [object]: Inspect an item in detail. Example: "examine book", "x book".&#x000A;   &#x2022; Take [object]: Pick up an item. Example: "take key".&#x000A;   &#x2022; Drop [object]: Put down an item. Example: "drop book".&#x000A;   &#x2022; Put [object] on/in [object]: Put an item on top or inside another item. Example: "put flower in pot".&#x000A;   &#x2022; Open/Close [object]: Open or close something. Example: "open door", "close box".&#x000A;   &#x2022; Give [object] to [person]: Give an item to someone. Example: "give book to librarian".&#x000A;&#x000A;3. Conversation Commands:&#x000A;&#x000A;   &#x2022; Talk to [person]: Initiate conversation. Example: "talk to librarian".&#x000A;   &#x2022; Ask [person] about [topic]: Ask someone about something specific. Example: "ask librarian about book".&#x000A;   &#x2022; Tell [person] about [topic]: Tell someone about a topic. Example: "tell librarian about secret".&#x000A;&#x000A;4. Miscellaneous Commands:&#x000A;&#x000A;   &#x2022; Inventory: See what you're carrying. Example: "inventory", "i".&#x000A;   &#x2022; Wait: Pass time. Example: "wait".&#x000A;   &#x2022; Save/Restore/Quit: Manage your game. Example: "save", "restore", "quit".&#x000A;&#x000A;5. Game-Specific Commands:&#x000A;&#x000A;   &#x2022; &#x000A;&#x000A;You can also combine commands with objects and people, such as "take book and give it to librarian".&#x000A;&gt;</result>
+    <result xml:space="preserve">Basic Commands&#x000A;&#x000A;1. Movement Commands:&#x000A;&#x000A;   &#x2022; Go [direction]: Move to another room. Example: "go north", "go in" or "enter", "out".&#x000A;   &#x2022; Directions include: north, south, east, west, northeast, northwest, southeast, southwest, up, and down.&#x000A;   &#x2022; You can also use the shortcuts n, s, e, w, ne, nw, se, sw, u and d.&#x000A;&#x000A;2. Interaction Commands:&#x000A;&#x000A;   &#x2022; Look: Examine your surroundings. Example: "look", "look around", "l".&#x000A;   &#x2022; Examine [object]: Inspect an item in detail. Example: "examine book", "x book".&#x000A;   &#x2022; Take [object]: Pick up an item. Example: "take key".&#x000A;   &#x2022; Drop [object]: Put down an item. Example: "drop book".&#x000A;   &#x2022; Put [object] on/in [object]: Put an item on top or inside another item. Example: "put flower in pot".&#x000A;   &#x2022; Open/Close [object]: Open or close something. Example: "open door", "close box".&#x000A;   &#x2022; Give [object] to [person]: Give an item to someone. Example: "give book to librarian".&#x000A;&#x000A;3. Conversation Commands:&#x000A;&#x000A;   &#x2022; Talk to [person]: Initiate conversation. Example: "talk to librarian".&#x000A;   &#x2022; Ask [person] about [topic]: Ask someone about something specific. Example: "ask librarian about book".&#x000A;   &#x2022; Tell [person] about [topic]: Tell someone about a topic. Example: "tell librarian about secret".&#x000A;&#x000A;4. Miscellaneous Commands:&#x000A;&#x000A;   &#x2022; Inventory: See what you're carrying. Example: "inventory", "i".&#x000A;   &#x2022; Wait: Pass time. Example: "wait".&#x000A;   &#x2022; Save/Restore/Quit: Manage your game. Example: "save", "restore", "quit".&#x000A;&#x000A;5. Game-Specific Commands:&#x000A;&#x000A;   &#x2022; sacrifice [something].&#x000A;   &#x2022; investigate: Investigate a room to see the list of interactable things in it.&#x000A;   &#x2022; travel to [any port]: Travel from the gates of a city to another's.&#x000A;   &#x2022; sail to [any gates/any city]: Sail from the port of a city to another's.&#x000A;   &#x2022; rotate [object] clockwise/anticlockwise: Rotate a rotatable object.&#x000A;   &#x2022; Give nectar to [person]: Make a person immortal or heal an immortal person.&#x000A;&#x000A;&#x000A;You can also combine commands with objects and people, such as "take book and give it to librarian".&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -23194,6 +23196,30 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-3322">
+    <command xml:space="preserve">test solutionSG</command>
+    <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] put red flower in hand&#x000A;You place the red flower in the statue's right hand.&#x000A;&#x000A;&gt;[2] put purple flower in conch shell&#x000A;(first taking the purple flower)&#x000A;You picked up a purple flower.&#x000A;&#x000A;You put the purple flower into the conch shell.&#x000A;&#x000A;&gt;[3] put yellow flower in amphora on the right&#x000A;(first taking the yellow flower)&#x000A;You picked up a yellow flower.&#x000A;&#x000A;You put the yellow flower into the amphora on the right.&#x000A;&#x000A;&gt;[4] put white flower in tree cavity&#x000A;(first taking the white flower)&#x000A;You picked up a white flower.&#x000A;&#x000A;You put the white flower into the tree cavity.&#x000A;&#x000A;You hear the sound of the gate opening&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3323"/>
+    </children>
+  </item>
+  <item nodeId="node-3323">
+    <command xml:space="preserve">enter gate</command>
+    <result xml:space="preserve">Divine Cell 4&#x000A;devine cell 4 description TODO&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3324"/>
+    </children>
+  </item>
+  <item nodeId="node-3324">
+    <command xml:space="preserve">enter gate</command>
+    <result xml:space="preserve">Secret Garden&#x000A;You find yourself in the Secret Garden, a vibrant haven where nature's palette is on full display. Four flowerbeds burst with color: red, purple, yellow, and white, each a riot of blossoms. To your right, a row of golden amphorae, exuding a sweet, intoxicating perfume, gleams in the sunlight. At the garden's heart stands an enormous willow tree, its ancient trunk hollowed by time, providing a natural cavity within its embrace. Beneath its sprawling branches lies a serene lake, its shore full with delicate sea shells. On the eastern edge of the garden, a heavy gate that seems to lead to the next room, though its form is almost hidden by a tangle of vines and blooms. Nearby, a statue of a strikingly beautiful man stands as if guarding the garden's secrets.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-2461">
     <command xml:space="preserve">testme</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
@@ -23882,12 +23908,82 @@
   </item>
   <item nodeId="node-2540">
     <command xml:space="preserve">u</command>
-    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;Olympus Hall Celebration Scene ended&#x000A;&gt;</result>
+    <result xml:space="preserve">Throne Room&#x000A;Home to the King of Paphos, Cinyras.&#x000A;&#x000A;You can see Cinyras here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
+      <child nodeId="node-3309"/>
       <child nodeId="node-2541"/>
     </children>
+  </item>
+  <item nodeId="node-3309">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">Secret Garden&#x000A;You find yourself in the Secret Garden, a vibrant haven where nature's palette is on full display. Four flowerbeds burst with color: red, purple, yellow, and white, each a riot of blossoms. To your right, a row of golden amphorae, exuding a sweet, intoxicating perfume, gleams in the sunlight. At the garden's heart stands an enormous willow tree, its ancient trunk hollowed by time, providing a natural cavity within its embrace. Beneath its sprawling branches lies a serene lake, its shore full with delicate sea shells. On the eastern edge of the garden, a heavy gate that seems to lead to the next room, though its form is almost hidden by a tangle of vines and blooms. Nearby, a statue of a strikingly beautiful man stands as if guarding the garden's secrets.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3310"/>
+    </children>
+  </item>
+  <item nodeId="node-3310">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3311"/>
+    </children>
+  </item>
+  <item nodeId="node-3311">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3312"/>
+    </children>
+  </item>
+  <item nodeId="node-3312">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3313"/>
+    </children>
+  </item>
+  <item nodeId="node-3313">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">(first opening the flower gate)&#x000A;It isn't something you can open.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3314"/>
+    </children>
+  </item>
+  <item nodeId="node-3314">
+    <command xml:space="preserve">x red flowerbed</command>
+    <result xml:space="preserve">You can see some red flowers in this flowerbed.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3315"/>
+    </children>
+  </item>
+  <item nodeId="node-3315">
+    <command xml:space="preserve">x container</command>
+    <result xml:space="preserve">(the hand)&#x000A;You notice the number &#x0391; carved on its index finger.&#x000A;It's not holding anything&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3316"/>
+    </children>
+  </item>
+  <item nodeId="node-3316">
+    <command xml:space="preserve">x containers</command>
+    <result xml:space="preserve">(the hand)&#x000A;You notice the number &#x0391; carved on its index finger.&#x000A;It's not holding anything&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-2541">
     <command xml:space="preserve">u</command>
@@ -25682,6 +25778,48 @@
   <item nodeId="node-2738">
     <command xml:space="preserve">showme hand</command>
     <result xml:space="preserve">hand - transparent open container&#x000A;location: part of the statue in the Secret Garden&#x000A;unlit, inedible, fixed in place; transparent, open, unopenable, unlocked; singular-named, improper-named&#x000A;description: none&#x000A;initial appearance: none&#x000A;carrying capacity: 1&#x000A;printed name: "hand"&#x000A;printed plural name: "containers"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-3317">
+    <command xml:space="preserve">x container</command>
+    <result xml:space="preserve">Which container do you mean? Please specify.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3318"/>
+    </children>
+  </item>
+  <item nodeId="node-3318">
+    <command xml:space="preserve">go in gate</command>
+    <result xml:space="preserve">(first opening the flower gate)&#x000A;It isn't something you can open.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3319"/>
+    </children>
+  </item>
+  <item nodeId="node-3319">
+    <command xml:space="preserve">test</command>
+    <result xml:space="preserve">&gt;--&gt; The following tests are available:&#x000A;'test getweights'&#x000A;'test dragongate'&#x000A;'test pos'&#x000A;'test art'&#x000A;'test fire'&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3320"/>
+    </children>
+  </item>
+  <item nodeId="node-3320">
+    <command xml:space="preserve">test pos</command>
+    <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] rotate the top ring anticlockwise&#x000A;You can't reach into the Poseidon's Temple.&#x000A;&#x000A;&gt;[2] rotate the second ring anticlockwise&#x000A;You can't reach into the Poseidon's Temple.&#x000A;&#x000A;&gt;[3] rotate the second ring anticlockwise&#x000A;You can't reach into the Poseidon's Temple.&#x000A;&#x000A;&gt;[4] rotate the third ring anticlockwise&#x000A;You can't reach into the Poseidon's Temple.&#x000A;&#x000A;&gt;[5] rotate the third ring anticlockwise&#x000A;You can't reach into the Poseidon's Temple.&#x000A;&#x000A;&gt;[6] rotate the third ring anticlockwise&#x000A;You can't reach into the Poseidon's Temple.&#x000A;&#x000A;&gt;[7] rotate the bottom ring anticlockwise&#x000A;You can't reach into the Poseidon's Temple.&#x000A;&#x000A;&gt;[8] rotate the bottom ring anticlockwise&#x000A;You can't reach into the Poseidon's Temple.&#x000A;&#x000A;&gt;[9] rotate the bottom ring anticlockwise&#x000A;You can't reach into the Poseidon's Temple.&#x000A;&#x000A;&gt;[10] rotate the bottom ring anticlockwise&#x000A;You can't reach into the Poseidon's Temple.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3321"/>
+    </children>
+  </item>
+  <item nodeId="node-3321">
+    <command xml:space="preserve">test art</command>
+    <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] wait until 12 pm&#x000A;I only understood you as far as wanting to wait.&#x000A;&#x000A;&gt;[2] take sun key&#x000A;You can't see any such thing.&#x000A;&#x000A;&gt;[3] wait until 12 am&#x000A;I only understood you as far as wanting to wait.&#x000A;&#x000A;&gt;[4] take moon key&#x000A;You can't see any such thing.&#x000A;&#x000A;&gt;[5] put sun key in sun lock&#x000A;You can't see any such thing.&#x000A;&#x000A;&gt;[6] put moon key in moon lock&#x000A;You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>

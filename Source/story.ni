@@ -155,8 +155,26 @@ Definition: A container is empty if nothing is in it.
 
 Chapter 0.5 - Actions
 
+[to solve container refering to hands bug]
+After reading a command:
+	if the player's command includes "container":
+		if the player's command matches "x container":
+			say "Which container do you mean? Please specify.";
+			reject the player's command.
+		
+[picking up/taking action]
+After taking something:
+	say "You picked up [a noun]." ;
+	[TODO: change the pick up 3 print]
+	
+[Smelling action]
+Instead of smelling something:
+	If the noun is not a person:
+		say "It smells [smell of the noun].";
+	otherwise:
+		say "Activelly trying to smell a person can be considered rude.".
+		
 [rotating]
-
 Rotating is an action applying to one thing. Understand "rotate [any thing] clockwise" or "rotate the [any thing] clockwise" or "rotate clockwise the [any thing]" or "rotate the [any thing] to the left" or "rotate [any thing] to the left" as rotating.
 
 Antirotating is an action applying to one thing. Understand "rotate [any thing] anticlockwise" or "rotate the [any thing] anticlockwise" or "rotate anticlockwise the [any thing]" or "rotate [any thing] counterclockwise" or "rotate the [any thing] counterclockwise" or "rotate counterclockwise the [any thing]"or "rotate the [any thing] to the right" or "rotate [any thing] to the right" as antirotating. [TODO: put help for the player about which way to rotate]
@@ -169,7 +187,6 @@ The block giving rule is not listed in any rulebook.
 [going to]
 
 [sitting]
-
 Understand the command "sit" as something new.
 Sitting is an action applying to one touchable thing. Understand "sit on [something]" as sitting.
 
@@ -181,7 +198,6 @@ carry out sitting:
 	say "You sit on [the noun]. [one of]It's so soft! [or]It's so fluffy![at random][line break]That was a refreshing break. You get up again.".
 
 [giving nectar to person]
-
 Instead of giving nectar to something:
 	if the second noun is mortal:
 		say "You can't decide to make people immortal so easily. Think of the consequences!";
@@ -1251,6 +1267,7 @@ Secret Garden is a room in Palace of Paphos. "You find yourself in the Secret Ga
 Divine Cell 4 is a room in Palace of Paphos. "devine cell 4 description TODO".
 
 The Secret Garden is down of the Throne Room and west of the flower gate.
+
 The Divine Cell 4 is east of the flower gate. [TODO: change the name of the divine cell]
 
 
@@ -1259,7 +1276,7 @@ The Divine Cell 4 is east of the flower gate. [TODO: change the name of the divi
 [Start Of Secret Garden]
 
 [Secret Garden to Divine Cell 4 by door]
-The flower gate is east of the Secret Garden and west of the Divine Cell 4. The flower gate is a closed unopenable door. The  flower gate is a scenery. 
+The flower gate is east of the Secret Garden and west of the Divine Cell 4. The flower gate is a closed unopenable door. The flower gate is a scenery. 
 
 [Secret Garden to Divine Cell 4 by lake]
 
@@ -1274,16 +1291,13 @@ Instead of examining the lake: [TODO: fix description]
 		say "It's a beautiful lake full of colourfull water lilies.". 
 		
 
-Understand "go in [lake]" or "enter [lake]" as opening. 
+The player is in the secret garden.
+
+Understand "go in [lake]" or "enter [lake]" or "jump in [lake]" as opening. 
 
 
 Instead of going down when the player is in the secret garden:
-	if HasPoseidonBoon is false:
-		say "You can't go down from here.";[TODO: fix description]
-		stop the action;
-	otherwise:
-		say "You look at the lake. Maybe you can go down through there.";
-		try opening the lake;
+		say "You can't go that way.";
 		stop the action.
 
 Instead of opening the lake :
@@ -1294,7 +1308,7 @@ Instead of opening the lake :
 		[stop the action;]
 	otherwise:
 		now the lake is closed;
-		say "You can't. All you can see is dirty water.";
+		say "Why would you do that? All you can see in the water is green alge.";
 		stop the action;
 		
 	
@@ -1361,18 +1375,27 @@ Understand "Bilberry flower" as white flower.
 
 
 [Putting the flowers in the room]
-There are 30 red flowers in the red flowerbed. The description of the red flowerbed is "[if there are red flowers in the red flowerbed]You can see some red flowers in this flowerbed.[otherwise]You picked up every red flower.".
-There are 30 purple flowers in the purple flowerbed. The description of the purple flowerbed is "[if there are purple flowers in the purple flowerbed]You can see some purple flowers in this flowerbed.[otherwise]You picked up every purple flower.".
-There are 30 yellow flowers in the yellow flowerbed. The description of the yellow flowerbed is "[if there are yellow flowers in the yellow flowerbed]You can see some yellowflowers in this flowerbed.[otherwise]You picked up every yellow flower.".
+There are 30 red flowers in the red flowerbed. 
+Instead of examining the red flowerbed:
+	say "[if there are red flowers in the red flowerbed]You can see some red flowers in this flowerbed.[otherwise]You picked up every red flower.";
+	stop the action.
 
-There are 30 white flowers in the white flowerbed. [TODO: instead of description]
-The description of the white flowerbed is "[if there are white flowers in the white flowerbed] You can see some whiteflowers in this flowerbed.[otherwise] You picked up every white flower.".
+There are 30 purple flowers in the purple flowerbed. 
+Instead of examining the purple flowerbed:
+	say "[if there are purple flowers in the purple flowerbed]You can see some purple flowers in this flowerbed.[otherwise]You picked up every purple flower.";
+	stop the action.
 
-[Picking Up Flowers]
-[red]
-After taking something:
-	say "You picked up [a noun]." ;
-	[TODO: change the pick up 3 print]
+There are 30 yellow flowers in the yellow flowerbed. 
+Instead of examining the yellow flowerbed:
+	say "[if there are yellow flowers in the yellow flowerbed]You can see some yellowflowers in this flowerbed.[otherwise]You picked up every yellow flower.";
+	stop the action.
+
+
+There are 30 white flowers in the white flowerbed. 
+Instead of examining the white flowerbed:
+	say "[if there are white flowers in the white flowerbed] You can see some whiteflowers in this flowerbed.[otherwise] You picked up every white flower.";
+	stop the action.
+
 
 		
 [Putting plans back down]
@@ -1404,13 +1427,7 @@ Instead of inserting something into the white flowerbed:
 	otherwise:
 		say "You can't burry that here."; 
 		
-[Smelling action]
 
-Instead of smelling something:
-	If the noun is not a person:
-		say "It smells [smell of the noun].";
-	otherwise:
-		say "Activelly trying to smell a person can be considered rude.".
 
 [Statue of Adonis]
 The man statue is a thing in the Secret Garden. The man statue is fixed in place. It is undescribed.
@@ -1423,11 +1440,10 @@ Instead of examining the man statue, say "You can see a marble sign on the statu
 A sign is a thing. The sign is fixed in place. The sign is part of the man statue. The description of the sign is "The inscription on it reads: For now, the solution is clear: A > red, B > purple, Γ> yellow, Δ>white.". [TODO: fix sign according to poem]
 
 
-
-[container A | Hand] [BUG: containers refers to hands]
-Understand "right hand" or "hands" as hand.
-
+[container A | Statue Hand]
 The hand is a transparent container. The hand is part of the man statue. The hand is fixed in place. The carrying capacity of the hand is 1. The hand is unopenable. The plural of hand is hands.
+
+Understand "right hand" or "hands" as hand.
 
 Instead of inserting a thing into the hand:
 	say "You place the [noun] in the statue's right hand."; 
@@ -1443,12 +1459,13 @@ Instead of examining the hand:
 
 
 [container B | Conch Shell]
-Understand "shells" or "seashells" or "sea shells" as pile of shells.
 The pile of shells is an thing in the Secret Garden. The pile of shells is undescribed. It is fixed in place. 
 
-Understand "big conch shell" or "huge conch shell" or "shell" as conch shell.
+Understand "shells" or "seashells" or "sea shells" as pile of shells.
 
 The conch shell is a container in the Secret Garden. The conch shell is undescribed. It is fixed in place. The carrying capacity of conch shell  is 1. The description of the conch shell is "You examine the conch shell. The poor creature that used to inhabit it must be long gone, surely after having made it to old age. In the iridescent insides you can faintly see a carving: Β.".
+
+Understand "big conch shell" or "huge conch shell" or "shell" as conch shell.
 
 Instead of examining pile of shells:
 	say "You notice a big conch shell on top of a pile of random shells.";
@@ -1530,13 +1547,6 @@ Instead of examining the flower gate:
 	otherwise:
 		say "The gate is tightly closed."	
 		
-Instead of going in the flower gate:
-	if FlowerPuzzleSolved is true:
-		say "The gate is now open.";
-		try entering flower gate;
-	otherwise:
-		say "The gate is tightly closed."
-
 Every turn:
 	If FlowerPuzzleSolved is true for the first turn:
 		say "You hear the sound of the gate opening";
@@ -1546,8 +1556,8 @@ Every turn:
 		now the flower gate is closed;
 		
 		
-[Test solutionSG with "put red flower in hand/ put purple flower in conch shell / put yellow flower in amphora on the right  / put white flower in tree cavity ".
-test SG2 with "put red flower in hand /x hand/take red flower from hand/x hand".]
+Test solutionSG with "put red flower in hand/ put purple flower in conch shell / put yellow flower in amphora on the right  / put white flower in tree cavity ".
+test SG2 with "put red flower in hand /x hand/take red flower from hand/x hand".
 
 [End Of Secret Garden]
 
@@ -1557,9 +1567,7 @@ test SG2 with "put red flower in hand /x hand/take red flower from hand/x hand".
 
 [Characters]
 Cinyras is a man in the Throne Room.
-[Aphrodite is a woman in the Divine Cell 4.
-Hephaestus is a man in the Divine Cell 4.]
-[Conversation]
+
 
 
 Chapter 5 - Hestia & Hermes
