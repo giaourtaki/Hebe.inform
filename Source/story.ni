@@ -18,6 +18,7 @@ Chapter 0.00 - TODOs | TBDs
 [TODO: golden apples of hesperides collectables]
 [TODO: add values, like smell, to every item]
 [TODO: put random buildings inside cities]
+[TODO: change the name of the divine cells]
 
 Chapter 0.0 - Regions
 
@@ -121,7 +122,7 @@ ThebesTemplePuzzleSolved is a truth state that varies. ThebesTemplePuzzleSolved 
 [Chapter 2 - Demeter & Poseidon]
 AmphitriteIsCalm is a truth state that varies. AmphitriteIsCalm is true. [Is the player calmed down Amphitrite]
 SeaTemplePuzzleSolved is a truth state that varies. SeaTemplePuzzleSolved is false. [if sea temple puzzle in Poseidons Temple is solved or not]
-HasDemeterBoon is a truth state that varies. HasDemeterBoon is false. [If the player has Demeter's boon, HasDemeterBoon is true]
+HasDemeterBoon is a truth state that varies. HasDemeterBoon is true. [If the player has Demeter's boon, HasDemeterBoon is true]
 HasPoseidonBoon is a truth state that varies. HasPoseidonBoon is false. [If the player has Poseidon's boon, HasPoseidonBoon is true]
 
 [Chapter 3 - Artemis & Apollo]
@@ -241,13 +242,16 @@ Report sacrificing:
 	say "You gained an obol from the sacrifice.".
 
 [investigate action]
-Investigating is an action applying to nothing. Understand "investigate" or "inv" as investigating.
+Investigating is an action applying to nothing. Understand "investigate" as investigating.
 
 Instead of investigating:
 	If the player is in the Heroon of Kadmos:
-		Say "You can see a scale, a dragon statue[if the rock is on the dragon head] with a rock on its head[end if], an altar, a sacrificial plate, some armchairs, a side table[if the rock is on the side table] with a rock on top[end if], some wall paintings, and a gate with a smaller scale on its right.";
+		Say "In the Heroon of Kadmos you can see a scale, a dragon statue[if the rock is on the dragon head] with a rock on its head[end if], an altar, a sacrificial plate, some armchairs, a side table[if the rock is on the side table] with a rock on top[end if], some wall paintings, and a gate with a smaller scale on its right.";
 	else if the player is in the Temple of the Aulidean Artemis:
 		say "Inside the Temple of the Aulidean Artemis you can see a sundial, the statue of Artemis and her sacrificial altar.";
+	[TODO: fill here]
+	else if the player is in the Secret Garden:
+		say "In the Secret Garden you see a statue of a man, a lake, an olive tree and some flowerbeds with red, purple and orange flowers. In the perfume-making area there are some ceramic amphorae and a gate.";
 	else:
 		say "There isn't much to investigate here.".
 
@@ -1247,8 +1251,7 @@ test art with "wait until 12 pm/take sun key/wait until 12 am/ take moon key/ pu
 [End Of: Temple of the Aulidean Artemis]
 
 The Divine Cell of Artemis & Apollo is a room in Thebes.
-[The Goddess Artemis is in the Divine Cell of Artemis & Apollo. Artemis is a woman.
-The God Apollo is in the Divine Cell of Artemis & Apollo. Apollo is a man.]
+
 
 
 Chapter 4 - Aphrodite & Hephaestus
@@ -1256,19 +1259,26 @@ Chapter 4 - Aphrodite & Hephaestus
 [region: Cyprus]
 
 [When i want to test Cyprus]
-[The player is inside the Secret Garden.]
+The player is inside the Secret Garden.
 
 [Rooms]
-Agora of Paphos is a room in Cyprus. "The main square of Paphos."
-Throne Room is a room in Palace of Paphos.  "Home to the King of Paphos, Cinyras."
+Agora of Paphos is a room in Cyprus. "The main square of Paphos. You can see the Palace of Paphos on the north."
+Throne Room is a room in Palace of Paphos.  "Home to the King of Paphos, Cinyras. Down is the Secret Garden."
+The Outside of the Palace of Paphos is a room in Paphos. "The palace entrance is on the north.".
+
 [secret garden]
-Secret Garden is a room in Palace of Paphos. "You find yourself in the Secret Garden, a vibrant haven where nature’s palette is on full display. Four flowerbeds burst with color: red, purple, yellow, and white, each a riot of blossoms. To your right, a row of golden amphorae, exuding a sweet, intoxicating perfume, gleams in the sunlight. At the garden’s heart stands an enormous willow tree, its ancient trunk hollowed by time, providing a natural cavity within its embrace. Beneath its sprawling branches lies a serene lake, its shore full with delicate sea shells. On the eastern edge of the garden, a heavy gate that seems to lead to the next room, though its form is almost hidden by a tangle of vines and blooms. Nearby, a statue of a strikingly beautiful man stands as if guarding the garden's secrets." ["You are in the Secret Garden. You can see red, purple, yellow and white flowers planted in some flowerbeds. In your right you can see some golden amphorae placed in a line. In the middle of the garden you see an enormous tree with a cavity in the middle. You see lake with shells in the shore. A heavy looking gate that seems to lead to the next room is on the eastern side of the garden, its view mostly obstructed by vines and blooms. In the garden you see a statue of a beautiful man.". ]
+Secret Garden is a room in Palace of Paphos. "You find yourself in an enchanted underground garden, where magic seems to pulse from every corner. The air is thick with the intoxicating scent of flowers, each blossom radiating a soft, ethereal glow. Though deep beneath the earth, the space is bathed in a gentle, divine light radiating from the plants themselves, complemented by the soft flicker of the candles lining the paths, their wax bodies somehow untouched by time or flame. Despite the absence of any other life, the garden feels alive, giving the impression it exists in a suspended moment between the past and present. 
+
+As one steps through the entrance, their eyes would be immediately drawn to a statue of an incomprehensibly beautiful man, poised on a marble base. His right hand is raised, his gaze fixed intently on it, [if nothing is inside the hand]as if beholding some unseen object.[otherwise]looking at the [list of things inside the item described] he's holding.[end if] Behind the statue lies a serene natural lake, with delicate pink and white lilies gently laying on its surface. On the other side of the water, a majestic olive tree stands, ancient and hollowed by the passage of centuries, its gnarled bark a testament to its age. Some round flower beds bursting with vibrant red, purple, and orange flowers are encircling the lake and the tree.
+
+On the eastern side of the room, separated by a couple of steps decorated with flowers and candles, there is a secluded perfume-making area. Here, counters are crowded with the tools and equipment necessary for crafting fragrant elixirs, while ceramic amphorae are stored beneath, likely to store finished scents. The area leads to a gate covered in vines and flowers, making passage through it impossible." 
+
 
 Divine Cell 4 is a room in Palace of Paphos. "devine cell 4 description TODO".
 
 The Secret Garden is down of the Throne Room and west of the flower gate.
 
-The Divine Cell 4 is east of the flower gate. [TODO: change the name of the divine cell]
+The Divine Cell 4 is east of the flower gate. 
 
 
 [doors/gates]
@@ -1276,7 +1286,7 @@ The Divine Cell 4 is east of the flower gate. [TODO: change the name of the divi
 [Start Of Secret Garden]
 
 [Secret Garden to Divine Cell 4 by door]
-The flower gate is east of the Secret Garden and west of the Divine Cell 4. The flower gate is a closed unopenable door. The flower gate is a scenery. 
+The ivy gate is east of the Secret Garden and west of the Divine Cell 4. The ivy gate is a locked door. The ivy gate is a scenery. 
 
 [Secret Garden to Divine Cell 4 by lake]
 
@@ -1286,97 +1296,109 @@ Instead of examining the lake: [TODO: fix description]
 	if HasPoseidonBoon is true:
 		now the lake is open;
 		now the lake is handled;
-		say "Poseidon's Power flows through your vains. You can clearly see an underwather path. You wonder if it actually leads you where you should be.";
+		say "Taking a better glance at the lake, you notice through the clear waters an underwater path, leading even further down.";
 	otherwise:
-		say "It's a beautiful lake full of colourfull water lilies.". 
+		say "It's a beautiful lake full of pink and white water lilies sitting on its surface.". 
 		
-
-The player is in the secret garden.
 
 Understand "go in [lake]" or "enter [lake]" or "jump in [lake]" as opening. 
 
 
-Instead of going down when the player is in the secret garden:
-		say "You can't go that way.";
-		stop the action.
-
 Instead of opening the lake :
 	if HasPoseidonBoon is true and the lake is handled:
 		now the lake is open;
-		say "You swim through the waters.";
+		say "You enter the lake and dive deep into its waters. You swim through the underwater path, which, thankfully, is just wide enough to fit you.";
 		try entering the lake;
 		[stop the action;]
 	otherwise:
 		now the lake is closed;
-		say "Why would you do that? All you can see in the water is green alge.";
+		say "Maybe it's best not to do that. The lake looks like it might be pretty deep and, besides, you wouldn't want to disturb the water lilies.";
 		stop the action;
 		
-	
+Instead of going down when the player is in the secret garden:
+		say "You can't go that way.";
+		stop the action.
 
 [Items]
 
 [items described]
-A vine is a thing in the Secret Garden. It is undescribed. It is fixed in place. The plural of vine is vines.
-A bloom is a thing in the Secret Garden. It is undescribed. It is fixed in place. The plural of bloom is blooms.
+A vines is part of the flower gate. It is undescribed. Understand "vine" or "flowers on the gate" or "gate flowers" as vines.
 A water lily is a kind of plant. There is one water lily in the Secret Garden. It is undescribed. The plural of water lily is water lilies. The smell of water lily is good.
+A candle is a fixed in place undescribed thing. It is in the Secret Garden.
+A marble base is part of the statue.
+A steps is a fixed in place undescribed thing. It is in the secret garden. 
+perfume making tools is a kind of fixed in place undescribed thing. There is one perfume making tools in the secret garden. Understand "tools" or "equipment" as perfume making tools.
 
-Instead of examining the vine:
-	say "It's just some vine.";
+Instead of examining the perfume making tools:
+	say "On the counters you see some mortars with their respective pestles, some strainers, some perfume presses and a big cauldron.";
 	stop the action.
 	
-Instead of examining the bloom:
-	say "They're just some random blooms.";
+Instead of taking the perfume making tools:
+	say "Maybe it is better that you left those alone for the ones that need them.";
+	stop the action.
+
+Instead of examining the marble base:
+	say "On the base of the statue you see a sign made of marble.";
 	stop the action.
 	
-Understand "lily" as water lily.
+Understand "base" or "base of statue" or "base of the statue" as marble base.
+
+Instead of examining the vines:
+	say "The vines are all over the gate, blocking you from trying to open it. Thankfully, they don't look like the poison kind.";
+	stop the action.
+	
+Instead of examining the steps:
+	say "The steps are carved from marble, with lush flowering bushes and candles on either side.";
+	stop the action.
+	
+
+	
+Understand "lily" or "pink lily" or "white lily" as water lily.
 Instead of examining the water lily:
 	say "It's a cute pink flower.";
 	stop the action.
 
 Instead of taking a water lily:
 	if the number of water lilies in the secret garden is 0:
-		say "It would be a shame to remove more of those beautiful flowers. Frogs sleep in them!";
+		say "It would be a shame to remove any more of those beautiful flowers. Frogs could be sleeping in them!";
 		stop the action;
 	otherwise:
+		say "You pick one lily, just to see up close.";
 		continue the action.
 
 [Flowerbeds]
 
+Understand "round flowerbed" as flowerbed.
 [red]
 A red flowerbed is in the Secret Garden. The red flowerbed is fixed in place. It is undescribed. [TODO: instead of examining flowerbeds]
 
 [purple]
-A purple flowerbed is in the Secret Garden. The purple flowerbed is fixed in place. It is undescribed.
+A purple  flowerbed is in the Secret Garden. The purple flowerbed is fixed in place. It is undescribed.
 
-[yellow]
-A yellow flowerbed is in the Secret Garden. The yellow flowerbed is fixed in place. It is undescribed.
+[orange]
+An orange flowerbed is in the Secret Garden. The orange flowerbed is fixed in place. It is undescribed.
 
-[white]
-A white flowerbed is in the Secret Garden. The white flowerbed is fixed in place. It is undescribed.
 
 [Adonis Flowers]
-A red flower is a kind of plant. [The colour of red flower is red.] The description of red flower is "This is an Adonis Flower.[if HasDemeterBoon is true]It is said to signify painful memories.". The smell of the red flower is good. 
-Understand "adonis flower" as red flower.
+A red flower is a kind of plant. [The colour of red flower is red.] The description of red flower is "The red flowers have vibrant, silky petals, coloured in deep red. Their petals surround a small, central cluster of tiny, golden yellow stamens, and are set against feathery, soft green leaves that are thin and finely divided, almost like delicate threads.[if HasDemeterBoon is true] These are Adonis flowers. In the language of flowers, they signify sorrowful memories and the transience of life.". The smell of the red flower is good. 
+Understand "adonis flower" or "adonis"  as red flower.
 
 
 [Amaranthos Flowers]
-A purple flower is a kind of plant. [The colour of red flower is red.] The description of purple flower is "This is an Amaranthos Flower.[if HasDemeterBoon is true]It is said to signify unfading love." The smell of the purple flower is good.
-Understand "amaranthos flower" as purple flower.
+A purple flower is a kind of plant. [The colour of red flower is red.] The description of purple flower is "The purple flowers have tall, graceful stalks adorned with dense clusters of tiny, deep purple blossoms that cascade like flowing velvet. Their leaves are broad and slightly textured, with a rich green color that complements the vibrant blooms.[if HasDemeterBoon is true] These are Amaranthos flowers. In the language of flowers, they signify immortality, unfading love, and eternal beauty." The smell of the purple flower is good.
+Understand "amaranthos flower" or "amaranthos"  as purple flower.
 
 [yellow Flowers]
-A yellow flower is a kind of plant. [The colour of red flower is red.] The description of yellow flower is "This is an Butterfly Weed Flower.[if HasDemeterBoon is true]It is said to signify treachery."The smell of the yellow flower is good.
-Understand "Butterfly Weed flower" as yellow flower.
+A orange flower is a kind of plant. [The colour of red flower is red.] The description of orange flower is "The orange flowers have bright, fiery orange clusters of small, star-shaped flowers that stand out against their narrow, dark green leaves. The blossoms are arranged in flat-topped clusters, giving the plant a vibrant, bushy appearance.[if HasDemeterBoon is true] These are Butterfly Weed flowers. In the language of flowers, they signify a longing for release, letting go and parting." The smell of the orange flower is good.
+Understand "butterfly weed flower"  or "butterfly weed" as orange flower.
 
-[white Flowers]
-A white flower is a kind of plant. [The colour of red flower is red.] The description of white flower is "This is an Bilberry Flower.[if HasDemeterBoon is true]In the flower tongue it means 'let me go'." The smell of the white flower is amazing.
-Understand "Bilberry flower" as white flower.
 
 [Flower Actions]
 
 
 [Putting the flowers in the room]
 There are 30 red flowers in the red flowerbed. 
-Instead of examining the red flowerbed:
+Instead of examining the red  flowerbed:
 	say "[if there are red flowers in the red flowerbed]You can see some red flowers in this flowerbed.[otherwise]You picked up every red flower.";
 	stop the action.
 
@@ -1385,17 +1407,10 @@ Instead of examining the purple flowerbed:
 	say "[if there are purple flowers in the purple flowerbed]You can see some purple flowers in this flowerbed.[otherwise]You picked up every purple flower.";
 	stop the action.
 
-There are 30 yellow flowers in the yellow flowerbed. 
-Instead of examining the yellow flowerbed:
-	say "[if there are yellow flowers in the yellow flowerbed]You can see some yellowflowers in this flowerbed.[otherwise]You picked up every yellow flower.";
+There are 30 orange flowers in the orange flowerbed. 
+Instead of examining the orange flowerbed:
+	say "[if there are orange flowers in the orange flowerbed]You can see some orange flowers in this flowerbed.[otherwise]You picked up every orange flower.";
 	stop the action.
-
-
-There are 30 white flowers in the white flowerbed. 
-Instead of examining the white flowerbed:
-	say "[if there are white flowers in the white flowerbed] You can see some whiteflowers in this flowerbed.[otherwise] You picked up every white flower.";
-	stop the action.
-
 
 		
 [Putting plans back down]
@@ -1413,19 +1428,13 @@ Instead of inserting something into the purple flowerbed:
 	otherwise:
 		say "You can't burry that here."; 
 		
-Instead of inserting something into the yellow flowerbed:
+Instead of inserting something into the orange flowerbed:
 	If the noun is a plant:
-		now the noun is inside the yellow flowerbed;
-		say "You plant the [noun] into the yellow flowerbed.";
+		now the noun is inside the orange flowerbed;
+		say "You plant the [noun] into the orange flowerbed.";
 	otherwise:
 		say "You can't burry that here."; 
 		
-Instead of inserting something into the white flowerbed:
-	If the noun is a plant:
-		now the noun is inside the white flowerbed;
-		say "You plant the [noun] into the white flowerbed.";
-	otherwise:
-		say "You can't burry that here."; 
 		
 
 
@@ -1434,11 +1443,13 @@ The man statue is a thing in the Secret Garden. The man statue is fixed in place
 
 Understand "statue" as man statue when the player is in the secret garden.
 
-Instead of examining the man statue, say "You can see a marble sign on the statue's base. [if something is inside the hand]You can see he's holding [a list of things inside the hand] in his right hand.[otherwise]His right hand looks like it could be holding something but there's nothing there.". 
+Instead of examining the man statue, say "The statue depicts a man with breathtaking beauty. His figure is carved with exquisite detail, and his chiseled features and graceful form are captured with masterful artistry. There is a longingness in his gaze, which falls on his raised right hand.[if something is inside the hand] You can see he's holding [a list of things inside the hand] in his right hand.[otherwise][line break]His right hand looks like it could be holding something but there's nothing there.[end if] [If the sign is not handled][line break]You can also see a marble sign on the statue's base.[end if]". 
 
 [The Sign]
-A sign is a thing. The sign is fixed in place. The sign is part of the man statue. The description of the sign is "The inscription on it reads: For now, the solution is clear: A > red, B > purple, Γ> yellow, Δ>white.". [TODO: fix sign according to poem]
+A sign is a thing. The sign is fixed in place. The sign is part of the man statue. The description of the sign is "The inscription on it reads: [line break][line break] May our love root and grow eternally, even though I am but mortal.[line break] I am afraid I will pass from this world still holding on to the bittersweet memory of you.[line break] Even in our parting I will find solace in your scent.". 
 
+After examining the sign:
+	now the sign is handled.
 
 [container A | Statue Hand]
 The hand is a transparent container. The hand is part of the man statue. The hand is fixed in place. The carrying capacity of the hand is 1. The hand is unopenable. The plural of hand is hands.
@@ -1450,113 +1461,136 @@ Instead of inserting a thing into the hand:
 	now the noun is in the hand.
 	
 Instead of examining the hand:
-	say "You notice the number Α carved on its index finger.";
 	if something is inside the hand:
-		say "It's holding [a list of things inside the item described]."; 
+		say "The hand is holding [a list of things inside the item described]."; 
 	otherwise if there is nothing in the hand:
-		say "It's not holding anything".
+		say "The fingers of the statue's right hand are a bit curled, as if he was holding something, but it is now empty".
 
 
 
-[container B | Conch Shell]
-The pile of shells is an thing in the Secret Garden. The pile of shells is undescribed. It is fixed in place. 
+[container B | right Amphora] 
 
-Understand "shells" or "seashells" or "sea shells" as pile of shells.
+Understand "ceramic amphorae" as amphorae.
+The amphorae is a thing in the Secret garden. It is fixed in place. It is undescribed.
 
-The conch shell is a container in the Secret Garden. The conch shell is undescribed. It is fixed in place. The carrying capacity of conch shell  is 1. The description of the conch shell is "You examine the conch shell. The poor creature that used to inhabit it must be long gone, surely after having made it to old age. In the iridescent insides you can faintly see a carving: Β.".
-
-Understand "big conch shell" or "huge conch shell" or "shell" as conch shell.
-
-Instead of examining pile of shells:
-	say "You notice a big conch shell on top of a pile of random shells.";
-	now the description of the pile of shells is "This is the pile of shells you found the big conch shell in.".
-	
-Instead of taking the conch shell:
-	say "It's stuck in place. It looks like it's here for a reason.";
-	stop the action;
-	
-
-[container C | Shiny Amphora] 
-
-Understand "amphorae" or "line of golden amphorae" as golden amphorae.
-The golden amphorae is a thing in the Secret garden. It is fixed in place. It is undescribed.
-
-Instead of examining the golden amphorae:
-	say "There are 4 amphorae placed in a line, making inspecting them easier. They are ceramic and on them are depicted scenes painted with thin strokes of golden paint, showcasing excelent craftstmanship. The scenes portray the proccess of perfume making.[line break] You notice that all of them are a bit dusty, but one – the one on the right.";
+Instead of examining the amphorae:
+	say "There are three amphorae placed under the counter. They are ceramic and on them are depicted scenes painted with thin strokes of golden paint, showcasing excelent craftstmanship. The scenes portray the proccess of perfume making.[line break] You notice that all of them are a bit dusty, but one – the one on the right.";
 	stop the action.
 
-Instead of smelling the golden amphorae:
+Instead of smelling the amphorae:
 	say "They smell of flower extracts and herbs.";
 	stop the action.
 	
+[right amphora]
+Understand "first amphora" or "clean amphora"  or "amphora on the right" as right amphora.
 
-Understand "amphora" or "clean amphora" or "shining amphora" or "golden amphora" or "right amphora" as amphora on the right.
+An right amphora is a container in the Secret Garden. It is fixed in place. The carrying capacity of right amphora is 1. It is undescribed. 
 
-An amphora on the right is a container in the Secret Garden. It is fixed in place. The carrying capacity of amphora on the right  is 1. It is undescribed. 
-
-Instead of examining the amphora on the right:
-	say "Looking more closely, this amphora depicts a scene of women picking roses. Looking from a bit further, the roses seem to shape a Γ.";
+Instead of examining the right amphora:
+	[say "This amphora depicts a scene of women picking roses. Looking more closely on the inside, there is the number Β encraved on its bottom.";]
+	say "This amphora depicts a scene of two women picking roses. It is empty.";
 	stop the action.
 	
-Instead of entering the amphora on the right:
+Instead of entering the right amphora:
 	say "You don't think you will fit there.";
 	stop the action.
 	
-Instead of taking the amphora on the right:
+Instead of taking the right amphora:
 	say "It's too heavy for you.";
 	stop the action.
 	
-Instead of smelling the amphora on the right:
+Instead of smelling the right amphora:
 	say "It smells of flower extracts and herbs.";
 	stop the action.
 
+[middle amphora]
+A middle amphora is a container in the Secret Garden. It is fixed in place. The carrying capacity of middle amphora is 0. It is undescribed. 
 
-[container D | Hollow Tree]
+Understand "second amphora"  or  "amphora on the middle" as middle amphora.
 
-Understand "tree with cavity" or "tree with a cavity" or "tree" or "willow" as the weeping willow.
+Instead of examining the middle amphora:
+	say "This amphora depicts a scene of women preparing roses for the perfume-making process. It is filled halfway with perfume.";
+	stop the action.
+	
+Instead of entering the middle amphora:
+	say "The amphora is already filled with perfume.";
+	stop the action.
+	
+Instead of taking the middle amphora:
+	say "It's too heavy for you.";
+	stop the action.
+	
+Instead of smelling the middle amphora:
+	say "It smells of flower extracts and herbs.";
+	stop the action.
+	
+[left amphora]
+A left amphora is a container in the Secret Garden. It is fixed in place. The carrying capacity of left amphora is 0. It is undescribed. 
 
-A weeping willow is a plant in the Secret Garden. It is fixed in place. It is undescribed.
+Understand "third amphora"  or  "amphora on the left" as left amphora.
 
-Instead of examining the weeping willow:
-	say "It is an old, a majestic weeping willow tree. The visible part of the roots is thick and healthy, they probably run through the entire garden. You can easily see a cavity in the middle. ";
+Instead of examining the left amphora:
+	say "This amphora depicts a scene of women making perfume using rose extracts. It is filled halfway with perfume.";
+	stop the action.
+	
+Instead of entering the left amphora:
+	say "The amphora is already filled with perfume.";
+	stop the action.
+	
+Instead of taking the left amphora:
+	say "It's too heavy for you.";
+	stop the action.
+	
+Instead of smelling the left amphora:
+	say "It smells of flower extracts and herbs.";
+	stop the action.
+
+[container C | Hollow Olive Tree]
+
+An olive tree is a plant in the Secret Garden. It is fixed in place. It is undescribed.
+
+Understand "tree with cavity" or "tree with a cavity" or "tree" or "willow" as the olive tree.
+
+
+Instead of examining the olive tree:
+	say "An ancient olive tree with hollowed trunk worn by centuries. The visible part of its roots is thick and robust, making it likely that the roots are extending beneath the entire garden, weaving through the earth like ancient lifelines. A deep cavity runs through its center.";
 	stop the action.
 	
 
-A tree cavity is a container. It is part of the weeping willow. It is fixed in place. The carrying capacity of tree cavity is 1. It is undescribed.
+A tree cavity is a container. It is part of the olive tree. It is fixed in place. The carrying capacity of tree cavity is 1. It is undescribed.
 
 Understand "cavity" as the tree cavity.
 
 Instead of examining the tree cavity:
-	say "The cavity itself is shaped like a Δ."; [TODO: make better description]
+	say "Inside the cavity are three candles that burn softly."; 
 	stop the action.
 
 [puzzle solution]
 Every turn:
 	if a red flower is in the hand and
-	   a purple flower is in conch shell and
-	   a yellow flower is in amphora on the right and
-	   a white flower is in tree cavity :
+	   a orange flower is in right amphora and
+	   a purple flower is in tree cavity :
 		now FlowerPuzzleSolved is true;
 	otherwise:
 		now FlowerPuzzleSolved is false.
 
 
-Instead of examining the flower gate:
+Instead of examining the ivy gate:
 	if FlowerPuzzleSolved is true:
-		say "The gate is now open.";
+		say "The vines have retreated from the gate. You can try opening it now.";
 	otherwise:
-		say "The gate is tightly closed."	
+		say "The gate is covered in thick vines, making it impossible to open."	
 		
 Every turn:
 	If FlowerPuzzleSolved is true for the first turn:
-		say "You hear the sound of the gate opening";
-		now the flower gate is open;
+		say "You hear the sound of leaves rustling.";
+		now the ivy gate is unlocked;
 	otherwise if FlowerPuzzleSolved is false for the first turn:
-		say "You hear the sound of the gate closing.";
-		now the flower gate is closed;
+		say "You hear the sound of leaves rustling.";
+		now the ivy gate is locked;
 		
 		
-Test solutionSG with "put red flower in hand/ put purple flower in conch shell / put yellow flower in amphora on the right  / put white flower in tree cavity ".
+Test solutionSG with "put red flower in hand/ put orange flower in right amphora  / put purple flower in tree cavity ".
 test SG2 with "put red flower in hand /x hand/take red flower from hand/x hand".
 
 [End Of Secret Garden]
@@ -1986,7 +2020,6 @@ The Agora of Athens is a room in Athens. The Acropolis is a room in Athens. Agor
 Agora of Sounio is a room in Sounio. Agora of Sounio is south of the sounio gates. Agora of Sounio is north of the port of sounio. Agora of Sounio is west of the Sounio Beach.
 
 [Paphos]
-The Outside of the Palace of Paphos is a room in Paphos.
 The Port of Paphos is west of the Agora of Paphos. The Agora of Paphos is south of the Outside of the Palace of Paphos. The Outside of the Palace of Paphos is south of the Throne Room.
 
 [Thebes]

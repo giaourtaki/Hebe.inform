@@ -3,7 +3,7 @@
   <generator>Windows Inform 10.1.2</generator>
   <item nodeId="node-1">
     <command xml:space="preserve">Hebe</command>
-    <result xml:space="preserve">Instructions: &#x000A;&#x000A;Welcome to Hebe, my Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. If at any point you need help, type help into the console. Have fun and thank you for playing!&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 240822 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Secret Garden&#x000A;You find yourself in the Secret Garden, a vibrant haven where nature's palette is on full display. Four flowerbeds burst with color: red, purple, yellow, and white, each a riot of blossoms. To your right, a row of golden amphorae, exuding a sweet, intoxicating perfume, gleams in the sunlight. At the garden's heart stands an enormous willow tree, its ancient trunk hollowed by time, providing a natural cavity within its embrace. Beneath its sprawling branches lies a serene lake, its shore full with delicate sea shells. On the eastern edge of the garden, a heavy gate that seems to lead to the next room, though its form is almost hidden by a tangle of vines and blooms. Nearby, a statue of a strikingly beautiful man stands as if guarding the garden's secrets.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Instructions: &#x000A;&#x000A;Welcome to Hebe, my Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. If at any point you need help, type help into the console. Have fun and thank you for playing!&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 240823 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Secret Garden&#x000A;You find yourself in an enchanted underground garden, where magic seems to pulse from every corner. The air is thick with the intoxicating scent of flowers, each blossom radiating a soft, ethereal glow. Though deep beneath the earth, the space is bathed in a gentle, divine light radiating from the plants themselves, complemented by the soft flicker of the candles lining the paths, their wax bodies somehow untouched by time or flame. Despite the absence of any other life, the garden feels alive, giving the impression it exists in a suspended moment between the past and present.&#x000A;&#x000A;As one steps through the entrance, their eyes would be immediately drawn to a statue of an incomprehensibly beautiful man, poised on a marble base. His right hand is raised, his gaze fixed intently on it, as if beholding some unseen object. Behind the statue lies a serene natural lake, with delicate pink and white lilies gently laying on its surface. On the other side of the water, a majestic olive tree stands, ancient and hollowed by the passage of centuries, its gnarled bark a testament to its age. Some round flower beds bursting with vibrant red, purple, and orange flowers are encircling the lake and the tree.&#x000A;&#x000A;On the eastern side of the room, separated by a couple of steps decorated with flowers and candles, there is a secluded perfume-making area. Here, counters are crowded with the tools and equipment necessary for crafting fragrant elixirs, while ceramic amphorae are stored beneath, likely to store finished scents. The area leads to a gate covered in vines and flowers, making passage through it impossible.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -158,11 +158,15 @@
       <child nodeId="node-2720"/>
       <child nodeId="node-2724"/>
       <child nodeId="node-2725"/>
+      <child nodeId="node-3349"/>
       <child nodeId="node-2730"/>
       <child nodeId="node-2736"/>
       <child nodeId="node-3317"/>
       <child nodeId="node-2739"/>
       <child nodeId="node-2740"/>
+      <child nodeId="node-3344"/>
+      <child nodeId="node-3337"/>
+      <child nodeId="node-3330"/>
       <child nodeId="node-2741"/>
       <child nodeId="node-2767"/>
       <child nodeId="node-2768"/>
@@ -172,11 +176,15 @@
       <child nodeId="node-2786"/>
       <child nodeId="node-2796"/>
       <child nodeId="node-2798"/>
+      <child nodeId="node-3356"/>
+      <child nodeId="node-3354"/>
       <child nodeId="node-2799"/>
       <child nodeId="node-2806"/>
       <child nodeId="node-2809"/>
       <child nodeId="node-2823"/>
+      <child nodeId="node-3348"/>
       <child nodeId="node-2824"/>
+      <child nodeId="node-3345"/>
       <child nodeId="node-2829"/>
       <child nodeId="node-2892"/>
       <child nodeId="node-2942"/>
@@ -20701,6 +20709,7 @@
       <child nodeId="node-2175"/>
       <child nodeId="node-2176"/>
       <child nodeId="node-2190"/>
+      <child nodeId="node-3338"/>
       <child nodeId="node-2193"/>
     </children>
   </item>
@@ -20887,6 +20896,57 @@
   <item nodeId="node-2192">
     <command xml:space="preserve">put red flower in red flowerbed</command>
     <result xml:space="preserve">You put the red flower into the red flowerbed.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-3338">
+    <command xml:space="preserve">x</command>
+    <result xml:space="preserve">What do you want to examine?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3339"/>
+    </children>
+  </item>
+  <item nodeId="node-3339">
+    <command xml:space="preserve">red flower</command>
+    <result xml:space="preserve">This is an Adonis Flower.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3340"/>
+    </children>
+  </item>
+  <item nodeId="node-3340">
+    <command xml:space="preserve">put red flower in flowerbed</command>
+    <result xml:space="preserve">Which do you mean, the red flowerbed, the purple flowerbed or the orange flowerbed?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3341"/>
+    </children>
+  </item>
+  <item nodeId="node-3341">
+    <command xml:space="preserve">red flowerbed</command>
+    <result xml:space="preserve">You plant the red flower into the red flowerbed.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3342"/>
+    </children>
+  </item>
+  <item nodeId="node-3342">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying nothing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3343"/>
+    </children>
+  </item>
+  <item nodeId="node-3343">
+    <command xml:space="preserve">x flower</command>
+    <result xml:space="preserve">(the flower gate)&#x000A;The gate is tightly locked.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -23219,6 +23279,15 @@
     <result xml:space="preserve">Secret Garden&#x000A;You find yourself in the Secret Garden, a vibrant haven where nature's palette is on full display. Four flowerbeds burst with color: red, purple, yellow, and white, each a riot of blossoms. To your right, a row of golden amphorae, exuding a sweet, intoxicating perfume, gleams in the sunlight. At the garden's heart stands an enormous willow tree, its ancient trunk hollowed by time, providing a natural cavity within its embrace. Beneath its sprawling branches lies a serene lake, its shore full with delicate sea shells. On the eastern edge of the garden, a heavy gate that seems to lead to the next room, though its form is almost hidden by a tangle of vines and blooms. Nearby, a statue of a strikingly beautiful man stands as if guarding the garden's secrets.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-3325"/>
+    </children>
+  </item>
+  <item nodeId="node-3325">
+    <command xml:space="preserve">x supporter</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-2461">
     <command xml:space="preserve">testme</command>
@@ -23908,11 +23977,12 @@
   </item>
   <item nodeId="node-2540">
     <command xml:space="preserve">u</command>
-    <result xml:space="preserve">Throne Room&#x000A;Home to the King of Paphos, Cinyras.&#x000A;&#x000A;You can see Cinyras here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Throne Room&#x000A;Home to the King of Paphos, Cinyras. Down is the Secret Garden.&#x000A;&#x000A;You can see Cinyras here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-3309"/>
+      <child nodeId="node-3326"/>
       <child nodeId="node-2541"/>
     </children>
   </item>
@@ -23982,6 +24052,39 @@
   <item nodeId="node-3316">
     <command xml:space="preserve">x containers</command>
     <result xml:space="preserve">(the hand)&#x000A;You notice the number &#x0391; carved on its index finger.&#x000A;It's not holding anything&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-3326">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Outside of the Palace of Paphos&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3327"/>
+    </children>
+  </item>
+  <item nodeId="node-3327">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3328"/>
+    </children>
+  </item>
+  <item nodeId="node-3328">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3329"/>
+    </children>
+  </item>
+  <item nodeId="node-3329">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Agora of Paphos&#x000A;The main square of Paphos. You can see the Palace of Paphos on the north.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -25706,6 +25809,21 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-3349">
+    <command xml:space="preserve">x base</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3350"/>
+    </children>
+  </item>
+  <item nodeId="node-3350">
+    <command xml:space="preserve">x base of statue</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-2730">
     <command xml:space="preserve">x club</command>
     <result xml:space="preserve">You see nothing special about the Heracles' Club.&#x000A;&#x000A;&gt;</result>
@@ -25832,6 +25950,76 @@
   <item nodeId="node-2740">
     <command xml:space="preserve">x deer</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-3344">
+    <command xml:space="preserve">x flower</command>
+    <result xml:space="preserve">Which do you mean, a red flower, a purple flower or an orange flower?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-3337">
+    <command xml:space="preserve">x flowerbeds</command>
+    <result xml:space="preserve">Which do you mean, the red flowerbed, the purple flowerbed or the orange flowerbed?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-3330">
+    <command xml:space="preserve">x flowers</command>
+    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3335"/>
+      <child nodeId="node-3331"/>
+    </children>
+  </item>
+  <item nodeId="node-3335">
+    <command xml:space="preserve">look flower</command>
+    <result xml:space="preserve">(the flower gate)&#x000A;The gate is tightly closed.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3336"/>
+    </children>
+  </item>
+  <item nodeId="node-3336">
+    <command xml:space="preserve">x lake</command>
+    <result xml:space="preserve">It's a beautiful lake full of pink and white water lilies sitting on its surface.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-3331">
+    <command xml:space="preserve">look flowers</command>
+    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3332"/>
+    </children>
+  </item>
+  <item nodeId="node-3332">
+    <command xml:space="preserve">look flower</command>
+    <result xml:space="preserve">(the flower gate)&#x000A;The gate is tightly closed.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3333"/>
+    </children>
+  </item>
+  <item nodeId="node-3333">
+    <command xml:space="preserve">take vines</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3334"/>
+    </children>
+  </item>
+  <item nodeId="node-3334">
+    <command xml:space="preserve">take vine</command>
+    <result xml:space="preserve">That's fixed in place.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -26318,6 +26506,72 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-3356">
+    <command xml:space="preserve">x orange flower</command>
+    <result xml:space="preserve">The orange flowers have bright, fiery orange clusters of small, star-shaped flowers that stand out against their narrow, dark green leaves. The blossoms are arranged in flat-topped clusters, giving the plant a vibrant, bushy appearance. These are Butterfly Weed flowers. In the language of flowers, they signify a longing for release, letting go and parting.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3357"/>
+    </children>
+  </item>
+  <item nodeId="node-3357">
+    <command xml:space="preserve">x sign</command>
+    <result xml:space="preserve">The inscription on it reads: &#x000A;&#x000A; May our love root and grow eternally, even though I am but mortal.&#x000A; I am afraid I will pass from this world still holding on to the bittersweet memory of you.&#x000A; Even in our parting I will find solace in your scent.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3358"/>
+    </children>
+  </item>
+  <item nodeId="node-3358">
+    <command xml:space="preserve">x red flower</command>
+    <result xml:space="preserve">The red flowers have vibrant, silky petals, coloured in deep red. Their petals surround a small, central cluster of tiny, golden yellow stamens, and are set against feathery, soft green leaves that are thin and finely divided, almost like delicate threads. These are Adonis flowers. In the language of flowers, they signify sorrowful memories and the transience of life.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3359"/>
+    </children>
+  </item>
+  <item nodeId="node-3359">
+    <command xml:space="preserve">x purple flower</command>
+    <result xml:space="preserve">The purple flowers have tall, graceful stalks adorned with dense clusters of tiny, deep purple blossoms that cascade like flowing velvet. Their leaves are broad and slightly textured, with a rich green color that complements the vibrant blooms. These are Amaranthos flowers. In the language of flowers, they signify immortality, unfading love, and eternal beauty.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3360"/>
+    </children>
+  </item>
+  <item nodeId="node-3360">
+    <command xml:space="preserve">inv</command>
+    <result xml:space="preserve">You are carrying nothing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3361"/>
+    </children>
+  </item>
+  <item nodeId="node-3361">
+    <command xml:space="preserve">investigate</command>
+    <result xml:space="preserve">In the Secret Garden you see a statue of a man, a lake, an olive tree and some flowerbeds with red, purple and orange flowers. In the perfume-making area there are some ceramic amphorae and a gate.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-3354">
+    <command xml:space="preserve">x red flower</command>
+    <result xml:space="preserve">The red flower has vibrant, silky petals, coloured in deep red. The petals surround a small, central cluster of tiny, golden yellow stamens, and are set against feathery, soft green leaves that are thin and finely divided, almost like delicate threads.This is an Adonis Flower. In the language of flowers, it signifies sorrowful memories and the transience of life.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3355"/>
+    </children>
+  </item>
+  <item nodeId="node-3355">
+    <command xml:space="preserve">x orange flower</command>
+    <result xml:space="preserve">This is an Butterfly Weed Flower.It is said to signify letting go.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-2799">
     <command xml:space="preserve">x red flowerbed</command>
     <result xml:space="preserve">You can see some red flowers in this flowerbed.&#x000A;&#x000A;In the red flowerbed are ten red flowers.&#x000A;&#x000A;&gt;</result>
@@ -26525,6 +26779,12 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-3348">
+    <command xml:space="preserve">x round flowerbed</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-2824">
     <command xml:space="preserve">x shells</command>
     <result xml:space="preserve">You find a big conch shell.&#x000A;&#x000A;&gt;</result>
@@ -26567,9 +26827,33 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-3345">
+    <command xml:space="preserve">x sign</command>
+    <result xml:space="preserve">The inscription on it reads: &#x000A;&#x000A; Letting go of your scent was the hardest thing I did.&#x000A; May our love root and grow eternally, even though I am but mortal.&#x000A; I will pass from this world still holding on to the bittersweet memory of you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3346"/>
+    </children>
+  </item>
+  <item nodeId="node-3346">
+    <command xml:space="preserve">x gate</command>
+    <result xml:space="preserve">The gate is tightly locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3347"/>
+    </children>
+  </item>
+  <item nodeId="node-3347">
+    <command xml:space="preserve">x red flower</command>
+    <result xml:space="preserve">This is an Adonis Flower.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-2829">
     <command xml:space="preserve">x statue</command>
-    <result xml:space="preserve">On the base of the statue you can see two locks: one sun-shapped and one moon-shapped.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">The statue depicts a man with breathtaking beauty. His figure is carved with exquisite detail, and his chiseled features and graceful form are captured with masterful artistry. There is a longingness in his gaze, which falls on his raised right hand.&#x000A;&#x000A;His right hand looks like it could be holding something but there's nothing there.&#x000A; &#x000A;You can also see a marble sign on the statue's base.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -26770,7 +27054,34 @@
   </item>
   <item nodeId="node-2853">
     <command xml:space="preserve">x sign</command>
-    <result xml:space="preserve">The sign is made of marble. The inscription on it reads: Painful memories of our love surround this place. (A &gt; red, B &gt; purple, C&gt; yellow, D&gt;white&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">The inscription on it reads: &#x000A;&#x000A; Letting go of your scent was the hardest thing I did.&#x000A; May our love root and grow eternally, even though I am but mortal.&#x000A; I will pass from this world still holding on to the bittersweet memory of you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3351"/>
+    </children>
+  </item>
+  <item nodeId="node-3351">
+    <command xml:space="preserve">x statue</command>
+    <result xml:space="preserve">The statue depicts a man with breathtaking beauty. His figure is carved with exquisite detail, and his chiseled features and graceful form are captured with masterful artistry. There is a longingness in his gaze, which falls on his raised right hand.&#x000A;&#x000A;His right hand looks like it could be holding something but there's nothing there.&#x000A; &#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3352"/>
+    </children>
+  </item>
+  <item nodeId="node-3352">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Secret Garden&#x000A;You find yourself in an enchanted underground garden, where magic seems to pulse from every corner. The air is thick with the intoxicating scent of flowers, each blossom radiating a soft, ethereal glow. Though deep beneath the earth, the space is bathed in a gentle, divine light radiating from the plants themselves, complemented by the soft flicker of the candles lining the paths, their wax bodies somehow untouched by time or flame. Despite the absence of any other life, the garden feels alive, giving the impression it exists in a suspended moment between the past and present.&#x000A;&#x000A;As one steps through the entrance, their eyes would be immediately drawn to a statue of an incomprehensibly beautiful man, poised on a marble base. His right hand is raised, his gaze fixed intently on it, as if beholding some unseen object. Behind the statue lies a serene natural lake, with delicate pink and white lilies gently laying on its surface. On the other side of the water, a majestic olive tree stands, ancient and hollowed by the passage of centuries, its gnarled bark a testament to its age. Some round flower beds bursting with vibrant red, purple, and orange flowers are encircling the lake and the tree.&#x000A;&#x000A;On the eastern side of the room, separated by a couple of steps decorated with flowers and candles, there is a secluded perfume-making area. Here, counters are crowded with the tools and equipment necessary for crafting fragrant elixirs, while golden amphorae are stored beneath, likely to store finished scents. The area leads to a gate covered in vines and flowers, making passage through it impossible.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3353"/>
+    </children>
+  </item>
+  <item nodeId="node-3353">
+    <command xml:space="preserve">x sign</command>
+    <result xml:space="preserve">The inscription on it reads: &#x000A;&#x000A; Letting go of your scent was the hardest thing I did.&#x000A; May our love root and grow eternally, even though I am but mortal.&#x000A; I will pass from this world still holding on to the bittersweet memory of you.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>

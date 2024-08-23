@@ -7,7 +7,7 @@ Using Inform kit 'EnglishLanguageKit' (priority 1).
 Using Inform kit 'WorldModelKit' (priority 2).
 Using Inform kit 'CommandParserKit' (priority 3).
 756 Preform nonterminals read from C:\Users\User\Desktop\Inform\Internal\Languages\English\Syntax.preform
-I've now read your source text, which is 14849 words long.
+I've now read your source text, which is 15409 words long.
 Included: core, naming, instance counting, interactive fiction, spatial model, backdrops, bibliographic data, chronology, devices, mapping, persons, player, regions, scenes, scoring, timed rules, times of day, actions, going, command, showme, multimedia, figures, sounds, glulx external files
 Excluded: 
 I've also read Basic Inform by Graham Nelson, which is 7691 words long.
@@ -43,7 +43,7 @@ Loading kinds definitions from C:\Users\User\Desktop\Inform\Internal\Inter\Comma
 Phase III ... Pre-pass through major nodes
 -----------------------------------------------------
 
-.... MajorNodes__pre_pass() took 19cs
+.... MajorNodes__pre_pass() took 20cs
 
 
 -----------------------------------------------------
@@ -57,7 +57,7 @@ Phase IV ... First pass through major nodes
 Phase V ... Second pass through major nodes
 -----------------------------------------------------
 
-.... MajorNodes__pass_2() took 6cs
+.... MajorNodes__pass_2() took 5cs
 
 
 -----------------------------------------------------
@@ -90,14 +90,14 @@ Phase IX ... Augment model world
 Phase X ... Phrases and rules
 -----------------------------------------------------
 
-.... ImperativeDefinitions__assess_all() took 4cs
+.... ImperativeDefinitions__assess_all() took 7cs
 
 
 -----------------------------------------------------
 Phase XI ... Generating inter (1)
 -----------------------------------------------------
 
-.... RTKindConstructors__compile() took 11cs
+.... RTKindConstructors__compile() took 10cs
 
 
 -----------------------------------------------------
@@ -107,7 +107,8 @@ Phase XII ... Generating inter (2)
 .... CompletionModule__compile() took 1cs
 .... RTKindConstructors__compile_permissions() took 1cs
 .... InferenceSubjects__emit_all() took 1cs
-.... ImperativeDefinitions__compile_first_block() took 6cs
+.... ImperativeDefinitions__compile_first_block() took 3cs
+.... RTRules__compile() took 3cs
 
 
 ==== Phase XII.1 ... Slashing command grammar ====
@@ -122,8 +123,8 @@ Phase XII ... Generating inter (2)
 Phase XIII ... Generating inter (3)
 -----------------------------------------------------
 
-.... Sequence__undertake_queued_tasks() took 184cs
-.... Sequence__undertake_queued_tasks() took 1cs
+.... Sequence__undertake_queued_tasks() took 202cs
+.... Sequence__undertake_queued_tasks() took 2cs
 .... RTPhrasebook__compile_entries() took 4cs
 
 
@@ -145,9 +146,9 @@ Phase XIV ... Generating inter (4)
 Phase XV ... Generating inter (5)
 -----------------------------------------------------
 
-.... Sequence__undertake_queued_tasks() took 1cs
+.... Sequence__undertake_queued_tasks() took 2cs
 Providing for a total heap of 8192, given requirement of 8192
-.... Sequence__lint_inter() took 3cs
+.... Sequence__lint_inter() took 9cs
 
 
 -----------------------------------------------------
@@ -160,7 +161,7 @@ Phase XVI ... Bibliographic work
 Phase XVII ... Complete
 -----------------------------------------------------
 
-Compile CPU time: 280 centiseconds
+Compile CPU time: 307 centiseconds
 
 
 ==== Phase XVII.1 ... step 1/15: read <- *memory ====
@@ -205,12 +206,12 @@ Compile CPU time: 280 centiseconds
 
 ==== Phase XVII.11 ... step 11/15: eliminate-redundant-labels ====
 
-2382 redundant label(s) removed
+2370 redundant label(s) removed
 
 
 ==== Phase XVII.12 ... step 12/15: eliminate-redundant-operations ====
 
-927 redundant operation(s) removed
+879 redundant operation(s) removed
 
 
 ==== Phase XVII.13 ... step 13/15: optionally-generate text ->  ====
@@ -2790,7 +2791,7 @@ HTML tag stack:
     52. html (opened at line 236 of 'D:/Programs/Adv/Inform7/Distribution/inweb/foundation-module/Chapter 5/HTML.w')
 
 
-Back end elapsed time: 178cs
+Back end elapsed time: 205cs
 Total of 112 files written as streams.
 Vacant escapes: %: ..CDE.GH..K.M.O.QR.TU...YZab..e..h.jklm.o.qr......yz0123456789
 Vacant escapes: $: .....F...J..........UVW.....................s.u..x.........789
