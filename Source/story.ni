@@ -173,6 +173,10 @@ After taking something:
 		say "You picked up the [noun].";
 	otherwise if the noun is snuffer:
 		say "You picked up the [noun].";
+	otherwise if the noun is Heracles' Club:
+		say "You picked up the Club of Heracles.";
+	otherwise if the noun is Eternal Chalice of Nectar:
+		say "You picked up the [noun].";
 	otherwise:
 		say "You picked up [a noun]." ;
 	
@@ -195,18 +199,28 @@ The block giving rule is not listed in any rulebook.
 
 [talking]
 
-[going to]
+[going to][TODO: fix You can't see any such thing.]
+
+[Before going to somewhere:
+	If the noun is an outroom/inroom:
+		try entering the noun;
+	otherwise:
+		 continue the action.
+]
 
 [sitting]
 Understand the command "sit" as something new.
 Sitting is an action applying to one touchable thing. Understand "sit on [something]" as sitting.
 
-check sitting:
-	 if the noun is not armchair:
-		say "You simply cannot sit there!" instead.
-		
 carry out sitting:
-	say "You sit on [the noun]. [one of]It's so soft! [or]It's so fluffy![at random][line break]That was a refreshing break. You get up again.".
+	say "You sit on [the noun].";
+	if the noun is armchair:
+		say "[one of]It's so soft! [or]It's so fluffy![at random][line break]That was a refreshing break. You get up again.";
+	otherwise if the noun is chair:
+		say "It feels strurdy and well-made. You get up again.";
+		[fill here]
+	otherwise:
+		say "You simply cannot sit there!".
 
 [giving nectar to person]
 Instead of giving nectar to something:
@@ -319,7 +333,7 @@ Mount Olympus Hall is a room.
 
 [Items in the room]
 
-The Heracles' Club is a thing in Mount Olympus Hall. It is undescribed. [The indefinite article is "the".] [TODO: check]
+Heracles' Club is a thing in Mount Olympus Hall. It is undescribed. the indefinite article is "the". [TODO: check] Understand "club of heracles" as heracles' club.
 
 
 [Characters in the room]
@@ -369,7 +383,7 @@ Instead of going down during Olympus Hall Celebration Scene:
 
 Instead of giving something to Heracles during Olympus Hall Celebration Scene:
 	If the noun is Heracles' Club:
-		say "He smiles to you. 'Thank you my dearest.'";
+		say "He smiles at you. 'Thank you my dearest.'";
 		continue the action;
 	otherwise:
 		say "Hercules says 'I am grateful my dearest, but I think you might need this more than I.".
@@ -380,7 +394,7 @@ Turn counter is a number that varies. Turn counter is 0.
 Every turn during Olympus Hall Celebration Scene:
 	increment the turn counter;
 	 if the remainder after dividing turn counter by 10 is 0:
-		say "Hercules asks for his club."
+		say "[one of]You hear the voice of Heracles. 'Hey dearest, could you get my club here? It's on the TODO. Let's show those actors how it's really done!'[or]Heracles talks to you again. 'Reminder to bring me my club when possible, dearest! It's on the TODO.'[stopping]"
 
 	
 
@@ -439,11 +453,11 @@ The air was thick with the aroma of ambrosia and the rich scent of a feast laid 
 
 The hall was alive with the sounds of the festivities. Laughter and song echoed through the space as gods danced and sang in celebration. Nymphs twirled gracefully among them, their light steps barely disturbing the surface of the marble floor. In the center of the room, a troupe of performers reenacted the epic labors of Heracles, their movements grand and heroic, a fitting tribute to the hero whose deeds had won him a place among the gods.
 
-At the heart of the celebration sat the honoured guests of the occasion, Heracles himself, with you, his wife, to his right. On Heracles[apostrophe] left sat Zeus, king of the gods, who is glancing upon you both with delight and pride. On your right sat Hera, her demeanor calm and gratified, with a rare softness in her gaze. She puts aside any conflict during the event, given her affection for you.
+At the heart of the celebration sat the honoured guests of the occasion, Heracles himself, with you, his wife, to his right. On Heracles[apostrophe] left sat Zeus, king of the gods, who is glancing upon you both full of pride. On your right sat Hera, her demeanor calm and gratified, with a rare softness in her gaze. She put aside any conflict during the event, given her affection for you.
 
-The Twelve Olympians were all in attendance, their mighty forms gracing the hall with an air of majesty. They conversed among themselves, their voices a harmonious blend of wisdom and power, as they partook in the feast. The nymphs flitted among them, their laughter mingling with the conversations, adding a lightness to the evening’s festivities.
+The Twelve Olympians were all in attendance, their mighty forms gracing the hall with an air of majesty. They conversed among themselves, as they partook in the feast. Nymphs flitted among them, their laughter mingling with the conversations, adding a lightness to the evening’s festivities.
 
-Everywhere you looked, there was movement, life, and joy. The gods, unbound by the cares of the mortal world, indulged in the pleasures of the moment, their spirits lifted by the music, the food, and the company. The hall of Olympus had never shone brighter, a fitting tribute to the divine couple.";
+Everywhere you looked, there was movement, life, and joy. The gods, unbound by the cares of the mortal world, indulged in the pleasures of the moment, their spirits lifted by the music, the food, and the company. The hall of Olympus had never shined brighter, a fitting tribute to the divine couple.";
 		stop the action;
 	otherwise:
 		continue the action.
@@ -452,6 +466,26 @@ Everywhere you looked, there was movement, life, and joy. The gods, unbound by t
 When Olympus Hall Celebration Scene ends:
 	now the turn counter is 0.
 	
+[interactable items in the scene]
+A white column is scenery in Mount Olympus Hall. The description is "Columns of shimmering marble, veined with hues of gold and silver, stood proudly in perfect symmetry, their polished surfaces reflecting the ethereal light that bathed the hall. Each column was crowned with intricately gilded Corinthian capitals, where delicate acanthus leaves intertwined with motifs of mythical creatures, catching the light in a way that made them appear almost alive.". Understand "columns" or "coloumn"  as white column when the player is in Mount Olympus Hall.
+
+A ceiling is scenery in Mount Olympus Hall. The description is "The ceiling itself was a masterpiece, adorned with paintings that depicted scenes of triumphs and glories of the gods, their vibrant colors as bright as if painted by the Muses themselves. Gold and silver filigree traced the edges of each arch, adding a shimmering frame to them.". Understand "vaulted ceiling" as ceiling when the player is in Mount Olympus Hall.
+
+A ceiling painting is a scenery in Mount Olympus Hall. The description is "The paintings depict some of the most glorious moments of the gods: 
+
+In one you see the Titanomachia, the epic war between the Olympian gods and the Titans. Another panel showcases the Birth of Athena, sprung fully armed from the head of Zeus. To the left, a magnificent portrayal of The Apotheosis of Heracles unfolds. You must know the stories already, you were there afterall. 
+
+Directly above the thrones is the crowning glory of the ceiling—the Triumph of Olympus. In this radiant composition, the gods are depicted in a celestial assembly, each seated on a cloud of purest white, their divine forms larger-than-life. It's basically a family drawing.". Understand "painting" or "paintings" as ceiling painting when the player is in Mount Olympus Hall.
+
+A throne is scenery in Mount Olympus Hall. The description is "Crafted from solid gold, each throne is a masterpiece of divine artistry, radiating an aura of unmatched power and authority. The gold gleams with a lustrous glow, catching the light from the surrounding torches and reflecting it in brilliant, shimmering waves that dance across the hall.". Understand "thrones" as throne.
+
+A handwoven carpet is scenery in Mount Olympus Hall. The description is "The floor of the Mount Olympus Hall is decorated with masterfully crafted handwoven carpets, each a testament to the artistry and skill of the divine weavers who created them. These carpets, more than mere decoration, are woven with threads of gold, silver, and the finest silks, their intricate patterns telling stories as old as time itself.". Understand "carpet"  as handwoven carpet when the player is in Mount Olympus Hall.
+
+A chandelier is scenery in Mount Olympus Hall. The description is "Each chandelier is composed of multiple tiers, descending in concentric circles that grow larger as they reach down toward the hall below. The gold of the chandeliers is polished to a mirror-like finish, reflecting and amplifying the light in all directions. The arms of the chandeliers curve gracefully, resembling the branches of a sacred tree, each one ending in a delicate cluster of crystal orbs that resemble radiant stars.". Understand "chandeliers" or "golden chandelier" or "golden chandeliers" as chandelier.
+
+A delicacy is scenery in Mount Olympus Hall. The description is "Golden platters overflowed with brightly coloured, ripe fruits: pomegranates bursting with ruby-red seeds, figs as dark as night, and grapes that shimmered with a dewy freshness as if they had just been plucked from the vine. The fragrance of these fruits, sweet and intoxicating, filled the air, mingling with the rich scent of honeyed pastries and the sharp, earthy aroma of freshly baked bread.". Understand "delicacies" as delicacy.
+
+A performance is scenery in Mount Olympus Hall. The description is "The troupe is now performing the Stymphalian Birds labour, the birds represented by a group of aerial performers who soared above the hall, their wings, crafted from layers of silken feathers, catching the light as they dipped and dived, their movements synchronized in a display of aerial acrobatics that have the audience cheering.". Understand "troupe" or "troup of performers" or "play" as performance.
 
 
 [Kronos Scene]
@@ -461,9 +495,9 @@ When Kronos Scene begins:
 
 'Oh dear, please, do not let my presence taint your insignificant gathering. Carry on as you were.'
 
-The voice was unmistakable, deep and resonant, carrying an ancient power that sent shivers down your spine. It was Kronos. So much time has passed since our triumph in the War of Titans— the Titanomachy. How did he manage to escape Tartarus?
+The voice was unmistakable, deep and resonant, carrying an ancient power that sent shivers down your spine. It was Kronos. So much time has passed since our triumph in the War of Titans— the Titanomachy. How did he manage to escape Tartaros?
 
-The sight of the Titan, towering and menacing, shrouded in shadows, struck fear into the hearts of all present. You start to feel the ichor in your divine veins turn cold, as if time itself had frozen. The gods, normally so mighty and formidable, stand paralyzed in shock. Nothing moves. In a heartbeat, you break free from the daze and come to your senses. Your next actions have never been more certain. It's now or never. 
+The sight of the Titan, towering and menacing, shrouded in shadows, struck fear into the hearts of all present. You start to feel the ichor in your divine veins turn cold, as if time itself was freezing. The gods, normally so mighty and formidable, stand paralyzed in shock. Nothing moves. In a heartbeat, you break free from the daze and come to your senses. Your next actions have never been more certain. It's now or never. 
 
 You grab Heracle's club out of his hands and leap towards Kronos. Then you feel yourself slipping into unconciousness.".[The last thing you remember before slipping into unconciousness]
 
@@ -472,7 +506,7 @@ When Kronos Scene ends:
 	now the description of Mount Olympus Hall is "Olympus Hall Destruction Description";
 	now the god Heracles is in Asphodel Meadows;
 	now Heracles is asleep;
-	now Zeus is in Tartarus;
+	now Zeus is in Tartaros;
 	now Zeus is asleep;
 	now Apollo is in Divine Cell of Artemis & Apollo;
 	now Apollo is asleep;
@@ -493,42 +527,68 @@ When Kronos Scene ends:
 	now Athena is asleep;
 	now Demeter is in Divine Cell 2;
 	now Demeter is asleep;
-	now Hera is in Tartarus;
+	now Hera is in Tartaros;
 	now Hera is asleep;
 	now Hestia is in Divine Cell 5;
 	now Hestia is asleep;
 	wait for any key;
-	now the player is in the garden of Hesperides;
-	now the player is holding the Heracles' Club.
+	now the player is holding the Heracles' Club;
+	wait for any key.
 	
 
 Chapter 0.9 - Other Rooms
 
 [Start Of: Garden on hesperides]
 
-The Garden of Hesperides is a room in Greece. The description is "[paragraph break]From here you can sail to: [line break]→ Piraeus[line break]→ Sounio[line break]→ Aulis[line break]→ Paphos"
+The Garden of Hesperides is a room in Greece. 
 
-The Garden of Hesperides Scene is a scene. Garden of Hesperides Scene begins when the player is in the Garden of Hesperides for the first time. 
-The Garden of Hesperides Scene ends when the time since Garden of Hesperides Scene began is 1 minutes.
+Eternal Chalice of Nectar is a thing in Garden of Hesperides. the indefinite article is "the". The description is "The Eternal Chalice of Nectar is a legendary goblet crafted by Hephaestus from shimmering gold, embellished with intricate engravings of vines and blossoms. The chalice can provide an infinite supply of nectar at any moment.". It is undescribed.
 
-Instead of looking for the 1st time during the Garden of Hesperides Scene:
-	 If the player is in the Garden of Hesperides:
-		say "1-2 months timeskip. the nymphs tended to your wounds and restored you with nectar and ambrosia. They tell you what happened with the gods and send you towards the oracle of delphi.".
+The Garden of Hesperides Scene is a scene. Garden of Hesperides Scene begins when Kronos Scene ends. 
 
-Eternal Chalice of Nectar is a thing in Garden of Hesperides.
+The Garden of Hesperides Scene ends when the time since Garden of Hesperides Scene began is 0 minutes.
 
-Aigle is a woman in Garden of Hesperides. 
-Arethousa is a woman in Garden of Hesperides. 
-Erytheia is a woman in Garden of Hesperides. 
-Hesperie is a woman in Garden of Hesperides. 
+When Garden of Hesperides Scene begins:
+	now the description of Garden of Hesperides is "You slowly regain consciousness, greeted by the soft rustling of leaves of a tranquil garden. As your eyes flutter open, you find yourself surrounded by four enchanting ny+mphs. Their expressions are a mix of deep concern and immense relief, as if they’ve been holding their breath waiting for this moment. You instantly recognise Aigle, Arethousa, Erytheia and Hesperie, the nymphs of the evening known as Hesperides, guardians of Hera's orchard.
+
+'Hebe, it’s been almost two weeks!' Arethousa exclaims, her voice a blend of worry and joy. 'We were all so anxious for you to wake up.'
+
+With gentle hands, the nymphs help you to sit up, their embraces warm and comforting. The familiar scent of the Garden of Hesperides fills your senses, grounding you in the safety of their presence.
+
+Aigle, her expression displaying a hint of urgency, leans in. 'You should get moving now that you’re awake. There are disturbing rumors that Kronos has imprisoned the gods and is attempting to free his brothers from Tartaros. You’re the only goddess we’ve seen show any signs of activity lately.'
+
+Erytheia nods in agreement. 'We don’t have many details, but the Oracle of Delphi might have the answers you need. It would be wise to seek her counsel.'
+
+Hesperie steps forward, holding out something. It is the Eternal Chalice of Nectar, once your symbol of duty as the cupbearer of the gods before the events that led to Ganymedes taking on that role. Her eyes are earnest as she places the chalice in your hands.
+
+'You might need this,' Hesperie says softly. 'Without nectar or ambrosia, gods can lose their immortality and eternal youth. You know this better than anyone.'
+
+The Hesperides embrace you one last time. 'Good luck, Hebe!' they all say in unison. 'We will be here, supporting you in any way we can.'
+";
+	now the player is in the garden of Hesperides;
+		
+	
+When Garden of Hesperides Scene ends:
+	now the player carries the Eternal Chalice of Nectar;
+	now the description of Garden of Hesperides is "The Garden of the Hesperides is a mythical paradise, an otherworldly oasis hidden in the middle of the Mediterranean, where the air is perpetually filled with the sweet fragrance of blooming flowers and the gentle hum of bees. 
+
+In the heart of the garden stands the sacred tree of the Hesperides, its branches heavy with golden apples that gleam like captured sunlight. The apples, used to make nectar, hang among rich green leaves, guarded by the the Hesperides, the nymphs of the evening and daughters of the night. The nymphs are Aigle, Arethousa, Erytheia and Hesperie.
+
+The story goes that Gaia gifted Hera with branches of golden apples as a wedding present, and Hera, deeply admiring them, begged Gaia to plant them in her garden.
+
+From here you can sail to: [line break]→ Piraeus[line break]→ Sounio[line break]→ Aulis[line break]→ Paphos".
 
 
+Aigle is a woman in Garden of Hesperides. The description is "Aigle radiates with a golden glow, her hair like cascading sunlight, and her eyes shimmering like the first light of dawn. She is the embodiment of brightness and warmth, her presence illuminating the garden with a serene, golden aura.". She is undescribed.
+Arethousa is a woman in Garden of Hesperides. The description is "Arethousa moves with the grace of flowing water, her deep blue eyes reflecting the tranquil depths of a hidden spring. Her dark hair, braided with pearls, mirrors the shimmering waves of the sea, embodying the calm and mystery of hidden waters.".She is undescribed.
+Erytheia is a woman in Garden of Hesperides. The description is " Erytheia’s beauty is as striking as a crimson sunset, with hair as red as the setting sun and eyes that burn with a fierce, fiery intensity. She embodies passion and vitality, her very presence infusing the garden with the vibrant energy of dusk.".She is undescribed.
+Hesperie is a woman in Garden of Hesperides. The description is "Hesperie is as gentle as the twilight, her lavender eyes soft and dreamy, framed by hair as dark as the night sky. She carries the quiet peace of the evening, her ethereal presence soothing the garden into a tranquil lullaby as day fades into night.".She is undescribed.
 
 [End Of: Garden of Hesperides]
 
 [Start Of: Oracle of Delphi]
 
-The Oracle of Delphi is a room in Delphi.
+The Oracle of Delphi is a room in Delphi. "".
 
 Pytheia is a woman in the Oracle of Delphi. 
 
@@ -871,7 +931,7 @@ After antirotating a ring :
 
 A pos altar is in poseidon's temple. "Altar." It is fixed in place.
 
-A column is a supporter in poseidon's temple. "Column that faces the altar."
+A blue column is a supporter in poseidon's temple. "Column that faces the altar."
 
 top ring, second ring, third ring and bottom ring are rings on the column. Top ring, second ring, third ring and bottom ring are fixed in place.
 
@@ -1623,7 +1683,7 @@ Chapter 5 - Hestia & Hermes
 [room]
 [Start Of: Prytaneion]
 
-The player is in Prytaneion.
+[The player is in Prytaneion.]
 
 Prytaneion is a room. The description is "You step into the open hall of the Prytaneion, the administrative heart of Athens. In the center of the room you see the sacred hearth dedicated to Hestia, its warm glow illuminating the room. The flames burn steadily, their smoke rising in delicate spirals before disappearing through a square opening in the roof above. Beside the hearth lies a single hand torch, accompanied by a fire snuffer.
 
@@ -1635,23 +1695,23 @@ The rest of the building remains inaccessible, since the doors lead to the priva
 
 The floor is a scenery supporter. It is in prytaneion. 
 
-A pine table is on the carpet. It is scenery. A pine table can be pushed or unpushed. The pine table is unpushed.
+A pine table is on the red carpet. It is scenery. A pine table can be pushed or unpushed. The pine table is unpushed.
 Understand "large table" or "table" or "large pine table" or "dining table" as pine table. The description of pine table is "A large, pine table, likely reserved for the official dinners and gatherings of the prytaneis.".
 
 Instead of taking the pine table:
 	say "The table is too heavy for you to lift!";
 	stop the action.
 
-A chair is on the carpet. It is scenery. Understand "chairs" or "pine chair" or "pine chairs" as chair. A chair can be pushed or unpushed. The table is unpushed. The description of chair is "The chairs are a matching set with the table, all crafted of pine.".
+A chair is on the red carpet. It is scenery. Understand "chairs" or "pine chair" or "pine chairs" as chair. A chair can be pushed or unpushed. The table is unpushed. The description of chair is "The chairs are a matching set with the table, all crafted of pine.".
 
 Instead of taking the chair:
 	say "You don't think carrying a pine chair will help you on your journey.";
 	stop the action.
 
-A  carpet is scenery in the prytaneion. A carpet can be pushed or unpushed. The carpet is unpushed. The description is "An elegant red carpet. When you step on it to inspect it further, you hear creaking.".
-Understand "elegant carpet" or "red carpet" as carpet.
+A red carpet is scenery in the prytaneion. A red carpet can be pushed or unpushed. The red carpet is unpushed. The description is "An elegant red carpet. When you step on it to inspect it further, you hear creaking.".
+Understand "elegant carpet" or "carpet" as carpet when the player is in prytaneion.
 
-Instead of taking the carpet:
+Instead of taking the red carpet:
 	if the chair is unpushed and the pine table is unpushed:
 		say "You can't take the carpet if there are things on top of it.";
 		stop the action;
@@ -1676,8 +1736,8 @@ Instead of pulling the pine table:
 	otherwise if the pine table is pushed and the trapdoor is not open:
 		say "You pushed the table on [if the trapdoor is uninteractable]the carpet again.[otherwise]on the trapdoor.";
 		now the pine table is unpushed;
-		now the pine table is on the carpet;
-	otherwise if the carpet is pushed and the trapdoor is closed:
+		now the pine table is on the red carpet;
+	otherwise if the red carpet is pushed and the trapdoor is closed:
 		say "Umm why would you want to push the pine table on top of the trapdoor you just found?";
 	 if the trapdoor is open:
 		say "You shouldn't push anything on top of the open trapdoor.";
@@ -1692,36 +1752,36 @@ Instead of pulling the chair:
 	otherwise if the chair is pushed and the trapdoor is not open:
 		say "You push the chairs on [if the trapdoor is uninteractable]the carpet again.[otherwise]on the trapdoor.[end if]";
 		now the chair is unpushed;
-		now the chair is on the carpet;
-	otherwise if the carpet is pushed and the trapdoor is closed:
+		now the chair is on the red carpet;
+	otherwise if the red carpet is pushed and the trapdoor is closed:
 		say "Umm why would you want to put the chairs on top of the trapdoor you just found?";
 	if the trapdoor is open:
 		say "You shouldn't push anything on top of the open trapdoor.";
 		stop the action;
 	stop the action.
 
-Instead of pulling the carpet:
-	if there is something on the carpet and the carpet is unpushed:
+Instead of pulling the red carpet:
+	if there is something on the red carpet and the red carpet is unpushed:
 		say "You can't pull the carpet if there are things on top of it.";
-		now the carpet is unpushed;
-	otherwise if there is something on the carpet and the carpet is pushed:
+		now the red carpet is unpushed;
+	otherwise if there is something on the red carpet and the red carpet is pushed:
 		say "You can't put the carpet under other furniture before moving them first.";
-		now the carpet is pushed;
-	otherwise if the carpet is unpushed and there is nothing on the carpet and the trapdoor is not open:
+		now the red carpet is pushed;
+	otherwise if the red carpet is unpushed and there is nothing on the red carpet and the trapdoor is not open:
 		say "You pulled the carpet. [line break][line break]By pulling the carpet out of the way you revealed a trapdoor.";
-		now the carpet is pushed;
-	otherwise if the carpet is pushed and there is nothing on the carpet:
+		now the red  carpet is pushed;
+	otherwise if the red carpet is pushed and there is nothing on the red carpet:
 		say "You put the carpet back in it's place.";
-		now the carpet is unpushed;
+		now the red carpet is unpushed;
 	otherwise if the trapdoor is open:
 		say "You shouldn't push anything on top of the open trapdoor.";
 		stop the action;
 	stop the action.
 	
-Every turn while the carpet is pushed:
+Every turn while the red carpet is pushed:
 	now the trapdoor is interactable.
 	
-Every turn while the carpet is pushed and the chair is pushed and the pine table is pushed:
+Every turn while the red carpet is pushed and the chair is pushed and the pine table is pushed:
 	now the trapdoor is openable.
 
 	
@@ -1924,7 +1984,7 @@ Instead of entering the trapdoor:
 Instead of opening the trapdoor:
 	if the trapdoor is uninteractable:
 		say "You can't see such thing.";
-	otherwise if the pine table is unpushed or the chair is unpushed or the carpet is unpushed:
+	otherwise if the pine table is unpushed or the chair is unpushed or the red carpet is unpushed:
 		say "You can't open the trapdoor when stuff is on top of it!";
 	 otherwise:
 		continue the action.
@@ -2036,7 +2096,7 @@ Heracles in Asphodel Scene ends when giving nectar to Heracles.
 
 [doors]
 
-The broken bridge is down of the Asphodel Meadows and up of Tartarus. The broken bridge is a closed unopenable door. [the bridge is over a cliff]
+The broken bridge is down of the Asphodel Meadows and up of Tartaros. The broken bridge is a closed unopenable door. [the bridge is over a cliff]
 
 The plaque is in Asphodel Meadows. The description is "'Only the ones who give up all hope of returning shall pass.'". 
 
@@ -2065,9 +2125,9 @@ Instead of entering the bridge:
 Chapter 7 - Zeus & Hera 
 
 
-The Tartarus is a dark room in the Underworld.
+The Tartaros is a dark room in the Underworld.
 
-Instead of doing anything when the player is in Tartarus for the first time:
+Instead of doing anything when the player is in Tartaros for the first time:
 	say "This is the end for now! Thanks for playing!";
 	wait for any key;
 	end the story.
