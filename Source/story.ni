@@ -71,7 +71,7 @@ Chapter 0.20 - Kinds & Values
 A colour is a kind of value. The colours are white, red, purple and yellow.
 
 [smell]
-A smell is a kind of value. The smells are neutral, amazing, good, citrusy  and bad. The smell is usually neutral. [TODO: Give a smell to everything]
+A smell is a kind of value. The smells are neutral, amazing, good, citrusy, like roses  and bad. The smell is usually neutral. [TODO: Give a smell to everything]
 
 [ring face]
 A ring face is a kind of value. The ring faces are blank, spring, summer, fall and winter. A ring face is usually blank.
@@ -159,13 +159,23 @@ Chapter 0.5 - Actions
 [to solve container refering to hands bug]
 After reading a command:
 	if the player's command includes "container":
-		if the player's command matches "x container":
-			say "Which container do you mean? Please specify.";
-			reject the player's command.
+		say "Which container do you mean? Please specify.";
+		reject the player's command.
+			
+After reading a command:
+	if the player's command includes "supporter":
+		say "Which supporter do you mean? Please specify.";
+		reject the player's command.
 		
 [picking up/taking action]
 After taking something:
-	say "You picked up [a noun]." ;
+	if the noun is portable torch:
+		say "You picked up the [noun].";
+	otherwise if the noun is snuffer:
+		say "You picked up the [noun].";
+	otherwise:
+		say "You picked up [a noun]." ;
+	
 	[TODO: change the pick up 3 print]
 	
 [Smelling action]
@@ -1259,7 +1269,7 @@ Chapter 4 - Aphrodite & Hephaestus
 [region: Cyprus]
 
 [When i want to test Cyprus]
-The player is inside the Secret Garden.
+[The player is inside the Secret Garden.]
 
 [Rooms]
 Agora of Paphos is a room in Cyprus. "The main square of Paphos. You can see the Palace of Paphos on the north."
@@ -1322,9 +1332,9 @@ Instead of going down when the player is in the secret garden:
 [Items]
 
 [items described]
-A vines is part of the flower gate. It is undescribed. Understand "vine" or "flowers on the gate" or "gate flowers" as vines.
+A vines is part of the ivy gate. It is undescribed. Understand "vine" or "flowers on the gate" or "gate flowers" as vines.
 A water lily is a kind of plant. There is one water lily in the Secret Garden. It is undescribed. The plural of water lily is water lilies. The smell of water lily is good.
-A candle is a fixed in place undescribed thing. It is in the Secret Garden.
+A candle is a fixed in place undescribed thing. It is in the Secret Garden. Understand "candles" as candle. The smell of candle is like roses.
 A marble base is part of the statue.
 A steps is a fixed in place undescribed thing. It is in the secret garden. 
 perfume making tools is a kind of fixed in place undescribed thing. There is one perfume making tools in the secret garden. Understand "tools" or "equipment" as perfume making tools.
@@ -1351,7 +1361,9 @@ Instead of examining the steps:
 	say "The steps are carved from marble, with lush flowering bushes and candles on either side.";
 	stop the action.
 	
-
+Instead of examining the candle:
+	say "The candles are made of white wax and smell of roses. They are burning softly, emitting a warm light.";
+	stop the action.
 	
 Understand "lily" or "pink lily" or "white lily" as water lily.
 Instead of examining the water lily:
@@ -1454,7 +1466,7 @@ After examining the sign:
 [container A | Statue Hand]
 The hand is a transparent container. The hand is part of the man statue. The hand is fixed in place. The carrying capacity of the hand is 1. The hand is unopenable. The plural of hand is hands.
 
-Understand "right hand" or "hands" as hand.
+Understand "right hand" or "hands" or "statue hand" as hand.
 
 Instead of inserting a thing into the hand:
 	say "You place the [noun] in the statue's right hand."; 
@@ -1506,7 +1518,7 @@ Instead of smelling the right amphora:
 [middle amphora]
 A middle amphora is a container in the Secret Garden. It is fixed in place. The carrying capacity of middle amphora is 0. It is undescribed. 
 
-Understand "second amphora"  or  "amphora on the middle" as middle amphora.
+Understand "second amphora"  or  "amphora on the middle" or "center amphora" or "central amphora" as middle amphora.
 
 Instead of examining the middle amphora:
 	say "This amphora depicts a scene of women preparing roses for the perfume-making process. It is filled halfway with perfume.";
@@ -1609,43 +1621,123 @@ Chapter 5 - Hestia & Hermes
 [room]
 [Start Of: Prytaneion]
 
-[The player is in Prytaneion.]
+The player is in Prytaneion.
 
-Prytaneion is a room. It is up of the porta. The description is "TODO simple description".
+Prytaneion is a room. The description is "You step into the open hall of the Prytaneion, the administrative heart of Athens. In the center of the room you see the sacred hearth dedicated to Hestia, its warm glow illuminating the room. The flames burn steadily, their smoke rising in delicate spirals before disappearing through a square opening in the roof above. Beside the hearth lies a single hand torch, accompanied by a fire snuffer.
 
-[Instead of looking for the first time: [has_visited before variable, turns to false everytime the player goes out]
-	say "TODO first simple description";
-	stop the action;
-	]
+Just beyond the hearth, there is a small dining area. A large table made of pine, surrounded by several chairs, stands atop an elegant carpet, likely reserved for official dinners and gatherings. [if there is something on the table]Scattered across the table are [a list of things on the pine table], remnants of a recent meeting, perhaps.[otherwise]The table is empty.[end  if]
+
+Eight torches on either side of the hearth are placed on the ground, forming a semicircle around the dining area. The torches are all put out, from the first—the far left one—to the sixteenth—the far right one.
+
+The rest of the building remains inaccessible, since the doors lead to the private quarters of the prytaneis and thus are firmly locked, leaving the main hall as the only accessible space.".
+
+The floor is a scenery supporter. It is in prytaneion. 
+
+A pine table is on the carpet. It is scenery. A pine table can be pushed or unpushed. The pine table is unpushed.
+Understand "large table" or "table" or "large pine table" as pine table. The description of pine table is "A large, pine table, likely reserved for the official dinners and gatherings of the prytaneis.".
+
+Instead of taking the pine table:
+	say "The table is too heavy for you to lift!";
+	stop the action.
+
+A chair is on the carpet. It is scenery. Understand "chairs" or "pine chair" or "pine chairs" as chair. A chair can be pushed or unpushed. The table is unpushed. The description of chair is "The chairs are a matching set with the table, all crafted of pine.".
+
+Instead of taking the chair:
+	say "You don't think carrying a pine chair will help you on your journey.";
+	stop the action.
+
+A  carpet is scenery in the prytaneion. A carpet can be pushed or unpushed. The carpet is unpushed. The description is "An elegant red carpet. When you step on it to inspect it further, you hear creaking.".
+Understand "elegant carpet" or "red carpet" as carpet.
+
+Instead of taking the carpet:
+	if the chair is unpushed and the pine table is unpushed:
+		say "You can't take the carpet if there are things on top of it.";
+		stop the action;
+	otherwise:
+		say "That's called theft! Refer from it in the future.";
+	stop the action.
+
 	
 [door]
-A porta is an open door.
+A trapdoor is a locked door. It is up of the Divine Cell 5 and down of the Prytaneion. It is scenery. The trapdoor can be interactable or uninteractable. The trapdoor is uninteractable.
 
+Instead of pushing something:
+	if the player is in prytaneion:
+		try pulling the noun.
+		
 
+Instead of pulling the pine table:
+	if the pine table is unpushed:
+		say "[one of]You put all your strength into pushing the table off the carpet- and you manage it![or]You pushed the table off the carpet.[stopping]";
+		now the pine table is pushed;
+		now the pine table is on the floor;
+	otherwise if the pine table is pushed:
+		say "You pushed the table on the carpet again.";
+		now the pine table is unpushed;
+		now the pine table is on the carpet;
+	otherwise if the carpet is pushed:
+		say "Umm why would you want to push the pine table on top of the trapdoor you just found?";
+	stop the action.
+	
+Instead of pulling the chair:
+	if the chair is unpushed:
+		say "You push the chairs off the carpet.";
+		now the chair is pushed;
+		now the chair is on the floor;
+	otherwise if the chair is pushed:
+		say "You push the chairs on the carpet again.";
+		now the chair is unpushed;
+		now the chair is on the carpet;
+	otherwise if the carpet is pushed:
+		say "Umm why would you want to put the chairs on top of the trapdoor you just found?";
+	stop the action.
+
+Instead of pulling the carpet:
+	if there is something on the carpet and the carpet is unpushed:
+		say "You can't pull the carpet if there are things on top of it.";
+		now the carpet is unpushed;
+	otherwise if there is something on the carpet and the carpet is pushed:
+		say "You can't put the carpet under other furniture before moving them first.";
+		now the carpet is pushed;
+	otherwise if the carpet is unpushed and there is nothing on the carpet:
+		say "You pulled the carpet. [line break][line break]By pulling the carpet out of the way you revealed a trapdoor.";
+		now the carpet is pushed;
+	otherwise if the carpet is pushed and there is nothing on the carpet:
+		say "You put the carpet back in it's place.";
+		now the carpet is unpushed;
+	stop the action.
+	
+Every turn while the carpet is pushed:
+	now the trapdoor is interactable.
+
+	
 [things]
 A hearth is a lit thing inside the prytaneion. It is scenery. [The description is "It burns hot."] 
 
-A portable torch is a kind of flame. There is a portable torch inside the prytaneion. [The description is "A portable torch.".]
+A portable torch is an undescribed thing. It is inside the prytaneion. The description is "A portable torch.".
+Understand "hand torch" as portable torch.
+
+A snuffer is an undescribed thing inside the prytaneion. Understand "flame snuffer" as snuffer.
 
 
 [torches]
-A first torch is a kind of flame. There is a first torch inside the prytaneion. Understand "1st torch" as first torch. It is fixed in place.
-A second torch is a kind of flame. There is a second torch inside the prytaneion. Understand "2nd torch" as second torch. It is fixed in place.
-A third torch is a kind of flame. There is a third  torch inside the prytaneion. Understand "3rd torch" as third torch. It is fixed in place.
-A fourth torch is a kind of flame. There is a fourth torch inside the prytaneion. Understand "4th torch" as fourth torch. It is fixed in place.
-A fifth torch is a kind of flame. There is a fifth torch inside the prytaneion. Understand "5th torch" as fifth torch. It is fixed in place.
-A sixth torch is a kind of flame. There is a sixth torch inside the prytaneion. Understand "6th torch" as sixth torch. It is fixed in place.
-A seventh torch is a kind of flame. There is a seventh torch inside the prytaneion. Understand "7th torch" as seventh torch. It is fixed in place.
-A eighth torch is a kind of flame. There is a eighth torch inside the prytaneion. Understand "8th torch" as eighth torch. It is fixed in place. 
+A first torch is a kind of flame. There is a first torch inside the prytaneion. Understand "1st torch" or "torch 1" as first torch. It is fixed in place. It is undescribed.
+A second torch is a kind of flame. There is a second torch inside the prytaneion. Understand "2nd torch"  or "torch 2" as second torch. It is fixed in place. It is undescribed.
+A third torch is a kind of flame. There is a third  torch inside the prytaneion. Understand "3rd torch" or "torch 3" as third torch. It is fixed in place. It is undescribed.
+A fourth torch is a kind of flame. There is a fourth torch inside the prytaneion. Understand "4th torch" or "torch 4" as fourth torch. It is fixed in place. It is undescribed.
+A fifth torch is a kind of flame. There is a fifth torch inside the prytaneion. Understand "5th torch" or "torch 5" as fifth torch. It is fixed in place. It is undescribed.
+A sixth torch is a kind of flame. There is a sixth torch inside the prytaneion. Understand "6th torch" or "torch 6" as sixth torch. It is fixed in place. It is undescribed. 
+A seventh torch is a kind of flame. There is a seventh torch inside the prytaneion. Understand "7th torch" or "torch 7" as seventh torch. It is fixed in place. It is undescribed.
+A eighth torch is a kind of flame. There is a eighth torch inside the prytaneion. Understand "8th torch" or "torch 8" as eighth torch. It is fixed in place.  It is undescribed.
 
-A ninth torch is a kind of flame. There is a ninth torch inside the prytaneion. Understand "9th torch" as ninth torch. It is fixed in place.
-A tenth torch is a kind of flame. There is a tenth torch inside the prytaneion. Understand "10th torch" as tenth torch. It is fixed in place.
-A eleventh torch is a kind of flame. There is a eleventh torch inside the prytaneion. Understand "11th torch" as eleventh torch. It is fixed in place.
-A twelfth torch is a kind of flame. There is a twelfth torch inside the prytaneion. Understand "12th torch" as twelfth torch. It is fixed in place. 
-A thirteenth torch is a kind of flame. There is a thirteenth torch inside the prytaneion.Understand "13th torch" as thirteenth torch. It is fixed in place. 
-A fourteenth torch is a kind of flame. There is a fourteenth torch inside the prytaneion.Understand "14th torch" as fourteenth torch. It is fixed in place.
-A fifteenth torch is a kind of flame. There is a fifteenth torch inside the prytaneion.Understand "15th torch" as fifteenth torch. It is fixed in place.
-A sixteenth torch is a kind of flame. There is a sixteenth torch inside the prytaneion.Understand "16th torch" as sixteenth torch. It is fixed in place. 
+A ninth torch is a kind of flame. There is a ninth torch inside the prytaneion. Understand "9th torch" or "torch 9" as ninth torch. It is fixed in place.It is undescribed.
+A tenth torch is a kind of flame. There is a tenth torch inside the prytaneion. Understand "10th torch" or "torch 1" as tenth torch. It is fixed in place.It is undescribed.
+A eleventh torch is a kind of flame. There is a eleventh torch inside the prytaneion. Understand "11th torch" or "torch 11" as eleventh torch. It is fixed in place.It is undescribed.
+A twelfth torch is a kind of flame. There is a twelfth torch inside the prytaneion. Understand "12th torch" or "torch 12" as twelfth torch. It is fixed in place. It is undescribed.
+A thirteenth torch is a kind of flame. There is a thirteenth torch inside the prytaneion.Understand "13th torch" or "torch 13" as thirteenth torch. It is fixed in place. It is undescribed.
+A fourteenth torch is a kind of flame. There is a fourteenth torch inside the prytaneion.Understand "14th torch" or "torch 14" as fourteenth torch. It is fixed in place.It is undescribed.
+A fifteenth torch is a kind of flame. There is a fifteenth torch inside the prytaneion.Understand "15th torch" or "torch 15" as fifteenth torch. It is fixed in place.It is undescribed.
+A sixteenth torch is a kind of flame. There is a sixteenth torch inside the prytaneion.Understand "16th torch" or "torch 16" as sixteenth torch. It is fixed in place. It is undescribed.
 
 
 [bring close to fire action]
@@ -1670,8 +1762,10 @@ Instead of bringing something close to the hearth:
 
 [light torch/flame action]
 Instead of burning something:
+	if the portable torch is not carried by the player:
+		try taking the portable torch;
 	if the noun is an unlit flame:
-		say "You lighted [the noun].";
+		say "You lighted [the noun] using the portable torch.";
 		now the noun is lit;
 		stop the action;
 	otherwise if the noun is a lit flame:
@@ -1682,38 +1776,97 @@ Instead of burning something:
 	otherwise:
 		continue the action.
 		
-Putting off something is an action applying to one touchable thing. Understand "Put off [something]" or "put [something] off" or "extinguish [something]" or "blow out [something]" or "blow [something] out"  as putting off something.
+Putting off something is an action applying to one touchable thing. Understand "Put out [something]" or "put [something] out" or "extinguish [something]" or "blow out [something]" or "blow [something] out"  as putting off something.
 
 Instead of putting off something:
+	if the snuffer is not carried by the player:
+		try taking the snuffer;
 	if the noun is a lit flame:
-		say "You put off [the noun].";
+		say "You put off [the noun] with the flame snuffer.";
 		now the noun is unlit;
 		stop the action;
 	otherwise if the noun is an unlit flame:
 		say "The [noun] is already unlit.";
 		stop the action;
 	otherwise if the noun is the hearth:
-		say "The hearth flames are too strong; you can't simply put them out!";
+		say "The hearth flames are too strong; the flame snuffer isn't enough to extinguish them!";
 		stop the action;
 	otherwise:
 		continue the action.
+		
+Before exiting:
+	If the player is in Prytaneion and the player is carrying the snuffer and the player is not carrying the portable torch:
+		say "You leave the fire snuffer where you found it.";
+		try silently dropping the snuffer;
+	otherwise if the player is in Prytaneion and the player is not carrying the snuffer and the player is carrying the portable torch:
+		say "You leave the portable torch where you found it.";
+		try silently dropping portable torch;
+	otherwise if the player is in Prytaneion and the player is  carrying the snuffer and the player is carrying the portable torch:
+		say "You leave the portable torch and the snuffer where you found them.";
+		try silently dropping portable torch;
+		try silently dropping snuffer;
+	otherwise:
+		continue the action.
 
+Understand "go out" as exiting.
 [TODO: way for player to examine all torches together]
+
+
+Checking torches is an action applying to nothing. 
+Understand "check --/the torches" or "look --/the torches" or "examine --/the torches" as checking torches.
+
+A thing called all torches is scenery in Prytaneion. Understand "torches" or "all the torches" or "all torches" as all torches.
 	
 
+Understand "check torches" or "look torches" or "examine torches" as checking torches.
+
+Instead of checking torches:
+	say " The first torch is[if first torch is lit] lit.[otherwise] unlit.[end if]
+	The second torch is[if second  torch is lit] lit.[otherwise] unlit.[end if]
+	The third torch is[if third torch is lit] lit.[otherwise] unlit.[end if]
+	The fourth torch is[if fourth torch is lit] lit.[otherwise] unlit.[end if]
+	The fifth torch is[if fifth torch is lit] lit.[otherwise] unlit.[end if]
+	The sixth torch is[if sixth torch is lit] lit.[otherwise] unlit.[end if]
+	The seventh torch is[if seventh torch is lit] lit.[otherwise] unlit.[end if]
+	The eighth torch is[if eighth torch is lit] lit.[otherwise] unlit.[end if]
+	The ninth torch is[if ninth torch is lit] lit.[otherwise] unlit.[end if]
+	The tenth torch is[if tenth torch is lit] lit.[otherwise] unlit.[end if]
+	The eleventh torch is[if eleventh torch is lit] lit.[otherwise] unlit.[end if]
+	The twelfth torch is[if twelfth torch is lit] lit.[otherwise] unlit.[end if]
+	The thirteenth torch is[if thirteenth torch is lit] lit.[otherwise] unlit.[end if]
+	The fourteenth torch is[if fourteenth torch is lit] lit.[otherwise] unlit.[end if]
+	The fifteenth torch is[if fifteenth torch is lit] lit.[otherwise] unlit.[end if]
+	The sixteenth torch is[if sixteenth torch is lit] lit.[otherwise] unlit.[end if]
+".
+
+Instead of examining all torches:
+	try checking torches.
+	
+Instead of taking torches:
+	say "They're fixed in place";
+	stop the action.
+	
+
+[things described]
+A scrolls is scenery inside the prytaneion. The description of scrolls is "You see two papyrus scrolls and one parchment scroll. One papyrus scroll is empty.".
+
+Instead of taking scrolls:
+	say "You need to specify which scroll you want to take.";
+	stop the action.
+
 [invisible ink scroll]
-An empty scroll is a thing inside the prytaneion. The description is "An empty scroll. Smells citrusy.". The empty scroll has a smell. The smell of the empty scroll is citrusy. [invisible ink]
+An empty scroll is a thing on the pine table. The description is "An empty scroll. Smells citrusy.". The empty scroll has a smell. The smell of the empty scroll is citrusy. It is scenery. [invisible ink] Understand "empty papyrus scroll" as empty scroll.
 
 
 
 [wax tablet]
-A wax tablet is a thing inside the prytaneion. The description is "_  _ _ _ _  _ _ _ _ _ _  _ _ _ _  _ _ _ _ _  _ _.  _ _ _ _ _  _ _  _ _ _ _ _  _ _  _ _ _  _ _ _ _  _ _ _  _ _ _ _  _ _. [paragraph break][fixed letter spacing]S QWJC WOEBQCD  BCTB  PONCD UC. FDSOA  UC GZEIC BE BQC  VSDC WON  DCWN SB.". [cryptogram:I have another text under me. Bring me close to the fire and read it.]
+A wax tablet is a thing on the pine table. It is scenery. The description is "_  _ _ _ _  _ _ _ _ _ _  _ _ _ _  _ _ _ _ _  _ _.  _ _ _ _ _  _ _  _ _ _ _ _  _ _  _ _ _  _ _ _ _  _ _ _  _ _ _ _  _ _. [paragraph break][fixed letter spacing]S QWJC WOEBQCD  BCTB  PONCD UC. FDSOA  UC GZEIC BE BQC  VSDC WON  DCWN SB.". [cryptogram:I have another text under me. Bring me close to the fire and read it.]
 
-[text scroll]
-A text scroll is a thing inside the prytaneion. The description is "On the scroll you read: Ortsg gsv hrcgs, gsv hvevmgs zmw gsv vrtsgs glixsvh.". [atbash cipher: Light the sixth, the seventh and the eighth torches ]
+[papyrus scroll]
+A papyrus scroll is a thing on the pine table. It is scenery.  The description is "On the scroll you read: Ortsg gsv hrcgs, gsv hvevmgs zmw gsv vrtsgs glixsvh.". [atbash cipher: Light the sixth, the seventh and the eighth torches ]
 
 [leather parchment]
-A parchment is a thing inside the prytaneion. The description is "On the parchment you read: Nkijv vjg ugeqpf cpf vjktf vqtejgu.". [Caesar cipher with ROT2: Light the second and third torches]
+A parchment scroll is a thing on the pine table. It is scenery. The description is "On the parchment you read: Nkijv vjg ugeqpf cpf vjktf vqtejgu.". [Caesar cipher with ROT2: Light the second and third torches]
 
 
 [solution]
@@ -1737,13 +1890,59 @@ Every turn:
 		now TorchPuzzleSolved is true;
 	otherwise:
 		now TorchPuzzleSolved is false.
+		
+
+Instead of examining the trapdoor:
+	if TorchPuzzleSolved is true and the trapdoor is interactable:
+		say "The trapdoor is unlocked now.";
+	otherwise if TorchPuzzleSolved is false and the trapdoor is interactable:
+		say "The trapdoor is locked now.";
+	otherwise:
+		say "You can't see such thing.".
+		
+
+Instead of entering the trapdoor:
+	If the trapdoor is uninteractable:
+		say "You can't see such thing.";
+	 otherwise:
+		continue the action.
+		
+Instead of opening the trapdoor:
+	If the trapdoor is uninteractable:
+		say "You can't see such thing.";
+	 otherwise:
+		continue the action.
+		
+Instead of doing anything to the trapdoor:
+	If the trapdoor is uninteractable:
+		say "You can't see such thing.";
+	 otherwise:
+		continue the action.
+		
+Every turn:
+	If TorchPuzzleSolved is true for the first turn and the trapdoor is interactable:
+		say "You hear the sound of the trapdoor unlocking.";
+		now the trapdoor is unlocked;
+	otherwise if TorchPuzzleSolved is false for the first turn and the trapdoor is interactable:
+		say "You hear the sound of the trapdoor locking.";
+		now the trapdoor is locked;
+	otherwise if TorchPuzzleSolved is true for the first turn and the trapdoor is uninteractable:
+		say "You hear the sound of something unlocking.";
+		now the trapdoor is locked;
+	otherwise if TorchPuzzleSolved is false for the first turn and the trapdoor is uninteractable:
+		say "You hear the sound of something locking.";
+		now the trapdoor is locked;
+		
 
 test fire with "light second torch/light third torch/ light sixth torch/ light seventh torch/ light eighth torch/ light tenth torch/ light eleventh torch/ light thirteenth torch/ light fourteent torch/ light fifteenth torch/light sixteenth torch".
+
+
+
 [End Of: Prytaneion]
 
 [Start Of: Divine Cell 5]
 
-Divine Cell 5 is a room. It is down of the porta. The description is "TODO mmm gods now".
+Divine Cell 5 is a room. It is down of the trapdoor. The description is "TODO mmm gods now".
 
 Chapter 6 - Hercules 
 
