@@ -259,6 +259,8 @@ Instead of investigating:
 		Say "In the Heroon of Kadmos you can see a scale, a dragon statue[if the rock is on the dragon head] with a rock on its head[end if], an altar, a sacrificial plate, some armchairs, a side table[if the rock is on the side table] with a rock on top[end if], some wall paintings, and a gate with a smaller scale on its right.";
 	else if the player is in the Temple of the Aulidean Artemis:
 		say "Inside the Temple of the Aulidean Artemis you can see a sundial, the statue of Artemis and her sacrificial altar.";
+	else if the player is in Prytaneion:
+		say "In the open Prytaneion hall you see the sacred hearth of Hestia, a pine dining table with matching pine chairs and [a list of things on top of pine table] on top of it. [if chair is not pushed and table is not pushed]Bellow the table and chairs is a red carpet.[otherwise]There is also a red carpet in the hall.[end if][line break]There are also 8 torches on either side of the hearth, forming a semicircle around the dining area.[if the trapdoor is interactable].[line break]You also see a trapdoor on the ground.[end if]";
 	[TODO: fill here]
 	else if the player is in the Secret Garden:
 		say "In the Secret Garden you see a statue of a man, a lake, an olive tree and some flowerbeds with red, purple and orange flowers. In the perfume-making area there are some ceramic amphorae and a gate.";
@@ -1634,7 +1636,7 @@ The rest of the building remains inaccessible, since the doors lead to the priva
 The floor is a scenery supporter. It is in prytaneion. 
 
 A pine table is on the carpet. It is scenery. A pine table can be pushed or unpushed. The pine table is unpushed.
-Understand "large table" or "table" or "large pine table" as pine table. The description of pine table is "A large, pine table, likely reserved for the official dinners and gatherings of the prytaneis.".
+Understand "large table" or "table" or "large pine table" or "dining table" as pine table. The description of pine table is "A large, pine table, likely reserved for the official dinners and gatherings of the prytaneis.".
 
 Instead of taking the pine table:
 	say "The table is too heavy for you to lift!";
@@ -1659,7 +1661,7 @@ Instead of taking the carpet:
 
 	
 [door]
-A trapdoor is a locked door. It is up of the Divine Cell 5 and down of the Prytaneion. It is scenery. The trapdoor can be interactable or uninteractable. The trapdoor is uninteractable.
+A trapdoor is an unopenable locked door. It is up of the Divine Cell 5 and down of the Prytaneion. It is scenery. The trapdoor can be interactable or uninteractable. The trapdoor is uninteractable.
 
 Instead of pushing something:
 	if the player is in prytaneion:
@@ -1671,12 +1673,15 @@ Instead of pulling the pine table:
 		say "[one of]You put all your strength into pushing the table off the carpet- and you manage it![or]You pushed the table off the carpet.[stopping]";
 		now the pine table is pushed;
 		now the pine table is on the floor;
-	otherwise if the pine table is pushed:
-		say "You pushed the table on the carpet again.";
+	otherwise if the pine table is pushed and the trapdoor is not open:
+		say "You pushed the table on [if the trapdoor is uninteractable]the carpet again.[otherwise]on the trapdoor.";
 		now the pine table is unpushed;
 		now the pine table is on the carpet;
-	otherwise if the carpet is pushed:
+	otherwise if the carpet is pushed and the trapdoor is closed:
 		say "Umm why would you want to push the pine table on top of the trapdoor you just found?";
+	 if the trapdoor is open:
+		say "You shouldn't push anything on top of the open trapdoor.";
+		stop the action;
 	stop the action.
 	
 Instead of pulling the chair:
@@ -1684,12 +1689,15 @@ Instead of pulling the chair:
 		say "You push the chairs off the carpet.";
 		now the chair is pushed;
 		now the chair is on the floor;
-	otherwise if the chair is pushed:
-		say "You push the chairs on the carpet again.";
+	otherwise if the chair is pushed and the trapdoor is not open:
+		say "You push the chairs on [if the trapdoor is uninteractable]the carpet again.[otherwise]on the trapdoor.[end if]";
 		now the chair is unpushed;
 		now the chair is on the carpet;
-	otherwise if the carpet is pushed:
+	otherwise if the carpet is pushed and the trapdoor is closed:
 		say "Umm why would you want to put the chairs on top of the trapdoor you just found?";
+	if the trapdoor is open:
+		say "You shouldn't push anything on top of the open trapdoor.";
+		stop the action;
 	stop the action.
 
 Instead of pulling the carpet:
@@ -1699,20 +1707,26 @@ Instead of pulling the carpet:
 	otherwise if there is something on the carpet and the carpet is pushed:
 		say "You can't put the carpet under other furniture before moving them first.";
 		now the carpet is pushed;
-	otherwise if the carpet is unpushed and there is nothing on the carpet:
+	otherwise if the carpet is unpushed and there is nothing on the carpet and the trapdoor is not open:
 		say "You pulled the carpet. [line break][line break]By pulling the carpet out of the way you revealed a trapdoor.";
 		now the carpet is pushed;
 	otherwise if the carpet is pushed and there is nothing on the carpet:
 		say "You put the carpet back in it's place.";
 		now the carpet is unpushed;
+	otherwise if the trapdoor is open:
+		say "You shouldn't push anything on top of the open trapdoor.";
+		stop the action;
 	stop the action.
 	
 Every turn while the carpet is pushed:
 	now the trapdoor is interactable.
+	
+Every turn while the carpet is pushed and the chair is pushed and the pine table is pushed:
+	now the trapdoor is openable.
 
 	
 [things]
-A hearth is a lit thing inside the prytaneion. It is scenery. The description is "According to Aeschines, 'the hearth of the Prytaneum is regarded as the common hearth of the state.'"
+A hearth is a lit thing inside the prytaneion. It is scenery. The description is "According to Aeschines, 'the hearth of the Prytaneum is regarded as the common hearth of the state.'" Understand "sacred hearth" or "sacred hearth of hestia" as hearth.
 
 A portable torch is an undescribed thing. It is inside the prytaneion. The description is "A portable torch.".
 Understand "hand torch" as portable torch.
@@ -1908,8 +1922,10 @@ Instead of entering the trapdoor:
 		continue the action.
 		
 Instead of opening the trapdoor:
-	If the trapdoor is uninteractable:
+	if the trapdoor is uninteractable:
 		say "You can't see such thing.";
+	otherwise if the pine table is unpushed or the chair is unpushed or the carpet is unpushed:
+		say "You can't open the trapdoor when stuff is on top of it!";
 	 otherwise:
 		continue the action.
 		
@@ -1928,7 +1944,7 @@ Every turn:
 		now the trapdoor is locked;
 	otherwise if TorchPuzzleSolved is true for the first turn and the trapdoor is uninteractable:
 		say "You hear the sound of something unlocking.";
-		now the trapdoor is locked;
+		now the trapdoor is unlocked;
 	otherwise if TorchPuzzleSolved is false for the first turn and the trapdoor is uninteractable:
 		say "You hear the sound of something locking.";
 		now the trapdoor is locked;
@@ -2050,6 +2066,12 @@ Chapter 7 - Zeus & Hera
 
 
 The Tartarus is a dark room in the Underworld.
+
+Instead of doing anything when the player is in Tartarus for the first time:
+	say "This is the end for now! Thanks for playing!";
+	wait for any key;
+	end the story.
+	
 
 
 Chapter 8 - Mapping & Transportation

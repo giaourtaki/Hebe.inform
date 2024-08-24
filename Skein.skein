@@ -65,6 +65,7 @@
       <child nodeId="node-1628"/>
       <child nodeId="node-1629"/>
       <child nodeId="node-3531"/>
+      <child nodeId="node-3702"/>
       <child nodeId="node-1633"/>
       <child nodeId="node-1659"/>
       <child nodeId="node-1661"/>
@@ -9343,7 +9344,178 @@
   </item>
   <item nodeId="node-3308">
     <command xml:space="preserve">investigate</command>
-    <result xml:space="preserve">Inside the Temple of the Aulidean Artemis you can see a sundial, the statue of Artemis and her sacrificial altar.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">In the open Prytaneion hall you see the sacred hearth of Hestia, a pine dining table with matching pine chairs and an empty scroll, a wax tablet, a papyrus scroll and a parchment scroll on top of it. Bellow the table and chairs is a red carpet.&#x000A;&#x000A;There are also 8 torches on either side of the hearth, forming a semicircle around the dining area.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3683"/>
+    </children>
+  </item>
+  <item nodeId="node-3683">
+    <command xml:space="preserve">open trapdoor</command>
+    <result xml:space="preserve">You can't see such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3684"/>
+    </children>
+  </item>
+  <item nodeId="node-3684">
+    <command xml:space="preserve">push table</command>
+    <result xml:space="preserve">You put all your strength into pushing the table off the carpet- and you manage it!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3685"/>
+    </children>
+  </item>
+  <item nodeId="node-3685">
+    <command xml:space="preserve">move chair</command>
+    <result xml:space="preserve">You push the chairs off the carpet.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3686"/>
+    </children>
+  </item>
+  <item nodeId="node-3686">
+    <command xml:space="preserve">move carpet</command>
+    <result xml:space="preserve">You pulled the carpet. &#x000A;&#x000A;By pulling the carpet out of the way you revealed a trapdoor.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3687"/>
+    </children>
+  </item>
+  <item nodeId="node-3687">
+    <command xml:space="preserve">move table</command>
+    <result xml:space="preserve">You pushed the table on on the trapdoor.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3688"/>
+    </children>
+  </item>
+  <item nodeId="node-3688">
+    <command xml:space="preserve">open trapdoor</command>
+    <result xml:space="preserve">You can't open the trapdoor when stuff is on top of it!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3689"/>
+    </children>
+  </item>
+  <item nodeId="node-3689">
+    <command xml:space="preserve">test  fire</command>
+    <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] light second torch&#x000A;You picked up the portable torch.&#x000A;&#x000A;You lighted the second torch using the portable torch.&#x000A;&#x000A;&gt;[2] light third torch&#x000A;You lighted the third torch using the portable torch.&#x000A;&#x000A;&gt;[3] light sixth torch&#x000A;You lighted the sixth torch using the portable torch.&#x000A;&#x000A;&gt;[4] light seventh torch&#x000A;You lighted the seventh torch using the portable torch.&#x000A;&#x000A;&gt;[5] light eighth torch&#x000A;You lighted the eighth torch using the portable torch.&#x000A;&#x000A;&gt;[6] light tenth torch&#x000A;You lighted the tenth torch using the portable torch.&#x000A;&#x000A;&gt;[7] light eleventh torch&#x000A;You lighted the eleventh torch using the portable torch.&#x000A;&#x000A;&gt;[8] light thirteenth torch&#x000A;You lighted the thirteenth torch using the portable torch.&#x000A;&#x000A;&gt;[9] light fourteent torch&#x000A;You lighted the fourteenth torch using the portable torch.&#x000A;&#x000A;&gt;[10] light fifteenth torch&#x000A;You lighted the fifteenth torch using the portable torch.&#x000A;&#x000A;&gt;[11] light sixteenth torch&#x000A;You lighted the sixteenth torch using the portable torch.&#x000A;&#x000A;You hear the sound of the trapdoor unlocking.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3690"/>
+    </children>
+  </item>
+  <item nodeId="node-3690">
+    <command xml:space="preserve">open trapdoor</command>
+    <result xml:space="preserve">You can't open the trapdoor when stuff is on top of it!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3691"/>
+    </children>
+  </item>
+  <item nodeId="node-3691">
+    <command xml:space="preserve">showme chair</command>
+    <result xml:space="preserve">chair - thing&#x000A;location: on the floor in Prytaneion&#x000A;unlit, inedible, fixed in place, scenery; singular-named, improper-named; pushed&#x000A;description: "The chairs are a matching set with the table, all crafted of pine."&#x000A;initial appearance: none&#x000A;smell: neutral&#x000A;printed name: "chair"&#x000A;printed plural name: none&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3692"/>
+    </children>
+  </item>
+  <item nodeId="node-3692">
+    <command xml:space="preserve">show me table</command>
+    <result xml:space="preserve">(first taking the pine table)&#x000A;The table is too heavy for you to lift!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3693"/>
+    </children>
+  </item>
+  <item nodeId="node-3693">
+    <command xml:space="preserve">showme table</command>
+    <result xml:space="preserve">(the pine table)&#x000A;pine table - supporter&#x000A;    empty scroll&#x000A;    wax tablet&#x000A;    papyrus scroll&#x000A;    parchment scroll&#x000A;location: on the carpet in Prytaneion&#x000A;unlit, inedible, fixed in place, scenery; transparent; singular-named, improper-named; unpushed&#x000A;description: "A large, pine table, likely reserved for the official dinners and gatherings of the prytaneis."&#x000A;initial appearance: none&#x000A;smell: neutral&#x000A;carrying capacity: 100&#x000A;printed name: "pine table"&#x000A;printed plural name: "supporters"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3694"/>
+    </children>
+  </item>
+  <item nodeId="node-3694">
+    <command xml:space="preserve">showme trapdoor</command>
+    <result xml:space="preserve">trapdoor - closed door&#x000A;location: in Prytaneion&#x000A;unlit, inedible, fixed in place, scenery; closed, openable, lockable, unlocked; singular-named, improper-named; interactable&#x000A;description: none&#x000A;initial appearance: none&#x000A;smell: neutral&#x000A;leading-through destination: &lt;routine 241972&gt;&#x000A;printed name: "trapdoor"&#x000A;printed plural name: "doors"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3695"/>
+    </children>
+  </item>
+  <item nodeId="node-3695">
+    <command xml:space="preserve">open trapdoor</command>
+    <result xml:space="preserve">You can't open the trapdoor when stuff is on top of it!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3696"/>
+    </children>
+  </item>
+  <item nodeId="node-3696">
+    <command xml:space="preserve">move chair</command>
+    <result xml:space="preserve">You push the chairs on on the trapdoor.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3697"/>
+    </children>
+  </item>
+  <item nodeId="node-3697">
+    <command xml:space="preserve">move carpet</command>
+    <result xml:space="preserve">You can't put the carpet under other furniture before moving them first.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3698"/>
+    </children>
+  </item>
+  <item nodeId="node-3698">
+    <command xml:space="preserve">move table</command>
+    <result xml:space="preserve">You pushed the table off the carpet.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3699"/>
+    </children>
+  </item>
+  <item nodeId="node-3699">
+    <command xml:space="preserve">move chair</command>
+    <result xml:space="preserve">You push the chairs off the carpet.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3700"/>
+    </children>
+  </item>
+  <item nodeId="node-3700">
+    <command xml:space="preserve">open trapdoor</command>
+    <result xml:space="preserve">You open the trapdoor.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3701"/>
+    </children>
+  </item>
+  <item nodeId="node-3701">
+    <command xml:space="preserve">push chair</command>
+    <result xml:space="preserve">You shouldn't push anything on top of the open trapdoor.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -17743,6 +17915,102 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-3702">
+    <command xml:space="preserve">move table</command>
+    <result xml:space="preserve">You put all your strength into pushing the table off the carpet- and you manage it!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3703"/>
+    </children>
+  </item>
+  <item nodeId="node-3703">
+    <command xml:space="preserve">move carpet</command>
+    <result xml:space="preserve">You can't pull the carpet if there are things on top of it.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3704"/>
+    </children>
+  </item>
+  <item nodeId="node-3704">
+    <command xml:space="preserve">move chairs</command>
+    <result xml:space="preserve">You push the chairs off the carpet.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3705"/>
+    </children>
+  </item>
+  <item nodeId="node-3705">
+    <command xml:space="preserve">open trapdoor</command>
+    <result xml:space="preserve">You can't see such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3706"/>
+    </children>
+  </item>
+  <item nodeId="node-3706">
+    <command xml:space="preserve">test fire</command>
+    <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] light second torch&#x000A;You picked up the portable torch.&#x000A;&#x000A;You lighted the second torch using the portable torch.&#x000A;&#x000A;&gt;[2] light third torch&#x000A;You lighted the third torch using the portable torch.&#x000A;&#x000A;&gt;[3] light sixth torch&#x000A;You lighted the sixth torch using the portable torch.&#x000A;&#x000A;&gt;[4] light seventh torch&#x000A;You lighted the seventh torch using the portable torch.&#x000A;&#x000A;&gt;[5] light eighth torch&#x000A;You lighted the eighth torch using the portable torch.&#x000A;&#x000A;&gt;[6] light tenth torch&#x000A;You lighted the tenth torch using the portable torch.&#x000A;&#x000A;&gt;[7] light eleventh torch&#x000A;You lighted the eleventh torch using the portable torch.&#x000A;&#x000A;&gt;[8] light thirteenth torch&#x000A;You lighted the thirteenth torch using the portable torch.&#x000A;&#x000A;&gt;[9] light fourteent torch&#x000A;You lighted the fourteenth torch using the portable torch.&#x000A;&#x000A;&gt;[10] light fifteenth torch&#x000A;You lighted the fifteenth torch using the portable torch.&#x000A;&#x000A;&gt;[11] light sixteenth torch&#x000A;You lighted the sixteenth torch using the portable torch.&#x000A;&#x000A;You hear the sound of something unlocking.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3707"/>
+    </children>
+  </item>
+  <item nodeId="node-3707">
+    <command xml:space="preserve">open trapdoor</command>
+    <result xml:space="preserve">You can't see such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3708"/>
+    </children>
+  </item>
+  <item nodeId="node-3708">
+    <command xml:space="preserve">move carpet</command>
+    <result xml:space="preserve">You pulled the carpet. &#x000A;&#x000A;By pulling the carpet out of the way you revealed a trapdoor.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3709"/>
+    </children>
+  </item>
+  <item nodeId="node-3709">
+    <command xml:space="preserve">open trapdoor</command>
+    <result xml:space="preserve">It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3710"/>
+    </children>
+  </item>
+  <item nodeId="node-3710">
+    <command xml:space="preserve">showme trapdoor</command>
+    <result xml:space="preserve">trapdoor - locked door&#x000A;location: in Prytaneion&#x000A;unlit, inedible, fixed in place, scenery; closed, openable, lockable, locked; singular-named, improper-named; interactable&#x000A;description: none&#x000A;initial appearance: none&#x000A;smell: neutral&#x000A;leading-through destination: &lt;routine 241972&gt;&#x000A;printed name: "trapdoor"&#x000A;printed plural name: "doors"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3711"/>
+    </children>
+  </item>
+  <item nodeId="node-3711">
+    <command xml:space="preserve">actions</command>
+    <result xml:space="preserve">Actions listing on.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3712"/>
+    </children>
+  </item>
+  <item nodeId="node-3712">
+    <command xml:space="preserve">open trapdoor</command>
+    <result xml:space="preserve">[opening the trapdoor]&#x000A;It seems to be locked.&#x000A;[opening the trapdoor - failed the can't open what's locked rule]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-1633">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Gates of Aulis&#x000A;&#x000A;&gt;</result>
@@ -19580,7 +19848,7 @@
   </item>
   <item nodeId="node-3679">
     <command xml:space="preserve">enter trapdoor</command>
-    <result xml:space="preserve">(first opening the trapdoor)&#x000A;&#x000A;Divine Cell 5&#x000A;TODO mmm gods now&#x000A;&#x000A;You can see a woman named Maria here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">(first opening the trapdoor)&#x000A;&#x000A;Divine Cell 5&#x000A;TODO mmm gods now&#x000A;&#x000A;You can see Maria here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -19598,7 +19866,7 @@
   </item>
   <item nodeId="node-3681">
     <command xml:space="preserve">showme</command>
-    <result xml:space="preserve">Divine Cell 5 - room&#x000A;    trapdoor - open door&#x000A;    yourself - woman&#x000A;        portable torch&#x000A;    woman named Maria&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Divine Cell 5 - room&#x000A;    trapdoor - open door&#x000A;    yourself - woman&#x000A;        portable torch&#x000A;    Maria - woman&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -19607,7 +19875,7 @@
   </item>
   <item nodeId="node-3682">
     <command xml:space="preserve">talk to maria</command>
-    <result xml:space="preserve">You can only do that to something animate.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">...&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
