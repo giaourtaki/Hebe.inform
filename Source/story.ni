@@ -1712,12 +1712,12 @@ Every turn while the carpet is pushed:
 
 	
 [things]
-A hearth is a lit thing inside the prytaneion. It is scenery. [The description is "It burns hot."] 
+A hearth is a lit thing inside the prytaneion. It is scenery. The description is "According to Aeschines, 'the hearth of the Prytaneum is regarded as the common hearth of the state.'"
 
 A portable torch is an undescribed thing. It is inside the prytaneion. The description is "A portable torch.".
 Understand "hand torch" as portable torch.
 
-A snuffer is an undescribed thing inside the prytaneion. Understand "flame snuffer" as snuffer.
+A snuffer is an undescribed thing inside the prytaneion. Understand "flame snuffer" as snuffer. The description is "A flame snuffer, to snuff the flames.".
 
 
 [torches]
@@ -2277,3 +2277,16 @@ Instead of telling Heracles about a topic listed in the Table of Heracles Respon
 	
 Instead of asking Heracles about a topic listed in the Table of Heracles Responses:
 	try silently telling Heracles about the topic listed in the Table of Heracles Responses.
+	
+
+[big instead of talking loop]
+Talking to is an action applying to one visible thing. 
+
+Understand "talk to [someone]" or "speak to [someone]" or "talk with [someone]" as talking to.
+
+Check talking to:
+	if the noun is not a person, say "You can't talk to [the noun]." instead.
+
+After talking to someone:
+	If the noun is Charon:
+		say "Charon is starring at you intensely. '...'".
