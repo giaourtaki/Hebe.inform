@@ -2,6 +2,9 @@
 
 Chapter 0.00 - TODOs | TBDs
 
+[release along with a website and an interpreter.
+Release along with cover art.]
+
 [Everything TBD should be commented or deleted]
 
 [All rooms start and end with Start Off [room name] and End Of [room name]]
@@ -9,16 +12,16 @@ Chapter 0.00 - TODOs | TBDs
 [TODO: make things in descriptions interractable]
 [TODO: fix/add descriptions to everything<3]
 [TODO: talk action]
+[TODO: fix dialog in divine cells]
 [TODO: complete investigate action descriptions]
 [TODO: update help command]
-[TODO: combat system - talos, amphitrite and kronos]
+[TODO: combat system - talos and kronos]
 [TODO: integrade divine boons]
 [TODO: integrade the club of hercules]
 [TODO: go to -> try travel/sail/go in]
-[TODO: golden apples of hesperides collectables]
 [TODO: add values, like smell, to every item]
 [TODO: put random buildings inside cities]
-[TODO: change the name of the divine cells]
+[TODO: golden apples of hesperides collectables]
 
 Chapter 0.0 - Regions
 
@@ -117,19 +120,29 @@ Chapter 0.21 - Variables
 
 [Chapter 1 - Athena & Ares]
 ThebesTemplePuzzleSolved is a truth state that varies. ThebesTemplePuzzleSolved is false. [if player solved Kadmos Palace puzzle or not]
-
+HasAthenaBoon is a truth state that varies. HasAthenaBoon is false. 
+HasAresBoon is a truth state that varies. HasAresBoon is false. 
 
 [Chapter 2 - Demeter & Poseidon]
 AmphitriteIsHappy is a truth state that varies. AmphitriteIsHappy is false. [Is the player calmed down Amphitrite]
 SeaTemplePuzzleSolved is a truth state that varies. SeaTemplePuzzleSolved is false. [if sea temple puzzle in Poseidons Temple is solved or not]
-HasDemeterBoon is a truth state that varies. HasDemeterBoon is true. [If the player has Demeter's boon, HasDemeterBoon is true]
+
+HasDemeterBoon is a truth state that varies. HasDemeterBoon is false. [If the player has Demeter's boon, HasDemeterBoon is true]
 HasPoseidonBoon is a truth state that varies. HasPoseidonBoon is false. [If the player has Poseidon's boon, HasPoseidonBoon is true]
 
 [Chapter 3 - Artemis & Apollo]
-ArtemisTemplePuzzleSolved is a truth state that varies. ArtemisTemplePuzzleSolved is false. [if sun and moon temple puzzle in Artemis Temple is solved or not]
+ArtemisTemplePuzzleSolved is a truth state that varies. ArtemisTemplePuzzleSolved is false. [if sun and moon temple puzzle in Artemis 
+Temple is solved or not]
+HasArtemisBoon is a truth state that varies. HasArtemisBoon is false. 
+
+HasApolloBoon is a truth state that varies. HasApolloBoon is false. 
 
 [Chapter 4 - Aphrodite & Hephaestus]
 FlowerPuzzleSolved is a truth state that varies. FlowerPuzzleSolved is false. [if flower puzzle in SG is solved or not]
+HasAphroditeBoon is a truth state that varies. HasAphroditeBoon is false. 
+
+HasHephaestusBoon is a truth state that varies. HasHephaestusBoon is false. 
+
 
 [Chapter 5 - Hestia & Hermes]
 TorchPuzzleSolved is a truth state that varies. TorchPuzzleSolved is false. [if the torch puzzle is solved or not]
@@ -175,8 +188,8 @@ After taking something:
 		say "You picked up the [noun].";
 	otherwise if the noun is Heracles' Club:
 		say "You picked up the Club of Heracles.";
-	otherwise if the noun is Eternal Chalice of Nectar:
-		say "You picked up the [noun].";
+	[otherwise if the noun is Eternal Chalice of Nectar:
+		say "You picked up the [noun].";]
 	otherwise:
 		say "You picked up [a noun]." ;
 	
@@ -201,11 +214,11 @@ The block giving rule is not listed in any rulebook.
 
 [going to][TODO: fix You can't see any such thing.]
 
-[Before going to somewhere:
-	If the noun is an outroom/inroom:
-		try entering the noun;
-	otherwise:
-		 continue the action.
+[check going noun:
+	try entering the noun;
+	try traveling the noun;
+	try sailing the noun;
+	continue the action.
 ]
 
 [sitting]
@@ -314,8 +327,8 @@ Carry out helping:
 	say "[line break][bold type]5. Game-Specific Commands:[roman type][line break][line break]";
 	say "   • Sacrifice [bracket]something[close bracket]: do this in the necromanteion to gain an obol.[line break]";
 	say "   • Investigate: Investigate a room to see the list of interactable things in it.[line break]";
-	say "   • Travel to [bracket]any gates/any city[close bracket]: Travel from the gates of a city to another's.[line break]";
-	say "   • Sail to [bracket]any port[close bracket]: Sail from the port of a city to another's.[line break]";
+	say "   • Travel to [bracket]any gates/any city[close bracket]: You can travel from the gates of a city to another's.[line break]";
+	say "   • Sail to [bracket]any port[close bracket]: You can sail from the port of a city to another's.[line break]";
 	say "   • Rotate [ bracket]object[close bracket] clockwise/anticlockwise: Rotate a rotatable object.[line break]";
 	say "   • Light [ bracket]object[close bracket]: Light a torch.[line break]";
 	say "   • Put out [ bracket]object[close bracket]: Put out a torch.[line break]";
@@ -866,7 +879,7 @@ test dragongate with "take weights/put owl weight on first pan/put snake weight 
 
 The description of Divine Cell of Athena & Ares is "TODO: description of Divine Cell of Athena & Ares.".
 
-Divine Cell of Athena & Ares Scene is a scene. Divine Cell of Athena & Ares Scene begins when the player is in Divine Cell of Athena & Ares for the first time. Divine Cell of Athena & Ares Scene ends when Goddess Athena is awake and God Ares is awake.
+Divine Cell of Athena & Ares Scene is a scene. Divine Cell of Athena & Ares Scene begins when the player is in heroon of kadmos for the first time. Divine Cell of Athena & Ares Scene ends when Goddess Athena is awake and God Ares is awake.
 
 When Divine Cell of Athena & Ares Scene begins:
 	now the description of Divine Cell of Athena & Ares is "TODO: description of Divine Cell of Athena & Ares scene. You see the gods in a sleeping state.".
@@ -895,10 +908,27 @@ After examining Ares:
 	otherwise:
 		continue the action.
 
+
+
 When Divine Cell of Athena & Ares Scene ends:
-	say "the gods now go to olympus.";
-	now Athena is in Mount Olympus Hall;
-	now Ares is in Mount Olympus Hall.
+	say "The gods wake up from their slumber. 'Thank you for saving us, sister. We wish to grand you our power.' [paragraph break]Invoking Athena's wisdom will help you solve puzzles and Invoking Ares[apostrophe] strategies will help you win combats. Which one do you want to choose?".
+
+After reading a command when Athena is awake and Ares is awake:
+	if Athena is in Divine Cell of Athena & Ares and the player's command includes "Athena":
+		now HasAthenaBoon is true;
+		say "You chose the blessing of Athena.";
+		say "The gods now go to olympus.";
+		now Athena is in Mount Olympus Hall;
+		now Ares is in Mount Olympus Hall;
+		reject the player's command;
+	otherwise if Ares is in Divine Cell of Athena & Ares and the player's command includes "Ares":
+		now HasAresBoon is true;
+		say "You chose the blessing of Ares.";
+		say "The gods now go to olympus.";
+		now Athena is in Mount Olympus Hall;
+		now Ares is in Mount Olympus Hall;
+		reject the player's command;
+		
 
 [End Of: Divine Cell of Athena & Ares]
 
@@ -1119,9 +1149,24 @@ After examining Demeter:
 		continue the action.
 
 When Divine Cell of Demeter & Poseidon Scene ends:
-	say "the gods now go to olympus.";
-	now Demeter is in Mount Olympus Hall;
-	now Poseidon is in Mount Olympus Hall.
+	say "The gods wake up from their slumber. 'Thank you for saving us, niece. We wish to grand you our power.' [paragraph break]Choosing Demeter's wisdom will enable you to speak the language of the earth and choosing Poseidon[apostrophe] power will enable you to breath and see underwater. Which one do you want to choose?".
+	
+
+After reading a command when Demeter is awake and Poseidon is awake:
+	if Demeter is in Divine Cell of Demeter & Poseidon and the player's command includes "Demeter":
+		now HasDemeterBoon is true;
+		say "You chose the blessing of Demeter.";
+		say "The gods now go to olympus.";
+		now Demeter is in Mount Olympus Hall;
+		now Poseidon is in Mount Olympus Hall;
+		reject the player's command;
+	otherwise if Poseidon is in Divine Cell of Demeter & Poseidon and the player's command includes "Poseidon":
+		now HasPoseidonBoon is true;
+		say "You chose the blessing of Poseidon.";
+		say "The gods now go to olympus.";
+		now Demeter is in Mount Olympus Hall;
+		now Poseidon is in Mount Olympus Hall;
+		reject the player's command;
 
 [End Of: Divine Cell of Demeter & Poseidon]
 
@@ -1505,9 +1550,26 @@ After examining Apollo:
 		continue the action.
 
 When Divine Cell of Artemis & Apollo Scene ends:
-	say "the gods now go to olympus.";
-	now Apollo is in Mount Olympus Hall;
-	now Artemis is in Mount Olympus Hall.
+	say "The gods wake up from their slumber. 'Thank you for saving us, sister. We wish to grand you our power.' [paragraph break]Choosing Artemis Boom will enable you to todo? and choosing Apollo's power will enable you to todo? . Which one do you want to choose?".
+	
+After reading a command when Artemis is awake and Apollo is awake:
+	if Artemis is in Divine Cell of Artemis & Apollo and the player's command includes "Artemis":
+		now HasArtemisBoon is true;
+		say "You chose the blessing of Artemis.";
+		say "The gods now go to olympus.";
+		now Artemis is in Mount Olympus Hall;
+		now Apollo is in Mount Olympus Hall;
+		reject the player's command;
+	otherwise if Apollo is in Divine Cell of Artemis & Apollo and the player's command includes "Apollo":
+		now HasApolloBoon is true;
+		say "You chose the blessing of Apollo.";
+		say "The gods now go to olympus.";
+		now Apollo is in Mount Olympus Hall;
+		now Artemis is in Mount Olympus Hall;
+		reject the player's command;
+	
+
+
 
 [End Of: Divine Cell of Artemis & Apollo]
 
@@ -1892,9 +1954,23 @@ After examining Hephaestus:
 		continue the action.
 
 When Divine Cell of Aphrodite & Hephaestus Scene ends:
-	say "the gods now go to olympus.";
-	now Hephaestus is in Mount Olympus Hall;
-	now Aphrodite is in Mount Olympus Hall.
+	say "The gods wake up from their slumber. 'Thank you for saving us, dear. We wish to grand you our power.' [paragraph break]Choosing Aphrodite's Boom will enable you to todo? and choosing Hephaestus[apostrophe] power will enable you to todo? . Which one do you want to choose?".
+	
+After reading a command when Aphrodite is awake and Hephaestus is awake:
+	if Aphrodite is in Divine Cell of Aphrodite & Hephaestus and the player's command includes "Aphrodite":
+		now HasAphroditeBoon is true;
+		say "You chose the blessing of Aphrodite.";
+		say "The gods now go to olympus.";
+		now Aphrodite is in Mount Olympus Hall;
+		now Hephaestus is in Mount Olympus Hall;
+		reject the player's command;
+	otherwise if Hephaestus is in Divine Cell of Aphrodite & Hephaestus and the player's command includes "Hephaestus":
+		now HasHephaestusBoon is true;
+		say "You chose the blessing of Hephaestus.";
+		say "The gods now go to olympus.";
+		now Aphrodite is in Mount Olympus Hall;
+		now Hephaestus is in Mount Olympus Hall;
+		reject the player's command;
 
 
 [End Of: Divine Cell of Aphrodite & Hephaestus]
@@ -2280,9 +2356,25 @@ After examining Hermes:
 		continue the action.
 
 When Divine Cell of Hestia & Hermes Scene ends:
-	say "the gods now go to olympus.";
-	now Hestia is in Mount Olympus Hall;
-	now Hermes is in Mount Olympus Hall.
+	say "The gods wake up from their slumber. 'Thank you for saving us, dear. We wish to grand you our power.' [paragraph break]Choosing Hestia's Boom will enable you to todo? and choosing Hermes[apostrophe] power will enable you to todo? . Which one do you want to choose?".
+	
+After reading a command when Hestia is awake and Hermes is awake:
+	if Hestia is in Divine Cell of Hestia & Hermes and the player's command includes "Hestia":
+		now HasHestiaBoon is true;
+		say "You chose the blessing of Hestia.";
+		say "The gods now go to olympus.";
+		now Hestia is in Mount Olympus Hall;
+		now Hermes is in Mount Olympus Hall;
+		reject the player's command;
+	otherwise if Hermes is in Divine Cell of Hestia & Hermes and the player's command includes "Hermes":
+		now HasHermesBoon is true;
+		say "You chose the blessing of Hermes.";
+		say "The gods now go to olympus.";
+		now Hestia is in Mount Olympus Hall;
+		now Hermes is in Mount Olympus Hall;
+		reject the player's command;
+	
+
 
 
 [End Of: Divine Cell of Aphrodite & Hephaestus]
@@ -2430,7 +2522,7 @@ Gates of Aulis is a room in Aulis. "To the north you can see the town of Aulis. 
 
 Gates of Delphi is a room in Delphi. "To the south is the Oracle of Delphi. To the west is the city of Delphi.[Paragraph break]From here you can travel to: [line break]→ Thebes [line  break]→ Athens[line  break]→ Aulis[line  break]→ Ephyra[line  break]→ Mount Olympus".
 
-Gates of Ephyra is a room in Ephyra. "To the west you can see the town of Ephyra. [paragraph break]From here you can travel to: [line  break]→ Mount Olympus [line  break]→ Athens[line break]→ Thebes[line  break]→ Aulis[line  break]→ Delphi".
+Gates of Ephyra is a room in Ephyra. "To the west you can see the town of Ephyra. To the north is the Necromanteion. To the East, you will find the entrance of the Underworld. [paragraph break]From here you can travel to: [line  break]→ Mount Olympus [line  break]→ Athens[line break]→ Thebes[line  break]→ Aulis[line  break]→ Delphi".
 
 
 
@@ -2555,6 +2647,7 @@ After entering an inroom:
 	let L be a random room fronted by the noun;
 	move the player to L;
 	
+	
 
 When play begins:  [so that "exit/go out" will work]
 	repeat with S running through outrooms:
@@ -2565,11 +2658,14 @@ When play begins:  [so that "exit/go out" will work]
 [All rooms]
 
 [Athens]
-The Agora of Athens is a room in Athens. The Acropolis is a room in Athens. Agora of Athens is northeast of Port of Piraeus. Agora of Athens is west of the Acropolis. Agora of Athens is northwest of the Southern Gates of Athens. Agora of Athens is south of the Northen Gates of Athens.
+The Agora of Athens is a room in Athens. The description is "To the east you see the Acropolis hill. To the southwest is Port of Piraeus. To the southeast are the Southern Gates of Athens and to the north are the Northen ones.".
+The Acropolis is a room in Athens. The description is "The Agora of Athens is located in  the west. From here you can see the Prytaneion of Athens.".
+Agora of Athens is northeast of Port of Piraeus. Agora of Athens is west of the Acropolis. Agora of Athens is northwest of the Southern Gates of Athens. Agora of Athens is south of the Northen Gates of Athens.
 
 [Sounio]
-Agora of Sounio is a room in Sounio. Agora of Sounio is south of the sounio gates. Agora of Sounio is north of the port of sounio. Agora of Sounio is west of the Sounio Beach.
-Underwater is a room in Sounio. [poseidons temple is in underwater]
+Agora of Sounio is a room in Sounio. The description is "You can see the Port of Sounio in  the south. The Sounio Cape is in the east.".
+Agora of Sounio is south of the sounio gates. Agora of Sounio is north of the port of sounio. Agora of Sounio is west of the Sounio Beach.
+Underwater is a room in Sounio.[poseidons temple is in underwater]
 
 [Paphos]
 The Port of Paphos is west of the Agora of Paphos. The Agora of Paphos is south of the Outside of the Palace of Paphos. The Outside of the Palace of Paphos is south of the Throne Room.
@@ -2583,10 +2679,10 @@ The Agora of Aulis is north of the Gates of Aulis. The Agora of Aulis is west of
 
 [Delphi]
 A room called South of Delphi  is in Delphi.
-The Agora of Delphi is a room. The Agora of Delphi is west of the Delphi Gates. The Delphi Gates are north of the South of Delphi. 
+The Agora of Delphi is a room. "The city gates are located in the west".The Agora of Delphi is west of the Delphi Gates. The Delphi Gates are north of the South of Delphi. 
 
 [Ephyra]
-The Agora of Ephyra is a room. [acheron is here (backdrop)]
+The Agora of Ephyra is a room. "The gates of the city are located in the east.". [TODO:acheron is here (backdrop)]
 The North of Ephyra is a room in the Underworld. It is north of Gates of Ephyra. [Necromanteion is inside here]
 The East of Ephyra is a room in the Underworld. [TODO: Acheron River should be here]
 The Gates of Ephyra is east of the Agora of ephyra and west of East of Ephyra.
@@ -2602,6 +2698,8 @@ Elysian Fields is up of Asphodel Meadows. Charon's boat is down of East of Ephyr
 [Rooms inside rooms in game]
 The Prytaneion is an outroom. The Prytaneion is inside from the Acropolis.
 The prytaneion_front is an inroom in the Acropolis. The prytaneion_front fronts the Prytaneion.
+
+Understand "Prytaneion of Athens" as Prytaneion.
 
 The Temple of the Aulidean Artemis is an outroom. The Temple of the Aulidean Artemis is inside from the Agora of Aulis.
 The aulidian_artemis_temple is an inroom in the Agora of Aulis. The aulidian_artemis_temple fronts the Temple of the Aulidean Artemis.
