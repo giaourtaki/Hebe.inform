@@ -120,7 +120,7 @@ ThebesTemplePuzzleSolved is a truth state that varies. ThebesTemplePuzzleSolved 
 
 
 [Chapter 2 - Demeter & Poseidon]
-AmphitriteIsCalm is a truth state that varies. AmphitriteIsCalm is true. [Is the player calmed down Amphitrite]
+AmphitriteIsHappy is a truth state that varies. AmphitriteIsHappy is false. [Is the player calmed down Amphitrite]
 SeaTemplePuzzleSolved is a truth state that varies. SeaTemplePuzzleSolved is false. [if sea temple puzzle in Poseidons Temple is solved or not]
 HasDemeterBoon is a truth state that varies. HasDemeterBoon is true. [If the player has Demeter's boon, HasDemeterBoon is true]
 HasPoseidonBoon is a truth state that varies. HasPoseidonBoon is false. [If the player has Poseidon's boon, HasPoseidonBoon is true]
@@ -230,15 +230,16 @@ Instead of giving nectar to something:
 	else if the second noun is awake:
 		say "[second noun] doesn't look like [they] needs more nectar right now.";
 		stop the action;
+	else if the second noun is asleep:
+		say "You gave nectar to [second noun].";
+		now the second noun is awake;
 	else if the Eternal Chalice of Nectar is not carried by the player:
 		say "You don't have any nectar on you right now.";
 		stop the action;
-	else if the second noun is a thing:
+	else if the second noun is not a person:
 		say "You can't give nectar to inanimate objects.";
-		stop the action;
-	else if the second noun is asleep:
-		say "You gave nectar to [second noun].";
-		now the second noun is awake.
+		stop the action.
+	
 		
 [sacrificing]
 Sacrificing is an action applying to one carried thing. Understand "sacrifice [something]" as sacrificing.
@@ -293,10 +294,12 @@ Carry out helping:
 	say "[line break][bold type]2. Interaction Commands:[roman type][line break][line break]";
 	say "   • Look: Examine your surroundings. Example: 'look', 'look around', 'l'.[line break]";
 	say "   • Examine [ bracket]object[close bracket]: Inspect an item in detail. Example: 'examine book', 'x book'.[line break]";
+	say "   • Check [ bracket]torches[close bracket]: Examine the status of all the torches in Prytaneion.[line break]";
 	say "   • Take [ bracket]object[close bracket]: Pick up an item. Example: 'take key'.[line break]";
 	say "   • Drop [ bracket]object[close bracket]: Put down an item. Example: 'drop book'.[line break]";
 	say "   • Put [ bracket]object[close bracket] on/in [ bracket]object[close bracket]: Put an item on top or inside another item. Example: 'put flower in pot'.[line break]";
 	say "   • Open/Close [ bracket]object[close bracket]: Open or close something. Example: 'open door', 'close box'.[line break]";
+	say "   • Push/Pull/Move [ bracket]object[close bracket]: Move an object.[line break]";
 	say "   • Give [ bracket]object[close bracket] to [ bracket]person[close bracket]: Give an item to someone. Example: 'give book to librarian'.[line break]";
 	say "[line break][bold type]3. Conversation Commands:[roman type][line break][line break]";
 	say "   • Talk to [ bracket]person[close bracket]: Initiate conversation. Example: 'talk to librarian'.[line break]";
@@ -304,14 +307,19 @@ Carry out helping:
 	say "   • Tell [ bracket]person[close bracket] about [ bracket]topic[close bracket]: Tell someone about a topic. Example: 'tell librarian about secret'.[line break]";
 	say "[line break][bold type][bold type]4. Miscellaneous Commands:[roman type][line break][line break]";
 	say "   • Inventory: See what you're carrying. Example: 'inventory', 'i'.[line break]";
-	say "   • Wait: Pass time. Example: 'wait'.[line break]";
+	say "   • Wait: Pass 1 minute. Example: 'wait'.[line break]";
+	say "   • Wait for [ bracket]a time period[close bracket]: Wait for a chosen amount of time.[line break]";
+	say "   • Sleep: Sleep until the morning of the next day.[line break]";
 	say "   • Save/Restore/Quit: Manage your game. Example: 'save', 'restore', 'quit'.[line break]";
 	say "[line break][bold type]5. Game-Specific Commands:[roman type][line break][line break]";
-	say "   • Sacrifice [bracket]something[close bracket].[line break]";
+	say "   • Sacrifice [bracket]something[close bracket]: do this in the necromanteion to gain an obol.[line break]";
 	say "   • Investigate: Investigate a room to see the list of interactable things in it.[line break]";
-	say "   • Travel to [bracket]any port[close bracket]: Travel from the gates of a city to another's.[line break]";
-	say "   • Sail to [bracket]any gates/any city[close bracket]: Sail from the port of a city to another's.[line break]";
+	say "   • Travel to [bracket]any gates/any city[close bracket]: Travel from the gates of a city to another's.[line break]";
+	say "   • Sail to [bracket]any port[close bracket]: Sail from the port of a city to another's.[line break]";
 	say "   • Rotate [ bracket]object[close bracket] clockwise/anticlockwise: Rotate a rotatable object.[line break]";
+	say "   • Light [ bracket]object[close bracket]: Light a torch.[line break]";
+	say "   • Put out [ bracket]object[close bracket]: Put out a torch.[line break]";
+	say "   • Bring [ bracket]object[close bracket] close to the hearth.[line break]";
 	say "   • Give nectar to [ bracket]person[close bracket]: Make a person immortal or heal an immortal person.[line break]";
 	say "[paragraph break][italic type]You can also combine commands with objects and people, such as 'take book and give it to librarian'.[roman type]";
 	
@@ -333,27 +341,27 @@ Mount Olympus Hall is a room.
 
 [Items in the room]
 
-Heracles' Club is a thing in Mount Olympus Hall. It is undescribed. the indefinite article is "the". [TODO: check] Understand "club of heracles" as heracles' club.
+Heracles' Club is a thing in Mount Olympus Hall. It is undescribed. the indefinite article is "the". Understand "club of heracles" as heracles' club.
 
 
 [Characters in the room]
-The Titan Kronos is a man. He is undescribed.
-The God Heracles is a man. He is undescribed.
-The God Zeus is a man.He is undescribed.
-The God Apollo is a man.He is undescribed.
-The God Ares is a man. He is undescribed.
-The God Hephaestus is a man.He is undescribed.
-The God Hermes is a man .He is undescribed.
-The God Poseidon is a man .He is undescribed.
-The God Dionysus is a man. He is undescribed.
-Ganymedes is a man.He is undescribed.
+The Titan Kronos is a man. He is undescribed. He is immortal.
+The God Heracles is a man. He is undescribed. He is immortal.
+The God Zeus is a man.He is undescribed.He is immortal.
+The God Apollo is a man.He is undescribed.He is immortal.
+The God Ares is a man. He is undescribed.He is immortal.
+The God Hephaestus is a man.He is undescribed.He is immortal.
+The God Hermes is a man .He is undescribed.He is immortal.
+The God Poseidon is a man .He is undescribed.He is immortal.
+The God Dionysus is a man. He is undescribed.He is immortal.
+Ganymedes is a man.He is undescribed.He is immortal.
 
-The Goddess Aphrodite is a woman.She is undescribed.
-The Goddess Artemis is a woman.She is undescribed.
-The Goddess Athena is a woman.She is undescribed.
-The Goddess Demeter is a woman .She is undescribed.
-The Goddess Hestia is a woman.She is undescribed.
-The Goddess Hera is a woman.She is undescribed.
+The Goddess Aphrodite is a woman.She is undescribed.She is immortal.
+The Goddess Artemis is a woman.She is undescribed.She is immortal.
+The Goddess Athena is a woman.She is undescribed.She is immortal.
+The Goddess Demeter is a woman .She is undescribed.She is immortal.
+The Goddess Hestia is a woman.She is undescribed.She is immortal.
+The Goddess Hera is a woman.She is undescribed.She is immortal.
 
 
 
@@ -394,7 +402,7 @@ Turn counter is a number that varies. Turn counter is 0.
 Every turn during Olympus Hall Celebration Scene:
 	increment the turn counter;
 	 if the remainder after dividing turn counter by 10 is 0:
-		say "[one of]You hear the voice of Heracles. 'Hey dearest, could you get my club here? It's on the TODO. Let's show those actors how it's really done!'[or]Heracles talks to you again. 'Reminder to bring me my club when possible, dearest! It's on the TODO.'[stopping]"
+		say "[one of]You hear the voice of Heracles. 'Hey dearest, could you get my club here? It's in the room. Let's show those actors how it's really done!'[or]Heracles talks to you again. 'Reminder to bring me my club when possible, dearest! It's in the room.'[stopping]" [TODO: fix "the room"]
 
 	
 
@@ -510,26 +518,26 @@ When Kronos Scene ends:
 	now Zeus is asleep;
 	now Apollo is in Divine Cell of Artemis & Apollo;
 	now Apollo is asleep;
-	now Hephaestus is in Divine Cell 4;
+	now Hephaestus is in Divine Cell of Aphrodite & Hephaestus;
 	now Hephaestus is asleep;
-	now Ares is in Divine Cell 1;
+	now Ares is in Divine Cell of Athena & Ares;
 	now Ares is asleep;
-	now Hermes is in Divine Cell 5;
+	now Hermes is in Divine Cell of Hestia & Hermes;
 	now Hermes is asleep;
-	now Poseidon is in Divine Cell 2;
+	now Poseidon is in Divine Cell of Demeter & Poseidon;
 	now Poseidon is asleep;
 	now Ganymedes is nowhere;
-	now Aphrodite is in Divine Cell 4;
+	now Aphrodite is in Divine Cell of Aphrodite & Hephaestus;
 	now Aphrodite is asleep;
 	now Artemis is in Divine Cell of Artemis & Apollo;
 	now Artemis is asleep;
-	now Athena is in Divine Cell 1;
+	now Athena is in Divine Cell of Athena & Ares;
 	now Athena is asleep;
-	now Demeter is in Divine Cell 2;
+	now Demeter is in Divine Cell of Demeter & Poseidon;
 	now Demeter is asleep;
 	now Hera is in Tartaros;
 	now Hera is asleep;
-	now Hestia is in Divine Cell 5;
+	now Hestia is in Divine Cell of Hestia & Hermes;
 	now Hestia is asleep;
 	wait for any key;
 	now the player is holding the Heracles' Club;
@@ -616,6 +624,9 @@ Ahead, at the far end of the hall, you see the adyton, the innermost chamber. It
 
 Pytheia is a woman in the Oracle of Delphi. She is undescribed. The description is "Pytheia, the high priestess of the Oracle of Delphi, appears draped in flowing robes of shimmering white and deep purple, her face partially covered by a delicate veil of fine silk flowing from her hair. Her demeanor is both serene and enigmatic, her eyes reflecting a depth of wisdom as she sits on her tripod, surrounded by the faint, otherworldly aroma of incense.".
 
+After talking to Pytheia:
+	say "Thank you so much for playing my game! Ares & Athena are in the Heroon of Kadmos in Thebes, Demeter & Poseidon are in the temple of Poseidon in Sounio, Artemis & Apollo are in the temple of Artemis in Aulis, Aphrodite & Hephaestus is in a secret garden under the throne of the king of Paphos, Hestia and Hermes are in the Prytaneion in the Acropolis and Heracles, Zeus and Hera are in the Underworld. Good luck and have fun!". [TODO: change]
+	
 [scenery]
 
 [End Of: Oracle of Delphi]
@@ -672,13 +683,13 @@ As you take in your surroundings, your attention is immediately drawn to the lar
 
 Directly across from where you entered, you notice a hardwood gate. To the right of the gate is a smaller scale, delicately constructed, with six small pans evenly spaced along its length. The small scale is intricately connected to a metal rod, which appears to serve as a locking mechanism for the gate. To the left of the gate stands a statue of a dragon, its serpentine form rising up to your waist, and its head flattened, as a shelf of some kind. Directly above the gate you find an inscription chiseled into the stone.".
 
-Divine Cell 1 is a room in Thebes. 
+Divine Cell of Athena & Ares is a room in Thebes. 
 
 		
 
 [doors]
 
-The dragon gate is down of the Heroon of Kadmos and up of divine cell 1. The dragon gate is a locked openable door. It is a scenery. The dragon gate is down from the Heroon of Kadmos and up from divine cell 1.
+The dragon gate is down of the Heroon of Kadmos and up of Divine Cell of Athena & Ares. The dragon gate is a locked openable door. It is a scenery. The dragon gate is down from the Heroon of Kadmos and up from Divine Cell of Athena & Ares.
 
 
 A inscription is part of the dragon gate. The description of the inscription is "The inscription reads: The key to passage lies from the lightest touch to the heaviest step.".
@@ -851,6 +862,46 @@ test dragongate with "take weights/put owl weight on first pan/put snake weight 
 
 [End Of: Heroon of Kadmos]
 
+[Start Of: Divine Cell of Athena & Ares]
+
+The description of Divine Cell of Athena & Ares is "TODO: description of Divine Cell of Athena & Ares.".
+
+Divine Cell of Athena & Ares Scene is a scene. Divine Cell of Athena & Ares Scene begins when the player is in Divine Cell of Athena & Ares for the first time. Divine Cell of Athena & Ares Scene ends when Goddess Athena is awake and God Ares is awake.
+
+When Divine Cell of Athena & Ares Scene begins:
+	now the description of Divine Cell of Athena & Ares is "TODO: description of Divine Cell of Athena & Ares scene. You see the gods in a sleeping state.".
+	
+After talking to Athena:
+	if Athena is asleep:
+		say "Athena is in a commatose state. She can't speak.";
+	otherwise:
+		continue the action.
+		
+After talking to Ares:
+	if Ares is asleep:
+		say "Ares is in a commatose state. He can't speak.";
+	otherwise:
+		continue the action.
+
+After examining Athena:
+	if Athena is asleep:
+		say "Athena is in a commatose state.";
+	otherwise:
+		continue the action.
+		
+After examining Ares:
+	if Ares is asleep:
+		say "Ares is in a commatose state. ";
+	otherwise:
+		continue the action.
+
+When Divine Cell of Athena & Ares Scene ends:
+	say "the gods now go to olympus.";
+	now Athena is in Mount Olympus Hall;
+	now Ares is in Mount Olympus Hall.
+
+[End Of: Divine Cell of Athena & Ares]
+
 Chapter 2 - Demeter & Poseidon 
 
 [TODO: add some athena/ares powers]
@@ -860,59 +911,73 @@ Chapter 2 - Demeter & Poseidon
 [region: Sounio]
 
 [rooms]
-The Sounio Beach is a room in Sounio. "TODO: Description of Sounio beach. You see some nereides fighting. Poseidon's temple is in the sea.[line break][line break]The city of Sounio is on the west.". [TODO: understand temple of poseidon as poseidons temple]
+The Sounio Beach is a room in Sounio. "TODO: Description of Sounio beach. You see some nereides fighting. Poseidon's temple is sunk in the sea.[line break][line break]The city of Sounio is on the west.". [TODO: understand temple of poseidon as poseidons temple]
 
 
-The Poseidon's Temple is a room in Sounio. It is up of the temple door."You see a coloumn with 4 rotatable discs. The discs have 5 faces, 4 of them with a picture and one empty. The pictures are the same on each disc and they are in order: Budding olives and fresh green leaves, Green olives growing in size, with fuller leaves, Ripe, darkening olives ready for harvest, some fallen to the ground and Bare branches with a few remaining leaves, the tree in a state of dormancy. The faces towards the altar are all empty."
-The Divine Cell 2 is a room in Sounio. The Divine Cell 2 is down of the temple door. "You see the gods.". [TODO: change name of divine cell]
+A room called Temple of Poseidon is in Sounio. It is up of the temple door."You see a coloumn with 4 rotatable discs. The discs have 5 faces, 4 of them with a picture and one empty. The pictures are the same on each disc and they are in order: Budding olives and fresh green leaves, Green olives growing in size, with fuller leaves, Ripe, darkening olives ready for harvest, some fallen to the ground and Bare branches with a few remaining leaves, the tree in a state of dormancy. The faces towards the altar are all empty."
+The Divine Cell of Demeter & Poseidon is a room in Sounio. The Divine Cell of Demeter & Poseidon is down of the temple door.
 
+Underwater is a room in sounio. "TODO: underwater description. You see the temple of poseidon here.".
 
 [Start Of: sounio beach]
 
+Sounio Beach Scene is a scene. The Sounio Beach Scene begins when the player is in sounio beach for the first time. The Sounio Beach Scene ends when AmphitriteIsHappy is true for the first time.
 
+When Sounio Beach Scene begins:
+	now the description of Sounio Beach is "As you journey toward Cape Sounion, where the Temple of Poseidon stands, you find that the cape has become entirely submerged. What remains is a narrow beach, with a vast expanse of land now lying beneath the sea.
+
+On the beach, you notice a nymph weeping and wailing, surrounded by others who are attempting to console her. You recognize the grieving nereid as Amphitrite, queen of the sea and wife of Poseidon. The nereids comforting her must be her closest attendants—Aktaia, Erato, and Ploto.".
+
+After talking to someone during the Sounio Beach Scene:
+	if the noun is Aktaia:
+		say "'I'm trying to console Amphitrite.'";
+	otherwise if the noun is Erato:
+		say "'I'm trying to console Amphitrite.'";
+	otherwise if the noun is Ploto:
+		say "'I'm trying to console Amphitrite.'";
+	otherwise if the noun is Amphitrite:
+		say "You tell Amphitrite you're going to save her hubby. She happy now.";
+		now Amphitrite is happy.
+	
+When Sounio Beach Scene ends:
+	now the description of Sounio Beach is "UwU no crying nereida now. But temple is still flooded.".
 
 [doors]
-The sea is south of the sounio beach and up of the Poseidon's Temple. It is an unopenable closed door. It is a scenery. 
-The sounio beach is north of the sea. The Poseidon's Temple is down of the sea.
+The sea is south of the sounio beach and up of underwater. It is an unopenable closed door. It is a scenery. 
+
+The sounio beach is north of the sea. The underwater is down of the sea.
 [characters]
-Some nereides are in the sounio beach. Nereides are women. [It is undescribed.]
-
-Aktaia, Erato and Ploto are women in the Sounio beach. [They are undescribed.]
-
-The angry nereida is a woman in the sounio beach.  The name of angry nereida is "Amphitrite". The angry nereida can be calm or fighting. The angry nereida is calm. [She is undescribed.][TODO: make it so you know her name after she is introduced]
-
-Instead of examining angry nereida:
-	[say "her name is [the name of the noun].";]
-	stop the action.
-
-[TODO: Battle with  Amphitrite]
 
 
-[TODO: angry nereida is calm after battle with amphitrite]
+Aktaia is a woman in sounio beach. She is undescribed.
+Erato is a woman in sounio beach. She is undescribed.
+Ploto is a woman in sounio beach. She is undescribed.
+
+Amphitrite is a woman in the sounio beach. Amphitrite can be sad or happy. Amphitrite is sad. She is undescribed. 
 
 
 Every turn:
-	If the angry nereida is calm:
-		now AmphitriteIsCalm is true;
-	otherwise:
-		now AmphitriteIsCalm is false.
+	If Amphitrite is happy or HasPoseidonBoon is true:
+		now AmphitriteIsHappy is true;
+		now the sea is open;
+	otherwise If Amphitrite is sad:
+		now AmphitriteIsHappy is false;
+		now the sea is closed.
+		
 
-Understand "to temple" or "swim in sea" as south when the player is in the sounio beach.
+Understand "to temple" or "swim in sea" or "dive in sea" or "go in sea" or "jump in sea" as south when the player is in the sounio beach.
 
 Instead of going south in the Sounio Beach:
-	if AmphitriteIsCalm is true:
-		now the sea is open;
-		try entering the sea;
-	otherwise:
-		say "The temple looks like it's too deep. You can't go there with no help.";
-		stop the action.
-	
-Instead of entering the sea:
-	if AmphitriteIsCalm is true:
-		now the sea is open;
-		say "The nereides agree to take you to the sunken Temple."; [TODO: description of nereides helping you only if you dont possess poseidon boom]
+	try entering the sea.
+
+Instead of entering the sea: [the nereides are there to help you everytime if you dont have poseidons boon]
+	if HasPoseidonBoon is true:
+		say "You dive deep into the deep blue waters.";
 		continue the action;
-	otherwise if AmphitriteIsCalm is false:
+	otherwise if HasPoseidonBoon is false and AmphitriteIsHappy is true:
+		say "The nereides agree to take you to the sunken Temple.";
+		continue the action;
+	otherwise:
 		say "The temple looks like it's too deep. You can't go there with no help.";
 		stop the action.
 
@@ -924,7 +989,7 @@ Instead of entering the sea:
 
 [doors]
 
-The temple door is a door down of the poseidon's temple and up of the divine cell 2. It is a closed unopenable door.
+The temple door is a door down of the Temple of Poseidon and up of the Divine Cell of Demeter & Poseidon. It is a closed unopenable door.
 
 Instead of examining a ring:
 	say "Its face shows [ring face of noun].";
@@ -977,9 +1042,9 @@ After antirotating a ring :
 		say "Now its face shows [ring face of noun].";
 		continue the action.
 
-A pos altar is in poseidon's temple. "Altar." It is fixed in place.
+A pos altar is in Temple of Poseidon. "Altar." It is fixed in place.
 
-A blue column is a supporter in poseidon's temple. "Column that faces the altar."
+A blue column is a supporter in Temple of Poseidon. "Column that faces the altar."
 
 top ring, second ring, third ring and bottom ring are rings on the column. Top ring, second ring, third ring and bottom ring are fixed in place.
 
@@ -1020,12 +1085,45 @@ test POS with "rotate the top ring anticlockwise/rotate the second ring anticloc
 
 [End Of: poseidons temple]
 
-[Start Of: divine cell 2]
+[Start Of: Divine Cell of Demeter & Poseidon]
 
-[characters]
+The description of Divine Cell of Demeter & Poseidon is "TODO: description of Divine Cell of Demeter & Poseidon.".
 
-[Poseidon is a man in the Divine Cell 2. 
-Demeter is a woman in the Divine Cell 2.]
+Divine Cell of Demeter & Poseidon Scene is a scene. Divine Cell of Demeter & Poseidon Scene begins when the player is in Divine Cell of Demeter & Poseidon for the first time. Divine Cell of Demeter & Poseidon Scene ends when Goddess Demeter is awake and God Poseidon is awake.
+
+When Divine Cell of Demeter & Poseidon Scene begins:
+	now the description of Divine Cell of Demeter & Poseidon is "TODO: description of Divine Cell of Athena & Ares scene. You see Demeter and Poseidon in a sleeping state.".
+	
+After talking to Demeter:
+	if Demeter is asleep:
+		say "Demeter is in a commatose state. She can't speak.";
+	otherwise:
+		continue the action.
+		
+After talking to Poseidon:
+	if Poseidon is asleep:
+		say "Poseidon is in a commatose state. He can't speak.";
+	otherwise:
+		continue the action.
+
+After examining Poseidon:
+	if Poseidon is asleep:
+		say "Poseidon is in a commatose state.";
+	otherwise:
+		continue the action.
+		
+After examining Demeter:
+	if Demeter is asleep:
+		say "Demeter is in a commatose state.";
+	otherwise:
+		continue the action.
+
+When Divine Cell of Demeter & Poseidon Scene ends:
+	say "the gods now go to olympus.";
+	now Demeter is in Mount Olympus Hall;
+	now Poseidon is in Mount Olympus Hall.
+
+[End Of: Divine Cell of Demeter & Poseidon]
 
 Chapter 3 - Artemis & Apollo
 
@@ -1371,9 +1469,47 @@ test art with "wait until 12 pm/take sun key/wait until 12 am/ take moon key/ pu
 
 [End Of: Temple of the Aulidean Artemis]
 
+[Start Of: Divine Cell of Artemis & Apollo]
+
 The Divine Cell of Artemis & Apollo is a room in Thebes.
 
+The description of Divine Cell of Artemis & Apollo is "TODO: description of Divine Cell of Artemis & Apollo.".
 
+Divine Cell of Artemis & Apollo Scene is a scene. Divine Cell of Artemis & Apollo Scene begins when the player is in Divine Cell of Artemis & Apollo for the first time. Divine Cell of Artemis & Apollo Scene ends when Goddess Artemis is awake and God Apollo is awake.
+
+When Divine Cell of Artemis & Apollo Scene begins:
+	now the description of Divine Cell of Artemis & Apollo is "TODO: description of Divine Cell of Artemis & Apollo scene. You see the Artemis & Apollo in a sleeping state.".
+	
+After talking to Artemis:
+	if Artemis is asleep:
+		say "Artemis  is in a commatose state. She can't speak.";
+	otherwise:
+		continue the action.
+		
+After talking to Apollo:
+	if Apollo is asleep:
+		say "Apollo is in a commatose state. He can't speak.";
+	otherwise:
+		continue the action.
+
+After examining Artemis:
+	if Artemis is asleep:
+		say "Artemis is in a commatose state. She can't speak.";
+	otherwise:
+		continue the action.
+		
+After examining Apollo:
+	if Apollo is asleep:
+		say "Apollo is in a commatose state. He can't speak.";
+	otherwise:
+		continue the action.
+
+When Divine Cell of Artemis & Apollo Scene ends:
+	say "the gods now go to olympus.";
+	now Apollo is in Mount Olympus Hall;
+	now Artemis is in Mount Olympus Hall.
+
+[End Of: Divine Cell of Artemis & Apollo]
 
 Chapter 4 - Aphrodite & Hephaestus
 
@@ -1395,23 +1531,22 @@ As one steps through the entrance, their eyes would be immediately drawn to a st
 On the eastern side of the room, separated by a couple of steps decorated with flowers and candles, there is a secluded perfume-making area. Here, counters are crowded with the tools and equipment necessary for crafting fragrant elixirs, while ceramic amphorae are stored beneath, likely to store finished scents. The area leads to a gate covered in vines and flowers, making passage through it impossible." 
 
 
-Divine Cell 4 is a room in Palace of Paphos. "devine cell 4 description TODO".
 
 The Secret Garden is down of the Throne Room and west of the flower gate.
 
-The Divine Cell 4 is east of the flower gate. 
+The Divine Cell of Aphrodite & Hephaestus is east of the flower gate. 
 
 
 [doors/gates]
 
 [Start Of Secret Garden]
 
-[Secret Garden to Divine Cell 4 by door]
-The ivy gate is east of the Secret Garden and west of the Divine Cell 4. The ivy gate is a locked door. The ivy gate is a scenery. 
+[Secret Garden to Divine Cell of Aphrodite & Hephaestus by door]
+The ivy gate is east of the Secret Garden and west of the Divine Cell of Aphrodite & Hephaestus. The ivy gate is a locked door. The ivy gate is a scenery. 
 
-[Secret Garden to Divine Cell 4 by lake]
+[Secret Garden to Divine Cell of Aphrodite & Hephaestus by lake]
 
-The lake is down of the Secret garden and up of the Divine Cell 4. The lake is a closed unopenable door. The lake is a scenery. 
+The lake is down of the Secret garden and up of the Divine Cell of Aphrodite & Hephaestus. The lake is a closed unopenable door. The lake is a scenery. 
 
 Instead of examining the lake: [TODO: fix description]
 	if HasPoseidonBoon is true:
@@ -1718,9 +1853,52 @@ test SG2 with "put red flower in hand /x hand/take red flower from hand/x hand".
 
 [End Of Secret Garden]
 
-[Divine Cell 4]
+[Start Of: Divine Cell of Aphrodite & Hephaestus]
 
 [TODO: Battle with  Talos]
+
+
+The Divine Cell of Aphrodite & Hephaestus is a room.
+
+The description of Divine Cell of Aphrodite & Hephaestus is "TODO: description of Divine Cell of Aphrodite & Hephaestus.".
+
+Divine Cell of Aphrodite & Hephaestus Scene is a scene. Divine Cell of Aphrodite & Hephaestus Scene begins when the player is in Divine Cell of Aphrodite & Hephaestus for the first time. Divine Cell of Aphrodite & Hephaestus Scene ends when Goddess Aphrodite is awake and God Hephaestus is awake.
+
+When Divine Cell of Aphrodite & Hephaestus Scene begins:
+	now the description of Divine Cell of Aphrodite & Hephaestus is "TODO: description of Divine Cell of Aphrodite & Hephaestus scene. You see the Aphrodite & Hephaestus in a sleeping state.".
+	
+After talking to Aphrodite:
+	if Aphrodite is asleep:
+		say "Aphrodite  is in a commatose state. She can't speak.";
+	otherwise:
+		continue the action.
+		
+After talking to Hephaestus:
+	if Hephaestus is asleep:
+		say "Hephaestus is in a commatose state. He can't speak.";
+	otherwise:
+		continue the action.
+
+After examining Aphrodite:
+	if Aphrodite is asleep:
+		say "Aphrodite is in a commatose state. She can't speak.";
+	otherwise:
+		continue the action.
+		
+After examining Hephaestus:
+	if Hephaestus is asleep:
+		say "Hephaestus is in a commatose state. He can't speak.";
+	otherwise:
+		continue the action.
+
+When Divine Cell of Aphrodite & Hephaestus Scene ends:
+	say "the gods now go to olympus.";
+	now Hephaestus is in Mount Olympus Hall;
+	now Aphrodite is in Mount Olympus Hall.
+
+
+[End Of: Divine Cell of Aphrodite & Hephaestus]
+
 
 [Characters]
 Cinyras is a man in the Throne Room.
@@ -1770,7 +1948,7 @@ Instead of taking the red carpet:
 
 	
 [door]
-A trapdoor is an unopenable locked door. It is up of the Divine Cell 5 and down of the Prytaneion. It is scenery. The trapdoor can be interactable or uninteractable. The trapdoor is uninteractable.
+A trapdoor is an unopenable locked door. It is up of the Divine Cell of Hestia & Hermes and down of the Prytaneion. It is scenery. The trapdoor can be interactable or uninteractable. The trapdoor is uninteractable.
 
 Instead of pushing something:
 	if the player is in prytaneion:
@@ -1899,9 +2077,9 @@ Instead of burning something:
 	otherwise:
 		continue the action.
 		
-Putting off something is an action applying to one touchable thing. Understand "Put out [something]" or "put [something] out" or "extinguish [something]" or "blow out [something]" or "blow [something] out"  as putting off something.
+Putting out something is an action applying to one touchable thing. Understand "Put out [something]" or "put [something] out" or "extinguish [something]" or "blow out [something]" or "blow [something] out"  as putting out something.
 
-Instead of putting off something:
+Instead of putting out something:
 	if the snuffer is not carried by the player:
 		try taking the snuffer;
 	if the noun is a lit flame:
@@ -2065,9 +2243,49 @@ test fire with "light second torch/light third torch/ light sixth torch/ light s
 
 [End Of: Prytaneion]
 
-[Start Of: Divine Cell 5]
+[Start Of: Divine Cell of Hestia & Hermes]
 
-Divine Cell 5 is a room. It is down of the trapdoor. The description is "TODO mmm gods now".
+Divine Cell of Hestia & Hermes is a room. It is down of the trapdoor. 
+
+
+The description of Divine Cell of Hestia & Hermes  is "TODO: description of Divine Cell of Hestia & Hermes.".
+
+Divine Cell of Hestia & Hermes Scene is a scene. Divine Cell of Hestia & Hermes Scene begins when the player is in Divine Cell of Hestia & Hermes for the first time. Divine Cell of Hestia & Hermes Scene ends when Goddess Hestia is awake and God Hermes is awake.
+
+When Divine Cell of Hestia & Hermes Scene begins:
+	now the description of Divine Cell of Hestia & Hermes is "TODO: description of Divine Cell of Hestia & Hermes scene. You see the Hestia & Hermes in a sleeping state.".
+	
+After talking to Hestia:
+	if Hestia is asleep:
+		say "Hestia  is in a commatose state. She can't speak.";
+	otherwise:
+		continue the action.
+		
+After talking to Hermes:
+	if Hermes is asleep:
+		say "Hermes is in a commatose state. He can't speak.";
+	otherwise:
+		continue the action.
+
+After examining Hestia:
+	if Hestia is asleep:
+		say "Hestia is in a commatose state. She can't speak.";
+	otherwise:
+		continue the action.
+		
+After examining Hermes:
+	if Hermes is asleep:
+		say "Hermes is in a commatose state. He can't speak.";
+	otherwise:
+		continue the action.
+
+When Divine Cell of Hestia & Hermes Scene ends:
+	say "the gods now go to olympus.";
+	now Hestia is in Mount Olympus Hall;
+	now Hermes is in Mount Olympus Hall.
+
+
+[End Of: Divine Cell of Aphrodite & Hephaestus]
 
 Chapter 6 - Hercules 
 
@@ -2142,6 +2360,9 @@ The Asphodel Meadows is a room in the Underworld.
 Heracles in Asphodel Scene is a scene. Heracles in Asphodel Scene begins when the player is in Asphodel Meadows for the first time. [During this scene Heracles has amnesia, he has drunk from the lethe river so his dialogue should reflect that]
 Heracles in Asphodel Scene ends when giving nectar to Heracles.
 
+After talking to Heracles during Heracles in Asphodel Scene:
+	say "'I have amnesia I drunk from the Lethe river.'". [TODO: fix]
+	
 
 [doors]
 
@@ -2207,7 +2428,7 @@ Gates of Thebes is a room in Thebes. "To the north you can see the city of Thebe
 
 Gates of Aulis is a room in Aulis. "To the north you can see the town of Aulis. [paragraph break]From here you can travel to: [line break]→ Thebes[line  break]→ Athens[line  break]→  Delphi[line  break]→ Ephyra[line  break]→ Mount Olympus".
 
-Gates of Delphi is a room in Delphi. "To the south of Delphi is the Oracle of Delphi.[Paragraph break]From here you can travel to: [line break]→ Thebes [line  break]→ Athens[line  break]→ Aulis[line  break]→ Ephyra[line  break]→ Mount Olympus".
+Gates of Delphi is a room in Delphi. "To the south is the Oracle of Delphi. To the west is the city of Delphi.[Paragraph break]From here you can travel to: [line break]→ Thebes [line  break]→ Athens[line  break]→ Aulis[line  break]→ Ephyra[line  break]→ Mount Olympus".
 
 Gates of Ephyra is a room in Ephyra. "To the west you can see the town of Ephyra. [paragraph break]From here you can travel to: [line  break]→ Mount Olympus [line  break]→ Athens[line break]→ Thebes[line  break]→ Aulis[line  break]→ Delphi".
 
@@ -2348,6 +2569,7 @@ The Agora of Athens is a room in Athens. The Acropolis is a room in Athens. Agor
 
 [Sounio]
 Agora of Sounio is a room in Sounio. Agora of Sounio is south of the sounio gates. Agora of Sounio is north of the port of sounio. Agora of Sounio is west of the Sounio Beach.
+Underwater is a room in Sounio. [poseidons temple is in underwater]
 
 [Paphos]
 The Port of Paphos is west of the Agora of Paphos. The Agora of Paphos is south of the Outside of the Palace of Paphos. The Outside of the Palace of Paphos is south of the Throne Room.
@@ -2394,7 +2616,10 @@ The Heroon of Kadmos is an outroom. [The Heroon of Kadmos is inside from the Kad
 The heroon_front is an inroom in the Kadmea. The heroon_front fronts the Heroon of Kadmos.
 
 The Oracle of Delphi  is an outroom. The Oracle of Delphi  is inside from the south of delphi.
-The oracle_front is an inroom in the south of delphi. The oracle_front fronts the Oracle of Delphi .
+The oracle_front is an inroom in the south of delphi. The oracle_front fronts the Oracle of Delphi.
+
+The Temple of Poseidon  is an outroom. The Temple of Poseidon is inside from Underwater.
+The poseidontemple_front is an inroom in the Underwater. The poseidontemple_front fronts the Temple of Poseidon.
 
 Chapter 9 - Speech Tables
 
@@ -2424,4 +2649,6 @@ Check talking to:
 
 After talking to someone:
 	If the noun is Charon:
-		say "Charon is starring at you intensely. '...'".
+		say "Charon is starring at you intensely. '...'";
+	otherwise:
+		continue the action.

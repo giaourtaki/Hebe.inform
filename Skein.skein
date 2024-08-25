@@ -7472,6 +7472,8 @@
     <changed>NO</changed>
     <children>
       <child nodeId="node-3751"/>
+      <child nodeId="node-3777"/>
+      <child nodeId="node-3792"/>
     </children>
   </item>
   <item nodeId="node-3751">
@@ -7481,6 +7483,7 @@
     <changed>NO</changed>
     <children>
       <child nodeId="node-3752"/>
+      <child nodeId="node-3785"/>
     </children>
   </item>
   <item nodeId="node-3752">
@@ -7702,6 +7705,366 @@
   <item nodeId="node-3776">
     <command xml:space="preserve">sacrifice chalice</command>
     <result xml:space="preserve">You will need this if you want to save your family. Better keep it&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-3785">
+    <command xml:space="preserve">sail to sounio</command>
+    <result xml:space="preserve">You sail to the Port of Sounio.&#x000A;&#x000A;Port of Sounio&#x000A;To the north you can see the city of Sounio. &#x000A;&#x000A;From here you can sail to: &#x000A;&#x2192; Aulis&#x000A;&#x2192; Garden of Hesperides&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3786"/>
+    </children>
+  </item>
+  <item nodeId="node-3786">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Agora of Sounio&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3787"/>
+    </children>
+  </item>
+  <item nodeId="node-3787">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Sounio Beach&#x000A;TODO: Description of Sounio beach. You see some nereides fighting. Poseidon's temple is sunk in the sea.&#x000A;&#x000A;The city of Sounio is on the west.&#x000A;&#x000A;You can see Amphitrite here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3788"/>
+    </children>
+  </item>
+  <item nodeId="node-3788">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">The nereides agree to take you to the sunken Temple.&#x000A;&#x000A;Underwater&#x000A;TODO: underwater description&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3789"/>
+    </children>
+  </item>
+  <item nodeId="node-3789">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Underwater&#x000A;TODO: underwater description&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3790"/>
+    </children>
+  </item>
+  <item nodeId="node-3790">
+    <command xml:space="preserve">go s</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3791"/>
+    </children>
+  </item>
+  <item nodeId="node-3791">
+    <command xml:space="preserve">go in temple</command>
+    <result xml:space="preserve">You go into the temple of poseidon.&#x000A;&#x000A;Temple of Poseidon&#x000A;You see a coloumn with 4 rotatable discs. The discs have 5 faces, 4 of them with a picture and one empty. The pictures are the same on each disc and they are in order: Budding olives and fresh green leaves, Green olives growing in size, with fuller leaves, Ripe, darkening olives ready for harvest, some fallen to the ground and Bare branches with a few remaining leaves, the tree in a state of dormancy. The faces towards the altar are all empty.&#x000A;&#x000A;You can see a temple door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-3777">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Garden of Hesperides&#x000A;The Garden of the Hesperides is a mythical paradise, an otherworldly oasis hidden in the middle of the Mediterranean, where the air is perpetually filled with the sweet fragrance of blooming flowers and the gentle hum of bees.&#x000A;&#x000A;In the heart of the garden stands the sacred tree of the Hesperides, its branches heavy with golden apples that gleam like captured sunlight. The apples, used to make nectar, hang among rich green leaves, guarded by the the Hesperides, the nymphs of the evening and daughters of the night. The nymphs are Aigle, Arethousa, Erytheia and Hesperie.&#x000A;&#x000A;The story goes that Gaia gifted Hera with branches of golden apples as a wedding present, and Hera, deeply admiring them, begged Gaia to plant them in her garden.&#x000A;&#x000A;From here you can sail to: &#x000A;&#x2192; Piraeus&#x000A;&#x2192; Sounio&#x000A;&#x2192; Aulis&#x000A;&#x2192; Paphos&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3778"/>
+    </children>
+  </item>
+  <item nodeId="node-3778">
+    <command xml:space="preserve">sail to sounio</command>
+    <result xml:space="preserve">You sail to the Port of Sounio.&#x000A;&#x000A;Port of Sounio&#x000A;To the north you can see the city of Sounio. &#x000A;&#x000A;From here you can sail to: &#x000A;&#x2192; Aulis&#x000A;&#x2192; Garden of Hesperides&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3779"/>
+    </children>
+  </item>
+  <item nodeId="node-3779">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Agora of Sounio&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3780"/>
+    </children>
+  </item>
+  <item nodeId="node-3780">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Sounio Beach&#x000A;TODO: Description of Sounio beach. You see some nereides fighting. Poseidon's temple is in the sea.&#x000A;&#x000A;The city of Sounio is on the west.&#x000A;&#x000A;You can see Amphitrite here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3781"/>
+    </children>
+  </item>
+  <item nodeId="node-3781">
+    <command xml:space="preserve">enter sea</command>
+    <result xml:space="preserve">Poseidon's Temple&#x000A;You see a coloumn with 4 rotatable discs. The discs have 5 faces, 4 of them with a picture and one empty. The pictures are the same on each disc and they are in order: Budding olives and fresh green leaves, Green olives growing in size, with fuller leaves, Ripe, darkening olives ready for harvest, some fallen to the ground and Bare branches with a few remaining leaves, the tree in a state of dormancy. The faces towards the altar are all empty.&#x000A;&#x000A;Altar.&#x000A;&#x000A;Column that faces the altar.&#x000A;&#x000A;On the blue column are top ring, second ring, third ring and bottom ring.&#x000A;&#x000A;You can also see a temple door here.&#x000A;&#x000A;The nereides agree to take you to the sunken Temple.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3782"/>
+    </children>
+  </item>
+  <item nodeId="node-3782">
+    <command xml:space="preserve">out</command>
+    <result xml:space="preserve">But you aren't in anything at the moment.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3783"/>
+    </children>
+  </item>
+  <item nodeId="node-3783">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3784"/>
+    </children>
+  </item>
+  <item nodeId="node-3784">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">Sounio Beach&#x000A;TODO: Description of Sounio beach. You see some nereides fighting. Poseidon's temple is in the sea.&#x000A;&#x000A;The city of Sounio is on the west.&#x000A;&#x000A;You can see Amphitrite here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-3792">
+    <command xml:space="preserve">sail to sounio</command>
+    <result xml:space="preserve">You sail to the Port of Sounio.&#x000A;&#x000A;Port of Sounio&#x000A;To the north you can see the city of Sounio. &#x000A;&#x000A;From here you can sail to: &#x000A;&#x2192; Aulis&#x000A;&#x2192; Garden of Hesperides&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3793"/>
+    </children>
+  </item>
+  <item nodeId="node-3793">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Agora of Sounio&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3794"/>
+    </children>
+  </item>
+  <item nodeId="node-3794">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Sounio Beach&#x000A;TODO: Description of Sounio beach. You see some nereides fighting. Poseidon's temple is sunk in the sea.&#x000A;&#x000A;The city of Sounio is on the west.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3795"/>
+    </children>
+  </item>
+  <item nodeId="node-3795">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">The temple looks like it's too deep. You can't go there with no help.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3796"/>
+    </children>
+  </item>
+  <item nodeId="node-3796">
+    <command xml:space="preserve">enter sea</command>
+    <result xml:space="preserve">The temple looks like it's too deep. You can't go there with no help.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3797"/>
+    </children>
+  </item>
+  <item nodeId="node-3797">
+    <command xml:space="preserve">talk to ploto</command>
+    <result xml:space="preserve">Ploto speaks.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3798"/>
+    </children>
+  </item>
+  <item nodeId="node-3798">
+    <command xml:space="preserve">talk to amphitrite</command>
+    <result xml:space="preserve">You tell amphitrite you're going to save her hubby. She happy now.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3799"/>
+    </children>
+  </item>
+  <item nodeId="node-3799">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">The nereides agree to take you to the sunken Temple.&#x000A;&#x000A;Underwater&#x000A;TODO: underwater description. You see the temple of poseidon here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3800"/>
+    </children>
+  </item>
+  <item nodeId="node-3800">
+    <command xml:space="preserve">test</command>
+    <result xml:space="preserve">&gt;--&gt; The following tests are available:&#x000A;'test getweights'&#x000A;'test dragongate'&#x000A;'test pos'&#x000A;'test art'&#x000A;'test solutionsg'&#x000A;'test sg2'&#x000A;'test fire'&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3801"/>
+    </children>
+  </item>
+  <item nodeId="node-3801">
+    <command xml:space="preserve">test pos</command>
+    <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] rotate the top ring anticlockwise&#x000A;You can't reach into Temple of Poseidon.&#x000A;&#x000A;&gt;[2] rotate the second ring anticlockwise&#x000A;You can't reach into Temple of Poseidon.&#x000A;&#x000A;&gt;[3] rotate the second ring anticlockwise&#x000A;You can't reach into Temple of Poseidon.&#x000A;&#x000A;&gt;[4] rotate the third ring anticlockwise&#x000A;You can't reach into Temple of Poseidon.&#x000A;&#x000A;&gt;[5] rotate the third ring anticlockwise&#x000A;You can't reach into Temple of Poseidon.&#x000A;&#x000A;&gt;[6] rotate the third ring anticlockwise&#x000A;You can't reach into Temple of Poseidon.&#x000A;&#x000A;&gt;[7] rotate the bottom ring anticlockwise&#x000A;You can't reach into Temple of Poseidon.&#x000A;&#x000A;&gt;[8] rotate the bottom ring anticlockwise&#x000A;You can't reach into Temple of Poseidon.&#x000A;&#x000A;&gt;[9] rotate the bottom ring anticlockwise&#x000A;You can't reach into Temple of Poseidon.&#x000A;&#x000A;&gt;[10] rotate the bottom ring anticlockwise&#x000A;You can't reach into Temple of Poseidon.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3802"/>
+    </children>
+  </item>
+  <item nodeId="node-3802">
+    <command xml:space="preserve">go in temple</command>
+    <result xml:space="preserve">You go into the temple of poseidon.&#x000A;&#x000A;Temple of Poseidon&#x000A;You see a coloumn with 4 rotatable discs. The discs have 5 faces, 4 of them with a picture and one empty. The pictures are the same on each disc and they are in order: Budding olives and fresh green leaves, Green olives growing in size, with fuller leaves, Ripe, darkening olives ready for harvest, some fallen to the ground and Bare branches with a few remaining leaves, the tree in a state of dormancy. The faces towards the altar are all empty.&#x000A;&#x000A;Altar.&#x000A;&#x000A;Column that faces the altar.&#x000A;&#x000A;On the blue column are top ring, second ring, third ring and bottom ring.&#x000A;&#x000A;You can also see a temple door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3803"/>
+    </children>
+  </item>
+  <item nodeId="node-3803">
+    <command xml:space="preserve">test pos</command>
+    <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] rotate the top ring anticlockwise&#x000A;Now its face shows spring.&#x000A;&#x000A;&gt;[2] rotate the second ring anticlockwise&#x000A;Now its face shows spring.&#x000A;&#x000A;&gt;[3] rotate the second ring anticlockwise&#x000A;Now its face shows summer.&#x000A;&#x000A;&gt;[4] rotate the third ring anticlockwise&#x000A;Now its face shows spring.&#x000A;&#x000A;&gt;[5] rotate the third ring anticlockwise&#x000A;Now its face shows summer.&#x000A;&#x000A;&gt;[6] rotate the third ring anticlockwise&#x000A;Now its face shows fall.&#x000A;&#x000A;&gt;[7] rotate the bottom ring anticlockwise&#x000A;Now its face shows spring.&#x000A;&#x000A;&gt;[8] rotate the bottom ring anticlockwise&#x000A;Now its face shows summer.&#x000A;&#x000A;&gt;[9] rotate the bottom ring anticlockwise&#x000A;Now its face shows fall.&#x000A;&#x000A;&gt;[10] rotate the bottom ring anticlockwise&#x000A;Now its face shows winter.&#x000A;&#x000A;You hear the sound of the door opening&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3804"/>
+    </children>
+  </item>
+  <item nodeId="node-3804">
+    <command xml:space="preserve">showme</command>
+    <result xml:space="preserve">Temple of Poseidon - outroom&#x000A;    yourself - woman&#x000A;        Eternal Chalice of Nectar&#x000A;        Heracles' Club&#x000A;    temple door - open door&#x000A;    pos altar&#x000A;    blue column - supporter&#x000A;        top ring - ring&#x000A;        second ring - ring&#x000A;        third ring - ring&#x000A;        bottom ring - ring&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3805"/>
+    </children>
+  </item>
+  <item nodeId="node-3805">
+    <command xml:space="preserve">enter door</command>
+    <result xml:space="preserve">Divine Cell of Demeter &amp; Poseidon&#x000A;TODO: description of Divine Cell of Demeter &amp; Poseidon.&#x000A;&#x000A;You can see a temple door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3806"/>
+    </children>
+  </item>
+  <item nodeId="node-3806">
+    <command xml:space="preserve">enter door</command>
+    <result xml:space="preserve">Temple of Poseidon&#x000A;You see a coloumn with 4 rotatable discs. The discs have 5 faces, 4 of them with a picture and one empty. The pictures are the same on each disc and they are in order: Budding olives and fresh green leaves, Green olives growing in size, with fuller leaves, Ripe, darkening olives ready for harvest, some fallen to the ground and Bare branches with a few remaining leaves, the tree in a state of dormancy. The faces towards the altar are all empty.&#x000A;&#x000A;Altar.&#x000A;&#x000A;Column that faces the altar.&#x000A;&#x000A;On the blue column are top ring, second ring, third ring and bottom ring.&#x000A;&#x000A;You can also see a temple door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3807"/>
+    </children>
+  </item>
+  <item nodeId="node-3807">
+    <command xml:space="preserve">enter temple door</command>
+    <result xml:space="preserve">Divine Cell of Demeter &amp; Poseidon&#x000A;TODO: description of Divine Cell of Athena &amp; Ares scene. You see Demeter and Poseidon in a sleeping state.&#x000A;&#x000A;You can see a temple door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3808"/>
+    </children>
+  </item>
+  <item nodeId="node-3808">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Divine Cell of Demeter &amp; Poseidon&#x000A;TODO: description of Divine Cell of Athena &amp; Ares scene. You see Demeter and Poseidon in a sleeping state.&#x000A;&#x000A;You can see a temple door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3809"/>
+    </children>
+  </item>
+  <item nodeId="node-3809">
+    <command xml:space="preserve">scenes</command>
+    <result xml:space="preserve">Scene 'Entire Game' playing (for 34 mins now)&#x000A;Scene 'Olympus Hall Celebration Scene' ended&#x000A;Scene 'Kronos Scene' ended&#x000A;Scene 'Garden of Hesperides Scene' ended&#x000A;Scene 'Sounio Beach Scene' ended&#x000A;Scene 'Divine Cell of Demeter &amp; Poseidon Scene' playing (for 4 mins now)&#x000A;(Scene monitoring now switched on. Type "scenes off" to switch it off again.)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3810"/>
+    </children>
+  </item>
+  <item nodeId="node-3810">
+    <command xml:space="preserve">give nectar to poseidon</command>
+    <result xml:space="preserve">You gave nectar to God Poseidon.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3811"/>
+    </children>
+  </item>
+  <item nodeId="node-3811">
+    <command xml:space="preserve">showme poseidon</command>
+    <result xml:space="preserve">(the Divine Cell of Demeter &amp; Poseidon)&#x000A;Divine Cell of Demeter &amp; Poseidon - room&#x000A;    temple door - open door&#x000A;    yourself - woman&#x000A;        Eternal Chalice of Nectar&#x000A;        Heracles' Club&#x000A;    Goddess Demeter - woman&#x000A;    God Poseidon - man&#x000A;lighted, visited; singular-named, improper-named&#x000A;description: "TODO: description of Divine Cell of Athena &amp; Ares scene. You see Demeter and Poseidon in a sleeping state."&#x000A;map region: Sounio&#x000A;printed name: "Divine Cell of Demeter &amp; Poseidon"&#x000A;printed plural name: none&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3812"/>
+    </children>
+  </item>
+  <item nodeId="node-3812">
+    <command xml:space="preserve">give nectar to god poseidon</command>
+    <result xml:space="preserve">God Poseidon doesn't look like he needs more nectar right now.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3813"/>
+    </children>
+  </item>
+  <item nodeId="node-3813">
+    <command xml:space="preserve">showme god poseidon</command>
+    <result xml:space="preserve">God Poseidon - man&#x000A;location: in the Divine Cell of Demeter &amp; Poseidon&#x000A;unlit, inedible, portable; transparent, male, immortal, awake; singular-named, improper-named&#x000A;description: none&#x000A;initial appearance: none&#x000A;smell: neutral&#x000A;carrying capacity: 100&#x000A;name: none&#x000A;printed name: "God Poseidon"&#x000A;printed plural name: "men"&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3814"/>
+    </children>
+  </item>
+  <item nodeId="node-3814">
+    <command xml:space="preserve">give nectar to demeter</command>
+    <result xml:space="preserve">You gave nectar to Goddess Demeter.&#x000A;&#x000A;[Scene 'Divine Cell of Demeter &amp; Poseidon Scene' ends]&#x000A;the gods now go to olympus.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3815"/>
+    </children>
+  </item>
+  <item nodeId="node-3815">
+    <command xml:space="preserve">showme poseidon</command>
+    <result xml:space="preserve">(the Divine Cell of Demeter &amp; Poseidon)&#x000A;Divine Cell of Demeter &amp; Poseidon - room&#x000A;    temple door - open door&#x000A;    yourself - woman&#x000A;        Eternal Chalice of Nectar&#x000A;        Heracles' Club&#x000A;lighted, visited; singular-named, improper-named&#x000A;description: "TODO: description of Divine Cell of Athena &amp; Ares scene. You see Demeter and Poseidon in a sleeping state."&#x000A;map region: Sounio&#x000A;printed name: "Divine Cell of Demeter &amp; Poseidon"&#x000A;printed plural name: none&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3816"/>
+    </children>
+  </item>
+  <item nodeId="node-3816">
+    <command xml:space="preserve">showme Poseidon</command>
+    <result xml:space="preserve">(the Divine Cell of Demeter &amp; Poseidon)&#x000A;Divine Cell of Demeter &amp; Poseidon - room&#x000A;    temple door - open door&#x000A;    yourself - woman&#x000A;        Eternal Chalice of Nectar&#x000A;        Heracles' Club&#x000A;lighted, visited; singular-named, improper-named&#x000A;description: "TODO: description of Divine Cell of Athena &amp; Ares scene. You see Demeter and Poseidon in a sleeping state."&#x000A;map region: Sounio&#x000A;printed name: "Divine Cell of Demeter &amp; Poseidon"&#x000A;printed plural name: none&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3817"/>
+    </children>
+  </item>
+  <item nodeId="node-3817">
+    <command xml:space="preserve">save</command>
+    <result xml:space="preserve">Save failed.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
