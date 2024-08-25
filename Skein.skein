@@ -7422,7 +7422,7 @@
   </item>
   <item nodeId="node-787">
     <command xml:space="preserve">give club to heracles</command>
-    <result xml:space="preserve">(first taking the Heracles' Club)&#x000A;You picked up the Club of Heracles.&#x000A;&#x000A;He smiles at you. "Thank you my dearest."</result>
+    <result xml:space="preserve">(first taking Heracles' Club)&#x000A;You picked up the Club of Heracles.&#x000A;&#x000A;He smiles at you. "Thank you my dearest."</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -7431,7 +7431,7 @@
   </item>
   <item nodeId="node-788">
     <command xml:space="preserve">[enter]</command>
-    <result xml:space="preserve">Suddenly, an eerie silence fell over the festive night. The singing and dancing ceased, as if an unseen hand had stilled them. For a brief moment, you felt the coldness of the mountain air, a stark contrast to the pleasant breeze that had enveloped you moments before. A sense of foreboding fills you as you become aware that all eyes are turned behind you. You lock eyes with Heracles, both of you sharing a look of worry. With a growing sense of dread, you turned to see what had drawn everyone's attention.&#x000A;&#x000A;"Oh dear, please, do not let my presence taint your insignificant gathering. Carry on as you were."&#x000A;&#x000A;The voice was unmistakable, deep and resonant, carrying an ancient power that sent shivers down your spine. It was Kronos. So much time has passed since our triumph in the War of Titans- the Titanomachy. How did he manage to escape Tartaros?&#x000A;&#x000A;The sight of the Titan, towering and menacing, shrouded in shadows, struck fear into the hearts of all present. You start to feel the ichor in your divine veins turn cold, as if time itself had frozen. The gods, normally so mighty and formidable, stand paralyzed in shock. Nothing moves. In a heartbeat, you break free from the daze and come to your senses. Your next actions have never been more certain. It's now or never.&#x000A;&#x000A;You grab Heracle's club out of his hands and leap towards Kronos. Then you feel yourself slipping into unconciousness.</result>
+    <result xml:space="preserve">Suddenly, an eerie silence fell over the festive night. The singing and dancing ceased, as if an unseen hand had stilled them. For a brief moment, you felt the coldness of the mountain air, a stark contrast to the pleasant breeze that had enveloped you moments before. A sense of foreboding fills you as you become aware that all eyes are turned behind you. You lock eyes with Heracles, both of you sharing a look of worry. With a growing sense of dread, you turned to see what had drawn everyone's attention.&#x000A;&#x000A;"Oh dear, please, do not let my presence taint your insignificant gathering. Carry on as you were."&#x000A;&#x000A;The voice was unmistakable, deep and resonant, carrying an ancient power that sent shivers down your spine. It was Kronos. So much time has passed since our triumph in the War of Titans- the Titanomachy. How did he manage to escape Tartaros?&#x000A;&#x000A;The sight of the Titan, towering and menacing, shrouded in shadows, struck fear into the hearts of all present. You start to feel the ichor in your divine veins turn cold, as if time itself was freezing. The gods, normally so mighty and formidable, stand paralyzed in shock. Nothing moves. In a heartbeat, you break free from the daze and come to your senses. Your next actions have never been more certain. It's now or never.&#x000A;&#x000A;You grab Heracle's club out of his hands and leap towards Kronos. Then you feel yourself slipping into unconciousness.</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -7445,6 +7445,7 @@
     <changed>NO</changed>
     <children>
       <child nodeId="node-3735"/>
+      <child nodeId="node-3750"/>
       <child nodeId="node-790"/>
       <child nodeId="node-803"/>
     </children>
@@ -7461,6 +7462,246 @@
   <item nodeId="node-3736">
     <command xml:space="preserve">l</command>
     <result xml:space="preserve">Garden of Hesperides&#x000A;You slowly regain consciousness, greeted by the soft rustling of leaves of a tranquil garden. As your eyes flutter open, you find yourself surrounded by four enchanting numphs. Their expressions are a mix of deep concern and immense relief, as if they've been holding their breath waiting for this moment. You instantly recognise Aigle, Arethousa, Erytheia and Hesperie, the nymphs of the evening known as Hesperides, guardians of the orchard of the Garden of Hesperides.&#x000A;&#x000A;"Hebe, it's been two weeks!" Arethousa exclaims, her voice a blend of worry and joy. "We were all so anxious for you to wake up."&#x000A;&#x000A;With gentle hands, the nymphs help you to sit up, their embraces warm and comforting. The familiar scent of the Garden of Hesperides fills your senses, grounding you in the safety of their presence.&#x000A;&#x000A;Aigle, her expression displaying a hint of urgency, leans in. "You should get moving now that you're awake. There are disturbing rumors that Kronos has imprisoned the gods and is attempting to free his brothers from Tartaros. You're the only goddess we've seen show any signs of activity lately."&#x000A;&#x000A;Erytheia nods in agreement. "We don't have many details, but the Oracle of Delphi might have the answers you need. It would be wise to seek her counsel."&#x000A;&#x000A;Hesperie steps forward, holding out something. It is the Eternal Chalice of Nectar, once your symbol of duty as the cupbearer of the gods before the events that led to Ganymedes taking on that role. Her eyes are earnest as she places the chalice in your hands.&#x000A;&#x000A;"You might need this," Hesperie says softly. "Without nectar or ambrosia, gods can lose their immortality and eternal youth. You know this better than anyone."&#x000A;&#x000A;The Hesperides embrace you one last time. "Good luck, Hebe!" they all say in unison. "We will be here, supporting you in any way we can." &#x000A;&#x000A;You can see Eternal Chalice of Nectar, Aigle, Arethousa, Erytheia and Hesperie here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-3750">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">Garden of Hesperides&#x000A;You slowly regain consciousness, greeted by the soft rustling of leaves of a tranquil garden. As your eyes flutter open, you find yourself surrounded by four enchanting ny+mphs. Their expressions are a mix of deep concern and immense relief, as if they've been holding their breath waiting for this moment. You instantly recognise Aigle, Arethousa, Erytheia and Hesperie, the nymphs of the evening known as Hesperides, guardians of Hera's orchard.&#x000A;&#x000A;"Hebe, it's been almost two weeks!" Arethousa exclaims, her voice a blend of worry and joy. "We were all so anxious for you to wake up."&#x000A;&#x000A;With gentle hands, the nymphs help you to sit up, their embraces warm and comforting. The familiar scent of the Garden of Hesperides fills your senses, grounding you in the safety of their presence.&#x000A;&#x000A;Aigle, her expression displaying a hint of urgency, leans in. "You should get moving now that you're awake. There are disturbing rumors that Kronos has imprisoned the gods and is attempting to free his brothers from Tartaros. You're the only goddess we've seen show any signs of activity lately."&#x000A;&#x000A;Erytheia nods in agreement. "We don't have many details, but the Oracle of Delphi might have the answers you need. It would be wise to seek her counsel."&#x000A;&#x000A;Hesperie steps forward, holding out something. It is the Eternal Chalice of Nectar, once your symbol of duty as the cupbearer of the gods before the events that led to Ganymedes taking on that role. Her eyes are earnest as she places the chalice in your hands.&#x000A;&#x000A;"You might need this," Hesperie says softly. "Without nectar or ambrosia, gods can lose their immortality and eternal youth. You know this better than anyone."&#x000A;&#x000A;The Hesperides embrace you one last time. "Good luck, Hebe!" they all say in unison. "We will be here, supporting you in any way we can." &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3751"/>
+    </children>
+  </item>
+  <item nodeId="node-3751">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3752"/>
+    </children>
+  </item>
+  <item nodeId="node-3752">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Garden of Hesperides&#x000A;The Garden of the Hesperides is a mythical paradise, an otherworldly oasis hidden in the middle of the Mediterranean, where the air is perpetually filled with the sweet fragrance of blooming flowers and the gentle hum of bees.&#x000A;&#x000A;In the heart of the garden stands the sacred tree of the Hesperides, its branches heavy with golden apples that gleam like captured sunlight. The apples, used to make nectar, hang among rich green leaves, guarded by the the Hesperides, the nymphs of the evening and daughters of the night. The nymphs are Aigle, Arethousa, Erytheia and Hesperie.&#x000A;&#x000A;The story goes that Gaia gifted Hera with branches of golden apples as a wedding present, and Hera, deeply admiring them, begged Gaia to plant them in her garden.&#x000A;&#x000A;From here you can sail to: &#x000A;&#x2192; Piraeus&#x000A;&#x2192; Sounio&#x000A;&#x2192; Aulis&#x000A;&#x2192; Paphos&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3753"/>
+    </children>
+  </item>
+  <item nodeId="node-3753">
+    <command xml:space="preserve">sail to aulis</command>
+    <result xml:space="preserve">You sail to the Port of Aulis.&#x000A;&#x000A;Port of Aulis&#x000A;To the west you can see the city of Aulis. &#x000A;&#x000A;From here you can sail to: &#x000A;&#x2192; Sounio&#x000A;&#x2192; Garden of Hesperides&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3754"/>
+    </children>
+  </item>
+  <item nodeId="node-3754">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Agora of Aulis&#x000A;You can see the Port of Aulis in the east and the Gates of Aulis in the south.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3755"/>
+    </children>
+  </item>
+  <item nodeId="node-3755">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Gates of Aulis&#x000A;To the north you can see the town of Aulis. &#x000A;&#x000A;From here you can travel to: &#x000A;&#x2192; Thebes&#x000A;&#x2192; Athens&#x000A;&#x2192;  Delphi&#x000A;&#x2192; Ephyra&#x000A;&#x2192; Mount Olympus&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3756"/>
+    </children>
+  </item>
+  <item nodeId="node-3756">
+    <command xml:space="preserve">travel to delphi</command>
+    <result xml:space="preserve">You travel to the Gates of Delphi.&#x000A;&#x000A;Gates of Delphi&#x000A;To the south of Delphi is the Oracle of Delphi.&#x000A;&#x000A;From here you can travel to: &#x000A;&#x2192; Thebes &#x000A;&#x2192; Athens&#x000A;&#x2192; Aulis&#x000A;&#x2192; Ephyra&#x000A;&#x2192; Mount Olympus&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3757"/>
+    </children>
+  </item>
+  <item nodeId="node-3757">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3758"/>
+    </children>
+  </item>
+  <item nodeId="node-3758">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">South of Delphi&#x000A;From here you can see the the Oracle of Delphi, the sacred sanctuary surrounded by towering cliffs and overlooking the olive groves of the Valley of Delphi. The approach to the main temple is marked by a winding path, the Sacred Way, which is lined with treasures, monuments and statues left by cities and individuals in gratitude for prophecies.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3759"/>
+    </children>
+  </item>
+  <item nodeId="node-3759">
+    <command xml:space="preserve">showme</command>
+    <result xml:space="preserve">South of Delphi - room&#x000A;    yourself - woman&#x000A;        Eternal Chalice of Nectar&#x000A;        Heracles' Club&#x000A;    cliff&#x000A;    grove&#x000A;    main temple&#x000A;    Sacred Way&#x000A;    treasure&#x000A;    monument&#x000A;    delphi statue&#x000A;        marble base (part of delphi statue)&#x000A;    oracle of delphi - inroom&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3760"/>
+    </children>
+  </item>
+  <item nodeId="node-3760">
+    <command xml:space="preserve">go in oracle of delphi</command>
+    <result xml:space="preserve">You go into the oracle of delphi.&#x000A;&#x000A;Oracle of Delphi&#x000A;As you step into the main temple of the area, you are greeted by the scent of burning incense, sweet and heady, with smoke curling upwards in spirals towards the vaulted ceiling.&#x000A;&#x000A;Tall, imposing columns line the hall, casting dancing shadows on the walls by the flickering light of oil lamps. There, scenes of Apollo's journeys are etched into the marble, their details so fine they seem almost alive.&#x000A;&#x000A;Ahead, at the far end of the hall, you see the adyton, the innermost chamber. It is veiled in semi-darkness, a place of deep reverence and mystery. The sacred omphalos stone, marking the navel of the world, stands at the center, draped in garlands and offerings left by travelers. Beyond it, shrouded in the shadows, lies the seat of the oracle, where the Pytheia sits, ready to deliver her prophecies.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3761"/>
+    </children>
+  </item>
+  <item nodeId="node-3761">
+    <command xml:space="preserve">out</command>
+    <result xml:space="preserve">South of Delphi&#x000A;From here you can see the the Oracle of Delphi, the sacred sanctuary surrounded by towering cliffs and overlooking the olive groves of the Valley of Delphi. The approach to the main temple is marked by a winding path, the Sacred Way, which is lined with treasures, monuments and statues left by cities and individuals in gratitude for prophecies.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3762"/>
+    </children>
+  </item>
+  <item nodeId="node-3762">
+    <command xml:space="preserve">go to oracle of delphi</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3763"/>
+    </children>
+  </item>
+  <item nodeId="node-3763">
+    <command xml:space="preserve">go in oracle</command>
+    <result xml:space="preserve">You go into the oracle of delphi.&#x000A;&#x000A;Oracle of Delphi&#x000A;As you step into the main temple of the area, you are greeted by the scent of burning incense, sweet and heady, with smoke curling upwards in spirals towards the vaulted ceiling.&#x000A;&#x000A;Tall, imposing columns line the hall, casting dancing shadows on the walls by the flickering light of oil lamps. There, scenes of Apollo's journeys are etched into the marble, their details so fine they seem almost alive.&#x000A;&#x000A;Ahead, at the far end of the hall, you see the adyton, the innermost chamber. It is veiled in semi-darkness, a place of deep reverence and mystery. The sacred omphalos stone, marking the navel of the world, stands at the center, draped in garlands and offerings left by travelers. Beyond it, shrouded in the shadows, lies the seat of the oracle, where the Pytheia sits, ready to deliver her prophecies.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3764"/>
+    </children>
+  </item>
+  <item nodeId="node-3764">
+    <command xml:space="preserve">x pytheia</command>
+    <result xml:space="preserve">Pytheia, the high priestess of the Oracle of Delphi, appears draped in flowing robes of shimmering white and deep purple, her face partially covered by a delicate veil of fine silk flowing from her hair. Her demeanor is both serene and enigmatic, her eyes reflecting a depth of wisdom as she sits on her tripod, surrounded by the faint, otherworldly aroma of incense.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3765"/>
+    </children>
+  </item>
+  <item nodeId="node-3765">
+    <command xml:space="preserve">out</command>
+    <result xml:space="preserve">South of Delphi&#x000A;From here you can see the the Oracle of Delphi, the sacred sanctuary surrounded by towering cliffs and overlooking the olive groves of the Valley of Delphi. The approach to the main temple is marked by a winding path, the Sacred Way, which is lined with treasures, monuments and statues left by cities and individuals in gratitude for prophecies.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3766"/>
+    </children>
+  </item>
+  <item nodeId="node-3766">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Gates of Delphi&#x000A;To the south of Delphi is the Oracle of Delphi.&#x000A;&#x000A;From here you can travel to: &#x000A;&#x2192; Thebes &#x000A;&#x2192; Athens&#x000A;&#x2192; Aulis&#x000A;&#x2192; Ephyra&#x000A;&#x2192; Mount Olympus&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3767"/>
+    </children>
+  </item>
+  <item nodeId="node-3767">
+    <command xml:space="preserve">travel to ephyra</command>
+    <result xml:space="preserve">You travel to the Gates of Ephyra.&#x000A;&#x000A;Gates of Ephyra&#x000A;To the west you can see the town of Ephyra. &#x000A;&#x000A;From here you can travel to: &#x000A;&#x2192; Mount Olympus &#x000A;&#x2192; Athens&#x000A;&#x2192; Thebes&#x000A;&#x2192; Aulis&#x000A;&#x2192; Delphi&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3768"/>
+    </children>
+  </item>
+  <item nodeId="node-3768">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">North of Ephyra&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3769"/>
+    </children>
+  </item>
+  <item nodeId="node-3769">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">North of Ephyra&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3770"/>
+    </children>
+  </item>
+  <item nodeId="node-3770">
+    <command xml:space="preserve">go to necromanteion</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3771"/>
+    </children>
+  </item>
+  <item nodeId="node-3771">
+    <command xml:space="preserve">showme</command>
+    <result xml:space="preserve">North of Ephyra - room&#x000A;    yourself - woman&#x000A;        Eternal Chalice of Nectar&#x000A;        Heracles' Club&#x000A;    necromanteion - inroom&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3772"/>
+    </children>
+  </item>
+  <item nodeId="node-3772">
+    <command xml:space="preserve">enter necromanteion</command>
+    <result xml:space="preserve">You go into the necromanteion.&#x000A;&#x000A;Necromanteion&#x000A;As you step into the Necromanteion, the air is filled with the scent of incense and the faint aroma of past offerings. The dim light of  torches casts flickering shadows on the stone walls and floor, creating a somber yet oddly comforting ambiance.&#x000A;&#x000A;The darkness here is not forbidding, but rather a familiar shroud, welcoming you into a realm you know well: the domain of Hades and Persephone, a place where life and death intertwine in an eternal dance, and where you is an honored guest, not an intruder.&#x000A;&#x000A;The stone passageway, worn smooth by countless travelers, guides you deeper into the sacred site. Ahead, you can see the central chamber, where the Necromanteion Altar stands, carved from black marble and gleaming faintly in the torchlight. A few offerings still rest upon it, left by the faithful.&#x000A;&#x000A;As you approach the altar, the high priestess approaches you, her robes flowing like a shadowy river as she tends to the sacred rites. She acknowledges your presence with a serene nod.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3773"/>
+    </children>
+  </item>
+  <item nodeId="node-3773">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  Eternal Chalice of Nectar&#x000A;  Heracles' Club&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3774"/>
+    </children>
+  </item>
+  <item nodeId="node-3774">
+    <command xml:space="preserve">put club on altar</command>
+    <result xml:space="preserve">You shouldn't sacrifice something that isn't yours to sacrifice.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3775"/>
+    </children>
+  </item>
+  <item nodeId="node-3775">
+    <command xml:space="preserve">sacrifice club</command>
+    <result xml:space="preserve">You shouldn't sacrifice something that isn't yours to sacrifice.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-3776"/>
+    </children>
+  </item>
+  <item nodeId="node-3776">
+    <command xml:space="preserve">sacrifice chalice</command>
+    <result xml:space="preserve">You will need this if you want to save your family. Better keep it&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>

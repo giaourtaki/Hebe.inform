@@ -251,7 +251,7 @@ check sacrificing:
 		say "You shouldn't sacrifice something that isn't yours to sacrifice.";
 		stop the action;
 	If the noun is Eternal Chalice of Nectar:
-		say "You will need this if you want to save your family. Better keep it";
+		say "You will need this if you want to save your family. Better keep it.";
 		stop the action;
 	If the noun is an obols:
 		say "An Obol for an Obol? Weird.";
@@ -586,22 +586,73 @@ Hesperie is a woman in Garden of Hesperides. The description is "Hesperie is as 
 
 [End Of: Garden of Hesperides]
 
+
+[Start Of: South of Delphi]
+The description of South of Delphi is "From here you can see the the Oracle of Delphi, the sacred sanctuary surrounded by towering cliffs and overlooking the olive groves of the Valley of Delphi. The approach to the main temple is marked by a winding path, the Sacred Way, which is lined with treasures, monuments and statues left by cities and individuals in gratitude for prophecies.".
+
+[scenery]
+A cliff is scenery in south of delphi. Understand "cliffs" or "towering cliffs" as cliff.
+
+A grove is scenery in south of delphi. Understand "groves" or "olive groves" as grove.
+
+A main temple is scenery in south of delphi. Understand "sacred sanctuary" as main temple.
+
+A Sacred Way is scenery in south of delphi. Understand "winding path" or "path" as Sacred way.
+
+A treasure is scenery in south of delphi. Understand "treasures" as treasure.
+
+A monument is scenery in south of delphi. Understand "monuments" as monument.
+
+A delphi statue is scenery in south of delphi. Understand "statues" or "statue" as delphi statue when the player is in South of Delphi.
+
+[End Of: South of Delphi]
+
 [Start Of: Oracle of Delphi]
+The Oracle of Delphi is a room in Delphi. "As you step into the main temple of the area, you are greeted by the scent of burning incense, sweet and heady, with smoke curling upwards in spirals towards the vaulted ceiling.
 
-The Oracle of Delphi is a room in Delphi. "".
+Tall, imposing columns line the hall, casting dancing shadows on the walls by the flickering light of oil lamps. There, scenes of Apollo’s journeys are etched into the marble, their details so fine they seem almost alive.
 
-Pytheia is a woman in the Oracle of Delphi. 
+Ahead, at the far end of the hall, you see the adyton, the innermost chamber. It is veiled in semi-darkness, a place of deep reverence and mystery. The sacred omphalos stone, marking the navel of the world, stands at the center, draped in garlands and offerings left by travellers. Beyond it, shrouded in the shadows, lies the seat of the oracle, where the Pytheia sits, ready to deliver her prophecies.".
+
+Pytheia is a woman in the Oracle of Delphi. She is undescribed. The description is "Pytheia, the high priestess of the Oracle of Delphi, appears draped in flowing robes of shimmering white and deep purple, her face partially covered by a delicate veil of fine silk flowing from her hair. Her demeanor is both serene and enigmatic, her eyes reflecting a depth of wisdom as she sits on her tripod, surrounded by the faint, otherworldly aroma of incense.".
+
+[scenery]
 
 [End Of: Oracle of Delphi]
 
 [Start Of: Necromanteion]
-The necromanteion altar is inside the Necromanteion.
 
-A flower is in necromanteion.[TBD]
+The description of the Necromanteion is "As you step into the Necromanteion, the air is filled with the scent of incense and the faint aroma of past offerings. The dim light of  torches casts flickering shadows on the stone walls and floor, creating a somber yet oddly comforting ambiance.
+
+The darkness here is not forbidding, but rather a familiar shroud, welcoming you into a realm you know well: the domain of Hades and Persephone, a place where life and death intertwine in an eternal dance, and where you is an honored guest, not an intruder.
+
+The stone passageway, worn smooth by countless travellers, guides you deeper into the sacred site. Ahead, you can see the central chamber, where the Necromanteion Altar stands, carved from black marble and gleaming faintly in the torchlight. A few offerings still rest upon it, left by the faithful. 
+
+As you approach the altar, the high priestess approaches you, her robes flowing like a shadowy river as she tends to the sacred rites. She acknowledges your presence with a serene nod.".
+
+[items-scenery]
+The necromanteion altar is inside the Necromanteion. It is a supporter. Understand "altar" as necromanteion altar when the player is in necromanteion. It is undescribed. The description is "
+The black marble altar is smooth, with engraved serpents and symbols, its surface polished yet slightly worn from countless offerings. Here, people come to make sacrifices, seeking an obol to ensure their dead be granted safe passage across the Acheron River by Charon.". 
+
+Instead of putting something on something:
+	if the second noun is the necromanteion altar:
+		try sacrificing noun;
+	otherwise:
+		continue the action.
+
+[npcs]
+The High Priestess of Necromanteion is a woman in necromanteion. She is undescribed. The description is "The priestess is a woman around her fourties, clad in flowing black robes that seem to merge with the shadows around her. Her long, dark hair is weaved into a krobylos hairstyle.".
+
 
 [End Of: Necromanteion]
 
+[Start Of: North of Ephyra]
+The description of North of Ephyra is "You see the Necromanteion from here. To the south is Ephyra.". [TODO: put description]
+[items]
 
+[scenery]
+
+[End Of: North of Ephyra]
 Chapter 1- Athena & Ares
 
 [region: Thebes]
@@ -614,8 +665,6 @@ Palace of Kadmea is a room in Thebes.
 Instead of entering Palace of Kadmea:
 	say "The palace is guarded heavily. You can't enter right now.";
 	stop the action.
-
-[Kadmea Puzzle Scene is a scene. Kadmea Puzzle Scene begins when the player is in Heroon of Kadmos for the first time. Kadmea Puzzle Scene ends when Divine Cell 1 is visited.]
 
 The Heroon of Kadmos is a room in Thebes. "You step into the Heroon of Kadmos, the founder of Thebes. Although the space is modest in size and somewhat confined, it radiates a sense of luxury. The walls are decorated with exquisite paintings that narrate the stories of gods and heroes, and the room is furnished with plush, silky red armchairs that invite one to rest, and a finely crafted hardwood side table with a medium-sized shiny rock on top, all hinting at the luxury that befits a royal palace spare room.
 
@@ -630,10 +679,6 @@ Divine Cell 1 is a room in Thebes.
 [doors]
 
 The dragon gate is down of the Heroon of Kadmos and up of divine cell 1. The dragon gate is a locked openable door. It is a scenery. The dragon gate is down from the Heroon of Kadmos and up from divine cell 1.
-
-[When Kadmea Puzzle Scene ends:
-	now the dragon gate is open;
-	now the dragon gate is not openable.]
 
 
 A inscription is part of the dragon gate. The description of the inscription is "The inscription reads: The key to passage lies from the lightest touch to the heaviest step.".
@@ -658,7 +703,7 @@ Instead of examining the side table:
 	stop the action.
 	
 Instead of examining the rock:
-	say "A medium-sized polished rock. Looks like limestone. ";
+	say "A medium-sized polished rock. Looks like limestone.";
 	stop the action.
 
 The paintings is a thing in Heroon of Kadmos. It is undescribed. It is fixed in place.
@@ -815,12 +860,14 @@ Chapter 2 - Demeter & Poseidon
 [region: Sounio]
 
 [rooms]
-The Sounio Beach is a room in Sounio. "Description of Sounio beach. You see some nereides fighting. Poseidon's temple is in the sea.[line break][line break]The city of Sounio is on the west.". [TODO: understand temple of poseidon as poseidons temple]
+The Sounio Beach is a room in Sounio. "TODO: Description of Sounio beach. You see some nereides fighting. Poseidon's temple is in the sea.[line break][line break]The city of Sounio is on the west.". [TODO: understand temple of poseidon as poseidons temple]
+
+
 The Poseidon's Temple is a room in Sounio. It is up of the temple door."You see a coloumn with 4 rotatable discs. The discs have 5 faces, 4 of them with a picture and one empty. The pictures are the same on each disc and they are in order: Budding olives and fresh green leaves, Green olives growing in size, with fuller leaves, Ripe, darkening olives ready for harvest, some fallen to the ground and Bare branches with a few remaining leaves, the tree in a state of dormancy. The faces towards the altar are all empty."
 The Divine Cell 2 is a room in Sounio. The Divine Cell 2 is down of the temple door. "You see the gods.". [TODO: change name of divine cell]
 
 
-[sounio beach]
+[Start Of: sounio beach]
 
 
 
@@ -869,8 +916,9 @@ Instead of entering the sea:
 		say "The temple looks like it's too deep. You can't go there with no help.";
 		stop the action.
 
+[End Of: sounio beach]
 
-[poseidons temple]
+[Start Of: poseidons temple]
 
 [The player is in Poseidon's Temple.]
 
@@ -969,9 +1017,10 @@ Every turn:
 		now the temple door  is closed;
 		
 test POS with "rotate the top ring anticlockwise/rotate the second ring anticlockwise/rotate the second ring anticlockwise/rotate the third ring anticlockwise/rotate the third ring anticlockwise/rotate the third ring anticlockwise/rotate the bottom ring anticlockwise/rotate the bottom ring anticlockwise/rotate the bottom ring anticlockwise/rotate the bottom ring anticlockwise".
-[end of poseidon's temple]
 
-[divine cell 2]
+[End Of: poseidons temple]
+
+[Start Of: divine cell 2]
 
 [characters]
 
@@ -2158,7 +2207,7 @@ Gates of Thebes is a room in Thebes. "To the north you can see the city of Thebe
 
 Gates of Aulis is a room in Aulis. "To the north you can see the town of Aulis. [paragraph break]From here you can travel to: [line break]→ Thebes[line  break]→ Athens[line  break]→  Delphi[line  break]→ Ephyra[line  break]→ Mount Olympus".
 
-Gates of Delphi is a room in Delphi. "From here you can travel to: [line break]→ Thebes [line  break]→ Athens[line  break]→ Aulis[line  break]→ Ephyra[line  break]→ Mount Olympus".
+Gates of Delphi is a room in Delphi. "To the south of Delphi is the Oracle of Delphi.[Paragraph break]From here you can travel to: [line break]→ Thebes [line  break]→ Athens[line  break]→ Aulis[line  break]→ Ephyra[line  break]→ Mount Olympus".
 
 Gates of Ephyra is a room in Ephyra. "To the west you can see the town of Ephyra. [paragraph break]From here you can travel to: [line  break]→ Mount Olympus [line  break]→ Athens[line break]→ Thebes[line  break]→ Aulis[line  break]→ Delphi".
 
@@ -2280,8 +2329,8 @@ For printing the name of an inroom:
 		let S be a random outroom fronted by the item described;
 		say "[the printed name of S in lower case]".
 
-After entering a inroom:  
-	say "You went into the [noun]";
+After entering an inroom:  
+	say "You go into the [Noun].";
 	let L be a random room fronted by the noun;
 	move the player to L;
 	
@@ -2307,10 +2356,12 @@ The Port of Paphos is west of the Agora of Paphos. The Agora of Paphos is south 
 The Agora of Thebes is a room in Thebes. "You can see Kadmea, the acropolis of Thebes, perched up on the hill in the center of the Agora. [line break][line break]To the south are the city gates".
 The Gates of Thebes is south of the Agora of Thebes. Kadmea is up of Agora of Thebes.
 [Aulis]
-The Agora of Aulis is a room. The Agora of Aulis is north of the Gates of Aulis. The Agora of Aulis is west of the Port of Aulis.
+The Agora of Aulis is a room. "You can see the Port of Aulis in the east and the Gates of Aulis in the south.".
+The Agora of Aulis is north of the Gates of Aulis. The Agora of Aulis is west of the Port of Aulis.
 
 [Delphi]
-The Agora of Delphi is a room. The Agora of Delphi is east of the Oracle of Delphi and west of the Delphi Gates.
+A room called South of Delphi  is in Delphi.
+The Agora of Delphi is a room. The Agora of Delphi is west of the Delphi Gates. The Delphi Gates are north of the South of Delphi. 
 
 [Ephyra]
 The Agora of Ephyra is a room. [acheron is here (backdrop)]
@@ -2342,6 +2393,8 @@ The palace_front is an inroom in the Kadmea. The palace_front fronts the Palace 
 The Heroon of Kadmos is an outroom. [The Heroon of Kadmos is inside from the Kadmea.]
 The heroon_front is an inroom in the Kadmea. The heroon_front fronts the Heroon of Kadmos.
 
+The Oracle of Delphi  is an outroom. The Oracle of Delphi  is inside from the south of delphi.
+The oracle_front is an inroom in the south of delphi. The oracle_front fronts the Oracle of Delphi .
 
 Chapter 9 - Speech Tables
 
