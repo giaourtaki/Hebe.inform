@@ -2,8 +2,8 @@
 
 Chapter 0.00 - TODOs | TBDs
 
-[release along with a website and an interpreter.
-Release along with cover art.]
+release along with a website and an interpreter.
+Release along with cover art.
 
 [Everything TBD should be commented or deleted]
 
@@ -22,6 +22,7 @@ Release along with cover art.]
 [TODO: add values, like smell, to every item]
 [TODO: put random buildings inside cities]
 [TODO: golden apples of hesperides collectables]
+
 
 Chapter 0.0 - Regions
 
@@ -77,8 +78,28 @@ A colour is a kind of value. The colours are white, red, purple and yellow.
 A smell is a kind of value. The smells are neutral, amazing, good, citrusy, like roses  and bad. The smell is usually neutral. [TODO: Give a smell to everything]
 
 [ring face]
-A ring face is a kind of value. The ring faces are blank, spring, summer, fall and winter. A ring face is usually blank.
+A ring face is a kind of value. The ring faces are adeio, spring, summer, fall and winter. A ring face is usually adeio.
 
+Table of Ring Face Descriptions
+ring face	image
+adeio	"nothing"
+spring	"a sprouting barley"
+summer	"a full-grown wheat stalk"
+fall	"a basket full of grapes"
+winter	"an empty vine"
+
+To decide what text is the image of (face - ring face):
+	if face is adeio:
+		decide on "nothing";
+	otherwise if face is spring:
+		decide on "a sprouting barley";
+	otherwise if face is summer:
+		decide on "a full-grown wheat stalk";
+	otherwise if face is fall:
+		decide on "a basket full of grapes";
+	otherwise if face is winter:
+		decide on "an empty vine";
+	
 [mass]
 A mass is a kind of value. 1dr specifies a mass. The plural of mass is masses.
 
@@ -203,9 +224,10 @@ Instead of smelling something:
 		say "Activelly trying to smell a person can be considered rude.".
 		
 [rotating]
-Rotating is an action applying to one thing. Understand "rotate [any thing] clockwise" or "rotate the [any thing] clockwise" or "rotate clockwise the [any thing]" or "rotate the [any thing] to the left" or "rotate [any thing] to the left" as rotating.
+Rotating is an action applying to one thing. Understand "rotate [any thing] clockwise" or "rotate the [any thing] clockwise" or "rotate clockwise the [any thing]" or "rotate the [any thing] to the left" or "rotate [any thing] to the left" or "rotate [any thing]" or "turn [anything]" as rotating.
 
-Antirotating is an action applying to one thing. Understand "rotate [any thing] anticlockwise" or "rotate the [any thing] anticlockwise" or "rotate anticlockwise the [any thing]" or "rotate [any thing] counterclockwise" or "rotate the [any thing] counterclockwise" or "rotate counterclockwise the [any thing]"or "rotate the [any thing] to the right" or "rotate [any thing] to the right" as antirotating. [TODO: put help for the player about which way to rotate]
+Antirotating is an action applying to one thing. Understand "rotate [any thing] anticlockwise" or "rotate the [any thing] anticlockwise" or "rotate anticlockwise the [any thing]" or "rotate [any thing] counterclockwise" or "rotate the [any thing] counterclockwise" or "rotate counterclockwise the [any thing]"or "rotate the [any thing] to the right" or "rotate [any thing] to the right" or "turn [any thing] counterclockwise" or "turn [any thing] anticlockwise" as antirotating. 
+
 
 [giving]
 The block giving rule is not listed in any rulebook.
@@ -288,7 +310,7 @@ Instead of investigating:
 	else if the player is in the Temple of the Aulidean Artemis:
 		say "Inside the Temple of the Aulidean Artemis you can see a sundial, the statue of Artemis and her sacrificial altar.";
 	else if the player is in Prytaneion:
-		say "In the open Prytaneion hall you see the sacred hearth of Hestia, a pine dining table with matching pine chairs and [a list of things on top of pine table] on top of it. [if chair is not pushed and table is not pushed]Bellow the table and chairs is a red carpet.[otherwise]There is also a red carpet in the hall.[end if][line break]There are also 8 torches on either side of the hearth, forming a semicircle around the dining area.[if the trapdoor is interactable].[line break]You also see a trapdoor on the ground.[end if]";
+		say "In the open Prytaneion hall you see the sacred hearth of Hestia, a pine dining table with matching pine chairs and [a list of things on top of pine table] on top of it. [if chair is not pushed and table is not pushed]Bellow the table and chairs is a red carpet.[otherwise]There is also a red carpet in the hall.[end if][line break]There are also 8 torches on either side of the hearth, forming a semicircle around the dining area.[if the hidden trapdoor is interactable].[line break]You also see a trapdoor on the ground.[end if]";
 	[TODO: fill here]
 	else if the player is in the Secret Garden:
 		say "In the Secret Garden you see a statue of a man, a lake, an olive tree and some flowerbeds with red, purple and orange flowers. In the perfume-making area there are some ceramic amphorae and a gate.";
@@ -414,7 +436,7 @@ Turn counter is a number that varies. Turn counter is 0.
 
 Every turn during Olympus Hall Celebration Scene:
 	increment the turn counter;
-	 if the remainder after dividing turn counter by 10 is 0:
+	 if the remainder after dividing turn counter by 5 is 0:
 		say "[one of]You hear the voice of Heracles. 'Hey dearest, could you get my club here? It's in the room. Let's show those actors how it's really done!'[or]Heracles talks to you again. 'Reminder to bring me my club when possible, dearest! It's in the room.'[stopping]" [TODO: fix "the room"]
 
 	
@@ -538,7 +560,7 @@ When Kronos Scene ends:
 	now Hermes is in Divine Cell of Hestia & Hermes;
 	now Hermes is asleep;
 	now Poseidon is in Divine Cell of Demeter & Poseidon;
-	now Poseidon is asleep;
+	now God Poseidon is asleep;
 	now Ganymedes is nowhere;
 	now Aphrodite is in Divine Cell of Aphrodite & Hephaestus;
 	now Aphrodite is asleep;
@@ -547,7 +569,7 @@ When Kronos Scene ends:
 	now Athena is in Divine Cell of Athena & Ares;
 	now Athena is asleep;
 	now Demeter is in Divine Cell of Demeter & Poseidon;
-	now Demeter is asleep;
+	now Goddess Demeter is asleep;
 	now Hera is in Tartaros;
 	now Hera is asleep;
 	now Hestia is in Divine Cell of Hestia & Hermes;
@@ -941,20 +963,19 @@ Chapter 2 - Demeter & Poseidon
 [region: Sounio]
 
 [rooms]
-The Sounio Beach is a room in Sounio. "TODO: Description of Sounio beach. You see some nereides fighting. Poseidon's temple is sunk in the sea.[line break][line break]The city of Sounio is on the west.". [TODO: understand temple of poseidon as poseidons temple]
+The Sounio Beach is a room in Sounio. 
 
 
-A room called Temple of Poseidon is in Sounio. It is up of the temple door."You see a coloumn with 4 rotatable discs. The discs have 5 faces, 4 of them with a picture and one empty. The pictures are the same on each disc and they are in order: Budding olives and fresh green leaves, Green olives growing in size, with fuller leaves, Ripe, darkening olives ready for harvest, some fallen to the ground and Bare branches with a few remaining leaves, the tree in a state of dormancy. The faces towards the altar are all empty."
-The Divine Cell of Demeter & Poseidon is a room in Sounio. The Divine Cell of Demeter & Poseidon is down of the temple door.
+The Divine Cell of Demeter & Poseidon is a room in Sounio. The Divine Cell of Demeter & Poseidon is down of the temple trapdoor.
 
 Underwater is a room in sounio. "TODO: underwater description. You see the temple of poseidon here.".
 
 [Start Of: sounio beach]
 
-Sounio Beach Scene is a scene. The Sounio Beach Scene begins when the player is in sounio beach for the first time. The Sounio Beach Scene ends when AmphitriteIsHappy is true for the first time.
+Sounio Beach Scene is a scene. The Sounio Beach Scene begins when the player is in Sounio Beach for the first time. The Sounio Beach Scene ends when AmphitriteIsHappy is true for the first time.
 
 When Sounio Beach Scene begins:
-	now the description of Sounio Beach is "As you journey toward Cape Sounion, where the Temple of Poseidon stands, you find that the cape has become entirely submerged. What remains is a narrow beach, with a vast expanse of land now lying beneath the sea.
+	say "As you journey toward Cape Sounion, where the Temple of Poseidon stands, you find that the cape has become entirely submerged. What remains is a narrow beach, with a vast expanse of land now lying beneath the sea.
 
 On the beach, you notice a nymph weeping and wailing, surrounded by others who are attempting to console her. You recognize the grieving nereid as Amphitrite, queen of the sea and wife of Poseidon. The nereids comforting her must be her closest attendants—Aktaia, Erato, and Ploto.".
 
@@ -970,7 +991,9 @@ After talking to someone during the Sounio Beach Scene:
 		now Amphitrite is happy.
 	
 When Sounio Beach Scene ends:
-	now the description of Sounio Beach is "UwU no crying nereida now. But temple is still flooded.".
+	now the description of Sounio Beach is "TODO: UwU no crying nereida now. But temple is still flooded.
+
+The city of sounio is in the west.".
 
 [doors]
 The sea is south of the sounio beach and up of underwater. It is an unopenable closed door. It is a scenery. 
@@ -1015,70 +1038,116 @@ Instead of entering the sea: [the nereides are there to help you everytime if yo
 
 [Start Of: poseidons temple]
 
-[The player is in Poseidon's Temple.]
+[temple trapdoor-> door to divine cell]
+A room called Temple of Poseidon is in Sounio. It is up of the temple trapdoor." As you enter the underwater temple of Poseidon, you are greeted by a mesmerizing sight. The water is crystal clear, allowing dancing beams of sunlight to filter through the surface above, casting just enough light to see across the temple’s interior. The structure is grand, yet the underwater environment adds a serene, almost otherworldly quality to the space.
 
+In the center of the temple stands a massive column, intricately carved from marble, rising  from the temple floor. Around this column are four rotatable rings. The rings are crafted from shimmering metal, perhaps bronze, that glints in the filtered light.
+
+Before the column, along the temple floor, you notice a faint outline in the stone—a barely perceptible trapdoor."
+
+
+
+[scenes]
+Holding Breath Scene is a recurring scene. Holding Breath Scene begins when the player is in Underwater and HasPoseidonBoon is false. Holding Breath Scene ends when the time since Holding Breath Scene began is 12 minutes or the player is in Sounio Beach. [TODO: change the amount of rounds]
+
+When Holding Breath Scene begins:
+	say "You take a big breath. You can propably hold it for about 12 minutes.".
+	
+When Holding Breath Scene ends:
+	if HasPoseidonBoon is true:
+		say "You notice that even though the time you can normaly hold your breath has passed, you're still breathing underwater with no problem!";
+	else If the player is not in sounio beach:
+		say "You need to go out to catch your breath.";
+		now the ring face of top ring is adeio;
+		now the ring face of second ring is adeio;
+		now the ring face of third ring is adeio;
+		now the ring face of bottom ring is adeio;
+		if the player is in temple of poseidon:
+			say "Leaving the temple, you hear a grinding sound.";
+		otherwise:
+			continue the action;
+		now the player is in sounio beach.
+	
+[remind the player they need to breathe<3]
+Breathless turn counter is a number that varies. Breathless turn counter is 0.
+
+Every turn during Holding Breath Scene:
+	increment the Breathless turn counter;
+	 if Breathless turn counter is 10:
+		say "You feel the need to surface soon.".
+		
 [doors]
 
-The temple door is a door down of the Temple of Poseidon and up of the Divine Cell of Demeter & Poseidon. It is a closed unopenable door.
+A door called the temple trapdoor is down of the Temple of Poseidon and up of the Divine Cell of Demeter & Poseidon. It is a closed unopenable door.
 
 Instead of examining a ring:
-	say "Its face shows [ring face of noun].";
+	try silently checking rings;
 	stop the action;
+
+[examine all rings]
+Checking rings is an action applying to nothing. 
+Understand "check --/the rings" or "look --/the rings" or "examine --/the rings" as checking rings.
+
+A thing called all rings is scenery in Temple of Poseidon. Understand "rings" or "all the rings" or "all rings" as all rings. 
+	
+
+Understand "check rings" or "look rings" or "examine rings" as checking rings.
+
+Instead of checking rings:
+	say "[first time]You notice the rings have five different sides. Four of those sides have engraved symbols, the final is empty. The symbols of these sides are: a sprouting barley, a full-grown wheat stalk, a basket full of grapes and an empty vine.[line break][line break][only] 
+		The side of the top ring facing the altar shows [image of ring face of top ring].[line break]
+		The side of the second ring facing the altar shows [image of ring face of second ring].[line break]
+		The side of the third ring facing the altar shows [image of ring face of third ring].[line break]
+		The side of the bottom ring facing the altar shows [image of ring face of bottom ring].[line break]	
+";
+	
+
+Instead of examining rings:
+	try checking rings.
+	
+Instead of taking rings:
+	say "They're part of the column.";
+	stop the action.
 	
 	
 [clockwise rotation]
-After rotating a ring :
-	if the ring face of the noun is blank:
+Instead of rotating a ring :
+	if the ring face of the noun is adeio:
 		now the ring face of the noun is winter;
-		say "Now its face shows [ring face of noun].";
-		continue the action;
-	else if the ring face of the noun is spring:
-		now the ring face of the noun is blank;
-		say "Now its face shows [ring face of noun].";
-		continue the action;
-	else if the ring face of the noun is summer:
-		now the ring face of the noun is spring;
-		say "Now its face shows [ring face of noun].";
-		continue the action;
-	else if the ring face of the noun is fall:
-		now the ring face of the noun is summer;
-		say "Now its face shows [ring face of noun].";
-		continue the action;
 	else if the ring face of the noun is winter:
 		now the ring face of the noun is fall;
-		say "Now its face shows [ring face of noun].";
-		continue the action.
+	else if the ring face of the noun is fall:
+		now the ring face of the noun is summer;
+	else if the ring face of the noun is summer:
+		now the ring face of the noun is spring;
+	else if the ring face of the noun is spring:
+		now the ring face of the noun is adeio;
+	say "Now its face shows [image of ring face of the noun].";
 
-[anticlockwise rotation]		
+[anticlockwise rotation]	
 After antirotating a ring :
-	if the ring face of the noun is blank:
+	if the ring face of the noun is adeio:
 		now the ring face of the noun is spring;
-		say "Now its face shows [ring face of noun].";
-		continue the action;
 	else if the ring face of the noun is spring:
 		now the ring face of the noun is summer;
-		say "Now its face shows [ring face of noun].";
-		continue the action;
 	else if the ring face of the noun is summer:
 		now the ring face of the noun is fall;
-		say "Now its face shows [ring face of noun].";
-		continue the action;
 	else if the ring face of the noun is fall:
 		now the ring face of the noun is winter;
-		say "Now its face shows [ring face of noun].";
-		continue the action;
 	else if the ring face of the noun is winter:
-		now the ring face of the noun is blank;
-		say "Now its face shows [ring face of noun].";
-		continue the action.
+		now the ring face of the noun is adeio;
+	say "Now its face shows [image of ring face of noun].".
 
-A pos altar is in Temple of Poseidon. "Altar." It is fixed in place.
+A pos altar is in Temple of Poseidon. It is scenery. It is fixed in place.
 
-A blue column is a supporter in Temple of Poseidon. "Column that faces the altar."
+A blue column is in Temple of Poseidon. It is scenery.
 
-top ring, second ring, third ring and bottom ring are rings on the column. Top ring, second ring, third ring and bottom ring are fixed in place.
+A ring called top ring is part of column. Understand "first ring" or "1st ring" as top ring.
+A ring called second ring is part of the column. Understand "2nd ring" as second ring.
+A ring called third ring is part of the column. Understand "3rd ring" as third ring.
+A ring called bottom ring is part of the column. Understand "fourth ring" or "4th ring" or "last ring" as bottom ring.
 
-
+	
 [puzzle of poseidon temple]
 [puzzle solution]
 Every turn:
@@ -1090,26 +1159,17 @@ Every turn:
 	otherwise:
 		now SeaTemplePuzzleSolved is false.
 
-Instead of examining the temple door :
-	if SeaTemplePuzzleSolved is true:
-		say "The gate is now open.";
+Instead of examining the temple trapdoor :
+	if the temple trapdoor is open:
+		say "The door is now open.";
 	otherwise:
-		say "The gate is tightly closed."	
+		say "The door is tightly closed."
 		
-Instead of going in the temple door :
-	if SeaTemplePuzzleSolved is true:
-		say "The gate is now open.";
-		try entering the temple door ;
-	otherwise:
-		say "The gate is tightly closed."
 
 Every turn:
 	If SeaTemplePuzzleSolved is true for the first turn:
 		say "You hear the sound of the door opening";
-		now the temple door  is open;
-	otherwise if SeaTemplePuzzleSolved is false for the first turn:
-		say "You hear the sound of the door closing.";
-		now the temple door  is closed;
+		now the temple trapdoor  is open.
 		
 test POS with "rotate the top ring anticlockwise/rotate the second ring anticlockwise/rotate the second ring anticlockwise/rotate the third ring anticlockwise/rotate the third ring anticlockwise/rotate the third ring anticlockwise/rotate the bottom ring anticlockwise/rotate the bottom ring anticlockwise/rotate the bottom ring anticlockwise/rotate the bottom ring anticlockwise".
 
@@ -1119,10 +1179,10 @@ test POS with "rotate the top ring anticlockwise/rotate the second ring anticloc
 
 The description of Divine Cell of Demeter & Poseidon is "TODO: description of Divine Cell of Demeter & Poseidon.".
 
-Divine Cell of Demeter & Poseidon Scene is a scene. Divine Cell of Demeter & Poseidon Scene begins when the player is in Divine Cell of Demeter & Poseidon for the first time. Divine Cell of Demeter & Poseidon Scene ends when Goddess Demeter is awake and God Poseidon is awake.
+Divine Cell of Demeter & Poseidon Scene is a scene. Divine Cell of Demeter & Poseidon Scene begins when the player is in the temple of poseidon for the first time. Divine Cell of Demeter & Poseidon Scene ends when Goddess Demeter is awake and God Poseidon is awake.
 
 When Divine Cell of Demeter & Poseidon Scene begins:
-	now the description of Divine Cell of Demeter & Poseidon is "TODO: description of Divine Cell of Athena & Ares scene. You see Demeter and Poseidon in a sleeping state.".
+	now the description of Divine Cell of Demeter & Poseidon is "TODO: description of Divine Cell of Demeter & Poseidon scene. You see Demeter and Poseidon in a sleeping state.".
 	
 After talking to Demeter:
 	if Demeter is asleep:
@@ -1954,6 +2014,7 @@ After examining Hephaestus:
 		continue the action.
 
 When Divine Cell of Aphrodite & Hephaestus Scene ends:
+	[TODO: now the description of divine room is]
 	say "The gods wake up from their slumber. 'Thank you for saving us, dear. We wish to grand you our power.' [paragraph break]Choosing Aphrodite's Boom will enable you to todo? and choosing Hephaestus[apostrophe] power will enable you to todo? . Which one do you want to choose?".
 	
 After reading a command when Aphrodite is awake and Hephaestus is awake:
@@ -2024,7 +2085,7 @@ Instead of taking the red carpet:
 
 	
 [door]
-A trapdoor is an unopenable locked door. It is up of the Divine Cell of Hestia & Hermes and down of the Prytaneion. It is scenery. The trapdoor can be interactable or uninteractable. The trapdoor is uninteractable.
+A hidden trapdoor is an unopenable locked door. It is up of the Divine Cell of Hestia & Hermes and down of the Prytaneion. It is scenery. The hidden trapdoor can be interactable or uninteractable. The hidden trapdoor is uninteractable.
 
 Instead of pushing something:
 	if the player is in prytaneion:
@@ -2036,13 +2097,13 @@ Instead of pulling the pine table:
 		say "[one of]You put all your strength into pushing the table off the carpet- and you manage it![or]You pushed the table off the carpet.[stopping]";
 		now the pine table is pushed;
 		now the pine table is on the floor;
-	otherwise if the pine table is pushed and the trapdoor is not open:
-		say "You pushed the table on [if the trapdoor is uninteractable]the carpet again.[otherwise]on the trapdoor.";
+	otherwise if the pine table is pushed and the hidden trapdoor is not open:
+		say "You pushed the table on [if the hidden trapdoor is uninteractable]the carpet again.[otherwise]on the trapdoor.";
 		now the pine table is unpushed;
 		now the pine table is on the red carpet;
-	otherwise if the red carpet is pushed and the trapdoor is closed:
+	otherwise if the red carpet is pushed and the hidden trapdoor is closed:
 		say "Umm why would you want to push the pine table on top of the trapdoor you just found?";
-	 if the trapdoor is open:
+	 if the hidden trapdoor is open:
 		say "You shouldn't push anything on top of the open trapdoor.";
 		stop the action;
 	stop the action.
@@ -2052,13 +2113,13 @@ Instead of pulling the chair:
 		say "You push the chairs off the carpet.";
 		now the chair is pushed;
 		now the chair is on the floor;
-	otherwise if the chair is pushed and the trapdoor is not open:
-		say "You push the chairs on [if the trapdoor is uninteractable]the carpet again.[otherwise]on the trapdoor.[end if]";
+	otherwise if the chair is pushed and the hidden trapdoor is not open:
+		say "You push the chairs on [if the hidden trapdoor is uninteractable]the carpet again.[otherwise]on the trapdoor.[end if]";
 		now the chair is unpushed;
 		now the chair is on the red carpet;
-	otherwise if the red carpet is pushed and the trapdoor is closed:
+	otherwise if the red carpet is pushed and the hidden trapdoor is closed:
 		say "Umm why would you want to put the chairs on top of the trapdoor you just found?";
-	if the trapdoor is open:
+	if the hidden trapdoor is open:
 		say "You shouldn't push anything on top of the open trapdoor.";
 		stop the action;
 	stop the action.
@@ -2070,22 +2131,22 @@ Instead of pulling the red carpet:
 	otherwise if there is something on the red carpet and the red carpet is pushed:
 		say "You can't put the carpet under other furniture before moving them first.";
 		now the red carpet is pushed;
-	otherwise if the red carpet is unpushed and there is nothing on the red carpet and the trapdoor is not open:
+	otherwise if the red carpet is unpushed and there is nothing on the red carpet and the hidden trapdoor is not open:
 		say "You pulled the carpet. [line break][line break]By pulling the carpet out of the way you revealed a trapdoor.";
 		now the red  carpet is pushed;
 	otherwise if the red carpet is pushed and there is nothing on the red carpet:
 		say "You put the carpet back in it's place.";
 		now the red carpet is unpushed;
-	otherwise if the trapdoor is open:
+	otherwise if the hidden trapdoor is open:
 		say "You shouldn't push anything on top of the open trapdoor.";
 		stop the action;
 	stop the action.
 	
 Every turn while the red carpet is pushed:
-	now the trapdoor is interactable.
+	now the hidden trapdoor is interactable.
 	
 Every turn while the red carpet is pushed and the chair is pushed and the pine table is pushed:
-	now the trapdoor is openable.
+	now the hidden trapdoor is openable.
 
 	
 [things]
@@ -2269,48 +2330,48 @@ Every turn:
 		now TorchPuzzleSolved is false.
 		
 
-Instead of examining the trapdoor:
-	if TorchPuzzleSolved is true and the trapdoor is interactable:
+Instead of examining the hidden trapdoor:
+	if TorchPuzzleSolved is true and the hidden trapdoor is interactable:
 		say "The trapdoor is unlocked now.";
-	otherwise if TorchPuzzleSolved is false and the trapdoor is interactable:
+	otherwise if TorchPuzzleSolved is false and the hidden trapdoor is interactable:
 		say "The trapdoor is locked now.";
 	otherwise:
 		say "You can't see such thing.".
 		
 
-Instead of entering the trapdoor:
-	If the trapdoor is uninteractable:
+Instead of entering the hidden trapdoor:
+	If the hidden trapdoor is uninteractable:
 		say "You can't see such thing.";
 	 otherwise:
 		continue the action.
 		
-Instead of opening the trapdoor:
-	if the trapdoor is uninteractable:
+Instead of opening the hidden trapdoor:
+	if the hidden trapdoor is uninteractable:
 		say "You can't see such thing.";
 	otherwise if the pine table is unpushed or the chair is unpushed or the red carpet is unpushed:
 		say "You can't open the trapdoor when stuff is on top of it!";
 	 otherwise:
 		continue the action.
 		
-Instead of doing anything to the trapdoor:
-	If the trapdoor is uninteractable:
+Instead of doing anything to the hidden trapdoor:
+	If the hidden trapdoor is uninteractable:
 		say "You can't see such thing.";
 	 otherwise:
 		continue the action.
 		
 Every turn:
-	If TorchPuzzleSolved is true for the first turn and the trapdoor is interactable:
+	If TorchPuzzleSolved is true for the first turn and the hidden trapdoor is interactable:
 		say "You hear the sound of the trapdoor unlocking.";
-		now the trapdoor is unlocked;
-	otherwise if TorchPuzzleSolved is false for the first turn and the trapdoor is interactable:
+		now the hidden trapdoor is unlocked;
+	otherwise if TorchPuzzleSolved is false for the first turn and the hidden trapdoor is interactable:
 		say "You hear the sound of the trapdoor locking.";
-		now the trapdoor is locked;
-	otherwise if TorchPuzzleSolved is true for the first turn and the trapdoor is uninteractable:
+		now the hidden trapdoor is locked;
+	otherwise if TorchPuzzleSolved is true for the first turn and the hidden trapdoor is uninteractable:
 		say "You hear the sound of something unlocking.";
-		now the trapdoor is unlocked;
-	otherwise if TorchPuzzleSolved is false for the first turn and the trapdoor is uninteractable:
+		now the hidden trapdoor is unlocked;
+	otherwise if TorchPuzzleSolved is false for the first turn and the hidden trapdoor is uninteractable:
 		say "You hear the sound of something locking.";
-		now the trapdoor is locked;
+		now the hidden trapdoor is locked;
 		
 
 test fire with "light second torch/light third torch/ light sixth torch/ light seventh torch/ light eighth torch/ light tenth torch/ light eleventh torch/ light thirteenth torch/ light fourteent torch/ light fifteenth torch/light sixteenth torch".
@@ -2321,7 +2382,7 @@ test fire with "light second torch/light third torch/ light sixth torch/ light s
 
 [Start Of: Divine Cell of Hestia & Hermes]
 
-Divine Cell of Hestia & Hermes is a room. It is down of the trapdoor. 
+Divine Cell of Hestia & Hermes is a room. It is down of the hidden trapdoor. 
 
 
 The description of Divine Cell of Hestia & Hermes  is "TODO: description of Divine Cell of Hestia & Hermes.".
