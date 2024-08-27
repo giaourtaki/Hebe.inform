@@ -7489,13 +7489,14 @@
   </item>
   <item nodeId="node-3750">
     <command xml:space="preserve">[enter]</command>
-    <result xml:space="preserve">Garden of Hesperides&#x000A;You slowly regain consciousness, greeted by the soft rustling of leaves of a tranquil garden. As your eyes flutter open, you find yourself surrounded by four enchanting nymphs. Their expressions are a mix of deep concern and immense relief, as if they've been holding their breath waiting for this moment. You instantly recognise Aigle, Arethousa, Erytheia and Hesperie, the nymphs of the evening known as Hesperides, guardians of Hera's orchard.&#x000A;&#x000A;"Hebe, it's been almost two weeks!" Arethousa exclaims, her voice a blend of worry and joy. "We were all so anxious for you to wake up."&#x000A;&#x000A;With gentle hands, the nymphs help you to sit up, their embraces warm and comforting. The familiar scent of the Garden of Hesperides fills your senses, grounding you in the safety of their presence.&#x000A;&#x000A;Aigle, her expression displaying a hint of urgency, leans in. "You should get moving now that you're awake. There are disturbing rumors that Kronos has imprisoned the gods and is attempting to free his brothers from Tartaros. You're the only goddess we've seen show any signs of activity lately."&#x000A;&#x000A;Erytheia nods in agreement. "We don't have many details, but the Oracle of Delphi might have the answers you need. It would be wise to seek her counsel."&#x000A;&#x000A;Hesperie steps forward, holding out something. It is the Eternal Chalice of Nectar, once your symbol of duty as the cupbearer of the gods before the events that led to Ganymedes taking on that role. Her eyes are earnest as she places the chalice in your hands.&#x000A;&#x000A;"You might need this," Hesperie says softly. "Without nectar or ambrosia, gods can lose their immortality and eternal youth. You know this better than anyone."&#x000A;&#x000A;The Hesperides embrace you one last time. "Good luck, Hebe!" they all say in unison. "We will be here, supporting you in any way we can." &#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Garden of the Hesperides&#x000A;You slowly regain consciousness, greeted by the soft rustling of leaves of a tranquil garden. As your eyes flutter open, you find yourself surrounded by four enchanting nymphs. Their expressions are a mix of deep concern and immense relief, as if they've been holding their breath waiting for this moment. You instantly recognise Aigle, Arethousa, Erytheia and Hesperie, the nymphs of the evening known as Hesperides, guardians of Hera's orchard.&#x000A;&#x000A;"Hebe, it's been almost two weeks!" Arethousa exclaims, her voice a blend of worry and joy. "We were all so anxious for you to wake up."&#x000A;&#x000A;With gentle hands, the nymphs help you to sit up, their embraces warm and comforting. The familiar scent of the Garden of the Hesperides fills your senses, grounding you in the safety of their presence.&#x000A;&#x000A;Aigle, her expression displaying a hint of urgency, leans in. "You should get moving now that you're awake. There are disturbing rumors that Kronos has imprisoned the gods and is attempting to free his brothers from Tartaros. You're the only goddess we've seen show any signs of activity lately."&#x000A;&#x000A;Erytheia nods in agreement. "We don't have many details, but the Oracle of Delphi might have the answers you need. It would be wise to seek her counsel."&#x000A;&#x000A;Hesperie steps forward, holding out something. It is the Eternal Chalice of Nectar, once your symbol of duty as the cupbearer of the gods before the events that led to Ganymedes taking on that role. Her eyes are earnest as she places the chalice in your hands.&#x000A;&#x000A;"You might need this," Hesperie says softly. "Without nectar or ambrosia, gods can lose their immortality and eternal youth. You know this better than anyone."&#x000A;&#x000A;The Hesperides embrace you one last time. "Good luck, Hebe!" they all say in unison. "We will be here, supporting you in any way we can." &#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-3751"/>
       <child nodeId="node-3777"/>
       <child nodeId="node-4005"/>
+      <child nodeId="node-4156"/>
       <child nodeId="node-3792"/>
     </children>
   </item>
@@ -8214,7 +8215,7 @@
   </item>
   <item nodeId="node-4153">
     <command xml:space="preserve">l</command>
-    <result xml:space="preserve">Divine Cell of Athena &amp; Ares&#x000A;The room is a small, dimly lit cellar, its walls carved from old stone and shrouded in shadows. Flickering torches cast an eerie glow, illuminating shelves lined with forgotten offerings.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Divine Cell of Athena &amp; Ares&#x000A;The room is a small, dimly lit cellar, its walls carved from old stone and shrouded in shadows. Flickering torches cast an eerie glow, illuminating shelves lined with forgotten offerings. The gate is open&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -9031,9 +9032,168 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-4156">
+    <command xml:space="preserve">sail to piraeus</command>
+    <result xml:space="preserve">You sail to the Port of Piraeus.&#x000A;&#x000A;Port of Piraeus&#x000A;To the northeast you can see the city of Athens. &#x000A;&#x000A;From here you can sail to: &#x000A;&#x2192; Paphos&#x000A;&#x2192; Garden of the Hesperides&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4157"/>
+    </children>
+  </item>
+  <item nodeId="node-4157">
+    <command xml:space="preserve">ne</command>
+    <result xml:space="preserve">Agora of Athens&#x000A;To the east you see the Acropolis hill. To the southwest is Port of Piraeus. To the southeast are the Southern Gates of Athens and to the north are the Northen ones.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4158"/>
+    </children>
+  </item>
+  <item nodeId="node-4158">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Acropolis&#x000A;The Agora of Athens is located in  the west. From here you can see the Prytaneion of Athens.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4159"/>
+    </children>
+  </item>
+  <item nodeId="node-4159">
+    <command xml:space="preserve">go in prytaneion</command>
+    <result xml:space="preserve">You go into the prytaneion.&#x000A;&#x000A;Prytaneion&#x000A;You step into the open hall of the Prytaneion, the administrative heart of Athens. In the center of the room you see the sacred hearth dedicated to Hestia, its warm glow illuminating the room. The flames burn steadily, their smoke rising in delicate spirals before disappearing through a square opening in the roof above. Beside the hearth lies a single hand torch, accompanied by a fire snuffer.&#x000A;&#x000A;Just beyond the hearth, there is a small dining area. A large table made of pine, surrounded by several chairs, stands atop an elegant carpet, likely reserved for official dinners and gatherings. Scattered across the table are an empty scroll, a wax tablet, a papyrus scroll and a parchment scroll, remnants of a recent meeting, perhaps.&#x000A;&#x000A;Eight torches on either side of the hearth are placed on the ground, forming a semicircle around the dining area. The torches are all put out, from the first-the far left one-to the sixteenth-the far right one.&#x000A;&#x000A;The rest of the building remains inaccessible, since the doors lead to the private quarters of the prytaneis and thus are firmly locked, leaving the main hall as the only accessible space.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4160"/>
+    </children>
+  </item>
+  <item nodeId="node-4160">
+    <command xml:space="preserve">test fire</command>
+    <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] light second torch&#x000A;You picked up the portable torch.&#x000A;&#x000A;You lighted the second torch using the portable torch.&#x000A;&#x000A;&gt;[2] light third torch&#x000A;You lighted the third torch using the portable torch.&#x000A;&#x000A;&gt;[3] light sixth torch&#x000A;You lighted the sixth torch using the portable torch.&#x000A;&#x000A;&gt;[4] light seventh torch&#x000A;You lighted the seventh torch using the portable torch.&#x000A;&#x000A;&gt;[5] light eighth torch&#x000A;You lighted the eighth torch using the portable torch.&#x000A;&#x000A;&gt;[6] light tenth torch&#x000A;You lighted the tenth torch using the portable torch.&#x000A;&#x000A;&gt;[7] light eleventh torch&#x000A;You lighted the eleventh torch using the portable torch.&#x000A;&#x000A;&gt;[8] light thirteenth torch&#x000A;You lighted the thirteenth torch using the portable torch.&#x000A;&#x000A;&gt;[9] light fourteent torch&#x000A;You lighted the fourteenth torch using the portable torch.&#x000A;&#x000A;&gt;[10] light fifteenth torch&#x000A;You lighted the fifteenth torch using the portable torch.&#x000A;&#x000A;&gt;[11] light sixteenth torch&#x000A;You lighted the sixteenth torch using the portable torch.&#x000A;&#x000A;You hear the sound of something unlocking.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4161"/>
+    </children>
+  </item>
+  <item nodeId="node-4161">
+    <command xml:space="preserve">test</command>
+    <result xml:space="preserve">&gt;--&gt; The following tests are available:&#x000A;'test getweights'&#x000A;'test dragongate'&#x000A;'test pos'&#x000A;'test art'&#x000A;'test solutionsg'&#x000A;'test sg2'&#x000A;'test fire'&#x000A;'test obol'&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4162"/>
+    </children>
+  </item>
+  <item nodeId="node-4162">
+    <command xml:space="preserve">push table</command>
+    <result xml:space="preserve">You put all your strength into pushing the table off the carpet- and you manage it!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4163"/>
+    </children>
+  </item>
+  <item nodeId="node-4163">
+    <command xml:space="preserve">push chair</command>
+    <result xml:space="preserve">You push the chairs off the carpet.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4164"/>
+    </children>
+  </item>
+  <item nodeId="node-4164">
+    <command xml:space="preserve">pull carpet</command>
+    <result xml:space="preserve">You pulled the carpet. &#x000A;&#x000A;By pulling the carpet out of the way you revealed a trapdoor.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4165"/>
+    </children>
+  </item>
+  <item nodeId="node-4165">
+    <command xml:space="preserve">open trapdoor</command>
+    <result xml:space="preserve">You open the hidden trapdoor.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4166"/>
+    </children>
+  </item>
+  <item nodeId="node-4166">
+    <command xml:space="preserve">enter trapdoor</command>
+    <result xml:space="preserve">Divine Cell of Hestia &amp; Hermes&#x000A;TODO: description of Divine Cell of Hestia &amp; Hermes scene. You see the Hestia &amp; Hermes in a sleeping state.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4167"/>
+    </children>
+  </item>
+  <item nodeId="node-4167">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4168"/>
+    </children>
+  </item>
+  <item nodeId="node-4168">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Divine Cell of Hestia &amp; Hermes&#x000A;TODO: description of Divine Cell of Hestia &amp; Hermes scene. You see the Hestia &amp; Hermes in a sleeping state.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4169"/>
+    </children>
+  </item>
+  <item nodeId="node-4169">
+    <command xml:space="preserve">showme</command>
+    <result xml:space="preserve">Divine Cell of Hestia &amp; Hermes - room&#x000A;    hidden trapdoor - open door&#x000A;    yourself - woman&#x000A;        portable torch&#x000A;        Eternal Chalice of Nectar&#x000A;        Heracles' Club&#x000A;    Goddess Hestia - woman&#x000A;    God Hermes - man&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4170"/>
+    </children>
+  </item>
+  <item nodeId="node-4170">
+    <command xml:space="preserve">scenes</command>
+    <result xml:space="preserve">Scene 'Entire Game' playing (for 22 mins now)&#x000A;Scene 'Olympus Hall Celebration Scene' ended&#x000A;Scene 'Kronos Scene' ended&#x000A;Scene 'Garden of the Hesperides Scene' ended&#x000A;Scene 'Divine Cell of Hestia &amp; Hermes Scene' playing (for 18 mins now)&#x000A;(Scene monitoring now switched on. Type "scenes off" to switch it off again.)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4171"/>
+    </children>
+  </item>
+  <item nodeId="node-4171">
+    <command xml:space="preserve">give nectar to hestia</command>
+    <result xml:space="preserve">You carefuly spill some nectar in the mouth of Goddess Hestia.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4172"/>
+    </children>
+  </item>
+  <item nodeId="node-4172">
+    <command xml:space="preserve">give nectar to hermes</command>
+    <result xml:space="preserve">You carefuly spill some nectar in the mouth of God Hermes.&#x000A;&#x000A;[Scene 'Divine Cell of Hestia &amp; Hermes Scene' ends]&#x000A;The gods wake up from their slumber. "Thank you for saving us, dear. We wish to grand you our power." &#x000A;&#x000A;Choosing Hestia's Boom will enable you to todo? and choosing Hermes' power will enable you to todo? . Which one do you want to choose?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4173"/>
+    </children>
+  </item>
+  <item nodeId="node-4173">
+    <command xml:space="preserve">hestia's</command>
+    <result xml:space="preserve">You chose the blessing of Hestia.&#x000A;The gods now go to olympus.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-3792">
     <command xml:space="preserve">sail to sounio</command>
-    <result xml:space="preserve">You sail to the Port of Sounio.&#x000A;&#x000A;Port of Sounio&#x000A;To the north you can see the city of Sounio. &#x000A;&#x000A;From here you can sail to: &#x000A;&#x2192; Aulis&#x000A;&#x2192; Garden of Hesperides&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You sail to the Port of Sounio.&#x000A;&#x000A;Port of Sounio&#x000A;To the north you can see the city of Sounio. &#x000A;&#x000A;From here you can sail to: &#x000A;&#x2192; Aulis&#x000A;&#x2192; Garden of the Hesperides&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -9042,7 +9202,7 @@
   </item>
   <item nodeId="node-3793">
     <command xml:space="preserve">n</command>
-    <result xml:space="preserve">Agora of Sounio&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Agora of Sounio&#x000A;You can see the Port of Sounio in  the south. The Sounio Cape is in the east.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -9051,12 +9211,137 @@
   </item>
   <item nodeId="node-3794">
     <command xml:space="preserve">e</command>
-    <result xml:space="preserve">Sounio Beach&#x000A;TODO: Description of Sounio beach. You see some nereides fighting. Poseidon's temple is sunk in the sea.&#x000A;&#x000A;The city of Sounio is on the west.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Sounio Beach&#x000A;As you journey toward Cape Sounion, where the Temple of Poseidon stands, you find that the cape has become entirely submerged. What remains is a narrow beach, with a vast expanse of land now lying beneath the sea.&#x000A;&#x000A;On the beach, you notice a nymph weeping and wailing, surrounded by others who are attempting to console her. You recognize the grieving nereid as Amphitrite, queen of the sea and wife of Poseidon. The nereids comforting her must be her closest attendants: Aktaia, Erato, and Ploto.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
+      <child nodeId="node-4174"/>
       <child nodeId="node-3795"/>
+      <child nodeId="node-4188"/>
     </children>
+  </item>
+  <item nodeId="node-4174">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Sounio Beach&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4175"/>
+    </children>
+  </item>
+  <item nodeId="node-4175">
+    <command xml:space="preserve">talk to amphitrite</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4176"/>
+    </children>
+  </item>
+  <item nodeId="node-4176">
+    <command xml:space="preserve">talk to amphitrite</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4177"/>
+    </children>
+  </item>
+  <item nodeId="node-4177">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4178"/>
+    </children>
+  </item>
+  <item nodeId="node-4178">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4179"/>
+    </children>
+  </item>
+  <item nodeId="node-4179">
+    <command xml:space="preserve">talk to amphitrite</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4180"/>
+    </children>
+  </item>
+  <item nodeId="node-4180">
+    <command xml:space="preserve">give nectar to amphitrite</command>
+    <result xml:space="preserve">You offer a sip of nectar from your chalice to Amphitrite. &#x000A;&#x000A;After drinking, she responds "Your kindness is much appreciated, Eternal Maiden. I feel much rejuvenated already."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4181"/>
+    </children>
+  </item>
+  <item nodeId="node-4181">
+    <command xml:space="preserve">give nectar to amphitrite</command>
+    <result xml:space="preserve">You offer a sip of nectar from your chalice to Amphitrite. &#x000A;&#x000A;After drinking, she responds "Your kindness is much appreciated, Eternal Maiden. I feel much rejuvenated already."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4182"/>
+    </children>
+  </item>
+  <item nodeId="node-4182">
+    <command xml:space="preserve">scenes</command>
+    <result xml:space="preserve">Scene 'Entire Game' playing (for 10 mins now)&#x000A;Scene 'Olympus Hall Celebration Scene' ended&#x000A;Scene 'Kronos Scene' ended&#x000A;Scene 'Garden of the Hesperides Scene' ended&#x000A;Scene 'Sounio Beach Scene' playing (for 7 mins now)&#x000A;(Scene monitoring now switched on. Type "scenes off" to switch it off again.)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4183"/>
+    </children>
+  </item>
+  <item nodeId="node-4183">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  Eternal Chalice of Nectar&#x000A;  Heracles' Club&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4184"/>
+    </children>
+  </item>
+  <item nodeId="node-4184">
+    <command xml:space="preserve">scenes</command>
+    <result xml:space="preserve">Scene 'Entire Game' playing (for 11 mins now)&#x000A;Scene 'Olympus Hall Celebration Scene' ended&#x000A;Scene 'Kronos Scene' ended&#x000A;Scene 'Garden of the Hesperides Scene' ended&#x000A;Scene 'Sounio Beach Scene' playing (for 8 mins now)&#x000A;(Scene monitoring now switched on. Type "scenes off" to switch it off again.)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4185"/>
+    </children>
+  </item>
+  <item nodeId="node-4185">
+    <command xml:space="preserve">give nectar to amphitrite</command>
+    <result xml:space="preserve">You offer a sip of nectar from your chalice to Amphitrite. &#x000A;&#x000A;After drinking, she responds "Your kindness is much appreciated, Eternal Maiden. I feel much rejuvenated already."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4186"/>
+    </children>
+  </item>
+  <item nodeId="node-4186">
+    <command xml:space="preserve">scene</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4187"/>
+    </children>
+  </item>
+  <item nodeId="node-4187">
+    <command xml:space="preserve">scenes</command>
+    <result xml:space="preserve">Scene 'Entire Game' playing (for 12 mins now)&#x000A;Scene 'Olympus Hall Celebration Scene' ended&#x000A;Scene 'Kronos Scene' ended&#x000A;Scene 'Garden of the Hesperides Scene' ended&#x000A;Scene 'Sounio Beach Scene' playing (for 9 mins now)&#x000A;(Scene monitoring now switched on. Type "scenes off" to switch it off again.)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-3795">
     <command xml:space="preserve">s</command>
@@ -9259,6 +9544,57 @@
   <item nodeId="node-3817">
     <command xml:space="preserve">save</command>
     <result xml:space="preserve">Save failed.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-4188">
+    <command xml:space="preserve">scenes</command>
+    <result xml:space="preserve">Scene 'Entire Game' playing (for 4 mins now)&#x000A;Scene 'Olympus Hall Celebration Scene' ended&#x000A;Scene 'Kronos Scene' ended&#x000A;Scene 'Garden of the Hesperides Scene' ended&#x000A;Scene 'Sounio Beach Scene' playing (for 1 mins now)&#x000A;(Scene monitoring now switched on. Type "scenes off" to switch it off again.)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4189"/>
+    </children>
+  </item>
+  <item nodeId="node-4189">
+    <command xml:space="preserve">talk to amphitrite</command>
+    <result xml:space="preserve">When Amphitrite's gaze falls upon you, her tears cease, and she draws near.&#x000A;&#x000A;"Eternal Maiden, you who has eluded the great evil, speak to me now and assure me you bring tidings of hope. The past weeks have been naught but torment; my husband has been stolen from my side, and his sacred temple desecrated, submerged beneath the waves-what a grievous insult! I am left powerless, unable to break free from the seafoam's embrace. Oh, I plead, Eternal Maiden, return my husband to my arms, unscathed and whole."&#x000A;&#x000A;You explain to Amphitrite that her dear husband was prophecised to be held under his flooded temple, which you need help to reach.&#x000A;&#x000A;"Naturally, Eternal Maiden, our unwavering support is yours. My Nereides and I stand ready to serve you in whatever you may require."&#x000A;&#x000A;[Scene 'Sounio Beach Scene' ends]&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4190"/>
+    </children>
+  </item>
+  <item nodeId="node-4190">
+    <command xml:space="preserve">talk to amphitrite</command>
+    <result xml:space="preserve">"Naturally, Eternal Maiden, our unwavering support is yours. My nereides and I stand ready to serve you in whatever you may require."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4191"/>
+    </children>
+  </item>
+  <item nodeId="node-4191">
+    <command xml:space="preserve">nectarize amphitrite</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4192"/>
+    </children>
+  </item>
+  <item nodeId="node-4192">
+    <command xml:space="preserve">give nectar to amphitrite</command>
+    <result xml:space="preserve">Amphitrite refuses the drink. "Your kindness is much appreciated, Eternal Maiden, but I must refuse, for I am already content."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4193"/>
+    </children>
+  </item>
+  <item nodeId="node-4193">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Sounio Beach&#x000A;As you journey toward Cape Sounion, where the Temple of Poseidon stands, you find that the cape has become entirely submerged. What remains is a narrow beach, with a vast expanse of land now lying beneath the sea.&#x000A;&#x000A;The city of sounio is in the west.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>

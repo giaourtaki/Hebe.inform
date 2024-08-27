@@ -238,7 +238,9 @@ Antirotating is an action applying to one thing. Understand "rotate [any thing] 
 Instead of dropping something:
 	if the noun is a person:
 		say "You can't drop a person!";
-		stop the action.
+		stop the action;
+	otherwise:
+		continue the action.
 
 [giving]
 The block giving rule is not listed in any rulebook.
@@ -635,20 +637,20 @@ Chapter 0.9 - Other Rooms
 
 [Start Of: Garden on hesperides]
 
-The Garden of Hesperides is a room in Greece. 
+The Garden of the Hesperides is a room in Greece. 
 
-Eternal Chalice of Nectar is a thing in Garden of Hesperides. the indefinite article is "the". The description is "The Eternal Chalice of Nectar is a legendary goblet crafted by Hephaestus from shimmering gold, embellished with intricate engravings of vines and blossoms. The chalice can provide an infinite supply of nectar at any moment. It was once your symbol of duty as the former cupbearer of the gods". It is undescribed.
+Eternal Chalice of Nectar is a thing in Garden of the Hesperides. the indefinite article is "the". The description is "The Eternal Chalice of Nectar is a legendary goblet crafted by Hephaestus from shimmering gold, embellished with intricate engravings of vines and blossoms. The chalice can provide an infinite supply of nectar at any moment. It was once your symbol of duty as the former cupbearer of the gods". It is undescribed.
 
-The Garden of Hesperides Scene is a scene. Garden of Hesperides Scene begins when Kronos Scene ends. 
+The Garden of the Hesperides Scene is a scene. Garden of the Hesperides Scene begins when Kronos Scene ends. 
 
-The Garden of Hesperides Scene ends when the time since Garden of Hesperides Scene began is 0 minutes.
+The Garden of the Hesperides Scene ends when the time since Garden of the Hesperides Scene began is 0 minutes.
 
-When Garden of Hesperides Scene begins:
-	now the description of Garden of Hesperides is "You slowly regain consciousness, greeted by the soft rustling of leaves of a tranquil garden. As your eyes flutter open, you find yourself surrounded by four enchanting nymphs. Their expressions are a mix of deep concern and immense relief, as if they’ve been holding their breath waiting for this moment. You instantly recognise Aigle, Arethousa, Erytheia and Hesperie, the nymphs of the evening known as Hesperides, guardians of Hera's orchard.
+When Garden of the Hesperides Scene begins:
+	now the description of Garden of the Hesperides is "You slowly regain consciousness, greeted by the soft rustling of leaves of a tranquil garden. As your eyes flutter open, you find yourself surrounded by four enchanting nymphs. Their expressions are a mix of deep concern and immense relief, as if they’ve been holding their breath waiting for this moment. You instantly recognise Aigle, Arethousa, Erytheia and Hesperie, the nymphs of the evening known as Hesperides, guardians of Hera's orchard.
 
 'Hebe, it’s been almost two weeks!' Arethousa exclaims, her voice a blend of worry and joy. 'We were all so anxious for you to wake up.'
 
-With gentle hands, the nymphs help you to sit up, their embraces warm and comforting. The familiar scent of the Garden of Hesperides fills your senses, grounding you in the safety of their presence.
+With gentle hands, the nymphs help you to sit up, their embraces warm and comforting. The familiar scent of the Garden of the Hesperides fills your senses, grounding you in the safety of their presence.
 
 Aigle, her expression displaying a hint of urgency, leans in. 'You should get moving now that you’re awake. There are disturbing rumors that Kronos has imprisoned the gods and is attempting to free his brothers from Tartaros. You’re the only goddess we’ve seen show any signs of activity lately.'
 
@@ -660,12 +662,12 @@ Hesperie steps forward, holding out something. It is the Eternal Chalice of Nect
 
 The Hesperides embrace you one last time. 'Good luck, Hebe!' they all say in unison. 'We will be here, supporting you in any way we can.'
 ";
-	now the player is in the garden of Hesperides;
+	now the player is in the garden of the Hesperides;
 		
 	
-When Garden of Hesperides Scene ends:
+When Garden of the Hesperides Scene ends:
 	now the player carries the Eternal Chalice of Nectar;
-	now the description of Garden of Hesperides is "The Garden of the Hesperides is a mythical paradise, an otherworldly oasis hidden in the middle of the Mediterranean, where the air is perpetually filled with the sweet fragrance of blooming flowers and the gentle hum of bees. 
+	now the description of Garden of the Hesperides is "The Garden of the Hesperides is a mythical paradise, an otherworldly oasis hidden in the middle of the Mediterranean, where the air is perpetually filled with the sweet fragrance of blooming flowers and the gentle hum of bees. 
 
 In the heart of the garden stands the sacred tree of the Hesperides, its branches heavy with golden apples that gleam like captured sunlight. The apples, used to make nectar, hang among rich green leaves, guarded by the the Hesperides, the nymphs of the evening and daughters of the night. The nymphs are Aigle, Arethousa, Erytheia and Hesperie.
 
@@ -676,21 +678,21 @@ The garden was your sanctuary once, where you spent countless hours alongside th
 From here you can sail to: [line break]→ Piraeus[line break]→ Sounio[line break]→ Aulis[line break]→ Paphos".
 
 [scenery]
-The sacred tree of Hesperides is scenery in Garden of Hesperides. The description is "The tree is the soul of the garden, its golden apples gleaming among the green leaves. The garden’s essence flows from it, infusing the air with a sense of timeless peace.". Understand "tree" as The sacred tree of Hesperides when the player is in Garden of Hesperides.
+The sacred tree of Hesperides is scenery in Garden of the Hesperides. The description is "The tree is the soul of the garden, its golden apples gleaming among the green leaves. The garden’s essence flows from it, infusing the air with a sense of timeless peace.". Understand "tree" as The sacred tree of Hesperides when the player is in Garden of the Hesperides.
 
-The golden apple is an undescribed thing in Garden of Hesperides. The description is "Golden apples hang from the tree, their surface shimmering with a soft, radiant aura. Their skin is smooth and flawless, catching the light in a way that makes it appear almost liquid, as if the fruits themselves are molded from pure sunlight.".
+The golden apple is an undescribed thing in Garden of the Hesperides. The description is "Golden apples hang from the tree, their surface shimmering with a soft, radiant aura. Their skin is smooth and flawless, catching the light in a way that makes it appear almost liquid, as if the fruits themselves are molded from pure sunlight.". Understand "apples" as golden apple.
 
 Instead of taking the golden apple:
 	say "You alread have enough nectar, you don't need a golden apple right now";
 	stop the action.
 
 
-Aigle is a woman in Garden of Hesperides. The description is "Aigle radiates with a golden glow, her hair like cascading sunlight, and her eyes shimmering like the first light of dawn. She is the embodiment of brightness and warmth, her presence illuminating the garden with a serene, golden aura.". She is undescribed.
-Arethousa is a woman in Garden of Hesperides. The description is "Arethousa moves with the grace of flowing water, her deep blue eyes reflecting the tranquil depths of a hidden spring. Her dark hair, braided with pearls, mirrors the shimmering waves of the sea, embodying the calm and mystery of hidden waters.".She is undescribed.
-Erytheia is a woman in Garden of Hesperides. The description is " Erytheia’s beauty is as striking as a crimson sunset, with hair as red as the setting sun and eyes that burn with a fierce, fiery intensity. She embodies passion and vitality, her very presence infusing the garden with the vibrant energy of dusk.".She is undescribed.
-Hesperie is a woman in Garden of Hesperides. The description is "Hesperie is as gentle as the twilight, her lavender eyes soft and dreamy, framed by hair as dark as the night sky. She carries the quiet peace of the evening, her ethereal presence soothing the garden into a tranquil lullaby as day fades into night.".She is undescribed.
+Aigle is a woman in Garden of the Hesperides. The description is "Aigle radiates with a golden glow, her hair like cascading sunlight, and her eyes shimmering like the first light of dawn. She is the embodiment of brightness and warmth, her presence illuminating the garden with a serene, golden aura.". She is undescribed.
+Arethousa is a woman in Garden of the Hesperides. The description is "Arethousa moves with the grace of flowing water, her deep blue eyes reflecting the tranquil depths of a hidden spring. Her dark hair, braided with pearls, mirrors the shimmering waves of the sea, embodying the calm and mystery of hidden waters.".She is undescribed.
+Erytheia is a woman in Garden of the Hesperides. The description is " Erytheia’s beauty is as striking as a crimson sunset, with hair as red as the setting sun and eyes that burn with a fierce, fiery intensity. She embodies passion and vitality, her very presence infusing the garden with the vibrant energy of dusk.".She is undescribed.
+Hesperie is a woman in Garden of the Hesperides. The description is "Hesperie is as gentle as the twilight, her lavender eyes soft and dreamy, framed by hair as dark as the night sky. She carries the quiet peace of the evening, her ethereal presence soothing the garden into a tranquil lullaby as day fades into night.".She is undescribed.
 
-[End Of: Garden of Hesperides]
+[End Of: Garden of the Hesperides]
 
 
 [Start Of: South of Delphi]
@@ -1023,7 +1025,7 @@ When Divine Cell of Athena & Ares Scene ends:
 	say "The gods wake up from their slumber. 'Thank you for saving us, sister. We wish to grand you our power.' [paragraph break]Invoking Athena's wisdom will help you solve puzzles and Invoking Ares[apostrophe] strategies will help you win combats. Which one do you want to choose?".[todo:fix when i have the boons]
 
 After reading a command when Athena is awake and Ares is awake:
-	if Athena is in Divine Cell of Athena & Ares and the player's command includes "Athena":
+	if Athena is in Divine Cell of Athena & Ares and the player's command includes "Athena" or Athena is in Divine Cell of Athena & Ares and the player's command includes "Athena's":
 		now HasAthenaBoon is true;
 		say "You chose the blessing of Athena.";
 		say "The gods now go to olympus.";
@@ -1032,7 +1034,7 @@ After reading a command when Athena is awake and Ares is awake:
 		now Ares is in Mount Olympus Hall;
 		now Ares is described;
 		reject the player's command;
-	otherwise if Ares is in Divine Cell of Athena & Ares and the player's command includes "Ares":
+	otherwise if Ares is in Divine Cell of Athena & Ares and the player's command includes "Ares" or Ares is in Divine Cell of Athena & Ares and the player's command includes "Ares's":
 		now HasAresBoon is true;
 		say "You chose the blessing of Ares.";
 		say "The gods now go to olympus.";
@@ -1058,32 +1060,82 @@ The Sounio Beach is a room in Sounio.
 
 The Divine Cell of Demeter & Poseidon is a room in Sounio. The Divine Cell of Demeter & Poseidon is down of the temple trapdoor.
 
-Underwater is a room in sounio. "TODO: underwater description. You see the temple of poseidon here.".
+Underwater is a room in sounio. "You find yourseld enveloped in a serene, otherwordly scene. The submerged Temple of Poseidon, its grand columns and sculpted friezes partially veiled by drifting seaweed and alge, rises majestically from the ocean floor. Schools of fish weave through the watery ruins, their movements casting shimmering reflections on the temple’s marble. The once-bustling sacred site now rests in tranquil silence, offering a haunting glimpse of its former splendor beneath the surface.".
+
+A frieze is scenery in underwater. The description is "The frieze showcases a series of sculptures illustrating the Gigantomachy, the battle between the gods of Olympus and the giants.".
+
+A grand column is scenery in underwater. Understand "column" or "columns" as grand column when the player is in underwater.
+instead of examining the grand column:
+	say "You see nothing special about the columns.";
+	stop the action.
+	
+An ocean bottom is scenery in underwater. Understand "ocean floor" or "floor" as ocean bottom  when the player is in underwater.
+instead of examining the ocean bottom:
+	say "You see nothing special about the ocean floor.";
+	stop the action.
+
+A seaweed is scenery in underwater.
+An alge is scenery in underwater.
+A sacred site is scenery in underwater. Understand "marble" as sacred site. The description of sacred site is "The Temple of Poseidon.".
+
+
 
 [Start Of: sounio beach]
 
-Sounio Beach Scene is a scene. The Sounio Beach Scene begins when the player is in Sounio Beach for the first time. The Sounio Beach Scene ends when AmphitriteIsHappy is true for the first time.
+Sounio Beach Scene is a scene. The Sounio Beach Scene begins when the player is in Sounio Beach for the first time. The Sounio Beach Scene ends when Amphitrite is happy.
 
 When Sounio Beach Scene begins:
-	say "As you journey toward Cape Sounion, where the Temple of Poseidon stands, you find that the cape has become entirely submerged. What remains is a narrow beach, with a vast expanse of land now lying beneath the sea.
+	now the description of sounio beach is "As you journey south toward Cape Sounion, where the Temple of Poseidon stands, you find that the cape has become entirely submerged. What remains is a narrow beach, with a vast expanse of land now lying beneath the sea. On your west is the town of Sounio.
 
-On the beach, you notice a nymph weeping and wailing, surrounded by others who are attempting to console her. You recognize the grieving nereid as Amphitrite, queen of the sea and wife of Poseidon. The nereids comforting her must be her closest attendants—Aktaia, Erato, and Ploto.".
+On the beach, you notice a nymph weeping and wailing, surrounded by others who are attempting to console her. You recognize the grieving nereid as Amphitrite, queen of the sea and wife of Poseidon. The nereids comforting her must be her closest attendants: Aktaia, Erato, and Ploto.";
+	say "As you journey south toward Cape Sounion, where the Temple of Poseidon stands, you find that the cape has become entirely submerged. What remains is a narrow beach, with a vast expanse of land now lying beneath the sea. On your west is the town of Sounio.
 
-After talking to someone during the Sounio Beach Scene:
+On the beach, you notice a nymph weeping and wailing, surrounded by others who are attempting to console her. You recognize the grieving nereid as Amphitrite, queen of the sea and wife of Poseidon. The nereids comforting her must be her closest attendants: Aktaia, Erato, and Ploto.".
+
+Instead of talking to someone during Sounio Beach Scene:
 	if the noun is Aktaia:
-		say "'I'm trying to console Amphitrite.'";
+		say "Aktaia looks concerned. 'I’m trying to cheer up Amphitrite, but she’s not paying any attention to us.'";
 	otherwise if the noun is Erato:
-		say "'I'm trying to console Amphitrite.'";
+		say "Erato is also in tears. 'I’m really sad for Amphitrite. I can’t believe how tough this must be for her.";
 	otherwise if the noun is Ploto:
-		say "'I'm trying to console Amphitrite.'";
+		say "TODO";
 	otherwise if the noun is Amphitrite:
-		say "You tell Amphitrite you're going to save her hubby. She happy now.";
-		now Amphitrite is happy.
-	
-When Sounio Beach Scene ends:
-	now the description of Sounio Beach is "TODO: UwU no crying nereida now. But temple is still flooded.
+		say "When Amphitrite's gaze falls upon you, her tears cease, and she draws near.[line break][line break]'Eternal Maiden, you who has eluded the great evil, speak to me now and assure me you bring tidings of hope. The past weeks have been naught but torment; my husband has been stolen from my side, and his sacred temple desecrated, submerged beneath the waves—what a grievous insult! I am left powerless, unable to break free from the seafoam’s embrace. Oh, I plead, Eternal Maiden, return my husband to my arms, unscathed and whole.'[line break][line break]You explain to Amphitrite that her dear husband was prophecised to be held under his flooded temple, which you need help to reach.[line break][line break]'Naturally, Eternal Maiden, our unwavering support is yours. My Nereides and I stand ready to serve you in whatever you may require.'";
+		now Amphitrite is happy;
+		follow the scene change machinery rule;
+		
 
-The city of sounio is in the west.".
+Instead of talking to Amphitrite:
+	if Sounio Beach Scene has ended:
+		say "'Naturally, Eternal Maiden, our unwavering support is yours. My nereides and I stand ready to serve you in whatever you may require.'";
+	if Sounio Beach Scene has ended and Poseidon is awake:
+		say "I thank you deeply for returning my beloved to me. I shall remain forever indebted to you.";
+
+	
+Instead of nectarizing someone during the Sounio Beach Scene:
+	if the noun is Amphitrite:
+		try talking to Amphitrite;
+		say "You offer a sip of nectar from your chalice to Amphitrite. [line break][line break]After drinking, she responds 'Your kindness is much appreciated, Eternal Maiden. I feel much rejuvenated already.'";
+		stop the action;
+	else if the noun is Aktaia:
+		say "TODO";
+		stop the action;
+	else if the noun is Erato:
+		say "TODO";
+		stop the action;
+	else if the noun is Ploto:
+		say "TODO";
+		stop the action.
+	
+Instead of nectarizing Amphitrite:
+	if Sounio Beach Scene has happened:
+		say "Amphitrite refuses the drink. 'Your kindness is much appreciated, Eternal Maiden, but I must refuse, for I am already content.'";
+	otherwise:
+		continue the action.
+		
+
+When Sounio Beach Scene ends:
+	now the description of Sounio Beach is "As you journey south toward Cape Sounion, where the Temple of Poseidon stands, you find that the cape has become entirely submerged. What remains is a narrow beach, with a vast expanse of land now lying beneath the sea. On your west is the town of Sounio.".
 
 [doors]
 The sea is south of the sounio beach and up of underwater. It is an unopenable closed door. It is a scenery. 
@@ -1092,11 +1144,11 @@ The sounio beach is north of the sea. The underwater is down of the sea.
 [characters]
 
 
-Aktaia is a woman in sounio beach. She is undescribed.
-Erato is a woman in sounio beach. She is undescribed.
-Ploto is a woman in sounio beach. She is undescribed.
+Aktaia is a woman in sounio beach. She is undescribed. The description is "TODO".
+Erato is a woman in sounio beach. She is undescribed.The description is "TODO".
+Ploto is a woman in sounio beach. She is undescribed.The description is "TODO".
 
-Amphitrite is a woman in the sounio beach. Amphitrite can be sad or happy. Amphitrite is sad. She is undescribed. 
+Amphitrite is a woman in the sounio beach. Amphitrite can be sad or happy. Amphitrite is sad. She is undescribed. The description is "TODO".
 
 
 Every turn:
@@ -1118,7 +1170,7 @@ Instead of entering the sea: [the nereides are there to help you everytime if yo
 		say "You dive deep into the deep blue waters.";
 		continue the action;
 	otherwise if HasPoseidonBoon is false and AmphitriteIsHappy is true:
-		say "The nereides agree to take you to the sunken Temple.";
+		say "The nereides take you to the sunken Temple.TODO";
 		continue the action;
 	otherwise:
 		say "The temple looks like it's too deep. You can't go there with no help.";
@@ -1129,11 +1181,11 @@ Instead of entering the sea: [the nereides are there to help you everytime if yo
 [Start Of: poseidons temple]
 
 [temple trapdoor-> door to divine cell]
-A room called Temple of Poseidon is in Sounio. It is up of the temple trapdoor." As you enter the underwater temple of Poseidon, you are greeted by a mesmerizing sight. The water is crystal clear, allowing dancing beams of sunlight to filter through the surface above, casting just enough light to see across the temple’s interior. The structure is grand, yet the underwater environment adds a serene, almost otherworldly quality to the space.
+A room called Temple of Poseidon is in Sounio. It is up of the temple trapdoor."As you enter the underwater temple of Poseidon, you are greeted by a mesmerizing sight. The water is crystal clear, allowing dancing beams of sunlight to filter through the surface above, casting just enough light to see across the temple’s interior. The structure is grand, yet the underwater environment adds a serene, almost otherworldly quality to the space.
 
 In the center of the temple stands a massive column, intricately carved from marble, rising  from the temple floor. Around this column are four rotatable rings. The rings are crafted from shimmering metal, perhaps bronze, that glints in the filtered light.
 
-Before the column, along the temple floor, you notice a faint outline in the stone—a barely perceptible trapdoor."
+Before the column, along the temple floor, you notice a faint outline in the stone: a barely perceptible trapdoor."
 
 
 
@@ -1267,50 +1319,55 @@ test POS with "rotate the top ring anticlockwise/rotate the second ring anticloc
 
 [Start Of: Divine Cell of Demeter & Poseidon]
 
-The description of Divine Cell of Demeter & Poseidon is "TODO: description of Divine Cell of Demeter & Poseidon.".
 
 Divine Cell of Demeter & Poseidon Scene is a scene. Divine Cell of Demeter & Poseidon Scene begins when the player is in the temple of poseidon for the first time. Divine Cell of Demeter & Poseidon Scene ends when Goddess Demeter is awake and God Poseidon is awake.
 
 When Divine Cell of Demeter & Poseidon Scene begins:
-	now the description of Divine Cell of Demeter & Poseidon is "TODO: description of Divine Cell of Demeter & Poseidon scene. You see Demeter and Poseidon in a sleeping state.".
+	now the description of Divine Cell of Demeter & Poseidon is "As you descend through the trapdoor you see the room is (TODO think of room). There lie Demeter and Poseidon, bound by shadowy nether-forged chains, their bodies suspended in time. They appear unconscious. Their expressions are serene, though neutral.
+".
 	
 After talking to Demeter:
 	if Demeter is asleep:
-		say "Demeter is in a commatose state. She can't speak.";
+		say "Demeter seems to be in a suspended state. She can't speak.";
+		stop the action;
 	otherwise:
 		continue the action.
 		
 After talking to Poseidon:
 	if Poseidon is asleep:
-		say "Poseidon is in a commatose state. He can't speak.";
+		say "Poseidon seems to be in a suspended state. He can't speak.";
+		stop the action;
 	otherwise:
 		continue the action.
 
 After examining Poseidon:
 	if Poseidon is asleep:
-		say "Poseidon is in a commatose state.";
+		say "Poseidon seems to be in a suspended state.";
+		stop the action;
 	otherwise:
 		continue the action.
 		
 After examining Demeter:
 	if Demeter is asleep:
-		say "Demeter is in a commatose state.";
+		say "Demeter seems to be in a suspended state.";
+		stop the action;
 	otherwise:
 		continue the action.
 
 When Divine Cell of Demeter & Poseidon Scene ends:
+	now the description of Divine Cell of Demeter & Poseidon is "";
 	say "The gods wake up from their slumber. 'Thank you for saving us, niece. We wish to grand you our power.' [paragraph break]Choosing Demeter's wisdom will enable you to speak the language of the earth and choosing Poseidon[apostrophe] power will enable you to breath and see underwater. Which one do you want to choose?".
 	
 
 After reading a command when Demeter is awake and Poseidon is awake:
-	if Demeter is in Divine Cell of Demeter & Poseidon and the player's command includes "Demeter":
+	if Demeter is in Divine Cell of Demeter & Poseidon and the player's command includes "Demeter" or Demeter is in Divine Cell of Demeter & Poseidon and the player's command includes "Demeter's":
 		now HasDemeterBoon is true;
 		say "You chose the blessing of Demeter.";
 		say "The gods now go to olympus.";
 		now Demeter is in Mount Olympus Hall;
 		now Poseidon is in Mount Olympus Hall;
 		reject the player's command;
-	otherwise if Poseidon is in Divine Cell of Demeter & Poseidon and the player's command includes "Poseidon":
+	otherwise if Poseidon is in Divine Cell of Demeter & Poseidon and the player's command includes "Poseidon" or Poseidon is in Divine Cell of Demeter & Poseidon and the player's command includes "Poseidon's":
 		now HasPoseidonBoon is true;
 		say "You chose the blessing of Poseidon.";
 		say "The gods now go to olympus.";
@@ -1704,14 +1761,14 @@ When Divine Cell of Artemis & Apollo Scene ends:
 	say "The gods wake up from their slumber. 'Thank you for saving us, sister. We wish to grand you our power.' [paragraph break]Choosing Artemis Boom will enable you to todo? and choosing Apollo's power will enable you to todo? . Which one do you want to choose?".
 	
 After reading a command when Artemis is awake and Apollo is awake:
-	if Artemis is in Divine Cell of Artemis & Apollo and the player's command includes "Artemis":
+	if Artemis is in Divine Cell of Artemis & Apollo and the player's command includes "Artemis" or Artemis is in Divine Cell of Artemis & Apollo and the player's command includes "Artemis'":
 		now HasArtemisBoon is true;
 		say "You chose the blessing of Artemis.";
 		say "The gods now go to olympus.";
 		now Artemis is in Mount Olympus Hall;
 		now Apollo is in Mount Olympus Hall;
 		reject the player's command;
-	otherwise if Apollo is in Divine Cell of Artemis & Apollo and the player's command includes "Apollo":
+	otherwise if Apollo is in Divine Cell of Artemis & Apollo and the player's command includes "Apollo" or Apollo is in Divine Cell of Artemis & Apollo and the player's command includes "Apollo's":
 		now HasApolloBoon is true;
 		say "You chose the blessing of Apollo.";
 		say "The gods now go to olympus.";
@@ -2109,14 +2166,14 @@ When Divine Cell of Aphrodite & Hephaestus Scene ends:
 	say "The gods wake up from their slumber. 'Thank you for saving us, dear. We wish to grand you our power.' [paragraph break]Choosing Aphrodite's Boom will enable you to todo? and choosing Hephaestus[apostrophe] power will enable you to todo? . Which one do you want to choose?".
 	
 After reading a command when Aphrodite is awake and Hephaestus is awake:
-	if Aphrodite is in Divine Cell of Aphrodite & Hephaestus and the player's command includes "Aphrodite":
+	if Aphrodite is in Divine Cell of Aphrodite & Hephaestus and the player's command includes "Aphrodite" or Aphrodite is in Divine Cell of Aphrodite & Hephaestus and the player's command includes "Aphrodite's":
 		now HasAphroditeBoon is true;
 		say "You chose the blessing of Aphrodite.";
 		say "The gods now go to olympus.";
 		now Aphrodite is in Mount Olympus Hall;
 		now Hephaestus is in Mount Olympus Hall;
 		reject the player's command;
-	otherwise if Hephaestus is in Divine Cell of Aphrodite & Hephaestus and the player's command includes "Hephaestus":
+	otherwise if Hephaestus is in Divine Cell of Aphrodite & Hephaestus and the player's command includes "Hephaestus" or Hephaestus is in Divine Cell of Aphrodite & Hephaestus and the player's command includes "Hephaestus'":
 		now HasHephaestusBoon is true;
 		say "You chose the blessing of Hephaestus.";
 		say "The gods now go to olympus.";
@@ -2184,6 +2241,13 @@ Instead of pushing something:
 	otherwise:
 		continue the action.
 		
+Instead of going down when the player is in Prytaneion:
+	if the hidden trapdoor is interactable:
+		continue the action;
+	otherwise:
+		say "You can't go that way.";
+		stop the action.
+
 
 Instead of pulling the pine table:
 	if the pine table is unpushed:
@@ -2252,7 +2316,7 @@ A snuffer is an undescribed thing inside the prytaneion. Understand "flame snuff
 
 
 [torches]
-A first torch is a kind of flame. There is a first torch inside the prytaneion. Understand "1st torch" or "torch 1" as first torch. It is fixed in place. It is undescribed.
+A first torch is a kind of flame. There is a first torch inside the prytaneion. Understand "1st torch" or "torch 1" or "far left torch" as first torch. It is fixed in place. It is undescribed.
 A second torch is a kind of flame. There is a second torch inside the prytaneion. Understand "2nd torch"  or "torch 2" as second torch. It is fixed in place. It is undescribed.
 A third torch is a kind of flame. There is a third  torch inside the prytaneion. Understand "3rd torch" or "torch 3" as third torch. It is fixed in place. It is undescribed.
 A fourth torch is a kind of flame. There is a fourth torch inside the prytaneion. Understand "4th torch" or "torch 4" as fourth torch. It is fixed in place. It is undescribed.
@@ -2268,7 +2332,7 @@ A twelfth torch is a kind of flame. There is a twelfth torch inside the prytanei
 A thirteenth torch is a kind of flame. There is a thirteenth torch inside the prytaneion.Understand "13th torch" or "torch 13" as thirteenth torch. It is fixed in place. It is undescribed.
 A fourteenth torch is a kind of flame. There is a fourteenth torch inside the prytaneion.Understand "14th torch" or "torch 14" as fourteenth torch. It is fixed in place.It is undescribed.
 A fifteenth torch is a kind of flame. There is a fifteenth torch inside the prytaneion.Understand "15th torch" or "torch 15" as fifteenth torch. It is fixed in place.It is undescribed.
-A sixteenth torch is a kind of flame. There is a sixteenth torch inside the prytaneion.Understand "16th torch" or "torch 16" as sixteenth torch. It is fixed in place. It is undescribed.
+A sixteenth torch is a kind of flame. There is a sixteenth torch inside the prytaneion.Understand "16th torch" or "torch 16" or "far right torch"as sixteenth torch. It is fixed in place. It is undescribed.
 
 
 [bring close to fire action]
@@ -2295,6 +2359,7 @@ Instead of bringing something close to the hearth:
 Instead of burning something:
 	if the portable torch is not carried by the player:
 		try taking the portable torch;
+		try burning the portable torch;
 	if the noun is an unlit flame:
 		say "You lighted [the noun] using the portable torch.";
 		now the noun is lit;
@@ -2306,6 +2371,11 @@ Instead of burning something:
 		stop the action;
 	otherwise:
 		continue the action.
+		
+Instead of burning the portable torch:
+	say "[first time] You put the torch into the sacred fire, lighting it.[only]The portable torch is already lit.";
+	continue the action.
+	
 		
 Putting out something is an action applying to one touchable thing. Understand "Put out [something]" or "put [something] out" or "extinguish [something]" or "blow out [something]" or "blow [something] out"  as putting out something.
 
@@ -2322,8 +2392,12 @@ Instead of putting out something:
 	otherwise if the noun is the hearth:
 		say "The hearth flames are too strong; the flame snuffer isn't enough to extinguish them!";
 		stop the action;
+	otherwise if the noun is the portable torch:
+		say "It looks like you will need this lit for a while, let's keep it that way.";
+		stop the action;
 	otherwise:
-		continue the action.
+		say "This doesn't make any sense.";
+		stop the action.
 		
 Before exiting:
 	If the player is in Prytaneion and the player is carrying the snuffer and the player is not carrying the portable torch:
@@ -2385,18 +2459,18 @@ Instead of taking scrolls:
 	stop the action.
 
 [invisible ink scroll]
-An empty scroll is a thing on the pine table. The description is "An empty scroll. Smells citrusy.". The empty scroll has a smell. The smell of the empty scroll is citrusy. It is scenery. [invisible ink] Understand "empty papyrus scroll" as empty scroll.
+An empty scroll is a thing on the pine table. The description is "An empty scroll. Smells citrusy.". The empty scroll has a smell. The smell of the empty scroll is citrusy.  [invisible ink] Understand "empty papyrus scroll" as empty scroll.
 
 
 
 [wax tablet]
-A wax tablet is a thing on the pine table. It is scenery. The description is "_  _ _ _ _  _ _ _ _ _ _  _ _ _ _  _ _ _ _ _  _ _.  _ _ _ _ _  _ _  _ _ _ _ _  _ _  _ _ _  _ _ _ _  _ _ _  _ _ _ _  _ _. [paragraph break][fixed letter spacing]S QWJC WOEBQCD  BCTB  PONCD UC. FDSOA  UC GZEIC BE BQC  VSDC WON  DCWN SB.". [cryptogram:I have another text under me. Bring me close to the fire and read it.]
+A wax tablet is a thing on the pine table. The description is "_  _ _ _ _  _ _ _ _ _ _  _ _ _ _  _ _ _ _ _  _ _.  _ _ _ _ _  _ _  _ _ _ _ _  _ _  _ _ _  _ _ _ _  _ _ _  _ _ _ _  _ _. [paragraph break][fixed letter spacing]S QWJC WOEBQCD  BCTB  PONCD UC. FDSOA  UC GZEIC BE BQC  VSDC WON  DCWN SB.". [cryptogram:I have another text under me. Bring me close to the fire and read it.]
 
 [papyrus scroll]
-A papyrus scroll is a thing on the pine table. It is scenery.  The description is "On the scroll you read: Ortsg gsv hrcgs, gsv hvevmgs zmw gsv vrtsgs glixsvh.". [atbash cipher: Light the sixth, the seventh and the eighth torches ]
+A papyrus scroll is a thing on the pine table.  The description is "On the scroll you read: Ortsg gsv hrcgs, gsv hvevmgs zmw gsv vrtsgs glixsvh.". [atbash cipher: Light the sixth, the seventh and the eighth torches ]
 
 [leather parchment]
-A parchment scroll is a thing on the pine table. It is scenery. The description is "On the parchment you read: Nkijv vjg ugeqpf cpf vjktf vqtejgu.". [Caesar cipher with ROT2: Light the second and third torches]
+A parchment scroll is a thing on the pine table. The description is "On the parchment you read: Nkijv vjg ugeqpf cpf vjktf vqtejgu.". [Caesar cipher with ROT2: Light the second and third torches]
 
 
 [solution]
@@ -2477,9 +2551,7 @@ test fire with "light second torch/light third torch/ light sixth torch/ light s
 Divine Cell of Hestia & Hermes is a room. It is down of the hidden trapdoor. 
 
 
-The description of Divine Cell of Hestia & Hermes  is "TODO: description of Divine Cell of Hestia & Hermes.".
-
-Divine Cell of Hestia & Hermes Scene is a scene. Divine Cell of Hestia & Hermes Scene begins when the player is in Divine Cell of Hestia & Hermes for the first time. Divine Cell of Hestia & Hermes Scene ends when Goddess Hestia is awake and God Hermes is awake.
+Divine Cell of Hestia & Hermes Scene is a scene. Divine Cell of Hestia & Hermes Scene begins when the player is in Prytaneion for the first time. Divine Cell of Hestia & Hermes Scene ends when Goddess Hestia is awake and God Hermes is awake.
 
 When Divine Cell of Hestia & Hermes Scene begins:
 	now the description of Divine Cell of Hestia & Hermes is "TODO: description of Divine Cell of Hestia & Hermes scene. You see the Hestia & Hermes in a sleeping state.".
@@ -2509,17 +2581,18 @@ After examining Hermes:
 		continue the action.
 
 When Divine Cell of Hestia & Hermes Scene ends:
+	now the description of Divine Cell of Hestia & Hermes is "TODO: description of Divine Cell of Hestia & Hermes.";
 	say "The gods wake up from their slumber. 'Thank you for saving us, dear. We wish to grand you our power.' [paragraph break]Choosing Hestia's Boom will enable you to todo? and choosing Hermes[apostrophe] power will enable you to todo? . Which one do you want to choose?".
 	
 After reading a command when Hestia is awake and Hermes is awake:
-	if Hestia is in Divine Cell of Hestia & Hermes and the player's command includes "Hestia":
+	if Hestia is in Divine Cell of Hestia & Hermes and the player's command includes "Hestia" or Hestia is in Divine Cell of Hestia & Hermes and the player's command includes "Hestia's":
 		now HasHestiaBoon is true;
 		say "You chose the blessing of Hestia.";
 		say "The gods now go to olympus.";
 		now Hestia is in Mount Olympus Hall;
 		now Hermes is in Mount Olympus Hall;
 		reject the player's command;
-	otherwise if Hermes is in Divine Cell of Hestia & Hermes and the player's command includes "Hermes":
+	otherwise if Hermes is in Divine Cell of Hestia & Hermes and the player's command includes "Hermes" or Hermes is in Divine Cell of Hestia & Hermes and the player's command includes "Hermes'":
 		now HasHermesBoon is true;
 		say "You chose the blessing of Hermes.";
 		say "The gods now go to olympus.";
@@ -2667,10 +2740,10 @@ Chapter 8 - Mapping & Transportation
 [The player is in Northen Gates of Athens.]
 
 [Ports]
-Port of Piraeus is a room in Athens. "To the northeast you can see the city of Athens. [paragraph break]From here you can sail to: [line break]→ Paphos[line break]→ Garden of Hesperides".
-Port of Sounio is a room in Sounio. "To the north you can see the city of Sounio. [paragraph break]From here you can sail to: [line break]→ Aulis[line break]→ Garden of Hesperides".
-Port of Paphos is a room in Paphos. "To the east you can see the city of Paphos.[paragraph break] The main port of the city of Paphos. [paragraph break]From here you can sail to: [line break]→ Piraeus[line break]→ Garden of Hesperides".
-Port of Aulis is a room in Aulis. "To the west you can see the city of Aulis. [paragraph break]From here you can sail to: [line break]→ Sounio[line break]→ Garden of Hesperides".
+Port of Piraeus is a room in Athens. "To the northeast you can see the city of Athens. [paragraph break]From here you can sail to: [line break]→ Paphos[line break]→ Garden of the Hesperides".
+Port of Sounio is a room in Sounio. "To the north you can see the city of Sounio. [paragraph break]From here you can sail to: [line break]→ Aulis[line break]→ Garden of the Hesperides".
+Port of Paphos is a room in Paphos. "To the east you can see the city of Paphos.[paragraph break] The main port of the city of Paphos. [paragraph break]From here you can sail to: [line break]→ Piraeus[line break]→ Garden of the Hesperides".
+Port of Aulis is a room in Aulis. "To the west you can see the city of Aulis. [paragraph break]From here you can sail to: [line break]→ Sounio[line break]→ Garden of the Hesperides".
 
 [Stables-City Gates]
 Northen Gates of Athens is a room in Athens. "To the south you can see the city of Athens. [paragraph break]From here you can travel to: [line break]→ Thebes[line  break]→ Aulis[line  break]→ Delphi[line  break]→ Ephyra[line  break]→ Mount Olympus".
@@ -2751,15 +2824,15 @@ Port of Paphos sails to Port of Piraeus.
 Port of Sounio sails to Port of Aulis.
 Port of Aulis sails to Port of Sounio.
 
-Port of Piraeus sails to Garden of Hesperides.
-Port of Paphos sails to Garden of Hesperides.
-Port of Sounio sails to Garden of Hesperides.
-Port of Aulis sails to the Garden of Hesperides.
+Port of Piraeus sails to Garden of the Hesperides.
+Port of Paphos sails to Garden of the Hesperides.
+Port of Sounio sails to Garden of the Hesperides.
+Port of Aulis sails to the Garden of the Hesperides.
 
-Garden of Hesperides sails to Port of Paphos.
-Garden of Hesperides sails to Port of Piraeus.
-Garden of Hesperides sails to Port of Aulis.
-Garden of Hesperides sails to Port of Sounio.
+Garden of the Hesperides sails to Port of Paphos.
+Garden of the Hesperides sails to Port of Piraeus.
+Garden of the Hesperides sails to Port of Aulis.
+Garden of the Hesperides sails to Port of Sounio.
 
 [Traveling action]
 Traveling is an action applying to one visible thing.
