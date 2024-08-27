@@ -12,12 +12,13 @@ Release along with cover art.
 [TODO: make things in descriptions interractable]
 [TODO: fix/add descriptions to everything<3]
 [TODO: talk action]
+[TODO: integrade divine boons]
+[TODO: integrade the club of hercules]
+
 [TODO: fix dialog in divine cells]
 [TODO: complete investigate action descriptions]
 [TODO: update help command]
 [TODO: combat system - talos and kronos]
-[TODO: integrade divine boons]
-[TODO: integrade the club of hercules]
 [TODO: go to -> try travel/sail/go in]
 [TODO: add values, like smell, to every item]
 [TODO: put random buildings inside cities]
@@ -64,7 +65,7 @@ When play begins:
 	the SunPocketCloses at 12:10 pm;
 	the MoonPocketOpens at 12:00 am;
 	the MoonPocketCloses at 12:10 am;
-	say "[bold type]Instructions: [roman type][paragraph break]Welcome to Hebe, my Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. If at any point you need help, type help into the console. Have fun and thank you for playing!";
+	say "[bold type]Instructions: [roman type][paragraph break]Welcome to Hebe, my Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. If at any point you need help, type 'help' or 'h' into the console. Have fun and thank you for playing!";
 
 
 Chapter 0.20 - Kinds & Values
@@ -75,7 +76,7 @@ Chapter 0.20 - Kinds & Values
 A colour is a kind of value. The colours are white, red, purple and yellow.
 
 [smell]
-A smell is a kind of value. The smells are neutral, amazing, good, citrusy, like roses  and bad. The smell is usually neutral. [TODO: Give a smell to everything]
+A smell is a kind of value. The smells are neutral, amazing, good, citrusy, like roses  and bad. The smell is usually neutral. 
 
 [ring face]
 A ring face is a kind of value. The ring faces are adeio, spring, summer, fall and winter. A ring face is usually adeio.
@@ -131,7 +132,7 @@ Every turn when cash is greater than 0:
 Every turn when cash <= 0:
 	remove obols from play.
 	
-Understand "obol" as obols when cash is 1.
+Understand "obol" as obols.
 	
 Instead of examining obols:
 	say "The currency Charon accepts for the ride.";
@@ -226,11 +227,27 @@ Instead of smelling something:
 [rotating]
 Rotating is an action applying to one thing. Understand "rotate [any thing] clockwise" or "rotate the [any thing] clockwise" or "rotate clockwise the [any thing]" or "rotate the [any thing] to the left" or "rotate [any thing] to the left" or "rotate [any thing]" or "turn [anything]" as rotating.
 
+Instead of rotating something:
+	if the noun is a person:
+		say "You can't rotate a person!";
+		stop the action.
+	
 Antirotating is an action applying to one thing. Understand "rotate [any thing] anticlockwise" or "rotate the [any thing] anticlockwise" or "rotate anticlockwise the [any thing]" or "rotate [any thing] counterclockwise" or "rotate the [any thing] counterclockwise" or "rotate counterclockwise the [any thing]"or "rotate the [any thing] to the right" or "rotate [any thing] to the right" or "turn [any thing] counterclockwise" or "turn [any thing] anticlockwise" as antirotating. 
 
+[dropping]
+Instead of dropping something:
+	if the noun is a person:
+		say "You can't drop a person!";
+		stop the action.
 
 [giving]
 The block giving rule is not listed in any rulebook.
+
+Instead of giving something to someone:
+	if the noun is the Eternal Chalice of Nectar:
+		try nectarizing second noun;
+	otherwise:
+		continue the action.
 
 [talking]
 
@@ -242,6 +259,7 @@ The block giving rule is not listed in any rulebook.
 	try sailing the noun;
 	continue the action.
 ]
+
 
 [sitting]
 Understand the command "sit" as something new.
@@ -258,30 +276,35 @@ carry out sitting:
 		say "You simply cannot sit there!".
 
 [giving nectar to person]
-Instead of giving nectar to something:
-	if the second noun is mortal:
-		say "You can't decide to make people immortal so easily. Think of the consequences!";
-		stop the action;
-	else if the second noun is awake:
-		say "[second noun] doesn't look like [they] needs more nectar right now.";
-		stop the action;
-	else if the second noun is asleep:
-		say "You gave nectar to [second noun].";
-		now the second noun is awake;
-	else if the Eternal Chalice of Nectar is not carried by the player:
-		say "You don't have any nectar on you right now.";
-		stop the action;
-	else if the second noun is not a person:
+
+nectarizing is an action applying to one visible thing. Understand  "give nectar to [something]" or "give nectar to [someone]" as nectarizing.
+
+check nectarizing:
+	if the noun is not a person:
 		say "You can't give nectar to inanimate objects.";
 		stop the action.
+
+Instead of nectarizing someone:
+	if the noun is mortal:
+		say "You can't decide to make people immortal so easily. Think of the consequences!";
+		stop the action;
+	else if the noun is awake:
+		say "[noun] doesn't look like [they] needs more nectar right now.";
+		stop the action;
+	else if the noun is asleep:
+		say "You carefuly spill some nectar in the mouth of [noun].";
+		now the noun is awake;
+	else if the Eternal Chalice of Nectar is not carried by the player:
+		say "You don't have any nectar on you right now.";
+		stop the action.
+	 
 	
-		
 [sacrificing]
 Sacrificing is an action applying to one carried thing. Understand "sacrifice [something]" as sacrificing.
 
 check sacrificing:
 	If an necromanteion altar is not in the location:
-		say "The only gods that can see your sacrifice right now are the Cthonians. You will need to go to the Necromanteion.";
+		say "The only gods that can see your sacrifice right now are only the Cthonians. You will need to go to the Necromanteion.";
 		stop the action;
 	If the noun is Heracles' Club:
 		say "You shouldn't sacrifice something that isn't yours to sacrifice.";
@@ -294,7 +317,7 @@ check sacrificing:
 		stop the action.
 		
 carry out sacrificing:
-	say "You put the [noun] on the altar and, with the help of the Priestess, you light it on fire. [one of]Hades[or]Persephone[or]Nyx[or]Thanatos [as decreasingly likely outcomes] acknowledges you.";
+	say "You put the [noun] on the altar and, with the help of the Priestess, you grind it and light it on fire. [one of]Hades[or]Persephone[or]Nyx[or]Thanatos [as decreasingly likely outcomes] acknowledges you.";
 	now the noun is nowhere;
 	increase the cash by 1.
 	
@@ -312,13 +335,17 @@ Instead of investigating:
 	else if the player is in Prytaneion:
 		say "In the open Prytaneion hall you see the sacred hearth of Hestia, a pine dining table with matching pine chairs and [a list of things on top of pine table] on top of it. [if chair is not pushed and table is not pushed]Bellow the table and chairs is a red carpet.[otherwise]There is also a red carpet in the hall.[end if][line break]There are also 8 torches on either side of the hearth, forming a semicircle around the dining area.[if the hidden trapdoor is interactable].[line break]You also see a trapdoor on the ground.[end if]";
 	[TODO: fill here]
+	else if the player is in Mount Olympus Hall:
+		say "In the Mount Olympus you can see the thrones of the gods. [if the player is not carrying the heracles' club]The club of Heracles is leaning against one of them.[end if] The area is also decorated with columns, carpets and chandeliers.[if Olympus Hall Celebration Scene has not ended]There are delicacies in every corner. A troupe is perfoming the Twelve Labours of Heracles in the middle of the hall.";
+	else if the player is in the temple of poseidon:
+		say "In the middle of the temple you see a column with four bronze rings on. There is also an altar and a trapdoor.";
 	else if the player is in the Secret Garden:
 		say "In the Secret Garden you see a statue of a man, a lake, an olive tree and some flowerbeds with red, purple and orange flowers. In the perfume-making area there are some ceramic amphorae and a gate.";
 	else:
 		say "There isn't much to investigate here.".
 
 [help action]
-Helping is an action applying to nothing. Understand "help" as helping.
+Helping is an action applying to nothing. Understand "help" or "h" as helping.
 
 Carry out helping:
 	say "[line break][bold type]Basic Commands[roman type][line break]";
@@ -327,9 +354,10 @@ Carry out helping:
 	say "   • Directions include: north, south, east, west, northeast, northwest, southeast, southwest, up, and down.[line break]";
 	say "   • You can also use the shortcuts n, s, e, w, ne, nw, se, sw, u and d.[line break]";
 	say "[line break][bold type]2. Interaction Commands:[roman type][line break][line break]";
-	say "   • Look: Examine your surroundings. Example: 'look', 'look around', 'l'.[line break]";
+	say "   • Look: Examine your surroundings. Example: 'look', 'l'.[line break]";
 	say "   • Examine [ bracket]object[close bracket]: Inspect an item in detail. Example: 'examine book', 'x book'.[line break]";
 	say "   • Check [ bracket]torches[close bracket]: Examine the status of all the torches in Prytaneion.[line break]";
+	say "   • Check [ bracket]rings[close bracket]: Examine the status of all the rings in Temple of Poseidon.[line break]";
 	say "   • Take [ bracket]object[close bracket]: Pick up an item. Example: 'take key'.[line break]";
 	say "   • Drop [ bracket]object[close bracket]: Put down an item. Example: 'drop book'.[line break]";
 	say "   • Put [ bracket]object[close bracket] on/in [ bracket]object[close bracket]: Put an item on top or inside another item. Example: 'put flower in pot'.[line break]";
@@ -363,10 +391,10 @@ Chapter 0 - Tutorial 1
 [scenes]
 Olympus Hall Celebration Scene is a scene. 
 Olympus Hall Celebration Scene begins when the player is in Mount Olympus Hall for the first time.
-Olympus Hall Celebration Scene ends when giving the Heracles' Club to heracles. [TODO: end when taking nectar?]
+Olympus Hall Celebration Scene ends when giving the Heracles' Club to heracles. 
 
 Kronos Scene is a scene. Kronos Scene begins when Olympus Hall Celebration Scene ends.
-Kronos Scene ends when the time since Kronos Scene began is 1 minutes. [maybe 1]
+Kronos Scene ends when the time since Kronos Scene began is 1 minutes. 
 
 
 [Room Description]
@@ -376,7 +404,7 @@ Mount Olympus Hall is a room.
 
 [Items in the room]
 
-Heracles' Club is a thing in Mount Olympus Hall. It is undescribed. the indefinite article is "the". Understand "club of heracles" as heracles' club.
+Heracles' Club is a thing in Mount Olympus Hall. It is undescribed. the indefinite article is "the". Understand "club of heracles" as heracles' club. The description is "The club of Heracles is a massive, gnarled wooden club with a rough, splintered surface, bearing the marks of countless battles and imbued with a legendary aura of strength. [if Heracles' Club is carried by the player]And now it's in your arms. Take good care of it.".
 
 
 [Characters in the room]
@@ -413,6 +441,7 @@ When Olympus Hall Celebration Scene begins:
 	now Ganymedes is in Mount Olympus Hall;
 	now Aphrodite is in Mount Olympus Hall;
 	now Artemis is in Mount Olympus Hall;
+	now Dionysus is in Mount Olympus Hall;
 	now Athena is in Mount Olympus Hall;
 	now Demeter is in Mount Olympus Hall;
 	now Hera is in Mount Olympus Hall;
@@ -423,13 +452,37 @@ Instead of going down during Olympus Hall Celebration Scene:
 	say "You wouldn't want to leave and miss any of the festivities!";
 	stop the action.
 	
+Instead of sleeping during Olympus Hall Celebration Scene:
+	say "You wouldn't want to sleep and miss any of the festivities!";
+	stop the action.
+	
+Instead of waiting during Olympus Hall Celebration Scene:
+	say "You shouldn't zone out during the festivities!";
+	stop the action.
+	
+Instead of giving something to someone during Olympus Hall Celebration Scene:
+	if the second noun is Heracles:
+		if the noun is Heracles' Club:
+			say "He smiles at you. 'Thank you, my dearest.'";
+			continue the action;
+		otherwise:
+			say "Heracles says, 'I am grateful, my dearest, but I think you might need this more than I.'";
+			continue the action;
+	otherwise:
+		if the noun is Heracles' Club:
+			say "[Second noun] shakes [their] head. 'Thank you, but I feel like this isn't meant for me.'";
+			stop the action;
+		otherwise:
+			say "[Second noun] thanks you.";
+			continue the action.
 
-Instead of giving something to Heracles during Olympus Hall Celebration Scene:
+[Instead of giving something to Heracles during Olympus Hall Celebration Scene:
 	If the noun is Heracles' Club:
 		say "He smiles at you. 'Thank you my dearest.'";
 		continue the action;
 	otherwise:
-		say "Hercules says 'I am grateful my dearest, but I think you might need this more than I.".
+		say "Hercules says 'I am grateful my dearest, but I think you might need this more than I.".	
+]
 
 [every n  turn hercules asks for his club]
 Turn counter is a number that varies. Turn counter is 0.
@@ -437,7 +490,7 @@ Turn counter is a number that varies. Turn counter is 0.
 Every turn during Olympus Hall Celebration Scene:
 	increment the turn counter;
 	 if the remainder after dividing turn counter by 5 is 0:
-		say "[one of]You hear the voice of Heracles. 'Hey dearest, could you get my club here? It's in the room. Let's show those actors how it's really done!'[or]Heracles talks to you again. 'Reminder to bring me my club when possible, dearest! It's in the room.'[stopping]" [TODO: fix "the room"]
+		say "[one of]You hear the voice of Heracles. 'Hey dearest, could you get my club here? It's over there, by the thrones. Let's show those actors how it's really done!'[or]Heracles talks to you again. 'Reminder to bring me my club when possible, dearest! It's over there, by the thrones.'[stopping]" 
 
 	
 
@@ -485,7 +538,7 @@ Instead of examining Hestia during Olympus Hall Celebration Scene:
 	say "".
 	
 Instead of examining Hera during Olympus Hall Celebration Scene:
-	say "".
+	say "She a beaut<3".
 
 
 Instead of looking for the 1st time during the Olympus Hall Celebration Scene:
@@ -503,8 +556,7 @@ The Twelve Olympians were all in attendance, their mighty forms gracing the hall
 Everywhere you looked, there was movement, life, and joy. The gods, unbound by the cares of the mortal world, indulged in the pleasures of the moment, their spirits lifted by the music, the food, and the company. The hall of Olympus had never shined brighter, a fitting tribute to the divine couple.";
 		stop the action;
 	otherwise:
-		continue the action.
-		
+		continue the action.	
 
 When Olympus Hall Celebration Scene ends:
 	now the turn counter is 0.
@@ -520,9 +572,9 @@ In one you see the Titanomachia, the epic war between the Olympian gods and the 
 
 Directly above the thrones is the crowning glory of the ceiling—the Triumph of Olympus. In this radiant composition, the gods are depicted in a celestial assembly, each seated on a cloud of purest white, their divine forms larger-than-life. It's basically a family drawing.". Understand "painting" or "paintings" as ceiling painting when the player is in Mount Olympus Hall.
 
-A throne is scenery in Mount Olympus Hall. The description is "Crafted from solid gold, each throne is a masterpiece of divine artistry, radiating an aura of unmatched power and authority. The gold gleams with a lustrous glow, catching the light from the surrounding torches and reflecting it in brilliant, shimmering waves that dance across the hall.". Understand "thrones" as throne.
+A throne is scenery in Mount Olympus Hall. The description is "Crafted from solid gold, each throne is a masterpiece of divine artistry, radiating an aura of unmatched power and authority. The gold gleams with a lustrous glow, catching the light from the surrounding torches and reflecting it in brilliant, shimmering waves that dance across the hall.[if the player is not carrying the heracles' club] The club of Heracles is leaning against one of the thrones.". Understand "thrones" as throne.
 
-A handwoven carpet is scenery in Mount Olympus Hall. The description is "The floor of the Mount Olympus Hall is decorated with masterfully crafted handwoven carpets, each a testament to the artistry and skill of the divine weavers who created them. These carpets, more than mere decoration, are woven with threads of gold, silver, and the finest silks, their intricate patterns telling stories as old as time itself.". Understand "carpet"  as handwoven carpet when the player is in Mount Olympus Hall.
+A handwoven carpet is scenery in Mount Olympus Hall. The description is "The floor of the Mount Olympus Hall is decorated with masterfully crafted handwoven carpets, each a testament to the artistry and skill of the divine weavers who created them. These carpets, more than mere decoration, are woven with threads of gold, silver, and the finest silks, their intricate patterns telling stories as old as time itself.". Understand "carpet" or "carpets"  as handwoven carpet when the player is in Mount Olympus Hall.
 
 A chandelier is scenery in Mount Olympus Hall. The description is "Each chandelier is composed of multiple tiers, descending in concentric circles that grow larger as they reach down toward the hall below. The gold of the chandeliers is polished to a mirror-like finish, reflecting and amplifying the light in all directions. The arms of the chandeliers curve gracefully, resembling the branches of a sacred tree, each one ending in a delicate cluster of crystal orbs that resemble radiant stars.". Understand "chandeliers" or "golden chandelier" or "golden chandeliers" as chandelier.
 
@@ -530,6 +582,7 @@ A delicacy is scenery in Mount Olympus Hall. The description is "Golden platters
 
 A performance is scenery in Mount Olympus Hall. The description is "The troupe is now performing the Stymphalian Birds labour, the birds represented by a group of aerial performers who soared above the hall, their wings, crafted from layers of silken feathers, catching the light as they dipped and dived, their movements synchronized in a display of aerial acrobatics that have the audience cheering.". Understand "troupe" or "troup of performers" or "play" as performance.
 
+A nectar is scenery in Mount Olympus Hall. [TODO: make description maybe]
 
 [Kronos Scene]
 When Kronos Scene begins:
@@ -542,10 +595,9 @@ The voice was unmistakable, deep and resonant, carrying an ancient power that se
 
 The sight of the Titan, towering and menacing, shrouded in shadows, struck fear into the hearts of all present. You start to feel the ichor in your divine veins turn cold, as if time itself was freezing. The gods, normally so mighty and formidable, stand paralyzed in shock. Nothing moves. In a heartbeat, you break free from the daze and come to your senses. Your next actions have never been more certain. It's now or never. 
 
-You grab Heracle's club out of his hands and leap towards Kronos. Then you feel yourself slipping into unconciousness.".[The last thing you remember before slipping into unconciousness]
+You grab Heracle's club out of his hands and leap towards Kronos. Then you feel yourself slipping into unconciousness."
 
 When Kronos Scene ends:
-	[say "Kronos Scene ended";]
 	now the description of Mount Olympus Hall is "Olympus Hall Destruction Description";
 	now the god Heracles is in Asphodel Meadows;
 	now Heracles is asleep;
@@ -585,14 +637,14 @@ Chapter 0.9 - Other Rooms
 
 The Garden of Hesperides is a room in Greece. 
 
-Eternal Chalice of Nectar is a thing in Garden of Hesperides. the indefinite article is "the". The description is "The Eternal Chalice of Nectar is a legendary goblet crafted by Hephaestus from shimmering gold, embellished with intricate engravings of vines and blossoms. The chalice can provide an infinite supply of nectar at any moment.". It is undescribed.
+Eternal Chalice of Nectar is a thing in Garden of Hesperides. the indefinite article is "the". The description is "The Eternal Chalice of Nectar is a legendary goblet crafted by Hephaestus from shimmering gold, embellished with intricate engravings of vines and blossoms. The chalice can provide an infinite supply of nectar at any moment. It was once your symbol of duty as the former cupbearer of the gods". It is undescribed.
 
 The Garden of Hesperides Scene is a scene. Garden of Hesperides Scene begins when Kronos Scene ends. 
 
 The Garden of Hesperides Scene ends when the time since Garden of Hesperides Scene began is 0 minutes.
 
 When Garden of Hesperides Scene begins:
-	now the description of Garden of Hesperides is "You slowly regain consciousness, greeted by the soft rustling of leaves of a tranquil garden. As your eyes flutter open, you find yourself surrounded by four enchanting ny+mphs. Their expressions are a mix of deep concern and immense relief, as if they’ve been holding their breath waiting for this moment. You instantly recognise Aigle, Arethousa, Erytheia and Hesperie, the nymphs of the evening known as Hesperides, guardians of Hera's orchard.
+	now the description of Garden of Hesperides is "You slowly regain consciousness, greeted by the soft rustling of leaves of a tranquil garden. As your eyes flutter open, you find yourself surrounded by four enchanting nymphs. Their expressions are a mix of deep concern and immense relief, as if they’ve been holding their breath waiting for this moment. You instantly recognise Aigle, Arethousa, Erytheia and Hesperie, the nymphs of the evening known as Hesperides, guardians of Hera's orchard.
 
 'Hebe, it’s been almost two weeks!' Arethousa exclaims, her voice a blend of worry and joy. 'We were all so anxious for you to wake up.'
 
@@ -619,7 +671,18 @@ In the heart of the garden stands the sacred tree of the Hesperides, its branche
 
 The story goes that Gaia gifted Hera with branches of golden apples as a wedding present, and Hera, deeply admiring them, begged Gaia to plant them in her garden.
 
+The garden was your sanctuary once, where you spent countless hours alongside the Hesperides crafting nectar and bonding. Though you no longer visit it as often, it continues to protect you, just as it did during Kronos's attack on Olympus.
+
 From here you can sail to: [line break]→ Piraeus[line break]→ Sounio[line break]→ Aulis[line break]→ Paphos".
+
+[scenery]
+The sacred tree of Hesperides is scenery in Garden of Hesperides. The description is "The tree is the soul of the garden, its golden apples gleaming among the green leaves. The garden’s essence flows from it, infusing the air with a sense of timeless peace.". Understand "tree" as The sacred tree of Hesperides when the player is in Garden of Hesperides.
+
+The golden apple is an undescribed thing in Garden of Hesperides. The description is "Golden apples hang from the tree, their surface shimmering with a soft, radiant aura. Their skin is smooth and flawless, catching the light in a way that makes it appear almost liquid, as if the fruits themselves are molded from pure sunlight.".
+
+Instead of taking the golden apple:
+	say "You alread have enough nectar, you don't need a golden apple right now";
+	stop the action.
 
 
 Aigle is a woman in Garden of Hesperides. The description is "Aigle radiates with a golden glow, her hair like cascading sunlight, and her eyes shimmering like the first light of dawn. She is the embodiment of brightness and warmth, her presence illuminating the garden with a serene, golden aura.". She is undescribed.
@@ -705,7 +768,11 @@ Chapter 1- Athena & Ares
 
 [Start Of: Heroon of Kadmos]
 [rooms]
-Kadmea is a room in Thebes. "The famous acropolis of Thebes.[line break][line break]You can see the Palace of Kadmea and the Heroon of Kadmos here."
+Kadmea is a room in Thebes. "The mamagnificent acropolis of Thebes, standing proudly atop the city. 
+
+The Palace of Kadmea stands tall, its stone walls solid and plain, a functional seat of power rather than a place of grandeur. The palace serves as the administrative center, where rulers conduct the daily governance of Thebes.
+
+There, you also notice the Heroon of Kadmos, a modest shrine dedicated to the city's legendary founder. This small sanctuary, though simple, holds great significance for the people of Thebes. The legend goes that Kadmos founded this very city after slaying a dragon and sowing its teeth into the earth, turning them into people."
 
 Palace of Kadmea is a room in Thebes. 
 Instead of entering Palace of Kadmea:
@@ -764,7 +831,8 @@ The dragon head is part of the dragon statue. The dragon head is a supporter. Ι
 
 A dragon mouth is part of the dragon statue. The  dragon mouth is an unopenable closed  container. 
 
-A dragon tooth is a kind of seed. The plural of dragon tooth is dragon teeth. There are 6 dragon teeth inside the dragon mouth. [TODO: instead of for taking more teeth than they exist]
+A dragon tooth is a kind of seed. The plural of dragon tooth is dragon teeth. There are 6 dragon teeth inside the dragon mouth. 
+
 
 Every turn:
 	If the rock is on the dragon head:
@@ -783,7 +851,10 @@ Every turn:
 Instead of examining the dragon statue:
 	say "A small statue depicting a dragon. It is masterfully sculpted, with meticulous attention evident in every detail. Each scale is rendered with such precision that they appear almost lifelike, giving the dragon a sense of realism. ";
 	if there are seeds inside the mouth:
-		say "[If the dragon mouth is open][line break][line break] You see [number of seeds inside the dragon mouth] tooth inside the statue's mouth.[otherwise][line break][line break]The statue's mouth is closed."; [TODO: fix tooth singular]
+		if the dragon mouth is open:
+			say "[line break][line break]You see [number of seeds inside the dragon mouth] [if there is exactly 1 seed inside the dragon mouth]tooth[otherwise]teeth[end if] inside the statue's mouth.";
+		otherwise if the dragon mouth is closed:	
+			say "[line break][line break]The statue's mouth is closed."; 
 		stop the action;
 	otherwise:
 		say "[If the dragon mouth is open][line break][line break]There are no more teeth left in the statue's mouth.[otherwise][line break][line break]The statue's mouth is closed.";
@@ -815,12 +886,12 @@ A fourth pan is part of the small scale.It is fixed in place. It is a supporter.
 A fifth pan is part of the small scale.It is fixed in place. It is a supporter. It is undescribed. It is part of the small scale.
 A sixth pan is part of the small scale. It is fixed in place. It is a supporter. It is undescribed. It is part of the small scale.
 
-Understand "1st pan" as first pan when the player is in Heroon of Kadmos.
-Understand "2nd pan" as second pan when the player is in Heroon of Kadmos.
-Understand "3rd pan" as third pan when the player is in Heroon of Kadmos.
-Understand "4th pan" as fourth pan when the player is in Heroon of Kadmos.
-Understand "5th pan" as fifth pan when the player is in Heroon of Kadmos.
-Understand "6th pan" as sixth pan when the player is in Heroon of Kadmos.
+Understand "1st pan" or "pan 1" as first pan when the player is in Heroon of Kadmos.
+Understand "2nd pan" or "pan 2" as second pan when the player is in Heroon of Kadmos.
+Understand "3rd pan" or "pan 3" as third pan when the player is in Heroon of Kadmos.
+Understand "4th pan" or "pan 4" as fourth pan when the player is in Heroon of Kadmos.
+Understand "5th pan" or "pan 5" as fifth pan when the player is in Heroon of Kadmos.
+Understand "6th pan" or "pan 6" as sixth pan when the player is in Heroon of Kadmos.
 
 Every turn:
 	If there are 6 seeds in the sacrificial plate:
@@ -899,41 +970,57 @@ test dragongate with "take weights/put owl weight on first pan/put snake weight 
 
 [Start Of: Divine Cell of Athena & Ares]
 
-The description of Divine Cell of Athena & Ares is "TODO: description of Divine Cell of Athena & Ares.".
+An offering is scenery in Divine Cell of Athena & Ares. The description is "On the shelves there are some worn amphorae, faded incense burners, and faded relics of past rituals.". Understand "offerings" or "shelf" or "shelves"  as offering.
+
+A flickering torch is scenery in Divine Cell of Athena & Ares. Understand "flickering torches" as flickering torch.
+Instead of examining the flickering torch:
+	say "You see nothing special about the torches.";
+	stop the action.
+
+A divine room wall is scenery in Divine Cell of Athena & Ares. Understand "wall" or "walls" as divine room wall when the player is in  Divine Cell of Athena & Ares. 
+Instead of examining the divine room wall:
+	say "You see nothing special about the walls.";
+	stop the action.
 
 Divine Cell of Athena & Ares Scene is a scene. Divine Cell of Athena & Ares Scene begins when the player is in heroon of kadmos for the first time. Divine Cell of Athena & Ares Scene ends when Goddess Athena is awake and God Ares is awake.
 
 When Divine Cell of Athena & Ares Scene begins:
-	now the description of Divine Cell of Athena & Ares is "TODO: description of Divine Cell of Athena & Ares scene. You see the gods in a sleeping state.".
+	now the description of Divine Cell of Athena & Ares is "As you pass through the gate, you enter a small, dimly lit room. There lie Athena and Ares, bound by shadowy nether-forged chains, their bodies suspended in time. They appear unconscious. Their expressions are serene, though neutral.
+
+The room is a small, dimly lit cellar, its walls carved from old stone and shrouded in shadows. Flickering torches cast an eerie glow, illuminating shelves lined with forgotten offerings.";
 	
 After talking to Athena:
 	if Athena is asleep:
-		say "Athena is in a commatose state. She can't speak.";
+		say "Athena seems to be in a suspended state. She can't speak.";
+		stop the action;
 	otherwise:
 		continue the action.
 		
 After talking to Ares:
 	if Ares is asleep:
-		say "Ares is in a commatose state. He can't speak.";
+		say "Ares seems to be in a suspended state. He can't speak.";
+		stop the action;
 	otherwise:
 		continue the action.
 
 After examining Athena:
 	if Athena is asleep:
-		say "Athena is in a commatose state.";
+		say "Athena seems to be in a suspended state.";
+		stop the action;
 	otherwise:
 		continue the action.
 		
 After examining Ares:
 	if Ares is asleep:
-		say "Ares is in a commatose state. ";
+		say "Ares seems to be in a suspended state. ";
+		stop the action;
 	otherwise:
 		continue the action.
 
 
-
 When Divine Cell of Athena & Ares Scene ends:
-	say "The gods wake up from their slumber. 'Thank you for saving us, sister. We wish to grand you our power.' [paragraph break]Invoking Athena's wisdom will help you solve puzzles and Invoking Ares[apostrophe] strategies will help you win combats. Which one do you want to choose?".
+	now the description of Divine Cell of Athena & Ares is "The room is a small, dimly lit cellar, its walls carved from old stone and shrouded in shadows. Flickering torches cast an eerie glow, illuminating shelves lined with forgotten offerings. The gate to the heroon is [if the dragon gate is open]open.[otherwise]closed.";
+	say "The gods wake up from their slumber. 'Thank you for saving us, sister. We wish to grand you our power.' [paragraph break]Invoking Athena's wisdom will help you solve puzzles and Invoking Ares[apostrophe] strategies will help you win combats. Which one do you want to choose?".[todo:fix when i have the boons]
 
 After reading a command when Athena is awake and Ares is awake:
 	if Athena is in Divine Cell of Athena & Ares and the player's command includes "Athena":
@@ -941,14 +1028,18 @@ After reading a command when Athena is awake and Ares is awake:
 		say "You chose the blessing of Athena.";
 		say "The gods now go to olympus.";
 		now Athena is in Mount Olympus Hall;
+		now Athena is described;
 		now Ares is in Mount Olympus Hall;
+		now Ares is described;
 		reject the player's command;
 	otherwise if Ares is in Divine Cell of Athena & Ares and the player's command includes "Ares":
 		now HasAresBoon is true;
 		say "You chose the blessing of Ares.";
 		say "The gods now go to olympus.";
 		now Athena is in Mount Olympus Hall;
+		now Athena is described;
 		now Ares is in Mount Olympus Hall;
+		now Ares is described;
 		reject the player's command;
 		
 
@@ -957,7 +1048,6 @@ After reading a command when Athena is awake and Ares is awake:
 Chapter 2 - Demeter & Poseidon 
 
 [TODO: add some athena/ares powers]
-[TODO: add something more to the puzzle]
 
 
 [region: Sounio]
@@ -1048,7 +1138,7 @@ Before the column, along the temple floor, you notice a faint outline in the sto
 
 
 [scenes]
-Holding Breath Scene is a recurring scene. Holding Breath Scene begins when the player is in Underwater and HasPoseidonBoon is false. Holding Breath Scene ends when the time since Holding Breath Scene began is 12 minutes or the player is in Sounio Beach. [TODO: change the amount of rounds]
+Holding Breath Scene is a recurring scene. Holding Breath Scene begins when the player is in Underwater and HasPoseidonBoon is false. Holding Breath Scene ends when the time since Holding Breath Scene began is 12 minutes or the player is in Sounio Beach. 
 
 When Holding Breath Scene begins:
 	say "You take a big breath. You can propably hold it for about 12 minutes.".
@@ -1111,7 +1201,7 @@ Instead of taking rings:
 	
 	
 [clockwise rotation]
-Instead of rotating a ring :
+Instead of rotating a ring:
 	if the ring face of the noun is adeio:
 		now the ring face of the noun is winter;
 	else if the ring face of the noun is winter:
@@ -1234,9 +1324,8 @@ Chapter 3 - Artemis & Apollo
 
 [Region: Theba]
 
-[Start Of: Temple of the Aulidean Artemis] [TODO: fix what happens when the day changes] [TODO: fix the pockets situation/description]
+[Start Of: Temple of the Aulidean Artemis] [TODO: fix the pockets situation/description]
 
-[The player is in the Temple of the Aulidean Artemis.]
 
 [rooms]
 The Temple of the Aulidean Artemis is a room in Thebes. "You step into the sacred temple of Aulidean Artemis. The temple is empty and abandoned by the priestesses, following Kronos[apostrophe] seizure of power, as expected, unfortunately. 
@@ -1254,7 +1343,7 @@ The statue of artemis is down of the Temple of the Aulidean Artemis and up of th
 Understand "statue" or "golden statue of artemis" or "magneficent golden statue of artemis" as the statue of artemis when the player is in the Temple of the Aulidean Artemis.
 
 [things]
-The sundial is in the temple of the Aulidean Artemis. It is fixed in place. The description is "[If the sundial is not handled]The dial is designed with two separate rings encircling its plate, one with sun and one with lunar markings, allowing you to read the time day and night. [end if][if the sundial is not handled]You also see on the gnomon an inscription engraved and gilded in gold that says: At midday, let Apollo’s light cast a shadow, and at midnight, let Artemis[apostrophe] glow guide the way. Only then shall the twins unveil the hidden path.[otherwise]The inscription engraved on the gnomon read: At midday, let Apollo’s light cast no shadow, and at midnight, let Artemis[apostrophe] glow guide the way. Only then shall the twins unveil the hidden path.". It is a scenery.
+The sundial is in the temple of the Aulidean Artemis. It is fixed in place. The description is "[If the sundial is not handled]The dial is designed with two separate engraved rings encircling its plate, one with sun and one with lunar markings, allowing you to read the time day and night.[end if][if the sundial is not handled]You also see on the gnomon an inscription engraved and gilded in gold that says: At midday, let Apollo’s light cast a shadow, and at midnight, let Artemis[apostrophe] glow guide the way. Only then shall the twins unveil the hidden path.[otherwise]The inscription engraved on the gnomon read: At midday, let Apollo’s light cast no shadow, and at midnight, let Artemis[apostrophe] glow guide the way. Only then shall the twins unveil the hidden path.". It is a scenery.
 
 A gnomon is part of the sundial. It is a scenery. The description is "On the gnomon, an inscription engraved and gilded in gold says: At midday, let Apollo’s light cast no shadow, and at midnight, let Artemis[apostrophe] glow guide the way. Only then shall the twins unveil the hidden path.".
 
@@ -1262,10 +1351,11 @@ The dial rings are part of the sundial. The description is "They showcase sun an
 
 Understand "gnomon of the sundial" as gnomon.
 
-A deer is in the temple of the Aulidean Artemis. It is a scenery. The description is "A deer, one of Artemis[apostrophe] symbols. It is part of Artemis[apostrophe] statue.". [TODO:fix descriptions]
+A deer is in the temple of the Aulidean Artemis. It is a scenery. The description is "A deer, one of Artemis[apostrophe] symbols. It is part of Artemis[apostrophe] statue.". 
 The bow is in the temple of the Aulidean Artemis. It is a scenery.The description is "Artemis[apostrophe] bow. It is part of Artemis[apostrophe] statue.".
 The arrows is in the temple of the Aulidean Artemis. It is a scenery.The description is "Artemis[apostrophe] arrows. It is part of Artemis[apostrophe] statue.".
-The quiver is in the temple of the Aulidean Artemis. It is a scenery.The description is "Artemis[apostrophe] quiver. It is full of arrows. It is part of Artemis[apostrophe] statue.".
+The quiver is in the temple of the Aulidean Artemis. It is a scenery.The description is "Artemis[apostrophe] quiver. It is full of marble arrows. It is part of Artemis[apostrophe] statue. There is nothing else there.".
+An antlers is scenery in the temple of the Aulidean Artemis. The description is "There is nothing on the antlers."
 
 A locking mechanism is in the temple of the Aulidean Artemis. It is a scenery.The description is "You can't see the mechanism, but you can hear it inside the statue. [If the statue of artemis is open]Your best guess is that it kept the statue from revealing the stairs that lead under the temple."
 
@@ -1283,8 +1373,8 @@ After examining the sundial:
 	
 	
 [sun pockets]	
-A sun pocket is an closed unopenable opaque container. It is part of the sundial. It is fixed in place. [TODO: It is undescribed.] The carrying capacity of the sun pocket is 1.
-A moon pocket is an closed unopenable opaque container. It is part of the sundial. It is fixed in place. [TODO: It is undescribed.] The carrying capacity of the moon pocket is 1.
+A sun pocket is an closed unopenable opaque container. It is part of the sundial. It is fixed in place. It is undescribed. The carrying capacity of the sun pocket is 1.
+A moon pocket is an closed unopenable opaque container. It is part of the sundial. It is fixed in place. It is undescribed. The carrying capacity of the moon pocket is 1.
 
 Understand "sun hatch" as the sun pocket. 
 Understand "moon hatch" as moon pocket.
@@ -1519,6 +1609,7 @@ Instead of examining the statue of artemis:
 	otherwise:
 		say "You can see some stairs leading downstairs.". [TODO: make item stairs]
 		
+a strairs is scenery in temple of the Aulidean Artemis. The description is "The stairs seem to lead down.". [TODO: make backdrop]
 
 Instead of pushing the statue of artemis for the first time:
 	now the statue of artemis is handled;
@@ -1670,7 +1761,7 @@ The ivy gate is east of the Secret Garden and west of the Divine Cell of Aphrodi
 
 The lake is down of the Secret garden and up of the Divine Cell of Aphrodite & Hephaestus. The lake is a closed unopenable door. The lake is a scenery. 
 
-Instead of examining the lake: [TODO: fix description]
+Instead of examining the lake: 
 	if HasPoseidonBoon is true:
 		now the lake is open;
 		now the lake is handled;
@@ -1750,7 +1841,7 @@ Instead of taking a water lily:
 
 Understand "round flowerbed" as flowerbed.
 [red]
-A red flowerbed is in the Secret Garden. The red flowerbed is fixed in place. It is undescribed. [TODO: instead of examining flowerbeds]
+A red flowerbed is in the Secret Garden. The red flowerbed is fixed in place. It is undescribed. 
 
 [purple]
 A purple  flowerbed is in the Secret Garden. The purple flowerbed is fixed in place. It is undescribed.
@@ -2089,7 +2180,9 @@ A hidden trapdoor is an unopenable locked door. It is up of the Divine Cell of H
 
 Instead of pushing something:
 	if the player is in prytaneion:
-		try pulling the noun.
+		try pulling the noun;
+	otherwise:
+		continue the action.
 		
 
 Instead of pulling the pine table:
@@ -2169,7 +2262,7 @@ A seventh torch is a kind of flame. There is a seventh torch inside the prytanei
 A eighth torch is a kind of flame. There is a eighth torch inside the prytaneion. Understand "8th torch" or "torch 8" as eighth torch. It is fixed in place.  It is undescribed.
 
 A ninth torch is a kind of flame. There is a ninth torch inside the prytaneion. Understand "9th torch" or "torch 9" as ninth torch. It is fixed in place.It is undescribed.
-A tenth torch is a kind of flame. There is a tenth torch inside the prytaneion. Understand "10th torch" or "torch 1" as tenth torch. It is fixed in place.It is undescribed.
+A tenth torch is a kind of flame. There is a tenth torch inside the prytaneion. Understand "10th torch" or "torch 10" as tenth torch. It is fixed in place.It is undescribed.
 A eleventh torch is a kind of flame. There is a eleventh torch inside the prytaneion. Understand "11th torch" or "torch 11" as eleventh torch. It is fixed in place.It is undescribed.
 A twelfth torch is a kind of flame. There is a twelfth torch inside the prytaneion. Understand "12th torch" or "torch 12" as twelfth torch. It is fixed in place. It is undescribed.
 A thirteenth torch is a kind of flame. There is a thirteenth torch inside the prytaneion.Understand "13th torch" or "torch 13" as thirteenth torch. It is fixed in place. It is undescribed.
@@ -2247,7 +2340,6 @@ Before exiting:
 		continue the action.
 
 Understand "go out" as exiting.
-[TODO: way for player to examine all torches together]
 
 
 Checking torches is an action applying to nothing. 
@@ -2456,7 +2548,7 @@ The Charon's boat is a closed unopenable door.
 Charon is a man. He is in East of Ephyra.
 
 
-Charon Ride In Scene is a scene. Charon Ride In Scene begins when giving an obols to Charon. Charon Ride In Scene ends when the time since Charon Ride In Scene began is 0 minutes.
+Charon Ride In Scene is a recurring  scene. Charon Ride In Scene begins when giving an obols to Charon. Charon Ride In Scene ends when the time since Charon Ride In Scene began is 2 minutes.
 
 carry out giving:
 	If the noun is obols:
@@ -2470,11 +2562,11 @@ When Charon Ride In Scene begins:
 	now Charon's boat is open;
 	say "The ferryman accepts the token and signals you to jump into the boat. With slow and certain movements, he leads the boat down the dangerous stream, into the opening of a natural cave. You arrive at the Underworld.";
 	wait for any key;
-	try entering the Charon's boat.
+	try entering the Charon's boat;
+	now Charon is in Elysian Fields.
 	
 
 When Charon Ride In Scene ends:
-	now Charon is in Elysian Fields;
 	now Charon's boat is closed.
 	
 Before entering the Charon's boat when the Charon Ride In Scene is not happening:
@@ -2487,11 +2579,11 @@ Before entering the Charon's boat when the Charon Ride In Scene is not happening
 [Start of Elysian Fields]
 The Elysian Fields is a room in the Underworld.
 
-Charon Ride Out Scene is a scene. Charon Ride Out Scene begins when entering Charon's boat in the Elysian Fields. Charon Ride Out Scene ends when the player is in East of Ephyra.
+Charon Ride Out Scene is a recurring  scene. Charon Ride Out Scene begins when talking to Charon in the Elysian Fields. Charon Ride Out Scene ends when the time since Charon Ride Out Scene began is 1 minutes.
 
 When Charon Ride Out Scene begins:
 	now Charon's boat is open;
-	say "The ferryman see you jump into the boat and understands. With slow and certain movements, he leads the boat up the dangerous stream, out of the opening of the natural cave. You are again in the world of the living. He gives you back the obol.";
+	say "The ferryman see you jump into the boat and understands. With slow and certain movements, he leads the boat up the dangerous stream, out of the opening of the natural cave. You are again in the world of the living.";
 	wait for any key;
 	try entering the Charon's boat.
 	
@@ -2499,10 +2591,20 @@ When Charon Ride Out Scene ends:
 	now Charon is in East of Ephyra;
 	now Charon's boat is closed.
 	
-Instead of going in the boat:
+	
+Before going in the boat:
 	If the player is in the Elysian Fields:
-		try silently entering the boat. [TODO: bug, fix rule printed for no reason]
+		try talking to charon;
+		stop the action.
 		
+Before opening the boat:
+	If the player is in the Elysian Fields:
+		try talking to charon;
+		stop the action.
+		
+A green flower is a thing in necromanteion. [TBD]
+A yellow flower is a thing in necromanteion.
+test obol with "give club to heracles/sail to aulis/w/s/travel to ephyra/n/go in necromanteion/take green flower/sacrifice green flower/sacrifice yellow flower/out/s/e/actions/scenes".
 
 [End of Elysian Fields]
 
@@ -2511,7 +2613,7 @@ The Asphodel Meadows is a room in the Underworld.
 
 
 Heracles in Asphodel Scene is a scene. Heracles in Asphodel Scene begins when the player is in Asphodel Meadows for the first time. [During this scene Heracles has amnesia, he has drunk from the lethe river so his dialogue should reflect that]
-Heracles in Asphodel Scene ends when giving nectar to Heracles.
+Heracles in Asphodel Scene ends when nectarizing Heracles.
 
 After talking to Heracles during Heracles in Asphodel Scene:
 	say "'I have amnesia I drunk from the Lethe river.'". [TODO: fix]
