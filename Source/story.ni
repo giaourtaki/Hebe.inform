@@ -210,8 +210,10 @@ After taking something:
 		say "You picked up the [noun].";
 	otherwise if the noun is Heracles' Club:
 		say "You picked up the Club of Heracles.";
-	[otherwise if the noun is Eternal Chalice of Nectar:
-		say "You picked up the [noun].";]
+	otherwise if the noun is sun key:
+		say "You picked up the [noun].";
+	otherwise if the noun is moon key:
+		say "You picked up the [noun].";
 	otherwise:
 		say "You picked up [a noun]." ;
 	
@@ -758,7 +760,11 @@ The High Priestess of Necromanteion is a woman in necromanteion. She is undescri
 [End Of: Necromanteion]
 
 [Start Of: North of Ephyra]
-The description of North of Ephyra is "You see the Necromanteion from here. To the south is Ephyra.". [TODO: put description]
+The description of North of Ephyra is "As you approach the Necromanteion from afar, the landscape unfolds before you in a blend of serene beauty and subtle foreboding. The temple is perched on a gentle rise, its sombre silhouette stark against the vibrant greens and soft blues of the surrounding countryside. The Acheron River courses through the landscape, its dark waters a stark contrast to the blooming fields.
+
+Fields of wildflowers spread out in all directions, their petals swaying lightly in the breeze, painting the earth with shades of purple, yellow, and white. The air is sweet with the scent of blooming flowers, yet as Hebe draws closer, the distant cries of birds seem to fade, replaced by a profound, almost eerie silence. The temple itself, though small and unassuming, exudes an aura of power, its weathered stones and dark entrance beckoning those who seek to cross into the realm of the dead.
+
+Travel Instructions.". [TODO: make things interactable]
 [items]
 
 [scenery]
@@ -770,11 +776,11 @@ Chapter 1- Athena & Ares
 
 [Start Of: Heroon of Kadmos]
 [rooms]
-Kadmea is a room in Thebes. "The mamagnificent acropolis of Thebes, standing proudly atop the city. 
+Kadmea is a room in Thebes. "The magnificent acropolis of Thebes, standing proudly atop the city. 
 
 The Palace of Kadmea stands tall, its stone walls solid and plain, a functional seat of power rather than a place of grandeur. The palace serves as the administrative center, where rulers conduct the daily governance of Thebes.
 
-There, you also notice the Heroon of Kadmos, a modest shrine dedicated to the city's legendary founder. This small sanctuary, though simple, holds great significance for the people of Thebes. The legend goes that Kadmos founded this very city after slaying a dragon and sowing its teeth into the earth, turning them into people."
+There, you also notice the Heroon of Kadmos, a modest shrine dedicated to the city's legendary founder. This small sanctuary, though simple, holds great significance for the people of Thebes. The legend goes that Kadmos founded this very city after slaying a dragon and sowing its teeth into the earth, turning them into people." [TODO: make palace background, put travel instructions]
 
 Palace of Kadmea is a room in Thebes. 
 Instead of entering Palace of Kadmea:
@@ -1087,10 +1093,19 @@ Sounio Beach Scene is a scene. The Sounio Beach Scene begins when the player is 
 When Sounio Beach Scene begins:
 	now the description of sounio beach is "As you journey south toward Cape Sounion, where the Temple of Poseidon stands, you find that the cape has become entirely submerged. What remains is a narrow beach, with a vast expanse of land now lying beneath the sea. On your west is the town of Sounio.
 
-On the beach, you notice a nymph weeping and wailing, surrounded by others who are attempting to console her. You recognize the grieving nereid as Amphitrite, queen of the sea and wife of Poseidon. The nereids comforting her must be her closest attendants: Aktaia, Erato, and Ploto.";
+On the beach, you notice a nymph weeping and wailing, surrounded by others who are attempting to console her. You recognize the grieving nereid as Amphitrite, queen of the sea and wife of Poseidon. The nereids comforting her must be her closest attendants: Aktaia, Erato, and Ploto.
+
+TODO travel instructions";
 	say "As you journey south toward Cape Sounion, where the Temple of Poseidon stands, you find that the cape has become entirely submerged. What remains is a narrow beach, with a vast expanse of land now lying beneath the sea. On your west is the town of Sounio.
 
 On the beach, you notice a nymph weeping and wailing, surrounded by others who are attempting to console her. You recognize the grieving nereid as Amphitrite, queen of the sea and wife of Poseidon. The nereids comforting her must be her closest attendants: Aktaia, Erato, and Ploto.".
+
+When Sounio Beach Scene ends:
+	now the description of sounio beach is "As you journey south toward Cape Sounion, where the Temple of Poseidon stands, you find that the cape has become entirely submerged. What remains is a narrow beach, with a vast expanse of land now lying beneath the sea. On your west is the town of Sounio.
+
+On the beach, you see Amphitrite, Aktaia, Erato and Ploto.
+
+TODO ";
 
 Instead of talking to someone during Sounio Beach Scene:
 	if the noun is Aktaia:
@@ -1107,7 +1122,7 @@ Instead of talking to someone during Sounio Beach Scene:
 
 Instead of talking to Amphitrite:
 	if Sounio Beach Scene has ended:
-		say "'Naturally, Eternal Maiden, our unwavering support is yours. My nereides and I stand ready to serve you in whatever you may require.'";
+		say "'Naturally, Eternal Maiden, our unwavering support is yours. My nereides and I stand ready to serve you in whatever you may require.'"; [TODO give dialogue to the nereides to take the player to temple]
 	if Sounio Beach Scene has ended and Poseidon is awake:
 		say "I thank you deeply for returning my beloved to me. I shall remain forever indebted to you.";
 
@@ -1135,7 +1150,9 @@ Instead of nectarizing Amphitrite:
 		
 
 When Sounio Beach Scene ends:
-	now the description of Sounio Beach is "As you journey south toward Cape Sounion, where the Temple of Poseidon stands, you find that the cape has become entirely submerged. What remains is a narrow beach, with a vast expanse of land now lying beneath the sea. On your west is the town of Sounio.".
+	now the description of Sounio Beach is "As you journey south toward Cape Sounion, where the Temple of Poseidon stands, you find that the cape has become entirely submerged. What remains is a narrow beach, with a vast expanse of land now lying beneath the sea. On your west is the town of Sounio.
+
+TODO Map instructions".
 
 [doors]
 The sea is south of the sounio beach and up of underwater. It is an unopenable closed door. It is a scenery. 
@@ -1303,14 +1320,14 @@ Every turn:
 
 Instead of examining the temple trapdoor :
 	if the temple trapdoor is open:
-		say "The door is now open.";
+		say "The trapdoor is now open.";
 	otherwise:
-		say "The door is tightly closed."
+		say "The trapdoor is tightly closed."
 		
 
 Every turn:
 	If SeaTemplePuzzleSolved is true for the first turn:
-		say "You hear the sound of the door opening";
+		say "You hear the sound of the trapdoor opening";
 		now the temple trapdoor  is open.
 		
 test POS with "rotate the top ring anticlockwise/rotate the second ring anticlockwise/rotate the second ring anticlockwise/rotate the third ring anticlockwise/rotate the third ring anticlockwise/rotate the third ring anticlockwise/rotate the bottom ring anticlockwise/rotate the bottom ring anticlockwise/rotate the bottom ring anticlockwise/rotate the bottom ring anticlockwise".
@@ -1323,8 +1340,11 @@ test POS with "rotate the top ring anticlockwise/rotate the second ring anticloc
 Divine Cell of Demeter & Poseidon Scene is a scene. Divine Cell of Demeter & Poseidon Scene begins when the player is in the temple of poseidon for the first time. Divine Cell of Demeter & Poseidon Scene ends when Goddess Demeter is awake and God Poseidon is awake.
 
 When Divine Cell of Demeter & Poseidon Scene begins:
-	now the description of Divine Cell of Demeter & Poseidon is "As you descend through the trapdoor you see the room is (TODO think of room). There lie Demeter and Poseidon, bound by shadowy nether-forged chains, their bodies suspended in time. They appear unconscious. Their expressions are serene, though neutral.
-".
+	now the description of Divine Cell of Demeter & Poseidon is "As you descend through the trapdoor the water gradually becomes deeper and darker. Whatever light you get down here is shinning from the open door, so its hard to see. Holding your breath, you enter an underground chamber that seems to had been used as a treasury.
+
+The chamber's walls are veiled beneath a thin layer of alge. Some rusted chests lay scattered across the floor, probably filled with precious offerings to the god by mortals.
+
+In the center of the chamber, you make out the forms of two figures. Demeter and Poseidon were bound by shadowy nether-forged chains, seemingly lost in an eternal slumber. A serene, almost ethereal expression graced their faces, their divine bodies seemingly suspended in time.".
 	
 After talking to Demeter:
 	if Demeter is asleep:
@@ -1356,7 +1376,7 @@ After examining Demeter:
 
 When Divine Cell of Demeter & Poseidon Scene ends:
 	now the description of Divine Cell of Demeter & Poseidon is "";
-	say "The gods wake up from their slumber. 'Thank you for saving us, niece. We wish to grand you our power.' [paragraph break]Choosing Demeter's wisdom will enable you to speak the language of the earth and choosing Poseidon[apostrophe] power will enable you to breath and see underwater. Which one do you want to choose?".
+	say "The gods wake up from their slumber. 'Thank you for waking us, niece. We wish to grand you our power.' [paragraph break]Choosing Demeter's wisdom will enable you to speak the language of the earth and choosing Poseidon[apostrophe] power will enable you to breath and see underwater. Which one do you want to choose?".
 	
 
 After reading a command when Demeter is awake and Poseidon is awake:
@@ -1385,7 +1405,7 @@ Chapter 3 - Artemis & Apollo
 
 
 [rooms]
-The Temple of the Aulidean Artemis is a room in Thebes. "You step into the sacred temple of Aulidean Artemis. The temple is empty and abandoned by the priestesses, following Kronos[apostrophe] seizure of power, as expected, unfortunately. 
+The Temple of the Aulidean Artemis is a room in Thebes. "[first time]You step into the sacred temple of Aulidean Artemis.[only][line break]The temple is empty and abandoned by the priestesses, following Kronos[apostrophe] seizure of power. Expected, unfortunately. 
 
 As you pass through the pronaos, your eyes are drawn to the [if the time of day is before 08:00 pm]sunlight[otherwise]moonlight[end if] cascading down from the open ceiling, illuminating an imposing sundial made of pearly white marble that stands at the center of the chamber. The [if the time of day is before 08:00 pm]sun's[otherwise]moon's[end if] rays cross paths with the dial's gnomon, casting a shadow that marks the hour.
 
@@ -1402,11 +1422,14 @@ Understand "statue" or "golden statue of artemis" or "magneficent golden statue 
 [things]
 The sundial is in the temple of the Aulidean Artemis. It is fixed in place. The description is "[If the sundial is not handled]The dial is designed with two separate engraved rings encircling its plate, one with sun and one with lunar markings, allowing you to read the time day and night.[end if][if the sundial is not handled]You also see on the gnomon an inscription engraved and gilded in gold that says: At midday, let Apollo’s light cast a shadow, and at midnight, let Artemis[apostrophe] glow guide the way. Only then shall the twins unveil the hidden path.[otherwise]The inscription engraved on the gnomon read: At midday, let Apollo’s light cast no shadow, and at midnight, let Artemis[apostrophe] glow guide the way. Only then shall the twins unveil the hidden path.". It is a scenery.
 
-A gnomon is part of the sundial. It is a scenery. The description is "On the gnomon, an inscription engraved and gilded in gold says: At midday, let Apollo’s light cast no shadow, and at midnight, let Artemis[apostrophe] glow guide the way. Only then shall the twins unveil the hidden path.".
+A gnomon is part of the sundial. It is a scenery. The description is "On the gnomon, an inscription engraved and gilded in gold says: At midday, let Apollo’s light cast no shadow, and at midnight, let Artemis[apostrophe] glow guide the way. Only then shall the twins unveil the hidden path.[line break][line break][if the sun pocket is closed]You notice the faint outline of a hatch.[otherwise]On it you see an open small hatch.".
 
-The dial rings are part of the sundial. The description is "They showcase sun and lunar markings, allowing you to use the dial to read the time day and night.".
+Understand "gnomon of the sundial" or "dial's gnomon" or "dial gnomon" or "sundial gnomon" as gnomon.
 
-Understand "gnomon of the sundial" as gnomon.
+The dial plate is part of the sundial. The description is "The plate of the dial is three-dimentional, sculpted out of white and black marble. It bears sun and lunar markings, allowing you to use the dial to read the time day and night.[line break][line break][if the moon pocket is closed]You notice the faint outline of a drawer.[otherwise]On it you see an open compact drawer.".
+
+Understand "dial rings" or "rings" or "body" or "engraved rings" or "markings" or "sun markings" or "moon markings" or "sundial rings" or "moondial rings" or "dial's plate" as dial plate when the player is in temple of the aulidean artemis.
+
 
 A deer is in the temple of the Aulidean Artemis. It is a scenery. The description is "A deer, one of Artemis[apostrophe] symbols. It is part of Artemis[apostrophe] statue.". 
 The bow is in the temple of the Aulidean Artemis. It is a scenery.The description is "Artemis[apostrophe] bow. It is part of Artemis[apostrophe] statue.".
@@ -1425,20 +1448,26 @@ Understand "altar" or "altar of artemis" or "sacrificial altar" as goddess altar
 Understand "moondial" or "imposing sundial" or "dial" as sundial.
 
 After examining the sundial:
-	say "Judging by the gnomon's shadow and the [if the time of day is before 08:00 pm]sun[otherwise]moon[end if] markings, the time is [the time of day to the nearest 5 minutes in words].";
+	say "Judging by the gnomon's shadow and the [if the time of day is before 08:00 pm]sun[otherwise]moon[end if] markings, the time is around [the time of day to the nearest 5 minutes in words].";
 	now the sundial is handled.
 	
 	
 [sun pockets]	
 A sun pocket is an closed unopenable opaque container. It is part of the sundial. It is fixed in place. It is undescribed. The carrying capacity of the sun pocket is 1.
+
+
 A moon pocket is an closed unopenable opaque container. It is part of the sundial. It is fixed in place. It is undescribed. The carrying capacity of the moon pocket is 1.
 
-Understand "sun hatch" as the sun pocket. 
-Understand "moon hatch" as moon pocket.
+Understand "hatch" or "dial hatch" or "gnomon hatch" or "small hatch" as sun pocket when the player is in temple of the aulidean artemis.
+
+Understand "drawer" or "compact drawer" or "dial drawer" or "body drawer" or "small drawer" as moon pocket when the player is in temple of the aulidean artemis.
 
 [locks]
-The sun lock is part of the statue of artemis. It is an open unopenable container. It is fixed in place. The carrying capacity of the sun lock is 1.
+The sun lock is part of the statue of artemis. It is an open unopenable container. It is fixed in place. The carrying capacity of the sun lock is 1. 
+
 The moon lock is part of the statue of artemis. It is an open unopenable container. It is fixed in place. The carrying capacity of the moon lock is 1.
+
+A locks is scenery in temple of aulidean artemis. 
 
 Understand "sun-shaped lock" and "sun shaped lock" as sun lock.
 Understand "moon-shaped lock" and "moon shaped lock" as moon lock.
@@ -1453,10 +1482,10 @@ Understand "moon-shaped key" and "moon shaped key" as moon key.
 [examining locks]
 Instead of examining the sun lock:
 	If the sun key is inside the sun lock:
-		say "The sun key is in the sun-shapped lock";
+		say "The sun key is in the sun-shaped lock";
 		stop the action;
 	otherwise if the moon key is inside the sun lock:
-		say "The moon key is in the sun-shapped lock";
+		say "The moon key is in the sun-shaped lock";
 		stop the action;
 	otherwise:
 		say "The sun lock is empty.";
@@ -1464,39 +1493,38 @@ Instead of examining the sun lock:
 		
 Instead of examining the moon lock:
 	If the sun key is inside the moon lock:
-		say "The sun key is in the moon-shapped lock";
+		say "The sun key is in the moon-shaped lock";
 		stop the action;
 	otherwise if the moon key is inside the moon lock:
-		say "The moon key is in the moon-shapped lock";
+		say "The moon key is in the moon-shaped lock";
 		stop the action;
 	otherwise:
 		say "The moon lock is empty.";
 		stop the action.
 
+Instead of examining locks:
+	try examining sun lock;
+	try examining moon lock;
 
 [putting keys]
 Instead of inserting anything into the sun lock:
-	if the noun is the sun key:
-		say "You put the sun key in the sun-shapped lock.";
-		continue the action;
-	otherwise if the noun is the moon key:
-		say "You put the moon key in the sun-shapped lock.";
-		continue the action;
-	otherwise:
+	if the noun is not the sun key:
 		say "Hmmm you don't think this would go there.";
-		stop the action.
+		stop the action;
+	otherwise	if the sun key is in the sun lock:
+		stop the action;
+	otherwise:
+		continue the action;
 		
-Instead of inserting anything into the moon lock:
-	if the noun is the sun key:
-		say "You put the sun key in the moon-shapped lock.";
-		continue the action;
-	otherwise if the noun is the moon key:
-		say "You put the moon key in the moon-shapped lock.";
-		continue the action;
-	otherwise:
+		
+Instead of inserting anything into moon lock:
+	if the noun is not the moon key:
 		say "Hmmm you don't think this would go there.";
-		stop the action.
-
+		stop the action;
+	otherwise	if the moon key is in the moon lock:
+		stop the action;
+	otherwise:
+		continue the action;
 
 
 [Chapter Time - Time Keeping]
@@ -1515,7 +1543,7 @@ if the time understood is greater than 12 hours, say “You really don’t feel 
 
 
 Report waiting more:
-say “It is now around [the time of day to the nearest 30 minutes in words]”.
+say “The time feels like it is now around [the time of day to the nearest 30 minutes in words].”.
 
 [sleep action]
 
@@ -1539,7 +1567,7 @@ At the time when the DayRollsOver:
 At the time when the SunPocketOpens:
 	we need to enqueue the timed open sun pocket event in 30 minutes from now;
 	If the player is in temple of the Aulidean Artemis:
-		say "[line break]At [the time of day in words]  you hear the click of a latch releasing and a sun hatch opening coming from the dial.";
+		say "[line break]At [the time of day in words] you hear the click of a latch releasing and a you see a small hatch opening on the dial's gnomon.";
 	now the sun pocket is open;
 	At the time when we need to enqueue the timed open sun pocket event:
 		the SunPocketOpens at 12:00 pm.
@@ -1548,26 +1576,29 @@ At the time when the SunPocketOpens:
 At the time when the SunPocketCloses:
 	we need to enqueue the timed close sun pocket event in 30 minutes from now;
 	If the player is in temple of the Aulidean Artemis:
-		say "[line break]At [the time of day in words] you hear the sound of the sun hatch closing and the click of a latch locking coming from the dial.";
+		say "[line break]At [the time of day in words] you hear the sound of the small hatch closing and the click of a latch locking coming from the dial's gnomon.";
 	now the sun pocket is closed;
 	At the time when we need to enqueue the timed close sun pocket event:
 		the SunPocketCloses at 12:10 pm.
 
 [examine sun pocket]
 Instead of examining the sun pocket:
-	If the sun pocket is open:
-		say "The sun hatch is open. Inside you can see [a list of things inside the sun pocket].";
-		stop the action;
-	otherwise:
-		say "The sun hatch is closed.";
-		stop the action.
+	If the sun pocket is closed:
+		say "The hatch is closed.";
+	if the sun pocket is open:
+		if the sun key is inside the sun pocket:
+			say "The hatch is open. Inside you can see a sun-shaped key.";
+			stop the action;
+		otherwise if the sun key is not inside the sun pocket:
+			say "The hatch is open. Inside you can see [a list of things inside the sun pocket].";
+			stop the action;
 				
 
 [moon pocket opens]
 At the time when the MoonPocketOpens:
 	we need to enqueue the timed open moon pocket event in 30 minutes from now;
 	If the player is in temple of the Aulidean Artemis:
-		say "[line break]At [the time of day in words] you hear the click of a latch releasing and a moon hatch opening coming from the dial.";
+		say "[line break]At [the time of day in words] you hear the click of a latch releasing and you see a compact drawer popping open on the dial's plate.";
 	now the moon pocket is open;
 	At the time when we need to enqueue the timed open moon pocket event:
 		the MoonPocketOpens at 12:00 am.
@@ -1576,19 +1607,23 @@ At the time when the MoonPocketOpens:
 At the time when the MoonPocketCloses:
 	we need to enqueue the timed close moon pocket event in 30 minutes from now;
 	If the player is in temple of the Aulidean Artemis:
-		say "[line break]At [the time of day in words] you hear the sound of the moon hatch closing and the click of a latch locking coming from the dial.";
+		say "[line break]At [the time of day in words] you hear the sound of the compact drawer closing and the click of a latch locking coming from the dial's body.";
 	now the moon pocket is closed;
 	At the time when we need to enqueue the timed close moon pocket event:
 		the MoonPocketCloses at 12:10 am.
 
-[examine moon pocket]		
+[examine moon pocket]	
 Instead of examining the moon pocket:
-	If the moon pocket is open:
-		say "The moon hatch is open. Inside you can see [a list of things inside the moon pocket].";
-		stop the action;
-	otherwise:
-		say "The moon hatch is closed.";
-		stop the action.
+	If the moon pocket is closed:
+		say "The drawer is closed.";
+	if the moon pocket is open:
+		if the moon key is inside the moon pocket:
+			say "The drawer is open. Inside you can see a moon-shaped key.";
+			stop the action;
+		otherwise if the moon key is not inside the moon pocket:
+			say "The drawer is open. Inside you can see [a list of things inside the moon pocket].";
+			stop the action;	
+
 	
 
 [unlocking action] 
@@ -1607,46 +1642,44 @@ Instead of unlocking the moon lock with anything:
 	stop the action.
 
 Instead of unlocking the statue of artemis:
-	if the moon key is carried by the player and the sun key is carried by the player:
-		try silently inserting the sun key into the sun lock;
-		try silently inserting the moon key into the moon lock;
-		say "You inserted both keys into their respective lock.";
-	otherwise if the sun key is carried by the player:
-		try silently inserting the sun key into the sun lock;
+	try  inserting the sun key into the sun lock;
+	try  inserting the moon key into the moon lock.
+	
+		
+Before unlocking the statue of artemis:
+	if the player is not carrying the sun key and the player is not carrying the moon key and the sun pocket is closed and the moon pocket is closed:
+		say "It seems like you need 2 keys to unlock the locks on the statue's base.";
+		stop the action;
+	else if the player is not carrying the sun key and the sun pocket is closed:
+		try inserting the moon key into the moon lock;
+		if moon key is not inside the moon lock:
+			say "It seems like you need one more key to unlock both locks.";
+			stop the action;
 		continue the action;
-	otherwise if the moon key is carried by the player:
-		try silently inserting the moon key into the moon lock;
+	else if the player is not carrying the moon key and the moon pocket is closed:
+		try inserting the sun key into the sun lock;
+		if sun key is not inside the sun lock:
+			say "It seems like you need one more key to unlock both locks.";
+			stop the action;
 		continue the action;
-	otherwise if the sun key is inside the sun lock and the moon key is carried by the player:
-		try silently inserting the moon key into the moon lock;
-		say "You also insert the moon key in the moon lock.";
-	otherwise if the moon key is inside the moon lock and the sun key is carried by the player:
-		try silently inserting the sun key into the sun lock;
-		say "You also insert the sun key in the sun lock.";
-	otherwise:
-		say "It seems like you need 2 keys for the locks to unlock.";
-		stop the action.
 
-After unlocking the statue of artemis:
-	if the sun key is in the sun lock and the moon key is not in the moon lock:
-		say "It seems like you need one more key.";
-		continue the action;
-	if the moon key is in the moon lock and the sun key is not in the sun lock:
-		say "It seems like you need one more key.";
-		continue the action;
-	otherwise:
-		continue the action.
+
+Instead of unlocking locks:
+	try unlocking the statue of artemis;
+
 
 Instead of unlocking the sun lock:
+	try silently taking the sun key;
 	if the sun key is carried by the player:
-		try silently inserting the sun key into the sun lock;
+		try inserting the sun key into the sun lock;
 	otherwise:
 		say "You need a matching sun key for this lock.";
 		stop the action.
 		
 Instead of unlocking the moon lock:
+	try silently taking the moon key;
 	if the moon key is carried by the player:
-		try silently inserting the moon key into the moon lock;
+		try inserting the moon key into the moon lock;
 	otherwise:
 		say "You need a matching moon key for this lock.";
 		stop the action.
@@ -1664,9 +1697,9 @@ Instead of examining the statue of artemis:
 	otherwise if ArtemisTemplePuzzleSolved is false and the statue of artemis is closed:
 		say "On the base of the statue you can see two locks: one sun-shapped and one moon-shapped.";
 	otherwise:
-		say "You can see some stairs leading downstairs.". [TODO: make item stairs]
+		say "You can see some stairs leading downstairs.". 
 		
-a strairs is scenery in temple of the Aulidean Artemis. The description is "The stairs seem to lead down.". [TODO: make backdrop]
+The stairs is a backdrop. It is in the temple of the Aulidean Artemis and the divine cell of artemis & apollo.The description is "The stairs seem to lead down.". 
 
 Instead of pushing the statue of artemis for the first time:
 	now the statue of artemis is handled;
@@ -2460,8 +2493,6 @@ Instead of taking scrolls:
 
 [invisible ink scroll]
 An empty scroll is a thing on the pine table. The description is "An empty scroll. Smells citrusy.". The empty scroll has a smell. The smell of the empty scroll is citrusy.  [invisible ink] Understand "empty papyrus scroll" as empty scroll.
-
-
 
 [wax tablet]
 A wax tablet is a thing on the pine table. The description is "_  _ _ _ _  _ _ _ _ _ _  _ _ _ _  _ _ _ _ _  _ _.  _ _ _ _ _  _ _  _ _ _ _ _  _ _  _ _ _  _ _ _ _  _ _ _  _ _ _ _  _ _. [paragraph break][fixed letter spacing]S QWJC WOEBQCD  BCTB  PONCD UC. FDSOA  UC GZEIC BE BQC  VSDC WON  DCWN SB.". [cryptogram:I have another text under me. Bring me close to the fire and read it.]
