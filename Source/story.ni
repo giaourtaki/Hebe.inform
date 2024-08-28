@@ -57,6 +57,8 @@ Use MAX_LOCAL_VARIABLES of 32.
 Use MAX_ARRAYS of 32.
 Use MAX_OBJECTS of 2048.
 
+Use scoring.
+
 [Include Real-Time Delays by Erik Temple.]
 Include Basic Screen Effects by Emily Short.
 
@@ -169,9 +171,10 @@ HasHephaestusBoon is a truth state that varies. HasHephaestusBoon is false.
 
 [Chapter 5 - Hestia & Hermes]
 TorchPuzzleSolved is a truth state that varies. TorchPuzzleSolved is false. [if the torch puzzle is solved or not]
+[
 HasHestiaBoon is a truth state that varies. HasHestiaBoon is false. [if player chose hestia]
 HasHermesBoon is a truth state that varies. HasHermesBoon is false. [if player chose hermes]
-
+]
 
 Chapter 0.3 - Either/Or
 
@@ -191,6 +194,21 @@ Definition: A container is empty if nothing is in it.
 
 
 Chapter 0.5 - Actions
+
+
+[report taking]
+The taking action has an object called the supporter taken from.
+The taking action has an object called the container taken from.
+
+Setting action variables for taking:
+	if the noun is in a container (called the enclosure), now the container taken from is the enclosure;
+	if the noun is on a supporter (called the platform), now the supporter taken from is the platform.
+	
+
+[
+After taking something when the supporter taken from is not nothing:
+After taking something when the container taken from is not nothing:
+	]
 
 [to solve container refering to hands bug]
 After reading a command:
@@ -729,7 +747,7 @@ Tall, imposing columns line the hall, casting dancing shadows on the walls by th
 
 Ahead, at the far end of the hall, you see the adyton, the innermost chamber. It is veiled in semi-darkness, a place of deep reverence and mystery. The sacred omphalos stone, marking the navel of the world, stands at the center, draped in garlands and offerings left by travellers. Beyond it, shrouded in the shadows, lies the seat of the oracle, where the Pytheia sits, ready to deliver her prophecies.".
 
-Pytheia is a woman in the Oracle of Delphi. She is undescribed. The description is "Pytheia, the high priestess of the Oracle of Delphi, appears draped in flowing robes of shimmering white and deep purple, her face partially covered by a delicate veil of fine silk flowing from her hair. Her demeanor is both serene and enigmatic, her eyes reflecting a depth of wisdom as she sits on her tripod, surrounded by the faint, otherworldly aroma of incense.".
+Pytheia is a woman in the Oracle of Delphi. She is undescribed. The description is "Pytheia, the high priestess of the Oracle of Delphi, appears draped in flowing robes of shimmering white and deep purple, her face partially covered by a delicate veil of fine silk flowing from her hair. Her demeanor is both serene and enigmatic, her eyes reflecting a depth of wisdom as she sits on her tripod, surrounded by the faint, otherworldly aroma of incense.". Understand "oracle" as Pytheia when the player is in the oracle of delphi.
 
 After talking to Pytheia:
 	say "Thank you so much for playing my game! Ares & Athena are in the Heroon of Kadmos in Thebes, Demeter & Poseidon are in the temple of Poseidon in Sounio, Artemis & Apollo are in the temple of Artemis in Aulis, Aphrodite & Hephaestus is in a secret garden under the throne of the king of Paphos, Hestia and Hermes are in the Prytaneion in the Acropolis and Heracles, Zeus and Hera are in the Underworld. Good luck and have fun!". [TODO: change]
@@ -877,6 +895,9 @@ Instead of examining the dragon statue:
 
 A Kadmea altar is in the Heroon of Kadmos. It is fixed in place. It is undescribed.
 A sacrificial plate is on the Kadmea altar. It is an open transparent unopenable container. It is fixed in place. It is undescribed.
+Instead of putting something on the sacrificial plate:
+	try inserting the noun into sacrificial plate;
+	
 A compartment is part of the Kadmea altar. It is a closed unopenable container.  It is undescribed. Understand "hidden compartment" as compartment when the player is in Heroon of Kadmos.
 
 An owl weight is a weight. It is in the compartment. The mass of owl weight is 1dr. The description is "A bronze weight with the shape of an owl.". 
@@ -906,6 +927,25 @@ Understand "4th pan" or "pan 4" as fourth pan when the player is in Heroon of Ka
 Understand "5th pan" or "pan 5" as fifth pan when the player is in Heroon of Kadmos.
 Understand "6th pan" or "pan 6" as sixth pan when the player is in Heroon of Kadmos.
 
+Instead of inserting something into the first pan:
+	try putting the noun on first pan;
+	
+Instead of inserting something into the second pan:
+	try putting the noun on second pan;
+	
+Instead of inserting something into the third pan:
+	try putting the noun on third pan;
+	
+Instead of inserting something into the fourth pan:
+	try putting the noun on fourth pan;
+	
+Instead of inserting something into the fifth pan:
+	try putting the noun on fifth pan;
+	
+Instead of inserting something into the sixth pan:
+	try putting the noun on sixth pan;
+
+
 Every turn:
 	If there are 6 seeds in the sacrificial plate:
 		say "A hole opens at the base of the sacrificial plate, funneling the dragon teeth into the altar. As they settle, a hidden compartment at the bottom of the altar quietly slides open, revealing six variously shaped bronze weights";
@@ -926,8 +966,62 @@ To decide what scale-state is --/a/the scale-state of (S - the  scale):
 		decide on right-leaning;
 	otherwise:
 		decide on centered.
+
+
+[left pan]
+Instead of inserting something into the left pan:
+	try putting the noun on left pan;
+
+Before putting something on the left pan:
+	if the noun is a weight:
+		continue the action;
+	otherwise:
+		say "You don't think [noun] goes there.";
+		stop the action;
 	
-The description of the scale is " On the large scale you can see two pans, the left pan and the right pan. The scale is currently [scale-state of the scale].".
+After putting something on the left pan:
+	if the scale-state of the scale is left-leaning:
+		say "The scale leans to the left.";
+	otherwise if the scale-state of the scale is right-leaning:
+		say "The scale leans to the right.";
+	otherwise:
+		say "The scale is perfectly balanced.";
+		
+After taking something when the supporter taken from is left pan:
+	if the scale-state of the scale is left-leaning:
+		say "The scale leans to the left.";
+	if the scale-state of the scale is right-leaning:
+		say "The scale leans to the right.";
+	otherwise:
+		say "The scale is perfectly balanced.";
+[right pan]	
+Instead of inserting something into the right pan:
+	try putting the noun on right pan;
+		
+Before putting something on the right pan:
+	if the noun is a weight:
+		continue the action;
+	otherwise:
+		say "You don't think [noun] goes there.";
+		stop the action;
+	
+After putting something on the right pan:
+	if the scale-state of the scale is left-leaning:
+		say "The scale leans to the left.";
+	otherwise if the scale-state of the scale is right-leaning:
+		say "The scale leans to the right.";
+	otherwise:
+		say "The scale is perfectly balanced.";
+		
+After taking something when the supporter taken from is right pan:
+	if the scale-state of the scale is left-leaning:
+		say "The scale leans to the left.";
+	if the scale-state of the scale is right-leaning:
+		say "The scale leans to the right.";
+	otherwise:
+		say "The scale is perfectly balanced.";
+
+The description of the scale is "On the large scale you can see two pans, the left pan and the right pan. The scale is currently [scale-state of the scale].".
 	
 Understand "large scale" or "big scale" as scale.
 
@@ -1038,6 +1132,7 @@ When Divine Cell of Athena & Ares Scene ends:
 	now Athena is described;
 	now Ares is in Mount Olympus Hall;
 	now Ares is described;
+	increase score by 15;
 		
 		
 
@@ -1095,7 +1190,7 @@ When Sounio Beach Scene ends:
 
 On the beach, you see Amphitrite, Aktaia, Erato and Ploto.
 
-[bold type]Known Accessible Locations:[roman type]→Agora of Sounio (w)[line break]→Temple of Poseidon (s) ";
+[bold type]Known Accessible Locations:[roman type][line break]→Agora of Sounio (w)[line break]→Temple of Poseidon (s) ";
 
 Instead of talking to someone during Sounio Beach Scene:
 	if the noun is Aktaia:
@@ -1286,10 +1381,10 @@ A pos altar is in Temple of Poseidon. It is scenery. It is fixed in place.
 
 A blue column is in Temple of Poseidon. It is scenery.
 
-A ring called top ring is part of column. Understand "first ring" or "1st ring" as top ring.
-A ring called second ring is part of the column. Understand "2nd ring" as second ring.
-A ring called third ring is part of the column. Understand "3rd ring" as third ring.
-A ring called bottom ring is part of the column. Understand "fourth ring" or "4th ring" or "last ring" as bottom ring.
+A ring called top ring is part of blue column. Understand "first ring" or "1st ring" as top ring.
+A ring called second ring is part of the blue column. Understand "2nd ring" as second ring.
+A ring called third ring is part of the blue column. Understand "3rd ring" as third ring.
+A ring called bottom ring is part of the blue column. Understand "fourth ring" or "4th ring" or "last ring" as bottom ring.
 
 	
 [puzzle of poseidon temple]
@@ -1366,6 +1461,7 @@ When Divine Cell of Demeter & Poseidon Scene ends:
 	now Poseidon is in Mount Olympus Hall;
 	now poseidon is described;
 	now demeter is described;
+	increase score by 15;
 		
 
 [End Of: Divine Cell of Demeter & Poseidon]
@@ -1516,7 +1612,7 @@ if the time understood is greater than 12 hours, say “You really don’t feel 
 
 
 Report waiting more:
-say “It feels like it's around [the time of day to the nearest 30 minutes in words] now.”.
+say “It feels like it's around [the time of day to the nearest 15 minutes in words] now.”.
 
 [sleep action]
 
@@ -1527,6 +1623,7 @@ Instead of sleeping:
 	Say "You slept until morning.";
 	stop the action.
 
+the player is in temple of the aulidean artemis.
 
 
 At the time when the DayRollsOver:
@@ -1607,16 +1704,22 @@ Instead of unlocking the statue of artemis with anything:
 	try silently unlocking the statue of artemis.
 	
 Instead of unlocking the sun lock with anything:
-	try silently unlocking the sun lock;
+	try  unlocking the sun lock;
 	stop the action.
 
 Instead of unlocking the moon lock with anything:
-	try silently unlocking the moon lock;
+	try unlocking the moon lock;
 	stop the action.
 
 Instead of unlocking the statue of artemis:
 	try  inserting the sun key into the sun lock;
 	try  inserting the moon key into the moon lock.
+	
+Instead of unlocking the sun lock with anything:
+	try unlocking the sun lock;
+	
+Instead of unlocking the moon lock with anything:
+	try unlocking the moon lock;
 	
 		
 Before unlocking the statue of artemis:
@@ -1790,7 +1893,8 @@ When Divine Cell of Artemis & Apollo Scene ends:
 	now Artemis is in Mount Olympus Hall;
 	now Apollo is in Mount Olympus Hall;
 	now Artemis is described;
-	now Apollo is described;	
+	now Apollo is described;
+	increase score by 15;	
 
 
 
@@ -2206,6 +2310,7 @@ When Divine Cell of Aphrodite & Hephaestus Scene ends:
 		now Hephaestus is in Mount Olympus Hall;
 		now Aphrodite is described;
 		now Hephaestus is described;
+		increase score by 15;
 
 
 [End Of: Divine Cell of Aphrodite & Hephaestus]
@@ -2585,6 +2690,7 @@ When Divine Cell of Hestia & Hermes Scene ends:
 	now Hermes is in Mount Olympus Hall;
 	now Hestia is described;
 	now Hermes is described;
+	increase score by 15;
 		
 	
 
@@ -2901,8 +3007,7 @@ The Agora of Aulis is a room. "You can see the Port of Aulis in the east and the
 The Agora of Aulis is north of the Gates of Aulis. The Agora of Aulis is west of the Port of Aulis.
 
 [Delphi]
-A room called South of Delphi  is in Delphi.
-The Agora of Delphi is a room. "The city gates are located in the west".The Agora of Delphi is west of the Delphi Gates. The Delphi Gates are north of the South of Delphi. 
+A room called South of Delphi  is in Delphi. The Delphi Gates are north of the South of Delphi. 
 
 [Ephyra]
 The Agora of Ephyra is a room. "The gates of the city are located in the east.". [TODO:acheron is here (backdrop)]

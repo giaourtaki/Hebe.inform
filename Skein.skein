@@ -3,7 +3,7 @@
   <generator>Windows Inform 10.1.2</generator>
   <item nodeId="node-97">
     <command xml:space="preserve">Hebe</command>
-    <result xml:space="preserve">Instructions: &#x000A;&#x000A;Welcome to Hebe, my Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. If at any point you need help, type "help" or "h" into the console. Have fun and thank you for playing!&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 240828 / Inform 7 v10.1.2 / D&#x000A;&#x000A;The grand hall of Mount Olympus gleamed like a jewel in the Greek night sky. The lustrous surfaces of white marble and gold reflected the flickering torchlight. Columns of shimmering marble, capped with gilded Corinthian capitals, reached a vaulted ceiling adorned with intricate decorative paintings depicting scenes from the gods' legendary exploits. Among the hall's lavish embellishments were thrones of solid gold, masterfully crafted handwoven carpets and golden chandeliers, suspended from the ceiling. Today the gods were celebrating the ascension of Heracles to immortality, and also the anniversary of your marriage to him.</result>
+    <result xml:space="preserve">The gods stir from their eternal rest, their divine bodies awakening. "Thank you for waking us, sister." &#x000A;&#x000A;Now the gods leave for olympus hall.TODO&#x000A;Instructions: &#x000A;&#x000A;Welcome to Hebe, my Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. If at any point you need help, type "help" or "h" into the console. Have fun and thank you for playing!&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 240828 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Temple of the Aulidean Artemis&#x000A;You step into the sacred temple of Aulidean Artemis.&#x000A;The temple is empty and abandoned by the priestesses, following Kronos' seizure of power. Expected, unfortunately.&#x000A;&#x000A;As you pass through the pronaos, your eyes are drawn to the sunlight cascading down from the open ceiling, illuminating an imposing sundial made of pearly white marble that stands at the center of the chamber. The sun's rays cross paths with the dial's gnomon, casting a shadow that marks the hour.&#x000A;&#x000A;Entering the naos, the most divine part of the temple, you find yourself in the presence of the graceful golden statue of Artemis. Your sister stands tall and proud, her form aglow with a divine radiance that speaks of her unyielding strength and purity. In her left hand, she holds the antlers of a noble deer, symbolizing her dominion over the wild, while her right hand grips her bow, ever ready to protect those who dwell under her watchful eye. A quiver, filled with finely crafted arrows, rests upon her back, the tools of the huntress who lets no prey escape.&#x000A;&#x000A;Directly in front of her statue is the altar of Artemis, a place where mortals would lay their offerings not long ago, hoping to earn her favor.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -4091,6 +4091,7 @@
     <changed>NO</changed>
     <children>
       <child nodeId="node-4273"/>
+      <child nodeId="node-4328"/>
       <child nodeId="node-4315"/>
       <child nodeId="node-4300"/>
     </children>
@@ -4224,6 +4225,237 @@
   <item nodeId="node-4287">
     <command xml:space="preserve">[enter]</command>
     <result xml:space="preserve">. . .&#x000A;&#x000A;Garden of the Hesperides&#x000A;You slowly regain consciousness, greeted by the soft rustling of leaves of a tranquil garden. As your eyes flutter open, you find yourself surrounded by four enchanting nymphs. Their expressions are a mix of deep concern and immense relief, as if they've been holding their breath waiting for this moment. You instantly recognise Aigle, Arethousa, Erytheia and Hesperie, the nymphs of the evening known as Hesperides, guardians of Hera's orchard.&#x000A;&#x000A;"Hebe, it's been almost two weeks!" Arethousa exclaims, her voice a blend of worry and joy. "We were all so anxious for you to wake up."&#x000A;&#x000A;With gentle hands, the nymphs help you to sit up, their embraces warm and comforting. The familiar scent of the Garden of the Hesperides fills your senses, grounding you in the safety of their presence.&#x000A;&#x000A;Aigle, her expression displaying a hint of urgency, leans in. "You should get moving now that you're awake. There are disturbing rumors that Kronos has imprisoned the gods and is attempting to free his brothers from Tartaros. You're the only goddess we've seen show any signs of activity lately."&#x000A;&#x000A;Erytheia nods in agreement. "We don't have many details, but the Oracle of Delphi might have the answers you need. It would be wise to seek her counsel."&#x000A;&#x000A;Hesperie steps forward, holding out something. It is the Eternal Chalice of Nectar, once your symbol of duty as the cupbearer of the gods before the events that led to Ganymedes taking on that role. Her eyes are earnest as she places the chalice in your hands.&#x000A;&#x000A;"You might need this," Hesperie says softly. "Without nectar or ambrosia, gods can lose their immortality and eternal youth. You know this better than anyone."&#x000A;&#x000A;The Hesperides embrace you one last time. "Good luck, Hebe!" they all say in unison. "We will be here, supporting you in any way we can." &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-4328">
+    <command xml:space="preserve">give club to heracles</command>
+    <result xml:space="preserve">(first taking Heracles' Club)&#x000A;You picked up the Club of Heracles.&#x000A;&#x000A;He smiles at you. "Thank you, my dearest."</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4329"/>
+    </children>
+  </item>
+  <item nodeId="node-4329">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">Suddenly, an eerie silence fell over the festive night. The singing and dancing ceased, as if an unseen hand had stilled them. For a brief moment, you felt the coldness of the mountain air, a stark contrast to the pleasant breeze that had enveloped you moments before. A sense of foreboding fills you as you become aware that all eyes are turned behind you. You lock eyes with Heracles, both of you sharing a look of worry. With a growing sense of dread, you turned to see what had drawn everyone's attention.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4330"/>
+    </children>
+  </item>
+  <item nodeId="node-4330">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">"Oh dear, please, do not let my presence taint your insignificant gathering. Carry on as you were."</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4331"/>
+    </children>
+  </item>
+  <item nodeId="node-4331">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">The voice was unmistakable, deep and resonant, carrying an ancient power that sent shivers down your spine. It was Kronos. So much time has passed since our triumph in the War of Titans- the Titanomachy. How did he manage to escape Tartaros?</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4332"/>
+    </children>
+  </item>
+  <item nodeId="node-4332">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">The sight of the Titan, towering and menacing, shrouded in shadows, struck fear into the hearts of all present. You start to feel the ichor in your divine veins turn cold, as if time itself was freezing. The gods, normally so mighty and formidable, stand paralyzed in shock. Nothing moves. In a heartbeat, you break free from the daze and come to your senses. Your next actions have never been more certain. It's now or never.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4333"/>
+    </children>
+  </item>
+  <item nodeId="node-4333">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">You grab Heracle's club out of his hands and leap towards Kronos. Then you feel yourself slipping into unconciousness.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4334"/>
+    </children>
+  </item>
+  <item nodeId="node-4334">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4335"/>
+    </children>
+  </item>
+  <item nodeId="node-4335">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4336"/>
+    </children>
+  </item>
+  <item nodeId="node-4336">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4337"/>
+    </children>
+  </item>
+  <item nodeId="node-4337">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">Garden of the Hesperides&#x000A;You slowly regain consciousness, greeted by the soft rustling of leaves of a tranquil garden. As your eyes flutter open, you find yourself surrounded by four enchanting nymphs. Their expressions are a mix of deep concern and immense relief, as if they've been holding their breath waiting for this moment. You instantly recognise Aigle, Arethousa, Erytheia and Hesperie, the nymphs of the evening known as Hesperides, guardians of Hera's orchard.&#x000A;&#x000A;"Hebe, it's been almost two weeks!" Arethousa exclaims, her voice a blend of worry and joy. "We were all so anxious for you to wake up."&#x000A;&#x000A;With gentle hands, the nymphs help you to sit up, their embraces warm and comforting. The familiar scent of the Garden of the Hesperides fills your senses, grounding you in the safety of their presence.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4338"/>
+    </children>
+  </item>
+  <item nodeId="node-4338">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">Aigle, her expression displaying a hint of urgency, leans in. "You should get moving now that you're awake. There are disturbing rumors that Kronos has imprisoned the gods and is attempting to free his brothers from Tartaros. You're the only goddess we've seen show any signs of activity lately."&#x000A;&#x000A;Erytheia nods in agreement. "We don't have many details, but the Oracle of Delphi might have the answers you need. It would be wise to seek her counsel."</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4339"/>
+    </children>
+  </item>
+  <item nodeId="node-4339">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">Hesperie steps forward, holding out something. It is the Eternal Chalice of Nectar, once your symbol of duty as the cupbearer of the gods before the events that led to Ganymedes taking on that role. Her eyes are earnest as she places the chalice in your hands.&#x000A;&#x000A;"You might need this," Hesperie says softly. "Without nectar or ambrosia, gods can lose their immortality and eternal youth. You know this better than anyone."&#x000A;&#x000A;The Hesperides embrace you one last time. "Good luck, Hebe!" they all say in unison. "We will be here, supporting you in any way we can."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4340"/>
+    </children>
+  </item>
+  <item nodeId="node-4340">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4341"/>
+    </children>
+  </item>
+  <item nodeId="node-4341">
+    <command xml:space="preserve">sail to sounio</command>
+    <result xml:space="preserve">You sail to the Port of Sounio.&#x000A;&#x000A;Port of Sounio&#x000A;To the north you can see the city of Sounio. &#x000A;&#x000A;From here you can sail to: &#x000A;&#x2192; Aulis&#x000A;&#x2192; Garden of the Hesperides&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4342"/>
+    </children>
+  </item>
+  <item nodeId="node-4342">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Agora of Sounio&#x000A;You can see the Port of Sounio in  the south. The Sounio Cape is in the east.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4343"/>
+    </children>
+  </item>
+  <item nodeId="node-4343">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Sounio Beach&#x000A;As you journey south toward Cape Sounion, where the Temple of Poseidon stands, you find that the cape has become entirely submerged. What remains is a narrow beach, with a vast expanse of land now lying beneath the sea. On your west is the town of Sounio.&#x000A;&#x000A;On the beach, you notice a nymph weeping and wailing, surrounded by others who are attempting to console her. You recognize the grieving nereid as Amphitrite, queen of the sea and wife of Poseidon. The nereids comforting her must be her closest attendants: Aktaia, Erato, and Ploto.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4344"/>
+    </children>
+  </item>
+  <item nodeId="node-4344">
+    <command xml:space="preserve">talk too amphitrite</command>
+    <result xml:space="preserve">I didn't understand that sentence.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4345"/>
+    </children>
+  </item>
+  <item nodeId="node-4345">
+    <command xml:space="preserve">talk to amphitrite</command>
+    <result xml:space="preserve">When Amphitrite's gaze falls upon you, her tears cease, and she draws near.&#x000A;&#x000A;"Eternal Maiden, you who has eluded the great evil, speak to me now and assure me you bring tidings of hope. The past weeks have been naught but torment; my husband has been stolen from my side, and his sacred temple desecrated, submerged beneath the waves-what a grievous insult! I am left powerless, unable to break free from the seafoam's embrace. Oh, I plead, Eternal Maiden, return my husband to my arms, unscathed and whole."&#x000A;&#x000A;You explain to Amphitrite that her dear husband was prophecised to be held under his flooded temple, which you need help to reach.&#x000A;&#x000A;"Naturally, Eternal Maiden, our unwavering support is yours. My Nereides and I stand ready to serve you in whatever you may require."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4346"/>
+    </children>
+  </item>
+  <item nodeId="node-4346">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">The nereides take you to the sunken Temple.TODO&#x000A;Underwater&#x000A;You find yourseld enveloped in a serene, otherwordly scene. The submerged Temple of Poseidon, its grand columns and sculpted friezes partially veiled by drifting seaweed and alge, rises majestically from the ocean floor. Schools of fish weave through the watery ruins, their movements casting shimmering reflections on the temple's marble. The once-bustling sacred site now rests in tranquil silence, offering a haunting glimpse of its former splendor beneath the surface.&#x000A;&#x000A;You take a big breath. You can propably hold it for about 12 minutes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4347"/>
+    </children>
+  </item>
+  <item nodeId="node-4347">
+    <command xml:space="preserve">enter</command>
+    <result xml:space="preserve">You go into the temple of poseidon.&#x000A;&#x000A;Temple of Poseidon&#x000A;As you enter the underwater temple of Poseidon, you are greeted by a mesmerizing sight. The water is crystal clear, allowing dancing beams of sunlight to filter through the surface above, casting just enough light to see across the temple's interior. The structure is grand, yet the underwater environment adds a serene, almost otherworldly quality to the space.&#x000A;&#x000A;In the center of the temple stands a massive column, intricately carved from marble, rising  from the temple floor. Around this column are four rotatable rings. The rings are crafted from shimmering metal, perhaps bronze, that glints in the filtered light.&#x000A;&#x000A;Before the column, along the temple floor, you notice a faint outline in the stone: a barely perceptible trapdoor.&#x000A;&#x000A;You can see the temple trapdoor here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4348"/>
+    </children>
+  </item>
+  <item nodeId="node-4348">
+    <command xml:space="preserve">x rings</command>
+    <result xml:space="preserve">You notice the rings have five different sides. Four of those sides have engraved symbols, the final is empty. The symbols of these sides are: a sprouting barley, a full-grown wheat stalk, a basket full of grapes and an empty vine.&#x000A;&#x000A; The side of the top ring facing the altar shows nothing.&#x000A; The side of the second ring facing the altar shows nothing.&#x000A; The side of the third ring facing the altar shows nothing.&#x000A; The side of the bottom ring facing the altar shows nothing.&#x000A; &#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4349"/>
+    </children>
+  </item>
+  <item nodeId="node-4349">
+    <command xml:space="preserve">rotate top ring</command>
+    <result xml:space="preserve">Now its face shows an empty vine.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4350"/>
+    </children>
+  </item>
+  <item nodeId="node-4350">
+    <command xml:space="preserve">actions</command>
+    <result xml:space="preserve">Actions listing on.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4351"/>
+    </children>
+  </item>
+  <item nodeId="node-4351">
+    <command xml:space="preserve">rotate top ring</command>
+    <result xml:space="preserve">[rotating top ring]&#x000A;Now its face shows a basket full of grapes.&#x000A;[rotating top ring - failed]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4352"/>
+    </children>
+  </item>
+  <item nodeId="node-4352">
+    <command xml:space="preserve">showme</command>
+    <result xml:space="preserve">Temple of Poseidon - outroom&#x000A;    temple trapdoor - closed door&#x000A;    yourself - woman&#x000A;        Eternal Chalice of Nectar&#x000A;        Heracles' Club&#x000A;    all rings&#x000A;    pos altar&#x000A;    blue column&#x000A;        top ring (part of blue column) - ring&#x000A;        second ring (part of blue column) - ring&#x000A;        third ring (part of blue column) - ring&#x000A;        bottom ring (part of blue column) - ring&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4353"/>
+    </children>
+  </item>
+  <item nodeId="node-4353">
+    <command xml:space="preserve">showme column</command>
+    <result xml:space="preserve">(the blue column)&#x000A;blue column - thing&#x000A;    top ring (part of blue column) - ring&#x000A;    second ring (part of blue column) - ring&#x000A;    third ring (part of blue column) - ring&#x000A;    bottom ring (part of blue column) - ring&#x000A;location: in Temple of Poseidon&#x000A;unlit, inedible, fixed in place, scenery; singular-named, improper-named&#x000A;description: none&#x000A;initial appearance: none&#x000A;smell: neutral&#x000A;printed name: "blue column"&#x000A;printed plural name: none&#x000A;indefinite article: none&#x000A;list grouping key: none&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -31004,12 +31236,73 @@
   </item>
   <item nodeId="node-3533">
     <command xml:space="preserve">test getweights</command>
-    <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] x dragon statue&#x000A;A small statue depicting a dragon. It is masterfully sculpted, with meticulous attention evident in every detail. Each scale is rendered with such precision that they appear almost lifelike, giving the dragon a sense of realism. &#x000A;&#x000A;The statue's mouth is closed.&#x000A;&#x000A;&gt;[2] put rock on dragon head&#x000A;(first taking the rock)&#x000A;You picked up a rock.&#x000A;&#x000A;You put the rock on the dragon head.&#x000A;&#x000A;You hear the sound of stone grinding against stone. The dragon statue's mouth opened.&#x000A;&#x000A;&gt;[3] x dragon statue&#x000A;A small statue depicting a dragon. It is masterfully sculpted, with meticulous attention evident in every detail. Each scale is rendered with such precision that they appear almost lifelike, giving the dragon a sense of realism. &#x000A;&#x000A; You see 6 tooth inside the statue's mouth.&#x000A;&#x000A;&gt;[4] take 6 dragon teeth&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;&#x000A;&gt;[5] put 6 dragon teeth in the plate&#x000A;dragon tooth: Done.&#x000A;dragon tooth: Done.&#x000A;dragon tooth: Done.&#x000A;dragon tooth: Done.&#x000A;dragon tooth: Done.&#x000A;dragon tooth: Done.&#x000A;&#x000A;The dragon teeth are syphoned into the altar and a compartment door opens, exposing 6 weights.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] x dragon statue&#x000A;A small statue depicting a dragon. It is masterfully sculpted, with meticulous attention evident in every detail. Each scale is rendered with such precision that they appear almost lifelike, giving the dragon a sense of realism. &#x000A;&#x000A;The statue's mouth is closed.&#x000A;&#x000A;&gt;[2] put rock on dragon head&#x000A;(first taking the rock)&#x000A;You picked up a rock.&#x000A;&#x000A;You put the rock on the dragon head.&#x000A;&#x000A;You hear the sound of stone grinding against stone. The dragon statue's mouth opened.&#x000A;&#x000A;&gt;[3] x dragon statue&#x000A;A small statue depicting a dragon. It is masterfully sculpted, with meticulous attention evident in every detail. Each scale is rendered with such precision that they appear almost lifelike, giving the dragon a sense of realism. &#x000A;&#x000A;You see 6 teeth inside the statue's mouth.&#x000A;&#x000A;&gt;[4] take 6 dragon teeth&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;dragon tooth: You picked up a dragon tooth.&#x000A;&#x000A;&gt;[5] put 6 dragon teeth in the plate&#x000A;dragon tooth: Done.&#x000A;dragon tooth: Done.&#x000A;dragon tooth: Done.&#x000A;dragon tooth: Done.&#x000A;dragon tooth: Done.&#x000A;dragon tooth: Done.&#x000A;&#x000A;A hole opens at the base of the sacrificial plate, funneling the dragon teeth into the altar. As they settle, a hidden compartment at the bottom of the altar quietly slides open, revealing six variously shaped bronze weights&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
+      <child nodeId="node-4354"/>
       <child nodeId="node-3534"/>
     </children>
+  </item>
+  <item nodeId="node-4354">
+    <command xml:space="preserve">take weights</command>
+    <result xml:space="preserve">owl weight: You picked up an owl weight.&#x000A;shield weight: You picked up a shield weight.&#x000A;spear weight: You picked up a spear weight.&#x000A;snake weight: You picked up a snake weight.&#x000A;sword weight: You picked up a sword weight.&#x000A;horse weight: You picked up a horse weight.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4355"/>
+    </children>
+  </item>
+  <item nodeId="node-4355">
+    <command xml:space="preserve">put owl on left pan</command>
+    <result xml:space="preserve">The scale leans to the left.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4356"/>
+    </children>
+  </item>
+  <item nodeId="node-4356">
+    <command xml:space="preserve">take owl</command>
+    <result xml:space="preserve">The scale is perfectly balanced.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4357"/>
+    </children>
+  </item>
+  <item nodeId="node-4357">
+    <command xml:space="preserve">actions</command>
+    <result xml:space="preserve">Actions listing on.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4358"/>
+    </children>
+  </item>
+  <item nodeId="node-4358">
+    <command xml:space="preserve">put owl on left pan</command>
+    <result xml:space="preserve">[putting the owl weight on the left pan]&#x000A;The scale leans to the left.&#x000A;[putting the owl weight on the left pan - succeeded]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4359"/>
+    </children>
+  </item>
+  <item nodeId="node-4359">
+    <command xml:space="preserve">take owl</command>
+    <result xml:space="preserve">[taking the owl weight]&#x000A;The scale is perfectly balanced.&#x000A;[taking the owl weight - succeeded]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4360"/>
+    </children>
+  </item>
+  <item nodeId="node-4360">
+    <command xml:space="preserve">put shield in left pan</command>
+    <result xml:space="preserve">[inserting the shield weight into the left pan]&#x000A;[(1) putting the shield weight on the left pan]&#x000A;The scale leans to the left.&#x000A;[(1) putting the shield weight on the left pan - succeeded]&#x000A;&#x000A;[inserting the shield weight into the left pan - failed]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-3534">
     <command xml:space="preserve">test dragongate</command>
@@ -32949,12 +33242,91 @@
   </item>
   <item nodeId="node-3760">
     <command xml:space="preserve">wait 3 hours</command>
-    <result xml:space="preserve">It is now around early morning&#x000A;&#x000A;At twelve o'clock  you hear the click of a latch releasing and a sun hatch opening coming from the dial.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">It feels like it's around twelve o'clock now.&#x000A;&#x000A;&#x000A;At twelve o'clock you hear the click of a latch releasing and a you see a small hatch opening on the dial's gnomon.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
+      <child nodeId="node-4361"/>
       <child nodeId="node-3761"/>
     </children>
+  </item>
+  <item nodeId="node-4361">
+    <command xml:space="preserve">take sun key</command>
+    <result xml:space="preserve">You picked up the sun key.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4362"/>
+    </children>
+  </item>
+  <item nodeId="node-4362">
+    <command xml:space="preserve">wait 12 hours</command>
+    <result xml:space="preserve">At ten past twelve you hear the sound of the small hatch closing and the click of a latch locking coming from the dial's gnomon.&#x000A;&#x000A;&#x000A;The day passes and a new day is dawing...&#x000A;&#x000A;&#x000A;At twelve o'clock you hear the click of a latch releasing and you see a compact drawer popping open on the dial's plate.&#x000A;&#x000A;It feels like it's around twelve o'clock now.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4363"/>
+    </children>
+  </item>
+  <item nodeId="node-4363">
+    <command xml:space="preserve">take moon key</command>
+    <result xml:space="preserve">You picked up the moon key.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4364"/>
+    </children>
+  </item>
+  <item nodeId="node-4364">
+    <command xml:space="preserve">unlock sun lock with sun key</command>
+    <result xml:space="preserve">You put the sun key into the sun lock.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4365"/>
+    </children>
+  </item>
+  <item nodeId="node-4365">
+    <command xml:space="preserve">actions</command>
+    <result xml:space="preserve">Actions listing on.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4366"/>
+    </children>
+  </item>
+  <item nodeId="node-4366">
+    <command xml:space="preserve">unlock sun lock with sun key</command>
+    <result xml:space="preserve">[unlocking the sun lock with the sun key]&#x000A;(first taking the sun key)&#x000A;[(1) taking the sun key - silently]&#x000A;You picked up the sun key.&#x000A;[(1) taking the sun key - silently - succeeded]&#x000A;&#x000A;[(1) unlocking the sun lock]&#x000A;[(2) inserting the sun key into the sun lock]&#x000A;You put the sun key into the sun lock.&#x000A;[(2) inserting the sun key into the sun lock - succeeded]&#x000A;&#x000A;[(1) unlocking the sun lock - failed]&#x000A;&#x000A;[unlocking the sun lock with the sun key - failed]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4367"/>
+    </children>
+  </item>
+  <item nodeId="node-4367">
+    <command xml:space="preserve">actions</command>
+    <result xml:space="preserve">Actions listing on.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4368"/>
+    </children>
+  </item>
+  <item nodeId="node-4368">
+    <command xml:space="preserve">actions off</command>
+    <result xml:space="preserve">Actions listing off.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4369"/>
+    </children>
+  </item>
+  <item nodeId="node-4369">
+    <command xml:space="preserve">unlock moon lock</command>
+    <result xml:space="preserve">You put the moon key into the moon lock.&#x000A;&#x000A;You hear the sound of a locking mechanism unlocking.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-3761">
     <command xml:space="preserve">x dial</command>
