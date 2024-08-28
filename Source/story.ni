@@ -143,14 +143,14 @@ Chapter 0.21 - Variables
 
 [Chapter 1 - Athena & Ares]
 ThebesTemplePuzzleSolved is a truth state that varies. ThebesTemplePuzzleSolved is false. [if player solved Kadmos Palace puzzle or not]
-HasAthenaBoon is a truth state that varies. HasAthenaBoon is false. 
-HasAresBoon is a truth state that varies. HasAresBoon is false. 
+[HasAthenaBoon is a truth state that varies. HasAthenaBoon is false. 
+HasAresBoon is a truth state that varies. HasAresBoon is false. ]
 
 [Chapter 2 - Demeter & Poseidon]
 AmphitriteIsHappy is a truth state that varies. AmphitriteIsHappy is false. [Is the player calmed down Amphitrite]
 SeaTemplePuzzleSolved is a truth state that varies. SeaTemplePuzzleSolved is false. [if sea temple puzzle in Poseidons Temple is solved or not]
 
-HasDemeterBoon is a truth state that varies. HasDemeterBoon is false. [If the player has Demeter's boon, HasDemeterBoon is true]
+HasDemeterBoon is a truth state that varies. HasDemeterBoon is true. [If the player has Demeter's boon, HasDemeterBoon is true]
 HasPoseidonBoon is a truth state that varies. HasPoseidonBoon is false. [If the player has Poseidon's boon, HasPoseidonBoon is true]
 
 [Chapter 3 - Artemis & Apollo]
@@ -370,9 +370,9 @@ Carry out helping:
 	say "   • Push/Pull/Move [ bracket]object[close bracket]: Move an object.[line break]";
 	say "   • Give [ bracket]object[close bracket] to [ bracket]person[close bracket]: Give an item to someone. Example: 'give book to librarian'.[line break]";
 	say "[line break][bold type]3. Conversation Commands:[roman type][line break][line break]";
-	say "   • Talk to [ bracket]person[close bracket]: Initiate conversation. Example: 'talk to librarian'.[line break]";
+	say "   • Talk to [ bracket]person[close bracket]: Initiate conversation. Example: 'talk to librarian'.[line break]";[
 	say "   • Ask [ bracket]person[close bracket] about [ bracket]topic[close bracket]: Ask someone about something specific. Example: 'ask librarian about book'.[line break]";
-	say "   • Tell [ bracket]person[close bracket] about [ bracket]topic[close bracket]: Tell someone about a topic. Example: 'tell librarian about secret'.[line break]";
+	say "   • Tell [ bracket]person[close bracket] about [ bracket]topic[close bracket]: Tell someone about a topic. Example: 'tell librarian about secret'.[line break]";]
 	say "[line break][bold type][bold type]4. Miscellaneous Commands:[roman type][line break][line break]";
 	say "   • Inventory: See what you're carrying. Example: 'inventory', 'i'.[line break]";
 	say "   • Wait: Pass 1 minute. Example: 'wait'.[line break]";
@@ -387,7 +387,6 @@ Carry out helping:
 	say "   • Rotate [ bracket]object[close bracket] clockwise/anticlockwise: Rotate a rotatable object.[line break]";
 	say "   • Light [ bracket]object[close bracket]: Light a torch.[line break]";
 	say "   • Put out [ bracket]object[close bracket]: Put out a torch.[line break]";
-	say "   • Bring [ bracket]object[close bracket] close to the hearth.[line break]";
 	say "   • Give nectar to [ bracket]person[close bracket]: Make a person immortal or heal an immortal person.[line break]";
 	say "[paragraph break][italic type]You can also combine commands with objects and people, such as 'take book and give it to librarian'.[roman type]";
 	
@@ -548,14 +547,14 @@ Instead of examining Hera during Olympus Hall Celebration Scene:
 
 Instead of looking for the 1st time during the Olympus Hall Celebration Scene:
 	 If the player is in the Mount Olympus Hall:
-		say "The grand hall of Mount Olympus gleamed like a jewel in the Greek night sky. The lustrous surfaces of white marble and gold reflected the flickering torchlight. Columns of shimmering marble, capped with gilded Corinthian capitals, reached a vaulted ceiling adorned with intricate decorative paintings depicting scenes from the gods[apostrophe] legendary exploits. Among the hall’s lavish embellishments were thrones of solid gold, masterfully crafted handwoven carpets and golden chandeliers, suspended from the ceiling. Today the gods were celebrating the ascension of Heracles to immortality, and also the anniversary of your marriage to him.
+		say "The grand hall of Mount Olympus gleamed like a jewel in the Greek night sky. The lustrous surfaces of white marble and gold reflected the flickering torchlight. Columns of shimmering marble, capped with gilded Corinthian capitals, reached a vaulted ceiling adorned with intricate decorative paintings depicting scenes from the gods[apostrophe] legendary exploits. Among the hall’s lavish embellishments were thrones of solid gold, masterfully crafted handwoven carpets and golden chandeliers, suspended from the ceiling. Today the gods were celebrating the ascension of Heracles to immortality, and also the anniversary of your marriage to him.";
+		wait for any key;
+		say "[line break]The air was thick with the aroma of ambrosia and the rich scent of a feast laid out for the celebrating gods. Plates piled high with the finest delicacies filled every corner of the vast chamber, while goblets brimming with nectar passed from hand to hand, by the ever-dutiful Ganymedes.
 
-The air was thick with the aroma of ambrosia and the rich scent of a feast laid out for the celebrating gods. Plates piled high with the finest delicacies filled every corner of the vast chamber, while goblets brimming with nectar passed from hand to hand, by the ever-dutiful Ganymedes.
-
-The hall was alive with the sounds of the festivities. Laughter and song echoed through the space as gods danced and sang in celebration. Nymphs twirled gracefully among them, their light steps barely disturbing the surface of the marble floor. In the center of the room, a troupe of performers reenacted the epic labors of Heracles, their movements grand and heroic, a fitting tribute to the hero whose deeds had won him a place among the gods.
-
-At the heart of the celebration sat the honoured guests of the occasion, Heracles himself, with you, his wife, to his right. On Heracles[apostrophe] left sat Zeus, king of the gods, who is glancing upon you both full of pride. On your right sat Hera, her demeanor calm and gratified, with a rare softness in her gaze. She put aside any conflict during the event, given her affection for you.
-
+The hall was alive with the sounds of the festivities. Laughter and song echoed through the space as gods danced and sang in celebration. Nymphs twirled gracefully among them, their light steps barely disturbing the surface of the marble floor. In the center of the room, a troupe of performers reenacted the epic labors of Heracles, their movements grand and heroic, a fitting tribute to the hero whose deeds had won him a place among the gods.";
+		wait for any key;
+		say "[line break]At the heart of the celebration sat the honoured guests of the occasion, Heracles himself, with you, his wife, to his right. On Heracles[apostrophe] left sat Zeus, king of the gods, who is glancing upon you both full of pride. On your right sat Hera, her demeanor calm and gratified, with a rare softness in her gaze. She put aside any conflict during the event, given her affection for you.
+		
 The Twelve Olympians were all in attendance, their mighty forms gracing the hall with an air of majesty. They conversed among themselves, as they partook in the feast. Nymphs flitted among them, their laughter mingling with the conversations, adding a lightness to the evening’s festivities.
 
 Everywhere you looked, there was movement, life, and joy. The gods, unbound by the cares of the mortal world, indulged in the pleasures of the moment, their spirits lifted by the music, the food, and the company. The hall of Olympus had never shined brighter, a fitting tribute to the divine couple.";
@@ -592,15 +591,15 @@ A nectar is scenery in Mount Olympus Hall. [TODO: make description maybe]
 [Kronos Scene]
 When Kronos Scene begins:
 	Wait for any key;
-	say "[paragraph break]Suddenly, an eerie silence fell over the festive night. The singing and dancing ceased, as if an unseen hand had stilled them. For a brief moment, you felt the coldness of the mountain air, a stark contrast to the pleasant breeze that had enveloped you moments before. A sense of foreboding fills you as you become aware that all eyes are turned behind you. You lock eyes with Heracles, both of you sharing a look of worry. With a growing sense of dread, you turned to see what had drawn everyone's attention.
-
-'Oh dear, please, do not let my presence taint your insignificant gathering. Carry on as you were.'
-
-The voice was unmistakable, deep and resonant, carrying an ancient power that sent shivers down your spine. It was Kronos. So much time has passed since our triumph in the War of Titans— the Titanomachy. How did he manage to escape Tartaros?
-
-The sight of the Titan, towering and menacing, shrouded in shadows, struck fear into the hearts of all present. You start to feel the ichor in your divine veins turn cold, as if time itself was freezing. The gods, normally so mighty and formidable, stand paralyzed in shock. Nothing moves. In a heartbeat, you break free from the daze and come to your senses. Your next actions have never been more certain. It's now or never. 
-
-You grab Heracle's club out of his hands and leap towards Kronos. Then you feel yourself slipping into unconciousness."
+	say "[paragraph break]Suddenly, an eerie silence fell over the festive night. The singing and dancing ceased, as if an unseen hand had stilled them. For a brief moment, you felt the coldness of the mountain air, a stark contrast to the pleasant breeze that had enveloped you moments before. A sense of foreboding fills you as you become aware that all eyes are turned behind you. You lock eyes with Heracles, both of you sharing a look of worry. With a growing sense of dread, you turned to see what had drawn everyone's attention.";
+	wait for any key;
+	say "[line break]'Oh dear, please, do not let my presence taint your insignificant gathering. Carry on as you were.'";
+	wait for any key;
+	say "[line break]The voice was unmistakable, deep and resonant, carrying an ancient power that sent shivers down your spine. It was Kronos. So much time has passed since our triumph in the War of Titans— the Titanomachy. How did he manage to escape Tartaros?";
+	wait for any key;
+	say "[line break]The sight of the Titan, towering and menacing, shrouded in shadows, struck fear into the hearts of all present. You start to feel the ichor in your divine veins turn cold, as if time itself was freezing. The gods, normally so mighty and formidable, stand paralyzed in shock. Nothing moves. In a heartbeat, you break free from the daze and come to your senses. Your next actions have never been more certain. It's now or never.";
+	wait for any key;
+	say "[line break]You grab Heracle's club out of his hands and leap towards Kronos. Then you feel yourself slipping into unconciousness."
 
 When Kronos Scene ends:
 	now the description of Mount Olympus Hall is "Olympus Hall Destruction Description";
@@ -631,9 +630,15 @@ When Kronos Scene ends:
 	now Hera is asleep;
 	now Hestia is in Divine Cell of Hestia & Hermes;
 	now Hestia is asleep;
-	wait for any key;
 	now the player is holding the Heracles' Club;
-	wait for any key.
+	wait for any key;
+	say ".";
+	wait for any key;
+	say ".";
+	wait for any key;
+	say ".";
+	wait for any key;
+	now the player is in the garden of the Hesperides;
 	
 
 Chapter 0.9 - Other Rooms
@@ -649,23 +654,22 @@ The Garden of the Hesperides Scene is a scene. Garden of the Hesperides Scene be
 The Garden of the Hesperides Scene ends when the time since Garden of the Hesperides Scene began is 0 minutes.
 
 When Garden of the Hesperides Scene begins:
-	now the description of Garden of the Hesperides is "You slowly regain consciousness, greeted by the soft rustling of leaves of a tranquil garden. As your eyes flutter open, you find yourself surrounded by four enchanting nymphs. Their expressions are a mix of deep concern and immense relief, as if they’ve been holding their breath waiting for this moment. You instantly recognise Aigle, Arethousa, Erytheia and Hesperie, the nymphs of the evening known as Hesperides, guardians of Hera's orchard.
+	say "You slowly regain consciousness, greeted by the soft rustling of leaves of a tranquil garden. As your eyes flutter open, you find yourself surrounded by four enchanting nymphs. Their expressions are a mix of deep concern and immense relief, as if they’ve been holding their breath waiting for this moment. You instantly recognise Aigle, Arethousa, Erytheia and Hesperie, the nymphs of the evening known as Hesperides, guardians of Hera's orchard.
 
 'Hebe, it’s been almost two weeks!' Arethousa exclaims, her voice a blend of worry and joy. 'We were all so anxious for you to wake up.'
 
-With gentle hands, the nymphs help you to sit up, their embraces warm and comforting. The familiar scent of the Garden of the Hesperides fills your senses, grounding you in the safety of their presence.
+With gentle hands, the nymphs help you to sit up, their embraces warm and comforting. The familiar scent of the Garden of the Hesperides fills your senses, grounding you in the safety of their presence.";
+	wait for any key;
+	say "[line break]Aigle, her expression displaying a hint of urgency, leans in. 'You should get moving now that you’re awake. There are disturbing rumors that Kronos has imprisoned the gods and is attempting to free his brothers from Tartaros. You’re the only goddess we’ve seen show any signs of activity lately.'
 
-Aigle, her expression displaying a hint of urgency, leans in. 'You should get moving now that you’re awake. There are disturbing rumors that Kronos has imprisoned the gods and is attempting to free his brothers from Tartaros. You’re the only goddess we’ve seen show any signs of activity lately.'
-
-Erytheia nods in agreement. 'We don’t have many details, but the Oracle of Delphi might have the answers you need. It would be wise to seek her counsel.'
-
-Hesperie steps forward, holding out something. It is the Eternal Chalice of Nectar, once your symbol of duty as the cupbearer of the gods before the events that led to Ganymedes taking on that role. Her eyes are earnest as she places the chalice in your hands.
+Erytheia nods in agreement. 'We don’t have many details, but the Oracle of Delphi might have the answers you need. It would be wise to seek her counsel.'";
+	wait for any key;
+	say "[line break]Hesperie steps forward, holding out something. It is the Eternal Chalice of Nectar, once your symbol of duty as the cupbearer of the gods before the events that led to Ganymedes taking on that role. Her eyes are earnest as she places the chalice in your hands.
 
 'You might need this,' Hesperie says softly. 'Without nectar or ambrosia, gods can lose their immortality and eternal youth. You know this better than anyone.'
 
-The Hesperides embrace you one last time. 'Good luck, Hebe!' they all say in unison. 'We will be here, supporting you in any way we can.'
-";
-	now the player is in the garden of the Hesperides;
+The Hesperides embrace you one last time. 'Good luck, Hebe!' they all say in unison. 'We will be here, supporting you in any way we can.'";
+	
 		
 	
 When Garden of the Hesperides Scene ends:
@@ -1029,27 +1033,12 @@ After examining Ares:
 
 When Divine Cell of Athena & Ares Scene ends:
 	now the description of Divine Cell of Athena & Ares is "The room is a small, dimly lit cellar, its walls carved from old stone and shrouded in shadows. Flickering torches cast an eerie glow, illuminating shelves lined with forgotten offerings. The gate to the heroon is [if the dragon gate is open]open.[otherwise]closed.";
-	say "The gods stir from their eternal rest, their divine bodies awakening. 'Thank you for saving us, sister. We wish to grand you our power.' [paragraph break]Invoking Athena's wisdom will help you solve puzzles and Invoking Ares[apostrophe] strategies will help you win combats. Which one do you want to choose?".[todo:fix when i have the boons]
-
-After reading a command when Athena is awake and Ares is awake:
-	if Athena is in Divine Cell of Athena & Ares and the player's command includes "Athena" or Athena is in Divine Cell of Athena & Ares and the player's command includes "Athena's":
-		now HasAthenaBoon is true;
-		say "You chose the blessing of Athena.";
-		say "The gods now go to olympus.";
-		now Athena is in Mount Olympus Hall;
-		now Athena is described;
-		now Ares is in Mount Olympus Hall;
-		now Ares is described;
-		reject the player's command;
-	otherwise if Ares is in Divine Cell of Athena & Ares and the player's command includes "Ares" or Ares is in Divine Cell of Athena & Ares and the player's command includes "Ares's":
-		now HasAresBoon is true;
-		say "You chose the blessing of Ares.";
-		say "The gods now go to olympus.";
-		now Athena is in Mount Olympus Hall;
-		now Athena is described;
-		now Ares is in Mount Olympus Hall;
-		now Ares is described;
-		reject the player's command;
+	say "The gods stir from their eternal rest, their divine bodies awakening. 'Thank you for saving us, sister.' [line break][line break]Now the gods leave for olympus hall.TODO";[todo:fix when i have the boons]
+	now Athena is in Mount Olympus Hall;
+	now Athena is described;
+	now Ares is in Mount Olympus Hall;
+	now Ares is described;
+		
 		
 
 [End Of: Divine Cell of Athena & Ares]
@@ -1372,28 +1361,12 @@ After examining Demeter:
 
 When Divine Cell of Demeter & Poseidon Scene ends:
 	now the description of Divine Cell of Demeter & Poseidon is "";
-	say "The gods stir from their eternal rest, their divine bodies awakening. 'Thank you for waking us, niece. We wish to grand you our power.' [paragraph break]Choosing Demeter's wisdom will enable you to speak the language of the earth and choosing Poseidon[apostrophe] power will enable you to breath and see underwater. Which one do you want to choose?".
-	
-
-After reading a command when Demeter is awake and Poseidon is awake:
-	if Demeter is in Divine Cell of Demeter & Poseidon and the player's command includes "Demeter" or Demeter is in Divine Cell of Demeter & Poseidon and the player's command includes "Demeter's":
-		now HasDemeterBoon is true;
-		say "You chose the blessing of Demeter.";
-		say "The gods now go to olympus.";
-		now Demeter is in Mount Olympus Hall;
-		now Poseidon is in Mount Olympus Hall;
-		now poseidon is described;
-		now demeter is described;
-		reject the player's command;
-	otherwise if Poseidon is in Divine Cell of Demeter & Poseidon and the player's command includes "Poseidon" or Poseidon is in Divine Cell of Demeter & Poseidon and the player's command includes "Poseidon's":
-		now HasPoseidonBoon is true;
-		say "You chose the blessing of Poseidon.";
-		say "The gods now go to olympus.";
-		now Demeter is in Mount Olympus Hall;
-		now Poseidon is in Mount Olympus Hall;
-		now poseidon is described;
-		now demeter is described;
-		reject the player's command;
+	say "The gods stir from their eternal rest, their divine bodies awakening. 'Thank you for waking us, niece.' [line break][line break]Now the gods leave for olympus hall.TODO";
+	now Demeter is in Mount Olympus Hall;
+	now Poseidon is in Mount Olympus Hall;
+	now poseidon is described;
+	now demeter is described;
+		
 
 [End Of: Divine Cell of Demeter & Poseidon]
 
@@ -1813,28 +1786,11 @@ After examining Apollo:
 		continue the action.
 
 When Divine Cell of Artemis & Apollo Scene ends:
-	say "The gods stir from their eternal rest, their divine bodies awakening. 'Thank you for waking us, sister. We wish to grand you our power.' [paragraph break]Choosing Artemis Boom will enable you to todo? and choosing Apollo's power will enable you to todo? . Which one do you want to choose?".
-	
-After reading a command when Artemis is awake and Apollo is awake:
-	if Artemis is in Divine Cell of Artemis & Apollo and the player's command includes "Artemis" or Artemis is in Divine Cell of Artemis & Apollo and the player's command includes "Artemis'":
-		now HasArtemisBoon is true;
-		say "You chose the blessing of Artemis.";
-		say "The gods now go to olympus.";
-		now Artemis is in Mount Olympus Hall;
-		now Apollo is in Mount Olympus Hall;
-		now Artemis is described;
-		now Apollo is described;
-		reject the player's command;
-	otherwise if Apollo is in Divine Cell of Artemis & Apollo and the player's command includes "Apollo" or Apollo is in Divine Cell of Artemis & Apollo and the player's command includes "Apollo's":
-		now HasApolloBoon is true;
-		say "You chose the blessing of Apollo.";
-		say "The gods now go to olympus.";
-		now Apollo is in Mount Olympus Hall;
-		now Artemis is in Mount Olympus Hall;
-		now Artemis is described;
-		now Apollo is described;
-		reject the player's command;
-	
+	say "The gods stir from their eternal rest, their divine bodies awakening. 'Thank you for waking us, sister.' [line break][line break]Now the gods leave for olympus hall.TODO";
+	now Artemis is in Mount Olympus Hall;
+	now Apollo is in Mount Olympus Hall;
+	now Artemis is described;
+	now Apollo is described;	
 
 
 
@@ -2245,27 +2201,11 @@ After examining Hephaestus:
 
 When Divine Cell of Aphrodite & Hephaestus Scene ends:
 	now the description of Divine Cell of Aphrodite & Hephaestus is "The chamber appears to be a memorial shrine. In its center stands a marble tomb, covered with a multitude of small, red blossoms. Incense spirals lazily upward, filling the air with a floral aroma.";
-	say "The gods wake up from their slumber. 'Thank you for saving us, dear. We wish to grand you our power.' [paragraph break]Choosing Aphrodite's Boom will enable you to todo? and choosing Hephaestus[apostrophe] power will enable you to todo? Which one do you want to choose?".
-	
-After reading a command when Aphrodite is awake and Hephaestus is awake:
-	if Aphrodite is in Divine Cell of Aphrodite & Hephaestus and the player's command includes "Aphrodite" or Aphrodite is in Divine Cell of Aphrodite & Hephaestus and the player's command includes "Aphrodite's":
-		now HasAphroditeBoon is true;
-		say "You chose the blessing of Aphrodite.";
-		say "The gods now go to olympus.";
+	say "The gods wake up from their slumber. 'Thank you for saving us, dear.' [line break][line break]Now the gods leave for olympus hall.TODO";
 		now Aphrodite is in Mount Olympus Hall;
 		now Hephaestus is in Mount Olympus Hall;
 		now Aphrodite is described;
 		now Hephaestus is described;
-		reject the player's command;
-	otherwise if Hephaestus is in Divine Cell of Aphrodite & Hephaestus and the player's command includes "Hephaestus" or Hephaestus is in Divine Cell of Aphrodite & Hephaestus and the player's command includes "Hephaestus'":
-		now HasHephaestusBoon is true;
-		say "You chose the blessing of Hephaestus.";
-		say "The gods now go to olympus.";
-		now Aphrodite is in Mount Olympus Hall;
-		now Hephaestus is in Mount Olympus Hall;
-		now Aphrodite is described;
-		now Hephaestus is described;
-		reject the player's command;
 
 
 [End Of: Divine Cell of Aphrodite & Hephaestus]
@@ -2640,23 +2580,12 @@ After examining Hermes:
 
 When Divine Cell of Hestia & Hermes Scene ends:
 	now the description of Divine Cell of Hestia & Hermes is "TODO: description of Divine Cell of Hestia & Hermes.";
-	say "The gods wake up from their slumber. 'Thank you for saving us, dear. We wish to grand you our power.' [paragraph break]Choosing Hestia's Boom will enable you to todo? and choosing Hermes[apostrophe] power will enable you to todo? . Which one do you want to choose?".
-	
-After reading a command when Hestia is awake and Hermes is awake:
-	if Hestia is in Divine Cell of Hestia & Hermes and the player's command includes "Hestia" or Hestia is in Divine Cell of Hestia & Hermes and the player's command includes "Hestia's":
-		now HasHestiaBoon is true;
-		say "You chose the blessing of Hestia.";
-		say "The gods now go to olympus.";
-		now Hestia is in Mount Olympus Hall;
-		now Hermes is in Mount Olympus Hall;
-		reject the player's command;
-	otherwise if Hermes is in Divine Cell of Hestia & Hermes and the player's command includes "Hermes" or Hermes is in Divine Cell of Hestia & Hermes and the player's command includes "Hermes'":
-		now HasHermesBoon is true;
-		say "You chose the blessing of Hermes.";
-		say "The gods now go to olympus.";
-		now Hestia is in Mount Olympus Hall;
-		now Hermes is in Mount Olympus Hall;
-		reject the player's command;
+	say "The gods wake up from their slumber. 'Thank you for saving us, dear.'[line break][line break]Now the gods leave for olympus hall.TODO";
+	now Hestia is in Mount Olympus Hall;
+	now Hermes is in Mount Olympus Hall;
+	now Hestia is described;
+	now Hermes is described;
+		
 	
 
 
