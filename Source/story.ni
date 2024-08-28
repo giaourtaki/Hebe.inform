@@ -2,7 +2,8 @@
 
 Chapter 0.00 - TODOs | TBDs
 
-release along with a website and an interpreter.
+release along with a website and an interpreter. [for beta testing]
+
 Release along with cover art.
 
 [Everything TBD should be commented or deleted]
@@ -1105,7 +1106,7 @@ When Sounio Beach Scene ends:
 
 On the beach, you see Amphitrite, Aktaia, Erato and Ploto.
 
-TODO ";
+[bold type]Known Accessible Locations:[roman type]→Agora of Sounio (w)[line break]→Temple of Poseidon (s) ";
 
 Instead of talking to someone during Sounio Beach Scene:
 	if the noun is Aktaia:
@@ -1148,11 +1149,6 @@ Instead of nectarizing Amphitrite:
 	otherwise:
 		continue the action.
 		
-
-When Sounio Beach Scene ends:
-	now the description of Sounio Beach is "As you journey south toward Cape Sounion, where the Temple of Poseidon stands, you find that the cape has become entirely submerged. What remains is a narrow beach, with a vast expanse of land now lying beneath the sea. On your west is the town of Sounio.
-
-TODO Map instructions".
 
 [doors]
 The sea is south of the sounio beach and up of underwater. It is an unopenable closed door. It is a scenery. 
@@ -1340,11 +1336,11 @@ test POS with "rotate the top ring anticlockwise/rotate the second ring anticloc
 Divine Cell of Demeter & Poseidon Scene is a scene. Divine Cell of Demeter & Poseidon Scene begins when the player is in the temple of poseidon for the first time. Divine Cell of Demeter & Poseidon Scene ends when Goddess Demeter is awake and God Poseidon is awake.
 
 When Divine Cell of Demeter & Poseidon Scene begins:
-	now the description of Divine Cell of Demeter & Poseidon is "As you descend through the trapdoor the water gradually becomes deeper and darker. Whatever light you get down here is shinning from the open door, so its hard to see. Holding your breath, you enter an underground chamber that seems to had been used as a treasury.
+	now the description of Divine Cell of Demeter & Poseidon is "[one of]As you descend through the trapdoor the water gradually becomes deeper and darker. Whatever light you get down here is shinning from the open door, so its hard to see. Holding your breath, you enter an underground chamber that seems to had been used as a treasury.
 
 The chamber's walls are veiled beneath a thin layer of alge. Some rusted chests lay scattered across the floor, probably filled with precious offerings to the god by mortals.
 
-In the center of the chamber, you make out the forms of two figures. Demeter and Poseidon were bound by shadowy nether-forged chains, seemingly lost in an eternal slumber. A serene, almost ethereal expression graced their faces, their divine bodies seemingly suspended in time.".
+In the center of the chamber, you make out the forms of two figures. Demeter and Poseidon were bound by shadowy nether-forged chains, seemingly lost in an eternal slumber. A serene, almost ethereal expression graced their faces, their divine bodies seemingly suspended in time.[or]The chamber looks like a hidden treasury. In In the center of the chamber lie Demeter and Poseidon, sleeping peacefully.[stopping]".
 	
 After talking to Demeter:
 	if Demeter is asleep:
@@ -1848,10 +1844,9 @@ Chapter 4 - Aphrodite & Hephaestus
 
 [region: Cyprus]
 
-[When i want to test Cyprus]
-The player is in Agora of Paphos.
 
-[Rooms]
+
+[Start of: Agora of Paphos]
 Agora of Paphos is a room in Cyprus. "[one of]The Agora of Paphos is a bustling marketplace, filled with the sights, sounds, and smells of ancient Cypriot life. Vendors are hawking their wares, their voices rising in a cacophony of shouts and bargaining. The air is thick with the scent of spices, perfumes, and freshly baked bread.
 
 The architecture of the agora is a blend of Greek and Phoenician styles, with columns, arches, and intricate stonework. The buildings are painted in bright colors, and the streets are lined with mosaics depicting scenes from myths and everyday life.
@@ -1859,7 +1854,9 @@ The architecture of the agora is a blend of Greek and Phoenician styles, with co
 [bold type]Known Accessible Locations:[roman type][line break]→Palace of Paphos (n)[line break]→Port of Paphos (w)
 
 [or][bold type]Known Accessible Locations:[roman type][line break]→Palace of Paphos (n)[line break]→Port of Paphos (w)[stopping]";
+[End of: Agora of Paphos]
 
+[Start of: Throne Room]
 Throne Room is a room in Palace of Paphos. The description is "[one of]In the throne room, high stone columns intricately carved with motifs of mythological scenes and natural elements supported the lofty ceiling. The floor was a mosaic masterpiece, depicting elaborate geometric patterns that shimmered under the warm light of bronze braziers.
 
 At the room’s center, on a raised platform, stood the king’s throne: a magnificent chair of carved wood, overlaid with gold and inlaid with ivory. The throne was richly draped in deep purple and crimson fabrics. Beside it stood a large statue of Aphrodite, the island’s patron goddess, symbolically positioned as the king’s right hand.
@@ -1867,12 +1864,20 @@ At the room’s center, on a raised platform, stood the king’s throne: a magni
 [bold type]Known Accessible Locations:[roman type][line break]→ Outside of Palace of Paphos (s)
 [or][bold type]Known Accessible Locations:[roman type][line break]→ Outside of Palace of Paphos (s)[stopping]".
 
+
+Cinyras is a man in the Throne Room.
+
+[End of: Throne Room]
+
+[Start of: Outside of the Palace of Paphos]
 The Outside of the Palace of Paphos is a room in Paphos. "[one of]The Palace of Paphos, a grand and imposing structure, stands as a testament to the island's wealth and power. Its exterior is adorned with intricate carvings, columns, and mosaics, reflecting the opulence and sophistication of the Cypriot aristocracy. The palace is surrounded by a lush garden, filled with exotic plants, fragrant flowers, and towering trees. Fountains are cascading through the garden, creating a serene and inviting atmosphere. The palace walls are fortified to protect its occupants from potential threats, while the gates were adorned with ornate sculptures and decorative elements.
 
 [bold type]Accessible Locations:[roman type][line break]→Throne Room (n)[line break]→Agora of Paphos (s)
 [or][bold type]Accessible Locations:[roman type][line break]→Throne Room (n)[line break]→Agora of Paphos (s)[stopping]".
+[End of: Outside of the Palace of Paphos]
 
-[secret garden]
+
+[Start Of Secret Garden]
 Secret Garden is a room in Palace of Paphos. "You find yourself in an enchanted underground garden, where magic seems to pulse from every corner. The air is thick with the intoxicating scent of flowers, each blossom radiating a soft, ethereal glow. Though deep beneath the earth, the space is bathed in a gentle, divine light radiating from the plants themselves, complemented by the soft flicker of the candles lining the paths, their wax bodies somehow untouched by time or flame. Despite the absence of any other life, the garden feels alive, giving the impression it exists in a suspended moment between the past and present. 
 
 As one steps through the entrance, their eyes would be immediately drawn to a statue of an incomprehensibly beautiful man, poised on a marble base. His right hand is raised, his gaze fixed intently on it, [if nothing is inside the hand]as if beholding some unseen object.[otherwise]looking at the [list of things inside the item described] he's holding.[end if] Behind the statue lies a serene natural lake, with delicate pink and white lilies gently laying on its surface. On the other side of the water, a majestic olive tree stands, ancient and hollowed by the passage of centuries, its gnarled bark a testament to its age. Some round flower beds bursting with vibrant red, purple, and orange flowers are encircling the lake and the tree.
@@ -1885,11 +1890,7 @@ The Secret Garden is down of the Throne Room and west of the flower gate.
 
 The Divine Cell of Aphrodite & Hephaestus is east of the flower gate. 
 
-
 [doors/gates]
-
-[Start Of Secret Garden]
-
 [Secret Garden to Divine Cell of Aphrodite & Hephaestus by door]
 The ivy gate is east of the Secret Garden and west of the Divine Cell of Aphrodite & Hephaestus. The ivy gate is a locked door. The ivy gate is a scenery. 
 
@@ -2185,15 +2186,16 @@ Every turn:
 Instead of examining the ivy gate:
 	if FlowerPuzzleSolved is true:
 		say "The vines have retreated from the gate. You can try opening it now.";
+		now ivy gate is unlocked;
 	otherwise:
 		say "The gate is covered in thick vines, making it impossible to open."	
 		
 Every turn:
 	If FlowerPuzzleSolved is true for the first turn:
-		say "You hear the sound of leaves rustling.";
+		say "You hear the sound of leaves and vines rustling.";
 		now the ivy gate is unlocked;
 	otherwise if FlowerPuzzleSolved is false for the first turn:
-		say "You hear the sound of leaves rustling.";
+		say "You hear the sound of leaves and vines rustling.";
 		now the ivy gate is locked;
 		
 		
@@ -2206,43 +2208,44 @@ test SG2 with "put red flower in hand /x hand/take red flower from hand/x hand".
 
 [TODO: Battle with  Talos]
 
-
 The Divine Cell of Aphrodite & Hephaestus is a room.
 
-The description of Divine Cell of Aphrodite & Hephaestus is "TODO: description of Divine Cell of Aphrodite & Hephaestus.".
-
-Divine Cell of Aphrodite & Hephaestus Scene is a scene. Divine Cell of Aphrodite & Hephaestus Scene begins when the player is in Divine Cell of Aphrodite & Hephaestus for the first time. Divine Cell of Aphrodite & Hephaestus Scene ends when Goddess Aphrodite is awake and God Hephaestus is awake.
+Divine Cell of Aphrodite & Hephaestus Scene is a scene. Divine Cell of Aphrodite & Hephaestus Scene begins when the player is in secret garden for the first time. Divine Cell of Aphrodite & Hephaestus Scene ends when Goddess Aphrodite is awake and God Hephaestus is awake.
 
 When Divine Cell of Aphrodite & Hephaestus Scene begins:
-	now the description of Divine Cell of Aphrodite & Hephaestus is "TODO: description of Divine Cell of Aphrodite & Hephaestus scene. You see the Aphrodite & Hephaestus in a sleeping state.".
+	now the description of Divine Cell of Aphrodite & Hephaestus is "[one of]As you pass through the gate, you enter a chamber bathed in soft, white light. A series of towering silver columns, their surfaces polished to a blinding sheen, support the arched ceiling.
+
+The chamber appears to be a memorial shrine. In its center stands a marble tomb, covered with a multitude of small, red blossoms. Incense spirals lazily upward, filling the air with a floral aroma.
+
+Within two open crystal caskets, you see the figures of Aphrodite and Hephaestus, bound by shadowy nether-forged chains. Their bodies lie motionless, as if frozen in time. A serene, almost ethereal expression graces their faces, their divine forms seemingly suspended in an eternal slumber.[or]The chamber appears to be a memorial shrine. Within two open crystal caskets, you see the figures of Aphrodite and Hephaestus, sleeping peacefully.[stopping]".
 	
 After talking to Aphrodite:
 	if Aphrodite is asleep:
-		say "Aphrodite  is in a commatose state. She can't speak.";
+		say "Aphrodite seems to be sleeping deeply. She can't speak.";
 	otherwise:
 		continue the action.
 		
 After talking to Hephaestus:
 	if Hephaestus is asleep:
-		say "Hephaestus is in a commatose state. He can't speak.";
+		say "Hephaestus seems to be sleeping deeply. He can't speak.";
 	otherwise:
 		continue the action.
 
 After examining Aphrodite:
 	if Aphrodite is asleep:
-		say "Aphrodite is in a commatose state. She can't speak.";
+		say "Aphrodite seems to be sleeping deeply.";
 	otherwise:
 		continue the action.
 		
 After examining Hephaestus:
 	if Hephaestus is asleep:
-		say "Hephaestus is in a commatose state. He can't speak.";
+		say "Hephaestus seems to be sleeping deeply.";
 	otherwise:
 		continue the action.
 
 When Divine Cell of Aphrodite & Hephaestus Scene ends:
-	[TODO: now the description of divine room is]
-	say "The gods wake up from their slumber. 'Thank you for saving us, dear. We wish to grand you our power.' [paragraph break]Choosing Aphrodite's Boom will enable you to todo? and choosing Hephaestus[apostrophe] power will enable you to todo? . Which one do you want to choose?".
+	now the description of Divine Cell of Aphrodite & Hephaestus is "The chamber appears to be a memorial shrine. In its center stands a marble tomb, covered with a multitude of small, red blossoms. Incense spirals lazily upward, filling the air with a floral aroma.";
+	say "The gods wake up from their slumber. 'Thank you for saving us, dear. We wish to grand you our power.' [paragraph break]Choosing Aphrodite's Boom will enable you to todo? and choosing Hephaestus[apostrophe] power will enable you to todo? Which one do you want to choose?".
 	
 After reading a command when Aphrodite is awake and Hephaestus is awake:
 	if Aphrodite is in Divine Cell of Aphrodite & Hephaestus and the player's command includes "Aphrodite" or Aphrodite is in Divine Cell of Aphrodite & Hephaestus and the player's command includes "Aphrodite's":
@@ -2251,6 +2254,8 @@ After reading a command when Aphrodite is awake and Hephaestus is awake:
 		say "The gods now go to olympus.";
 		now Aphrodite is in Mount Olympus Hall;
 		now Hephaestus is in Mount Olympus Hall;
+		now Aphrodite is described;
+		now Hephaestus is described;
 		reject the player's command;
 	otherwise if Hephaestus is in Divine Cell of Aphrodite & Hephaestus and the player's command includes "Hephaestus" or Hephaestus is in Divine Cell of Aphrodite & Hephaestus and the player's command includes "Hephaestus'":
 		now HasHephaestusBoon is true;
@@ -2258,15 +2263,12 @@ After reading a command when Aphrodite is awake and Hephaestus is awake:
 		say "The gods now go to olympus.";
 		now Aphrodite is in Mount Olympus Hall;
 		now Hephaestus is in Mount Olympus Hall;
+		now Aphrodite is described;
+		now Hephaestus is described;
 		reject the player's command;
 
 
 [End Of: Divine Cell of Aphrodite & Hephaestus]
-
-
-[Characters]
-Cinyras is a man in the Throne Room.
-
 
 
 Chapter 5 - Hestia & Hermes
@@ -2274,15 +2276,14 @@ Chapter 5 - Hestia & Hermes
 [room]
 [Start Of: Prytaneion]
 
-[The player is in Prytaneion.]
 
-Prytaneion is a room. The description is "You step into the open hall of the Prytaneion, the administrative heart of Athens. In the center of the room you see the sacred hearth dedicated to Hestia, its warm glow illuminating the room. The flames burn steadily, their smoke rising in delicate spirals before disappearing through a square opening in the roof above. Beside the hearth lies a single hand torch, accompanied by a fire snuffer.
+Prytaneion is a room. The description is "[one of]You step into the open hall of the Prytaneion, the administrative heart of Athens. In the center of the room you see the sacred hearth dedicated to Hestia, its warm glow illuminating the room. The flames burn steadily, their smoke rising in delicate spirals before disappearing through a square opening in the roof above. Beside the hearth lies a single hand torch, accompanied by a fire snuffer.
 
-Just beyond the hearth, there is a small dining area. A large table made of pine, surrounded by several chairs, stands atop an elegant carpet, likely reserved for official dinners and gatherings. [if there is something on the table]Scattered across the table are [a list of things on the pine table], remnants of a recent meeting, perhaps.[otherwise]The table is empty.[end  if]
+Eight torches on either side of the hearth are placed on the ground, forming a semicircle around a small dining area. The torches are all put out, from the first—the far left one—to the sixteenth—the far right one.
 
-Eight torches on either side of the hearth are placed on the ground, forming a semicircle around the dining area. The torches are all put out, from the first—the far left one—to the sixteenth—the far right one.
+The dining area is situated directly in front of the hearth. A large table made of pine, surrounded by several chairs, stands atop an elegant carpet, likely reserved for official dinners and gatherings. [if there is something on the table]Scattered across the table are [a list of things on the pine table], remnants of a recent meeting, perhaps.[otherwise]The table is empty.[end  if]
 
-The rest of the building remains inaccessible, since the doors lead to the private quarters of the prytaneis and thus are firmly locked, leaving the main hall as the only accessible space.".
+The rest of the building remains inaccessible, since the doors lead to the private quarters of the prytaneis and thus are firmly locked, leaving the main hall as the only accessible space.[or]In the open Prytaneion hall you see the sacred hearth of Hestia, a pine dining table with matching pine chairs and [a list of things on top of pine table] on top of it. [if chair is not pushed and table is not pushed]Bellow the table and chairs is a red carpet.[otherwise]There is also a red carpet in the hall.[end if][line break][line break]There are also 8 torches on either side of the hearth, forming a semicircle around the dining area.[if the hidden trapdoor is interactable].[line break]You also see a trapdoor on the ground.[end if][stopping]".
 
 The floor is a scenery supporter. It is in prytaneion. 
 
@@ -2386,7 +2387,7 @@ Every turn while the red carpet is pushed and the chair is pushed and the pine t
 
 	
 [things]
-A hearth is a lit thing inside the prytaneion. It is scenery. The description is "According to Aeschines, 'the hearth of the Prytaneum is regarded as the common hearth of the state.'" Understand "sacred hearth" or "sacred hearth of hestia" as hearth.
+A hearth is an open unopenable transparent container inside the prytaneion. It is scenery. The description is "According to Aeschines, 'the hearth of the Prytaneum is regarded as the common hearth of the state.'" Understand "sacred hearth" or "sacred hearth of hestia" or "fire" or "fireplace" as hearth.
 
 A portable torch is an undescribed thing. It is inside the prytaneion. The description is "A portable torch.".
 Understand "hand torch" as portable torch.
@@ -2413,21 +2414,13 @@ A fourteenth torch is a kind of flame. There is a fourteenth torch inside the pr
 A fifteenth torch is a kind of flame. There is a fifteenth torch inside the prytaneion.Understand "15th torch" or "torch 15" as fifteenth torch. It is fixed in place.It is undescribed.
 A sixteenth torch is a kind of flame. There is a sixteenth torch inside the prytaneion.Understand "16th torch" or "torch 16" or "far right torch"as sixteenth torch. It is fixed in place. It is undescribed.
 
-
-[bring close to fire action]
-Bringing something close to the hearth is an action applying to one touchable thing. Understand "put [something] close to the hearth" or "put [something] close to hearth"  or "put [something] close to the fire" or "put [something] close to fire" or "bring [something] close to the hearth" or "bring [something] close to hearth" or "bring [something] close to the fire" or "bring [something] close to fire" as bringing something close to the hearth.
-
-Instead of bringing something close to the hearth:
+Instead of inserting something into the hearth:
 	if the player is not inside the prytaneion:
 		say "There is no hearth here.";
 		stop the action;
-	otherwise if the noun is the empty scroll:
-		say "Ink starts to slowly appear on the papyrus, revealing a message.";
-		now the description of the empty scroll is "The message says: Light the fourteenth, fifteenth and sixteenth torches."; 
-		stop the action;
 	otherwise if the noun is the wax tablet:
-		say "The warmth of the hearth made the wax melt. It revealed some engraved writing under it.";
-		now the description of the wax tablet is "The writing reads: Light the tenth, eleventh and thirteenth torches.";
+		say "You bring the wax me tablet close to the hearth. The warmth of the hearth made the wax melt. It revealed some engraved writing under it.";
+		now the description of the wax tablet is "The writing reads: Light the tenth, eleventh, thirteenth, fourteenth, fifteenth and sixteenth torches."; [TODO change]
 		stop the action;
 	otherwise:
 		say "Are you trying to burn the [noun]?";
@@ -2528,26 +2521,14 @@ Instead of examining all torches:
 Instead of taking torches:
 	say "They're fixed in place";
 	stop the action.
-	
 
-[things described]
-A scrolls is scenery inside the prytaneion. The description of scrolls is "You see two papyrus scrolls and one parchment scroll. One papyrus scroll is empty.".
-
-Instead of taking scrolls:
-	say "You need to specify which scroll you want to take.";
-	stop the action.
-
-[invisible ink scroll]
-An empty scroll is a thing on the pine table. The description is "An empty scroll. Smells citrusy.". The empty scroll has a smell. The smell of the empty scroll is citrusy.  [invisible ink] Understand "empty papyrus scroll" as empty scroll.
 
 [wax tablet]
-A wax tablet is a thing on the pine table. The description is "_  _ _ _ _  _ _ _ _ _ _  _ _ _ _  _ _ _ _ _  _ _.  _ _ _ _ _  _ _  _ _ _ _ _  _ _  _ _ _  _ _ _ _  _ _ _  _ _ _ _  _ _. [paragraph break][fixed letter spacing]S QWJC WOEBQCD  BCTB  PONCD UC. FDSOA  UC GZEIC BE BQC  VSDC WON  DCWN SB.". [cryptogram:I have another text under me. Bring me close to the fire and read it.]
+A wax tablet is a thing on the pine table. The description is "_  _ _ _ _  _ _ _ T _ _ _   T _ _ T  _ _ _ _ _  _ _.  _ _ T   _ _  _ _ _ _ _  T _  T _ _  _ _ _ _  _ _ _  _ _ _ _  _ T. [paragraph break][fixed letter spacing]M ZWFA  WCKTZAX    TAQT  VCYAX  SA. OVT  SA  NUKBA  TK  TZA DMXA  WCY  XAWY MT.". [cryptogram:I have another text under me. Put me close to the fire and read it.]
 
-[papyrus scroll]
-A papyrus scroll is a thing on the pine table.  The description is "On the scroll you read: Ortsg gsv hrcgs, gsv hvevmgs zmw gsv vrtsgs glixsvh.". [atbash cipher: Light the sixth, the seventh and the eighth torches ]
 
-[leather parchment]
-A parchment scroll is a thing on the pine table. The description is "On the parchment you read: Nkijv vjg ugeqpf cpf vjktf vqtejgu.". [Caesar cipher with ROT2: Light the second and third torches]
+[leather parchment scroll]
+A parchment scroll is a thing on the pine table. The description is "On the parchment you read: Oljkw wkh vhfrqg, wklug, vlawk, vhyhqwk dqg hljkwk wrufkhv.". [Caesar cipher with ROT3: Light the second, third, sixth, seventh and eighth torches]
 
 
 [solution]
@@ -2698,7 +2679,7 @@ The Charon's boat is a closed unopenable door.
 Charon is a man. He is in East of Ephyra.
 
 
-Charon Ride In Scene is a recurring  scene. Charon Ride In Scene begins when giving an obols to Charon. Charon Ride In Scene ends when the time since Charon Ride In Scene began is 2 minutes.
+Charon Ride In Scene is a recurring  scene. Charon Ride In Scene begins when giving an obols to Charon and the player is in East of Ephyra. Charon Ride In Scene ends when the time since Charon Ride In Scene began is 2 minutes.
 
 carry out giving:
 	If the noun is obols:
