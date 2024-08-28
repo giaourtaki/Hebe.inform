@@ -3,7 +3,7 @@
   <generator>Windows Inform 10.1.2</generator>
   <item nodeId="node-97">
     <command xml:space="preserve">Hebe</command>
-    <result xml:space="preserve">The gods stir from their eternal rest, their divine bodies awakening. "Thank you for waking us, sister." &#x000A;&#x000A;Now the gods leave for olympus hall.TODO&#x000A;Instructions: &#x000A;&#x000A;Welcome to Hebe, my Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. If at any point you need help, type "help" or "h" into the console. Have fun and thank you for playing!&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 240828 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Temple of the Aulidean Artemis&#x000A;You step into the sacred temple of Aulidean Artemis.&#x000A;The temple is empty and abandoned by the priestesses, following Kronos' seizure of power. Expected, unfortunately.&#x000A;&#x000A;As you pass through the pronaos, your eyes are drawn to the sunlight cascading down from the open ceiling, illuminating an imposing sundial made of pearly white marble that stands at the center of the chamber. The sun's rays cross paths with the dial's gnomon, casting a shadow that marks the hour.&#x000A;&#x000A;Entering the naos, the most divine part of the temple, you find yourself in the presence of the graceful golden statue of Artemis. Your sister stands tall and proud, her form aglow with a divine radiance that speaks of her unyielding strength and purity. In her left hand, she holds the antlers of a noble deer, symbolizing her dominion over the wild, while her right hand grips her bow, ever ready to protect those who dwell under her watchful eye. A quiver, filled with finely crafted arrows, rests upon her back, the tools of the huntress who lets no prey escape.&#x000A;&#x000A;Directly in front of her statue is the altar of Artemis, a place where mortals would lay their offerings not long ago, hoping to earn her favor.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">The gods wake up from their slumber. "Thank you for saving us, dear." &#x000A;&#x000A;Now the gods leave for olympus hall.TODO&#x000A;Instructions: &#x000A;&#x000A;Welcome to Hebe, my Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. If at any point you need help, type "help" or "h" into the console. Have fun and thank you for playing!&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 240829 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Secret Garden&#x000A;You find yourself in an enchanted underground garden, where magic seems to pulse from every corner. The air is thick with the intoxicating scent of flowers, each blossom radiating a soft, ethereal glow. Though deep beneath the earth, the space is bathed in a gentle, divine light radiating from the plants themselves, complemented by the soft flicker of the candles lining the paths, their wax bodies somehow untouched by time or flame. Despite the absence of any other life, the garden feels alive, giving the impression it exists in a suspended moment between the past and present.&#x000A;&#x000A;As one steps through the entrance, their eyes would be immediately drawn to a statue of an incomprehensibly beautiful man, poised on a marble base. His right hand is raised, his gaze fixed intently on it, as if beholding some unseen object. Behind the statue lies a serene natural lake, with delicate pink and white lilies gently laying on its surface. On the other side of the water, a majestic olive tree stands, ancient and hollowed by the passage of centuries, its gnarled bark a testament to its age. Some round flower beds bursting with vibrant red, purple, and orange flowers are encircling the lake and the tree.&#x000A;&#x000A;On the eastern side of the room, separated by a couple of steps decorated with flowers and candles, there is a secluded perfume-making area. Here, counters are crowded with the tools and equipment necessary for crafting fragrant elixirs, while ceramic amphorae are stored beneath, likely to store finished scents. The area leads to a gate covered in vines and flowers, making passage through it impossible.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -4102,8 +4102,319 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
+      <child nodeId="node-4374"/>
+      <child nodeId="node-4393"/>
       <child nodeId="node-4274"/>
     </children>
+  </item>
+  <item nodeId="node-4374">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4375"/>
+    </children>
+  </item>
+  <item nodeId="node-4375">
+    <command xml:space="preserve">give heracles his club</command>
+    <result xml:space="preserve">(first taking Heracles' Club)&#x000A;You picked up the Club of Heracles.&#x000A;&#x000A;He smiles at you. "Thank you, my dearest."</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4376"/>
+    </children>
+  </item>
+  <item nodeId="node-4376">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">Suddenly, an eerie silence fell over the festive night. The singing and dancing ceased, as if an unseen hand had stilled them. For a brief moment, you felt the coldness of the mountain air, a stark contrast to the pleasant breeze that had enveloped you moments before. A sense of foreboding fills you as you become aware that all eyes are turned behind you. You lock eyes with Heracles, both of you sharing a look of worry. With a growing sense of dread, you turned to see what had drawn everyone's attention.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4377"/>
+    </children>
+  </item>
+  <item nodeId="node-4377">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">"Oh dear, please, do not let my presence taint your insignificant gathering. Carry on as you were."</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4378"/>
+    </children>
+  </item>
+  <item nodeId="node-4378">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">The voice was unmistakable, deep and resonant, carrying an ancient power that sent shivers down your spine. It was Kronos. So much time has passed since our triumph in the War of Titans- the Titanomachy. How did he manage to escape Tartaros?</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4379"/>
+    </children>
+  </item>
+  <item nodeId="node-4379">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">The sight of the Titan, towering and menacing, shrouded in shadows, struck fear into the hearts of all present. You start to feel the ichor in your divine veins turn cold, as if time itself was freezing. The gods, normally so mighty and formidable, stand paralyzed in shock. Nothing moves. In a heartbeat, you break free from the daze and come to your senses. Your next actions have never been more certain. It's now or never.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4380"/>
+    </children>
+  </item>
+  <item nodeId="node-4380">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">You grab Heracle's club out of his hands and leap towards Kronos. Then you feel yourself slipping into unconsciousness.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4381"/>
+    </children>
+  </item>
+  <item nodeId="node-4381">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4382"/>
+    </children>
+  </item>
+  <item nodeId="node-4382">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4383"/>
+    </children>
+  </item>
+  <item nodeId="node-4383">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4384"/>
+    </children>
+  </item>
+  <item nodeId="node-4384">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">Garden of the Hesperides&#x000A;You slowly regain consciousness, greeted by the soft rustling of leaves of a tranquil garden. As your eyes flutter open, you find yourself surrounded by four enchanting nymphs. Their expressions are a mix of deep concern and immense relief, as if they've been holding their breath waiting for this moment. You instantly recognise Aigle, Arethousa, Erytheia and Hesperie, the nymphs of the evening known as Hesperides, guardians of Hera's orchard.&#x000A;&#x000A;"Hebe, it's been almost two weeks!" Arethousa exclaims, her voice a blend of worry and joy. "We were all so anxious for you to wake up."&#x000A;&#x000A;With gentle hands, the nymphs help you to sit up, their embraces warm and comforting. The familiar scent of the Garden of the Hesperides fills your senses, grounding you in the safety of their presence.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4385"/>
+    </children>
+  </item>
+  <item nodeId="node-4385">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">Aigle, her expression displaying a hint of urgency, leans in. "You should get moving now that you're awake. There are disturbing rumors that Kronos has imprisoned the gods and is attempting to free his brothers from Tartaros. You're the only goddess we've seen show any signs of activity lately."&#x000A;&#x000A;Erytheia nods in agreement. "We don't have many details, but the Oracle of Delphi might have the answers you need. It would be wise to seek her counsel."</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4386"/>
+    </children>
+  </item>
+  <item nodeId="node-4386">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">Hesperie steps forward, holding out something. It is the Eternal Chalice of Nectar, once your symbol of duty as the cupbearer of the gods before the events that led to Ganymedes taking on that role. Her eyes are earnest as she places the chalice in your hands.&#x000A;&#x000A;"You might need this," Hesperie says softly. "Without nectar or ambrosia, gods can lose their immortality and eternal youth. You know this better than anyone."&#x000A;&#x000A;The Hesperides embrace you one last time. "Good luck, Hebe!" they all say in unison. "We will be here, supporting you in any way we can."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4387"/>
+    </children>
+  </item>
+  <item nodeId="node-4387">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4388"/>
+    </children>
+  </item>
+  <item nodeId="node-4388">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4389"/>
+    </children>
+  </item>
+  <item nodeId="node-4389">
+    <command xml:space="preserve">travel to peraeus</command>
+    <result xml:space="preserve">That noun did not make sense in this context.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4390"/>
+    </children>
+  </item>
+  <item nodeId="node-4390">
+    <command xml:space="preserve">travel to peiraeus</command>
+    <result xml:space="preserve">That noun did not make sense in this context.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4391"/>
+    </children>
+  </item>
+  <item nodeId="node-4391">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Garden of the Hesperides&#x000A;The Garden of the Hesperides is a mythical paradise, an otherworldly oasis hidden in the middle of the Mediterranean, where the air is perpetually filled with the sweet fragrance of blooming flowers and the gentle hum of bees.&#x000A;&#x000A;In the heart of the garden stands the sacred tree of the Hesperides, its branches heavy with golden apples that gleam like captured sunlight. The apples, used to make nectar, hang among rich green leaves, guarded by the the Hesperides, the nymphs of the evening and daughters of the night. The nymphs are Aigle, Arethousa, Erytheia and Hesperie.&#x000A;&#x000A;The story goes that Gaia gifted Hera with branches of golden apples as a wedding present, and Hera, deeply admiring them, begged Gaia to plant them in her garden.&#x000A;&#x000A;The garden was your sanctuary once, where you spent countless hours alongside the Hesperides crafting nectar and bonding. Though you no longer visit it as often, it continues to protect you, just as it did during Kronos's attack on Olympus.&#x000A;&#x000A;From here you can sail to: &#x000A;&#x2192; Piraeus&#x000A;&#x2192; Sounio&#x000A;&#x2192; Aulis&#x000A;&#x2192; Paphos&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4392"/>
+    </children>
+  </item>
+  <item nodeId="node-4392">
+    <command xml:space="preserve">travel to piraeus</command>
+    <result xml:space="preserve">You travel from Garden of the Hesperides to the Port of Piraeus.&#x000A;&#x000A;Port of Piraeus&#x000A;Known accessible areas from here:&#x000A;&#x2192;Agora of Athens (NE)&#x000A;&#x000A;From here you can sail to: &#x000A;&#x2192; Paphos&#x000A;&#x2192; Garden of the Hesperides&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-4393">
+    <command xml:space="preserve">give club to heracles</command>
+    <result xml:space="preserve">(first taking Heracles' Club)&#x000A;You picked up the Club of Heracles.&#x000A;&#x000A;He smiles at you. "Thank you, my dearest."</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4394"/>
+    </children>
+  </item>
+  <item nodeId="node-4394">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">Suddenly, an eerie silence fell over the festive night. The singing and dancing ceased, as if an unseen hand had stilled them. For a brief moment, you felt the coldness of the mountain air, a stark contrast to the pleasant breeze that had enveloped you moments before. A sense of foreboding fills you as you become aware that all eyes are turned behind you. You lock eyes with Heracles, both of you sharing a look of worry. With a growing sense of dread, you turned to see what had drawn everyone's attention.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4395"/>
+    </children>
+  </item>
+  <item nodeId="node-4395">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">"Oh dear, please, do not let my presence taint your insignificant gathering. Carry on as you were."</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4396"/>
+    </children>
+  </item>
+  <item nodeId="node-4396">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">The voice was unmistakable, deep and resonant, carrying an ancient power that sent shivers down your spine. It was Kronos. So much time has passed since our triumph in the War of Titans- the Titanomachy. How did he manage to escape Tartaros?</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4397"/>
+    </children>
+  </item>
+  <item nodeId="node-4397">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">The sight of the Titan, towering and menacing, shrouded in shadows, struck fear into the hearts of all present. You start to feel the ichor in your divine veins turn cold, as if time itself was freezing. The gods, normally so mighty and formidable, stand paralyzed in shock. Nothing moves. In a heartbeat, you break free from the daze and come to your senses. Your next actions have never been more certain. It's now or never.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4398"/>
+    </children>
+  </item>
+  <item nodeId="node-4398">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">You grab Heracle's club out of his hands and leap towards Kronos. Then you feel yourself slipping into unconsciousness.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4399"/>
+    </children>
+  </item>
+  <item nodeId="node-4399">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4400"/>
+    </children>
+  </item>
+  <item nodeId="node-4400">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4401"/>
+    </children>
+  </item>
+  <item nodeId="node-4401">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4402"/>
+    </children>
+  </item>
+  <item nodeId="node-4402">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">Garden of the Hesperides&#x000A;You slowly regain consciousness, greeted by the soft rustling of leaves of a tranquil garden. As your eyes flutter open, you find yourself surrounded by four enchanting nymphs. Their expressions are a mix of deep concern and immense relief, as if they've been holding their breath waiting for this moment. You instantly recognise Aigle, Arethousa, Erytheia and Hesperie, the nymphs of the evening known as Hesperides, guardians of Hera's orchard.&#x000A;&#x000A;"Hebe, it's been almost two weeks!" Arethousa exclaims, her voice a blend of worry and joy. "We were all so anxious for you to wake up."&#x000A;&#x000A;With gentle hands, the nymphs help you to sit up, their embraces warm and comforting. The familiar scent of the Garden of the Hesperides fills your senses, grounding you in the safety of their presence.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4403"/>
+    </children>
+  </item>
+  <item nodeId="node-4403">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">Aigle, her expression displaying a hint of urgency, leans in. "You should get moving now that you're awake. There are disturbing rumors that Kronos has imprisoned the gods and is attempting to free his brothers from Tartaros. You're the only goddess we've seen show any signs of activity lately."&#x000A;&#x000A;Erytheia nods in agreement. "We don't have many details, but the Oracle of Delphi might have the answers you need. It would be wise to seek her counsel."</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4404"/>
+    </children>
+  </item>
+  <item nodeId="node-4404">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">Hesperie steps forward, holding out something. It is the Eternal Chalice of Nectar, once your symbol of duty as the cupbearer of the gods before the events that led to Ganymedes taking on that role. Her eyes are earnest as she places the chalice in your hands.&#x000A;&#x000A;"You might need this," Hesperie says softly. "Without nectar or ambrosia, gods can lose their immortality and eternal youth. You know this better than anyone."&#x000A;&#x000A;The Hesperides embrace you one last time. "Good luck, Hebe!" they all say in unison. "We will be here, supporting you in any way we can."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4405"/>
+    </children>
+  </item>
+  <item nodeId="node-4405">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4406"/>
+    </children>
+  </item>
+  <item nodeId="node-4406">
+    <command xml:space="preserve">travel to pireaus</command>
+    <result xml:space="preserve">That noun did not make sense in this context.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4407"/>
+    </children>
+  </item>
+  <item nodeId="node-4407">
+    <command xml:space="preserve">travel to piraeus</command>
+    <result xml:space="preserve">You travelled from Garden of the Hesperides to the Port of Piraeus.&#x000A;&#x000A;Port of Piraeus&#x000A;Known accessible areas from here:&#x000A;&#x2192;Agora of Athens (NE)&#x000A;&#x000A;From here you can travel to: &#x000A;&#x2192;Paphos&#x000A;&#x2192;Garden of the Hesperides&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4408"/>
+    </children>
+  </item>
+  <item nodeId="node-4408">
+    <command xml:space="preserve">h</command>
+    <result xml:space="preserve">Basic Commands&#x000A;&#x000A;1. Movement Commands:&#x000A;&#x000A;   &#x2022; Go [direction]: Move to another room. Example: "go north", "go in" or "enter", "out".&#x000A;   &#x2022; Directions include: north, south, east, west, northeast, northwest, southeast, southwest, up, and down.&#x000A;   &#x2022; You can also use the shortcuts n, s, e, w, ne, nw, se, sw, u and d.&#x000A;&#x000A;2. Interaction Commands:&#x000A;&#x000A;   &#x2022; Look: Examine your surroundings. Example: "look", "l".&#x000A;   &#x2022; Examine [object]: Inspect an item in detail. Example: "examine book", "x book".&#x000A;   &#x2022; Check [torches]: Examine the status of all the torches in Prytaneion.&#x000A;   &#x2022; Check [rings]: Examine the status of all the rings in Temple of Poseidon.&#x000A;   &#x2022; Take [object]: Pick up an item. Example: "take key".&#x000A;   &#x2022; Drop [object]: Put down an item. Example: "drop book".&#x000A;   &#x2022; Put [object] on/in [object]: Put an item on top or inside another item. Example: "put flower in pot".&#x000A;   &#x2022; Open/Close [object]: Open or close something. Example: "open door", "close box".&#x000A;   &#x2022; Push/Pull/Move [object]: Move an object.&#x000A;   &#x2022; Give [object] to [person]: Give an item to someone. Example: "give book to librarian".&#x000A;&#x000A;3. Conversation Commands:&#x000A;&#x000A;   &#x2022; Talk to [person]: Initiate conversation. Example: "talk to librarian".&#x000A;&#x000A;4. Miscellaneous Commands:&#x000A;&#x000A;   &#x2022; Inventory: See what you're carrying. Example: "inventory", "i".&#x000A;   &#x2022; Wait: Pass 1 minute. Example: "wait".&#x000A;   &#x2022; Wait for [a time period]: Wait for a chosen amount of time.&#x000A;   &#x2022; Sleep: Sleep until the morning of the next day.&#x000A;   &#x2022; Save/Restore/Quit: Manage your game. Example: "save", "restore", "quit".&#x000A;&#x000A;5. Game-Specific Commands:&#x000A;&#x000A;   &#x2022; Sacrifice [something]: do this in the necromanteion to gain an obol.&#x000A;   &#x2022; Investigate: Investigate a room to see the list of interactable things in it.&#x000A;   &#x2022; Travel to [any gates/any port]: You can travel from the gates/port of a city to another's.&#x000A;   &#x2022; Rotate [object] clockwise/anticlockwise: Rotate a rotatable object.&#x000A;   &#x2022; Light [object]: Light a torch.&#x000A;   &#x2022; Put out [object]: Put out a torch.&#x000A;   &#x2022; Give nectar to [person]: Make a person immortal or heal an immortal person.&#x000A;&#x000A;&#x000A;You can also combine commands with objects and people, such as "take book and give it to librarian".&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-4274">
     <command xml:space="preserve">i</command>
@@ -8206,11 +8517,12 @@
   </item>
   <item nodeId="node-915">
     <command xml:space="preserve">give club to heracles</command>
-    <result xml:space="preserve">(first taking Heracles' Club)&#x000A;You picked up the Club of Heracles.&#x000A;&#x000A;He smiles at you. "Thank you, my dearest."</result>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-916"/>
+      <child nodeId="node-4409"/>
     </children>
   </item>
   <item nodeId="node-916">
@@ -10831,6 +11143,30 @@
   <item nodeId="node-1211">
     <command xml:space="preserve">+</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-4409">
+    <command xml:space="preserve">take water lily</command>
+    <result xml:space="preserve">You pick one lily, just to see up close.&#x000A;&#x000A;You picked up a water lily.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4410"/>
+    </children>
+  </item>
+  <item nodeId="node-4410">
+    <command xml:space="preserve">put water lily in hands</command>
+    <result xml:space="preserve">You place the water lily in the statue's right hand.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4411"/>
+    </children>
+  </item>
+  <item nodeId="node-4411">
+    <command xml:space="preserve">take water lily</command>
+    <result xml:space="preserve">You pick one lily, just to see up close.&#x000A;&#x000A;You picked up a water lily.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -25273,7 +25609,7 @@
   </item>
   <item nodeId="node-2846">
     <command xml:space="preserve">scenes</command>
-    <result xml:space="preserve">Scene 'Entire Game' playing (for 0 mins now)&#x000A;Scene 'Divine Cell of Demeter &amp; Poseidon Scene' ended&#x000A;(Scene monitoring now switched on. Type "scenes off" to switch it off again.)&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Scene 'Entire Game' playing (for 0 mins now)&#x000A;Scene 'End1 Scene' playing (for 0 mins now)&#x000A;(Scene monitoring now switched on. Type "scenes off" to switch it off again.)&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>

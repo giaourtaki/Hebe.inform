@@ -20,7 +20,7 @@ Release along with cover art.
 [TODO: complete investigate action descriptions]
 [TODO: update help command]
 [TODO: combat system - talos and kronos]
-[TODO: go to -> try travel/sail/go in]
+[TODO: go to -> try travel/travel/go in]
 [TODO: add values, like smell, to every item]
 [TODO: put random buildings inside cities]
 [TODO: golden apples of hesperides collectables]
@@ -145,8 +145,8 @@ Chapter 0.21 - Variables
 
 [Chapter 1 - Athena & Ares]
 ThebesTemplePuzzleSolved is a truth state that varies. ThebesTemplePuzzleSolved is false. [if player solved Kadmos Palace puzzle or not]
-[HasAthenaBoon is a truth state that varies. HasAthenaBoon is false. 
-HasAresBoon is a truth state that varies. HasAresBoon is false. ]
+GodsSaved1 is a truth state that varies. GodsSaved1 is false. 
+
 
 [Chapter 2 - Demeter & Poseidon]
 AmphitriteIsHappy is a truth state that varies. AmphitriteIsHappy is false. [Is the player calmed down Amphitrite]
@@ -154,27 +154,29 @@ SeaTemplePuzzleSolved is a truth state that varies. SeaTemplePuzzleSolved is fal
 
 HasDemeterBoon is a truth state that varies. HasDemeterBoon is true. [If the player has Demeter's boon, HasDemeterBoon is true]
 HasPoseidonBoon is a truth state that varies. HasPoseidonBoon is false. [If the player has Poseidon's boon, HasPoseidonBoon is true]
+GodsSaved2 is a truth state that varies. GodsSaved2 is false. 
 
 [Chapter 3 - Artemis & Apollo]
 ArtemisTemplePuzzleSolved is a truth state that varies. ArtemisTemplePuzzleSolved is false. [if sun and moon temple puzzle in Artemis 
 Temple is solved or not]
 HasArtemisBoon is a truth state that varies. HasArtemisBoon is false. 
-
 HasApolloBoon is a truth state that varies. HasApolloBoon is false. 
+
+GodsSaved3 is a truth state that varies. GodsSaved3 is false. 
 
 [Chapter 4 - Aphrodite & Hephaestus]
 FlowerPuzzleSolved is a truth state that varies. FlowerPuzzleSolved is false. [if flower puzzle in SG is solved or not]
 HasAphroditeBoon is a truth state that varies. HasAphroditeBoon is false. 
-
 HasHephaestusBoon is a truth state that varies. HasHephaestusBoon is false. 
 
+GodsSaved4 is a truth state that varies. GodsSaved4 is false. 
 
 [Chapter 5 - Hestia & Hermes]
 TorchPuzzleSolved is a truth state that varies. TorchPuzzleSolved is false. [if the torch puzzle is solved or not]
-[
 HasHestiaBoon is a truth state that varies. HasHestiaBoon is false. [if player chose hestia]
 HasHermesBoon is a truth state that varies. HasHermesBoon is false. [if player chose hermes]
-]
+
+GodsSaved5 is a truth state that varies. GodsSaved5 is false. 
 
 Chapter 0.3 - Either/Or
 
@@ -279,7 +281,6 @@ Instead of giving something to someone:
 [check going noun:
 	try entering the noun;
 	try traveling the noun;
-	try sailing the noun;
 	continue the action.
 ]
 
@@ -400,8 +401,7 @@ Carry out helping:
 	say "[line break][bold type]5. Game-Specific Commands:[roman type][line break][line break]";
 	say "   • Sacrifice [bracket]something[close bracket]: do this in the necromanteion to gain an obol.[line break]";
 	say "   • Investigate: Investigate a room to see the list of interactable things in it.[line break]";
-	say "   • Travel to [bracket]any gates/any city[close bracket]: You can travel from the gates of a city to another's.[line break]";
-	say "   • Sail to [bracket]any port[close bracket]: You can sail from the port of a city to another's.[line break]";
+	say "   • Travel to [bracket]any gates/any port[close bracket]: You can travel from the gates/port of a city to another's.[line break]";
 	say "   • Rotate [ bracket]object[close bracket] clockwise/anticlockwise: Rotate a rotatable object.[line break]";
 	say "   • Light [ bracket]object[close bracket]: Light a torch.[line break]";
 	say "   • Put out [ bracket]object[close bracket]: Put out a torch.[line break]";
@@ -421,6 +421,7 @@ Kronos Scene ends when the time since Kronos Scene began is 1 minutes.
 
 [Room Description]
 Mount Olympus Hall is a room. 
+
 
 [The player is inside Mount Olympus Hall.]
 
@@ -498,13 +499,6 @@ Instead of giving something to someone during Olympus Hall Celebration Scene:
 			say "[Second noun] thanks you.";
 			continue the action.
 
-[Instead of giving something to Heracles during Olympus Hall Celebration Scene:
-	If the noun is Heracles' Club:
-		say "He smiles at you. 'Thank you my dearest.'";
-		continue the action;
-	otherwise:
-		say "Hercules says 'I am grateful my dearest, but I think you might need this more than I.".	
-]
 
 [every n  turn hercules asks for his club]
 Turn counter is a number that varies. Turn counter is 0.
@@ -617,7 +611,7 @@ When Kronos Scene begins:
 	wait for any key;
 	say "[line break]The sight of the Titan, towering and menacing, shrouded in shadows, struck fear into the hearts of all present. You start to feel the ichor in your divine veins turn cold, as if time itself was freezing. The gods, normally so mighty and formidable, stand paralyzed in shock. Nothing moves. In a heartbeat, you break free from the daze and come to your senses. Your next actions have never been more certain. It's now or never.";
 	wait for any key;
-	say "[line break]You grab Heracle's club out of his hands and leap towards Kronos. Then you feel yourself slipping into unconciousness."
+	say "[line break]You grab Heracle's club out of his hands and leap towards Kronos. Then you feel yourself slipping into unconsciousness."
 
 When Kronos Scene ends:
 	now the description of Mount Olympus Hall is "Olympus Hall Destruction Description";
@@ -700,7 +694,7 @@ The story goes that Gaia gifted Hera with branches of golden apples as a wedding
 
 The garden was your sanctuary once, where you spent countless hours alongside the Hesperides crafting nectar and bonding. Though you no longer visit it as often, it continues to protect you, just as it did during Kronos's attack on Olympus.
 
-From here you can sail to: [line break]→ Piraeus[line break]→ Sounio[line break]→ Aulis[line break]→ Paphos".
+[bold type]From here you can travel to:[roman type] [line break]→ Piraeus[line break]→ Sounio[line break]→ Aulis[line break]→ Paphos".
 
 [scenery]
 The sacred tree of Hesperides is scenery in Garden of the Hesperides. The description is "The tree is the soul of the garden, its golden apples gleaming among the green leaves. The garden’s essence flows from it, infusing the air with a sense of timeless peace.". Understand "tree" as The sacred tree of Hesperides when the player is in Garden of the Hesperides.
@@ -721,7 +715,10 @@ Hesperie is a woman in Garden of the Hesperides. The description is "Hesperie is
 
 
 [Start Of: South of Delphi]
-The description of South of Delphi is "From here you can see the the Oracle of Delphi, the sacred sanctuary surrounded by towering cliffs and overlooking the olive groves of the Valley of Delphi. The approach to the main temple is marked by a winding path, the Sacred Way, which is lined with treasures, monuments and statues left by cities and individuals in gratitude for prophecies.".
+The description of South of Delphi is "From here you can see the the Oracle of Delphi, the sacred sanctuary surrounded by towering cliffs and overlooking the olive groves of the Valley of Delphi. The approach to the main temple is marked by a winding path, the Sacred Way, which is lined with treasures, monuments and statues left by cities and individuals in gratitude for prophecies.
+
+[bold type]Known accessible areas from here:[roman type][line break]→Gates of Delphi (N)[line break]→Oracle of Delphi (ENTER)
+".
 
 [scenery]
 A cliff is scenery in south of delphi. Understand "cliffs" or "towering cliffs" as cliff.
@@ -787,7 +784,7 @@ The description of North of Ephyra is "As you approach the Necromanteion from af
 
 Fields of wildflowers spread out in all directions, their petals swaying lightly in the breeze, painting the earth with shades of purple, yellow, and white. The air is sweet with the scent of blooming flowers, yet as Hebe draws closer, the distant cries of birds seem to fade, replaced by a profound, almost eerie silence. The temple itself, though small and unassuming, exudes an aura of power, its weathered stones and dark entrance beckoning those who seek to cross into the realm of the dead.
 
-Travel Instructions.". [TODO: make things interactable]
+[bold type]Known accessible areas from here:[roman type][line break]→Gates of Ephyra (S)[line break]→East of Ephyra (SE) .". [TODO: make things interactable]
 [items]
 
 [scenery]
@@ -803,7 +800,9 @@ Kadmea is a room in Thebes. "The magnificent acropolis of Thebes, standing proud
 
 The Palace of Kadmea stands tall, its stone walls solid and plain, a functional seat of power rather than a place of grandeur. The palace serves as the administrative center, where rulers conduct the daily governance of Thebes.
 
-There, you also notice the Heroon of Kadmos, a modest shrine dedicated to the city's legendary founder. This small sanctuary, though simple, holds great significance for the people of Thebes. The legend goes that Kadmos founded this very city after slaying a dragon and sowing its teeth into the earth, turning them into people." [TODO: make palace background, put travel instructions]
+There, you also notice the Heroon of Kadmos, a modest shrine dedicated to the city's legendary founder. This small sanctuary, though simple, holds great significance for the people of Thebes. The legend goes that Kadmos founded this very city after slaying a dragon and sowing its teeth into the earth, turning them into people.
+
+[bold type]Known accessible areas from here:[roman type][line break]→Agora of Thebes (D)[line break]→Heroon of Kadmos (ENTER) " [TODO: make palace background]
 
 Palace of Kadmea is a room in Thebes. 
 Instead of entering Palace of Kadmea:
@@ -1151,7 +1150,9 @@ The Sounio Beach is a room in Sounio.
 
 The Divine Cell of Demeter & Poseidon is a room in Sounio. The Divine Cell of Demeter & Poseidon is down of the temple trapdoor.
 
-Underwater is a room in sounio. "You find yourseld enveloped in a serene, otherwordly scene. The submerged Temple of Poseidon, its grand columns and sculpted friezes partially veiled by drifting seaweed and alge, rises majestically from the ocean floor. Schools of fish weave through the watery ruins, their movements casting shimmering reflections on the temple’s marble. The once-bustling sacred site now rests in tranquil silence, offering a haunting glimpse of its former splendor beneath the surface.".
+Underwater is a room in sounio. "You find yourseld enveloped in a serene, otherwordly scene. The submerged Temple of Poseidon, its grand columns and sculpted friezes partially veiled by drifting seaweed and alge, rises majestically from the ocean floor. Schools of fish weave through the watery ruins, their movements casting shimmering reflections on the temple’s marble. The once-bustling sacred site now rests in tranquil silence, offering a haunting glimpse of its former splendor beneath the surface.
+
+[bold type]Known accessible areas from here:[roman type][line break]→Beach of Sounio (U)[line break]→Temple of Poseidon (ENTER) ".
 
 A frieze is scenery in underwater. The description is "The frieze showcases a series of sculptures illustrating the Gigantomachy, the battle between the gods of Olympus and the giants.".
 
@@ -1180,7 +1181,7 @@ When Sounio Beach Scene begins:
 
 On the beach, you notice a nymph weeping and wailing, surrounded by others who are attempting to console her. You recognize the grieving nereid as Amphitrite, queen of the sea and wife of Poseidon. The nereids comforting her must be her closest attendants: Aktaia, Erato, and Ploto.
 
-TODO travel instructions";
+[bold type]Known accessible areas from here:[roman type][line break]→Agora of Sounio (W)";
 	say "As you journey south toward Cape Sounion, where the Temple of Poseidon stands, you find that the cape has become entirely submerged. What remains is a narrow beach, with a vast expanse of land now lying beneath the sea. On your west is the town of Sounio.
 
 On the beach, you notice a nymph weeping and wailing, surrounded by others who are attempting to console her. You recognize the grieving nereid as Amphitrite, queen of the sea and wife of Poseidon. The nereids comforting her must be her closest attendants: Aktaia, Erato, and Ploto.".
@@ -1190,7 +1191,7 @@ When Sounio Beach Scene ends:
 
 On the beach, you see Amphitrite, Aktaia, Erato and Ploto.
 
-[bold type]Known Accessible Locations:[roman type][line break]→Agora of Sounio (w)[line break]→Temple of Poseidon (s) ";
+[bold type]Known Accessible Locations:[roman type][line break]→Agora of Sounio (W)[line break]→Temple of Poseidon (S) ";
 
 Instead of talking to someone during Sounio Beach Scene:
 	if the noun is Aktaia:
@@ -1623,7 +1624,6 @@ Instead of sleeping:
 	Say "You slept until morning.";
 	stop the action.
 
-the player is in temple of the aulidean artemis.
 
 
 At the time when the DayRollsOver:
@@ -1907,22 +1907,19 @@ Chapter 4 - Aphrodite & Hephaestus
 
 
 [Start of: Agora of Paphos]
-Agora of Paphos is a room in Cyprus. "[one of]The Agora of Paphos is a bustling marketplace, filled with the sights, sounds, and smells of ancient Cypriot life. Vendors are hawking their wares, their voices rising in a cacophony of shouts and bargaining. The air is thick with the scent of spices, perfumes, and freshly baked bread.
+Agora of Paphos is a room in Cyprus. "The Agora of Paphos is a bustling marketplace, filled with the sights, sounds, and smells of ancient Cypriot life. Vendors are hawking their wares, their voices rising in a cacophony of shouts and bargaining. The air is thick with the scent of spices, perfumes, and freshly baked bread.
 
 The architecture of the agora is a blend of Greek and Phoenician styles, with columns, arches, and intricate stonework. The buildings are painted in bright colors, and the streets are lined with mosaics depicting scenes from myths and everyday life.
 
-[bold type]Known Accessible Locations:[roman type][line break]→Palace of Paphos (n)[line break]→Port of Paphos (w)
-
-[or][bold type]Known Accessible Locations:[roman type][line break]→Palace of Paphos (n)[line break]→Port of Paphos (w)[stopping]";
+[bold type]Known Accessible Locations:[roman type][line break]→Palace of Paphos (N)[line break]→Port of Paphos (W)";
 [End of: Agora of Paphos]
 
 [Start of: Throne Room]
-Throne Room is a room in Palace of Paphos. The description is "[one of]In the throne room, high stone columns intricately carved with motifs of mythological scenes and natural elements supported the lofty ceiling. The floor was a mosaic masterpiece, depicting elaborate geometric patterns that shimmered under the warm light of bronze braziers.
+Throne Room is a room in Palace of Paphos. The description is "In the throne room, high stone columns intricately carved with motifs of mythological scenes and natural elements supported the lofty ceiling. The floor was a mosaic masterpiece, depicting elaborate geometric patterns that shimmered under the warm light of bronze braziers.
 
 At the room’s center, on a raised platform, stood the king’s throne: a magnificent chair of carved wood, overlaid with gold and inlaid with ivory. The throne was richly draped in deep purple and crimson fabrics. Beside it stood a large statue of Aphrodite, the island’s patron goddess, symbolically positioned as the king’s right hand.
 
-[bold type]Known Accessible Locations:[roman type][line break]→ Outside of Palace of Paphos (s)
-[or][bold type]Known Accessible Locations:[roman type][line break]→ Outside of Palace of Paphos (s)[stopping]".
+[bold type]Known Accessible Locations:[roman type][line break]→ Outside of Palace of Paphos (S)".
 
 
 Cinyras is a man in the Throne Room.
@@ -1930,10 +1927,9 @@ Cinyras is a man in the Throne Room.
 [End of: Throne Room]
 
 [Start of: Outside of the Palace of Paphos]
-The Outside of the Palace of Paphos is a room in Paphos. "[one of]The Palace of Paphos, a grand and imposing structure, stands as a testament to the island's wealth and power. Its exterior is adorned with intricate carvings, columns, and mosaics, reflecting the opulence and sophistication of the Cypriot aristocracy. The palace is surrounded by a lush garden, filled with exotic plants, fragrant flowers, and towering trees. Fountains are cascading through the garden, creating a serene and inviting atmosphere. The palace walls are fortified to protect its occupants from potential threats, while the gates were adorned with ornate sculptures and decorative elements.
+The Outside of the Palace of Paphos is a room in Paphos. "The Palace of Paphos, a grand and imposing structure, stands as a testament to the island's wealth and power. Its exterior is adorned with intricate carvings, columns, and mosaics, reflecting the opulence and sophistication of the Cypriot aristocracy. The palace is surrounded by a lush garden, filled with exotic plants, fragrant flowers, and towering trees. Fountains are cascading through the garden, creating a serene and inviting atmosphere. The palace walls are fortified to protect its occupants from potential threats, while the gates were adorned with ornate sculptures and decorative elements.
 
-[bold type]Accessible Locations:[roman type][line break]→Throne Room (n)[line break]→Agora of Paphos (s)
-[or][bold type]Accessible Locations:[roman type][line break]→Throne Room (n)[line break]→Agora of Paphos (s)[stopping]".
+[bold type]Accessible Locations:[roman type][line break]→Throne Room (N)[line break]→Agora of Paphos (S)".
 [End of: Outside of the Palace of Paphos]
 
 
@@ -2026,8 +2022,9 @@ Instead of examining the water lily:
 	say "It's a cute pink flower.";
 	stop the action.
 
+
 Instead of taking a water lily:
-	if the number of water lilies in the secret garden is 0:
+	if the number of water lilies in the secret garden is 0 and the number of water lilies in tree cavity is 0 and the number of water lilies in right amphora is 0 and the number of water lilies in hand is 0:
 		say "It would be a shame to remove any more of those beautiful flowers. Frogs could be sleeping in them!";
 		stop the action;
 	otherwise:
@@ -2661,25 +2658,25 @@ When Divine Cell of Hestia & Hermes Scene begins:
 	
 After talking to Hestia:
 	if Hestia is asleep:
-		say "Hestia  is in a commatose state. She can't speak.";
+		say "Hestia is in deep sleep. She can't speak. TODO";
 	otherwise:
 		continue the action.
 		
 After talking to Hermes:
 	if Hermes is asleep:
-		say "Hermes is in a commatose state. He can't speak.";
+		say "Hermes is in deep sleep. He can't speak. TODO";
 	otherwise:
 		continue the action.
 
 After examining Hestia:
 	if Hestia is asleep:
-		say "Hestia is in a commatose state. She can't speak.";
+		say "Hestia is in a commatose state. She can't speak. TODO";
 	otherwise:
 		continue the action.
 		
 After examining Hermes:
 	if Hermes is asleep:
-		say "Hermes is in a commatose state. He can't speak.";
+		say "Hermes is in a commatose state. He can't speak.TODO";
 	otherwise:
 		continue the action.
 
@@ -2713,6 +2710,9 @@ The Charon's boat is a closed unopenable door.
 
 Charon is a man. He is in East of Ephyra.
 
+Instead of talking to Charon when the player is in east of ephyra:
+	say "Charon is starring at you intensely. '...' [first time][line break][line break](To enter into the Underworld, you will must offer him an obol as tribute.)[only]";
+
 
 Charon Ride In Scene is a recurring  scene. Charon Ride In Scene begins when giving an obols to Charon and the player is in East of Ephyra. Charon Ride In Scene ends when the time since Charon Ride In Scene began is 2 minutes.
 
@@ -2743,7 +2743,9 @@ Before entering the Charon's boat when the Charon Ride In Scene is not happening
 [End of East of Ephyra]
 
 [Start of Elysian Fields]
-The Elysian Fields is a room in the Underworld.
+The Elysian Fields is a room in the Underworld. The description is "TODO
+
+[bold type]Known accessible areas from here:[roman type][line break]→ East of Ephyra (TALK TO CHARON)[line break]→ Asphodel Meadows (D)";
 
 Charon Ride Out Scene is a recurring  scene. Charon Ride Out Scene begins when talking to Charon in the Elysian Fields. Charon Ride Out Scene ends when the time since Charon Ride Out Scene began is 1 minutes.
 
@@ -2768,14 +2770,15 @@ Before opening the boat:
 		try talking to charon;
 		stop the action.
 		
-A green flower is a thing in necromanteion. [TBD]
-A yellow flower is a thing in necromanteion.
-test obol with "give club to heracles/sail to aulis/w/s/travel to ephyra/n/go in necromanteion/take green flower/sacrifice green flower/sacrifice yellow flower/out/s/e/actions/scenes".
+
+test obol with "give club to heracles/travel to aulis/w/s/travel to ephyra/n/go in necromanteion/take green flower/sacrifice green flower/sacrifice yellow flower/out/s/e/actions/scenes".
 
 [End of Elysian Fields]
 
 [Start of Asphodel Meadows]
-The Asphodel Meadows is a room in the Underworld.
+The Asphodel Meadows is a room in the Underworld. The description is "TODO
+
+[bold type]Known accessible areas from here:[roman type][line break]→ Elysian Fields (U)[line break]→ Tartaros (D)";
 
 
 Heracles in Asphodel Scene is a scene. Heracles in Asphodel Scene begins when the player is in Asphodel Meadows for the first time. [During this scene Heracles has amnesia, he has drunk from the lethe river so his dialogue should reflect that]
@@ -2815,13 +2818,31 @@ Instead of entering the bridge:
 
 Chapter 7 - Zeus & Hera 
 
+The Tartaros is a  room in the Underworld.
 
-The Tartaros is a dark room in the Underworld.
 
-Instead of doing anything when the player is in Tartaros for the first time:
-	say "This is the end for now! Thanks for playing!";
-	wait for any key;
-	end the story.
+[end1]
+End1 Scene is a scene. End1 Scene begins when the player is in Tartaros and the score is 0. 
+[end2]
+End2 Scene is a scene.End2 Scene begins when the player is in Tartaros and the score is 15. 
+[end3]
+End3 Scene is a scene.End3 Scene begins when the player is in Tartaros and the score is 30 or the player is in Tartaros and the score is 45. 
+[end4]
+End4 Scene is a scene.End4 Scene begins when the player is in Tartaros and the score is 60 or the player is in Tartaros and the score is 75. 
+
+
+When End1 Scene begins:
+	say "You enter Tartaros along with Heracles. You see Zeus and Hera, their energy drained from the nether-chains. You see the Titans Koios, Okeanos, Krios, Hyperion, Iapetos and Kronos. Heracles tells you to keep the club and flexes his muscles.
+
+The titans attack you. Koios strikes at you.
+
+[bold type]What do you do?[roman type][line break]→Attack[line break]→Defend[line break]→Dodge";
+
+Instead of doing anything during end1 scene:
+	say "You don't have time for this now! You are in combat.";
+	stop the action.
+	
+
 	
 
 
@@ -2830,102 +2851,112 @@ Chapter 8 - Mapping & Transportation
 [All transportation rooms]
 
 
-[The player is in Northen Gates of Athens.]
+[The player is in Northern Gates of Athens.]
 
 [Ports]
-Port of Piraeus is a room in Athens. "To the northeast you can see the city of Athens. [paragraph break]From here you can sail to: [line break]→ Paphos[line break]→ Garden of the Hesperides".
-Port of Sounio is a room in Sounio. "To the north you can see the city of Sounio. [paragraph break]From here you can sail to: [line break]→ Aulis[line break]→ Garden of the Hesperides".
-Port of Paphos is a room in Paphos. "To the east you can see the city of Paphos.[paragraph break] The main port of the city of Paphos. [paragraph break]From here you can sail to: [line break]→ Piraeus[line break]→ Garden of the Hesperides".
-Port of Aulis is a room in Aulis. "To the west you can see the city of Aulis. [paragraph break]From here you can sail to: [line break]→ Sounio[line break]→ Garden of the Hesperides".
+Port of Piraeus is a room in Athens. "[bold type]Known accessible areas from here:[roman type][line break]→Agora of Athens (NE)[paragraph break][bold type]From here you can travel to:[roman type] [line break]→Paphos[line break]→Garden of the Hesperides".
+Port of Sounio is a room in Sounio. "[bold type]Known accessible areas from here:[roman type][line break]→Agora of Sounio (N)[paragraph break][bold type]From here you can travel to:[roman type][line break]→Aulis[line break]→Garden of the Hesperides".
+Port of Paphos is a room in Paphos. "[bold type]Known accessible areas from here:[roman type][line break]→Agora of Paphos (E)[paragraph break] The main port of the city of Paphos. [paragraph break][bold type]From here you can travel to:[roman type] [line break]→Piraeus[line break]→Garden of the Hesperides".
+Port of Aulis is a room in Aulis. "[bold type]Known accessible areas from here:[roman type][line break]→Agora of Aulis (W) [bold type]From here you can travel to:[roman type]→Sounio[line break]→Garden of the Hesperides".
 
 [Stables-City Gates]
-Northen Gates of Athens is a room in Athens. "To the south you can see the city of Athens. [paragraph break]From here you can travel to: [line break]→ Thebes[line  break]→ Aulis[line  break]→ Delphi[line  break]→ Ephyra[line  break]→ Mount Olympus".
+Northern Gates of Athens is a room in Athens. "[bold type]Known accessible areas from here:[roman type][line break]→Agora of Athens (S) [paragraph break][bold type]From here you can travel to:[roman type] [line break]→ Thebes (N)[line  break]→Aulis (NE)[line  break]→Delphi (NW)".
 
-Southern Gates of Athens is a room in Athens. "To the northwest you can see the city of Athens. [paragraph break]From here you can travel to: [line break]→ Sounio".
+Southern Gates of Athens is a room in Athens. "[bold type]Known accessible areas from here:[roman type][line break]→Agora of Athens (NW) [paragraph break][bold type]From here you can travel to:[roman type]  [line break]→Sounio (S)".
 
-Gates of Sounio is a room in Sounio. "To the south you can see the town of Sounio. [paragraph break]From here you can travel to: [line break]→ Athens".
+Gates of Sounio is a room in Sounio. "[bold type]Known accessible areas from here:[roman type][line break]→Agora of Sounio (S) [paragraph break][bold type]From here you can travel to:[roman type] [line break]→Athens (N)".
 
-Gates of Thebes is a room in Thebes. "To the north you can see the city of Thebes. [paragraph break]From here you can travel to: [line break]→ Athens[line break]→ Aulis[line  break]→ Delphi[line  break]→ Ephyra[line  break]→ Mount Olympus".
+Gates of Thebes is a room in Thebes. "[bold type]Known accessible areas from here:[roman type][line break]→Agora of Thebes (N) [paragraph break][bold type]From here you can travel to:[roman type]  [line break]→Athens (S)[line break]→Aulis (E)[line  break]→Ephyra (NW)[line  break]→Mount Olympus (N)".
 
-Gates of Aulis is a room in Aulis. "To the north you can see the town of Aulis. [paragraph break]From here you can travel to: [line break]→ Thebes[line  break]→ Athens[line  break]→  Delphi[line  break]→ Ephyra[line  break]→ Mount Olympus".
+Gates of Aulis is a room in Aulis. "[bold type]Known accessible areas from here:[roman type][line break]→Agora of Aulis (N) [paragraph break][bold type]From here you can travel to:[roman type]  [line break]→Thebes (W)[line  break]→Athens (SW)".
 
-Gates of Delphi is a room in Delphi. "To the south is the Oracle of Delphi. To the west is the city of Delphi.[Paragraph break]From here you can travel to: [line break]→ Thebes [line  break]→ Athens[line  break]→ Aulis[line  break]→ Ephyra[line  break]→ Mount Olympus".
+Gates of Delphi is a room in Delphi. "[bold type]Known accessible areas from here:[roman type][line break]→Oracle of Delphi (S)[Paragraph break][bold type]From here you can travel to:[roman type] [line break]→Thebes (E)[line  break]→Athens (SE)".
 
-Gates of Ephyra is a room in Ephyra. "To the west you can see the town of Ephyra. To the north is the Necromanteion. To the East, you will find the entrance of the Underworld. [paragraph break]From here you can travel to: [line  break]→ Mount Olympus [line  break]→ Athens[line break]→ Thebes[line  break]→ Aulis[line  break]→ Delphi".
+Gates of Ephyra is a room in Ephyra. "[bold type]Known accessible areas from here:[roman type][line break]→Necromanteion (N)[line break]→Gate to the Underworld (E) [paragraph break][bold type]From here you can travel to:[roman type]  [line  break]→Mount Olympus (NE) [line  break]→Thebes (SE)".
 
+[Map directions]
+[athens]
+The gates of aulis is northeast of the nortern gates of athens.
+The gates of thebes is north of the nortern gates of athens.
+The gates of delphi is northwest of the nortern gates of athens.
+The gates of sounio is south of the southern gates of athens.
+
+[thebes]
+The gates of aulis is east of the gates of thebes.
+The foothills of olympus is north of the gates of thebes.
+The gates of delphi is west of the gates of thebes.
+The gates of ephyra is northwest of the gates of thebes.
+
+[aulis]
+The foothills of olympus is northwest of the gates of aulis.
+
+[ephyra]
+The foothills of olympus is northeast of the gates of ephyra.
 
 
 
 [Connection definition]
 
 A city is a kind of room.
-A marina is a kind of room.
-
-Sailability relates various marinas to various marinas. 
+ 
 
 Connectivity relates various cities to various cities. 
 
 The verb to connect to (it connects to, they connect to, it connected to, it is connected to , it is connecting to) implies the connectivity relation.
 
-The verb to sail to (it sails to, they sail to, it sailed to, it is sailed to , it is sailing to) implies the sailability relation.
 
 [connections of cities]
 
 [gates]
-Northen Gates of Athens connects to Thebes Gates. 
-Northen Gates of Athens connects to Aulis Gates.
-Northen Gates of Athens connects to Delphi Gates. 
-Northen Gates of Athens connects to Ephyra Gates.
-Northen Gates of Athens connects to Foothills of Mount Olympus.
+Northern Gates of Athens connects to Thebes Gates. 
+Northern Gates of Athens connects to Aulis Gates.
+Northern Gates of Athens connects to Delphi Gates. 
 
 Southern Gates of Athens connects to Gates of Sounio.
+Understand "Athens" as southern gates of athens when the player is in Gates of Sounio.
 Gates of Sounio connects to Southern Gates of Athens.
 
-Thebes Gates connects to Northen Gates of Athens.
+Thebes Gates connects to Northern Gates of Athens.
+Understand "Athens" as northern gates of athens when the player is in Gates of Thebes.
 Thebes Gates connects to Aulis Gates.
+Understand "Athens" as northern gates of athens when the player is in Gates of Aulis.
 Thebes Gates connects to Delphi Gates.
+Understand "Athens" as northern gates of athens when the player is in gates of delphi.
 Thebes Gates connects to Ephyra Gates.
 Thebes Gates connects to Foothills of Mount Olympus.
 
-Aulis Gates connects to Northen Gates of Athens.
+Aulis Gates connects to Northern Gates of Athens.
 Aulis Gates connects to Thebes Gates.
-Aulis Gates connects to Delphi Gates.
-Aulis Gates connects to Ephyra Gates.
 Aulis Gates connects to Foothills of Mount Olympus.
 
-Ephyra Gates connects to Northen Gates of Athens.
+
 Ephyra Gates connects to Thebes Gates.
-Ephyra Gates connects to Delphi Gates.
-Ephyra Gates connects to Aulis Gates.
 Ephyra Gates connects to Foothills of Mount Olympus.
 
-Foothills of Mount Olympus connects to Northen Gates of Athens.
+
 Foothills of Mount Olympus connects to Thebes Gates.
-Foothills of Mount Olympus connects to Delphi Gates.
 Foothills of Mount Olympus connects to Aulis Gates.
 Foothills of Mount Olympus connects to Ephyra Gates.
 
-Delphi Gates connects to Northen Gates of Athens.
+Delphi Gates connects to Northern Gates of Athens.
 Delphi Gates connects to Thebes Gates.
-Delphi Gates connects to Aulis Gates.
-Delphi Gates connects to Ephyra Gates.
-Delphi Gates connects to Foothills of Mount Olympus.
+
 
 [ports]
-Port of Piraeus sails to Port of Paphos.
-Port of Paphos sails to Port of Piraeus.
-Port of Sounio sails to Port of Aulis.
-Port of Aulis sails to Port of Sounio.
+Port of Piraeus connects to Port of Paphos.
+Port of Paphos connects to Port of Piraeus.
+Port of Sounio connects to Port of Aulis.
+Port of Aulis connects to Port of Sounio.
 
-Port of Piraeus sails to Garden of the Hesperides.
-Port of Paphos sails to Garden of the Hesperides.
-Port of Sounio sails to Garden of the Hesperides.
-Port of Aulis sails to the Garden of the Hesperides.
+Port of Piraeus connects to Garden of the Hesperides.
+Port of Paphos connects to Garden of the Hesperides.
+Port of Sounio connects to Garden of the Hesperides.
+Port of Aulis connects to the Garden of the Hesperides.
 
-Garden of the Hesperides sails to Port of Paphos.
-Garden of the Hesperides sails to Port of Piraeus.
-Garden of the Hesperides sails to Port of Aulis.
-Garden of the Hesperides sails to Port of Sounio.
+Garden of the Hesperides connects to Port of Paphos.
+Garden of the Hesperides connects to Port of Piraeus.
+Garden of the Hesperides connects to Port of Aulis.
+Garden of the Hesperides connects to Port of Sounio.
 
 [Traveling action]
 Traveling is an action applying to one visible thing.
@@ -2938,26 +2969,11 @@ Check traveling:
 
 Carry out traveling:
 	if the location of the player connects to the noun:
-		say "You travel to the [noun].";
+		say "[line break]You travelled from [location] to the [noun].";
 		move the player to the noun;
 	otherwise:
 		say "You cannot travel directly to the [noun] from here.";
 
-[Sailing action]
-Sailing is an action applying to one visible thing.
-
-Understand "sail to [any marina]" as sailing.
-
-Check sailing:
-	if the noun is not a marina:
-		say "You can't sail there." instead.
-
-Carry out sailing:
-	if the location of the player sails to the noun:
-		say "You sail to the [noun].";
-		move the player to the noun;
-	otherwise:
-		say "You cannot sail directly to the [noun] from here.";	
 	
 [room in room definition]
 An outroom is a kind of room.
@@ -2987,12 +3003,12 @@ When play begins:  [so that "exit/go out" will work]
 [All rooms]
 
 [Athens]
-The Agora of Athens is a room in Athens. The description is "To the east you see the Acropolis hill. To the southwest is Port of Piraeus. To the southeast are the Southern Gates of Athens and to the north are the Northen ones.".
-The Acropolis is a room in Athens. The description is "The Agora of Athens is located in  the west. From here you can see the Prytaneion of Athens.".
-Agora of Athens is northeast of Port of Piraeus. Agora of Athens is west of the Acropolis. Agora of Athens is northwest of the Southern Gates of Athens. Agora of Athens is south of the Northen Gates of Athens.
+The Agora of Athens is a room in Athens. The description is "[bold type]Known accessible areas from here:[roman type][line break]→Acropolis (E)[line break]→Port of Piraeus (SW)[line break]→Southern Gates of Athens (SE)[line break]→Northern Gates of Athens (N)[line break]".
+The Acropolis is a room in Athens. The description is "[bold type]Known accessible areas from here:[roman type][line break]→Agora of Athens (W)[line break]→Prytaneion (ENTER)".
+Agora of Athens is northeast of Port of Piraeus. Agora of Athens is west of the Acropolis. Agora of Athens is northwest of the Southern Gates of Athens. Agora of Athens is south of the Northern Gates of Athens.
 
 [Sounio]
-Agora of Sounio is a room in Sounio. The description is "You can see the Port of Sounio in  the south. The Sounio Cape is in the east.".
+Agora of Sounio is a room in Sounio. The description is "[bold type]Known accessible areas from here:[roman type][line break]→Port of Sounio (S)[line break]→Sounio Cape (E)".
 Agora of Sounio is south of the sounio gates. Agora of Sounio is north of the port of sounio. Agora of Sounio is west of the Sounio Beach.
 Underwater is a room in Sounio.[poseidons temple is in underwater]
 
@@ -3000,24 +3016,25 @@ Underwater is a room in Sounio.[poseidons temple is in underwater]
 The Port of Paphos is west of the Agora of Paphos. The Agora of Paphos is south of the Outside of the Palace of Paphos. The Outside of the Palace of Paphos is south of the Throne Room.
 
 [Thebes]
-The Agora of Thebes is a room in Thebes. "You can see Kadmea, the acropolis of Thebes, perched up on the hill in the center of the Agora. [line break][line break]To the south are the city gates".
+The Agora of Thebes is a room in Thebes. "[bold type]Known accessible areas from here:[roman type][line break]→Kadmea (U)[line break]→Gates of Thebes (S)".
 The Gates of Thebes is south of the Agora of Thebes. Kadmea is up of Agora of Thebes.
 [Aulis]
-The Agora of Aulis is a room. "You can see the Port of Aulis in the east and the Gates of Aulis in the south. You can enter the temple of aulidean artemis from here.".
+The Agora of Aulis is a room. "[bold type]Known accessible areas from here:[roman type][line break]→Port of Aulis (E)[line break]→Gates of Aulis (S)[line break]→Temple of the Aulidean Artemis (ENTER)".
 The Agora of Aulis is north of the Gates of Aulis. The Agora of Aulis is west of the Port of Aulis.
 
 [Delphi]
 A room called South of Delphi  is in Delphi. The Delphi Gates are north of the South of Delphi. 
 
 [Ephyra]
-The Agora of Ephyra is a room. "The gates of the city are located in the east.". [TODO:acheron is here (backdrop)]
+The Agora of Ephyra is a room. "[bold type]Known accessible areas from here:[roman type][line break]→Gates of Ephyra (E).". [TODO:acheron is here (backdrop)]
 The North of Ephyra is a room in the Underworld. It is north of Gates of Ephyra. [Necromanteion is inside here]
-The East of Ephyra is a room in the Underworld. [TODO: Acheron River should be here]
-The Gates of Ephyra is east of the Agora of ephyra and west of East of Ephyra.
+The East of Ephyra is a room in the Underworld. "[bold type]Known accessible areas from here:[roman type][line break]→North of Ephyra (NW) [line break]→Underworld (TALK TO CHARON)." [TODO: Acheron River should be here]
+The Gates of Ephyra is west of a room called East of Ephyra. A room called North of Ephyra is northwest of a room called east of ephyra.
 
 
 [Mount Olympus]
-The Foothills of Mount Olympus is a room in Mount Olympus. The Foothills of Mount Olympus is down of the Mount Olympus Hall. The description of Foothills of Mount Olympus is "From here you can travel to: [line  break]→ Ephyra [line  break]→ Athens[line break]→ Thebes[line  break]→ Aulis[line  break]→ Delphi".
+The Foothills of Mount Olympus is a room in Mount Olympus. The Foothills of Mount Olympus is down of the Mount Olympus Hall. The description of Foothills of Mount Olympus is "
+[bold type]Known accessible areas from here:[roman type][line break]→Mountain Olympus Hall (U)[paragraph break]From here you can travel to: [line  break]→Ephyra (SW)[line  break]→Thebes (S)[line  break]→Aulis (SE)".
 
 [Underworld]
 Elysian Fields is up of Asphodel Meadows. Charon's boat is down of East of Ephyra and up of Elysian Fields.
@@ -3034,9 +3051,6 @@ The aulidian_artemis_temple is an inroom in the Agora of Aulis. The aulidian_art
 
 The Necromanteion is an outroom. The Necromanteion is inside from the North of Ephyra.
 The necromanteion_front is an inroom in the North of Ephyra. The necromanteion_front fronts the Necromanteion.
-
-The Palace of Kadmea is an outroom. The Palace of Kadmea is inside from the Kadmea.
-The palace_front is an inroom in the Kadmea. The palace_front fronts the Palace of Kadmea.
 
 The Heroon of Kadmos is an outroom. [The Heroon of Kadmos is inside from the Kadmea.]
 The heroon_front is an inroom in the Kadmea. The heroon_front fronts the Heroon of Kadmos.
