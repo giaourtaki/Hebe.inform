@@ -3,7 +3,7 @@
   <generator>Windows Inform 10.1.2</generator>
   <item nodeId="node-1">
     <command xml:space="preserve">Hebe</command>
-    <result xml:space="preserve">Instructions: &#x000A;&#x000A;Welcome to Hebe, my Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. If at any point you need help, type "help" or "h" into the console. Have fun and thank you for playing!&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 240828 / Inform 7 v10.1.2&#x000A;&#x000A;The grand hall of Mount Olympus gleamed like a jewel in the Greek night sky. The lustrous surfaces of white marble and gold reflected the flickering torchlight. Columns of shimmering marble, capped with gilded Corinthian capitals, reached a vaulted ceiling adorned with intricate decorative paintings depicting scenes from the gods' legendary exploits. Among the hall's lavish embellishments were thrones of solid gold, masterfully crafted handwoven carpets and golden chandeliers, suspended from the ceiling. Today the gods were celebrating the ascension of Heracles to immortality, and also the anniversary of your marriage to him.&#x000A;&#x000A;The air was thick with the aroma of ambrosia and the rich scent of a feast laid out for the celebrating gods. Plates piled high with the finest delicacies filled every corner of the vast chamber, while goblets brimming with nectar passed from hand to hand, by the ever-dutiful Ganymedes.&#x000A;&#x000A;The hall was alive with the sounds of the festivities. Laughter and song echoed through the space as gods danced and sang in celebration. Nymphs twirled gracefully among them, their light steps barely disturbing the surface of the marble floor. In the center of the room, a troupe of performers reenacted the epic labors of Heracles, their movements grand and heroic, a fitting tribute to the hero whose deeds had won him a place among the gods.&#x000A;&#x000A;At the heart of the celebration sat the honoured guests of the occasion, Heracles himself, with you, his wife, to his right. On Heracles' left sat Zeus, king of the gods, who is glancing upon you both full of pride. On your right sat Hera, her demeanor calm and gratified, with a rare softness in her gaze. She put aside any conflict during the event, given her affection for you.&#x000A;&#x000A;The Twelve Olympians were all in attendance, their mighty forms gracing the hall with an air of majesty. They conversed among themselves, as they partook in the feast. Nymphs flitted among them, their laughter mingling with the conversations, adding a lightness to the evening's festivities.&#x000A;&#x000A;Everywhere you looked, there was movement, life, and joy. The gods, unbound by the cares of the mortal world, indulged in the pleasures of the moment, their spirits lifted by the music, the food, and the company. The hall of Olympus had never shined brighter, a fitting tribute to the divine couple.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Instructions: &#x000A;&#x000A;Welcome to Hebe, my Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. If at any point you need help, type "help" or "h" into the console. Have fun and thank you for playing!&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 240828 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Agora of Paphos&#x000A;The Agora of Paphos is a bustling marketplace, filled with the sights, sounds, and smells of ancient Cypriot life. Vendors are hawking their wares, their voices rising in a cacophony of shouts and bargaining. The air is thick with the scent of spices, perfumes, and freshly baked bread.&#x000A;&#x000A;The architecture of the agora is a blend of Greek and Phoenician styles, with columns, arches, and intricate stonework. The buildings are painted in bright colors, and the streets are lined with mosaics depicting scenes from myths and everyday life.&#x000A;&#x000A;Known Accessible Locations:&#x000A;&#x2192;Palace of Paphos (n)&#x000A;&#x2192;Port of Paphos (w)&#x000A;&#x000A;&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -7769,7 +7769,7 @@
   </item>
   <item nodeId="node-3994">
     <command xml:space="preserve">sail to aulis</command>
-    <result xml:space="preserve">You sail to the Port of Aulis.&#x000A;&#x000A;Port of Aulis&#x000A;To the west you can see the city of Aulis. &#x000A;&#x000A;From here you can sail to: &#x000A;&#x2192; Sounio&#x000A;&#x2192; Garden of Hesperides&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You sail to the Port of Aulis.&#x000A;&#x000A;Port of Aulis&#x000A;To the west you can see the city of Aulis. &#x000A;&#x000A;From here you can sail to: &#x000A;&#x2192; Sounio&#x000A;&#x2192; Garden of the Hesperides&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -7778,12 +7778,136 @@
   </item>
   <item nodeId="node-3995">
     <command xml:space="preserve">w</command>
-    <result xml:space="preserve">Agora of Aulis&#x000A;You can see the Port of Aulis in the east and the Gates of Aulis in the south.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Agora of Aulis&#x000A;You can see the Port of Aulis in the east and the Gates of Aulis in the south. You can enter the temple of aulidean artemis from here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
+      <child nodeId="node-4284"/>
       <child nodeId="node-3996"/>
     </children>
+  </item>
+  <item nodeId="node-4284">
+    <command xml:space="preserve">enter</command>
+    <result xml:space="preserve">You go into the temple of the aulidean artemis.&#x000A;&#x000A;Temple of the Aulidean Artemis&#x000A;You step into the sacred temple of Aulidean Artemis.&#x000A;The temple is empty and abandoned by the priestesses, following Kronos' seizure of power. Expected, unfortunately.&#x000A;&#x000A;As you pass through the pronaos, your eyes are drawn to the sunlight cascading down from the open ceiling, illuminating an imposing sundial made of pearly white marble that stands at the center of the chamber. The sun's rays cross paths with the dial's gnomon, casting a shadow that marks the hour.&#x000A;&#x000A;Entering the naos, the most divine part of the temple, you find yourself in the presence of the graceful golden statue of Artemis. Your sister stands tall and proud, her form aglow with a divine radiance that speaks of her unyielding strength and purity. In her left hand, she holds the antlers of a noble deer, symbolizing her dominion over the wild, while her right hand grips her bow, ever ready to protect those who dwell under her watchful eye. A quiver, filled with finely crafted arrows, rests upon her back, the tools of the huntress who lets no prey escape.&#x000A;&#x000A;Directly in front of her statue is the altar of Artemis, a place where mortals would lay their offerings not long ago, hoping to earn her favor.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4285"/>
+    </children>
+  </item>
+  <item nodeId="node-4285">
+    <command xml:space="preserve">move statue</command>
+    <result xml:space="preserve">You try to push the statue, but you dont achieve much.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4286"/>
+    </children>
+  </item>
+  <item nodeId="node-4286">
+    <command xml:space="preserve">wait 3 hours</command>
+    <result xml:space="preserve">At twelve o'clock you hear the click of a latch releasing and a you see a small hatch opening on the dial's gnomon.&#x000A;&#x000A;It feels like it's around twelve o'clock now.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4287"/>
+    </children>
+  </item>
+  <item nodeId="node-4287">
+    <command xml:space="preserve">take key</command>
+    <result xml:space="preserve">You picked up the sun key.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4288"/>
+    </children>
+  </item>
+  <item nodeId="node-4288">
+    <command xml:space="preserve">wait 12 hours</command>
+    <result xml:space="preserve">At ten past twelve you hear the sound of the small hatch closing and the click of a latch locking coming from the dial's gnomon.&#x000A;&#x000A;&#x000A;The day passes and a new day is dawing...&#x000A;&#x000A;&#x000A;At twelve o'clock you hear the click of a latch releasing and you see a compact drawer popping open on the dial's plate.&#x000A;&#x000A;It feels like it's around twelve o'clock now.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4289"/>
+    </children>
+  </item>
+  <item nodeId="node-4289">
+    <command xml:space="preserve">take key</command>
+    <result xml:space="preserve">(the moon key)&#x000A;You picked up the moon key.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4290"/>
+    </children>
+  </item>
+  <item nodeId="node-4290">
+    <command xml:space="preserve">unlock locks</command>
+    <result xml:space="preserve">You put the sun key into the sun lock.&#x000A;&#x000A;You put the moon key into the moon lock.&#x000A;&#x000A;You hear the sound of a locking mechanism unlocking.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4291"/>
+    </children>
+  </item>
+  <item nodeId="node-4291">
+    <command xml:space="preserve">move statue</command>
+    <result xml:space="preserve">You push the statue away and you reveal some stairs leading under the temple.&#x000A;&#x000A;&#x000A;At ten past twelve you hear the sound of the compact drawer closing and the click of a latch locking coming from the dial's body.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4292"/>
+    </children>
+  </item>
+  <item nodeId="node-4292">
+    <command xml:space="preserve">x stairs</command>
+    <result xml:space="preserve">The stairs seem to lead down.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4293"/>
+    </children>
+  </item>
+  <item nodeId="node-4293">
+    <command xml:space="preserve">enter strairs</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4294"/>
+    </children>
+  </item>
+  <item nodeId="node-4294">
+    <command xml:space="preserve">x stairs</command>
+    <result xml:space="preserve">The stairs seem to lead down.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4295"/>
+    </children>
+  </item>
+  <item nodeId="node-4295">
+    <command xml:space="preserve">enter stairs</command>
+    <result xml:space="preserve">You descend the stairs leading beneath the temple.&#x000A;&#x000A;Divine Cell of Artemis &amp; Apollo&#x000A;As you descend the stairs, the faint glow of a single candle illuminates a small, hidden shrine. The shrine is dedicated to the Erinyes, the avenging deities of Greek mythology, known for their relentless pursuit of justice. Mortals often pray to them in secret, to avoid appearing negative to the community. Honestly, Erinyes and Artemis aren't very different at times...&#x000A;&#x000A;By the altar, you make out the forms of two figures. Artemis and Apollo were bound by shadowy nether-forged chains, seemingly lost in an eternal slumber. A serene, almost ethereal expression graced their faces, their divine bodies seemingly suspended in time.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4296"/>
+    </children>
+  </item>
+  <item nodeId="node-4296">
+    <command xml:space="preserve">x stairs</command>
+    <result xml:space="preserve">The stairs seem to lead up.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4297"/>
+    </children>
+  </item>
+  <item nodeId="node-4297">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Divine Cell of Artemis &amp; Apollo&#x000A;The chamber looks like a shrine dedicated to the Erinyes, although now abandoned. By the altar, you see the forms of Artemis and Apollo, in a suspended state.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-3996">
     <command xml:space="preserve">s</command>
@@ -8598,13 +8722,137 @@
   </item>
   <item nodeId="node-4006">
     <command xml:space="preserve">w</command>
-    <result xml:space="preserve">Agora of Aulis&#x000A;You can see the Port of Aulis in the east and the Gates of Aulis in the south.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Agora of Aulis&#x000A;You can see the Port of Aulis in the east and the Gates of Aulis in the south. You can enter the temple of aulidean artemis from here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
+      <child nodeId="node-4270"/>
       <child nodeId="node-4196"/>
       <child nodeId="node-4007"/>
     </children>
+  </item>
+  <item nodeId="node-4270">
+    <command xml:space="preserve">enter</command>
+    <result xml:space="preserve">You go into the temple of the aulidean artemis.&#x000A;&#x000A;Temple of the Aulidean Artemis&#x000A;You step into the sacred temple of Aulidean Artemis.&#x000A;The temple is empty and abandoned by the priestesses, following Kronos' seizure of power. Expected, unfortunately.&#x000A;&#x000A;As you pass through the pronaos, your eyes are drawn to the sunlight cascading down from the open ceiling, illuminating an imposing sundial made of pearly white marble that stands at the center of the chamber. The sun's rays cross paths with the dial's gnomon, casting a shadow that marks the hour.&#x000A;&#x000A;Entering the naos, the most divine part of the temple, you find yourself in the presence of the graceful golden statue of Artemis. Your sister stands tall and proud, her form aglow with a divine radiance that speaks of her unyielding strength and purity. In her left hand, she holds the antlers of a noble deer, symbolizing her dominion over the wild, while her right hand grips her bow, ever ready to protect those who dwell under her watchful eye. A quiver, filled with finely crafted arrows, rests upon her back, the tools of the huntress who lets no prey escape.&#x000A;&#x000A;Directly in front of her statue is the altar of Artemis, a place where mortals would lay their offerings not long ago, hoping to earn her favor.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4271"/>
+    </children>
+  </item>
+  <item nodeId="node-4271">
+    <command xml:space="preserve">unlock moon lock</command>
+    <result xml:space="preserve">It seems like you need a matching key for this lock.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4272"/>
+    </children>
+  </item>
+  <item nodeId="node-4272">
+    <command xml:space="preserve">move statue</command>
+    <result xml:space="preserve">You try to push the statue, but you dont achieve much.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4273"/>
+    </children>
+  </item>
+  <item nodeId="node-4273">
+    <command xml:space="preserve">push statue</command>
+    <result xml:space="preserve">You try to push the statue, but you dont achieve much.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4274"/>
+    </children>
+  </item>
+  <item nodeId="node-4274">
+    <command xml:space="preserve">actions</command>
+    <result xml:space="preserve">Actions listing on.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4275"/>
+    </children>
+  </item>
+  <item nodeId="node-4275">
+    <command xml:space="preserve">push statue</command>
+    <result xml:space="preserve">[pushing the statue of artemis]&#x000A;[(1) opening the statue of artemis]&#x000A;You try to push the statue, but you dont achieve much.&#x000A;[(1) opening the statue of artemis - failed]&#x000A;&#x000A;[pushing the statue of artemis - failed]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4276"/>
+    </children>
+  </item>
+  <item nodeId="node-4276">
+    <command xml:space="preserve">move statue</command>
+    <result xml:space="preserve">[pushing the statue of artemis]&#x000A;[(1) opening the statue of artemis]&#x000A;You try to push the statue, but you dont achieve much.&#x000A;[(1) opening the statue of artemis - failed]&#x000A;&#x000A;[pushing the statue of artemis - failed]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4277"/>
+    </children>
+  </item>
+  <item nodeId="node-4277">
+    <command xml:space="preserve">wait 3 hours</command>
+    <result xml:space="preserve">[waiting more 180]&#x000A;&#x000A;At twelve o'clock you hear the click of a latch releasing and a you see a small hatch opening on the dial's gnomon.&#x000A;&#x000A;It feels like it's around twelve o'clock now.&#x000A;[waiting more 180 - succeeded]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4278"/>
+    </children>
+  </item>
+  <item nodeId="node-4278">
+    <command xml:space="preserve">take key</command>
+    <result xml:space="preserve">[taking the sun key]&#x000A;You picked up the sun key.&#x000A;[taking the sun key - succeeded]&#x000A;&#x000A;&#x000A;At ten past twelve you hear the sound of the small hatch closing and the click of a latch locking coming from the dial's gnomon.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4279"/>
+    </children>
+  </item>
+  <item nodeId="node-4279">
+    <command xml:space="preserve">wait 11 hours and 50 minutes</command>
+    <result xml:space="preserve">I only understood you as far as wanting to wait that.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4280"/>
+    </children>
+  </item>
+  <item nodeId="node-4280">
+    <command xml:space="preserve">wait 11 hours</command>
+    <result xml:space="preserve">[waiting more 660]&#x000A;It feels like it's around eleven o'clock now.&#x000A;[waiting more 660 - succeeded]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4281"/>
+    </children>
+  </item>
+  <item nodeId="node-4281">
+    <command xml:space="preserve">wait 50 minutes</command>
+    <result xml:space="preserve">[waiting more 50]&#x000A;&#x000A;The day passes and a new day is dawing...&#x000A;&#x000A;&#x000A;At twelve o'clock you hear the click of a latch releasing and you see a compact drawer popping open on the dial's plate.&#x000A;&#x000A;It feels like it's around twelve o'clock now.&#x000A;[waiting more 50 - succeeded]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4282"/>
+    </children>
+  </item>
+  <item nodeId="node-4282">
+    <command xml:space="preserve">take moon key</command>
+    <result xml:space="preserve">[taking the moon key]&#x000A;You picked up the moon key.&#x000A;[taking the moon key - succeeded]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4283"/>
+    </children>
+  </item>
+  <item nodeId="node-4283">
+    <command xml:space="preserve">push statue</command>
+    <result xml:space="preserve">[pushing the statue of artemis]&#x000A;[(1) opening the statue of artemis]&#x000A;You try to push the statue, but you dont achieve much.&#x000A;[(1) opening the statue of artemis - failed]&#x000A;&#x000A;[pushing the statue of artemis - failed]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-4196">
     <command xml:space="preserve">enter tample</command>
@@ -13137,7 +13385,7 @@
   </item>
   <item nodeId="node-994">
     <command xml:space="preserve">l</command>
-    <result xml:space="preserve">Prytaneion&#x000A;You step into the open hall of the Prytaneion, the administrative heart of Athens. In the center of the room you see the sacred hearth dedicated to Hestia, its warm glow illuminating the room. The flames burn steadily, their smoke rising in delicate spirals before disappearing through a square opening in the roof above. Beside the hearth lies a single hand torch, accompanied by a fire snuffer.&#x000A;&#x000A;Just beyond the hearth, there is a small dining area. A large table made of pine, surrounded by several chairs, stands atop an elegant carpet, likely reserved for official dinners and gatherings. Scattered across the table are an empty scroll, a wax tablet, a papyrus scroll and a parchment scroll, remnants of a recent meeting, perhaps.&#x000A;&#x000A;Eight torches on either side of the hearth are placed on the ground, forming a semicircle around the dining area. The torches are all put out, from the first-the far left one-to the sixteenth-the far right one.&#x000A;&#x000A;The rest of the building remains inaccessible, since the doors lead to the private quarters of the prytaneis and thus are firmly locked, leaving the main hall as the only accessible space.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Agora of Paphos&#x000A;Known Accessible Locations:&#x000A;&#x2192;Palace of Paphos (n)&#x000A;&#x2192;Port of Paphos (w)&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -13145,6 +13393,7 @@
       <child nodeId="node-1003"/>
       <child nodeId="node-3545"/>
       <child nodeId="node-1086"/>
+      <child nodeId="node-4299"/>
       <child nodeId="node-1091"/>
       <child nodeId="node-1159"/>
       <child nodeId="node-1171"/>
@@ -15045,6 +15294,111 @@
   <item nodeId="node-1090">
     <command xml:space="preserve">l</command>
     <result xml:space="preserve">Temple of the Aulidean Artemis&#x000A;Inside the Temple of the Aulidean Artemis you can see a sundial, the statue of Artemis and her sacrificial altar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-4299">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Outside of the Palace of Paphos&#x000A;The Palace of Paphos, a grand and imposing structure, stands as a testament to the island's wealth and power. Its exterior is adorned with intricate carvings, columns, and mosaics, reflecting the opulence and sophistication of the Cypriot aristocracy. The palace is surrounded by a lush garden, filled with exotic plants, fragrant flowers, and towering trees. Fountains are cascading through the garden, creating a serene and inviting atmosphere. The palace walls are fortified to protect its occupants from potential threats, while the gates were adorned with ornate sculptures and decorative elements.&#x000A;&#x000A;Accessible Locations:&#x000A;&#x2192;Throne Room (n)&#x000A;&#x2192;Agora of Paphos (s) &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4300"/>
+    </children>
+  </item>
+  <item nodeId="node-4300">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Agora of Paphos&#x000A;Known Accessible Locations:&#x000A;&#x2192;Palace of Paphos (n)&#x000A;&#x2192;Port of Paphos (w)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4301"/>
+    </children>
+  </item>
+  <item nodeId="node-4301">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Outside of the Palace of Paphos&#x000A;Accessible Locations:&#x000A;&#x2192;Throne Room (n)&#x000A;&#x2192;Agora of Paphos (s)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4302"/>
+    </children>
+  </item>
+  <item nodeId="node-4302">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Throne Room&#x000A;In the throne room, high stone columns intricately carved with motifs of mythological scenes and natural elements supported the lofty ceiling. The floor was a mosaic masterpiece, depicting elaborate geometric patterns that shimmered under the warm light of bronze braziers.&#x000A;&#x000A;At the room's center, on a raised platform, stood the king's throne: a magnificent chair of carved wood, overlaid with gold and inlaid with ivory. The throne was richly draped in deep purple and crimson fabrics. Beside it stood a large statue of Aphrodite, the island's patron goddess, symbolically positioned as the king's right hand.&#x000A;&#x000A;Known Accessible Locations:&#x000A;&#x2192; Outside of Palace of Paphos (s) &#x000A;&#x000A;You can see Cinyras here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4303"/>
+    </children>
+  </item>
+  <item nodeId="node-4303">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Outside of the Palace of Paphos&#x000A;Accessible Locations:&#x000A;&#x2192;Throne Room (n)&#x000A;&#x2192;Agora of Paphos (s)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4304"/>
+    </children>
+  </item>
+  <item nodeId="node-4304">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Outside of the Palace of Paphos&#x000A;Accessible Locations:&#x000A;&#x2192;Throne Room (n)&#x000A;&#x2192;Agora of Paphos (s)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4305"/>
+    </children>
+  </item>
+  <item nodeId="node-4305">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Throne Room&#x000A;Known Accessible Locations:&#x000A;&#x2192; Outside of Palace of Paphos (s)&#x000A;&#x000A;You can see Cinyras here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4306"/>
+    </children>
+  </item>
+  <item nodeId="node-4306">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">Secret Garden&#x000A;You find yourself in an enchanted underground garden, where magic seems to pulse from every corner. The air is thick with the intoxicating scent of flowers, each blossom radiating a soft, ethereal glow. Though deep beneath the earth, the space is bathed in a gentle, divine light radiating from the plants themselves, complemented by the soft flicker of the candles lining the paths, their wax bodies somehow untouched by time or flame. Despite the absence of any other life, the garden feels alive, giving the impression it exists in a suspended moment between the past and present.&#x000A;&#x000A;As one steps through the entrance, their eyes would be immediately drawn to a statue of an incomprehensibly beautiful man, poised on a marble base. His right hand is raised, his gaze fixed intently on it, as if beholding some unseen object. Behind the statue lies a serene natural lake, with delicate pink and white lilies gently laying on its surface. On the other side of the water, a majestic olive tree stands, ancient and hollowed by the passage of centuries, its gnarled bark a testament to its age. Some round flower beds bursting with vibrant red, purple, and orange flowers are encircling the lake and the tree.&#x000A;&#x000A;On the eastern side of the room, separated by a couple of steps decorated with flowers and candles, there is a secluded perfume-making area. Here, counters are crowded with the tools and equipment necessary for crafting fragrant elixirs, while ceramic amphorae are stored beneath, likely to store finished scents. The area leads to a gate covered in vines and flowers, making passage through it impossible.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4307"/>
+    </children>
+  </item>
+  <item nodeId="node-4307">
+    <command xml:space="preserve">x sign</command>
+    <result xml:space="preserve">The inscription on it reads: &#x000A;&#x000A;    May our love root and grow eternally, even though I am but mortal&#x000A;    I am afraid I will pass from this world still holding on to the bittersweet memory of you&#x000A;    Even in our parting I will find solace in your scent&#x000A;&#x000A;Listen to where the flowers speak of and you will find me.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4308"/>
+    </children>
+  </item>
+  <item nodeId="node-4308">
+    <command xml:space="preserve">x red flower</command>
+    <result xml:space="preserve">The red flowers have vibrant, silky petals, coloured in deep red. Their petals surround a small, central cluster of tiny, golden yellow stamens, and are set against feathery, soft green leaves that are thin and finely divided, almost like delicate threads.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4309"/>
+    </children>
+  </item>
+  <item nodeId="node-4309">
+    <command xml:space="preserve">x lake</command>
+    <result xml:space="preserve">It's a beautiful lake full of pink and white water lilies sitting on its surface.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4310"/>
+    </children>
+  </item>
+  <item nodeId="node-4310">
+    <command xml:space="preserve">investigate</command>
+    <result xml:space="preserve">In the Secret Garden you see a statue of a man, a lake, an olive tree and some flowerbeds with red, purple and orange flowers. In the perfume-making area there are some ceramic amphorae and a gate.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>

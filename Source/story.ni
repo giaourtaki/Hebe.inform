@@ -344,7 +344,7 @@ Instead of investigating:
 	else if the player is in the temple of poseidon:
 		say "In the middle of the temple you see a column with four bronze rings on. There is also an altar and a trapdoor.";
 	else if the player is in the Secret Garden:
-		say "In the Secret Garden you see a statue of a man, a lake, an olive tree and some flowerbeds with red, purple and orange flowers. In the perfume-making area there are some ceramic amphorae and a gate.";
+		say "In the Secret Garden you see a statue of a man, a lake, an aged olive tree and some flowerbeds with red, purple and orange flowers. In the perfume-making area there are some ceramic amphorae and a gate.";
 	else:
 		say "There isn't much to investigate here.".
 
@@ -999,28 +999,28 @@ The room is a small, dimly lit cellar, its walls carved from old stone and shrou
 	
 After talking to Athena:
 	if Athena is asleep:
-		say "Athena seems to be in a suspended state. She can't speak.";
+		say "Athena seems to be sleeping deeply. She is unresponsive.";
 		stop the action;
 	otherwise:
 		continue the action.
 		
 After talking to Ares:
 	if Ares is asleep:
-		say "Ares seems to be in a suspended state. He can't speak.";
+		say "Ares seems to be sleeping deeply. He is unresponsive.";
 		stop the action;
 	otherwise:
 		continue the action.
 
 After examining Athena:
 	if Athena is asleep:
-		say "Athena seems to be in a suspended state.";
+		say "Athena seems to be sleeping deeply.";
 		stop the action;
 	otherwise:
 		continue the action.
 		
 After examining Ares:
 	if Ares is asleep:
-		say "Ares seems to be in a suspended state. ";
+		say "Ares seems to be sleeping deeply. ";
 		stop the action;
 	otherwise:
 		continue the action.
@@ -1028,7 +1028,7 @@ After examining Ares:
 
 When Divine Cell of Athena & Ares Scene ends:
 	now the description of Divine Cell of Athena & Ares is "The room is a small, dimly lit cellar, its walls carved from old stone and shrouded in shadows. Flickering torches cast an eerie glow, illuminating shelves lined with forgotten offerings. The gate to the heroon is [if the dragon gate is open]open.[otherwise]closed.";
-	say "The gods wake up from their slumber. 'Thank you for saving us, sister. We wish to grand you our power.' [paragraph break]Invoking Athena's wisdom will help you solve puzzles and Invoking Ares[apostrophe] strategies will help you win combats. Which one do you want to choose?".[todo:fix when i have the boons]
+	say "The gods stir from their eternal rest, their divine bodies awakening. 'Thank you for saving us, sister. We wish to grand you our power.' [paragraph break]Invoking Athena's wisdom will help you solve puzzles and Invoking Ares[apostrophe] strategies will help you win combats. Which one do you want to choose?".[todo:fix when i have the boons]
 
 After reading a command when Athena is awake and Ares is awake:
 	if Athena is in Divine Cell of Athena & Ares and the player's command includes "Athena" or Athena is in Divine Cell of Athena & Ares and the player's command includes "Athena's":
@@ -1348,35 +1348,35 @@ In the center of the chamber, you make out the forms of two figures. Demeter and
 	
 After talking to Demeter:
 	if Demeter is asleep:
-		say "Demeter seems to be in a suspended state. She can't speak.";
+		say "Demeter seems to be sleeping deeply. She is unresponsive.";
 		stop the action;
 	otherwise:
 		continue the action.
 		
 After talking to Poseidon:
 	if Poseidon is asleep:
-		say "Poseidon seems to be in a suspended state. He can't speak.";
+		say "Poseidon seems to be sleeping deeply. He is unresponsive.";
 		stop the action;
 	otherwise:
 		continue the action.
 
 After examining Poseidon:
 	if Poseidon is asleep:
-		say "Poseidon seems to be in a suspended state.";
+		say "Poseidon seems to be sleeping deeply.";
 		stop the action;
 	otherwise:
 		continue the action.
 		
 After examining Demeter:
 	if Demeter is asleep:
-		say "Demeter seems to be in a suspended state.";
+		say "Demeter seems to be sleeping deeply.";
 		stop the action;
 	otherwise:
 		continue the action.
 
 When Divine Cell of Demeter & Poseidon Scene ends:
 	now the description of Divine Cell of Demeter & Poseidon is "";
-	say "The gods wake up from their slumber. 'Thank you for waking us, niece. We wish to grand you our power.' [paragraph break]Choosing Demeter's wisdom will enable you to speak the language of the earth and choosing Poseidon[apostrophe] power will enable you to breath and see underwater. Which one do you want to choose?".
+	say "The gods stir from their eternal rest, their divine bodies awakening. 'Thank you for waking us, niece. We wish to grand you our power.' [paragraph break]Choosing Demeter's wisdom will enable you to speak the language of the earth and choosing Poseidon[apostrophe] power will enable you to breath and see underwater. Which one do you want to choose?".
 	
 
 After reading a command when Demeter is awake and Poseidon is awake:
@@ -1386,6 +1386,8 @@ After reading a command when Demeter is awake and Poseidon is awake:
 		say "The gods now go to olympus.";
 		now Demeter is in Mount Olympus Hall;
 		now Poseidon is in Mount Olympus Hall;
+		now poseidon is described;
+		now demeter is described;
 		reject the player's command;
 	otherwise if Poseidon is in Divine Cell of Demeter & Poseidon and the player's command includes "Poseidon" or Poseidon is in Divine Cell of Demeter & Poseidon and the player's command includes "Poseidon's":
 		now HasPoseidonBoon is true;
@@ -1393,6 +1395,8 @@ After reading a command when Demeter is awake and Poseidon is awake:
 		say "The gods now go to olympus.";
 		now Demeter is in Mount Olympus Hall;
 		now Poseidon is in Mount Olympus Hall;
+		now poseidon is described;
+		now demeter is described;
 		reject the player's command;
 
 [End Of: Divine Cell of Demeter & Poseidon]
@@ -1543,7 +1547,7 @@ if the time understood is greater than 12 hours, say “You really don’t feel 
 
 
 Report waiting more:
-say “The time feels like it is now around [the time of day to the nearest 30 minutes in words].”.
+say “It feels like it's around [the time of day to the nearest 30 minutes in words] now.”.
 
 [sleep action]
 
@@ -1669,20 +1673,24 @@ Instead of unlocking locks:
 
 
 Instead of unlocking the sun lock:
-	try silently taking the sun key;
-	if the sun key is carried by the player:
-		try inserting the sun key into the sun lock;
-	otherwise:
-		say "You need a matching sun key for this lock.";
-		stop the action.
+	try inserting the sun key into the sun lock;
 		
 Instead of unlocking the moon lock:
-	try silently taking the moon key;
-	if the moon key is carried by the player:
-		try inserting the moon key into the moon lock;
+	try inserting the moon key into the moon lock;
+
+Before unlocking the moon lock:
+	if the player is not carrying the moon key and  the moon pocket is closed:
+		say "It seems like you need a matching key for this lock.";
+		stop the action;
 	otherwise:
-		say "You need a matching moon key for this lock.";
-		stop the action.
+		continue the action;
+		
+Before unlocking the sun lock:
+	if the player is not carrying the sun key and  the sun pocket is closed:
+		say "It seems like you need a matching key for this lock.";
+		stop the action;
+	otherwise:
+		continue the action;
 	
 Every turn:
 	If the sun key is inside the sun lock and
@@ -1699,25 +1707,25 @@ Instead of examining the statue of artemis:
 	otherwise:
 		say "You can see some stairs leading downstairs.". 
 		
-The stairs is a backdrop. It is in the temple of the Aulidean Artemis and the divine cell of artemis & apollo.The description is "The stairs seem to lead down.". 
+The stairs is a backdrop. It is in the temple of the Aulidean Artemis and the divine cell of artemis & apollo.
 
-Instead of pushing the statue of artemis for the first time:
-	now the statue of artemis is handled;
-	try opening the statue of artemis;
-	stop the action.
+Instead of examining the stairs when the player is in temple of the aulidean artemis:
+	say "The stairs seem to lead down.". 
 
 		
 Instead of pushing the statue of artemis:
-	if the statue of artemis is handled:
+	if the statue of artemis is open:
 		say "The statue feels stuck. You can't push it back.";
-		stop the action.
+		stop the action;
+	otherwise: 
+		try opening the statue of artemis;
 
 Instead of going down when the player is in the temple of the Aulidean Artemis:
-	if ArtemisTemplePuzzleSolved is false:
+	if the statue of artemis is closed:
 		say "You can't go that way.";
 		stop the action;
 	otherwise:
-		say "You take the stairs that lead under the temple.";
+		say "You descend the stairs leading beneath the temple.";
 		continue the action.
 	
 
@@ -1726,7 +1734,7 @@ Instead of opening the statue of artemis:
 		say "You push the statue away and you reveal some stairs leading under the temple.";
 		now the statue of artemis is open;
 	otherwise if ArtemisTemplePuzzleSolved is false and the statue of artemis is closed:
-		say "It seems like you might be missing two keys.";
+		say "You try to push the statue, but you dont achieve much.";
 	otherwise:
 		say "You can see some stairs leading downstairs."
 
@@ -1737,6 +1745,10 @@ After opening the statue of artemis:
 Instead of entering the statue of artemis:
 	try silently opening the statue of artemis;
 	Stop the action.
+	
+Instead of entering the stairs:
+	try going down;
+	
 	
 Every turn:
 	If ArtemisTemplePuzzleSolved is true for the first turn and the statue of artemis is closed:
@@ -1759,39 +1771,53 @@ test art with "wait until 12 pm/take sun key/wait until 12 am/ take moon key/ pu
 
 The Divine Cell of Artemis & Apollo is a room in Thebes.
 
-The description of Divine Cell of Artemis & Apollo is "TODO: description of Divine Cell of Artemis & Apollo.".
+Instead of examining the stairs when the player is in Divine Cell of Artemis & Apollo:
+	say "The stairs seem to lead up.". 
+	
+Instead of entering the stairs when the player is in Divine Cell of Artemis & Apollo:
+	try going up;
+	continue the action.
 
-Divine Cell of Artemis & Apollo Scene is a scene. Divine Cell of Artemis & Apollo Scene begins when the player is in Divine Cell of Artemis & Apollo for the first time. Divine Cell of Artemis & Apollo Scene ends when Goddess Artemis is awake and God Apollo is awake.
+Instead of going up when the player is in Divine Cell of Artemis & Apollo:
+	say "You make your way up the stairs to the temple.";
+	continue the action.
+
+
+The description of Divine Cell of Artemis & Apollo is "The chamber looks like a shrine dedicated to the Erinyes, although now abandoned.".
+
+Divine Cell of Artemis & Apollo Scene is a scene. Divine Cell of Artemis & Apollo Scene begins when the player is in temple of the aulidean artemis for the first time. Divine Cell of Artemis & Apollo Scene ends when Goddess Artemis is awake and God Apollo is awake.
 
 When Divine Cell of Artemis & Apollo Scene begins:
-	now the description of Divine Cell of Artemis & Apollo is "TODO: description of Divine Cell of Artemis & Apollo scene. You see the Artemis & Apollo in a sleeping state.".
+	now the description of Divine Cell of Artemis & Apollo is "[one of]As you descend the stairs, the faint glow of a single candle illuminates a small, hidden shrine. The shrine is dedicated to the Erinyes, the avenging deities of Greek mythology, known for their relentless pursuit of justice. Mortals often pray to them in secret, to avoid appearing negative to the community. Honestly, Erinyes and Artemis aren't very different at times...
+
+By the altar, you make out the forms of two figures. Artemis and Apollo were bound by shadowy nether-forged chains, seemingly lost in an eternal slumber. A serene, almost ethereal expression graced their faces, their divine bodies seemingly suspended in time.[or]The chamber looks like a shrine dedicated to the Erinyes, although now abandoned. By the altar, you see Artemis and Apollo, in a deep sleep.[stopping]".
 	
 After talking to Artemis:
 	if Artemis is asleep:
-		say "Artemis  is in a commatose state. She can't speak.";
+		say "Artemis seems to be sleeping deeply. She can't speak.";
 	otherwise:
 		continue the action.
 		
 After talking to Apollo:
 	if Apollo is asleep:
-		say "Apollo is in a commatose state. He can't speak.";
+		say "Apollo seems to be sleeping deeply. He can't speak.";
 	otherwise:
 		continue the action.
 
 After examining Artemis:
 	if Artemis is asleep:
-		say "Artemis is in a commatose state. She can't speak.";
+		say "Artemis seems to be sleeping deeply. She is unresponsive.";
 	otherwise:
 		continue the action.
 		
 After examining Apollo:
 	if Apollo is asleep:
-		say "Apollo is in a commatose state. He can't speak.";
+		say "Apollo seems to be sleeping deeply. He is unresponsive.";
 	otherwise:
 		continue the action.
 
 When Divine Cell of Artemis & Apollo Scene ends:
-	say "The gods wake up from their slumber. 'Thank you for saving us, sister. We wish to grand you our power.' [paragraph break]Choosing Artemis Boom will enable you to todo? and choosing Apollo's power will enable you to todo? . Which one do you want to choose?".
+	say "The gods stir from their eternal rest, their divine bodies awakening. 'Thank you for waking us, sister. We wish to grand you our power.' [paragraph break]Choosing Artemis Boom will enable you to todo? and choosing Apollo's power will enable you to todo? . Which one do you want to choose?".
 	
 After reading a command when Artemis is awake and Apollo is awake:
 	if Artemis is in Divine Cell of Artemis & Apollo and the player's command includes "Artemis" or Artemis is in Divine Cell of Artemis & Apollo and the player's command includes "Artemis'":
@@ -1800,6 +1826,8 @@ After reading a command when Artemis is awake and Apollo is awake:
 		say "The gods now go to olympus.";
 		now Artemis is in Mount Olympus Hall;
 		now Apollo is in Mount Olympus Hall;
+		now Artemis is described;
+		now Apollo is described;
 		reject the player's command;
 	otherwise if Apollo is in Divine Cell of Artemis & Apollo and the player's command includes "Apollo" or Apollo is in Divine Cell of Artemis & Apollo and the player's command includes "Apollo's":
 		now HasApolloBoon is true;
@@ -1807,6 +1835,8 @@ After reading a command when Artemis is awake and Apollo is awake:
 		say "The gods now go to olympus.";
 		now Apollo is in Mount Olympus Hall;
 		now Artemis is in Mount Olympus Hall;
+		now Artemis is described;
+		now Apollo is described;
 		reject the player's command;
 	
 
@@ -1819,12 +1849,28 @@ Chapter 4 - Aphrodite & Hephaestus
 [region: Cyprus]
 
 [When i want to test Cyprus]
-[The player is inside the Secret Garden.]
+The player is in Agora of Paphos.
 
 [Rooms]
-Agora of Paphos is a room in Cyprus. "The main square of Paphos. You can see the Palace of Paphos on the north."
-Throne Room is a room in Palace of Paphos.  "Home to the King of Paphos, Cinyras. Down is the Secret Garden."
-The Outside of the Palace of Paphos is a room in Paphos. "The palace entrance is on the north.".
+Agora of Paphos is a room in Cyprus. "[one of]The Agora of Paphos is a bustling marketplace, filled with the sights, sounds, and smells of ancient Cypriot life. Vendors are hawking their wares, their voices rising in a cacophony of shouts and bargaining. The air is thick with the scent of spices, perfumes, and freshly baked bread.
+
+The architecture of the agora is a blend of Greek and Phoenician styles, with columns, arches, and intricate stonework. The buildings are painted in bright colors, and the streets are lined with mosaics depicting scenes from myths and everyday life.
+
+[bold type]Known Accessible Locations:[roman type][line break]→Palace of Paphos (n)[line break]→Port of Paphos (w)
+
+[or][bold type]Known Accessible Locations:[roman type][line break]→Palace of Paphos (n)[line break]→Port of Paphos (w)[stopping]";
+
+Throne Room is a room in Palace of Paphos. The description is "[one of]In the throne room, high stone columns intricately carved with motifs of mythological scenes and natural elements supported the lofty ceiling. The floor was a mosaic masterpiece, depicting elaborate geometric patterns that shimmered under the warm light of bronze braziers.
+
+At the room’s center, on a raised platform, stood the king’s throne: a magnificent chair of carved wood, overlaid with gold and inlaid with ivory. The throne was richly draped in deep purple and crimson fabrics. Beside it stood a large statue of Aphrodite, the island’s patron goddess, symbolically positioned as the king’s right hand.
+
+[bold type]Known Accessible Locations:[roman type][line break]→ Outside of Palace of Paphos (s)
+[or][bold type]Known Accessible Locations:[roman type][line break]→ Outside of Palace of Paphos (s)[stopping]".
+
+The Outside of the Palace of Paphos is a room in Paphos. "[one of]The Palace of Paphos, a grand and imposing structure, stands as a testament to the island's wealth and power. Its exterior is adorned with intricate carvings, columns, and mosaics, reflecting the opulence and sophistication of the Cypriot aristocracy. The palace is surrounded by a lush garden, filled with exotic plants, fragrant flowers, and towering trees. Fountains are cascading through the garden, creating a serene and inviting atmosphere. The palace walls are fortified to protect its occupants from potential threats, while the gates were adorned with ornate sculptures and decorative elements.
+
+[bold type]Accessible Locations:[roman type][line break]→Throne Room (n)[line break]→Agora of Paphos (s)
+[or][bold type]Accessible Locations:[roman type][line break]→Throne Room (n)[line break]→Agora of Paphos (s)[stopping]".
 
 [secret garden]
 Secret Garden is a room in Palace of Paphos. "You find yourself in an enchanted underground garden, where magic seems to pulse from every corner. The air is thick with the intoxicating scent of flowers, each blossom radiating a soft, ethereal glow. Though deep beneath the earth, the space is bathed in a gentle, divine light radiating from the plants themselves, complemented by the soft flicker of the candles lining the paths, their wax bodies somehow untouched by time or flame. Despite the absence of any other life, the garden feels alive, giving the impression it exists in a suspended moment between the past and present. 
@@ -2007,7 +2053,7 @@ Understand "statue" as man statue when the player is in the secret garden.
 Instead of examining the man statue, say "The statue depicts a man with breathtaking beauty. His figure is carved with exquisite detail, and his chiseled features and graceful form are captured with masterful artistry. There is a longingness in his gaze, which falls on his raised right hand.[if something is inside the hand] You can see he's holding [a list of things inside the hand] in his right hand.[otherwise][line break]His right hand looks like it could be holding something but there's nothing there.[end if] [If the sign is not handled][line break]You can also see a marble sign on the statue's base.[end if]". 
 
 [The Sign]
-A sign is a thing. The sign is fixed in place. The sign is part of the man statue. The description of the sign is "The inscription on it reads: [line break][line break] May our love root and grow eternally, even though I am but mortal.[line break] I am afraid I will pass from this world still holding on to the bittersweet memory of you.[line break] Even in our parting I will find solace in your scent.". 
+A sign is a thing. The sign is fixed in place. The sign is part of the man statue. The description of the sign is "The inscription on it reads: [line break][line break][italic type]    In cold embrace of stone, lay bare,[line break]    The bloom that speaks of love’s despair.[line break]    In the hollow heart of timeless wood,[line break]    A love unending shall be stood.[line break]    But where the scent of longing weeps,[line break]    A whispered farewell forever sleeps.[roman type]"
 
 After examining the sign:
 	now the sign is handled.
@@ -2941,7 +2987,7 @@ The Port of Paphos is west of the Agora of Paphos. The Agora of Paphos is south 
 The Agora of Thebes is a room in Thebes. "You can see Kadmea, the acropolis of Thebes, perched up on the hill in the center of the Agora. [line break][line break]To the south are the city gates".
 The Gates of Thebes is south of the Agora of Thebes. Kadmea is up of Agora of Thebes.
 [Aulis]
-The Agora of Aulis is a room. "You can see the Port of Aulis in the east and the Gates of Aulis in the south.".
+The Agora of Aulis is a room. "You can see the Port of Aulis in the east and the Gates of Aulis in the south. You can enter the temple of aulidean artemis from here.".
 The Agora of Aulis is north of the Gates of Aulis. The Agora of Aulis is west of the Port of Aulis.
 
 [Delphi]
