@@ -364,6 +364,8 @@ Instead of investigating:
 	else if the player is in Prytaneion:
 		say "In the open Prytaneion hall you see the sacred hearth of Hestia, a pine dining table with matching pine chairs and [a list of things on top of pine table] on top of it. [if chair is not pushed and table is not pushed]Bellow the table and chairs is a red carpet.[otherwise]There is also a red carpet in the hall.[end if][line break]There are also 8 torches on either side of the hearth, forming a semicircle around the dining area.[if the hidden trapdoor is interactable].[line break]You also see a trapdoor on the ground.[end if]";
 	[TODO: fill here]
+	else if the player is in temple of poseidon:
+		say "In the center of the temple you see a marble column with four rotateable rings around it. Before the column, you notice a faint outline in the stone floor: a barely perceptible trapdoor.";
 	else if the player is in Mount Olympus Hall:
 		say "In the Mount Olympus you can see the thrones of the gods. [if the player is not carrying the heracles' club]The club of Heracles is leaning against one of them.[end if] The area is also decorated with columns, carpets and chandeliers.[if Olympus Hall Celebration Scene has not ended]There are delicacies in every corner. A troupe is perfoming the Twelve Labours of Heracles in the middle of the hall.";
 	else if the player is in the temple of poseidon:
@@ -403,7 +405,7 @@ Carry out helping:
 	say "   • Give nectar to [ bracket]person[close bracket]: Make a person immortal or heal an immortal person.[line break]";
 	say "[line break][bold type]3. Conversation Commands:[roman type][line break][line break]";
 	say "   • Talk to [ bracket]person[close bracket]: Initiate conversation. Example: 'talk to Heracles'.[line break]";
-	say "   • Ask [ bracket]person[close bracket] about [ bracket]topic[close bracket]: Ask someone about something specific. Example: 'ask Pytheia about the future.'.[line break]";[
+	[say "   • Ask [ bracket]person[close bracket] about [ bracket]topic[close bracket]: Ask someone about something specific. Example: 'ask Pytheia about the future.'.[line break]";[]
 	say "   • Tell [ bracket]person[close bracket] about [ bracket]topic[close bracket]: Tell someone about a topic. Example: 'tell librarian about secret'.[line break]";]
 	say "[line break][bold type][bold type]4. Miscellaneous Commands:[roman type][line break][line break]";
 	say "   • Inventory: See what you're carrying. Example: 'inventory', 'i'.[line break]";
@@ -460,7 +462,7 @@ The Goddess Hera is a woman.She is undescribed.She is immortal.
 
 [Olympus Hall Celebration Scene]
 When Olympus Hall Celebration Scene begins:
-	now the description of Mount Olympus Hall is "You can see Heracles, Zeus, Hera, Demeter, Hestia, Poseidon, Aphrodite, Apollo, Artemis, Athena, Ares, Dionysus, Hephaestus and Hermes. Ganymedes is running around, serving nectar on request.";
+	now the description of Mount Olympus Hall is "Mount Olympus’s grand hall glittered with marble and gold, hosting a joyous celebration for Heracles' ascension and your marriage. In the hall you can see Heracles, Zeus, Hera, Demeter, Hestia, Poseidon, Aphrodite, Apollo, Artemis, Athena, Ares, Dionysus, Hephaestus and Hermes enjoying the feast. Ganymedes is running around, serving nectar on request.";
 	now The God Heracles is in Mount Olympus Hall;
 	now Zeus is in Mount Olympus Hall;
 	now Apollo is in Mount Olympus Hall;
@@ -494,7 +496,7 @@ Instead of giving something to someone during Olympus Hall Celebration Scene:
 	if the second noun is Heracles:
 		if the noun is Heracles' Club:
 			say "He smiles at you. 'Thank you, my dearest.'";
-			say "[line break]He takes the club from your hands,  hefted it thoughtfully, and began warming up with a series of practice swings.";
+			say "[line break]He takes the club from your hands, hefted it thoughtfully, and began warming up with a series of practice swings.";
 			continue the action;
 		otherwise:
 			say "Heracles says, 'I am grateful, my dearest, but I think you might need this more than I.'";
@@ -633,7 +635,8 @@ A delicacy is scenery in Mount Olympus Hall. The description is "Golden platters
 
 A performance is scenery in Mount Olympus Hall. The description is "The troupe is now performing the Stymphalian Birds labour, the birds represented by a group of aerial performers who soared above the hall, their wings, crafted from layers of silken feathers, catching the light as they dipped and dived, their movements synchronized in a display of aerial acrobatics that have the audience cheering.". Understand "troupe" or "troup of performers" or "play" as performance.
 
-A nectar is scenery in Mount Olympus Hall. [TODO: make description maybe]
+A nectar is scenery in Mount Olympus Hall. The description is "A divine drink, sweet and intoxicating, capable of granting immortality and eternal youth. A favourite of the gods.";
+
 
 [Kronos Scene]
 When Kronos Scene begins:
@@ -729,7 +732,7 @@ The story goes that Gaia gifted Hera with branches of golden apples as a wedding
 
 The garden was your sanctuary once, where you spent countless hours alongside the Hesperides crafting nectar and bonding. Though you no longer visit it as often, it continues to protect you, just as it did during Kronos's attack on Olympus.
 
-[bold type]From here you can travel to:[roman type] [line break]→ Piraeus[line break]→ Sounio[line break]→ Aulis[line break]→ Paphos".
+[bold type]From here you can travel to:[roman type] [line break]→Piraeus[line break]→Sounio[line break]→Aulis[line break]→Paphos".
 
 [scenery]
 The sacred tree of Hesperides is scenery in Garden of the Hesperides. The description is "The tree is the soul of the garden, its golden apples gleaming among the green leaves. The garden’s essence flows from it, infusing the air with a sense of timeless peace.". Understand "tree" as The sacred tree of Hesperides when the player is in Garden of the Hesperides.
@@ -745,6 +748,22 @@ Aigle is a woman in Garden of the Hesperides. The description is "Aigle radiates
 Arethousa is a woman in Garden of the Hesperides. The description is "Arethousa moves with the grace of flowing water, her deep blue eyes reflecting the tranquil depths of a hidden spring. Her dark hair, braided with pearls, mirrors the shimmering waves of the sea, embodying the calm and mystery of hidden waters.".She is undescribed.
 Erytheia is a woman in Garden of the Hesperides. The description is " Erytheia’s beauty is as striking as a crimson sunset, with hair as red as the setting sun and eyes that burn with a fierce, fiery intensity. She embodies passion and vitality, her very presence infusing the garden with the vibrant energy of dusk.".She is undescribed.
 Hesperie is a woman in Garden of the Hesperides. The description is "Hesperie is as gentle as the twilight, her lavender eyes soft and dreamy, framed by hair as dark as the night sky. She carries the quiet peace of the evening, her ethereal presence soothing the garden into a tranquil lullaby as day fades into night.".She is undescribed.
+
+Instead of talking to Aigle:
+	if Garden of the Hesperides Scene has ended:
+		say "'I'm so relieved you’re safe! Now go show them what you’re made of, Hebe! Just like old times!'";
+	
+Instead of talking to Arethousa:
+	if Garden of the Hesperides Scene has ended:
+		say "'May the Fates guide and protect you on your journey! We’ll be cheering for you every step of the way!'";
+	
+Instead of talking to Erytheia:
+	if Garden of the Hesperides Scene has ended:
+		say "'Greetings Hebes! We missed you dearly. Congratulations on your anniversary, by the way!'";
+	
+Instead of talking to Hesperie:
+	if Garden of the Hesperides Scene has ended:
+		say "'Don’t worry about the garden. We’ll keep it safe until you return.'";
 
 [End Of: Garden of the Hesperides]
 
@@ -770,6 +789,11 @@ A monument is scenery in south of delphi. Understand "monuments" as monument.
 
 A delphi statue is scenery in south of delphi. Understand "statues" or "statue" as delphi statue when the player is in South of Delphi.
 
+Instead of examining something:
+	if the player is in south of delphi:
+		if the noun is cliff or the noun is grove or the noun is the main temple or the noun is sacred way or the noun is treasure or the noun is monument or the noun is delphi statue:
+			try looking;
+
 [End Of: South of Delphi]
 
 [Start Of: Oracle of Delphi]
@@ -777,12 +801,25 @@ The Oracle of Delphi is a room in Delphi. "As you step into the main temple of t
 
 Tall, imposing columns line the hall, casting dancing shadows on the walls by the flickering light of oil lamps. There, scenes of Apollo’s journeys are etched into the marble, their details so fine they seem almost alive.
 
-Ahead, at the far end of the hall, you see the adyton, the innermost chamber. It is veiled in semi-darkness, a place of deep reverence and mystery. The sacred omphalos stone, marking the navel of the world, stands at the center, draped in garlands and offerings left by travellers. Beyond it, shrouded in the shadows, lies the seat of the oracle, where the Pytheia sits, ready to deliver her prophecies.".
+Ahead, at the far end of the hall, you see the adyton, the innermost chamber. It is veiled in semi-darkness, a place of deep reverence and mystery. The sacred Omphalos stone, marking the navel of the world, stands at the center, draped in garlands and offerings left by travellers. Beyond it, shrouded in the shadows, lies the seat of the oracle, where the Pytheia sits, ready to deliver her prophecies.".
 
-Pytheia is a woman in the Oracle of Delphi. She is undescribed. The description is "Pytheia, the high priestess of the Oracle of Delphi, appears draped in flowing robes of shimmering white and deep purple, her face partially covered by a delicate veil of fine silk flowing from her hair. Her demeanor is both serene and enigmatic, her eyes reflecting a depth of wisdom as she sits on her tripod, surrounded by the faint, otherworldly aroma of incense.". Understand "oracle" as Pytheia when the player is in the oracle of delphi.
+Pytheia is a woman in the Oracle of Delphi. She is undescribed. She is mortal. The description is "Pytheia, the high priestess of the Oracle of Delphi, appears draped in flowing robes of shimmering white and deep purple, her face partially covered by a delicate veil of fine silk flowing from her hair. Her demeanor is both serene and enigmatic, her eyes reflecting a depth of wisdom as she sits on her tripod, surrounded by the faint, otherworldly aroma of incense.". Understand "oracle" or "priestess" or "high priestess" or "robes" or "face" or "eyes"  as Pytheia when the player is in the oracle of delphi.
 
 After talking to Pytheia:
-	say "The gods Ares & Athena are in the Heroon of Kadmos in Thebes, Demeter & Poseidon are in the temple of Poseidon in Sounio, Artemis & Apollo are in the temple of Artemis in Aulis, Aphrodite & Hephaestus is in a secret garden under the throne of the king of Paphos, Hestia and Hermes are in the Prytaneion in the Acropolis and Heracles, Zeus and Hera are in the Underworld. ". [TODO change]
+	say "[first time]O fair goddess Hebe, I perceive the secrets you seek, for the visions have shown me all. I have witnessed the fall of Olympus—the great Kronos rising, striking down the gods one by one with powers beyond mortal and immortal ken. The gods lie imprisoned, scattered across Greece, bound within dark cells.[line break][only][line break]I see Athena and Ares confined in Thebes, beneath the ancient heroon of Kadmos, the city's revered founder. [line break][line break]I behold Demeter and Poseidon, ensnared beneath the shadowed cliffs of Sounion.[line break][line break]I see Artemis and Apollo bound in the city of Aulis, where Iphigenia met her fate. [line break][line break]Aphrodite and Hephaestus I glimpse at the side of the king of Paphos, held captive in his court. [line break][line break]Hestia and swift-footed Hermes I find amidst the pillars where the laws of Athens are decreed. [line break][line break]And your noble husband, Heracles... He wanders lost, his memory stolen, submerged within the treacherous waters of the River Lethe.[line break][line break]Though they are not yet imperiled, danger looms ever closer. The strands of destiny twist perilously, O Hebe, and swift action must be taken.";
+
+A burning incense is scenery in oracle of delphi. Understand "incense" as burning incense when the player is in oracle of delphi.
+
+A tall column is scenery in oracle of delphi. Understand "column" or "columns" or "imposing columns" or "tall columns" or "imposing column" as tall column when the player is in oracle of delphi.
+
+An adyton is scenery in oracle of delphi. The description is "The adyton is a sacred, restricted inner chamber within temples, reserved for priests and oracles, shrouded in mystery.". Understand "seat" or "seat of the oracle" or "tripod" as adyton when the player is in oracle of delphi.
+
+An omphalos stone is scenery in oracle of delphi. The description is "The Omphalos stone is a sacred artifact, symbolizing the center of the world.". Understand "stone" as omphalos stone when the player is in oracle of delphi.
+
+Instead of examining something:
+	if the player is in oracle of delphi:
+		if the noun is burning incense or the noun is tall column:
+			try looking;
 	
 [scenery]
 
@@ -802,6 +839,21 @@ As you approach the altar, the high priestess approaches you, her robes flowing 
 The necromanteion altar is inside the Necromanteion. It is a supporter. Understand "altar" as necromanteion altar when the player is in necromanteion. It is undescribed. The description is "
 The black marble altar is smooth, with engraved serpents and symbols, its surface polished yet slightly worn from countless offerings. Here, people come to make sacrifices, seeking an obol to ensure their dead be granted safe passage across the Acheron River by Charon.". 
 
+A stone passageway is scenery in necromanteion. Understand "passageway" as stone passageway when the player is in necromanteion.
+
+A sacret rite is scenery in necromanteion. 
+
+A central chamber is scenery in necromanteion. Understand "chamber" as central chamber when the player is in necromanteion.
+
+A few offering is scenery in necromanteion. Understand "few offerings" or "offerings" or "offering" as few offering when the player is in necromanteion.
+
+Instead of examining something:
+	if the player is in necromanteion:
+		if the noun is stone passageway or the noun is sacret rite or the noun is central chamber or the noun is few offering:
+			try looking;
+
+
+
 Instead of putting something on something:
 	if the second noun is the necromanteion altar:
 		try sacrificing noun;
@@ -809,22 +861,34 @@ Instead of putting something on something:
 		continue the action.
 
 [npcs]
-The High Priestess of Necromanteion is a woman in necromanteion. She is undescribed. The description is "The priestess is a woman around her fourties, clad in flowing black robes that seem to merge with the shadows around her. Her long, dark hair is weaved into a krobylos hairstyle.".
+The High Priestess of Necromanteion is a woman in necromanteion. She is mortal. She is undescribed. The description is "The priestess is a woman around her fourties, clad in flowing black robes that seem to merge with the shadows around her. Her long, dark hair is weaved into a krobylos hairstyle.".
 
 Instead of Talking to the High Priestess of Necromanteion:
 	say "'To obtain an obol for passage into the underworld, it is customary you make a sacrifice to the Chthonian deities.'";
+	
+
+
 
 [End Of: Necromanteion]
 
 [Start Of: North of Ephyra]
 The description of North of Ephyra is "As you approach the Necromanteion from afar, the landscape unfolds before you in a blend of serene beauty and subtle foreboding. The temple is perched on a gentle rise, its sombre silhouette stark against the vibrant greens and soft blues of the surrounding countryside. The Acheron River courses through the landscape, its dark waters a stark contrast to the blooming fields.
 
-Fields of wildflowers spread out in all directions, their petals swaying lightly in the breeze, painting the earth with shades of purple, yellow, and white. The air is sweet with the scent of blooming flowers, yet as Hebe draws closer, the distant cries of birds seem to fade, replaced by a profound, almost eerie silence. The temple itself, though small and unassuming, exudes an aura of power, its weathered stones and dark entrance beckoning those who seek to cross into the realm of the dead.
+Fields of wildflowers spread out in all directions, their petals swaying lightly in the breeze, painting the earth with shades of purple, red, and white. The air is sweet with the scent of blooming flowers, yet as Hebe draws closer, the distant cries of birds seem to fade, replaced by a profound, almost eerie silence. The temple itself, though small and unassuming, exudes an aura of power, its weathered stones and dark entrance beckoning those who seek to cross into the realm of the dead.
 
-[bold type]Known adjacent locations:[roman type][line break]→Gates of Ephyra (S)[line break]→East of Ephyra (SE) .". [TODO: make things interactable]
+[bold type]Known adjacent locations:[roman type][line break]→Gates of Ephyra (S)[line break]→East of Ephyra (SE)". 
 [items]
 
 [scenery]
+
+An acheron river is backdrop in north of ephyra. The description is "The Acheron River, known as the "River of Woe," is a dark, mythical waterway in the Underworld, shrouded in mist.";
+
+A wildflower field is scenery in north of ephyra. The description is "A vibrant wildflower field bursts with color, filled with daisies, poppies, and lavender, swaying gently under the warm sunlight.". Understand "fields" or "fields of wildflowers" or "poppies" or "daisies" or "lavender"as wildflower field.
+
+A necromanteion is scenery in north of ephyra. The description is "The Necromanteion is a dark, mysterious temple of Hades and Persephone, filled with eerie tunnels and ritual chambers.". Understand "temple" or "perched temple" as necromanteion when the player is in north of ephyra.
+
+Understand "x north of ephyra" or "examine north of ephyra" or "x ephyra" or "examine ephyra"as look when the player is in north of ephyra.
+
 
 [End Of: North of Ephyra]
 Chapter 1- Athena & Ares
@@ -839,9 +903,14 @@ The Palace of Kadmea stands tall, its stone walls solid and plain, a functional 
 
 There, you also notice the Heroon of Kadmos, a modest shrine dedicated to the city's legendary founder. This small sanctuary, though simple, holds great significance for the people of Thebes. The legend goes that Kadmos founded this very city after slaying a dragon and sowing its teeth into the earth, turning them into people.
 
-[bold type]Known adjacent locations:[roman type][line break]→Agora of Thebes (D)[line break]→Heroon of Kadmos (ENTER) " [TODO: make palace background]
+[bold type]Known adjacent locations:[roman type][line break]→Agora of Thebes (D)[line break]→Heroon of Kadmos (ENTER)" 
 
-Palace of Kadmea is a room in Thebes. 
+Palace of Kadmea is scenery in kadmea. The description is "The Palace of Kadmea is a grand fortress with towering walls, ornate frescoes, and majestic, columned courtyards."; Understand "fortress" or "walls" or "frescoes" or "courtyards" as Palace of Kadmea when the player is in kadmea.
+
+The heroon is scenery in kadmea. The description is "The heroon in Kadmea, dedicated to Kadmos, features a modest red stone structure with engraved pillars, a bronze statue, and offerings of laurel wreaths."; Understand "stone structure" or "engraved pillars" or "structure" or "pillars" or "offerings" or "shrine"or "laurel wreaths" as the heroon when the player is in kadmea.
+
+a bronze statue is scenery in kadmea. the description is "The bronze statue of Kadmos stands tall and proud, depicting the hero in intricate armor, holding a spear and serpent, symbolizing his victory over the dragon of Thebes."; Understand "kadmos" or "hero"  or "spear"  or "serpent"  or "dragon"  or "armor" as bronze statue when the player is in kadmea.
+
 Instead of entering Palace of Kadmea:
 	say "The palace is guarded heavily. You can't enter right now.";
 	stop the action.
@@ -948,6 +1017,9 @@ A small scale is in Heroon of Kadmos. It is undescribed.
 Instead of examining the small scale:
 	say "The small scale has 6 pans. It is connected to a metal rod, which appears to serve as a locking mechanism for the gate. ";
 	stop the action.
+	
+Instead of examining weights:
+	say "The weights you found in the compartment on the altar. You see an owl weight, a shield weight, a spear weight, a snake weight, a sword weight and a horse weight.";
 	
 A first pan is part of the small scale. It is fixed in place. It is a supporter. It is undescribed.
 A second pan is part of the small scale. It is fixed in place. It is a supporter. It is undescribed. It is part of the small scale.
@@ -1057,7 +1129,7 @@ After taking something when the supporter taken from is right pan:
 	otherwise:
 		say "The scale is perfectly balanced.";
 
-The description of the scale is "On the large scale you can see two pans, the left pan and the right pan. The scale is currently [scale-state of the scale].".
+The description of the scale is "On the large scale you can see two pans, the left pan and the right pan. The scale is currently [if the scale-state of the scale is left-leaning]leaning towards the left[otherwise if the scale-state of the scale is right-leaning]leaning towards the right[otherwise]balanced.".
 	
 Understand "large scale" or "big scale" as scale.
 
@@ -1113,7 +1185,7 @@ test dragongate with "take weights/put owl weight on first pan/put snake weight 
 
 [Start Of: Divine Cell of Athena & Ares]
 
-An offering is scenery in Divine Cell of Athena & Ares. The description is "On the shelves there are some worn amphorae, faded incense burners, and faded relics of past rituals.". Understand "offerings" or "shelf" or "shelves"  as offering.
+A forgotten offering is scenery in Divine Cell of Athena & Ares. The description is "On the shelves there are some worn amphorae, faded incense burners, and faded relics of past rituals.". Understand "offerings" or "shelf" or "shelves" or "offering" as forgotten offering.
 
 A flickering torch is scenery in Divine Cell of Athena & Ares. Understand "flickering torches" as flickering torch.
 Instead of examining the flickering torch:
@@ -1163,11 +1235,12 @@ After examining Ares:
 
 When Divine Cell of Athena & Ares Scene ends:
 	now the description of Divine Cell of Athena & Ares is "The room is a small, dimly lit cellar, its walls carved from old stone and shrouded in shadows. Flickering torches cast an eerie glow, illuminating shelves lined with forgotten offerings. The gate to the heroon is [if the dragon gate is open]open.[otherwise]closed.";
-	say "The gods stir from their eternal rest, their divine bodies awakening. 'Thank you for saving us, sister.' [line break][line break]Now the gods leave for olympus hall.";[todo:fix when i have the boons]
+	say "The gods stir from their eternal rest, their divine bodies awakening. [line break][line break]Athena nods, her voice calm yet weary. 'Thank you for saving us, sister. We still need some time to recover before we’re back to full strength.'[line break][line break]Ares smirks, his tone laced with defiant energy. 'You did well. See you back on Olympus!'";
 	now Athena is in Mount Olympus Hall;
 	now Athena is described;
 	now Ares is in Mount Olympus Hall;
 	now Ares is described;
+	now GodsSaved1 is true;
 	increase score by 15;
 		
 		
@@ -1214,14 +1287,12 @@ A sacred site is scenery in underwater. Understand "marble" as sacred site. The 
 Sounio Beach Scene is a scene. The Sounio Beach Scene begins when the player is in Sounio Beach for the first time. The Sounio Beach Scene ends when Amphitrite is happy.
 
 When Sounio Beach Scene begins:
-	now the description of sounio beach is "As you journey south toward Cape Sounion, where the Temple of Poseidon stands, you find that the cape has become entirely submerged. What remains is a narrow beach, with a vast expanse of land now lying beneath the sea. On your west is the town of Sounio.
+	now the description of sounio beach is "As you journey south toward Cape Sounion, where the Temple of Poseidon stands, you find that the cape has become entirely submerged. What remains is a narrow beach, with a vast expanse of land now lying beneath the sea. 
 
-On the beach, you notice a nymph weeping and wailing, surrounded by others who are attempting to console her. You recognize the grieving nereid as Amphitrite, queen of the sea and wife of Poseidon. The nereids comforting her must be her closest attendants: Aktaia, Erato, and Ploto.
+On the beach, you notice a nymph weeping and wailing, surrounded by others who are attempting to console her. You recognize the grieving nereid as Amphitrite, queen of the sea and wife of Poseidon. The nereids comforting her must be her closest attendants: Aktaia, Erato, and Ploto.[paragrah break][bold type]Known adjacent locations:[roman type][line break]→Agora of Sounio (W)";
+	say "As you journey south toward Cape Sounion, where the Temple of Poseidon stands, you find that the cape has become entirely submerged. What remains is a narrow beach, with a vast expanse of land now lying beneath the sea.
 
-[bold type]Known adjacent locations:[roman type][line break]→Agora of Sounio (W)";
-	say "As you journey south toward Cape Sounion, where the Temple of Poseidon stands, you find that the cape has become entirely submerged. What remains is a narrow beach, with a vast expanse of land now lying beneath the sea. On your west is the town of Sounio.
-
-On the beach, you notice a nymph weeping and wailing, surrounded by others who are attempting to console her. You recognize the grieving nereid as Amphitrite, queen of the sea and wife of Poseidon. The nereids comforting her must be her closest attendants: Aktaia, Erato, and Ploto.".
+On the beach, you notice a nymph weeping and wailing, surrounded by others who are attempting to console her. You recognize the grieving nereid as Amphitrite, queen of the sea and wife of Poseidon. The nereids comforting her must be her closest attendants: Aktaia, Erato, and Ploto.[paragrah break][bold type]Known adjacent locations:[roman type][line break]→Agora of Sounio (W)".
 
 When Sounio Beach Scene ends:
 	now the description of sounio beach is "As you journey south toward Cape Sounion, where the Temple of Poseidon stands, you find that the cape has become entirely submerged. What remains is a narrow beach, with a vast expanse of land now lying beneath the sea. On your west is the town of Sounio.
@@ -1242,6 +1313,7 @@ Instead of talking to someone during Sounio Beach Scene:
 		now Amphitrite is happy;
 		follow the scene change machinery rule;
 		
+Understand "x cape sounion" or "x cape sounio" or "x cape" or "x sounio"or "x narrow beach" or "x sounio beach" or "examine cape sounion" or "examine cape sounio" or "examine cape" or "examine sounio"or "examine narrow beach" or "examine sounio beach" as look when the player is in sounio beach.
 
 Instead of talking to Amphitrite:
 	if Sounio Beach Scene has ended:
@@ -1303,7 +1375,7 @@ Aktaia is a woman in sounio beach. She is undescribed. The description is "With 
 Erato is a woman in sounio beach. She is undescribed.The description is "A Nereid with a love for music and poetry, Erato possessed a voice that could charm even the most hardened heart. ".
 Ploto is a woman in sounio beach. She is undescribed.The description is "Unlike her sisters, Ploto was known for her mischievous nature. With a playful glint in her eye, she would often trick sailors into following her siren song, leading them astray. ".
 
-Amphitrite is a woman in the sounio beach. Amphitrite can be sad or happy. Amphitrite is sad. She is undescribed. The description is "Amphitrite is a beautiful sea nymph, adorned with seashells and seaweed. Her presence is often brings peace and tranquility at sea.".
+Amphitrite is a woman in the sounio beach. Amphitrite can be sad or happy. Amphitrite is sad. She is undescribed. The description is "Amphitrite is a beautiful sea nymph, adorned with seashells and seaweed. Her presence is often brings peace and tranquility at sea.".Understand "nereid" or "queen" or "queen of the sea" or "wife" or "wife of poseidon" as Amphitrite when the player is in sounio beach.
 
 
 Every turn:
@@ -1320,7 +1392,7 @@ Understand "to temple" or "swim in sea" or "dive in sea" or "go in sea" or "jump
 Instead of going south in the Sounio Beach:
 	try entering the sea.
 
-Instead of entering the sea: [the nereides are there to help you everytime if you dont have poseidons boon]
+Instead of entering the sea: 
 	if HasPoseidonBoon is true:
 		say "You dive deep into the deep blue waters.";
 		continue the action;
@@ -1341,8 +1413,6 @@ A room called Temple of Poseidon is in Sounio. It is up of the temple trapdoor."
 In the center of the temple stands a massive column, intricately carved from marble, rising  from the temple floor. Around this column are four rotatable rings. The rings are crafted from shimmering metal, perhaps bronze, that glints in the filtered light.
 
 Before the column, along the temple floor, you notice a faint outline in the stone: a barely perceptible trapdoor."
-
-
 
 [scenes]
 Holding Breath Scene is a recurring scene. Holding Breath Scene begins when the player is in Underwater and HasPoseidonBoon is false. Holding Breath Scene ends when the time since Holding Breath Scene began is 12 minutes or the player is in Sounio Beach. 
@@ -1972,14 +2042,15 @@ The architecture of the agora is a blend of Greek and Phoenician styles, with co
 [End of: Agora of Paphos]
 
 [Start of: Throne Room]
-Throne Room is a room in Palace of Paphos. The description is "In the throne room, high stone columns intricately carved with motifs of mythological scenes and natural elements supported the lofty ceiling. The floor was a mosaic masterpiece, depicting elaborate geometric patterns that shimmered under the warm light of bronze braziers.
+Throne Room is a room in Palace of Paphos. The description is " The throne room stands vacant. There you see high stone columns intricately carved with motifs of mythological scenes and natural elements supported the lofty ceiling. The floor was a mosaic masterpiece, depicting elaborate geometric patterns that shimmered under the warm light of bronze braziers.
 
 At the room’s center, on a raised platform, stood the king’s throne: a magnificent chair of carved wood, overlaid with gold and inlaid with ivory. The throne was richly draped in deep purple and crimson fabrics. Beside it stood a large statue of Aphrodite, the island’s patron goddess, symbolically positioned as the king’s right hand.
 
-[bold type]Known adjacent locations:[roman type][line break]→ Outside of Palace of Paphos (S)".
+[bold type]Known adjacent locations:[roman type][line break]→Outside of Palace of Paphos (S)[if secret garden is visited][line break]→Secret Garden (D)".
 
-The aphrodite statue is a closed openable door in the throne room. It is scenery.The aphrodite statue is down of the throne room and up of the Secret Garden.
-understand "secret staircase" as aphrodite statue.
+
+
+The aphrodite statue is a closed unopenable door in the throne room. It is scenery. The aphrodite statue is down of the throne room and up of the Secret Garden. Understand "secret staircase" or "staircase" as aphrodite statue. The description is "The statue is elegantly carved in marble, depicting her graceful form, soft curves, serene expression, and flowing drapery.".
 
 Instead of entering the Aphrodite statue:
 	if the player is in the throne room:
@@ -1989,21 +2060,14 @@ Instead of entering the Aphrodite statue:
 		
 	
 Instead of pushing the aphrodite statue:
-	if the aphrodite statue is closed and the player is in the throne room:
+	if the aphrodite statue is closed:
 		now aphrodite statue is open;
 		say "You push the statue out of the way, revealing a secret staircase leading downstairs.";
 		stop the action;
-	otherwise if the aphrodite statue is closed and the player is in the Secret Garden:
-		say "You can't move the statue from there.";
+	otherwise:
+		say "The statue seems stuck.";
 		stop the action;
-	otherwise if the aphrodite statue is open and the player is in the throne room:
-		now the aphrodite statue is closed;
-		if the player is in throne room:
-			say "You push the statue on its original position.";
-		otherwise:
-			say "You can't move the statue from there.";
-			stop the action.
-
+		
 [End of: Throne Room]
 
 [Start of: Outside of the Palace of Paphos]
@@ -2014,7 +2078,7 @@ The Outside of the Palace of Paphos is a room in Paphos. "The Palace of Paphos, 
 
 
 [Start Of Secret Garden]
-Secret Garden is a room in Palace of Paphos. "You find yourself in an enchanted underground garden, where magic seems to pulse from every corner. The air is thick with the intoxicating scent of flowers, each blossom radiating a soft, ethereal glow. Though deep beneath the earth, the space is bathed in a gentle, divine light radiating from the plants themselves, complemented by the soft flicker of the candles lining the paths, their wax bodies somehow untouched by time or flame. Despite the absence of any other life, the garden feels alive, giving the impression it exists in a suspended moment between the past and present. 
+Secret Garden is a room in Palace of Paphos. "After descending the staircase, you find yourself in an enchanted underground garden, where magic seems to pulse from every corner. The air is thick with the intoxicating scent of flowers, each blossom radiating a soft, ethereal glow. Though deep beneath the earth, the space is bathed in a gentle, divine light radiating from the plants themselves, complemented by the soft flicker of the candles lining the paths, their wax bodies somehow untouched by time or flame. Despite the absence of any other life, the garden feels alive, giving the impression it exists in a suspended moment between the past and present. 
 
 As one steps through the entrance, their eyes would be immediately drawn to a statue of an incomprehensibly beautiful man, poised on a marble base. Behind the statue lies a serene natural lake, with delicate pink and white lilies gently laying on its surface. On the other side of the water, a majestic olive tree stands, ancient and hollowed by the passage of centuries, its gnarled bark a testament to its age. Some round flower beds bursting with vibrant red, purple, and orange flowers are encircling the lake and the tree.
 
@@ -2322,7 +2386,7 @@ Every turn:
 
 Instead of examining the ivy gate:
 	if FlowerPuzzleSolved is true:
-		say "The vines have retreated from the gate. You can try opening it now.";
+		say "The vines have retreated from the gate. You could try opening it now.";
 		now ivy gate is unlocked;
 	otherwise:
 		say "The gate is covered in thick vines, making it impossible to open."	
@@ -2416,7 +2480,7 @@ Instead of taking the pine table:
 	say "The table is too heavy for you to lift!";
 	stop the action.
 
-A chair is on the red carpet. It is scenery. Understand "chairs" or "pine chair" or "pine chairs" as chair. A chair can be pushed or unpushed. The table is unpushed. The description of chair is "The chairs are a matching set with the table, all crafted of pine.".
+A chair is on the red carpet. It is scenery. Understand "chairs" or "pine chair" or "pine chairs" as chair. A chair can be pushed or unpushed. The chair is unpushed. The description of chair is "The chairs are a matching set with the table, all crafted of pine.".
 
 Instead of taking the chair:
 	say "You don't think carrying a pine chair will help you on your journey.";
@@ -2901,31 +2965,33 @@ Instead of examining the bridge:
 Chapter 7 - Zeus & Hera 
 
 The Tartaros is a  room in the Underworld.
-[
 
-[end1]
-End1 Scene is a scene. End1 Scene begins when the player is in Tartaros and the score is 0. 
-[end2]
-End2 Scene is a scene.End2 Scene begins when the player is in Tartaros and the score is 15. 
-[end3]
-End3 Scene is a scene.End3 Scene begins when the player is in Tartaros and the score is 30 or the player is in Tartaros and the score is 45. 
-[end4]
-End4 Scene is a scene.End4 Scene begins when the player is in Tartaros and the score is 60 or the player is in Tartaros and the score is 75. 
+End Scene is a scene. End Scene begins when the player is in Tartaros for the first time. 
 
 
-When End1 Scene begins:
-	say "You enter Tartaros along with Heracles. You see Zeus and Hera, their energy drained from the nether-chains. You see the Titans Koios, Okeanos, Krios, Hyperion, Iapetos and Kronos. Heracles tells you to keep the club and flexes his muscles.
 
-The titans attack you. Koios strikes at you.
-
-[bold type]What do you do?[roman type][line break]→Attack[line break]→Defend[line break]→Dodge";
-
-Instead of doing anything during end1 scene:
-	say "You don't have time for this now! You are in combat.";
-	stop the action.
-	
-]
-	
+When End Scene begins:
+	say "You step into the dark, foreboding realm of Tartaros alongside Heracles. The air is thick and oppressive, crackling with ancient power. Before you, Zeus and Hera hang suspended, their divine essence slowly siphoned away by the cruel, glowing nether-chains that bind them. Surrounding them are the towering forms of the Titans—Koios, Okeanos, Krios, Hyperion, Iapetos, and at the center, the formidable Kronos, their eyes blazing with fury and vengeance.";
+	wait for any key;
+	say "Heracles turns to you, his expression fierce yet determined. 'Keep the club, Hebe' he says, as he stretches his muscles, bracing for battle. Without warning, the Titans roar and surge forward, their massive forms hurtling toward you. The final fight has begun, and the fate of the gods hangs in the balance.";
+	wait for any key;
+	say "Just as the Titans are about to strike, a brilliant light floods Tartaros. One by one, the Olympian gods materialize, their presence igniting the battlefield. With battle cries echoing through the cavernous realm, they leap into the fray—Athena and Ares clash fiercely with Koios, their weapons gleaming as they drive the Titan back. Demeter and Poseidon unleash earth and sea against Okeanos, their combined might surging with primal force. Artemis and Apollo rain arrows and fiery blasts upon Hyperion, matching his radiance with their own. Aphrodite and Hephaestus stand united, wielding beauty and craft against the relentless Krios, while Hestia and Hermes dart toward Iapetos, their swift and clever attacks weaving through his defenses.";
+	wait for any key;
+	say "In the center of the chaos, Kronos looms, his gaze locked on you and Heracles. This is it. The fate of Olympus rests on your shoulders. With Heracles at your side, you grip his mighty club, ready to face the father of Titans. The final showdown is beginning.";
+	wait for any key;
+	say "Kronos leaps back, retreating into the chaos of battle, seeking refuge among the other Titans. His eyes glow with fierce determination as he begins to charge his dreaded time-freezing attack. Without hesitation, you and Heracles pursue him, skillfully dodging the furious Titans who try to block your path. An idea sparks in your mind—a way to stop Kronos’s time powers—but you know it must be you who takes the risk.";
+	wait for any key;
+	say "Heracles glances at you, determination etched on his face. 'I will free the King and Queen first. Cover me!' he shouts, sprinting toward Zeus and Hera, bound and drained by their nether-chains.";
+	say "You charge towards Kronos, weaving through the chaos as he unleashes bursts of dark energy, each strike threatening to halt your advance. Step by step, you close the distance, deflecting his attacks with Heracles’ club, the weight of the weapon reassuring in your grip. Finally, with a powerful swing, you reach him, channeling your revitalization energy through the club.";
+	wait for any key;
+	say "A blinding light erupts around Kronos, bathing the battlefield in a radiant glow. The Titan’s form begins to shift, transforming him into a younger version of himself, before he possessed the power to freeze time. Disoriented and powerless, Kronos collapses to the ground, struggling to catch his breath.";
+	wait for any key;
+	say "Simultaneously, Heracles shatters the nether-chains, freeing Zeus and Hera from their bonds. The King and Queen of the gods rise, their strength restored. Kronos looks around, seeing his allies fallen and his enemies victorious. The battle is over. Olympus stands triumphant.";
+	wait for any key;
+	say "Kronos gazes at you with a sinister smile, his eyes burning with cold malice. 'Ah, clever child of Olympus. You may have your victory today, but do not bask in it for too long. We are eternal, unbound by mortal chains. We cannot be killed, only delayed. Mark my words: we will rise again, and when we do,[italic type] the heavens will tremble.[roman type]'";
+	wait for any key;
+	say "Zeus, now freed from the chains and fully awakened from his forced slumber, rises with renewed strength. His voice thunders with authority as he declares, 'Perhaps you will try. But know this: Next time, we shall stand united and stronger than ever. Olympus will be ready, and we will meet you with the full might of the gods.'";	
+	end the story finally.
 
 
 Chapter 8 - Mapping & Transportation
@@ -2942,7 +3008,7 @@ Port of Paphos is a room in Paphos. "[bold type]Known adjacent locations:[roman 
 Port of Aulis is a room in Aulis. "Aulis is a small port town located on the northern coast of Euboea. While not a major commercial center, its strategic location made it an important naval base.[paragraph break][bold type]Known adjacent locations:[roman type][line break]→Agora of Aulis (W) [bold type]From here you can sail to:[roman type]→Sounio[line break]→Garden of the Hesperides".
 
 [Stables-City Gates]
-Northern Gates of Athens is a room in Athens. "[bold type]Known adjacent locations:[roman type][line break]→Agora of Athens (S) [paragraph break][bold type]From here you can travel to:[roman type] [line break]→ Thebes (N)[line  break]→Aulis (NE)[line  break]→Delphi (NW)".
+Northern Gates of Athens is a room in Athens. "[bold type]Known adjacent locations:[roman type][line break]→Agora of Athens (S) [paragraph break][bold type]From here you can travel to:[roman type] [line break]→Thebes (N)[line  break]→Aulis (NE)[line  break]→Delphi (NW)".
 
 Southern Gates of Athens is a room in Athens. "[bold type]Known adjacent locations:[roman type][line break]→Agora of Athens (NW) [paragraph break][bold type]From here you can travel to:[roman type]  [line break]→Sounio (S)".
 
@@ -3166,19 +3232,16 @@ The poseidontemple_front is an inroom in the Underwater. The poseidontemple_fron
 Chapter 9 - Speech Tables
 
 [Heracles]
-Table of Heracles Responses
-Topic	Response	
+Table of Pytheia Responses
+Topic	Response [TODO fix]	
 "his celebration"	"[one of]Yes i like it![or]huh its nice[or] oof.[cycling]"	
 "his club"	"Ah its over there"
 "Zeus"	"Hes my dad alr."	
 
 
-Instead of telling Heracles about a topic listed in the Table of Heracles Responses:
+Instead of asking Pytheia about a topic listed in the Table of Pytheia Responses:
 	say "[Response entry][paragraph break]".
 	
-	
-Instead of asking Heracles about a topic listed in the Table of Heracles Responses:
-	try silently telling Heracles about the topic listed in the Table of Heracles Responses.
 	
 
 [big instead of talking loop]
