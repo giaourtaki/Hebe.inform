@@ -1540,6 +1540,8 @@ Every turn:
 		
 test POS with "rotate the top ring anticlockwise/rotate the second ring anticlockwise/rotate the second ring anticlockwise/rotate the third ring anticlockwise/rotate the third ring anticlockwise/rotate the third ring anticlockwise/rotate the bottom ring anticlockwise/rotate the bottom ring anticlockwise/rotate the bottom ring anticlockwise/rotate the bottom ring anticlockwise".
 
+Understand "x temple" or "x temple of poseidon" or "examine temple" or "examine temple of poseidon" as look when the player is in temple of poseidon.
+
 [End Of: poseidons temple]
 
 [Start Of: Divine Cell of Demeter & Poseidon]
@@ -1554,6 +1556,10 @@ The chamber's walls are veiled beneath a thin layer of alge. Some rusted chests 
 
 In the center of the chamber, you make out the forms of two figures. Demeter and Poseidon were bound by shadowy nether-forged chains, seemingly lost in an eternal slumber. A serene, almost ethereal expression graced their faces, their divine bodies seemingly suspended in time.[or]The chamber looks like a hidden treasury. In In the center of the chamber lie Demeter and Poseidon, sleeping peacefully.[stopping]".
 	
+Understand "x treasury" or "examine treasury" as look when the player is in divine cell of demeter & poseidon.
+
+A nether-forged chain is backdrop in Divine Cell of Demeter & Poseidon. Understand "chain" or "chains" or "nether-forged chains" or "runes" as nether-forged chain. The description is "The nether-forged chains, crafted by Kronos, are dark, twisted links of metal that seem to absorb light, pulsating faintly with a sinister, otherworldly glow. Each link is etched with ancient, cursed time runes that shimmer like embers, designed to drain the divine essence of gods, bind their powers and keep their bodies suspended in time.";
+
 After talking to Demeter:
 	if Demeter is asleep:
 		say "Demeter seems to be sleeping deeply. She is unresponsive.";
@@ -1584,11 +1590,12 @@ After examining Demeter:
 
 When Divine Cell of Demeter & Poseidon Scene ends:
 	now the description of Divine Cell of Demeter & Poseidon is "";
-	say "The gods stir from their eternal rest, their divine bodies awakening. 'Thank you for waking us, niece.' [line break][line break]Now the gods leave for olympus hall.";
+	say "The gods stir from their eternal rest, their divine bodies awakening. [line break][line break]Demeter smiles faintly, her voice gentle but weary. 'Thank you for waking us, dear niece.' [line break] [line break]Poseidon nods in agreement, adding with a firm pat on your back, 'We need to regain our strength first. See you back on Olympus, Hebe!'";
 	now Demeter is in Mount Olympus Hall;
 	now Poseidon is in Mount Olympus Hall;
 	now poseidon is described;
 	now demeter is described;
+	now GodsSaved2 is true;
 	increase score by 15;
 		
 
@@ -1598,7 +1605,7 @@ Chapter 3 - Artemis & Apollo
 
 [Region: Theba]
 
-[Start Of: Temple of the Aulidean Artemis] [TODO: fix the pockets situation/description]
+[Start Of: Temple of the Aulidean Artemis] 
 
 
 [rooms]
@@ -1610,9 +1617,10 @@ Entering the naos, the most divine part of the temple, you find yourself in the 
 
 Directly in front of her statue is the altar of Artemis, a place where mortals would lay their offerings not long ago, hoping to earn her favor.".
 
+Understand "x temple" or "examine temple" as look when the player is in Temple of the Aulidean Artemis.
 
 [doors]
-The statue of artemis is down of the Temple of the Aulidean Artemis and up of the Divine Cell of Artemis & Apollo. The statue of artemis is a locked closed door.   It is scenery.
+The statue of artemis is down of the Temple of the Aulidean Artemis and up of the Divine Cell of Artemis & Apollo. The statue of artemis is a locked closed door.  It is scenery.
 
 Understand "statue" or "golden statue of artemis" or "magneficent golden statue of artemis" as the statue of artemis when the player is in the Temple of the Aulidean Artemis.
 
@@ -1989,8 +1997,10 @@ Divine Cell of Artemis & Apollo Scene is a scene. Divine Cell of Artemis & Apoll
 When Divine Cell of Artemis & Apollo Scene begins:
 	now the description of Divine Cell of Artemis & Apollo is "[one of]As you descend the stairs, the faint glow of a single candle illuminates a small, hidden shrine. The shrine is dedicated to the Erinyes, the avenging deities of Greek mythology, known for their relentless pursuit of justice. Mortals often pray to them in secret, to avoid appearing negative to the community. Honestly, Erinyes and Artemis aren't very different at times...
 
-By the altar, you make out the forms of two figures. Artemis and Apollo were bound by shadowy nether-forged chains, seemingly lost in an eternal slumber. A serene, almost ethereal expression graced their faces, their divine bodies seemingly suspended in time.[or]The chamber looks like a shrine dedicated to the Erinyes, although now abandoned. By the altar, you see Artemis and Apollo, in a deep sleep.[stopping]".
-	
+By the altar, you make out the forms of two figures. Artemis and Apollo were bound by shadowy nether-forged chains, seemingly lost in an eternal slumber. A serene, almost ethereal expression graced their faces, their divine bodies seemingly suspended in time.[or]The chamber looks like a shrine dedicated to the Erinyes, although now abandoned. By the altar, you see Artemis and Apollo, in deep sleep.[stopping]".
+
+A erinyes shrine is scenery in Divine Cell of Artemis & Apollo. The description is "The shrine is dedicated to the Erinyes, the avenging deities of Greek mythology, known for their relentless pursuit of justice.". Understand "shrine" or "altar" as erinyes shrine when the player is in Divine Cell of Artemis & Apollo.
+
 After talking to Artemis:
 	if Artemis is asleep:
 		say "Artemis seems to be sleeping deeply. She can't speak.";
@@ -2021,6 +2031,7 @@ When Divine Cell of Artemis & Apollo Scene ends:
 	now Apollo is in Mount Olympus Hall;
 	now Artemis is described;
 	now Apollo is described;
+	now GodsSaved3 is true;
 	increase score by 15;	
 
 
