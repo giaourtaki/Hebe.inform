@@ -44,7 +44,7 @@ Underworld is a region in Ephyra.
 [Cyprus]
 Cyprus is a region.
 Paphos is a region in Cyprus.
-Palace of Paphos is a region in Paphos.
+
 
 Chapter 0.1 - Player & Game Initialize
 
@@ -629,11 +629,11 @@ A throne is scenery in Mount Olympus Hall. The description is "Crafted from soli
 
 A handwoven carpet is scenery in Mount Olympus Hall. The description is "The floor of the Mount Olympus Hall is decorated with masterfully crafted handwoven carpets, each a testament to the artistry and skill of the divine weavers who created them. These carpets, more than mere decoration, are woven with threads of gold, silver, and the finest silks, their intricate patterns telling stories as old as time itself.". Understand "carpet" or "carpets"  as handwoven carpet when the player is in Mount Olympus Hall.
 
-A chandelier is scenery in Mount Olympus Hall. The description is "Each chandelier is composed of multiple tiers, descending in concentric circles that grow larger as they reach down toward the hall below. The gold of the chandeliers is polished to a mirror-like finish, reflecting and amplifying the light in all directions. The arms of the chandeliers curve gracefully, resembling the branches of a sacred tree, each one ending in a delicate cluster of crystal orbs that resemble radiant stars.". Understand "chandeliers" or "golden chandelier" or "golden chandeliers" as chandelier.
+A chandelier is scenery in Mount Olympus Hall. The description is "Each chandelier is composed of multiple tiers, descending in concentric circles that grow larger as they reach down toward the hall below. The gold of the chandeliers is polished to a mirror-like finish, reflecting and amplifying the light in all directions. The arms of the chandeliers curve gracefully, resembling the branches of a sacred tree, each one ending in a delicate cluster of crystal orbs that resemble radiant stars.". Understand "chandeliers" or "golden chandelier" or "golden chandeliers" as chandelier when the player is in Mount Olympus Hall.
 
-A delicacy is scenery in Mount Olympus Hall. The description is "Golden platters overflowed with brightly coloured, ripe fruits: pomegranates bursting with ruby-red seeds, figs as dark as night, and grapes that shimmered with a dewy freshness as if they had just been plucked from the vine. The fragrance of these fruits, sweet and intoxicating, filled the air, mingling with the rich scent of honeyed pastries and the sharp, earthy aroma of freshly baked bread.". Understand "delicacies" as delicacy.
+A delicacy is scenery in Mount Olympus Hall. The description is "Golden platters overflowed with brightly coloured, ripe fruits: pomegranates bursting with ruby-red seeds, figs as dark as night, and grapes that shimmered with a dewy freshness as if they had just been plucked from the vine. The fragrance of these fruits, sweet and intoxicating, filled the air, mingling with the rich scent of honeyed pastries and the sharp, earthy aroma of freshly baked bread.". Understand "delicacies" as delicacy when the player is in Mount Olympus Hall.
 
-A performance is scenery in Mount Olympus Hall. The description is "The troupe is now performing the Stymphalian Birds labour, the birds represented by a group of aerial performers who soared above the hall, their wings, crafted from layers of silken feathers, catching the light as they dipped and dived, their movements synchronized in a display of aerial acrobatics that have the audience cheering.". Understand "troupe" or "troup of performers" or "play" as performance.
+A performance is scenery in Mount Olympus Hall. The description is "The troupe is now performing the Stymphalian Birds labour, the birds represented by a group of aerial performers who soared above the hall, their wings, crafted from layers of silken feathers, catching the light as they dipped and dived, their movements synchronized in a display of aerial acrobatics that have the audience cheering.". Understand "troupe" or "troup of performers" or "play" as performance when the player is in Mount Olympus Hall.
 
 A nectar is scenery in Mount Olympus Hall. The description is "A divine drink, sweet and intoxicating, capable of granting immortality and eternal youth. A favourite of the gods.";
 
@@ -775,23 +775,23 @@ The description of South of Delphi is "From here you can see the the Oracle of D
 ".
 
 [scenery]
-A cliff is scenery in south of delphi. Understand "cliffs" or "towering cliffs" as cliff.
+A cliffs is scenery in south of delphi. 
 
-A grove is scenery in south of delphi. Understand "groves" or "olive groves" as grove.
+A groves is scenery in south of delphi. 
 
-A main temple is scenery in south of delphi. Understand "sacred sanctuary" as main temple.
+A main temple is scenery in south of delphi. Understand "sacred sanctuary" as main temple when the player is in south of delphi.
 
-A Sacred Way is scenery in south of delphi. Understand "winding path" or "path" as Sacred way.
+A Sacred Way is scenery in south of delphi. Understand "path" as Sacred way when the player is in south of delphi.
 
-A treasure is scenery in south of delphi. Understand "treasures" as treasure.
+A treasures is scenery in south of delphi. 
 
-A monument is scenery in south of delphi. Understand "monuments" as monument.
+A monuments is scenery in south of delphi. 
 
 A delphi statue is scenery in south of delphi. Understand "statues" or "statue" as delphi statue when the player is in South of Delphi.
 
 Instead of examining something:
 	if the player is in south of delphi:
-		if the noun is cliff or the noun is grove or the noun is the main temple or the noun is sacred way or the noun is treasure or the noun is monument or the noun is delphi statue:
+		if the noun is cliffs or the noun is groves or the noun is the main temple or the noun is sacred way or the noun is treasures or the noun is monuments or the noun is delphi statue:
 			try looking;
 
 [End Of: South of Delphi]
@@ -836,8 +836,7 @@ The stone passageway, worn smooth by countless travellers, guides you deeper int
 As you approach the altar, the high priestess approaches you, her robes flowing like a shadowy river as she tends to the sacred rites. She acknowledges your presence with a serene nod.".
 
 [items-scenery]
-The necromanteion altar is inside the Necromanteion. It is a supporter. Understand "altar" as necromanteion altar when the player is in necromanteion. It is undescribed. The description is "
-The black marble altar is smooth, with engraved serpents and symbols, its surface polished yet slightly worn from countless offerings. Here, people come to make sacrifices, seeking an obol to ensure their dead be granted safe passage across the Acheron River by Charon.". 
+The necromanteion altar is inside the Necromanteion. It is a supporter. Understand "altar" as necromanteion altar when the player is in necromanteion. It is undescribed. The description is "The black marble altar is smooth, with engraved serpents and symbols, its surface polished yet slightly worn from countless offerings. Here, people come to make sacrifices, seeking an obol to ensure their dead be granted safe passage across the Acheron River by Charon.". 
 
 A stone passageway is scenery in necromanteion. Understand "passageway" as stone passageway when the player is in necromanteion.
 
@@ -845,7 +844,7 @@ A sacret rite is scenery in necromanteion.
 
 A central chamber is scenery in necromanteion. Understand "chamber" as central chamber when the player is in necromanteion.
 
-A few offering is scenery in necromanteion. Understand "few offerings" or "offerings" or "offering" as few offering when the player is in necromanteion.
+A few offering is scenery in necromanteion. Understand "few offerings" or "offerings" as few offering when the player is in necromanteion.
 
 Instead of examining something:
 	if the player is in necromanteion:
@@ -881,13 +880,13 @@ Fields of wildflowers spread out in all directions, their petals swaying lightly
 
 [scenery]
 
-An acheron river is backdrop in north of ephyra. The description is "The Acheron River, known as the "River of Woe," is a dark, mythical waterway in the Underworld, shrouded in mist.";
+An acheron river is backdrop in north of ephyra. The description is "The Acheron River, known as the 'River of Woe,' is a dark, mythical waterway in the Underworld, shrouded in mist.".
 
 A wildflower field is scenery in north of ephyra. The description is "A vibrant wildflower field bursts with color, filled with daisies, poppies, and lavender, swaying gently under the warm sunlight.". Understand "fields" or "fields of wildflowers" or "poppies" or "daisies" or "lavender"as wildflower field.
 
-A necromanteion is scenery in north of ephyra. The description is "The Necromanteion is a dark, mysterious temple of Hades and Persephone, filled with eerie tunnels and ritual chambers.". Understand "temple" or "perched temple" as necromanteion when the player is in north of ephyra.
+A necromanteion temple is scenery in north of ephyra. The description is "The Necromanteion is a dark, mysterious temple of Hades and Persephone, filled with eerie tunnels and ritual chambers.". Understand "temple" or "perched temple" or "necromanteion" as necromanteion temple when the player is in north of ephyra.
 
-Understand "x north of ephyra" or "examine north of ephyra" or "x ephyra" or "examine ephyra"as look when the player is in north of ephyra.
+Understand "x north of ephyra" or "examine north of ephyra" or "x ephyra" or "examine ephyra" as looking when the player is in north of ephyra.
 
 
 [End Of: North of Ephyra]
@@ -905,11 +904,11 @@ There, you also notice the Heroon of Kadmos, a modest shrine dedicated to the ci
 
 [bold type]Known adjacent locations:[roman type][line break]→Agora of Thebes (D)[line break]→Heroon of Kadmos (ENTER)" 
 
-Palace of Kadmea is scenery in kadmea. The description is "The Palace of Kadmea is a grand fortress with towering walls, ornate frescoes, and majestic, columned courtyards."; Understand "fortress" or "walls" or "frescoes" or "courtyards" as Palace of Kadmea when the player is in kadmea.
+Palace of Kadmea is scenery in kadmea. The description is "The Palace of Kadmea is a grand fortress with towering walls, ornate frescoes, and majestic, columned courtyards.". Understand "fortress" or "walls" or "frescoes" or "courtyards" as Palace of Kadmea when the player is in kadmea.
 
-The heroon is scenery in kadmea. The description is "The heroon in Kadmea, dedicated to Kadmos, features a modest red stone structure with engraved pillars, a bronze statue, and offerings of laurel wreaths."; Understand "stone structure" or "engraved pillars" or "structure" or "pillars" or "offerings" or "shrine"or "laurel wreaths" as the heroon when the player is in kadmea.
+The heroon is scenery in kadmea. The description is "The heroon in Kadmea, dedicated to Kadmos, features a modest red stone structure with engraved pillars, a bronze statue, and offerings of laurel wreaths.".Understand "stone structure" or "engraved pillars" or "structure" or "pillars" or "offerings" or "shrine"or "laurel wreaths" as the heroon when the player is in kadmea.
 
-a bronze statue is scenery in kadmea. the description is "The bronze statue of Kadmos stands tall and proud, depicting the hero in intricate armor, holding a spear and serpent, symbolizing his victory over the dragon of Thebes."; Understand "kadmos" or "hero"  or "spear"  or "serpent"  or "dragon"  or "armor" as bronze statue when the player is in kadmea.
+a bronze statue is scenery in kadmea. the description is "The bronze statue of Kadmos stands tall and proud, depicting the hero in intricate armor, holding a spear and serpent, symbolizing his victory over the dragon of Thebes.". Understand "kadmos" or "hero"  or "spear"  or "serpent"  or "dragon"  or "armor" as bronze statue when the player is in kadmea.
 
 Instead of entering Palace of Kadmea:
 	say "The palace is guarded heavily. You can't enter right now.";
@@ -1187,12 +1186,12 @@ test dragongate with "take weights/put owl weight on first pan/put snake weight 
 
 A forgotten offering is scenery in Divine Cell of Athena & Ares. The description is "On the shelves there are some worn amphorae, faded incense burners, and faded relics of past rituals.". Understand "offerings" or "shelf" or "shelves" or "offering" as forgotten offering.
 
-A flickering torch is scenery in Divine Cell of Athena & Ares. Understand "flickering torches" as flickering torch.
-Instead of examining the flickering torch:
+A flickering torches is scenery in Divine Cell of Athena & Ares. 
+Instead of examining the flickering torches:
 	say "You see nothing special about the torches.";
 	stop the action.
 
-A divine room wall is scenery in Divine Cell of Athena & Ares. Understand "wall" or "walls" as divine room wall when the player is in  Divine Cell of Athena & Ares. 
+A divine room wall is scenery in Divine Cell of Athena & Ares. 
 Instead of examining the divine room wall:
 	say "You see nothing special about the walls.";
 	stop the action.
@@ -1266,8 +1265,8 @@ Underwater is a room in sounio. "You find yourseld enveloped in a serene, otherw
 
 A frieze is scenery in underwater. The description is "The frieze showcases a series of sculptures illustrating the Gigantomachy, the battle between the gods of Olympus and the giants.".
 
-A grand column is scenery in underwater. Understand "column" or "columns" as grand column when the player is in underwater.
-instead of examining the grand column:
+A grand columns is scenery in underwater. 
+instead of examining the grand columns:
 	say "You see nothing special about the columns.";
 	stop the action.
 	
@@ -1278,7 +1277,7 @@ instead of examining the ocean bottom:
 
 A seaweed is scenery in underwater.
 An alge is scenery in underwater.
-A sacred site is scenery in underwater. Understand "marble" as sacred site. The description of sacred site is "The Temple of Poseidon.".
+A sacred site is scenery in underwater. The description of sacred site is "The Temple of Poseidon.".
 
 
 
@@ -1289,10 +1288,10 @@ Sounio Beach Scene is a scene. The Sounio Beach Scene begins when the player is 
 When Sounio Beach Scene begins:
 	now the description of sounio beach is "As you journey south toward Cape Sounion, where the Temple of Poseidon stands, you find that the cape has become entirely submerged. What remains is a narrow beach, with a vast expanse of land now lying beneath the sea. 
 
-On the beach, you notice a nymph weeping and wailing, surrounded by others who are attempting to console her. You recognize the grieving nereid as Amphitrite, queen of the sea and wife of Poseidon. The nereids comforting her must be her closest attendants: Aktaia, Erato, and Ploto.[paragrah break][bold type]Known adjacent locations:[roman type][line break]→Agora of Sounio (W)";
+On the beach, you notice a nymph weeping and wailing, surrounded by others who are attempting to console her. You recognize the grieving nereid as Amphitrite, queen of the sea and wife of Poseidon. The nereids comforting her must be her closest attendants: Aktaia, Erato, and Ploto.[paragraph break][bold type]Known adjacent locations:[roman type][line break]→Agora of Sounio (W)";
 	say "As you journey south toward Cape Sounion, where the Temple of Poseidon stands, you find that the cape has become entirely submerged. What remains is a narrow beach, with a vast expanse of land now lying beneath the sea.
 
-On the beach, you notice a nymph weeping and wailing, surrounded by others who are attempting to console her. You recognize the grieving nereid as Amphitrite, queen of the sea and wife of Poseidon. The nereids comforting her must be her closest attendants: Aktaia, Erato, and Ploto.[paragrah break][bold type]Known adjacent locations:[roman type][line break]→Agora of Sounio (W)".
+On the beach, you notice a nymph weeping and wailing, surrounded by others who are attempting to console her. You recognize the grieving nereid as Amphitrite, queen of the sea and wife of Poseidon. The nereids comforting her must be her closest attendants: Aktaia, Erato, and Ploto.[paragraph break][bold type]Known adjacent locations:[roman type][line break]→Agora of Sounio (W)".
 
 When Sounio Beach Scene ends:
 	now the description of sounio beach is "As you journey south toward Cape Sounion, where the Temple of Poseidon stands, you find that the cape has become entirely submerged. What remains is a narrow beach, with a vast expanse of land now lying beneath the sea. On your west is the town of Sounio.
@@ -1313,7 +1312,7 @@ Instead of talking to someone during Sounio Beach Scene:
 		now Amphitrite is happy;
 		follow the scene change machinery rule;
 		
-Understand "x cape sounion" or "x cape sounio" or "x cape" or "x sounio"or "x narrow beach" or "x sounio beach" or "examine cape sounion" or "examine cape sounio" or "examine cape" or "examine sounio"or "examine narrow beach" or "examine sounio beach" as look when the player is in sounio beach.
+Understand "x cape sounion" or "x cape sounio" or "x cape" or "x sounio"or "x narrow beach" or "x sounio beach" or "examine cape sounion" or "examine cape sounio" or "examine cape" or "examine sounio"or "examine narrow beach" or "examine sounio beach" as looking when the player is in sounio beach.
 
 Instead of talking to Amphitrite:
 	if Sounio Beach Scene has ended:
@@ -1453,12 +1452,9 @@ Instead of examining a ring:
 
 [examine all rings]
 Checking rings is an action applying to nothing. 
-Understand "check --/the rings" or "look --/the rings" or "examine --/the rings" as checking rings.
+A thing called all rings is scenery in Temple of Poseidon. Understand "rings" or "all the rings" as all rings. 
+Understand "check all rings" or "x all rings" or "examine all rings" as checking rings.
 
-A thing called all rings is scenery in Temple of Poseidon. Understand "rings" or "all the rings" or "all rings" as all rings. 
-	
-
-Understand "check rings" or "look rings" or "examine rings" as checking rings.
 
 Instead of checking rings:
 	say "[first time]You notice the rings have five different sides. Four of those sides have engraved symbols, the final is empty. The symbols of these sides are: a sprouting barley, a full-grown wheat stalk, a basket full of grapes and an empty vine.[line break][line break][only] 
@@ -1540,7 +1536,7 @@ Every turn:
 		
 test POS with "rotate the top ring anticlockwise/rotate the second ring anticlockwise/rotate the second ring anticlockwise/rotate the third ring anticlockwise/rotate the third ring anticlockwise/rotate the third ring anticlockwise/rotate the bottom ring anticlockwise/rotate the bottom ring anticlockwise/rotate the bottom ring anticlockwise/rotate the bottom ring anticlockwise".
 
-Understand "x temple" or "x temple of poseidon" or "examine temple" or "examine temple of poseidon" as look when the player is in temple of poseidon.
+Understand "x temple" or "x temple of poseidon" or "examine temple" or "examine temple of poseidon" as looking when the player is in temple of poseidon.
 
 [End Of: poseidons temple]
 
@@ -1556,9 +1552,11 @@ The chamber's walls are veiled beneath a thin layer of alge. Some rusted chests 
 
 In the center of the chamber, you make out the forms of two figures. Demeter and Poseidon were bound by shadowy nether-forged chains, seemingly lost in an eternal slumber. A serene, almost ethereal expression graced their faces, their divine bodies seemingly suspended in time.[or]The chamber looks like a hidden treasury. In In the center of the chamber lie Demeter and Poseidon, sleeping peacefully.[stopping]".
 	
-Understand "x treasury" or "examine treasury" as look when the player is in divine cell of demeter & poseidon.
+Understand "x treasury" or "examine treasury" as looking when the player is in divine cell of demeter & poseidon.
 
-A nether-forged chain is backdrop in Divine Cell of Demeter & Poseidon. Understand "chain" or "chains" or "nether-forged chains" or "runes" as nether-forged chain. The description is "The nether-forged chains, crafted by Kronos, are dark, twisted links of metal that seem to absorb light, pulsating faintly with a sinister, otherworldly glow. Each link is etched with ancient, cursed time runes that shimmer like embers, designed to drain the divine essence of gods, bind their powers and keep their bodies suspended in time.";
+A nether-forged chain is backdrop in Divine Cell of Demeter & Poseidon and in Divine Cell of Athena & Ares and in Divine Cell of Artemis & Apollo and in Divine Cell of Aphrodite & Hephaestus and in Divine Cell of Hestia & Hermes.
+
+Understand "chain" or "chains" or "nether-forged chains" or "runes" as nether-forged chain. The description is "The nether-forged chains, crafted by Kronos, are dark, twisted links of metal that seem to absorb light, pulsating faintly with a sinister, otherworldly glow. Each link is etched with ancient, cursed time runes that shimmer like embers, designed to drain the divine essence of gods, bind their powers and keep their bodies suspended in time.";
 
 After talking to Demeter:
 	if Demeter is asleep:
@@ -1617,7 +1615,7 @@ Entering the naos, the most divine part of the temple, you find yourself in the 
 
 Directly in front of her statue is the altar of Artemis, a place where mortals would lay their offerings not long ago, hoping to earn her favor.".
 
-Understand "x temple" or "examine temple" as look when the player is in Temple of the Aulidean Artemis.
+Understand "x temple" or "examine temple" as looking when the player is in Temple of the Aulidean Artemis.
 
 [doors]
 The statue of artemis is down of the Temple of the Aulidean Artemis and up of the Divine Cell of Artemis & Apollo. The statue of artemis is a locked closed door.  It is scenery.
@@ -2050,16 +2048,40 @@ Agora of Paphos is a room in Cyprus. "The Agora of Paphos is a bustling marketpl
 The architecture of the agora is a blend of Greek and Phoenician styles, with columns, arches, and intricate stonework. The buildings are painted in bright colors, and the streets are lined with mosaics depicting scenes from myths and everyday life.
 
 [bold type]Known adjacent locations:[roman type][line break]→Palace of Paphos (N)[line break]→Port of Paphos (W)";
+
+A backdrop named agora is in Agora of Paphos.[ and in Agora of Athens and in Agora of Thebes and in Agora of Aulis.]
+
+The vendors is scenery in Agora of Paphos. 
+
+The wares is scenery in Agora of Paphos. 
+
+The air is scenery in Agora of Paphos. 
+
+The architecture is scenery in Agora of Paphos. 
+
+The mosaics is scenery in Agora of Paphos. 
+
+
+	
 [End of: Agora of Paphos]
 
 [Start of: Throne Room]
-Throne Room is a room in Palace of Paphos. The description is " The throne room stands vacant. There you see high stone columns intricately carved with motifs of mythological scenes and natural elements supported the lofty ceiling. The floor was a mosaic masterpiece, depicting elaborate geometric patterns that shimmered under the warm light of bronze braziers.
+Throne Room is a room. The description is "The throne room stands vacant. There you see high stone columns intricately carved with motifs of mythological scenes and natural elements supported the lofty ceiling. The flooring was a mosaic masterpiece, depicting elaborate geometric patterns that shimmered under the warm light of bronze braziers.
 
 At the room’s center, on a raised platform, stood the king’s throne: a magnificent chair of carved wood, overlaid with gold and inlaid with ivory. The throne was richly draped in deep purple and crimson fabrics. Beside it stood a large statue of Aphrodite, the island’s patron goddess, symbolically positioned as the king’s right hand.
 
 [bold type]Known adjacent locations:[roman type][line break]→Outside of Palace of Paphos (S)[if secret garden is visited][line break]→Secret Garden (D)".
 
 
+The columns is backdrop in Throne Room.
+
+The flooring is scenery in throne room.
+
+The king's throne is scenery in throne room.
+
+Instead of examining something:
+	if the noun is columns or the noun is Throne Room or the noun is floor or the noun is king's throne:
+		try looking;
 
 The aphrodite statue is a closed unopenable door in the throne room. It is scenery. The aphrodite statue is down of the throne room and up of the Secret Garden. Understand "secret staircase" or "staircase" as aphrodite statue. The description is "The statue is elegantly carved in marble, depicting her graceful form, soft curves, serene expression, and flowing drapery.".
 
@@ -2085,11 +2107,34 @@ Instead of pushing the aphrodite statue:
 The Outside of the Palace of Paphos is a room in Paphos. "The Palace of Paphos, a grand and imposing structure, stands as a testament to the island's wealth and power. Its exterior is adorned with intricate carvings, columns, and mosaics, reflecting the opulence and sophistication of the Cypriot aristocracy. The palace is surrounded by a lush garden, filled with exotic plants, fragrant flowers, and towering trees. Fountains are cascading through the garden, creating a serene and inviting atmosphere. The palace walls are fortified to protect its occupants from potential threats, while the gates were adorned with ornate sculptures and decorative elements.
 
 [bold type]Known adjacent locations:[roman type][line break]→Throne Room (N)[line break]→Agora of Paphos (S)".
+
+A thing called Palace of Paphos is in Outside of the Palace of Paphos. It is scenery.
+
+The exterior is scenery in Outside of the Palace of Paphos.
+
+the lush garden is scenery in Outside of the Palace of Paphos.
+
+the exotic plants is scenery in Outside of the Palace of Paphos.
+
+the Fountains is scenery in Outside of the Palace of Paphos.
+
+the palace walls is scenery in Outside of the Palace of Paphos.
+
+the gates is scenery in Outside of the Palace of Paphos.
+
+
+instead of examining anything:
+	if the player is in Outside of the Palace of Paphos:
+		try looking.
+
+
+
+
 [End of: Outside of the Palace of Paphos]
 
 
 [Start Of Secret Garden]
-Secret Garden is a room in Palace of Paphos. "After descending the staircase, you find yourself in an enchanted underground garden, where magic seems to pulse from every corner. The air is thick with the intoxicating scent of flowers, each blossom radiating a soft, ethereal glow. Though deep beneath the earth, the space is bathed in a gentle, divine light radiating from the plants themselves, complemented by the soft flicker of the candles lining the paths, their wax bodies somehow untouched by time or flame. Despite the absence of any other life, the garden feels alive, giving the impression it exists in a suspended moment between the past and present. 
+Secret Garden is a room. "After descending the staircase, you find yourself in an enchanted underground garden, where magic seems to pulse from every corner. The air is thick with the intoxicating scent of flowers, each blossom radiating a soft, ethereal glow. Though deep beneath the earth, the space is bathed in a gentle, divine light radiating from the plants themselves, complemented by the soft flicker of the candles lining the paths, their wax bodies somehow untouched by time or flame. Despite the absence of any other life, the garden feels alive, giving the impression it exists in a suspended moment between the past and present. 
 
 As one steps through the entrance, their eyes would be immediately drawn to a statue of an incomprehensibly beautiful man, poised on a marble base. Behind the statue lies a serene natural lake, with delicate pink and white lilies gently laying on its surface. On the other side of the water, a majestic olive tree stands, ancient and hollowed by the passage of centuries, its gnarled bark a testament to its age. Some round flower beds bursting with vibrant red, purple, and orange flowers are encircling the lake and the tree.
 
@@ -2430,6 +2475,20 @@ When Divine Cell of Aphrodite & Hephaestus Scene begins:
 The chamber appears to be a memorial shrine. In its center stands a marble tomb, covered with a multitude of small, red blossoms. Incense spirals lazily upward, filling the air with a floral aroma.
 
 Within two open crystal caskets, you see the figures of Aphrodite and Hephaestus, bound by shadowy nether-forged chains. Their bodies lie motionless, as if frozen in time. A serene, almost ethereal expression graces their faces, their divine forms seemingly suspended in an eternal slumber.[or]The chamber appears to be a memorial shrine. Within two open crystal caskets, you see the figures of Aphrodite and Hephaestus, sleeping peacefully.[stopping]".
+
+A silver columns is scenery in Divine Cell of Aphrodite & Hephaestus.
+
+A memorial shrine is scenery in Divine Cell of Aphrodite & Hephaestus. The description is "The shrine exudes a regal aura, with the inscription: 'A beloved son.'"
+
+A tomb is scenery in Divine Cell of Aphrodite & Hephaestus. The description is "The tomb exudes a regal aura, with the inscription: 'A beloved son.'"
+
+A red blossoms is scenery in Divine Cell of Aphrodite & Hephaestus. The description is "You recognise those as Adonis flowers."
+
+A crystal caskets is scenery in Divine Cell of Aphrodite & Hephaestus. The description is "Two open crystal caskets lie side by side, shimmering, with intricate carvings and faint light illuminating their  interiors."
+
+A carvings  is scenery in Divine Cell of Aphrodite & Hephaestus. The description is "The carvings appear to be time-suspending symbols, their intricate lines glowing faintly with a mysterious, chthonian energy."
+
+
 	
 After talking to Aphrodite:
 	if Aphrodite is asleep:
@@ -2462,6 +2521,7 @@ When Divine Cell of Aphrodite & Hephaestus Scene ends:
 		now Hephaestus is in Mount Olympus Hall;
 		now Aphrodite is described;
 		now Hephaestus is described;
+		now GodsSaved4 is true;
 		increase score by 15;
 
 
@@ -2478,7 +2538,7 @@ Prytaneion is a room. The description is "[one of]You step into the open hall of
 
 Eight torches on either side of the hearth are placed on the ground, forming a semicircle around a small dining area. The torches are all put out, from the first—the far left one—to the sixteenth—the far right one.
 
-The dining area is situated directly in front of the hearth. A large table made of pine, surrounded by several chairs, stands atop an elegant carpet, likely reserved for official dinners and gatherings. [if there is something on the table]Scattered across the table are [a list of things on the pine table], remnants of a recent meeting, perhaps.[otherwise]The table is empty.[end  if]
+The dining area is situated directly in front of the hearth. A large table made of pine, surrounded by several chairs, [if chair is not pushed and table is not pushed]stands atop an elegant carpet,[otherwise]is near an elegant carpet[end if] likely reserved for official dinners and gatherings. [if there is something on the table]Scattered across the table are [a list of things on the pine table], remnants of a recent meeting, perhaps.[otherwise]The table is empty.[end  if]
 
 The rest of the building remains inaccessible, since the doors lead to the private quarters of the prytaneis and thus are firmly locked, leaving the main hall as the only accessible space.[or]In the open Prytaneion hall you see the sacred hearth of Hestia, a pine dining table with matching pine chairs and [a list of things on top of pine table] on top of it. [if chair is not pushed and table is not pushed]Bellow the table and chairs is a red carpet.[otherwise]There is also a red carpet in the hall.[end if][line break][line break]There are also 8 torches on either side of the hearth, forming a semicircle around the dining area.[if the hidden trapdoor is interactable].[line break]You also see a trapdoor on the ground.[end if][stopping]".
 
@@ -2617,7 +2677,7 @@ Instead of inserting something into the hearth:
 		stop the action;
 	otherwise if the noun is the wax tablet:
 		say "You bring the wax me tablet close to the hearth. The warmth of the hearth made the wax melt. It revealed some engraved writing under it.";
-		now the description of the wax tablet is "The writing reads: Light the tenth, eleventh, thirteenth, fourteenth, fifteenth and sixteenth torches."; [TODO change]
+		now the description of the wax tablet is "The writing reads: Light the tenth, eleventh, thirteenth, fourteenth, fifteenth and sixteenth torches."; 
 		stop the action;
 	otherwise:
 		say "Are you trying to burn the [noun]?";
@@ -2686,12 +2746,12 @@ Understand "go out" as exiting.
 
 
 Checking torches is an action applying to nothing. 
-Understand "check --/the torches" or "look --/the torches" or "examine --/the torches" as checking torches.
 
-A thing called all torches is scenery in Prytaneion. Understand "torches" or "all the torches" or "all torches" as all torches.
-	
+A thing called all torches is scenery in Prytaneion. Understand "torches" or "all the torches" as all torches.
 
-Understand "check torches" or "look torches" or "examine torches" as checking torches.
+
+Understand "check all torches" or "examine all torches" or "look all torches" as checking torches when the player is in prytaneion.
+
 
 Instead of checking torches:
 	say " The first torch is[if first torch is lit] lit.[otherwise] unlit.[end if]
@@ -2812,6 +2872,12 @@ When Divine Cell of Hestia & Hermes Scene begins:
 	now the description of Divine Cell of Hestia & Hermes is "You descent into a small chamber, dimly lit by a shaft of torches from above, revealed itself to be a library.
 
 You see the figures of Hestia and Hermes, bound by shadowy nether-forged chains. Their bodies lie motionless, as if frozen in time. A serene, almost ethereal expression graces their faces, their divine forms seemingly suspended in an eternal slumber.".
+
+A small chamber is scenery in Divine Cell of Hestia & Hermes.
+
+Instead of examining the small chamber:
+	try looking;
+
 	
 After talking to Hestia:
 	if Hestia is asleep:
@@ -2844,6 +2910,7 @@ When Divine Cell of Hestia & Hermes Scene ends:
 	now Hermes is in Mount Olympus Hall;
 	now Hestia is described;
 	now Hermes is described;
+	now GodsSaved5 is true;
 	increase score by 15;
 		
 	
@@ -2861,7 +2928,7 @@ Chapter 6 - Hercules
 
 
 [Start of East of Ephyra]
-[The Acheron River is a backdrop. The Acheron River is in the Underworld. [The Acheron River is in Asphodel Meadows.] "The Acheron river looks safe but is dangerous."]
+[The Acheron River is a backdrop. The Acheron River is in the Underworld. [The Acheron River is in Asphodel Meadows.] ]
 
 The Charon's boat is a closed unopenable door.
 
