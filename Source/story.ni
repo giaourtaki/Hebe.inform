@@ -68,7 +68,7 @@ When play begins:
 	the SunPocketCloses at 12:10 pm;
 	the MoonPocketOpens at 12:00 am;
 	the MoonPocketCloses at 12:10 am;
-	say "[bold type]Instructions: [roman type][paragraph break]Welcome to Hebe, my Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. If at any point you need help, type 'help' or 'h' into the console. Have fun and thank you for playing!";
+	say "[bold type]Instructions: [roman type][paragraph break]Welcome to Hebe, my Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. If at any point you need help, type 'help' or 'h' into the console. Have fun and thank you for playing![paragraph break]Big thanks to Nadia Navazi and Giannis Vasilakopoulos for taking part in beta-testing and special thanks to Emanuele Babolo for trying to break the game in all ways imaginable and not.";
 
 
 Chapter 0.20 - Kinds & Values
