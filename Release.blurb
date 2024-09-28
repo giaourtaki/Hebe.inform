@@ -13,8 +13,10 @@ release to "C:\Users\User\Desktop\Inform\Thesis\Hebe.materials\Release"
 storyfile leafname "Hebe.gblorb"
 storyfile "C:\Users\User\Desktop\Inform\Thesis\Hebe.inform\Build\output.ulx" include
 ifiction "C:\Users\User\Desktop\Inform\Thesis\Hebe.inform\Metadata.iFiction" include
-cover "C:\Users\User\Desktop\Inform\Thesis\Hebe.materials\Cover.png"
-picture 1 "C:\Users\User\Desktop\Inform\Thesis\Hebe.materials\Cover.png"
+cover "C:\Users\User\Desktop\Inform\Internal\Miscellany\DefaultCover.jpg"
+picture 1 "C:\Users\User\Desktop\Inform\Internal\Miscellany\DefaultCover.jpg"
+release file "C:\Users\User\Desktop\Inform\Internal\Miscellany\DefaultCover.jpg"
+release file "C:\Users\User\Desktop\Inform\Internal\Miscellany\Small Cover.jpg"
 
 ! Placeholder variables
 
@@ -48,7 +50,7 @@ template path "C:\Users\User\Desktop\Inform\Internal\Templates"
 css
 website "Standard"
 status instruction ||&nbsp;<a href="source:story.ni#line5"><img border=0 src=inform:/doc_images/Reveal.png></a>||
-status instruction ||&nbsp;<a href="source:story.ni#line7"><img border=0 src=inform:/doc_images/Reveal.png></a>||
+status alternative ||Using 'Release along with cover art', to provide something more distinctive than the default artwork above&nbsp;<a href=inform:/doc401.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with a file of "Such-and-Such" called "whatever.pdf"', perhaps to add a manual, or a welcoming note&nbsp;<a href=inform:/doc399.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with the source text'&nbsp;<a href=inform:/doc410.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with a solution'&nbsp;<a href=inform:/doc409.html><img border=0 src=inform:/doc_images/help.png></a>||
