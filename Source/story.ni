@@ -929,13 +929,13 @@ Instead of talking to the High Priestess of Necromanteion:
 The description of North of Ephyra is "As you approach the Necromanteion from afar, the landscape unfolds before you in a blend of serene beauty and subtle foreboding. The temple is perched on a gentle rise, its sombre silhouette stark against the vibrant greens and soft blues of the surrounding countryside. The Acheron River courses through the landscape, its dark waters a stark contrast to the blooming fields.
 
 Fields of wildflowers spread out in all directions, their petals swaying lightly in the breeze, painting the earth with shades of purple, red, and white. The air is sweet with the scent of blooming flowers, yet as Hebe draws closer, the distant cries of birds seem to fade, replaced by a profound, almost eerie silence. The temple itself, though small and unassuming, exudes an aura of power, its weathered stones and dark entrance beckoning those who seek to cross into the realm of the dead.
-
+s
 [bold type]Known adjacent locations:[roman type][line break]→Necromanteion (IN)[line break]→Gates of Ephyra (S)[line break]→East of Ephyra (SE)". 
 [items]
 
 [scenery]
 
-An acheron river is backdrop in north of ephyra. The description is "The Acheron River, known as the 'River of Woe,' is a dark, mythical waterway in the Underworld, shrouded in mist.".
+An acheron river is backdrop in north of ephyra and in East of Ephyra. The description is "The Acheron River, known as the 'River of Woe,' is a dark, mythical waterway in the Underworld, shrouded in mist.".
 
 A wildflower field is scenery container in north of ephyra. The description is "The vibrant wildflower field bursts with color, filled with asphodels, poppies, and lavender, swaying gently under the warm sunlight.". Understand "fields" or "fields of wildflowers" or "poppies" or "daisies" or "lavender"as wildflower field.
 
@@ -3078,9 +3078,9 @@ Chapter 6 - Hercules
 [Start of East of Ephyra]
 [The Acheron River is a backdrop. The Acheron River is in the Underworld. [The Acheron River is in Asphodel Meadows.] ]
 
-The Charon's boat is a closed unopenable door. It is scenery.
+The Charon's boat is a closed unopenable door. It is scenery. The description is "Charon's boat is a worn, shadowy vessel, gliding silently across the Acheron River, ferrying souls through misty, dark waters.".
 
-Charon is a man. He is in East of Ephyra. Charon is undescribed.
+Charon is a man. He is in East of Ephyra. Charon is undescribed. The description is "Charon is a cloaked figure with glowing yellow eyes, gaunt features, and a massive, oar-like staff. His mouth is covered by a dark cloth.".
 
 Instead of talking to Charon when the player is in east of ephyra:
 	say "Charon is starring at you intensely. '...' [first time][line break][line break](To enter into the Underworld, you will need to offer him an obol as tribute.)[only]";
@@ -3455,7 +3455,7 @@ A thing named agora is in the agora of sounio.It is a backdrop.
 The Port of Paphos is west of the Agora of Paphos. The Agora of Paphos is south of the Outside of the Palace of Paphos. The Outside of the Palace of Paphos is south of the Throne Room.
 
 [Thebes]
-The Agora of Thebes is a room in Thebes. "The Agora of Thebes, is a bustling marketplace and social center. It is a hub of activity, where citizens gather to trade, discuss politics, and engage in religious ceremonies.[line break][line break]Unlike the Agora of Athens, which is dominated by the Doric architectural style, the Agora of Thebes is showcasing a more diverse range of styles. While some buildings feature Doric columns, others incorporate Ionic or Corinthian elements. [bold type][paragraph break]Known adjacent locations:[roman type][line break]→Kadmea (U)[line break]→Gates of Thebes (S)".
+The Agora of Thebes is a room in Thebes. "The Agora of Thebes, is a bustling marketplace and social center. It is a hub of activity, where citizens gather to trade, discuss politics, and engage in religious ceremonies.[line break][line break]Unlike the Agora of Athens, which is dominated by the Doric architectural style, the Agora of Thebes is showcasing a more diverse range of styles. While some buildings feature Doric columns, others incorporate Ionic or Corinthian elements. [bold type][paragraph break]Known adjacent locations:[roman type][line break]→Kadmea (U)[line break]→Gates of Thebes (SW)".
 
 A thing named agora is in the agora of thebes. It is a backdrop.
 
@@ -3473,7 +3473,7 @@ A room called South of Delphi  is in Delphi. The Delphi Gates are north of the S
 [Ephyra]
 The Agora of Ephyra is a room. "[paragraph break][bold type]Known adjacent locations:[roman type][line break]→Gates of Ephyra (E).". [TODO:acheron is here (backdrop)]
 The North of Ephyra is a room in the Underworld. It is north of Gates of Ephyra. [Necromanteion is inside here]
-The East of Ephyra is a room in the Underworld. "[bold type]Known adjacent locations:[roman type][line break]→Gates of Ephyra (W) [line break]→North of Ephyra (NW) [line break]→Underworld (TALK TO CHARON)." [TODO: Acheron River should be here]
+The East of Ephyra is a room in the Underworld. "[if Charon is in East of Ephyra]You see Charon, the Ferryman of the Dead, along with his boat, waiting patiently near the bank of the Acheron River.[paragraph break][bold type]Known adjacent locations:[roman type][line break]→Gates of Ephyra (W) [line break]→North of Ephyra (NW) [line break]→Underworld (TALK TO CHARON)." [TODO: Acheron River should be here]
 The Gates of Ephyra is west of a room called East of Ephyra. A room called North of Ephyra is northwest of a room called east of ephyra.
 
 
