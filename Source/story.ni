@@ -50,13 +50,14 @@ Chapter 0.1 - Player & Game Initialize
 
 The player is a woman called Hebe. The carrying capacity of the player is 10.
 
-Use MAX_PROPS_PER_OBJECT of 32.
+[Use MAX_PROPS_PER_OBJECT of 32.
 Use MAX_TIMERS of 32.
-Use MAX_THREADS of 32.
+Use MAX_THREADS of 32.] [Apparently those dont exist]
 Use MAX_LOCAL_VARIABLES of 32.
 Use MAX_ARRAYS of 32.
 Use MAX_OBJECTS of 2048.
-Use MAX_PROP_TABLE_SIZE of 50000.
+Use MAX_PROP_TABLE_SIZE of 1000000.
+
 
 Use scoring.
 
@@ -69,7 +70,7 @@ When play begins:
 	the SunPocketCloses at 12:10 pm;
 	the MoonPocketOpens at 12:00 am;
 	the MoonPocketCloses at 12:10 am;
-	say "[bold type]Instructions: [roman type][paragraph break]Welcome to Hebe, my first Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. If at any point you need help, type 'help' or 'h' into the console. Have fun and thank you for playing![paragraph break]";
+	say "[bold type]Instructions: [roman type][paragraph break]Welcome to Hebe, my first Interactive Fiction game! This game is set in Ancient Greece and you are playing as the goddess of eternal youth, Hebe. If at any point you need help, type 'help' or 'h' into the console. Have fun and thank you for playing![paragraph break]";
 
 
 Chapter 0.20 - Kinds & Values
@@ -618,7 +619,7 @@ Instead of talking to someone during Olympus Hall Celebration Scene:
 
 Instead of looking for the 1st time during the Olympus Hall Celebration Scene:
 	 If the player is in the Mount Olympus Hall:
-		say "The grand hall of Mount Olympus gleamed like a jewel in the Greek night sky. The lustrous surfaces of white marble and gold reflected the flickering torchlight. Columns of shimmering marble, capped with gilded Corinthian capitals, reached a vaulted ceiling adorned with intricate decorative paintings depicting scenes from the gods[apostrophe] legendary exploits. Among the hall’s lavish embellishments were thrones of solid gold, masterfully crafted handwoven carpets and golden chandeliers, suspended from the ceiling. Today the gods were celebrating the ascension of Heracles to immortality, and also the anniversary of your marriage to him.";
+		say "The Grand Hall of Mount Olympus is reflecting like a jewel in the Greek night sky. The lustrous surfaces of white marble and gold reflected the flickering torchlight. Columns of shimmering marble, capped with gilded Corinthian capitals, reached a vaulted ceiling adorned with intricate decorative paintings depicting scenes from the gods[apostrophe] legendary exploits. Among the hall’s lavish embellishments were thrones of solid gold, masterfully crafted handwoven carpets and golden chandeliers, suspended from the ceiling. Today the gods were celebrating the ascension of Heracles to immortality, and also the anniversary of your marriage to him.";
 		wait for any key;
 		say "[line break]The air was thick with the aroma of ambrosia and the rich scent of a feast laid out for the celebrating gods. Plates piled high with the finest delicacies filled every corner of the vast chamber, while goblets brimming with nectar passed from hand to hand, by the ever-dutiful Ganymedes.
 
