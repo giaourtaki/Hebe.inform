@@ -10,35 +10,35 @@
             <author>Marina Diagourta</author>
             <headline>An Interactive Fiction</headline>
             <genre>Fiction</genre>
-            <firstpublished>2024</firstpublished>
+            <firstpublished>2025</firstpublished>
             <language>en</language>
             <group>Inform</group>
         </bibliographic>
         <cover>
             <format>png</format>
-            <height>200</height>
-            <width>200</width>
+            <height>1024</height>
+            <width>1024</width>
             <description>The cover art.</description>
         </cover>
         <releases>
             <attached>
                 <release>
-                    <releasedate>2024-09-30</releasedate>
+                    <releasedate>2025-08-12</releasedate>
                     <version>1</version>
                     <compiler>Inform 7</compiler>
-                    <compilerversion>Inform 10.1.2 (build )</compilerversion>
+                    <compilerversion>6M62</compilerversion>
                 </release>
             </attached>
         </releases>
         <colophon>
             <generator>Inform 7</generator>
-            <generatorversion>Inform 10.1.2 (build )</generatorversion>
-            <originated>2024-09-30</originated>
+            <generatorversion>6M62</generatorversion>
+            <originated>2025-08-12</originated>
         </colophon>
         <glulx>
-            <serial>240930</serial>
+            <serial>250812</serial>
             <release>1</release>
-            <compiler>Inform Inform 10.1.2 (build )</compiler>
+            <compiler>Inform 7 build 6M62</compiler>
             <coverpicture>1</coverpicture>
         </glulx>
     </story>

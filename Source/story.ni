@@ -56,6 +56,7 @@ Use MAX_THREADS of 32.
 Use MAX_LOCAL_VARIABLES of 32.
 Use MAX_ARRAYS of 32.
 Use MAX_OBJECTS of 2048.
+Use MAX_PROP_TABLE_SIZE of 50000.
 
 Use scoring.
 
@@ -68,7 +69,7 @@ When play begins:
 	the SunPocketCloses at 12:10 pm;
 	the MoonPocketOpens at 12:00 am;
 	the MoonPocketCloses at 12:10 am;
-	say "[bold type]Instructions: [roman type][paragraph break]Welcome to Hebe, my Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. If at any point you need help, type 'help' or 'h' into the console. Have fun and thank you for playing![paragraph break]";
+	say "[bold type]Instructions: [roman type][paragraph break]Welcome to Hebe, my first Interactive Fiction game! This game is set in Ancient Greece and you are the goddess of eternal youth, Hebe. If at any point you need help, type 'help' or 'h' into the console. Have fun and thank you for playing![paragraph break]";
 
 
 Chapter 0.20 - Kinds & Values
@@ -1121,7 +1122,7 @@ Every turn:
 		now the compartment is open.
 		
 
-A scale is a fixed in place undescribed thing. It is in the Heroon of Kadmos. A scale has a scale-state. Scale-state is a kind of value. The scale-states are left-leaning, right-leaning, and centered.
+A scale is a fixed in place undescribed thing. It is in the Heroon of Kadmos. Scale-state is a kind of value. A scale has a scale-state.  The scale-states are left-leaning, right-leaning, and centered.
 
 A left pan is part of the scale. It is a supporter.  It is undescribed.
 A right pan is part of the scale. It is a supporter.It is undescribed.
@@ -2874,7 +2875,7 @@ Understand "go out" as exiting.
 
 Checking torches is an action applying to nothing. 
 
-A thing called all torches is scenery in Prytaneion Hall. Understand "torches" or "all the torches" as all torches.
+A thing called all-torches is scenery in Prytaneion Hall. Understand "torches" or "all the torches" or "all torches" as all-torches.
 The description is "The first torch is[if first torch is lit] lit.[otherwise] unlit.[end if]
 	The second torch is[if second  torch is lit] lit.[otherwise] unlit.[end if]
 	The third torch is[if third torch is lit] lit.[otherwise] unlit.[end if]
@@ -2895,7 +2896,7 @@ The description is "The first torch is[if first torch is lit] lit.[otherwise] un
 
 Understand "check torches" as checking torches when the player is in prytaneion Hall.
 
-Instead of examining all torches:
+Instead of examining all-torches:
 	try checking torches;
 
 
@@ -2920,7 +2921,7 @@ Instead of checking torches:
 	The sixteenth torch is[if sixteenth torch is lit] lit.[otherwise] unlit.[end if]
 ".
 
-Instead of examining all torches:
+Instead of examining all-torches:
 	try checking torches.
 	
 Instead of taking torches:
@@ -3505,7 +3506,7 @@ The necromanteion_front is an inroom in the North of Ephyra. The necromanteion_f
 The Heroon of Kadmos is an outroom. The Heroon of Kadmos is inside from the Kadmea.
 The heroon_front is an inroom in the Kadmea. The heroon_front fronts the Heroon of Kadmos.
 
-The Oracle of Delphi  is an outroom. The Oracle of Delphi  is inside from the south of delphi.
+The Oracle of Delphi  is an outroom. The Oracle of Delphi is inside from the South of Delphi.
 The oracle_front is an inroom in the south of delphi. The oracle_front fronts the Oracle of Delphi.
 
 The Temple of Poseidon  is an outroom. The Temple of Poseidon is inside from Underwater.
