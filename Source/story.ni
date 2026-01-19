@@ -4,7 +4,7 @@ Chapter 0.00 - TODOs | TBDs
 
 release along with a website and an interpreter. [for beta testing]
 
-Release along with cover art.
+[Release along with cover art.]
 
 [Everything TBD should be commented or deleted]
 

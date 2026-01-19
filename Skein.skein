@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-1">
   <generator>Windows Inform 7 6M62</generator>
-  <activeNode nodeId="node-4560"/>
+  <activeNode nodeId="node-4561"/>
   <item nodeId="node-1">
     <command xml:space="preserve">Hebe</command>
     <result xml:space="preserve">Instructions: &#x000A;&#x000A;Welcome to Hebe, my first Interactive Fiction game! This game is set in Ancient Greece and you are playing as the goddess of eternal youth, Hebe. If at any point you need help, type "help" or "h" into the console. Have fun and thank you for playing!&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 260119 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;The Grand Hall of Mount Olympus is shinning like a jewel in the Greek night sky. The flickering flames from the torches are reflected on lustrous surfaces of white marble and gold.  Columns of shimmering marble, capped with gilded Corinthian capitals, reached a vaulted ceiling adorned with intricate decorative paintings depicting scenes from the gods' legendary exploits. Among the hall's lavish embellishments are thrones of solid gold, masterfully crafted handwoven carpets and golden chandeliers, suspended from the ceiling. Today is a day of joy and celebration. The gods are celebrating the ascension of Heracles to immortality, and also the anniversary of your marriage to him.</result>
@@ -7038,9 +7038,9 @@
   </item>
   <item nodeId="node-4545">
     <command xml:space="preserve">[enter]</command>
-    <result xml:space="preserve">The voice was unmistakable, deep and resonant, carrying an ancient power that sent shivers down your spine. It was Kronos. So much time has passed since our triumph in the War of Titans- the Titanomachy. How did he manage to escape Tartaros?</result>
+    <result xml:space="preserve">The voice is unmistakable, deep and resonant, carrying an ancient power that sent shivers down your spine. It was Kronos. So much time has passed since our triumph in the War of Titans- the Titanomachy. How did he manage to escape Tartaros?</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <children>
       <child nodeId="node-4546"/>
     </children>
@@ -7048,6 +7048,15 @@
   <item nodeId="node-4546">
     <command xml:space="preserve">[enter]</command>
     <result xml:space="preserve">The sight of the Titan, towering and menacing, shrouded in shadows, struck fear into the hearts of all present. You start to feel the ichor in your divine veins turn cold, as if time itself was freezing. The gods, normally so mighty and formidable, stand paralyzed in shock. Nothing moves. In a heartbeat, you break free from the daze and come to your senses. Your next actions have never been more certain. It's now or never.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4561"/>
+    </children>
+  </item>
+  <item nodeId="node-4561">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">You grab Heracle's club out of his hands and leap towards Kronos. Then you feel yourself slipping into unconsciousness.</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
