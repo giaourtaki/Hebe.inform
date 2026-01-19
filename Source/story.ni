@@ -619,7 +619,7 @@ Instead of talking to someone during Olympus Hall Celebration Scene:
 
 Instead of looking for the 1st time during the Olympus Hall Celebration Scene:
 	 If the player is in the Mount Olympus Hall:
-		say "The Grand Hall of Mount Olympus is shinning like a jewel in the Greek night sky. The flickering flames from the torches are reflected on lustrous surfaces of white marble and gold.  Columns of shimmering marble, capped with gilded Corinthian capitals, reached a vaulted ceiling adorned with intricate decorative paintings depicting scenes from the gods[apostrophe] legendary exploits. Among the hall’s lavish embellishments are thrones of solid gold, masterfully crafted handwoven carpets and golden chandeliers, suspended from the ceiling. Today is a day of joy and celebration.  The gods are celebrating the ascension of Heracles to immortality, and also the anniversary of your marriage to him.";
+		say "The Grand Hall of Mount Olympus is shinning like a jewel in the Greek night sky. The flickering flames from the torches are reflected on lustrous surfaces of white marble and gold.  Columns of shimmering marble, capped with gilded Corinthian capitals, reached a vaulted ceiling adorned with intricate decorative paintings depicting scenes from the gods[apostrophe] legendary exploits. Among the hall’s lavish embellishments are thrones of solid gold, masterfully crafted handwoven carpets and golden chandeliers, suspended from the ceiling. Today is a day of joy and celebration. The gods are celebrating the ascension of Heracles to immortality, and also the anniversary of your marriage to him.";
 		wait for any key;
 		say "[line break]The air is thick with the aroma of ambrosia and the rich scent of a feast laid out for the celebrating gods. Plates pilled high with the finest delicacies fill every corner of the vast chamber, while goblets brimming with nectar are passed from hand to hand, by the ever-dutiful Ganymedes.
 
@@ -627,7 +627,7 @@ The hall is alive with the sounds of the festivities. Laughter and song echo thr
 		wait for any key;
 		say "[line break]At the heart of the celebration, sitting, are the honoured guests of the occasion, Heracles himself, with you, his wife, on his right side. On Heracles[apostrophe] left sits Zeus, king of the gods, who is glancing upon you both, full of pride. On your right sat Hera, her demeanor calm and gratified, with a rare softness in her gaze. She put aside any conflict during the event, given her affection for you.
 		
-The Twelve Olympians are all in attendance, their mighty forms gracing the hall with an air of regality. They converse among themselves, as they partake in the feast. Nymphs flitted among them, their laughter mingling with the conversations, adding a lightness to the evening’s festivities.
+The Twelve Olympians are all in attendance, their mighty forms gracing the hall with an air of regality. They converse among themselves, as they partake in the feast. Nymphs flit among them, their laughter mingling with the conversations, adding a lightness to the evening’s festivities.
 
 Everywhere you look, there is movement, life, and joy. The gods, unbound by the cares of the mortal world, indulg in the pleasures of the moment, their spirits lifted by the music, the food, and the company. The hall of Olympus had never shined brighter, a fitting tribute to the divine couple.";
 		stop the action;
@@ -664,15 +664,15 @@ A nectar is scenery in Mount Olympus Hall. The description is "A divine drink, s
 [Kronos Scene]
 When Kronos Scene begins:
 	Wait for any key;
-	say "[paragraph break]Suddenly, an eerie silence fell over the festive night. The singing and dancing ceased, as if an unseen hand had stilled them. For a brief moment, you felt the coldness of the mountain air, a stark contrast to the pleasant breeze that had enveloped you moments before. A sense of foreboding fills you as you become aware that all eyes are turned behind you. You lock eyes with Heracles, both of you sharing a look of worry. With a growing sense of dread, you turned to see what had drawn everyone's attention.";
+	say "[paragraph break]Suddenly, an eerie silence falls over the festive night. The singing and dancing cease, as if an unseen hand had stilled them. For a brief moment, you feel the coldness of the mountain air, a stark contrast to the pleasant breeze that had enveloped you moments before. A sense of foreboding fills you as you become aware that all eyes are turned behind you. You lock eyes with Heracles, both of you sharing a look of worry. With a growing sense of dread, you turned to see what had drawn everyone's attention.";
 	wait for any key;
-	say "[line break]'Oh dear, please, do not let my presence taint your insignificant gathering. Carry on as you were.'";
+	say "[line break]'[italic type]Oh dear, please, do not let my presence taint your insignificant gathering. Carry on as you were.[roman type]'[paragraph break]";
 	wait for any key;
-	say "[line break]The voice was unmistakable, deep and resonant, carrying an ancient power that sent shivers down your spine. It was Kronos. So much time has passed since our triumph in the War of Titans— the Titanomachy. How did he manage to escape Tartaros?";
+	say "The voice is unmistakable, deep and resonant, carrying an ancient power that sent shivers down your spine. It was Kronos. So much time has passed since our triumph in the War of Titans— the Titanomachy. How did he manage to escape Tartaros?";
 	wait for any key;
-	say "[line break]The sight of the Titan, towering and menacing, shrouded in shadows, struck fear into the hearts of all present. You start to feel the ichor in your divine veins turn cold, as if time itself was freezing. The gods, normally so mighty and formidable, stand paralyzed in shock. Nothing moves. In a heartbeat, you break free from the daze and come to your senses. Your next actions have never been more certain. It's now or never.";
+	say "[line break]The sight of the Titan, towering and menacing, shrouded in shadows, struck fear into the hearts of all present. You start to feel the ichor in your divine veins turn cold, as if time itself was freezing. The gods, normally so mighty and formidable, stand paralyzed in shock. Nothing moves. In a heartbeat, you break free from the daze and come to your senses. Your next actions have never been more certain. [italic type]It's now or never.[roman type]";
 	wait for any key;
-	say "[line break]You grab Heracle's club out of his hands and leap towards Kronos. Then you feel yourself slipping into unconsciousness."
+	say "[paragraph break]You grab Heracle's club out of his hands and leap towards Kronos. Then you feel yourself slipping into unconsciousness."
 
 When Kronos Scene ends:
 	now the description of Mount Olympus Hall is "The hall of Olympus shows signs of damage from Kronos[apostrophe] attack, with cracks in the marble and shattered columns, but nymphs are already at work, swiftly restoring its splendor.[paragraph break][bold type]Known adjacent locations:[roman type][line break]→Foothills of Mount Olympus (D)";

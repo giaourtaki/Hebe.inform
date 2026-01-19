@@ -20,7 +20,7 @@ picture 1 "C:\Users\marin\Documents\GitHub\Hebe.materials\Cover.png"
 
 placeholder [IFID] = "3BE3DD91-F296-40EF-A4F4-93B2D473849F"
 placeholder [RELEASE] = "1"
-placeholder [YEAR] = "2025"
+placeholder [YEAR] = "2026"
 placeholder [TITLE] = "Hebe"
 placeholder [AUTHOR] = "Marina Diagourta"
 placeholder [BLURB] = "A work of interactive fiction."
