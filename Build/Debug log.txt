@@ -1,5 +1,5 @@
 Debugging log of Inform 7
-Inform called as: C:\Program Files (x86)\Inform 7\Compilers\ni -release -internal C:\Program Files (x86)\Inform 7\Internal -project C:\Users\marin\Documents\GitHub\Hebe.inform -format=ulx
+Inform called as: C:\Program Files (x86)\Inform 7\Compilers\ni -internal C:\Program Files (x86)\Inform 7\Internal -project C:\Users\marin\Documents\GitHub\Hebe.inform -format=ulx
 Found language bundle 'English' (built in)
 Found language bundle 'French' (built in)
 Found language bundle 'German' (built in)
@@ -14,7 +14,7 @@ Reading language definition from <C:\Program Files (x86)\Inform 7\Internal\Langu
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 32571 words long.
+I've now read your source text, which is 32624 words long.
 
 
 -----------------------------------------------------
@@ -72,6 +72,8 @@ Phase VII ... First pass through assertions
      == region
     Regional: CONSTANT_VNT'cyprus'-region()(I71'cyprus')
      == region
+    Regional: CONSTANT_VNT'mount olympus'-region()(I63'mount olympus')
+     == region
     Regional: CONSTANT_VNT'greece'-region()(I62'greece')
      == region
     Regional: CONSTANT_VNT'delphi'-region()(I68'delphi')
@@ -88,13 +90,21 @@ Phase VII ... First pass through assertions
      == region
     Regional: CONSTANT_VNT'sounio'-region()(I65'sounio')
      == region
-    Regional: CONSTANT_VNT'thebes'-region()(I66'thebes')
+    Regional: CONSTANT_VNT'aulis'-region()(I67'aulis')
      == region
-    Regional: CONSTANT_VNT'thebes'-region()(I66'thebes')
-     == region
-    Regional: CONSTANT_VNT'cyprus'-region()(I71'cyprus')
+    Regional: CONSTANT_VNT'aulis'-region()(I67'aulis')
      == region
     Regional: CONSTANT_VNT'paphos'-region()(I72'paphos')
+     == region
+    Regional: CONSTANT_VNT'paphos'-region()(I72'paphos')
+     == region
+    Regional: CONSTANT_VNT'paphos'-region()(I72'paphos')
+     == region
+    Regional: CONSTANT_VNT'paphos'-region()(I72'paphos')
+     == region
+    Regional: CONSTANT_VNT'athens'-region()(I64'athens')
+     == region
+    Regional: CONSTANT_VNT'athens'-region()(I64'athens')
      == region
     Regional: CONSTANT_VNT'the underworld'-region()(I70'underworld')
      == region
@@ -103,6 +113,8 @@ Phase VII ... First pass through assertions
     Regional: CONSTANT_VNT'the underworld'-region()(I70'underworld')
      == region
     Regional: CONSTANT_VNT'athens'-region()(I64'athens')
+     == region
+    Regional: CONSTANT_VNT'sounio'-region()(I65'sounio')
      == region
     Regional: CONSTANT_VNT'paphos'-region()(I72'paphos')
      == region
@@ -111,6 +123,8 @@ Phase VII ... First pass through assertions
     Regional: CONSTANT_VNT'athens'-region()(I64'athens')
      == region
     Regional: CONSTANT_VNT'athens'-region()(I64'athens')
+     == region
+    Regional: CONSTANT_VNT'sounio'-region()(I65'sounio')
      == region
     Regional: CONSTANT_VNT'thebes'-region()(I66'thebes')
      == region
@@ -261,7 +275,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 118 files written as streams.
-CPU time: 246 centiseconds
+CPU time: 244 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

@@ -4,7 +4,7 @@ Chapter 0.00 - TODOs | TBDs
 
 release along with a website and an interpreter. [for beta testing]
 
-[Release along with cover art.]
+Release along with cover art.
 
 [Everything TBD should be commented or deleted]
 
@@ -446,7 +446,7 @@ Kronos Scene ends when the time since Kronos Scene began is 1 minutes.
 
 
 [Room Description]
-Mount Olympus Hall is a room. 
+Mount Olympus Hall is a room in Mount Olympus.
 
 
 [The player is inside Mount Olympus Hall.]
@@ -880,6 +880,7 @@ Instead of examining something:
 
 [Start Of: Necromanteion]
 
+Necromanteion is in Ephyra.
 The description of the Necromanteion is "As you step into the Necromanteion, the air is filled with the scent of incense and the faint aroma of past offerings. The dim light of torches casts flickering shadows on the stone walls and floor, creating a somber yet oddly comforting ambiance.
 
 The darkness here is not forbidding, but rather a familiar shroud, welcoming you into a realm you know well: the domain of Hades and Persephone, a place where life and death intertwine in an eternal dance, and where you are an honoured guest, not an intruder.
@@ -1715,7 +1716,7 @@ Chapter 3 - Artemis & Apollo
 
 
 [rooms]
-The Temple of the Aulidean Artemis is a room in Thebes. "[first time]You step into the sacred temple of Aulidean Artemis.[only][line break]The temple is empty and abandoned by the priestesses, following Kronos[apostrophe] seizure of power. Expected, unfortunately. 
+The Temple of the Aulidean Artemis is a room in Aulis. "[first time]You step into the sacred temple of Aulidean Artemis.[only][line break]The temple is empty and abandoned by the priestesses, following Kronos[apostrophe] seizure of power. Expected, unfortunately. 
 
 As you pass through the pronaos, your eyes are drawn to the [if the time of day is before 08:00 pm]sunlight[otherwise]moonlight[end if] cascading down from the open ceiling, illuminating an imposing sundial made of pearly white marble that stands at the center of the chamber. The [if the time of day is before 08:00 pm]sun's[otherwise]moon's[end if] rays cross paths with the dial's gnomon, casting a shadow that marks the hour.
 
@@ -2085,7 +2086,7 @@ test art with "wait until 12 pm/take sun key/wait until 12 am/ take moon key/ pu
 
 [Start Of: Divine Cell of Artemis & Apollo]
 
-The Divine Cell of Artemis & Apollo is a room in Thebes.
+The Divine Cell of Artemis & Apollo is a room in Aulis.
 
 Instead of examining the stairs when the player is in Divine Cell of Artemis & Apollo:
 	say "The stairs seem to lead up.". 
@@ -2154,7 +2155,7 @@ Chapter 4 - Aphrodite & Hephaestus
 
 
 [Start of: Agora of Paphos]
-Agora of Paphos is a room in Cyprus. "The Agora of Paphos is a bustling marketplace, filled with the sights, sounds, and smells of ancient Cypriot life. Vendors are hawking their wares, their voices rising in a cacophony of shouts and bargaining. The air is thick with the scent of spices, perfumes, and freshly baked bread.
+Agora of Paphos is a room in Paphos. "The Agora of Paphos is a bustling marketplace, filled with the sights, sounds, and smells of ancient Cypriot life. Vendors are hawking their wares, their voices rising in a cacophony of shouts and bargaining. The air is thick with the scent of spices, perfumes, and freshly baked bread.
 
 The architecture of the agora is a blend of Greek and Phoenician styles, with columns, arches, and intricate stonework. The buildings are painted in bright colors, and the streets are lined with mosaics depicting scenes from myths and everyday life.
 
@@ -2177,7 +2178,7 @@ The mosaics is scenery in Agora of Paphos.
 [End of: Agora of Paphos]
 
 [Start of: Throne Room]
-Throne Room is a room. The description is "The throne room stands vacant. There you see high stone columns intricately carved with motifs of mythological scenes and natural elements supported the lofty ceiling. The flooring was a mosaic masterpiece, depicting elaborate geometric patterns that shimmered under the warm light of bronze braziers.
+Throne Room is a room in Paphos. The description is "The throne room stands vacant. There you see high stone columns intricately carved with motifs of mythological scenes and natural elements supported the lofty ceiling. The flooring was a mosaic masterpiece, depicting elaborate geometric patterns that shimmered under the warm light of bronze braziers.
 
 At the room’s center, on a raised platform, stood the king’s throne: a magnificent chair of carved wood, overlaid with gold and inlaid with ivory. The throne was richly draped in deep purple and crimson fabrics. Beside it stood a large statue of Aphrodite, the island’s patron goddess, symbolically positioned as the king’s right hand.
 
@@ -2249,7 +2250,7 @@ instead of examining anything:
 
 
 [Start Of Secret Garden]
-Secret Garden is a room. "After descending the staircase, you find yourself in an enchanted underground garden, where magic seems to pulse from every corner. The air is thick with the intoxicating scent of flowers, each blossom radiating a soft, ethereal glow. Though deep beneath the earth, the space is bathed in a gentle, divine light radiating from the plants themselves, complemented by the soft flicker of the candles lining the paths, their wax bodies somehow untouched by time or flame. Despite the absence of any other life, the garden feels alive, giving the impression it exists in a suspended moment between the past and present. 
+Secret Garden is a room in Paphos. "After descending the staircase, you find yourself in an enchanted underground garden, where magic seems to pulse from every corner. The air is thick with the intoxicating scent of flowers, each blossom radiating a soft, ethereal glow. Though deep beneath the earth, the space is bathed in a gentle, divine light radiating from the plants themselves, complemented by the soft flicker of the candles lining the paths, their wax bodies somehow untouched by time or flame. Despite the absence of any other life, the garden feels alive, giving the impression it exists in a suspended moment between the past and present. 
 
 As one steps through the entrance, their eyes would be immediately drawn to a statue of an incomprehensibly beautiful man, poised on a marble base. Behind the statue lies a serene natural lake, with delicate pink and white lilies gently laying on its surface. On the other side of the water, a majestic olive tree stands, ancient and hollowed by the passage of centuries, its gnarled bark a testament to its age. Some round flower beds bursting with vibrant red, purple, and orange flowers are encircling the lake and the tree.
 
@@ -2259,7 +2260,7 @@ On the eastern side of the room, separated by a couple of steps decorated with f
 
 The Secret Garden is west of the ivy gate.
 
-The Divine Cell of Aphrodite & Hephaestus is east of the ivy gate. 
+The Divine Cell of Aphrodite & Hephaestus is east of the ivy gate. The Divine Cell of Aphrodite & Hephaestus is in Paphos.
 
 [doors/gates]
 [Secret Garden to Divine Cell of Aphrodite & Hephaestus by door]
@@ -2649,7 +2650,7 @@ Chapter 5 - Hestia & Hermes
 [Start Of: Prytaneion Hall]
 
 
-Prytaneion Hall is a room. The description is "[one of]You step into the open hall of the Prytaneion, the administrative heart of Athens. In the center of the room you see the sacred hearth dedicated to Hestia, its warm glow illuminating the room. The flames burn steadily, their smoke rising in delicate spirals before disappearing through a square opening in the roof above. Beside the hearth lies a single hand torch, accompanied by a fire snuffer.
+Prytaneion Hall is a room in Athens. The description is "[one of]You step into the open hall of the Prytaneion, the administrative heart of Athens. In the center of the room you see the sacred hearth dedicated to Hestia, its warm glow illuminating the room. The flames burn steadily, their smoke rising in delicate spirals before disappearing through a square opening in the roof above. Beside the hearth lies a single hand torch, accompanied by a fire snuffer.
 
 Eight torches on either side of the hearth are placed on the ground, forming a semicircle around a small dining area. The torches are all put out, from the first—the far left one—to the sixteenth—the far right one.
 
@@ -3013,7 +3014,7 @@ test fire with "light second torch/light third torch/ light sixth torch/ light s
 
 [Start Of: Divine Cell of Hestia & Hermes]
 
-Divine Cell of Hestia & Hermes is a room. It is down of the hidden trapdoor. 
+Divine Cell of Hestia & Hermes is a room in Athens. It is down of the hidden trapdoor. 
 
 
 Divine Cell of Hestia & Hermes Scene is a scene. Divine Cell of Hestia & Hermes Scene begins when the player is in Prytaneion Hall for the first time. Divine Cell of Hestia & Hermes Scene ends when Goddess Hestia is awake and God Hermes is awake.
@@ -3248,7 +3249,7 @@ Ships is an undescribed backdrop. It is in post of piraeus.
 sailors is an undescribed backdrop. It is in post of piraeus.
 merchants is an undescribed backdrop. It is in post of piraeus.
 
-Port of Sounio is a room. "Sounion is a small port town located on the southern tip of Attica. While not as bustling as Piraeus, Sounion's port plays an important role in local trade and fishing activities.[paragraph break][bold type]Known adjacent locations:[roman type][line break]→Agora of Sounio (N)[paragraph break][bold type]From here you can sail to:[roman type][line break]→Aulis[line break]→Garden of the Hesperides".
+Port of Sounio is a room in Sounio. "Sounion is a small port town located on the southern tip of Attica. While not as bustling as Piraeus, Sounion's port plays an important role in local trade and fishing activities.[paragraph break][bold type]Known adjacent locations:[roman type][line break]→Agora of Sounio (N)[paragraph break][bold type]From here you can sail to:[roman type][line break]→Aulis[line break]→Garden of the Hesperides".
 
 Port of Paphos is a room in Paphos. "The port of Paphos is distinctive for its strategic location on Cyprus's southwestern coast, serving as a vital link between the Eastern Mediterranean and the Aegean Sea. The port of Paphos is relatively large and open, characterized by its religious significance as a major center of the cult of Aphrodite, with temples and shrines visible from the sea.[paragraph break][bold type]Known adjacent locations:[roman type][line break]→Agora of Paphos (E) [paragraph break][bold type]From here you can sail to:[roman type] [line break]→Piraeus[line break]→Garden of the Hesperides".
 
@@ -3263,7 +3264,7 @@ Northern Gates of Athens is a room in Athens. "Just outside the gates lie the ci
 
 Southern Gates of Athens is a room in Athens. "Just outside the gates lie the city stables, bustling with the sounds of neighing horses and the scent of hay. Travelers can secure a sturdy steed here, perfect for journeys to distant cities.[paragraph break][bold type]Known adjacent locations:[roman type][line break]→Agora of Athens (NW) [paragraph break][bold type]From here you can travel to:[roman type]  [line break]→Sounio (S)".
 
-Gates of Sounio is a room. "Just outside the gates lie the city stables, bustling with the sounds of neighing horses and the scent of hay. Travelers can secure a sturdy steed here, perfect for journeys to distant cities.[paragraph break][bold type]Known adjacent locations:[roman type][line break]→Agora of Sounio (S) [paragraph break][bold type]From here you can travel to:[roman type] [line break]→Athens (N)".
+Gates of Sounio is a room in Sounio. "Just outside the gates lie the city stables, bustling with the sounds of neighing horses and the scent of hay. Travelers can secure a sturdy steed here, perfect for journeys to distant cities.[paragraph break][bold type]Known adjacent locations:[roman type][line break]→Agora of Sounio (S) [paragraph break][bold type]From here you can travel to:[roman type] [line break]→Athens (N)".
 
 Gates of Thebes is a room in Thebes. "Just outside the gates lie the city stables, bustling with the sounds of neighing horses and the scent of hay. Travelers can secure a sturdy steed here, perfect for journeys to distant cities.[paragraph break][bold type]Known adjacent locations:[roman type][line break]→Agora of Thebes (NE) [paragraph break][bold type]From here you can travel to:[roman type]  [line break]→Athens (S)[line break]→Delphi (W)[line break]→Aulis (E)[line  break]→Ephyra (NW)[line  break]→Mount Olympus (N)".
 
@@ -3463,7 +3464,7 @@ A thing named agora is in the agora of thebes. It is a backdrop.
 
 The Gates of Thebes is southwest of the Agora of Thebes. Kadmea is up of Agora of Thebes.
 [Aulis]
-The Agora of Aulis is a room. "The agora of Aulis is a modest, functional space, unlike the grand, ornate agoras of major Greek cities. It was primarily a military assembly point, with temporary stalls and sparse amenities, reflecting its role as a strategic gathering spot for Greek fleets.[paragraph break][bold type]Known adjacent locations:[roman type][line break]→Port of Aulis (E)[line break]→Gates of Aulis (S)[line break]→Temple of the Aulidean Artemis (IN)".
+The Agora of Aulis is a room. Agora of Aulis is in Aulis. "The agora of Aulis is a modest, functional space, unlike the grand, ornate agoras of major Greek cities. It was primarily a military assembly point, with temporary stalls and sparse amenities, reflecting its role as a strategic gathering spot for Greek fleets.[paragraph break][bold type]Known adjacent locations:[roman type][line break]→Port of Aulis (E)[line break]→Gates of Aulis (S)[line break]→Temple of the Aulidean Artemis (IN)".
 
 A thing named agora is in the agora of aulis.It is a backdrop.
 
@@ -3473,7 +3474,7 @@ The Agora of Aulis is north of the Gates of Aulis. The Agora of Aulis is west of
 A room called South of Delphi  is in Delphi. The Delphi Gates are north of the South of Delphi. 
 
 [Ephyra]
-The Agora of Ephyra is a room. "[paragraph break][bold type]Known adjacent locations:[roman type][line break]→Gates of Ephyra (E).". [TODO:acheron is here (backdrop)]
+The Agora of Ephyra is a room. Agora of Ephyra is in Ephyra."[paragraph break][bold type]Known adjacent locations:[roman type][line break]→Gates of Ephyra (E).". [TODO:acheron is here (backdrop)]
 The North of Ephyra is a room in the Underworld. It is north of Gates of Ephyra. [Necromanteion is inside here]
 The East of Ephyra is a room in the Underworld. "[if Charon is in East of Ephyra]You see Charon, the Ferryman of the Dead, along with his boat, waiting patiently near the bank of the Acheron River.[paragraph break][bold type]Known adjacent locations:[roman type][line break]→Gates of Ephyra (W) [line break]→North of Ephyra (NW) [line break]→Underworld (TALK TO CHARON)." [TODO: Acheron River should be here]
 The Gates of Ephyra is west of a room called East of Ephyra. A room called North of Ephyra is northwest of a room called east of ephyra.

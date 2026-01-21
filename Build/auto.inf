@@ -44,7 +44,7 @@ Global Story = BC_0;
 Constant Headline BC_1;
 Constant Story_Author BC_2;
 Release 1;
-Serial "260119";
+Serial "260121";
 
 Default Story 0;
 Default Headline 0;
@@ -9188,7 +9188,7 @@ Constant START_ROOM_INIS = 2;
 Constant START_TIME_INIS = 3;
 Constant DONE_INIS = 4;
 
-Array InitialSituation --> I136_hebe nothing I164_mount_olympus_hall 540 0;
+Array InitialSituation --> I136_hebe I164_mount_olympus_hall I164_mount_olympus_hall 540 0;
 
 
 
@@ -11096,7 +11096,7 @@ Constant RBNO_12 = "it does";
 
 Array KindHierarchy --> K0_kind (0) K1_room (0) K2_thing (0) K3_direction (0) K4_door (2) K5_container (2) K6_supporter (2) K7_backdrop (2) K8_person (2) K9_region (0) K10_man (8) K11_woman (8) K12_animal (8) K13_device (2) K14_vehicle (5) K15_player_s_holdall (5) K16_plant (2) K17_ring (2) K18_seed (2) K19_weight (2) K20_flame (2) K21_asphodel (16) K22_lavender (16) K23_poppy (16) K24_dragon_tooth (18) K25_water_lily (16) K26_perfume_making_tools (2) K27_red_flower (16) K28_purple_flower (16) K29_orange_flower (16) K30_first_torch (20) K31_second_torch (20) K32_third_torch (20) K33_fourth_torch (20) K34_fifth_torch (20) K35_sixth_torch (20) K36_seventh_torch (20) K37_eighth_torch (20) K38_ninth_torch (20) K39_tenth_torch (20) K40_eleventh_torch (20) K41_twelfth_torch (20) K42_thirteenth_torch (20) K43_fourteenth_torch (20) K44_fifteenth_torch (20) K45_sixteenth_torch (20) K46_city (1) K47_marina (1) K48_outroom (1) K49_inroom (5) ;
 Constant IK1_First = I164_mount_olympus_hall;
-Constant IK2_First = I136_hebe;
+Constant IK2_First = I161_obols;
 Constant IK3_First = I51_north;
 Constant IK4_First = I328_dragon_gate;
 Constant IK5_First = I761_oracle_front;
@@ -12033,7 +12033,7 @@ Object selfobj ""
     with vector 0
     has mark_as_thing
     with IK2_Count 0
-    with IK2_Link I136_hebe
+    with IK2_Link I161_obols
     with IK8_Count 0
     with IK8_Link I136_hebe
     with KD_Count 8
@@ -12235,54 +12235,29 @@ Object -> I135_paphos ""
     with article BC_410
 ;
 
-Object I136_hebe ""
-    class K11_woman
-    with short_name BC_411
-    with description BC_412
-    with capacity 10
-    has proper
-    has privately_named
-    has concealed
-    with vector 0
-    has mark_as_thing
-    with IK2_Count 1
-    with IK2_Link I161_obols
-    with IK8_Count 1
-    with IK8_Link I166_titan_kronos
-    with IK11_Count 0
-    with IK11_Link I176_goddess_aphrodite
-    with KD_Count 11
-    with parse_name Parse_Name_GV99
-    with action_bitmap 0 0 0 0 0 0 
-    with p15_name BC_413
-    with initial BC_414
-    with list_together BC_415
-    with plural BC_416
-    with article BC_417
-;
-
 Object I161_obols ""
     class K2_thing
-    with short_name BC_418
+    with short_name BC_411
     has proper
     with vector 0
     has mark_as_thing
     with IK2_Count 2
-    with IK2_Link I165_heracles__club
+    with IK2_Link I136_hebe
     with KD_Count 2
     with name 'obols' 'things//p' 'obol' 
     with parse_name Parse_Name_GV93
     with action_bitmap 0 0 0 0 0 0 
-    with description BC_419
-    with initial BC_420
-    with list_together BC_421
-    with plural BC_422
-    with article BC_423
+    with description BC_412
+    with initial BC_413
+    with list_together BC_414
+    with plural BC_415
+    with article BC_416
 ;
 
 Object I164_mount_olympus_hall ""
     class K1_room
-    with short_name BC_424
+    with short_name BC_417
+    with map_region I126_mount_olympus
     has proper
     with vector 0
     with room_index -1
@@ -12291,7 +12266,33 @@ Object I164_mount_olympus_hall ""
     with IK1_Link I191_garden_of_the_hesperide
     with KD_Count 1
     with name 'mount' 'olympus' 'hall' 'rooms//p' 
-    with description BC_425
+    with description BC_418
+    with list_together BC_419
+    with plural BC_420
+    with article BC_421
+;
+
+Object -> I136_hebe ""
+    class K11_woman
+    with short_name BC_422
+    with description BC_423
+    with capacity 10
+    has proper
+    has privately_named
+    has concealed
+    with vector 0
+    has mark_as_thing
+    with IK2_Count 1
+    with IK2_Link I165_heracles__club
+    with IK8_Count 1
+    with IK8_Link I166_titan_kronos
+    with IK11_Count 0
+    with IK11_Link I176_goddess_aphrodite
+    with KD_Count 11
+    with parse_name Parse_Name_GV99
+    with action_bitmap 0 0 0 0 0 0 
+    with p15_name BC_424
+    with initial BC_425
     with list_together BC_426
     with plural BC_427
     with article BC_428
@@ -13417,6 +13418,8 @@ Object I217_necromanteion ""
     class K48_outroom
     with short_name BC_759
     with description BC_760
+    with map_region I132_ephyra
+    has proper
     with p77_fronting_relation_storag I759_necromanteion_front
     with vector 0
     with room_index -1
@@ -17094,7 +17097,7 @@ Object I398_divine_cell_of_artemis_ ""
     class K1_room
     with short_name BC_1800
     with description BC_1801
-    with map_region I129_thebes
+    with map_region I130_aulis
     has proper
     with vector 0
     with room_index -1
@@ -17131,6 +17134,7 @@ Object -> I422_erinyes_shrine ""
 Object I399_divine_cell_of_aphrodit ""
     class K1_room
     with short_name BC_1811
+    with map_region I135_paphos
     has proper
     with vector 0
     with room_index -1
@@ -17262,6 +17266,7 @@ Object -> I564_carvings ""
 Object I400_divine_cell_of_hestia__ ""
     class K1_room
     with short_name BC_1852
+    with map_region I127_athens
     has proper
     with vector 0
     with room_index -1
@@ -17299,7 +17304,7 @@ Object I401_temple_of_the_aulidean_ ""
     class K48_outroom
     with short_name BC_1863
     with description BC_1864
-    with map_region I129_thebes
+    with map_region I130_aulis
     with p77_fronting_relation_storag I758_aulidian_artemis_temple
     with vector 0
     with room_index -1
@@ -17737,7 +17742,7 @@ Object I423_agora_of_paphos ""
     class K1_room
     with short_name BC_1982
     with description BC_1983
-    with map_region I134_cyprus
+    with map_region I135_paphos
     has proper
     with vector 0
     with room_index -1
@@ -17871,6 +17876,7 @@ Object I430_throne_room ""
     class K1_room
     with short_name BC_2023
     with description BC_2024
+    with map_region I135_paphos
     has proper
     with vector 0
     with room_index -1
@@ -17963,6 +17969,7 @@ Object I434_secret_garden ""
     class K1_room
     with short_name BC_2046
     with description BC_2047
+    with map_region I135_paphos
     with vector 0
     with room_index -1
     has mark_as_room
@@ -20477,6 +20484,7 @@ Object I565_prytaneion_hall ""
     class K48_outroom
     with short_name BC_2758
     with description BC_2759
+    with map_region I127_athens
     has proper
     with p77_fronting_relation_storag I757_prytaneion_front
     with vector 0
@@ -23477,6 +23485,7 @@ Object I728_port_of_sounio ""
     class K47_marina
     with short_name BC_3597
     with description BC_3598
+    with map_region I128_sounio
     has proper
     with vector 0
     with room_index -1
@@ -23618,6 +23627,7 @@ Object I735_gates_of_sounio ""
     class K46_city
     with short_name BC_3634
     with description BC_3635
+    with map_region I128_sounio
     has proper
     with vector 0
     with room_index -1
@@ -23951,6 +23961,7 @@ Object I755_agora_of_aulis ""
     class K1_room
     with short_name BC_3730
     with description BC_3731
+    with map_region I130_aulis
     with vector 0
     with room_index -1
     has mark_as_room
@@ -23989,6 +24000,7 @@ Object I756_agora_of_ephyra ""
     class K1_room
     with short_name BC_3741
     with description BC_3742
+    with map_region I132_ephyra
     with vector 0
     with room_index -1
     has mark_as_room
@@ -86252,7 +86264,7 @@ Constant TX_PS_3 = "An Interactive Fiction";
 Constant TX_PS_358 = "An elegant red carpet. When you step on it to inspect it further, you hear creaking.";
 Constant TX_PS_129 = "Arethousa moves with the grace of flowing water, her deep blue eyes reflecting the tranquil depths of a hidden spring. Her dark hair, braided with pearls, mirrors the shimmering waves of the sea, embodying the calm and mystery of hidden waters.";
 Constant TX_PS_128 = "Arethousa";
-Constant TX_PS_77 = "As good-looking as ever.";
+Constant TX_PS_78 = "As good-looking as ever.";
 Constant TX_PS_253 = "As you enter the underwater temple of Poseidon, you are greeted by a mesmerizing sight. The water is crystal clear, allowing dancing beams of sunlight to filter through the surface above, casting just enough light to see across the temple's interior. The structure is grand, yet the underwater environment adds a serene, almost otherworldly quality to the space.^^In the center of the temple stands a massive column, intricately carved from marble, rising from the temple floor. Around this column are four rotatable rings. The rings are crafted from shimmering metal, perhaps bronze, that glints in the filtered light.^^Before the column, along the temple floor, you notice a faint outline in the stone: a barely perceptible trapdoor.";
 Constant TX_PS_455 = "As you pass through the gate, you enter a small, dimly lit room. There lie Athena and Ares, bound by shadowy nether-forged chains, their bodies suspended in time. They appear unconscious. Their expressions are serene, though neutral.^^The room is a small, dimly lit cellar, its walls carved from old stone and shrouded in shadows. Flickering torches cast an eerie glow, illuminating shelves lined with forgotten offerings.";
 Array TX_L_455 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_455;
@@ -86320,7 +86332,7 @@ Constant TX_PS_193 = "Kadmea altar";
 Constant TX_PS_177 = "Kadmea";
 Constant TX_PS_4 = "Marina Diagourta";
 Constant TX_PS_407 = "Merchants";
-Constant TX_PS_78 = "Mount Olympus Hall";
+Constant TX_PS_77 = "Mount Olympus Hall";
 Constant TX_PS_67 = "Mount Olympus";
 Constant TX_PS_153 = "Necromanteion";
 Constant TX_PS_163 = "North of Ephyra";
@@ -94335,23 +94347,23 @@ Array BC_407 --> PACKED_TEXT_STORAGE TX_PS_76;
 Array BC_408 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_409 --> PACKED_TEXT_STORAGE TX_PS_50;
 Array BC_410 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_411 --> PACKED_TEXT_STORAGE TX_PS_2;
-Array BC_412 --> PACKED_TEXT_STORAGE TX_PS_77;
+Array BC_411 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_137;
+Array BC_412 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_413 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_414 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_415 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_416 --> PACKED_TEXT_STORAGE TX_PS_8;
-Array BC_417 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_418 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_137;
+Array BC_416 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_417 --> PACKED_TEXT_STORAGE TX_PS_77;
+Array BC_418 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_419 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_420 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_421 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_422 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_423 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_424 --> PACKED_TEXT_STORAGE TX_PS_78;
+Array BC_422 --> PACKED_TEXT_STORAGE TX_PS_2;
+Array BC_423 --> PACKED_TEXT_STORAGE TX_PS_78;
+Array BC_424 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_425 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_426 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_427 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_427 --> PACKED_TEXT_STORAGE TX_PS_8;
 Array BC_428 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_429 --> PACKED_TEXT_STORAGE TX_PS_79;
 Array BC_430 --> PACKED_TEXT_STORAGE TX_PS_53;
