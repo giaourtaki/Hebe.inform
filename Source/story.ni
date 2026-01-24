@@ -121,7 +121,7 @@ A ring is a kind of  thing. The plural of ring is rings. A ring has a ring face.
 A seed is a kind of thing. The plural of seed is seeds.
 
 [definition of weight]
-A weight is a kind of thing. The plural of weight is weights. A weight has a mass. Definition: A weight is heavy if its mass is 1dr or more.
+A weight is a kind of thing. [The plural of weight is weights.] A weight has a mass. Definition: A weight is heavy if its mass is 1dr or more.
 
 [definition of torch/flame]
 A flame is a kind of thing. The plural of flame is flames. A flame is usually unlit.
@@ -931,16 +931,16 @@ Instead of talking to the High Priestess of Necromanteion:
 [Start Of: North of Ephyra]
 The description of North of Ephyra is "As you approach the Necromanteion from afar, the landscape unfolds before you in a blend of serene beauty and subtle foreboding. The temple is perched on a gentle rise, its sombre silhouette stark against the vibrant greens and soft blues of the surrounding countryside. The Acheron River courses through the landscape, its dark waters a stark contrast to the blooming fields.
 
-Fields of wildflowers spread out in all directions, their petals swaying lightly in the breeze, painting the earth with shades of purple, red, and white. The air is sweet with the scent of blooming flowers, yet as Hebe draws closer, the distant cries of birds seem to fade, replaced by a profound, almost eerie silence. The temple itself, though small and unassuming, exudes an aura of power, its weathered stones and dark entrance beckoning those who seek to cross into the realm of the dead.
-s
-[bold type]Known adjacent locations:[roman type][line break]→Necromanteion (IN)[line break]→Gates of Ephyra (S)[line break]→East of Ephyra (SE)". 
+Fields of wildflowers spread out in all directions, their petals swaying lightly in the breeze, painting the earth with shades of purple, red, and white. The air is sweet with the scent of blooming flowers, yet as you draw closer, the distant cries of birds seem to fade, replaced by a profound, almost eerie silence. The temple itself, though small and unassuming, exudes an aura of power, its weathered stones and dark entrance beckoning those who seek to cross into the realm of the dead.
+
+[paragraph break][bold type]Known adjacent locations:[roman type][line break]→Necromanteion (IN)[line break]→Gates of Ephyra (S)[line break]→East of Ephyra (SE)". 
 [items]
 
 [scenery]
 
 An acheron river is backdrop in north of ephyra and in East of Ephyra. The description is "The Acheron River, known as the 'River of Woe,' is a dark, mythical waterway in the Underworld, shrouded in mist.".
 
-A wildflower field is scenery container in north of ephyra. The description is "The vibrant wildflower field bursts with color, filled with asphodels, poppies, and lavender, swaying gently under the warm sunlight.". Understand "fields" or "fields of wildflowers" or "poppies" or "daisies" or "lavender"as wildflower field.
+A wildflower field is scenery container in north of ephyra. The description is "The vibrant wildflower field bursts with color, filled with asphodels, poppies, and lavender, swaying gently under the warm sunlight.". Understand "fields" or "fields of wildflowers" or "field" as wildflower field.
 
 A asphodel is a kind of plant. A lavender is a kind of plant. A poppy is a kind of plant.
 
@@ -1000,7 +1000,7 @@ A inscription is part of the dragon gate. The description of the inscription is 
 Understand "statue" as dragon statue when the player is in Heroon of Kadmos.
 Understand "sign" as inscription when the player is in Heroon of Kadmos.
 Understand "gate" as dragon gate when the player is in Heroon of Kadmos.
-Understand "walls" or "wall"  as paintings when the player is in Heroon of Kadmos.
+Understand "walls" or "wall" or "painting"  as paintings when the player is in Heroon of Kadmos.
 
 A side table is in Heroon of Kadmos. It is undescribed.
 A rock is on the side table. It is undescribed.
@@ -1041,7 +1041,7 @@ Every turn:
 
 Every turn:
 	If the dragon mouth is open for the first turn:
-		say "You hear the sound of stone grinding against stone. The dragon statue's mouth opened.";
+		say "You hear stone grinding against stone. The dragon statue's mouth opened.";
 		now the dragon mouth is open;
 	otherwise if the dragon mouth is closed for the first turn:
 		say "You hear again the sound of stone grinding against stone. The dragon statue's mouth closed.";
@@ -1063,6 +1063,7 @@ Instead of examining the dragon statue:
 
 A Kadmea altar is in the Heroon of Kadmos. It is fixed in place. It is undescribed.
 A sacrificial plate is on the Kadmea altar. It is an open transparent unopenable container. It is fixed in place. It is undescribed.
+
 Instead of putting something on the sacrificial plate:
 	try inserting the noun into sacrificial plate;
 	
@@ -1081,7 +1082,8 @@ Instead of examining the small scale:
 	say "The small scale has 6 pans. It is connected to a metal rod, which appears to serve as a locking mechanism for the gate. ";
 	stop the action.
 	
-Instead of examining weights:
+[Understand "weights" as weight.]
+Instead of examining weights: [this appears on each individual weight examination]
 	say "The weights you found in the compartment on the altar. You see an owl weight, a shield weight, a spear weight, a snake weight, a sword weight and a horse weight.";
 	
 A first pan is part of the small scale. It is fixed in place. It is a supporter. It is undescribed.
@@ -1094,7 +1096,7 @@ A sixth pan is part of the small scale. It is fixed in place. It is a supporter.
 Understand "1st pan" or "pan 1" as first pan when the player is in Heroon of Kadmos.
 Understand "2nd pan" or "pan 2" as second pan when the player is in Heroon of Kadmos.
 Understand "3rd pan" or "pan 3" as third pan when the player is in Heroon of Kadmos.
-Understand "4th pan" or "pan 4" as fourth pan when the player is in Heroon of Kadmos.
+Understand "4th pan" or "pan 4" or "forth pan" as fourth pan when the player is in Heroon of Kadmos.
 Understand "5th pan" or "pan 5" as fifth pan when the player is in Heroon of Kadmos.
 Understand "6th pan" or "pan 6" as sixth pan when the player is in Heroon of Kadmos.
 
@@ -1119,18 +1121,20 @@ Instead of inserting something into the sixth pan:
 
 Every turn:
 	If there are 6 seeds in the sacrificial plate:
-		say "A hole opens at the base of the sacrificial plate, funneling the dragon teeth into the altar. As they settle, a hidden compartment at the bottom of the altar quietly slides open, revealing six variously shaped bronze weights";
+		say "A hole opens at the base of the sacrificial plate, funnelling the dragon teeth into the altar. As they settle, a hidden compartment at the bottom of the altar quietly slides open, revealing six variously shaped bronze weights";
 		now everything enclosed by sacrificial plate is nowhere;
 		now the compartment is open.
 		
 
-A scale is a fixed in place undescribed thing. It is in the Heroon of Kadmos. Scale-state is a kind of value. A scale has a scale-state.  The scale-states are left-leaning, right-leaning, and centered.
+A large scale is a fixed in place undescribed thing. It is in the Heroon of Kadmos. Scale-state is a kind of value. A large scale has a scale-state.  The scale-states are left-leaning, right-leaning, and centered. 
 
-A left pan is part of the scale. It is a supporter.  It is undescribed.
-A right pan is part of the scale. It is a supporter.It is undescribed.
+Understand "scale" or "big scale" as large scale. [TODO: fix, it onluy recognises small scale]
+
+A left pan is part of the large scale. It is a supporter.  It is undescribed.
+A right pan is part of the large scale. It is a supporter. It is undescribed.
 
 
-To decide what scale-state is --/a/the scale-state of (S - the  scale):
+To decide what scale-state is --/a/the scale-state of (S - the  large scale):
 	if the total mass of weights on the left pan is greater than the total mass of weights on the right pan: 	
 		decide on left-leaning;
 	if the total mass of weights on the right pan is greater than the total mass of weights on the left pan: 		
@@ -1151,17 +1155,17 @@ Before putting something on the left pan:
 		stop the action;
 	
 After putting something on the left pan:
-	if the scale-state of the scale is left-leaning:
+	if the scale-state of the large scale is left-leaning:
 		say "The scale leans to the left.";
-	otherwise if the scale-state of the scale is right-leaning:
+	otherwise if the scale-state of the large scale is right-leaning:
 		say "The scale leans to the right.";
 	otherwise:
 		say "The scale is perfectly balanced.";
 		
 After taking something when the supporter taken from is left pan:
-	if the scale-state of the scale is left-leaning:
+	if the scale-state of the large scale is left-leaning:
 		say "The scale leans to the left.";
-	if the scale-state of the scale is right-leaning:
+	if the scale-state of the large scale is right-leaning:
 		say "The scale leans to the right.";
 	otherwise:
 		say "The scale is perfectly balanced.";
@@ -1175,26 +1179,28 @@ Before putting something on the right pan:
 	otherwise:
 		say "You don't think [noun] goes there.";
 		stop the action;
-	
+
+
+[TODO: FIX sometimes this gets printed twice]	
 After putting something on the right pan:
-	if the scale-state of the scale is left-leaning:
+	if the scale-state of the large scale is left-leaning:
 		say "The scale leans to the left.";
-	otherwise if the scale-state of the scale is right-leaning:
+	otherwise if the scale-state of the large scale is right-leaning:
 		say "The scale leans to the right.";
 	otherwise:
 		say "The scale is perfectly balanced.";
 		
 After taking something when the supporter taken from is right pan:
-	if the scale-state of the scale is left-leaning:
+	if the scale-state of the large scale is left-leaning:
 		say "The scale leans to the left.";
-	if the scale-state of the scale is right-leaning:
+	if the scale-state of the large scale is right-leaning:
 		say "The scale leans to the right.";
 	otherwise:
 		say "The scale is perfectly balanced.";
 
-The description of the scale is "On the large scale you can see two pans, the left pan and the right pan. The scale is currently [if the scale-state of the scale is left-leaning]leaning towards the left[otherwise if the scale-state of the scale is right-leaning]leaning towards the right[otherwise]balanced.".
+The description of the large scale is "On the large scale you can see two pans, the left pan and the right pan. The scale is currently [if the scale-state of the large scale is left-leaning]leaning towards the left[otherwise if the scale-state of the large scale is right-leaning]leaning towards the right[otherwise]balanced.". [TODO: add the contents of the pans]
 	
-Understand "large scale" or "big scale" as scale.
+
 
 [solution]
 
@@ -1370,14 +1376,14 @@ Instead of talking to someone during Sounio Beach Scene:
 	otherwise if the noun is Erato:
 		say "Erato is also in tears. 'I’m really sad for Amphitrite. I can’t believe how tough this must be for her!";
 	otherwise if the noun is Ploto:
-		say "Ploto seems troubled. 'I'm not sure how to handle this,' she admitted.";
+		say "Ploto seems troubled. 'I'm not sure how to handle this,' she admits.";
 	otherwise if the noun is Amphitrite:
-		say "When Amphitrite's gaze falls upon you, her tears cease, and she draws near.[line break][line break]'Eternal Maiden, you who has eluded the great evil, speak to me now and assure me you bring tidings of hope. The past weeks have been naught but torment; my husband has been stolen from my side, and his sacred temple desecrated, submerged beneath the waves—what a grievous insult! I am left powerless, unable to break free from the seafoam’s embrace. Oh, I plead, Eternal Maiden, return my husband to my arms, unscathed and whole.'[line break][line break]You explain to Amphitrite that her dear husband was prophecised to be held under his flooded temple, which you need help to reach.[line break][line break]'Naturally, Eternal Maiden, our unwavering support is yours. My Nereides and I stand ready to serve you in whatever you may require.'";
+		say "When Amphitrite's gaze falls upon you, her tears cease, and she draws near.[line break][line break]'Eternal Maiden, you who has eluded the great evil, speak to me now and assure me you bring tidings of hope. The past weeks have been naught but torment; my husband has been stolen from my side, and his sacred temple desecrated, submerged beneath the waves. What a grievous insult! I am left powerless, unable to break free from the seafoam’s embrace. Oh, I plead, Eternal Maiden, return my husband to my arms, unscathed and whole.'[line break][line break]You explain to Amphitrite that her dear husband was prophecised to be held under his flooded temple, which you need help to reach.[line break][line break]'Naturally, Eternal Maiden, our unwavering support is yours. My Nereides and I stand ready to serve you in whatever you may require.'";
 		now Amphitrite is happy;
 		follow the scene change machinery rule;
 	otherwise:
 		continue the action;
-		
+		[todo: prophesy only if hebe talked to pytheia]
 		
 Understand "x cape sounion" or "x cape sounio" or "x cape" or "x sounio"or "x narrow beach" or "x sounio beach" or "examine cape sounion" or "examine cape sounio" or "examine cape" or "examine sounio"or "examine narrow beach" or "examine sounio beach" as looking when the player is in sounio beach.
 
@@ -1500,7 +1506,7 @@ Instead of entering the sea:
 		say "You dive deep into the deep blue waters.";
 		continue the action;
 	otherwise if HasPoseidonBoon is false and AmphitriteIsHappy is true:
-		say "The nereides gently guided you towards the sunken temple.";
+		say "The nereides gently guide you towards the sunken temple.";
 		continue the action;
 	otherwise:
 		say "The temple looks like it's too deep. You can't go there with no help.";
@@ -1521,7 +1527,7 @@ Before the column, along the temple floor, you notice a faint outline in the sto
 Holding Breath Scene is a recurring scene. Holding Breath Scene begins when the player is in Underwater and HasPoseidonBoon is false. Holding Breath Scene ends when the time since Holding Breath Scene began is 12 minutes or the player is in Sounio Beach. 
 
 When Holding Breath Scene begins:
-	say "You take a big breath. You can probably hold it for about 12 minutes.".
+	say "You have taken a big breath. You can probably hold it for about 12 minutes.". [to do, make it happen b4 u enter underwater]
 	
 When Holding Breath Scene ends:
 	if HasPoseidonBoon is true:
@@ -2197,7 +2203,15 @@ Instead of examining something:
 	otherwise:
 		continue the action;
 
-The aphrodite statue is a closed unopenable door in the throne room. It is scenery. The aphrodite statue is down of the throne room and up of the Secret Garden. Understand "secret staircase" or "staircase" as aphrodite statue. The description is "The statue is elegantly carved in marble, depicting her graceful form, soft curves, serene expression, and flowing drapery.".
+The aphrodite statue is a closed unopenable door in the throne room. It is scenery. The aphrodite statue is down of the throne room and up of the Secret Garden. Understand "secret staircase" or "staircase"  as aphrodite statue. 
+
+Instead of examining aphrodite statue:
+	if the player is in the throne room:
+		say "The statue is elegantly carved in marble, depicting her graceful form, soft curves, serene expression, and flowing drapery.";
+	otherwise if the player is in the secret garden:
+		try examining the man statue.
+
+[The description is "The statue is elegantly carved in marble, depicting her graceful form, soft curves, serene expression, and flowing drapery.". ]
 
 Instead of entering the Aphrodite statue:
 	if the player is in the throne room:
@@ -2349,7 +2363,7 @@ Instead of taking a water lily:
 
 [Flowerbeds]
 
-Understand "round flowerbed" as flowerbed.
+Understand "round flowerbed" or "flower bed" as flowerbed.
 [red]
 A red flowerbed is in the Secret Garden. The red flowerbed is fixed in place. It is undescribed. 
 
@@ -2422,12 +2436,16 @@ Instead of inserting something into the orange flowerbed:
 [Statue of Adonis]
 The man statue is a thing in the Secret Garden. The man statue is fixed in place. It is undescribed.
 
-Understand "statue" as man statue when the player is in the secret garden.
+Understand "statue" or "man" as man statue when the player is in the secret garden.
+
+Instead of examining the aphrodite statue:
+	if the player is in the secret garden:
+		try examining the man statue. [TODO: fix (the aphrodite statue)]
 
 Instead of examining the man statue, say "The statue depicts a man with breathtaking beauty. His figure is carved with exquisite detail, and his chiseled features and graceful form are captured with masterful artistry. There is a longingness in his gaze, which falls on his raised right hand.[if something is inside the hand] You can see he's holding [a list of things inside the hand] in his right hand.[otherwise][line break]His right hand looks like it could be holding something but there's nothing there.[end if] [If the sign is not handled][line break]You can also see a marble sign on the statue's base.[end if]". 
 
 [The Sign]
-A sign is a thing. The sign is fixed in place. The sign is part of the man statue. The description of the sign is "The inscription on it reads: [line break][line break][italic type]    In cold embrace of stone, lay bare,[line break]    The bloom that speaks of love’s despair.[line break]    In the hollow heart of timeless wood,[line break]    A love unending shall be stood.[line break]    But where the scent of longing weeps,[line break]    A whispered farewell forever sleeps.[roman type]"
+A sign is a thing. The sign is fixed in place. The sign is part of the man statue. The description of the sign is "The inscription on it reads: [line break][line break][italic type]    In cold embrace of stone, lay bare,[line break]    The bloom that speaks of love’s despair.[paragraph break]    In the hollow heart of timeless wood,[line break]    A love unending shall be stood.[paragraph break]    But where the scent of longing weeps,[line break]    A whispered farewell forever sleeps.[roman type]"
 
 After examining the sign:
 	now the sign is handled.
@@ -3176,12 +3194,12 @@ Instead of examining heracles during Heracles in Asphodel Scene:
 
 The broken bridge is down of the Asphodel Meadows and up of Tartaros. The broken bridge is a closed unopenable door. [the bridge is over a cliff]It is scenery.
 
-The plaque is in Asphodel Meadows. It is scenery. The description is "'Only the ones who give up all hope of returning shall pass.'". 
+The plaque is in Asphodel Meadows. It is scenery. The description is "'[italic style]Only the ones who give up all hope of returning shall pass.[roman style]'". 
 
 After examining the plaque:
 	now the plaque is handled;
 	if the score is 75 and Heracles is awake:
-		say "Heracles grew somber. 'To pass this way,' he explained, 'we must relinquish our eternal life and embrace mortality.' [line break][line break]His expression softened. 'My dearest Hebe,' he said, 'we will face this challenge together, too. Are you prepared?' [line break]";
+		say "Heracles grows somber. 'To pass this way,' he explains, 'we must relinquish our eternal life and embrace mortality.' [line break][line break]His expression softens. 'My dearest Hebe,' he said, 'we will face this challenge together, too. Are you prepared?' [line break]";
 		If the player consents:
 			now the broken bridge is open;
 			say "Heracles holds your hands tightly. 'Let's go my dearest,' he said, his voice filled with determination. 'Everything will be alright.' [paragraph break] With a deep breath, you take a leap of faith and descend into the abyss.";
@@ -3190,7 +3208,7 @@ After examining the plaque:
 			say "Heracles holds your hands gently. 'It's alright, my dear,' he reassured you. 'Whenever you're ready, I'll be right here, waiting for you.'";
 			continue the action;
 	otherwise if score is not 75 and heracles is awake:
-		say "Heracles grew somber. 'To pass this way,' he explained, 'we must relinquish our eternal life and embrace mortality.'[line break][line break]He looks at you softly. 'My dear, I'm not ready to lose you. Maybe if we gather more allies we could try...'";
+		say "Heracles grοws somber. 'To pass this way,' he explains, 'we must relinquish our eternal life and embrace mortality.'[line break][line break]He looks at you softly. 'My dear, I'm not ready to lose you. Maybe if we gather more allies we could try...'";
 		continue the action;
 
 Instead of entering the bridge:
@@ -3464,7 +3482,8 @@ A thing named agora is in the agora of thebes. It is a backdrop.
 
 The Gates of Thebes is southwest of the Agora of Thebes. Kadmea is up of Agora of Thebes.
 [Aulis]
-The Agora of Aulis is a room. Agora of Aulis is in Aulis. "The agora of Aulis is a modest, functional space, unlike the grand, ornate agoras of major Greek cities. It was primarily a military assembly point, with temporary stalls and sparse amenities, reflecting its role as a strategic gathering spot for Greek fleets.[paragraph break][bold type]Known adjacent locations:[roman type][line break]→Port of Aulis (E)[line break]→Gates of Aulis (S)[line break]→Temple of the Aulidean Artemis (IN)".
+The Agora of Aulis is a room. Agora of Aulis is in Aulis. "The agora of Aulis is a modest, functional space, unlike the grand, ornate agoras of major Greek cities. It is primarily a military assembly point, with temporary stalls and sparse amenities, reflecting its role as a strategic gathering spot for Greek fleets.[paragraph break][bold type]Known adjacent locations:[roman type][line break]→Port of Aulis (E)[line break]→Gates of Aulis (S)[line break]→Temple of the Aulidean Artemis (IN)".
+
 
 A thing named agora is in the agora of aulis.It is a backdrop.
 
@@ -3476,7 +3495,7 @@ A room called South of Delphi  is in Delphi. The Delphi Gates are north of the S
 [Ephyra]
 The Agora of Ephyra is a room. Agora of Ephyra is in Ephyra."[paragraph break][bold type]Known adjacent locations:[roman type][line break]→Gates of Ephyra (E).". [TODO:acheron is here (backdrop)]
 The North of Ephyra is a room in the Underworld. It is north of Gates of Ephyra. [Necromanteion is inside here]
-The East of Ephyra is a room in the Underworld. "[if Charon is in East of Ephyra]You see Charon, the Ferryman of the Dead, along with his boat, waiting patiently near the bank of the Acheron River.[paragraph break][bold type]Known adjacent locations:[roman type][line break]→Gates of Ephyra (W) [line break]→North of Ephyra (NW) [line break]→Underworld (TALK TO CHARON)." [TODO: Acheron River should be here]
+The East of Ephyra is a room in the Underworld. "TODO:room description. [if Charon is in East of Ephyra]You see Charon, the Ferryman of the Dead, along with his boat, waiting patiently near the bank of the Acheron River.[paragraph break][bold type]Known adjacent locations:[roman type][line break]→Gates of Ephyra (W) [line break]→North of Ephyra (NW) [line break]→Underworld (TALK TO CHARON)." [TODO: Acheron River should be here]
 The Gates of Ephyra is west of a room called East of Ephyra. A room called North of Ephyra is northwest of a room called east of ephyra.
 
 
