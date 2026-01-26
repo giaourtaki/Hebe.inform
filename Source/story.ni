@@ -52,7 +52,8 @@ The player is a woman called Hebe. The carrying capacity of the player is 10.
 
 [Use MAX_PROPS_PER_OBJECT of 32.
 Use MAX_TIMERS of 32.
-Use MAX_THREADS of 32.] [Apparently those dont exist]
+Use MAX_THREADS of 32.] [Apparently those dont exist anymore]
+
 Use MAX_LOCAL_VARIABLES of 32.
 Use MAX_ARRAYS of 32.
 Use MAX_OBJECTS of 2048.
@@ -334,7 +335,7 @@ Instead of nectarizing someone:
 		say "[noun] doesn't look like [they] needs more nectar right now.";
 		stop the action;
 	else if the noun is asleep:
-		say "You carefuly spill some nectar in the mouth of [noun].";
+		say "You carefully spill some nectar in the mouth of [noun].";
 		now the noun is awake;
 	else if the Eternal Chalice of Nectar is not carried by the player:
 		say "You don't have any nectar on you right now.";
@@ -3194,7 +3195,7 @@ Instead of examining heracles during Heracles in Asphodel Scene:
 
 The broken bridge is down of the Asphodel Meadows and up of Tartaros. The broken bridge is a closed unopenable door. [the bridge is over a cliff]It is scenery.
 
-The plaque is in Asphodel Meadows. It is scenery. The description is "'[italic style]Only the ones who give up all hope of returning shall pass.[roman style]'". 
+The plaque is in Asphodel Meadows. It is scenery. The description is "[italic type]'Only the ones who give up all hope of returning shall pass.[roman type]'". 
 
 After examining the plaque:
 	now the plaque is handled;

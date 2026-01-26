@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-1">
   <generator>Windows Inform 7 6M62</generator>
-  <activeNode nodeId="node-4846"/>
+  <activeNode nodeId="node-4863"/>
   <item nodeId="node-1">
     <command xml:space="preserve">Hebe</command>
     <result xml:space="preserve">Instructions: &#x000A;&#x000A;Welcome to Hebe, my first Interactive Fiction game! This game is set in Ancient Greece and you are playing as the goddess of eternal youth, Hebe. If at any point you need help, type "help" or "h" into the console. Have fun and thank you for playing!&#x000A;&#x000A;Hebe&#x000A;An Interactive Fiction by Marina Diagourta&#x000A;Release 1 / Serial number 260124 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;The Grand Hall of Mount Olympus is shinning like a jewel in the Greek night sky. The flickering flames from the torches are reflected on lustrous surfaces of white marble and gold.  Columns of shimmering marble, capped with gilded Corinthian capitals, reached a vaulted ceiling adorned with intricate decorative paintings depicting scenes from the gods' legendary exploits. Among the hall's lavish embellishments are thrones of solid gold, masterfully crafted handwoven carpets and golden chandeliers, suspended from the ceiling. Today is a day of joy and celebration. The gods are celebrating the ascension of Heracles to immortality, and also the anniversary of your marriage to him.</result>
@@ -42702,6 +42702,159 @@
   <item nodeId="node-4846">
     <command xml:space="preserve">x plaque</command>
     <result xml:space="preserve">"Only the ones who give up all hope of returning shall pass."&#x000A;&#x000A;Heracles grew somber. "To pass this way," he explained, "we must relinquish our eternal life and embrace mortality."&#x000A;&#x000A;He looks at you softly. "My dear, I'm not ready to lose you. Maybe if we gather more allies we could try..."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4847"/>
+    </children>
+  </item>
+  <item nodeId="node-4847">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">Elysian Fields&#x000A;The Elysian Fields, a blissful realm in the Underworld, are a paradise reserved for the virtuous and heroic souls. Here, the blessed dwell in eternal peace and contentment.&#x000A;&#x000A;Known adjacent locations:&#x000A;&#x2192; East of Ephyra (TALK TO CHARON)&#x000A;&#x2192; Asphodel Meadows (D)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4848"/>
+    </children>
+  </item>
+  <item nodeId="node-4848">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">(first opening the Charon's boat)&#x000A;Charon is starring at you intensely. "..."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4849"/>
+    </children>
+  </item>
+  <item nodeId="node-4849">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Elysian Fields&#x000A;The Elysian Fields, a blissful realm in the Underworld, are a paradise reserved for the virtuous and heroic souls. Here, the blessed dwell in eternal peace and contentment.&#x000A;&#x000A;Known adjacent locations:&#x000A;&#x2192; East of Ephyra (TALK TO CHARON)&#x000A;&#x2192; Asphodel Meadows (D)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4850"/>
+    </children>
+  </item>
+  <item nodeId="node-4850">
+    <command xml:space="preserve">talk to charon</command>
+    <result xml:space="preserve">Charon is starring at you intensely. "..."&#x000A;&#x000A;The ferryman see you jump into the boat and understands. With slow and certain movements, he leads the boat up the dangerous stream, out of the opening of the natural cave. You are again in the world of the living.</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4851"/>
+    </children>
+  </item>
+  <item nodeId="node-4851">
+    <command xml:space="preserve">[enter]</command>
+    <result xml:space="preserve">East of Ephyra&#x000A;TODO:room description&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4852"/>
+    </children>
+  </item>
+  <item nodeId="node-4852">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">East of Ephyra&#x000A;TODO:room descriptionYou see Charon, the Ferryman of the Dead, along with his boat, waiting patiently near the bank of the Acheron River.&#x000A;&#x000A;Known adjacent locations:&#x000A;&#x2192;Gates of Ephyra (W) &#x000A;&#x2192;North of Ephyra (NW) &#x000A;&#x2192;Underworld (TALK TO CHARON).&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4853"/>
+    </children>
+  </item>
+  <item nodeId="node-4853">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Gates of Ephyra&#x000A;Just outside the gates lie the city stables, bustling with the sounds of neighing horses and the scent of hay. Travelers can secure a sturdy steed here, perfect for journeys to distant cities.&#x000A;&#x000A;Known adjacent locations:&#x000A;&#x2192;Necromanteion (N)&#x000A;&#x2192;Gate to the Underworld (E) &#x000A;&#x000A;From here you can travel to:  &#x000A;&#x2192;Mount Olympus (NE) &#x000A;&#x2192;Thebes (SE)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4854"/>
+    </children>
+  </item>
+  <item nodeId="node-4854">
+    <command xml:space="preserve">se</command>
+    <result xml:space="preserve">Gates of Thebes&#x000A;Just outside the gates lie the city stables, bustling with the sounds of neighing horses and the scent of hay. Travelers can secure a sturdy steed here, perfect for journeys to distant cities.&#x000A;&#x000A;Known adjacent locations:&#x000A;&#x2192;Agora of Thebes (NE) &#x000A;&#x000A;From here you can travel to:  &#x000A;&#x2192;Athens (S)&#x000A;&#x2192;Delphi (W)&#x000A;&#x2192;Aulis (E)&#x000A;&#x2192;Ephyra (NW)&#x000A;&#x2192;Mount Olympus (N)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4855"/>
+    </children>
+  </item>
+  <item nodeId="node-4855">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Northern Gates of Athens&#x000A;Just outside the gates lie the city stables, bustling with the sounds of neighing horses and the scent of hay. Travelers can secure a sturdy steed here, perfect for journeys to distant cities.&#x000A;&#x000A;Known adjacent locations:&#x000A;&#x2192;Agora of Athens (S) &#x000A;&#x000A;From here you can travel to: &#x000A;&#x2192;Thebes (N)&#x000A;&#x2192;Aulis (NE)&#x000A;&#x2192;Delphi (NW)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4856"/>
+    </children>
+  </item>
+  <item nodeId="node-4856">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Agora of Athens&#x000A;The Agora of Athens is a bustling public square, the heart of civic life in the city. Surrounded by stoas, temples, and government buildings, it is a vibrant space filled with merchants selling goods, philosophers engaging in debate, and citizens gathering for political, social, and religious activities. &#x000A;&#x000A;Known adjacent locations:&#x000A;&#x2192;Acropolis (E)&#x000A;&#x2192;Port of Piraeus (SW)&#x000A;&#x2192;Southern Gates of Athens (SE)&#x000A;&#x2192;Northern Gates of Athens (N)&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4857"/>
+    </children>
+  </item>
+  <item nodeId="node-4857">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Acropolis&#x000A;The Acropolis of Athens is a majestic citadel dominated by the Parthenon and other grand temples. The Prytaneion, a vital public building located nearby, house the sacred hearth and hosts official ceremonies.&#x000A;&#x000A;Known adjacent locations:&#x000A;&#x2192;Agora of Athens (W)&#x000A;&#x2192;Prytaneion (IN)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4858"/>
+    </children>
+  </item>
+  <item nodeId="node-4858">
+    <command xml:space="preserve">in</command>
+    <result xml:space="preserve">Prytaneion Hall&#x000A;In the open Prytaneion hall you see the sacred hearth of Hestia, a pine dining table with matching pine chairs and a wax tablet and a parchment scroll on top of it. There is also a red carpet in the hall.&#x000A;&#x000A;There are also 8 torches on either side of the hearth, forming a semicircle around the dining area..&#x000A;You also see a trapdoor on the ground.&#x000A;&#x000A;You can see a snuffer and a portable torch here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4859"/>
+    </children>
+  </item>
+  <item nodeId="node-4859">
+    <command xml:space="preserve">down</command>
+    <result xml:space="preserve">Divine Cell of Hestia &amp; Hermes&#x000A;You descent into a small chamber, dimly lit by a shaft of torches from above, revealed itself to be a library.&#x000A;&#x000A;You see the figures of Hestia and Hermes, bound by shadowy nether-forged chains. Their bodies lie motionless, as if frozen in time. A serene, almost ethereal expression graces their faces, their divine forms seemingly suspended in an eternal slumber.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4860"/>
+    </children>
+  </item>
+  <item nodeId="node-4860">
+    <command xml:space="preserve">give nectar to hestia</command>
+    <result xml:space="preserve">You carefuly spill some nectar in the mouth of Goddess Hestia.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4861"/>
+    </children>
+  </item>
+  <item nodeId="node-4861">
+    <command xml:space="preserve">x hestia</command>
+    <result xml:space="preserve">You see nothing special about the Goddess Hestia.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4862"/>
+    </children>
+  </item>
+  <item nodeId="node-4862">
+    <command xml:space="preserve">talk to hestia</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4863"/>
+    </children>
+  </item>
+  <item nodeId="node-4863">
+    <command xml:space="preserve">give nectar to hermes</command>
+    <result xml:space="preserve">You carefuly spill some nectar in the mouth of God Hermes.&#x000A;&#x000A;Hestia yawns and, with a gentle smile, says, "Thank you for waking us, dear Hebe." Hermes, flashing a quick, grateful grin, adds, "Thank you sis!" With a final nod of appreciation, they head off, their forms swiftly ascending toward Olympus Hall.&#x000A;&#x000A;[Your score has just gone up by fifteen points.]&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
