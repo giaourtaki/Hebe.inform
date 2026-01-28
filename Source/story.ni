@@ -71,7 +71,7 @@ When play begins:
 	the SunPocketCloses at 12:10 pm;
 	the MoonPocketOpens at 12:00 am;
 	the MoonPocketCloses at 12:10 am;
-	say "[bold type]Instructions: [roman type][paragraph break]Welcome to Hebe, my first Interactive Fiction game! This game is set in Ancient Greece and you are playing as the goddess of eternal youth, Hebe. If at any point you need help, type 'help' or 'h' into the console. Have fun and thank you for playing![paragraph break]";
+	say "[bold type]Instructions: [roman type][paragraph break]Welcome to Hebe, my first Interactive Fiction game! This game is set in Ancient Greece, and you are playing as the goddess of eternal youth, Hebe. [paragraph break]Try interacting with the text by typing instructions such as 'look', take (item's name) or 'talk to (person's name)'. If you need help at any point, type 'help' or 'h' into the console. Have fun, and thank you for playing! [paragraph break]Please feel free to complete the evaluation form after finishing your session, as it will help me with my thesis report :)[paragraph break]Evaluation Form: https://forms.gle/QDegFZ434qJGA3t78[line break]Bug Report Form: https://forms.gle/8fpoQ5niQ6P73Jm9A[paragraph break]";
 
 
 Chapter 0.20 - Kinds & Values
@@ -514,7 +514,7 @@ Instead of giving something to someone during Olympus Hall Celebration Scene:
 	if the second noun is Heracles:
 		if the noun is Heracles' Club:
 			say "He smiles at you. 'Thank you, my dearest.'";
-			say "[line break]He takes the club from your hands, hefted it thoughtfully, and began warming up with a series of practice swings.";
+			say "[line break]He takes the club from your hands, hefts it thoughtfully, and begins warming up with a series of practice swings.";
 			continue the action;
 		otherwise:
 			say "Heracles says, 'I am grateful, my dearest, but I think you might need this more than I.'";
@@ -620,7 +620,7 @@ Instead of talking to someone during Olympus Hall Celebration Scene:
 
 Instead of looking for the 1st time during the Olympus Hall Celebration Scene:
 	 If the player is in the Mount Olympus Hall:
-		say "The Grand Hall of Mount Olympus is shinning like a jewel in the Greek night sky. The flickering flames from the torches are reflected on lustrous surfaces of white marble and gold.  Columns of shimmering marble, capped with gilded Corinthian capitals, reached a vaulted ceiling adorned with intricate decorative paintings depicting scenes from the gods[apostrophe] legendary exploits. Among the hall’s lavish embellishments are thrones of solid gold, masterfully crafted handwoven carpets and golden chandeliers, suspended from the ceiling. Today is a day of joy and celebration. The gods are celebrating the ascension of Heracles to immortality, and also the anniversary of your marriage to him.";
+		say "The Grand Hall of Mount Olympus is shining like a jewel in the Greek night sky. The flickering flames from the torches are reflected on the lustrous surfaces of white marble and gold.  Columns of shimmering marble, capped with gilded Corinthian capitals, reached a vaulted ceiling adorned with intricate decorative paintings depicting scenes from the gods[apostrophe] legendary exploits. Among the hall’s lavish embellishments are thrones of solid gold, masterfully crafted handwoven carpets and golden chandeliers, suspended from the ceiling. Today is a day of joy and celebration. The gods are celebrating the ascension of Heracles to immortality, and also the anniversary of your marriage to him.";
 		wait for any key;
 		say "[line break]The air is thick with the aroma of ambrosia and the rich scent of a feast laid out for the celebrating gods. Plates pilled high with the finest delicacies fill every corner of the vast chamber, while goblets brimming with nectar are passed from hand to hand, by the ever-dutiful Ganymedes.
 
@@ -649,7 +649,7 @@ In one you see the Titanomachia, the epic war between the Olympian gods and the 
 
 Directly above the thrones is the crowning glory of the ceiling—the Triumph of Olympus. In this radiant composition, the gods are depicted in a celestial assembly, each seated on a cloud of purest white, their divine forms larger-than-life. It's basically a family drawing.". Understand "painting" or "paintings" as ceiling painting when the player is in Mount Olympus Hall.
 
-A throne is scenery in Mount Olympus Hall. The description is "Crafted from solid gold, each throne is a masterpiece of divine artistry, radiating an aura of unmatched power and authority. The gold gleams with a lustrous glow, catching the light from the surrounding torches and reflecting it in brilliant, shimmering waves that dance across the hall.[if the player is not carrying the heracles' club] The club of Heracles is leaning against one of the thrones.". Understand "thrones" as throne.
+A throne is scenery in Mount Olympus Hall. The description is "Crafted from solid gold, each throne is a masterpiece of divine artistry, radiating an aura of unmatched power and authority. The gold gleams with a soft glow, catching the light from the surrounding torches and reflecting it in brilliant, shimmering waves that dance across the hall.[if the player is not carrying the heracles' club] The club of Heracles is leaning against one of the thrones.". Understand "thrones" as throne.
 
 A handwoven carpet is scenery in Mount Olympus Hall. The description is "The floor of the Mount Olympus Hall is decorated with masterfully crafted handwoven carpets, each a testament to the artistry and skill of the divine weavers who created them. These carpets, more than mere decoration, are woven with threads of gold, silver, and the finest silks, their intricate patterns telling stories as old as time itself.". Understand "carpet" or "carpets"  as handwoven carpet when the player is in Mount Olympus Hall.
 
@@ -669,9 +669,9 @@ When Kronos Scene begins:
 	wait for any key;
 	say "[line break]'[italic type]Oh dear, please, do not let my presence taint your insignificant gathering. Carry on as you were.[roman type]'[paragraph break]";
 	wait for any key;
-	say "The voice is unmistakable, deep and resonant, carrying an ancient power that sent shivers down your spine. It was Kronos. So much time has passed since our triumph in the War of Titans— the Titanomachy. How did he manage to escape Tartaros?";
+	say "The voice is unmistakable, deep and resonant, carrying an ancient power that sents shivers down your spine. It was Kronos. So much time has passed since our triumph in the War of Titans— the Titanomachy. How did he manage to escape Tartaros?";
 	wait for any key;
-	say "[line break]The sight of the Titan, towering and menacing, shrouded in shadows, struck fear into the hearts of all present. You start to feel the ichor in your divine veins turn cold, as if time itself was freezing. The gods, normally so mighty and formidable, stand paralyzed in shock. Nothing moves. In a heartbeat, you break free from the daze and come to your senses. Your next actions have never been more certain. [italic type]It's now or never.[roman type]";
+	say "[line break]The sight of the Titan, towering and menacing, shrouded in shadows, struck fear into the hearts of all present. You start to feel the ichor in your divine veins turn cold, as if time itself were freezing. The gods, normally so mighty and formidable, stand paralysed in shock. Nothing moves. In a heartbeat, you break free from the daze and come to your senses. Your next actions have never been more certain. [italic type]It's now or never.[roman type]";
 	wait for any key;
 	say "[paragraph break]You grab Heracle's club out of his hands and leap towards Kronos. Then you feel yourself slipping into unconsciousness."
 
@@ -740,11 +740,11 @@ When Garden of the Hesperides Scene begins:
 
 With gentle hands, the nymphs help you to sit up, their embraces warm and comforting. The familiar scent of the Garden of the Hesperides fills your senses, grounding you in the safety of their presence.";
 	wait for any key;
-	say "[line break]Aigle, her expression displaying a hint of urgency, leans in. 'You should get moving now that you’re awake. There are disturbing rumors that Kronos has imprisoned the gods and is attempting to free his brothers from Tartaros. You’re the only goddess we’ve seen show any signs of activity lately.'
+	say "[line break]Aigle, her expression displaying a hint of urgency, leans in. 'You should get moving now that you’re awake. There are disturbing rumours that Kronos has imprisoned the gods and is attempting to free his brothers from Tartaros. You’re the only goddess we’ve seen show any signs of activity lately.'
 
 Erytheia nods in agreement. 'We don’t have many details, but the Oracle of Delphi might have the answers you need. It would be wise to seek her counsel.'";
 	wait for any key;
-	say "[line break]Hesperie steps forward, holding out something. It is the Eternal Chalice of Nectar, once your symbol of duty as the cupbearer of the gods before the events that led to Ganymedes taking on that role. Her eyes are earnest as she places the chalice in your hands.
+	say "[line break]Hesperie steps forward, holding out something. It is the Eternal Chalice of Nectar, once your symbol of duty as the cupbearer of the gods, before the events that led to Ganymedes taking on that role. Her eyes are earnest as she places the chalice in your hands.
 
 'You might need this,' Hesperie says softly. 'Without nectar or ambrosia, gods can lose their immortality and eternal youth. You know this better than anyone.'
 
@@ -756,7 +756,7 @@ When Garden of the Hesperides Scene ends:
 	now the player carries the Eternal Chalice of Nectar;
 	now the description of Garden of the Hesperides is "The Garden of the Hesperides is a mythical paradise, an otherworldly oasis hidden in the middle of the Mediterranean, where the air is perpetually filled with the sweet fragrance of blooming flowers and the gentle hum of bees. 
 
-In the heart of the garden stands the sacred tree of the Hesperides, its branches heavy with golden apples that gleam like captured sunlight. The apples, used to make nectar, hang among rich green leaves, guarded by the the Hesperides, the nymphs of the evening and daughters of the night. The nymphs are Aigle, Arethousa, Erytheia and Hesperie.
+In the heart of the garden stands the sacred tree of the Hesperides, its branches heavy with golden apples that gleam like captured sunlight. The apples, used to make nectar, hang among rich green leaves, guarded by the Hesperides, the nymphs of the evening and daughters of the night. The nymphs are Aigle, Arethousa, Erytheia and Hesperie.
 
 The story goes that Gaia gifted Hera with branches of golden apples as a wedding present, and Hera, deeply admiring them, begged Gaia to plant them in her garden.
 
@@ -3105,7 +3105,7 @@ The Charon's boat is a closed unopenable door. It is scenery. The description is
 Charon is a man. He is in East of Ephyra. Charon is undescribed. The description is "Charon is a cloaked figure with glowing yellow eyes, gaunt features, and a massive, oar-like staff. His mouth is covered by a dark cloth.".
 
 Instead of talking to Charon when the player is in east of ephyra:
-	say "Charon is starring at you intensely. '...' [first time][line break][line break](To enter into the Underworld, you will need to offer him an obol as tribute.)[only]";
+	say "Charon is staring at you intensely. '...' [first time][line break][line break](To enter into the Underworld, you will need to offer him an obol as tribute.)[only]";
 
 
 
@@ -3496,7 +3496,8 @@ A room called South of Delphi  is in Delphi. The Delphi Gates are north of the S
 [Ephyra]
 The Agora of Ephyra is a room. Agora of Ephyra is in Ephyra."[paragraph break][bold type]Known adjacent locations:[roman type][line break]→Gates of Ephyra (E).". [TODO:acheron is here (backdrop)]
 The North of Ephyra is a room in the Underworld. It is north of Gates of Ephyra. [Necromanteion is inside here]
-The East of Ephyra is a room in the Underworld. "TODO:room description. [if Charon is in East of Ephyra]You see Charon, the Ferryman of the Dead, along with his boat, waiting patiently near the bank of the Acheron River.[paragraph break][bold type]Known adjacent locations:[roman type][line break]→Gates of Ephyra (W) [line break]→North of Ephyra (NW) [line break]→Underworld (TALK TO CHARON)." [TODO: Acheron River should be here]
+The East of Ephyra is a room in the Underworld. "The land east of Ephyra slopes gently toward the banks of the Acheron River. The air here is heavy and still, carrying the chill of the Underworld and the faint scent of damp earth. 
+Thick mist clings to the ground, obscuring the river’s edge and blurring the boundary between land and water. [paragraph break]The Acheron flows silently before you, its black waters slow, reflecting neither light nor sky.  This is a place of passage rather than rest, where the living hesitate and the dead await their crossing.[if Charon is in East of Ephyra] You see Charon, the Ferryman of the Dead, along with his boat, waiting patiently near the bank of the river. The ferry rocks gently at the shore, ready to carry souls deeper into the realm of the dead.[paragraph break][bold type]Known adjacent locations:[roman type][line break]→Gates of Ephyra (W) [line break]→North of Ephyra (NW) [line break]→Underworld (TALK TO CHARON)." [TODO: Acheron River should be here]
 The Gates of Ephyra is west of a room called East of Ephyra. A room called North of Ephyra is northwest of a room called east of ephyra.
 
 
